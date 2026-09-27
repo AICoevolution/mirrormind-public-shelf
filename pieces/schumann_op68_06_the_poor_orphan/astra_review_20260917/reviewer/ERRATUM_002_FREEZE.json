@@ -1,0 +1,7 @@
+{
+  "id": "ERRATUM-002",
+  "reason": "Actual configuration remap_voices consumer rebuilds content and normalizes stems, unsafe for printed opposed stems, cross-staff beams and midbar clef22. Use exact label-only implementation of ERRATUM001, preserving every element and order except lower voice3->1. CORE apply_sep_edit correctly refused Map syntax; failed attempt changed nothing.",
+  "operation": "For note staff2 and voice3 set voice1; no other changes",
+  "before_sha256": "06642ac3cb2cb08b15768dbda32587df67fe6fb104a0e23c9b4bb9f22a57aa58",
+  "human_outcome": null
+}

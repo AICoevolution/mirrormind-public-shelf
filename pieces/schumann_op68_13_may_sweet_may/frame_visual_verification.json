@@ -1,0 +1,710 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_13_may_sweet_may",
+  "revision": 3,
+  "authority": "print_only",
+  "source_pdf_sha256": "67516b21133500c0d5ecda7d793cce018fc90040d6fb1fe11dfb215cc52358d2",
+  "page_image_sha256": {
+    "page-1": "ab66ffd2c103458df75ee09760413467a349e7227103b9fd4e4edf40b54eb301",
+    "page-2": "a593eceaf74a41728109fd7e9ef782b73dae0af69fd162a7dff6a33cd4789c12",
+    "page-3": "572cdc9e8d6fe634b4095c31c79c1e4c62ce29e5518f5058ec118a8f0bb47f31"
+  },
+  "printed_meter": "2/4 throughout",
+  "physical_bar_count": 54,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "pickup"
+    },
+    {
+      "physical_bar": 21,
+      "capacity_q": "3/2",
+      "kind": "incomplete_before_section_bar"
+    },
+    {
+      "physical_bar": 22,
+      "capacity_q": "1/2",
+      "kind": "pickup"
+    },
+    {
+      "physical_bar": 54,
+      "capacity_q": "3/2",
+      "kind": "incomplete_terminal"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P021",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "pass",
+      "evidence": "Opening eighth-note pickup plus the incomplete three-eighth-unit region before the section bar fill one 2/4 bar. There is no repeat; the pair is written out."
+    },
+    {
+      "pair": "P022+P054",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "pass",
+      "evidence": "The a-tempo eighth-note pickup plus the incomplete three-eighth-unit terminal before the final double bar fill one 2/4 bar. There is no repeat; the pair is written out."
+    }
+  ],
+  "repeats": [
+    {
+      "after_physical_bar": 21,
+      "kind": "section_double_bar",
+      "system": 5,
+      "page": 1
+    },
+    {
+      "after_physical_bar": 54,
+      "kind": "final_double_bar",
+      "system": 15,
+      "page": 3
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4
+      }
+    },
+    "changes": [
+      {
+        "physical_bar": 1,
+        "staff": 2,
+        "onset_q": "1/2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH treble after the pickup rest, immediately left of the barline into printed region 2",
+        "text": "Left-hand treble after the pickup rest in printed region 1, immediately left of the barline into region 2. The held E that follows is in treble.",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          356,
+          198,
+          410,
+          322
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 2,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "kind": "change",
+        "region": "LH bass immediately left of the barline into printed region 3",
+        "text": "Left-hand bass at the right of printed region 2, immediately left of the barline into region 3. The rest-D-D figure that follows is in bass.",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          726,
+          198,
+          778,
+          308
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 3,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH treble immediately left of the barline into printed region 4",
+        "text": "Left-hand treble at the right of printed region 3, immediately left of the barline into region 4. The A-A figure that follows is in treble.",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          1126,
+          198,
+          1182,
+          328
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 8,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "kind": "cautionary",
+        "region": "LH bass cautionary at the right end of printed region 8 after the chromatic run",
+        "text": "Left-hand bass cautionary at the right end of printed region 8, after the last chromatic notes of system 2.",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "evidence_box_px": [
+          1486,
+          182,
+          1548,
+          308
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 11,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH treble at p a tempo, immediately left of the barline into printed region 12",
+        "text": "Left-hand treble at the right of printed region 11 under p a tempo, immediately left of the barline into region 12. The E-A figure that follows is in treble.",
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "evidence_box_px": [
+          1152,
+          208,
+          1208,
+          332
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 12,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "kind": "cautionary",
+        "region": "LH bass cautionary at the right end of printed region 12",
+        "text": "Left-hand bass cautionary at the right end of printed region 12, after the E-A figure of system 3.",
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "evidence_box_px": [
+          1488,
+          198,
+          1548,
+          328
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 13,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH treble immediately left of the barline into printed region 14",
+        "text": "Left-hand treble at the right of printed region 13, immediately left of the barline into region 14. The E-A figure that follows is in treble. Region 13's rest-D-D stays in the opening bass of system 4.",
+        "page": 1,
+        "system": 4,
+        "crop_path": "source_crops/system_04.png",
+        "evidence_box_px": [
+          496,
+          192,
+          552,
+          320
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 18,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "kind": "change",
+        "region": "LH bass after the sixteenth-note bar of printed region 18",
+        "text": "Left-hand bass at the right of printed region 18, after the chromatic sixteenth-note run of system 5. The following bars stay in bass until the section-bar cautionary.",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "evidence_box_px": [
+          716,
+          278,
+          770,
+          398
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 21,
+        "staff": 2,
+        "onset_q": "3/2",
+        "sign": "G",
+        "line": 2,
+        "kind": "cautionary",
+        "region": "LH treble cautionary at the section bar at the right of printed region 21",
+        "text": "Left-hand treble cautionary at the section double bar at the right of printed region 21, the last printed region on page 1.",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "evidence_box_px": [
+          1488,
+          258,
+          1548,
+          398
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 27,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "kind": "change",
+        "region": "LH bass immediately left of the barline into printed region 28",
+        "text": "Left-hand bass at the right of printed region 27, immediately left of the barline into region 28. The rest-D-D figure that follows is in bass.",
+        "page": 2,
+        "system": 7,
+        "crop_path": "source_crops/system_07.png",
+        "evidence_box_px": [
+          766,
+          202,
+          822,
+          320
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 28,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH treble immediately left of the barline into printed region 29",
+        "text": "Left-hand treble at the right of printed region 28, immediately left of the barline into region 29. The E-A figure that follows is in treble.",
+        "page": 2,
+        "system": 7,
+        "crop_path": "source_crops/system_07.png",
+        "evidence_box_px": [
+          1146,
+          198,
+          1200,
+          328
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 43,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "kind": "change",
+        "region": "LH bass immediately left of the barline into printed region 44",
+        "text": "Left-hand bass at the right of printed region 43, immediately left of the barline into region 44. The rest-D-D figure that follows is in bass.",
+        "page": 3,
+        "system": 12,
+        "crop_path": "source_crops/system_12.png",
+        "evidence_box_px": [
+          572,
+          202,
+          632,
+          320
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 44,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH treble immediately left of the barline into printed region 45",
+        "text": "Left-hand treble at the right of printed region 44, immediately left of the barline into region 45. The E-A figure that follows is in treble.",
+        "page": 3,
+        "system": 12,
+        "crop_path": "source_crops/system_12.png",
+        "evidence_box_px": [
+          1042,
+          198,
+          1098,
+          328
+        ],
+        "evidence_space": "system_crop"
+      }
+    ]
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        4
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        360
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        5,
+        8
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        390,
+        750
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        9,
+        12
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        780,
+        1160
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        13,
+        16
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1160,
+        1530
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        17,
+        21
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1540,
+        1980
+      ]
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        22,
+        25
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "y_bounds_on_page": [
+        40,
+        380
+      ]
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        26,
+        29
+      ],
+      "crop_path": "source_crops/system_07.png",
+      "y_bounds_on_page": [
+        410,
+        780
+      ]
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        30,
+        33
+      ],
+      "crop_path": "source_crops/system_08.png",
+      "y_bounds_on_page": [
+        800,
+        1180
+      ]
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        34,
+        36
+      ],
+      "crop_path": "source_crops/system_09.png",
+      "y_bounds_on_page": [
+        1200,
+        1580
+      ]
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        37,
+        39
+      ],
+      "crop_path": "source_crops/system_10.png",
+      "y_bounds_on_page": [
+        1620,
+        2020
+      ]
+    },
+    {
+      "system": 11,
+      "page": 3,
+      "measures": [
+        40,
+        42
+      ],
+      "crop_path": "source_crops/system_11.png",
+      "y_bounds_on_page": [
+        50,
+        380
+      ]
+    },
+    {
+      "system": 12,
+      "page": 3,
+      "measures": [
+        43,
+        45
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "y_bounds_on_page": [
+        410,
+        780
+      ]
+    },
+    {
+      "system": 13,
+      "page": 3,
+      "measures": [
+        46,
+        48
+      ],
+      "crop_path": "source_crops/system_13.png",
+      "y_bounds_on_page": [
+        800,
+        1180
+      ]
+    },
+    {
+      "system": 14,
+      "page": 3,
+      "measures": [
+        49,
+        51
+      ],
+      "crop_path": "source_crops/system_14.png",
+      "y_bounds_on_page": [
+        1200,
+        1580
+      ]
+    },
+    {
+      "system": 15,
+      "page": 3,
+      "measures": [
+        52,
+        54
+      ],
+      "crop_path": "source_crops/system_15.png",
+      "y_bounds_on_page": [
+        1620,
+        2020
+      ]
+    }
+  ],
+  "verified_repairs": [
+    "P001 is a printed eighth-note pickup (capacity 1/2), not a quarter and not a full 2/4 bar",
+    "System 5 has five printed regions (P017-P021), not four",
+    "P021 is an incomplete three-eighth-unit region (capacity 3/2) before the section double bar",
+    "P022 is a printed eighth-note pickup after a tempo (capacity 1/2), not a split leftover of P021",
+    "P054 is an incomplete three-eighth-unit terminal (capacity 3/2) before the final double bar",
+    "Pickup-plus-terminal pairs P001+P021 and P022+P054 each sum to 2 against printed 2/4",
+    "Locked every printed left-hand clef change or cautionary with staff, sign, line, crop, evidence box, and ordinary-language text at named regions 1, 2, 3, 8, 11, 12, 13, 18, 21, 27, 28, 43, and 44",
+    "P001 left-hand treble onset_q is 1/2 after the pickup rest, immediately left of the barline into region 2; evidence box unchanged",
+    "P021 left-hand treble cautionary onset_q is 3/2 at the section bar at the right of region 21; evidence box unchanged",
+    "Corrected the stale one-region-late assignment: pickup treble is in 1 not 2; later mid-system swaps sit at the right of 2/3/11/13/27/28/43/44",
+    "Print-evidenced negatives for stale lock ids with no printed change glyph: 4, 14, 15, 17, 29, 45",
+    "No printed clef-change glyph on systems 6, 8, 9, 10, 11, 13, 14, or 15"
+  ],
+  "clef_absences_print_evidenced": [
+    {
+      "physical_bar": 4,
+      "juan_named_as": null,
+      "staff": 2,
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence_box_px": [
+        1182,
+        180,
+        1548,
+        350
+      ],
+      "evidence_space": "system_crop",
+      "text": "Printed region 4 has the A-A figure in treble and no new clef glyph. The treble that opens this figure is the glyph locked at the right of region 3. The stale lock placed that glyph at region 4."
+    },
+    {
+      "physical_bar": 14,
+      "juan_named_as": null,
+      "staff": 2,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence_box_px": [
+        552,
+        185,
+        882,
+        350
+      ],
+      "evidence_space": "system_crop",
+      "text": "Printed region 14 has the E-A figure in treble and no new clef glyph. The treble is the glyph locked at the right of region 13. The stale lock placed that glyph at region 14."
+    },
+    {
+      "physical_bar": 15,
+      "juan_named_as": null,
+      "staff": 2,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence_box_px": [
+        800,
+        185,
+        1230,
+        350
+      ],
+      "evidence_space": "system_crop",
+      "text": "Printed region 15 has no clef-change glyph. The left hand stays in treble from the region-13 treble through the rest and inner-voice group. The stale lock invented a bass here."
+    },
+    {
+      "physical_bar": 17,
+      "juan_named_as": null,
+      "staff": 2,
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence_box_px": [
+        40,
+        255,
+        120,
+        420
+      ],
+      "evidence_space": "system_crop",
+      "text": "System 5 opens with an ordinary left-hand treble header continuing the treble from the end of system 4. That header is not a clef change. The stale lock treated it as a change from an invented bass at region 15."
+    },
+    {
+      "physical_bar": 29,
+      "juan_named_as": null,
+      "staff": 2,
+      "page": 2,
+      "system": 7,
+      "crop_path": "source_crops/system_07.png",
+      "evidence_box_px": [
+        1192,
+        185,
+        1550,
+        355
+      ],
+      "evidence_space": "system_crop",
+      "text": "Printed region 29 has the E-A figure in treble and no new clef glyph. The treble is the glyph locked at the right of region 28. The stale lock placed that glyph at region 29."
+    },
+    {
+      "physical_bar": 45,
+      "juan_named_as": null,
+      "staff": 2,
+      "page": 3,
+      "system": 12,
+      "crop_path": "source_crops/system_12.png",
+      "evidence_box_px": [
+        1092,
+        185,
+        1543,
+        355
+      ],
+      "evidence_space": "system_crop",
+      "text": "Printed region 45 has the E-A figure in treble and no new clef glyph. The treble is the glyph locked at the right of region 44. The stale lock placed that glyph at region 45."
+    }
+  ],
+  "juan_clef_repair": {
+    "named_regions": [
+      1,
+      2,
+      3,
+      8,
+      11,
+      12,
+      13,
+      18,
+      21,
+      27,
+      28,
+      43,
+      44
+    ],
+    "locked_named_regions": [
+      1,
+      2,
+      3,
+      8,
+      11,
+      12,
+      13,
+      18,
+      21,
+      27,
+      28,
+      43,
+      44
+    ],
+    "named_regions_with_no_printed_clef": [],
+    "stale_lock_ids_removed": [
+      4,
+      14,
+      15,
+      17,
+      29,
+      45
+    ],
+    "stale_off_by_one": {
+      "1": "stale placed the pickup treble at 2",
+      "2": "stale placed the bass at 3; the glyph sits at the right of 2",
+      "3": "stale placed the treble at 4; the glyph sits at the right of 3",
+      "11": "stale placed the p a tempo treble at 12",
+      "13": "stale placed the system-4 treble at 14",
+      "27": "stale placed the bass at 28",
+      "28": "stale placed the treble at 29; the glyph sits at the right of 28",
+      "43": "stale placed the bass at 44",
+      "44": "stale placed the treble at 45; the glyph sits at the right of 44"
+    },
+    "note_plain": "Each named region has one printed left-hand clef change or cautionary. The stale lock sat one region late on those glyphs and invented a bass at region 15 and a system-5 change at region 17. Opening treble and bass on system 1 are the starting clefs, not changes. 54 printed regions are unchanged."
+  }
+}

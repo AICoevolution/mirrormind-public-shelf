@@ -1,0 +1,9 @@
+{
+  "id": "ERRATUM-004",
+  "category": "provenance_error",
+  "scope": "Audit reporting only; no delivery XML changes",
+  "finding": "225 prepared ledger note records differ from candidate packets in logical voice and/or explicit accidental fields. Pitch provenance alternatives all trace, but the ledger is not fully exact for the assembled XML.",
+  "evidence": "ledger_candidate_consistency.json",
+  "correction": "Final event and mark ledgers regenerated directly from final XML. Full original candidate packets preserved; use them for raw candidate voice/accidental before-values.",
+  "human_outcome": null
+}

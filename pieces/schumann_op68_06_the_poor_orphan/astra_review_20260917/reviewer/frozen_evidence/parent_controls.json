@@ -1,0 +1,76 @@
+{
+  "schema": "openai_omr_eval.parent_exact_event_controls.v1",
+  "assessed_before_candidate_or_reviewer_verdict_exposure": true,
+  "assessed_before_source_candidate": true,
+  "revision": 1,
+  "selection": "Empty three-reader intersection; three print-only first/middle/last anchors assessed from system crops.",
+  "controls": [
+    {
+      "id": "control-1",
+      "printed_address": "P001, page 1 system 1",
+      "source_crop": "source_crops/system_01.png",
+      "event": {
+        "pitch": "A4",
+        "duration_q": "1/4",
+        "staff": 1,
+        "onset_q": "0",
+        "written_type": "sixteenth"
+      },
+      "reader_raw_numbers": {
+        "SmartScore": "unmapped",
+        "PlayScore": "unmapped",
+        "Audiveris": "unmapped"
+      },
+      "verdict": "pass",
+      "reason": "Print shows RH slurred A4 sixteenth to B4 sixteenth as the one-eighth pickup of P001 against a left-hand eighth rest, under piano, 2/4, no key signature, RH treble / LH bass.",
+      "uncalibrated_confidence": 0.92,
+      "human_outcome": null,
+      "origin": "print crop after empty three-reader intersection"
+    },
+    {
+      "id": "control-2",
+      "printed_address": "P017, page 1 system 3",
+      "source_crop": "source_crops/system_03.png",
+      "event": {
+        "pitch": "E5",
+        "duration_q": "2",
+        "staff": 1,
+        "onset_q": "0",
+        "written_type": "half"
+      },
+      "reader_raw_numbers": {
+        "SmartScore": "unmapped",
+        "PlayScore": "unmapped",
+        "Audiveris": "unmapped"
+      },
+      "verdict": "pass",
+      "reason": "Print shows RH E5 as the half note of P017, the fourth bar of system 3, under the slur, while the left hand is in treble after the P016/P017 G clef.",
+      "uncalibrated_confidence": 0.88,
+      "human_outcome": null,
+      "origin": "print crop after empty three-reader intersection"
+    },
+    {
+      "id": "control-3",
+      "printed_address": "P034, page 1 system 5",
+      "source_crop": "source_crops/system_05.png",
+      "event": {
+        "pitch": "A5",
+        "duration_q": "1",
+        "staff": 1,
+        "onset_q": "0",
+        "written_type": "quarter"
+      },
+      "reader_raw_numbers": {
+        "SmartScore": "unmapped",
+        "PlayScore": "unmapped",
+        "Audiveris": "unmapped"
+      },
+      "verdict": "pass",
+      "reason": "Print shows RH A5 with a sharp as the opening of P034, a three-eighth partial close of the fifth grand staff, under ritardando, closed by the thin-plus-thick final barline.",
+      "uncalibrated_confidence": 0.84,
+      "human_outcome": null,
+      "origin": "print crop after empty three-reader intersection"
+    }
+  ],
+  "scope": "Selected controls only; no whole-reader or whole-score certification."
+}

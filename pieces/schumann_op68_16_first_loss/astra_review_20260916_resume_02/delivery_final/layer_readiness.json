@@ -1,0 +1,46 @@
+{
+  "source_xml_sha256": "63cc3178aad27a1018fb3c448ce37bddab725cf00219586669ccd4d250cd98d6",
+  "status": "UNVERIFIED",
+  "primary_XML": {
+    "schema": "PASS",
+    "exact_frozen_events": "PASS",
+    "physical_capacities": "PASS",
+    "ScoreAnalyzer_independent_playback": "PASS:318 tie-merged event instances,96 quarters,51 visits",
+    "production_viewer_mapping_cursor": "PASS",
+    "visual_source_equivalence": "NOT_CERTIFIED; display limitations below",
+    "human_listening": null
+  },
+  "CORE": {
+    "export": "produced",
+    "standalone_rebuild": "NOT_LOSSLESS: timing/sounding/marks comparisons fail",
+    "actual_apply": "FAIL",
+    "error": "SepApplyError: CORE cannot preserve unsupported notation in Measure 11, Measure 12, Measure 13, Measure 28, Measure 29, Measure 3, Measure 30, Measure 4, Measure 5 -- nothing was applied",
+    "topology": "Expected five coordinates present but music21 flattened-measure fallback changes line membership; see voice_topology.json",
+    "ready": false
+  },
+  "MARKS": {
+    "export": "produced",
+    "rebuild_actual_apply": "FAIL",
+    "error": "SepMarksError: REFUSED — this edit would leave dangling span(s): ('slur-unclosed', 0, '1', '9'); ('slur-orphan-stop', 0, '1', '11'). State both ends (or neither). To DELETE a span, state BOTH its measures — a bare 'Measure N -> clear' on the other end is enough.",
+    "ready": false
+  },
+  "ROUTE": {
+    "export_rebuild_actual_apply": "PASS for semantic marks, directions, event timing and sounding; export fixpoint passes",
+    "raw_XML_equality": false,
+    "raw_difference": "Whitespace-only formatting of two repeat barlines; normalized attributes/styles/directions equal",
+    "ready_for_tested_semantics": true
+  },
+  "overall_gate": {
+    "passed": false,
+    "failed_flags": [
+      "core_stage_error",
+      "marks_stage_error"
+    ],
+    "diagnostic_exit_policy": "This verifier records all failed flags in report.json; nonzero process exit is reserved for an invalid invocation or source mutation during the run."
+  },
+  "human_outcomes": {
+    "visual": null,
+    "ear": null,
+    "structure": null
+  }
+}

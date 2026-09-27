@@ -1,0 +1,52 @@
+{
+  "source_xml_sha256": "63cc3178aad27a1018fb3c448ce37bddab725cf00219586669ccd4d250cd98d6",
+  "locations": [
+    {
+      "bars": [
+        1
+      ],
+      "staff": "upper",
+      "reason": "Opening Moderato and metronome crowd in installed viewer; encoded quarter=88 is correct, consumer playback uses80."
+    },
+    {
+      "bars": [
+        9,
+        10,
+        11
+      ],
+      "staff": "upper",
+      "reason": "MARKS exporter/apply reports dangling phrase slur9→11 although both endpoints are encoded; verify phrase through next-system boundary."
+    },
+    {
+      "bars": [
+        17,
+        18,
+        34
+      ],
+      "staff": "both",
+      "reason": "Verify repaired forward-only boundary before18 and backward after34, with pickups/partial closes; source route is1–34 then18–34."
+    },
+    {
+      "bars": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "staff": "both",
+      "reason": "Repaired22 clef at3/2; verify24 B3 dotted-quarter against separate half-note bass and26 overlapping lines. Viewer omits the long23→27 cross-staff slur and connected cross-staff beam26, and does not clearly display the25→26 bass tie. XML endpoints and sounding ties pass exact checks."
+    },
+    {
+      "bars": [
+        32,
+        33,
+        34
+      ],
+      "staff": "both",
+      "reason": "Confirm restored final32 chord C#4/E4/G4, lower A2→A#2, closing G3/B3/E4 chord and bass tie33→34."
+    }
+  ],
+  "human_outcome": null
+}

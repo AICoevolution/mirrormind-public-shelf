@@ -1,0 +1,498 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_06_the_poor_orphan",
+  "revision": 7,
+  "authority": "print_only",
+  "source_pdf_sha256": "26da2762c28d507b87efe47c31de95c13704db9d82e2e82296304b1b2f5a0a3a",
+  "page_image_sha256": {
+    "page-1": "7102ef9a4ef5d31edf5e79bae8d46abf37b7bdb6517eeb52c12ccf7e528fe846"
+  },
+  "printed_meter": "2/4 at the opening on both staves; only staff meter glyph",
+  "physical_bar_count": 34,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "print_plain": "Right hand: slurred A4 sixteenth to B4 sixteenth (double beam; A4 on the second space, B4 on the middle line). Left hand: eighth rest. Capacity one eighth.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png"
+    },
+    {
+      "physical_bar": 9,
+      "capacity_q": "3/2",
+      "kind": "partial three eighths",
+      "flags": [
+        "PARTIAL",
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "physical_bar": 10,
+      "capacity_q": "1/2",
+      "kind": "partial one eighth",
+      "flags": [
+        "PARTIAL"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "physical_bar": 34,
+      "capacity_q": "3/2",
+      "kind": "partial three eighths",
+      "flags": [
+        "PARTIAL",
+        "FINAL_BARLINE"
+      ],
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P009+P010",
+      "capacities_q": [
+        "3/2",
+        "1/2"
+      ],
+      "sum_q": "2",
+      "result": "one_2_4_split_by_section_double_bar",
+      "evidence": "P009 is three eighths (capacity 3/2) before the thin-thin section double bar. P010 is one eighth (capacity 1/2) after it, printed as two sixteenths. Together they make one 2/4 bar split by the double bar. No repeat dots."
+    },
+    {
+      "pair": "P001+P034",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "result": "one_2_4_completed_by_pickup_and_terminal",
+      "evidence": "P001 is an opening one-eighth pickup (capacity 1/2): slurred A4 sixteenth to B4 sixteenth against a left-hand eighth rest. P034 is a three-eighth partial (capacity 3/2) before the thin-plus-thick final barline. One eighth plus three eighths complete one 2/4 bar."
+    }
+  ],
+  "repeats": [],
+  "repeat_boundary_checks": [
+    {
+      "kind": "section_double",
+      "after_physical_bar": 9,
+      "result": "not_a_repeat",
+      "evidence": "System 2 after P009 has a thin-thin double barline at x=725 and then mf. No repeat dots to the left or right on either staff.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "kind": "final_double",
+      "after_physical_bar": 34,
+      "result": "not_a_repeat",
+      "evidence": "System 5 P034 ends with a thin-plus-thick final barline and no repeat dots (measured thick column x 1544).",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          108,
+          86,
+          176,
+          176
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of the 2/4 glyph and the pickup slurred A4-to-B4 sixteenths."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          108,
+          228,
+          176,
+          318
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of the 2/4 glyph and the pickup eighth rest."
+      }
+    },
+    "changes": [
+      {
+        "physical_bar": 3,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the P003/P004 barline. Glyph sits immediately left of the barline at x=861 on system_01.png. P003 upper staff: three eighths A4+C5, then B4+D5, then C5+E5, then one more eighth-beat written as a dotted sixteenth E5 plus a thirty-second F5; not a half note; not E5+G5 then D5+F5 (those belong to P004). P003 lower staff, still in bass until the closing clef: three eighths A3+E4, then G3+G4, then C4+G4, then an eighth rest, then the treble-clef change. P004 upper staff: two eighths E5+G5, then D5+F5. First governed event is the left-hand C4 (one ledger below the staff) and C5 at the start of P004, printed in treble.",
+        "previous_event_plain": "The left-hand eighth rest of P003, after the three eighths A3+E4, G3+G4, and C4+G4, immediately before the treble-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 (one ledger below the staff) and C5 at the start of P004, printed in treble",
+        "p003_upper_plain": "three eighths A4+C5, then B4+D5, then C5+E5, then one more eighth-beat written as a dotted sixteenth E5 plus a thirty-second F5",
+        "p004_upper_plain": "two eighths E5+G5, then D5+F5",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          798,
+          228,
+          868,
+          318
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 5,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass at the P005/P006 barline. Glyph sits after the P005 left-hand C-sharp4 and E4 dyad and eighth rest on system_01.png, immediately left of the barline at x=1266. First governed event is the left-hand C4 and E4 at the start of P006, printed in bass.",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          1198,
+          228,
+          1272,
+          318
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P005, after the C-sharp4 and E4 dyad, immediately before the bass-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 and E4 at the start of P006, printed in bass"
+      },
+      {
+        "physical_bar": 7,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the P007/P008 barline. Glyph sits after the P007 left-hand eighth rest on system_02.png, immediately left of the barline at x=335. First governed event is the left-hand C4 (one ledger below the staff) and C5 at the start of P008, printed in treble.",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "evidence_box_px": [
+          280,
+          228,
+          338,
+          328
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P007, immediately before the treble-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 (one ledger below the staff) and C5 at the start of P008, printed in treble"
+      },
+      {
+        "physical_bar": 9,
+        "staff": 2,
+        "onset_q": "3/2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass at the P009/P010 section double bar. Glyph sits immediately left of the thin-thin double barline at x=725 on system_02.png. P009 is a three-eighth partial; P010 is a one-eighth partial (two printed sixteenths). First governed event is the left-hand bass of P010 after the double bar. No repeat dots.",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "evidence_box_px": [
+          668,
+          236,
+          738,
+          328
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 16,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the P016/P017 barline. Glyph sits after the P016 eighth rest on system_03.png, immediately left of the barline at x=750. First governed event is the left-hand C4 (one ledger below the staff) and C5 at the start of P017, printed in treble.",
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "evidence_box_px": [
+          688,
+          238,
+          758,
+          328
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P016, immediately before the treble-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 (one ledger below the staff) and C5 at the start of P017, printed in treble"
+      },
+      {
+        "physical_bar": 18,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass at the P018/P019 barline. Glyph sits after the P018 left-hand C-sharp4 and E4 dyad and eighth rest on system_03.png, immediately left of the barline at x=1093. First governed event is the left-hand C4 and E4 at the start of P019, printed in bass.",
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "evidence_box_px": [
+          1048,
+          238,
+          1093,
+          328
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P018, after the C-sharp4 and E4 dyad, immediately before the bass-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 and E4 at the start of P019, printed in bass"
+      },
+      {
+        "physical_bar": 20,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble cautionary at the right end of P020 on system_03.png, immediately left of the system barline at x=1552. First governed event is the left-hand treble opening of P021; system 4 reprints G and is not an additional change.",
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "evidence_box_px": [
+          1488,
+          238,
+          1560,
+          328
+        ],
+        "evidence_space": "system_crop"
+      },
+      {
+        "physical_bar": 22,
+        "staff": 2,
+        "onset_q": "3/2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass before the last eighth of P022. Glyph is the F-clef on system_04.png immediately after the left-hand A3+C4 eighth (C4 on the ledger below the treble staff) and immediately before that last eighth, which is written as two sixteenths E3 then F-sharp3. Lower staff remains treble until the glyph: two sixteenths E4 then D4, then the A3+C4 eighth, then the bass-clef glyph, then sixteenths E3 then F-sharp3. Not a single B3; not G3+B3; not an E4 quarter plus E4+D4 dotted eighth. Upper first quarter: dotted eighth C-sharp5+E5 beamed to a sixteenth A4+C5; then an eighth; last eighth two sixteenth dyads after mf. First governed event is those two sixteenths E3 then F-sharp3 inside P022, after the glyph and before the right barline at x=527. glyph_region and effective_region are both P022. Placement MID_REGION.",
+        "page": 1,
+        "system": 4,
+        "crop_path": "source_crops/system_04.png",
+        "evidence_box_px": [
+          398,
+          228,
+          452,
+          322
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand A3+C4 eighth immediately before the bass-clef glyph",
+        "first_event_under_new_clef_plain": "The two sixteenths E3 then F-sharp3 inside P022, after the bass-clef glyph and before the right barline",
+        "placement": "MID_REGION",
+        "glyph_region": "P022",
+        "effective_region": "P022"
+      },
+      {
+        "physical_bar": 28,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the P028/P029 barline. Glyph sits after the P028 left-hand eighth rest on system_05.png, immediately left of the barline at x=339. First governed event is the left-hand C4 (one ledger below the staff) and C5 at the start of P029, printed in treble.",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "evidence_box_px": [
+          278,
+          238,
+          348,
+          330
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P028, immediately before the treble-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 (one ledger below the staff) and C5 at the start of P029, printed in treble"
+      },
+      {
+        "physical_bar": 30,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass at the P030/P031 barline. Glyph sits after the P030 left-hand C-sharp4 and E4 dyad and eighth rest on system_05.png, immediately left of the barline at x=699. First governed event is the left-hand C4 and E4 at the start of P031, printed in bass. P029 and P030 remain in treble; x=522 has no bass-clef glyph.",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "evidence_box_px": [
+          650,
+          228,
+          710,
+          330
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P030, after the C-sharp4 and E4 dyad, immediately before the bass-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 and E4 at the start of P031, printed in bass"
+      },
+      {
+        "physical_bar": 32,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the P032/P033 barline. Glyph sits immediately left of the barline at x=1166 on system_05.png. First governed event is the left-hand C4 (one ledger below the staff) and C5 at the start of P033, printed in treble, not the P034 ritardando. x=1344 has no treble-clef glyph.",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "evidence_box_px": [
+          1100,
+          228,
+          1166,
+          330
+        ],
+        "evidence_space": "system_crop",
+        "previous_event_plain": "The left-hand eighth rest of P032, immediately before the treble-clef glyph",
+        "first_event_under_new_clef_plain": "The left-hand C4 (one ledger below the staff) and C5 at the start of P033, printed in treble"
+      }
+    ],
+    "printed_change_count": 11,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        380
+      ],
+      "barline_boundaries_x_px": [
+        117,
+        313,
+        587,
+        861,
+        1062,
+        1266,
+        1549
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        13
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        380,
+        770
+      ],
+      "barline_boundaries_x_px": [
+        39,
+        335,
+        527,
+        725,
+        843,
+        1059,
+        1311,
+        1551
+      ],
+      "printed_region_count": 7,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        14,
+        20
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        770,
+        1156
+      ],
+      "barline_boundaries_x_px": [
+        40,
+        329,
+        543,
+        750,
+        914,
+        1093,
+        1319,
+        1552
+      ],
+      "printed_region_count": 7,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        21,
+        27
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1156,
+        1544
+      ],
+      "barline_boundaries_x_px": [
+        39,
+        272,
+        527,
+        719,
+        957,
+        1155,
+        1356,
+        1551
+      ],
+      "printed_region_count": 7,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        28,
+        34
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1544,
+        1930
+      ],
+      "barline_boundaries_x_px": [
+        40,
+        339,
+        522,
+        699,
+        934,
+        1166,
+        1344,
+        1544
+      ],
+      "printed_region_count": 7,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Printed meter is 2/4 throughout; no common-time or 6/8 glyph",
+    "No printed key signature at the opening or later system starts; system-3 left sharps are first-chord accidentals",
+    "Five complete grand staves 6+7+7+7+7 = 34 regions",
+    "P001 is a one-eighth pickup; P009 is a three-eighth partial; P010 is a one-eighth partial; P034 is a three-eighth partial close; P001 plus P034 complete one 2/4 bar",
+    "Section double bar after P009 has no repeat dots",
+    "Eleven LH clef-change glyphs including the system-3 cautionary G",
+    "System-start clef reprints are not additional changes",
+    "Page outermost musical ink stays inside the white margin; plate 41459 is footer ink",
+    "Frame revision 2: P007 and P022 evidence boxes moved onto the printed glyphs; system-5 bass return readdressed to P030/P031; last treble return readdressed to P032/P033"
+  ]
+}

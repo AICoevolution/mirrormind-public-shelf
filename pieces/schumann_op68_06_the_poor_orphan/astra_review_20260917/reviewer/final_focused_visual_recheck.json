@@ -1,0 +1,99 @@
+{
+  "xml_sha256": "aea54d6fa40a7276f992916b175d52ef52f5a69c52c9b96fc71390345f4bf578",
+  "render": "render_checks/final_v3/complete_measure.png",
+  "source": "reviewer/frozen_evidence/source_crops/page-1.png",
+  "all_34_bars_rechecked": true,
+  "changed_contexts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "connected_spans_rechecked": true,
+  "findings": [
+    {
+      "id": "H1",
+      "page": 1,
+      "bars": [
+        8,
+        9,
+        21,
+        22,
+        33,
+        34
+      ],
+      "staff": "both",
+      "reason": "Cross-staff inner-line beams at8/21/33 and slurs8->9,21->22,33->34 are preserved in XML but not drawn by installed OSMD/VexFlow. Check the source and XML in a renderer supporting cross-staff notation. Confirm the shared A4 cadence head/two stems and overlapping lower E4 durations.",
+      "human_outcome": null
+    },
+    {
+      "id": "H2",
+      "page": 1,
+      "bars": [
+        29,
+        33,
+        34
+      ],
+      "staff": "between",
+      "reason": "Diminuendo endpoints are graphical between attacks:29 end1.75;33 start1.75 to34:1. Rit33 anchored1. Hairpins elsewhere similarly quantized to nearest supported attacks.",
+      "human_outcome": null
+    },
+    {
+      "id": "H3",
+      "page": 1,
+      "bars": [
+        13,
+        25,
+        33
+      ],
+      "staff": 2,
+      "reason": "Printed rit. is associated with lower-staff area; installed renderer lifts the words above the upper staff. XML staff2 assignment is preserved. Analyzer uses fixed quarter80, not printed quarter44 or expressive ritardando.",
+      "human_outcome": null
+    }
+  ],
+  "corrections_frozen_before_application": [
+    "ERRATUM-002",
+    "ERRATUM-003"
+  ],
+  "confirmed": [
+    "All notes and rhythms including 3/7 dotted16th+32nd, other analogous16ths",
+    "All11 lower clef changes; section boundary F4 now visibly at end9 via equivalent start10 encoding",
+    "Quarter-chord upper8/21/33, crossstaff A4 placement and independent cadences",
+    "Lower ties14/26, short-sixteenth slurs, long upper and lower slurs; crossstaff missing SVG explicitly limited",
+    "Portato dots at11/23 corrected above; courtesy G# signs14/26 preserved in XML",
+    "p/mf/pp, metronome eighth88, a tempo, rit, all16 hairpins, section/final barlines",
+    "No false grace, tuplets, repeats, pedal, accents, tenutos or phantom lanes"
+  ],
+  "status": "COMPLETE_WITH_DISCLOSED_RENDERING_LIMITATIONS",
+  "human_outcome": null
+}

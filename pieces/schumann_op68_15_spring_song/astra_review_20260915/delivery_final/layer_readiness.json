@@ -1,0 +1,63 @@
+{
+  "source_xml_sha256": "53679c647a769094b9491ce40c1a7ed9c5d3ff84bfb70ec7ad737d8dac17c050",
+  "status": "UNVERIFIED",
+  "XML": "Schema, duration, independent playback, import, production mapping and cursor PASS; human verification pending",
+  "CORE": {
+    "export": "produced",
+    "rebuild": "produced; see supplemental comparison",
+    "actual_apply": "FAIL",
+    "error": "SepApplyError: CORE cannot preserve unsupported notation in Measure 11, Measure 15, Measure 27, Measure 3, Measure 31, Measure 7 -- nothing was applied",
+    "lossless_ready": false
+  },
+  "MARKS": {
+    "export": "produced",
+    "rebuild_actual_apply": "FAIL",
+    "error": "SepMarksError: REFUSED — this edit would leave dangling span(s): ('slur-unclosed', 0, '2', '23'); ('slur-orphan-stop', 0, '2', '26'); ('slur-unclosed', 0, '2', '39'); ('slur-orphan-stop', 0, '2', '42'). State both ends (or neither). To DELETE a span, state BOTH its measures — a bare 'Measure N -> clear' on the other end is enough.",
+    "lossless_ready": false
+  },
+  "ROUTE": {
+    "export_rebuild_actual_apply": "PASS",
+    "lossless_for_tested_semantics": true,
+    "report": {
+      "written_event_timing_equal": true,
+      "pitched_event_timing_equal": true,
+      "tie_merged_sounding_equal": true,
+      "written_missing": [],
+      "written_unexpected": [],
+      "pitched_missing": [],
+      "pitched_unexpected": [],
+      "logical_staff_written_event_timing_equal": true,
+      "logical_staff_pitched_event_timing_equal": true,
+      "logical_staff_written_missing": [],
+      "logical_staff_written_unexpected": [],
+      "logical_staff_pitched_missing": [],
+      "logical_staff_pitched_unexpected": [],
+      "sounding_missing": [],
+      "sounding_unexpected": [],
+      "raw_mark_style_span_equal": true,
+      "raw_mark_style_span_missing": [],
+      "raw_mark_style_span_unexpected": [],
+      "semantic_mark_style_span_equal": true,
+      "semantic_mark_style_span_missing": [],
+      "semantic_mark_style_span_unexpected": [],
+      "semantic_directions_absolute_onset_equal": true,
+      "semantic_directions_absolute_onset_missing": [],
+      "semantic_directions_absolute_onset_unexpected": [],
+      "candidate_schedule_issues": [],
+      "export_text_fixpoint": true
+    }
+  },
+  "overall_technical_gate": {
+    "passed": false,
+    "failed_flags": [
+      "core_stage_error",
+      "marks_stage_error"
+    ],
+    "diagnostic_exit_policy": "This verifier records all failed flags in report.json; nonzero process exit is reserved for an invalid invocation or source mutation during the run."
+  },
+  "human_outcomes": {
+    "visual": null,
+    "ear": null,
+    "structure": null
+  }
+}

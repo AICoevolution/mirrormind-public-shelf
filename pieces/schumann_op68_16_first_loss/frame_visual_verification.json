@@ -1,0 +1,253 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_16_first_loss",
+  "revision": 6,
+  "authority": "print_only",
+  "source_pdf_sha256": "73015cbb5fc444b35c471f4c8bd1753f297a3e534f5483eecb23489220f86f48",
+  "page_image_sha256": {
+    "page-1": "47d69b2f0d7642b203a77d4b3f55cecd165feddbf67168b1f98396b27636e117"
+  },
+  "printed_meter": "2/4 throughout",
+  "physical_bar_count": 34,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png"
+    },
+    {
+      "physical_bar": 17,
+      "capacity_q": "3/2",
+      "kind": "incomplete close before forward repeat",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "physical_bar": 18,
+      "capacity_q": "1/2",
+      "kind": "pickup after forward repeat",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "physical_bar": 34,
+      "capacity_q": "3/2",
+      "kind": "incomplete final close",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P017",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "result": "pass",
+      "not_a_strain_repeat": true,
+      "evidence": "P001 is the opening eighth-note E pickup on system 1. P017 is an incomplete close on system 3: E quarter plus eighth rest before a forward-repeat barline. Complementary length fills one 2/4 bar. This is not an unprinted first-strain backward repeat.",
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "pair": "P018+P034",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "result": "pass",
+      "evidence": "P018 is an eighth-note pickup after the forward-repeat barline on system 3. P034 is the incomplete final close on system 5: right hand a quarter chord plus an eighth rest, left hand three eighths, then a backward repeat returning to P018. 1/2 + 3/2 equals the printed 2/4 bar.",
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "repeats": [
+    {
+      "before_physical_bar": 18,
+      "kind": "forward",
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "Thick-thin barline before P018 with repeat dots to the right only on both staves. No dots to the left. Forward repeat begins P018."
+    },
+    {
+      "after_physical_bar": 34,
+      "kind": "backward",
+      "system": 5,
+      "page": 1,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "Backward-repeat dots plus thick-thin close after P034."
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4
+      }
+    },
+    "changes": [
+      {
+        "physical_bar": 3,
+        "staff": 2,
+        "onset_q": "0",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the start of P003, immediately after the barline following P002; first governed event is the first left-hand note of P003",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png"
+      },
+      {
+        "physical_bar": 7,
+        "staff": 2,
+        "onset_q": "0",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass at the start of P007, after the opening eighth rest and before the D-sharp to F-sharp",
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png"
+      },
+      {
+        "physical_bar": 10,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble at the P010/P011 barline, addressed as the close of P010; first governed event is the left-hand rest of P011",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png"
+      },
+      {
+        "physical_bar": 14,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass cautionary at the right end of P014, before the system barline",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png"
+      },
+      {
+        "physical_bar": 22,
+        "staff": 2,
+        "onset_q": "3/2",
+        "sign": "G",
+        "line": 2,
+        "region": "LH bass to treble inside P022 after the third left-hand eighth and immediately before the fourth flagged eighth",
+        "page": 1,
+        "system": 4,
+        "crop_path": "source_crops/system_04.png"
+      },
+      {
+        "physical_bar": 30,
+        "staff": 2,
+        "onset_q": "2",
+        "sign": "F",
+        "line": 4,
+        "region": "LH treble to bass at the P030/P031 barline, addressed as the close of P030; first governed event is the forte dyads of P031",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png"
+      }
+    ]
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        7
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        374
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        8,
+        14
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        402,
+        737
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        15,
+        21
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        784,
+        1129
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        22,
+        27
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1165,
+        1555
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        28,
+        34
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1589,
+        1902
+      ]
+    }
+  ],
+  "verified_repairs": [
+    "System 3 has seven printed regions including a forward-repeat pickup at P018",
+    "P017/P018 barline is forward only: dots to the right, none to the left",
+    "Backward repeat after P034 returns to P018; printed route P001-P034 then P018-P034",
+    "Physical layout is 7+7+7+6+7 = 34",
+    "P001+P017 complete one 2/4 bar by complementary length only, not as a strain repeat",
+    "P018+P034 complete one 2/4 bar",
+    "Staff-2 treble inside P022 after three bass-clef eighths, onset 3/2",
+    "Staff-2 treble at the start of P003 and at the close of P010; P007, P014, and P030 kept"
+  ],
+  "source_route": {
+    "written_order": "P001-P034",
+    "playback": "P001-P034 then P018-P034",
+    "physical_visits": 51,
+    "quarters": "96",
+    "note": "Forward repeat begins P018. Backward repeat closes P034 and returns to P018. No backward repeat after P017."
+  }
+}

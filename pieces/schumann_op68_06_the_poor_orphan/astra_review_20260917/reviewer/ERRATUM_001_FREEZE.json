@@ -1,0 +1,7 @@
+{
+  "id": "ERRATUM-001",
+  "reason": "CORE consumer flattens monophonic lower measures to voice1 while retaining voice3 in polyphonic measures, creating an unjustified bass fragment. Safe global staff2 voice3->1 removes this consumer representation artifact. Upper staff voice1 remains a separate principal line; cross-staff voice2 remains one line. No pitch/rhythm/staff changes.",
+  "operation": "Map: s2v3>1",
+  "before_sha256": "06642ac3cb2cb08b15768dbda32587df67fe6fb104a0e23c9b4bb9f22a57aa58",
+  "human_outcome": null
+}

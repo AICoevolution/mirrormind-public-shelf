@@ -1,0 +1,233 @@
+{
+  "preflight": {
+    "census": [
+      {
+        "part": "P1",
+        "staff": "1",
+        "voice": "1",
+        "notes": 196,
+        "measures": 33
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "voice": "5",
+        "notes": 7,
+        "measures": 1
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "voice": "2",
+        "notes": 6,
+        "measures": 4
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "voice": "6",
+        "notes": 2,
+        "measures": 1
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "3",
+        "notes": 89,
+        "measures": 24
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "15",
+        "notes": 53,
+        "measures": 9
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "4",
+        "notes": 31,
+        "measures": 13
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "16",
+        "notes": 12,
+        "measures": 6
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "17",
+        "notes": 1,
+        "measures": 1
+      }
+    ],
+    "merges": [
+      {
+        "part": "P1",
+        "staff": "2",
+        "src": "17",
+        "dst": "3",
+        "notes": 1,
+        "collisions": [],
+        "safe": true,
+        "label": "v17 → v3 (staff 2)"
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "src": "6",
+        "dst": "1",
+        "notes": 2,
+        "collisions": [],
+        "safe": true,
+        "label": "v6 → v1 (staff 1)"
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "src": "5",
+        "dst": "1",
+        "notes": 7,
+        "collisions": [],
+        "safe": true,
+        "label": "v5 → v1 (staff 1)"
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "src": "16",
+        "dst": "3",
+        "notes": 12,
+        "collisions": [],
+        "safe": true,
+        "label": "v16 → v3 (staff 2)"
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "src": "2",
+        "dst": "1",
+        "notes": 6,
+        "collisions": [
+          [
+            9,
+            0
+          ],
+          [
+            9,
+            48
+          ],
+          [
+            19,
+            0
+          ],
+          [
+            31,
+            0
+          ],
+          [
+            34,
+            0
+          ],
+          [
+            34,
+            48
+          ]
+        ],
+        "safe": false,
+        "label": "v2 → v1 (staff 1)"
+      }
+    ],
+    "overflows": [],
+    "voice_columns_before": 9,
+    "voice_columns_mechanical": 5,
+    "voice_columns_after": 4,
+    "blockers": [],
+    "needs_judgement": [
+      "measure 9",
+      "measure 19",
+      "measure 31",
+      "measure 34"
+    ],
+    "summary": "9 voice columns -> 5 mechanically -> 4 once resolved; 4 merge(s) need nobody, 1 have overlaps; 0 over-full bar(s); 4 bar(s) need a musician"
+  },
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [
+      {
+        "part": "P1",
+        "measure": "m1",
+        "missing_quarters": 1.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "partner": "m34"
+      },
+      {
+        "part": "P1",
+        "measure": "m9",
+        "missing_quarters": 0.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "partner": "m10"
+      },
+      {
+        "part": "P1",
+        "measure": "m10",
+        "missing_quarters": 1.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "partner": "m9"
+      },
+      {
+        "part": "P1",
+        "measure": "m34",
+        "missing_quarters": 0.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "partner": "m1"
+      }
+    ],
+    "cursor_slips": [],
+    "first_slip_measure": null,
+    "notes": [
+      "m1 is short by 1.5, and m34 holds exactly the rest of it — one bar split in two, and normal.",
+      "m9 is short by 0.5, and m10 holds exactly the rest of it — one bar split in two, and normal.",
+      "m10 is short by 1.5, and m9 holds exactly the rest of it — one bar split in two, and normal.",
+      "m34 is short by 0.5, and m1 holds exactly the rest of it — one bar split in two, and normal."
+    ]
+  },
+  "engraving": {
+    "findings": [
+      {
+        "check": "voice-phantom",
+        "severity": "odd",
+        "where": "m22",
+        "what": "voice 6 exists only in this bar (2 notes) and overlaps the main line",
+        "why": "voice 1 already sounds at 0, 1 in this bar — so the reader believed two things sound here. That is a page question, not a formatting one: same pitch and onset with a different duration is also how a SHARED NOTEHEAD looks. Nothing is folded"
+      },
+      {
+        "check": "voice-spray",
+        "severity": "odd",
+        "where": "m22",
+        "what": "voice 5 exists only in this bar (7 notes), staff 1",
+        "why": "it never overlaps voice 1, this staff's line everywhere else, so it folds into it by proof — 'Engraving: repair' does it, labels only"
+      },
+      {
+        "check": "voice-spray",
+        "severity": "odd",
+        "where": "m7",
+        "what": "voice 17 exists only in this bar (1 note), staff 2",
+        "why": "it never overlaps voice 3, this staff's line everywhere else, so it folds into it by proof — 'Engraving: repair' does it, labels only"
+      }
+    ],
+    "clean": false,
+    "counts": {
+      "odd": 3
+    }
+  }
+}

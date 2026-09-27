@@ -1,0 +1,589 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "schumann_op68_15_spring_song",
+  "edition_id": "schumann_op68_source_890574",
+  "created_utc": "2026-09-14T11:33:21.402045+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, meter/key/clef transition and crop boundary.",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "6938c0e5e7479361387870cadb78e5e2c5ce3059621a87d3900f729593cb1c43"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "99ebd171dd15613539ea039a4bb873bbea74a26a9f441c648cb334adbebc1043"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "8844646c9727a6f05e4cc63c18e1347a391b2bc0342ca2d44584b4b2dea0ad2b"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "330de66cef5c3fed2f1f4b9b0158e3ae860b01e587aea7ad82ce1046f422349f"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "45b2536fc95efcd9a479052885eb47811253f8b63f6ed867863179ca9585afb4"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "bf3ca337f5cc0f0408d64333d8a0bfb338ba6e23254eb3abf4ceb52e61101f17"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "ed34f25718b0ae73023087a44c8dbc467079fcbabb56e7b9fd949537b262044c"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "44a1f8510bd1a6396c8ea2d22fa887a04ad7416120e07d6507be29e9fc1b45b5"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "9b6e0481f3f25ef072fe9571fd33c41eaac18f773ee754621cc5429944037d65"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "453a26916e71ec77b338830b384746fe963a8fa168243fac2f7f1aa9fe336aaa",
+      "width": 1570,
+      "height": 1895
+    },
+    {
+      "page": 2,
+      "path": "source_crops/page-2.png",
+      "sha256": "87a6c4c101f7c57d55da84b4c2247d4bee1933121a25a9ad1cbddb009d74547e",
+      "width": 1566,
+      "height": 1927
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 46,
+    "printed_meter": {
+      "beats": 6,
+      "beat_type": 8,
+      "printed_glyph": "6/8"
+    },
+    "key": {
+      "fifths": 4,
+      "mode": null,
+      "label": "four sharps printed (E / C-sharp minor)"
+    },
+    "pickup_or_partial_bars": [],
+    "repeat_boundaries": [],
+    "clefs": {
+      "open": {
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        }
+      },
+      "changes": [
+        {
+          "physical_bar": 17,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "G",
+          "line": 2,
+          "region": "LH to treble at the start of the mf bar ending system 4",
+          "page": 1,
+          "system": 4,
+          "crop_path": "source_crops/system_04.png"
+        },
+        {
+          "physical_bar": 18,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "G",
+          "line": 2,
+          "region": "LH remains treble as the printed system-5 clef",
+          "page": 1,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png"
+        },
+        {
+          "physical_bar": 22,
+          "staff": 2,
+          "onset_q": "3",
+          "sign": "F",
+          "line": 4,
+          "region": "LH bass cautionary at the right of system 5",
+          "page": 1,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png"
+        },
+        {
+          "physical_bar": 23,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "F",
+          "line": 4,
+          "region": "LH remains bass as the printed system-6 / page-2 opening clef",
+          "page": 2,
+          "system": 6,
+          "crop_path": "source_crops/system_06.png"
+        },
+        {
+          "physical_bar": 32,
+          "staff": 2,
+          "onset_q": "3",
+          "sign": "G",
+          "line": 2,
+          "region": "LH treble cautionary at the right of system 7",
+          "page": 2,
+          "system": 7,
+          "crop_path": "source_crops/system_07.png"
+        },
+        {
+          "physical_bar": 33,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "G",
+          "line": 2,
+          "region": "LH remains treble as the printed system-8 clef",
+          "page": 2,
+          "system": 8,
+          "crop_path": "source_crops/system_08.png"
+        },
+        {
+          "physical_bar": 39,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "F",
+          "line": 4,
+          "region": "LH bass at the start of the third region of system 9",
+          "page": 2,
+          "system": 9,
+          "crop_path": "source_crops/system_09.png"
+        }
+      ]
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          4
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "7de6eaf58f214304b0dd2979efdbbe92bc9886b8f237752432cee458e517136e",
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          5,
+          8
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "9e7969524313413b31969cc568975534485814956566eb2ddaacd48abfbf59bd",
+        "proposed_regions": [
+          {
+            "id": "P005",
+            "index": 5,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P006",
+            "index": 6,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P007",
+            "index": 7,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          9,
+          12
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "29b810bbab75555635cd0805ff151d08d75667a7a742f0167aa6ac81fbe2defb",
+        "proposed_regions": [
+          {
+            "id": "P009",
+            "index": 9,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P010",
+            "index": 10,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P011",
+            "index": 11,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          13,
+          17
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "0ffca6733cb967a97c194b2657bccf8195a91a9ecae1044fc9cccd5d169fd190",
+        "proposed_regions": [
+          {
+            "id": "P013",
+            "index": 13,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P014",
+            "index": 14,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P015",
+            "index": 15,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P016",
+            "index": 16,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P017",
+            "index": 17,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "physical_range": [
+          18,
+          22
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_05.png",
+        "crop_sha256": "fef7ca8924da9a13dcf7be3a0bc5a3b7cf68d9dcb29ad7bf9dc541445958e723",
+        "proposed_regions": [
+          {
+            "id": "P018",
+            "index": 18,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P019",
+            "index": 19,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P020",
+            "index": 20,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P021",
+            "index": 21,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P022",
+            "index": 22,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 6,
+        "page": 2,
+        "physical_range": [
+          23,
+          27
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_06.png",
+        "crop_sha256": "b738fd9b3484c2ef0fcdb43c3f30590426323eb6ad65daa553d520e6f6c5726f",
+        "proposed_regions": [
+          {
+            "id": "P023",
+            "index": 23,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P024",
+            "index": 24,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P025",
+            "index": 25,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P026",
+            "index": 26,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P027",
+            "index": 27,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "physical_range": [
+          28,
+          32
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_07.png",
+        "crop_sha256": "bfbb568359db34e4a82a706af1c3e948c4e37ad32873efc41611990b62179b1c",
+        "proposed_regions": [
+          {
+            "id": "P028",
+            "index": 28,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P029",
+            "index": 29,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P030",
+            "index": 30,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P031",
+            "index": 31,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P032",
+            "index": 32,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "physical_range": [
+          33,
+          36
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_08.png",
+        "crop_sha256": "5e774080a7194f47c9b596192c298bbbc86a47f31e320f5cdf262d322cc6b306",
+        "proposed_regions": [
+          {
+            "id": "P033",
+            "index": 33,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P034",
+            "index": 34,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P035",
+            "index": 35,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P036",
+            "index": 36,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "physical_range": [
+          37,
+          41
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_09.png",
+        "crop_sha256": "eb7715e4577117949f88a3e66f992deae437f1ab942b9a2e76d1c860a70f7b11",
+        "proposed_regions": [
+          {
+            "id": "P037",
+            "index": 37,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P038",
+            "index": 38,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P039",
+            "index": 39,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P040",
+            "index": 40,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P041",
+            "index": 41,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 10,
+        "page": 2,
+        "physical_range": [
+          42,
+          46
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_10.png",
+        "crop_sha256": "f859efbb3aab4771abd97bfe6b5c62d0e8b6f2acccfecea3d50695b830fd3d3d",
+        "proposed_regions": [
+          {
+            "id": "P042",
+            "index": 42,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P043",
+            "index": 43,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P044",
+            "index": 44,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P045",
+            "index": 45,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P046",
+            "index": 46,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "edition_scope": "schumann_op68_source_890574",
+    "execution_mode": "cursor_piece_chat",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions."
+}

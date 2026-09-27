@@ -1,0 +1,50 @@
+{
+  "primary_xml": "PASS technical; UNVERIFIED musically by human",
+  "xml_sha256": "bacad5e2f8cd7027867bf716b62afbb6c41918aeca79ce37013861b258226202",
+  "core": {
+    "status": "NOT_LOSSLESS_NOT_APPLY_READY",
+    "continuous_lanes": 4,
+    "projection_exact_pitched_multiset": true,
+    "rebuild_equal": false,
+    "rebuild_issue": "Only8 event records at P001/P022 shift from onset0/1/4 to1/2/3/4 in the SEP pickup representation. See exact missing/unexpected counters.",
+    "canonical_actual_apply_error": "line 1: Anacrusis Beat 2: 4 voice cells, but the voice map declares 7 voices",
+    "raw_actual_apply_error": "SepApplyError: Cannot preserve precise staff-time marks after this CORE edit: Measure 22 -> Beat 1 -> v1: no such attack in that voice"
+  },
+  "marks": {
+    "status": "EXPORT_AVAILABLE_APPLY_REFUSED",
+    "actual_apply_error": "SepMarksError: REFUSED â€” this edit would leave dangling span(s): ('slur-unclosed', 0, '2', '23'); ('slur-orphan-stop', 0, '2', '24'); ('slur-unclosed', 0, '2', '34'); ('slur-orphan-stop', 0, '2', '35'); ('slur-unclosed', 0, '2', '39') (+3 more). State both ends (or neither). To DELETE a span, state BOTH its measures â€” a bare 'Measure N -> clear' on the other end is enough.",
+    "authoritative_exact_marks": "exact_mark_ledger.json and primary XML"
+  },
+  "route": {
+    "status": "PASS export/rebuild/actual Apply",
+    "report": {
+      "written_event_timing_equal": true,
+      "pitched_event_timing_equal": true,
+      "tie_merged_sounding_equal": true,
+      "written_missing": [],
+      "written_unexpected": [],
+      "pitched_missing": [],
+      "pitched_unexpected": [],
+      "logical_staff_written_event_timing_equal": true,
+      "logical_staff_pitched_event_timing_equal": true,
+      "logical_staff_written_missing": [],
+      "logical_staff_written_unexpected": [],
+      "logical_staff_pitched_missing": [],
+      "logical_staff_pitched_unexpected": [],
+      "sounding_missing": [],
+      "sounding_unexpected": [],
+      "raw_mark_style_span_equal": true,
+      "raw_mark_style_span_missing": [],
+      "raw_mark_style_span_unexpected": [],
+      "semantic_mark_style_span_equal": true,
+      "semantic_mark_style_span_missing": [],
+      "semantic_mark_style_span_unexpected": [],
+      "semantic_directions_absolute_onset_equal": true,
+      "semantic_directions_absolute_onset_missing": [],
+      "semantic_directions_absolute_onset_unexpected": [],
+      "candidate_schedule_issues": [],
+      "export_text_fixpoint": true
+    }
+  },
+  "human_outcome": null
+}

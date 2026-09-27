@@ -1,0 +1,815 @@
+{
+  "id": "ERRATUM-002",
+  "reason": "Actual configuration remap_voices consumer rebuilds content and normalizes stems, unsafe for printed opposed stems, cross-staff beams and midbar clef22. Use exact label-only implementation of ERRATUM001, preserving every element and order except lower voice3->1. CORE apply_sep_edit correctly refused Map syntax; failed attempt changed nothing.",
+  "operation": "For note staff2 and voice3 set voice1; no other changes",
+  "before_sha256": "06642ac3cb2cb08b15768dbda32587df67fe6fb104a0e23c9b4bb9f22a57aa58",
+  "human_outcome": null,
+  "after_sha256": "4b81e9f48e3e9f4c8872ba690f0bfeebaf965162540eda16a88467d57e59e0e0",
+  "changes": [
+    {
+      "id": "p01-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p02-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p03-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p04-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p04-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p05-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p05-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p06-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p07-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p08-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p08-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p09-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p09-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p10-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p10-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p11-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p11-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p11-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p11-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p11-v3-e04-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e02-n3",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e03-n3",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p12-v3-e05",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p13-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p13-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p13-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p13-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p13-v3-e05",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p14-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p14-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p14-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p14-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p14-v3-e05",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p15-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p15-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p15-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p15-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p15-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p15-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p16-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p17-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p17-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p18-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p18-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p19-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p20-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p21-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p21-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p22-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p22-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p22-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p22-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p23-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p23-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p23-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p23-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p23-v3-e04-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e02-n3",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e03-n3",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p24-v3-e05",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p25-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p25-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p25-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p25-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p25-v3-e05",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p26-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p26-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p26-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p26-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p26-v3-e05",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p27-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p27-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p27-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p27-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p27-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p27-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p28-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p29-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p29-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p30-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p30-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p31-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e01-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e02-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e03",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e03-n2",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p32-v3-e04",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p33-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p33-v3-e02",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p34-v3-e01",
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "id": "p34-v3-e02",
+      "before": "3",
+      "after": "1"
+    }
+  ]
+}

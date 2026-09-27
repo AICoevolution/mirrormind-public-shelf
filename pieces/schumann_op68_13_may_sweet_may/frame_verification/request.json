@@ -1,0 +1,925 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "schumann_op68_13_may_sweet_may",
+  "edition_id": "schumann_op68_source_890574",
+  "created_utc": "2026-09-15T13:44:22.770224+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, route mark, special/final barline, meter/key/clef transition and crop boundary. Classify every printed region NORMAL or NOTEWORTHY and state every noteworthy feature in plain musical language for the annotated system report.",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "ca9d74ea9770253f6010b48812787a685da1b54e01e07fa977189e3e7713ba66"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "67516b21133500c0d5ecda7d793cce018fc90040d6fb1fe11dfb215cc52358d2"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "655f8b1fa87c2ab95a91763434638db6ce920a361901259971b14403cd0139c7"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "c2c4910ed3cce788177f754ffdb29d0132ad1a9e317cddefd6d1358bce66b042"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "c395d98168ce216e2c24f7fac12eb63a645f9949a1768f6ed89def2bdb661980"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "3b47b54d1b9f0be85d5968241006a508f59166c8c4e48893103f7493f72bc20a"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "afad7d7103caeb1b63b2d8dce619818a8b1b74dbd67a1d7388a14b5461fa482a"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "21de9cae025c04ca2f0d225950403e2a7f2dd78875ea54d054ff674bee0a57dc"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "93a40e972edac54cc3b65c6d0abe743ce94041f2d87b62d31410bd73abe09b9d"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "ab66ffd2c103458df75ee09760413467a349e7227103b9fd4e4edf40b54eb301",
+      "width": 1573,
+      "height": 2062
+    },
+    {
+      "page": 2,
+      "path": "source_crops/page-2.png",
+      "sha256": "a593eceaf74a41728109fd7e9ef782b73dae0af69fd162a7dff6a33cd4789c12",
+      "width": 1572,
+      "height": 2146
+    },
+    {
+      "page": 3,
+      "path": "source_crops/page-3.png",
+      "sha256": "572cdc9e8d6fe634b4095c31c79c1e4c62ce29e5518f5058ec118a8f0bb47f31",
+      "width": 1562,
+      "height": 2139
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 54,
+    "printed_meter": {
+      "beats": 2,
+      "beat_type": 4
+    },
+    "key": {
+      "fifths": 4,
+      "mode": "major",
+      "label": "E major (4 sharps)"
+    },
+    "pickup_or_partial_bars": [
+      {
+        "physical_bar": 1,
+        "capacity_q": "1/2",
+        "kind": "pickup"
+      },
+      {
+        "physical_bar": 21,
+        "capacity_q": "3/2",
+        "kind": "incomplete_before_section_bar"
+      },
+      {
+        "physical_bar": 22,
+        "capacity_q": "1/2",
+        "kind": "pickup"
+      },
+      {
+        "physical_bar": 54,
+        "capacity_q": "3/2",
+        "kind": "incomplete_terminal"
+      }
+    ],
+    "repeat_boundaries": [
+      {
+        "after_physical_bar": 21,
+        "kind": "section_double_bar",
+        "system": 5,
+        "page": 1
+      },
+      {
+        "after_physical_bar": 54,
+        "kind": "final_double_bar",
+        "system": 15,
+        "page": 3
+      }
+    ],
+    "clefs": {
+      "open": {
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        }
+      },
+      "changes": [
+        {
+          "physical_bar": 1,
+          "staff": 2,
+          "onset_q": "1/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "change",
+          "region": "LH treble after the pickup rest, immediately left of the barline into printed region 2",
+          "text": "Left-hand treble after the pickup rest in printed region 1, immediately left of the barline into region 2. The held E that follows is in treble.",
+          "page": 1,
+          "system": 1,
+          "crop_path": "source_crops/system_01.png",
+          "evidence_box_px": [
+            356,
+            198,
+            410,
+            322
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 2,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "kind": "change",
+          "region": "LH bass immediately left of the barline into printed region 3",
+          "text": "Left-hand bass at the right of printed region 2, immediately left of the barline into region 3. The rest-D-D figure that follows is in bass.",
+          "page": 1,
+          "system": 1,
+          "crop_path": "source_crops/system_01.png",
+          "evidence_box_px": [
+            726,
+            198,
+            778,
+            308
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 3,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "G",
+          "line": 2,
+          "kind": "change",
+          "region": "LH treble immediately left of the barline into printed region 4",
+          "text": "Left-hand treble at the right of printed region 3, immediately left of the barline into region 4. The A-A figure that follows is in treble.",
+          "page": 1,
+          "system": 1,
+          "crop_path": "source_crops/system_01.png",
+          "evidence_box_px": [
+            1126,
+            198,
+            1182,
+            328
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 8,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "kind": "cautionary",
+          "region": "LH bass cautionary at the right end of printed region 8 after the chromatic run",
+          "text": "Left-hand bass cautionary at the right end of printed region 8, after the last chromatic notes of system 2.",
+          "page": 1,
+          "system": 2,
+          "crop_path": "source_crops/system_02.png",
+          "evidence_box_px": [
+            1486,
+            182,
+            1548,
+            308
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 11,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "G",
+          "line": 2,
+          "kind": "change",
+          "region": "LH treble at p a tempo, immediately left of the barline into printed region 12",
+          "text": "Left-hand treble at the right of printed region 11 under p a tempo, immediately left of the barline into region 12. The E-A figure that follows is in treble.",
+          "page": 1,
+          "system": 3,
+          "crop_path": "source_crops/system_03.png",
+          "evidence_box_px": [
+            1152,
+            208,
+            1208,
+            332
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 12,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "kind": "cautionary",
+          "region": "LH bass cautionary at the right end of printed region 12",
+          "text": "Left-hand bass cautionary at the right end of printed region 12, after the E-A figure of system 3.",
+          "page": 1,
+          "system": 3,
+          "crop_path": "source_crops/system_03.png",
+          "evidence_box_px": [
+            1488,
+            198,
+            1548,
+            328
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 13,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "G",
+          "line": 2,
+          "kind": "change",
+          "region": "LH treble immediately left of the barline into printed region 14",
+          "text": "Left-hand treble at the right of printed region 13, immediately left of the barline into region 14. The E-A figure that follows is in treble. Region 13's rest-D-D stays in the opening bass of system 4.",
+          "page": 1,
+          "system": 4,
+          "crop_path": "source_crops/system_04.png",
+          "evidence_box_px": [
+            496,
+            192,
+            552,
+            320
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 18,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "kind": "change",
+          "region": "LH bass after the sixteenth-note bar of printed region 18",
+          "text": "Left-hand bass at the right of printed region 18, after the chromatic sixteenth-note run of system 5. The following bars stay in bass until the section-bar cautionary.",
+          "page": 1,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png",
+          "evidence_box_px": [
+            716,
+            278,
+            770,
+            398
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 21,
+          "staff": 2,
+          "onset_q": "3/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "cautionary",
+          "region": "LH treble cautionary at the section bar at the right of printed region 21",
+          "text": "Left-hand treble cautionary at the section double bar at the right of printed region 21, the last printed region on page 1.",
+          "page": 1,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png",
+          "evidence_box_px": [
+            1488,
+            258,
+            1548,
+            398
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 27,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "kind": "change",
+          "region": "LH bass immediately left of the barline into printed region 28",
+          "text": "Left-hand bass at the right of printed region 27, immediately left of the barline into region 28. The rest-D-D figure that follows is in bass.",
+          "page": 2,
+          "system": 7,
+          "crop_path": "source_crops/system_07.png",
+          "evidence_box_px": [
+            766,
+            202,
+            822,
+            320
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 28,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "G",
+          "line": 2,
+          "kind": "change",
+          "region": "LH treble immediately left of the barline into printed region 29",
+          "text": "Left-hand treble at the right of printed region 28, immediately left of the barline into region 29. The E-A figure that follows is in treble.",
+          "page": 2,
+          "system": 7,
+          "crop_path": "source_crops/system_07.png",
+          "evidence_box_px": [
+            1146,
+            198,
+            1200,
+            328
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 43,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "kind": "change",
+          "region": "LH bass immediately left of the barline into printed region 44",
+          "text": "Left-hand bass at the right of printed region 43, immediately left of the barline into region 44. The rest-D-D figure that follows is in bass.",
+          "page": 3,
+          "system": 12,
+          "crop_path": "source_crops/system_12.png",
+          "evidence_box_px": [
+            572,
+            202,
+            632,
+            320
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 44,
+          "staff": 2,
+          "onset_q": "2",
+          "sign": "G",
+          "line": 2,
+          "kind": "change",
+          "region": "LH treble immediately left of the barline into printed region 45",
+          "text": "Left-hand treble at the right of printed region 44, immediately left of the barline into region 45. The E-A figure that follows is in treble.",
+          "page": 3,
+          "system": 12,
+          "crop_path": "source_crops/system_12.png",
+          "evidence_box_px": [
+            1042,
+            198,
+            1098,
+            328
+          ],
+          "evidence_space": "system_crop"
+        }
+      ]
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          4
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "500c2f6bc998fb6f92e29480aece057dc6f2d9fcb7995fc4b091bb2d087ae124",
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "capacity_q": "1/2",
+            "capacity_plain": "1 eighth-note unit"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          5,
+          8
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "5e9be9dd9d8d02a1ff49e44a014759cea29fe7382188cc8179c020466562b83d",
+        "proposed_regions": [
+          {
+            "id": "P005",
+            "index": 5,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P006",
+            "index": 6,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P007",
+            "index": 7,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          9,
+          12
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "8ce61850b3dc043b4ab7ecfb8c457375090e010f1eaf8ae4be81b9e8ae150426",
+        "proposed_regions": [
+          {
+            "id": "P009",
+            "index": 9,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P010",
+            "index": 10,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P011",
+            "index": 11,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          13,
+          16
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "d8160d84f2fe39b4a63a02e9ed05f67669a0b59257048801bd0d6a48476f7074",
+        "proposed_regions": [
+          {
+            "id": "P013",
+            "index": 13,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P014",
+            "index": 14,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P015",
+            "index": 15,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P016",
+            "index": 16,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "physical_range": [
+          17,
+          21
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_05.png",
+        "crop_sha256": "5e2d6a1f9891c080c768e487826f8cf5c957f8ba680df7ac5f2665d8b739e606",
+        "proposed_regions": [
+          {
+            "id": "P017",
+            "index": 17,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P018",
+            "index": 18,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P019",
+            "index": 19,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P020",
+            "index": 20,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P021",
+            "index": 21,
+            "capacity_q": "3/2",
+            "capacity_plain": "3 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 6,
+        "page": 2,
+        "physical_range": [
+          22,
+          25
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_06.png",
+        "crop_sha256": "2349ee13f11b378090a2238d4cf8b1f9cd8bf5bb5bff0b1e270e1bc42cb18d31",
+        "proposed_regions": [
+          {
+            "id": "P022",
+            "index": 22,
+            "capacity_q": "1/2",
+            "capacity_plain": "1 eighth-note unit"
+          },
+          {
+            "id": "P023",
+            "index": 23,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P024",
+            "index": 24,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P025",
+            "index": 25,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "physical_range": [
+          26,
+          29
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_07.png",
+        "crop_sha256": "7c6cfe6a9308b05ffe7599fb226693d356dc99806a391eabbb80a983b89908ad",
+        "proposed_regions": [
+          {
+            "id": "P026",
+            "index": 26,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P027",
+            "index": 27,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P028",
+            "index": 28,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P029",
+            "index": 29,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "physical_range": [
+          30,
+          33
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_08.png",
+        "crop_sha256": "68508b04ec8baf645c7146506591a81d00deada748c9e41b5bca35c5e984f8d2",
+        "proposed_regions": [
+          {
+            "id": "P030",
+            "index": 30,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P031",
+            "index": 31,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P032",
+            "index": 32,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P033",
+            "index": 33,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "physical_range": [
+          34,
+          36
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_09.png",
+        "crop_sha256": "94982d3ba4587297acae2fc1f12ca0b1fdc7bd6bfcd5debbd237c8cb5e45ce14",
+        "proposed_regions": [
+          {
+            "id": "P034",
+            "index": 34,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P035",
+            "index": 35,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P036",
+            "index": 36,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 10,
+        "page": 2,
+        "physical_range": [
+          37,
+          39
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_10.png",
+        "crop_sha256": "b0ae52630f01435297028aec970481489c1578bf458adc1b246782c56e5b4ed1",
+        "proposed_regions": [
+          {
+            "id": "P037",
+            "index": 37,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P038",
+            "index": 38,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P039",
+            "index": 39,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 11,
+        "page": 3,
+        "physical_range": [
+          40,
+          42
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_11.png",
+        "crop_sha256": "555a15cbf825c9ce5d8f6ea0ca7e700d31c4abd0c4cfa2fd0cb1d4b71c0761c4",
+        "proposed_regions": [
+          {
+            "id": "P040",
+            "index": 40,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P041",
+            "index": 41,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P042",
+            "index": 42,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 12,
+        "page": 3,
+        "physical_range": [
+          43,
+          45
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_12.png",
+        "crop_sha256": "93225cac0c65377c860cf8706d78438978f99e1a4f36b10b37fb63d6f56e79f6",
+        "proposed_regions": [
+          {
+            "id": "P043",
+            "index": 43,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P044",
+            "index": 44,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P045",
+            "index": 45,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 13,
+        "page": 3,
+        "physical_range": [
+          46,
+          48
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_13.png",
+        "crop_sha256": "4d11142985a857762a2acc64de1e7a10e0949253c2e5b6d15ca0410ef5614ab6",
+        "proposed_regions": [
+          {
+            "id": "P046",
+            "index": 46,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P047",
+            "index": 47,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P048",
+            "index": 48,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 14,
+        "page": 3,
+        "physical_range": [
+          49,
+          51
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_14.png",
+        "crop_sha256": "439714d22899bb953f2c0614e4351591d640cc61dfe5d2ac88608e46a9ca8c5a",
+        "proposed_regions": [
+          {
+            "id": "P049",
+            "index": 49,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P050",
+            "index": 50,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P051",
+            "index": 51,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 15,
+        "page": 3,
+        "physical_range": [
+          52,
+          54
+        ],
+        "expected_region_count": 3,
+        "crop_path": "source_crops/system_15.png",
+        "crop_sha256": "38be79b09134abdbbec1f5ffc4e4ccd5dcd99224038fcf1075bf309610aaf772",
+        "proposed_regions": [
+          {
+            "id": "P052",
+            "index": 52,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P053",
+            "index": 53,
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P054",
+            "index": 54,
+            "capacity_q": "3/2",
+            "capacity_plain": "3 eighth-note units"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "edition_scope": "schumann_op68_source_890574",
+    "execution_mode": "cursor_piece_chat",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions. Red means a region has one or more named frame landmarks to verify; blue means it was directly checked and is a normal bar with none."
+}
