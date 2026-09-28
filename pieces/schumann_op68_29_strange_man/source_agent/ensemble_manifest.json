@@ -1,0 +1,627 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op68_29_strange_man",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 107,
+  "physical_bars_complete": 107,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "0ea3df6d0a3bf69cab9a7f7cd6a78b630b9bc0f8f35c94bac64125ea8969862a",
+      "events": 2167
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "434dbd1f7e8fa55ebafc49b25f2b52cef7d9f929a422ac727f8ad97c81ded055",
+        "events": 718,
+        "canonical": true
+      }
+    ],
+    "CURSOR_GROK": [
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_02.json",
+        "sha256": "699f2c152a357e1c43df6df70d1af92feb0a62a40c1c08ccc19f07f0106c43f9",
+        "events": 40
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_04.json",
+        "sha256": "61867f2c49e3c464673d14df83dfe47ddcb66dfb8842582d98cf8b4219458904",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_05.json",
+        "sha256": "2113ed550c9daa3e5b5d735f65af9ece63c909ffba3079c858ff32dc0b384425",
+        "events": 49
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_06.json",
+        "sha256": "fd7ac8d366c3d275bceea0d7b33fdf8ab3dde45f4e2114ddf3faa6af3160f1a8",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_07.json",
+        "sha256": "9161c838b340674a4b00a00d76dd325fd605195e664c5930bbd1ac4aa7cdb368",
+        "events": 44
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_08.json",
+        "sha256": "739854641000b032a46f81c80447b22dc9f766054580fe220f7f63f27353f375",
+        "events": 54
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_09.json",
+        "sha256": "20875f0f0d4eedfd11794b555bbea161ad5e89cc8e8fd0a8b690787b4a25379b",
+        "events": 47
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_10.json",
+        "sha256": "ab82482f3c64c0a126a3a40d005310a925479fd4647c0d2e9f40ba9650adef36",
+        "events": 35
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_11.json",
+        "sha256": "a56b0f211bd78c73d0da39304778b7d07f9c0a093ba7917045e0ff7b0755b3c9",
+        "events": 35
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_12.json",
+        "sha256": "6833c92ee25d29a01f4036781392d7aec3117dc456b06e7322fbbe5c05fc2ff2",
+        "events": 42
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_13.json",
+        "sha256": "cd76d249cd5951675543e884cd45c2b3591ba093ed25a24b384d31caa75b598d",
+        "events": 47
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_14.json",
+        "sha256": "d666dff99e94c89092ef8a786ed5e34d8928d861c966d31f85853dc141e737d5",
+        "events": 53
+      },
+      {
+        "path": "source_observations\\cursor_grok_r5\\system_15.json",
+        "sha256": "cbf5b0447077a74c4ecfc0fe1f2fc89df8169f15a311c7a9b0c6cf3082b69181",
+        "events": 58
+      }
+    ],
+    "GEMINI": []
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "c649d316222780a1dbc927b52d6f265bb4680f05f12a99fac6378b9dadc0b636"
+  },
+  "independent_visual_provider": {
+    "provider_id": "CURSOR_GROK",
+    "directory_id": "cursor_grok_r5",
+    "method": "fresh current-pixel reread because legacy responses lack cryptographic request binding",
+    "scope": "per_system_routes",
+    "system_routes": [
+      {
+        "mode": "fresh_current_pixels",
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "systems": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "required_systems": [
+          6
+        ],
+        "records": [
+          {
+            "system": 2,
+            "request_path": "source_requests/cursor_grok/system_02.json",
+            "request_sha256": "2f8ad03e476c226b8b1e9e84f5e245a1f9ae46850ca69c116e9002234edf0a86",
+            "response_path": "source_observations/cursor_grok/system_02.json",
+            "response_sha256": "17e201e211f516bb14b484eee876b5bc848926587743a94339638a51eff2145e"
+          },
+          {
+            "system": 4,
+            "request_path": "source_requests/cursor_grok/system_04.json",
+            "request_sha256": "4504ed909b9d8293b7451490f69d41baf37bac6b0678871337aeb3939dccaf66",
+            "response_path": "source_observations/cursor_grok/system_04.json",
+            "response_sha256": "b4c18785b3ae7d851c6b745745f078459bafa4bace8fb463c58c21ec207e1bb9"
+          },
+          {
+            "system": 5,
+            "request_path": "source_requests/cursor_grok/system_05.json",
+            "request_sha256": "39fcfd0a53232b4d7cf95c8a876d4278608251a082d2c248074860333f551236",
+            "response_path": "source_observations/cursor_grok/system_05.json",
+            "response_sha256": "0cf936d9ac7a1fb27b76dd72d935e42af1de20d2e025c4cfdedcadae74092e56"
+          },
+          {
+            "system": 7,
+            "request_path": "source_requests/cursor_grok/system_07.json",
+            "request_sha256": "c8446c9640143d19b537bbf93e374d527ba4e564952192f3a19662574224dd0d",
+            "response_path": "source_observations/cursor_grok/system_07.json",
+            "response_sha256": "308e54b4488105dd580ed28aa4e369ed5e276c522bf36679e4f8c94ccb3d9f02"
+          },
+          {
+            "system": 8,
+            "request_path": "source_requests/cursor_grok/system_08.json",
+            "request_sha256": "3ca9cb2f4085925898321f7c7f7f65b06f6bb16892f8d9e219f61e3c2e83f423",
+            "response_path": "source_observations/cursor_grok/system_08.json",
+            "response_sha256": "d9f5a7e9fa244855b7dbf93173e27f58cf468011f6a4190261cf6e434b8b45be"
+          },
+          {
+            "system": 9,
+            "request_path": "source_requests/cursor_grok/system_09.json",
+            "request_sha256": "4f467d76284d177f1e1382a94f18acaa71f0b68b1d2d5e9ad88dab35fc77ebc0",
+            "response_path": "source_observations/cursor_grok/system_09.json",
+            "response_sha256": "02dd579284a2e94f9ad8222da43b84a5d4fbcebe8667328496eb1444aaea795f"
+          },
+          {
+            "system": 10,
+            "request_path": "source_requests/cursor_grok/system_10.json",
+            "request_sha256": "347929d6bef69a5099e2e6d055352a9076d4c2386aa5e5cd4a8645657802c592",
+            "response_path": "source_observations/cursor_grok/system_10.json",
+            "response_sha256": "b6ccd2759c3d901e984a10054837486f3556b41457057dd18530912ae9b66a92"
+          },
+          {
+            "system": 11,
+            "request_path": "source_requests/cursor_grok/system_11.json",
+            "request_sha256": "9d1b9bb02841c988d98fd5c3d0fc0fe4f1835af717867e226115a1de1d687b08",
+            "response_path": "source_observations/cursor_grok/system_11.json",
+            "response_sha256": "0c40959fa60991c56fff4269709b7fb04a3d01d3107e790df0a63c9f939ed33b"
+          },
+          {
+            "system": 12,
+            "request_path": "source_requests/cursor_grok/system_12.json",
+            "request_sha256": "2e6cc29d82fa866f679911c767409c6892001378e74cebef455ea19019411ec3",
+            "response_path": "source_observations/cursor_grok/system_12.json",
+            "response_sha256": "db8e42d73583a5188cbbbe925012c9b8e4dd2fbdf169c81b00571c39272ce795"
+          },
+          {
+            "system": 13,
+            "request_path": "source_requests/cursor_grok/system_13.json",
+            "request_sha256": "7f7b1bbf2d80020d980c64b6fb644fd23dfbb59ec405f2d5a87f7c4b8b6907d5",
+            "response_path": "source_observations/cursor_grok/system_13.json",
+            "response_sha256": "9afb1daa781f3d6a05b62bbe7a32905cc206ddf43ffaa15ae30d55febc7b5fe2"
+          },
+          {
+            "system": 14,
+            "request_path": "source_requests/cursor_grok/system_14.json",
+            "request_sha256": "9339f518d46ed4f55ad0a12f65dd22ae2e161933a1f803c7dbdad35e16483e35",
+            "response_path": "source_observations/cursor_grok/system_14.json",
+            "response_sha256": "6548800392c954be49de3efb1a3381c7814d8e3d0e007198dacc6cc11e109bb2"
+          },
+          {
+            "system": 15,
+            "request_path": "source_requests/cursor_grok/system_15.json",
+            "request_sha256": "2fccc1f4c441ed9a6d5dcc29dcb7008c15d966da07d45a4bc34e4ec1b70c9cd6",
+            "response_path": "source_observations/cursor_grok/system_15.json",
+            "response_sha256": "c697dc4eeb2169ce8c32aca309c74e97fd49c943923435776618fcc3e44ad0dd"
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "requested_count": 13,
+    "requests": [
+      {
+        "system": 2,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_02.json",
+        "request_sha256": "3e87da61bd32b41bcceed3b0f37b17058b9e4607333e5a663794c4b2704a5441",
+        "response_path": "source_observations/cursor_grok_r5/system_02.json",
+        "response_exists": true,
+        "response_sha256": "699f2c152a357e1c43df6df70d1af92feb0a62a40c1c08ccc19f07f0106c43f9",
+        "validated": true
+      },
+      {
+        "system": 4,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_04.json",
+        "request_sha256": "06882dfe867be5b6f82fc59a62b41a0fe221a562357646049f7709f1777c9513",
+        "response_path": "source_observations/cursor_grok_r5/system_04.json",
+        "response_exists": true,
+        "response_sha256": "61867f2c49e3c464673d14df83dfe47ddcb66dfb8842582d98cf8b4219458904",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_05.json",
+        "request_sha256": "b237af500b2b49ce95d9fdd7e97bba26d309a41450f4786f474e5069059ab42b",
+        "response_path": "source_observations/cursor_grok_r5/system_05.json",
+        "response_exists": true,
+        "response_sha256": "2113ed550c9daa3e5b5d735f65af9ece63c909ffba3079c858ff32dc0b384425",
+        "validated": true
+      },
+      {
+        "system": 6,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_06.json",
+        "request_sha256": "6d23de54308b5df0bb333110881d9c6c40b46a89177cb15c8c4b1916dd13abe6",
+        "response_path": "source_observations/cursor_grok_r5/system_06.json",
+        "response_exists": true,
+        "response_sha256": "fd7ac8d366c3d275bceea0d7b33fdf8ab3dde45f4e2114ddf3faa6af3160f1a8",
+        "validated": true
+      },
+      {
+        "system": 7,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_07.json",
+        "request_sha256": "55681b83bbf5953f46e126635c02e679f35bdaf15a9c2266b3c64def00ed214a",
+        "response_path": "source_observations/cursor_grok_r5/system_07.json",
+        "response_exists": true,
+        "response_sha256": "9161c838b340674a4b00a00d76dd325fd605195e664c5930bbd1ac4aa7cdb368",
+        "validated": true
+      },
+      {
+        "system": 8,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_08.json",
+        "request_sha256": "08878ceddcb02f4b9d25ca414c204dade52ddd382d347d0570d33f21040a3088",
+        "response_path": "source_observations/cursor_grok_r5/system_08.json",
+        "response_exists": true,
+        "response_sha256": "739854641000b032a46f81c80447b22dc9f766054580fe220f7f63f27353f375",
+        "validated": true
+      },
+      {
+        "system": 9,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_09.json",
+        "request_sha256": "c02abe4bb0de3d9030bf2c3b13d676e9609d551884d09368d6ccc79475fa8fbd",
+        "response_path": "source_observations/cursor_grok_r5/system_09.json",
+        "response_exists": true,
+        "response_sha256": "20875f0f0d4eedfd11794b555bbea161ad5e89cc8e8fd0a8b690787b4a25379b",
+        "validated": true
+      },
+      {
+        "system": 10,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_10.json",
+        "request_sha256": "d6eb218258caca13305fbf03bb1513f8059d6870f9071d20ce5585a319027230",
+        "response_path": "source_observations/cursor_grok_r5/system_10.json",
+        "response_exists": true,
+        "response_sha256": "ab82482f3c64c0a126a3a40d005310a925479fd4647c0d2e9f40ba9650adef36",
+        "validated": true
+      },
+      {
+        "system": 11,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_11.json",
+        "request_sha256": "0bb05454e98d7453f7050d100670cd95f3fb89e2ef09dc2036afb43efb683cc3",
+        "response_path": "source_observations/cursor_grok_r5/system_11.json",
+        "response_exists": true,
+        "response_sha256": "a56b0f211bd78c73d0da39304778b7d07f9c0a093ba7917045e0ff7b0755b3c9",
+        "validated": true
+      },
+      {
+        "system": 12,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_12.json",
+        "request_sha256": "343b4f6a91a6627be54b2a3f71b7b13b2aaf6d5f9b76e7f8de48ab46011e1780",
+        "response_path": "source_observations/cursor_grok_r5/system_12.json",
+        "response_exists": true,
+        "response_sha256": "6833c92ee25d29a01f4036781392d7aec3117dc456b06e7322fbbe5c05fc2ff2",
+        "validated": true
+      },
+      {
+        "system": 13,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_13.json",
+        "request_sha256": "78954469c3844a97ffc56657ef8851bc88450660e5116163fac3eff0ff08c3f2",
+        "response_path": "source_observations/cursor_grok_r5/system_13.json",
+        "response_exists": true,
+        "response_sha256": "cd76d249cd5951675543e884cd45c2b3591ba093ed25a24b384d31caa75b598d",
+        "validated": true
+      },
+      {
+        "system": 14,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_14.json",
+        "request_sha256": "becf3aae10916c4d606dd41eea79af6a2fe68a87d50e679f34af51ac99930ee3",
+        "response_path": "source_observations/cursor_grok_r5/system_14.json",
+        "response_exists": true,
+        "response_sha256": "d666dff99e94c89092ef8a786ed5e34d8928d861c966d31f85853dc141e737d5",
+        "validated": true
+      },
+      {
+        "system": 15,
+        "provider_id": "CURSOR_GROK",
+        "directory_id": "cursor_grok_r5",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok_r5\\system_15.json",
+        "request_sha256": "c9bcca21a4f683c6424814e8635b15a53faa83b12aa2e089bf741a67d8db7846",
+        "response_path": "source_observations/cursor_grok_r5/system_15.json",
+        "response_exists": true,
+        "response_sha256": "cbf5b0447077a74c4ecfc0fe1f2fc89df8169f15a311c7a9b0c6cf3082b69181",
+        "validated": true
+      }
+    ],
+    "manifest_path": "source_observations/cursor_grok_r5/manifest.json",
+    "manifest_sha256": "22b80133ac67d5486dc482fe075670ada70516de81cb73d82f6815d7573c7cce"
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 2,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_02.json",
+        "request_sha256": "6867d5f152d57ced70b801689cd995d762f94980cf679e5925e008edd89f48e8",
+        "response_path": "source_observations/gemini/system_02.json",
+        "response_exists": true,
+        "response_sha256": "bed6c84a230a44f5fa878e0b4ed12063f4e9ac68e7142cf03fa1746dd3ec9f91",
+        "validated": false
+      },
+      {
+        "system": 4,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "62b38bb752866ab24494bc2901cb94131993e00133d1f6774876989047c471df",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": true,
+        "response_sha256": "cb5ae5e4bbc1b63fee7de645e1e84115df1d44ac43d69dbd2698b119a5779345",
+        "validated": false
+      },
+      {
+        "system": 5,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "862178c024a26e99149723fd62d51eec4c88c2089a076c2c89ab22c72c3724ca",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": true,
+        "response_sha256": "9bb6233ef41c5c18823741b6a64425d736181c110b626d0fb310062b996a385a",
+        "validated": false
+      },
+      {
+        "system": 6,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_06.json",
+        "request_sha256": "329f9b665b2f7aeaa86a00f68d0ed2e39da0dfe2240fc35677b21024e49419f9",
+        "response_path": "source_observations/gemini/system_06.json",
+        "response_exists": true,
+        "response_sha256": "abc9b887d22d4f8678d813287b6b6590685b1d48fd8720f4c97f13e64a78afed",
+        "validated": false
+      },
+      {
+        "system": 7,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_07.json",
+        "request_sha256": "58d9583798d7baaae5855477330fd73f18de982e374a5a95fce8f8761e877423",
+        "response_path": "source_observations/gemini/system_07.json",
+        "response_exists": true,
+        "response_sha256": "8b8f0ddd7a75f0a0d127d222bf5653fd3843d9d059b88043f8c184a98f013c2e",
+        "validated": false
+      },
+      {
+        "system": 8,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_08.json",
+        "request_sha256": "1675a62c7ad4399175f2536eff1558d261e0a477df8e53a1be015b3962b040a8",
+        "response_path": "source_observations/gemini/system_08.json",
+        "response_exists": true,
+        "response_sha256": "1c0b22614a2aa1692bd1f4019543b5706b0413dc5114a2a9bbc38e104bb2b520",
+        "validated": false
+      },
+      {
+        "system": 9,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_09.json",
+        "request_sha256": "994ada5a9a2638def66f9ff8154d1cfe7a1c5c8c0d1bd1d5586d03d15ab7047c",
+        "response_path": "source_observations/gemini/system_09.json",
+        "response_exists": true,
+        "response_sha256": "091a1b84034ed83b0dfdbfaa038e8b029e38dafc1f794477dc3f2a70f60f754e",
+        "validated": false
+      },
+      {
+        "system": 10,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_10.json",
+        "request_sha256": "2c0e3b02da14c63d89d7005ff9759d30b0f54cb3f581abb68c5243ef7f8b8cbd",
+        "response_path": "source_observations/gemini/system_10.json",
+        "response_exists": true,
+        "response_sha256": "5c3b205cdf3d2a3257a08e5a7bac2292c105a4dbde126e3927bb1d78e89e23b3",
+        "validated": false
+      },
+      {
+        "system": 11,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_11.json",
+        "request_sha256": "15e27d224e8288d0683ecec8f825da4cd53b2b4e7a31030a3fb4042d11850488",
+        "response_path": "source_observations/gemini/system_11.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      },
+      {
+        "system": 12,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_12.json",
+        "request_sha256": "87ac877105c37d28272b3f2d011f08a1cb1d7032e9b910241dee7ce568fd0fe4",
+        "response_path": "source_observations/gemini/system_12.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      },
+      {
+        "system": 13,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_13.json",
+        "request_sha256": "6d9297b371ceb4b5bf23aa76e7e179014d7272ba90251bdc80e97bc2c4a1b8f1",
+        "response_path": "source_observations/gemini/system_13.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      },
+      {
+        "system": 14,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_14.json",
+        "request_sha256": "d268fbd44b35868e4376541a7432405ee94460ae39b9864f2d2a78a72a33c280",
+        "response_path": "source_observations/gemini/system_14.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      },
+      {
+        "system": 15,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_15.json",
+        "request_sha256": "3403b6da035efa088c9787b1ef08f4d776fad8bb77bd67c3b875a266fcdb8f33",
+        "response_path": "source_observations/gemini/system_15.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      }
+    ],
+    "max_calls": 8,
+    "calls_made": 8,
+    "max_cost_usd": 0.25,
+    "actual_cost_usd": 0.1987755,
+    "execution_authorized": false,
+    "authorization_status": "not_authorized",
+    "paid_review_performed": false,
+    "responses_used": 0,
+    "new_calls_made": 0,
+    "budget_exhausted": true,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": true,
+    "missing_responses": 13,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": []
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "unresolved_evidence_claims": 136,
+  "unresolved_nonblocking": 215,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_paid_api_not_authorized",
+    "unresolved_evidence_count": 136,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 13,
+    "paid_api_authorized": false,
+    "paid_api_review_performed": false,
+    "routing_exhausted": false,
+    "reason": "paid_api_not_authorized"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "db209c01816c8fa6616c4118dc1daf88af281b8b50ca9514721ab3c75644698a"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "9129dc858cb46178275b8294b0193fa1746cf40fc3b54bc7d2bd751a0516b6fe"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "c2799692dd65a423f069f553d3b80eca8fd143fdcf4fa96ed417bcd77ee523ad"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "b1459d9a64bad834d99e8842ee6e779e9947559b84a1e54d7ad066dcf51c723c"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "capacity-valid source topology plus field-level weighted evidence; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-09-22T09:21:24.075174+00:00"
+}

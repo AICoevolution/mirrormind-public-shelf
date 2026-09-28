@@ -1,0 +1,89 @@
+{
+  "status": "BLOCKED",
+  "primary_xml_sha256": "7260d5c2e3c685a8dd40378536edb63ea40c8e6e63ba4c8c06940b767527a5ff",
+  "findings": [
+    {
+      "id": "RENDER-1",
+      "bars": [
+        1
+      ],
+      "staff": 3,
+      "finding": "Piano Allegro is displayed above the violin, stacked with the violin Allegro, rather than above the upper piano staff.",
+      "evidence": [
+        "rendered_evidence/viewport_system_01.png"
+      ]
+    },
+    {
+      "id": "RENDER-2",
+      "bars": [
+        1,
+        22
+      ],
+      "staff": 4,
+      "finding": "Below-staff legato appears inside the lower piano staff (and collides with notation at bar 22). Bar 18 upper-piano legato is correctly below its staff.",
+      "evidence": [
+        "rendered_evidence/viewport_system_01.png",
+        "rendered_evidence/viewport_system_05.png"
+      ]
+    },
+    {
+      "id": "RENDER-3",
+      "bars": [
+        111,
+        112,
+        113
+      ],
+      "staff": 4,
+      "finding": "Bass clef encoded at bar 111 q1.5 is displayed in bar 113 before the next treble clef. Bars 111-112 and the opening of 113 consequently show excessive ledger lines. Exact XML cursor/clef record retains the frozen location; the production import/render path does not honor it.",
+      "evidence": [
+        "rendered_evidence/viewport_system_23.png",
+        "rendered_evidence/viewport_system_24.png"
+      ]
+    },
+    {
+      "id": "RENDER-4",
+      "bars": [
+        1,
+        18
+      ],
+      "staff": null,
+      "finding": "Printed parentheses around opening f dynamics are absent visually although the primary XML retains parentheses=yes on the dynamics element. Representation/renderer compatibility remains unresolved.",
+      "evidence": [
+        "rendered_evidence/viewport_system_01.png",
+        "rendered_evidence/viewport_system_04.png"
+      ]
+    }
+  ],
+  "grace_slur_overlays": 12,
+  "below_words_overlays": 3,
+  "turns_and_sfp_visible": true,
+  "unresolved_print_uncertainties": [
+    {
+      "bar": 33,
+      "staff": "3",
+      "finding": "Short opening arc with unclear second endpoint; retain unresolved."
+    },
+    {
+      "bar": 47,
+      "staff": "1",
+      "finding": "Long lower arc start lies between q2 A4 and q2.5 F#4; working endpoint F#4 with medium confidence."
+    },
+    {
+      "bar": 102,
+      "staff": "3",
+      "finding": "Ascending-run arc start near q2 Ab4/q2.25 Bb4; working endpoint q2 Ab4, requires exact endpoint recheck."
+    },
+    {
+      "bar": 65,
+      "staff": "4",
+      "onset_q": "3",
+      "finding": "Small glyph above middle bass octave remains damaged/ambiguous; no invented ornament realization."
+    },
+    {
+      "bar": 193,
+      "staff": "2",
+      "onset_q": "3",
+      "finding": "Speck after quarter F#4; rhythm read as quarter, retain print uncertainty."
+    }
+  ]
+}

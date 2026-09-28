@@ -1,0 +1,1295 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "schumann_op68_23_the_horseman",
+  "edition_id": "schumann_op68_source_890574",
+  "created_utc": "2026-09-22T05:16:13.953928+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false,
+    "semantic_omr_content_exposed": false,
+    "non_authoritative_geometry_exposed": false
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, route mark, special/final barline, meter/key/clef transition and crop boundary. Classify every printed region NORMAL or NOTEWORTHY and state every noteworthy feature in plain musical language for the annotated system report. Use each full-page red crop-boundary overlay to prove that no musical ink is excluded.",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "2ef45d62350b40243d701d1f2d08f9d98e5158aab2eff3d236c3aa1594793833"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "df214025dbff25fa6353aa22af1ce5021d42d269bc75bd15758259d180a64428"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "096cfd148b25ee7c596046d519df098638e743c8ac35f34b6d97decc10342aaf"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "b4c256b0a35ab2278d55cd8f5dbd948642e770285ec540ec233f45cbe318c4ae"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "fc7fe37e46ad717f1fb45a54541ba28fd55f91384a7c1ea878e6cfd08f75e6d1"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "3e6bfdbf1519364f9c50acbc63d274073f6a00d13c640c3ad7710b275900fb29"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "bbd88b4cd9f3f5b4c117131895b9a4555f568a0401d74ded9401c705bf099441"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "a5fc43be4439f353996563d38866d20ee25c76c555ccaf3ea2c1ed0f6f8d4621"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "efe13ab208394975e687a445e346d9175ff979763f0ca8bb488868ee6a9694f0"
+    },
+    "crop_boundary_system_01": {
+      "path": "frame_verification/system_01_crop_boundary.png",
+      "sha256": "ebb2acda0c967f98f08a67272fce519872d0aa4054eb63cfc6e6b72b9a9421be"
+    },
+    "crop_boundary_system_02": {
+      "path": "frame_verification/system_02_crop_boundary.png",
+      "sha256": "9d45ced177f24f9056a61907ca5fcaa379c8f79ec6495a18cb90219b1ecadfbf"
+    },
+    "crop_boundary_system_03": {
+      "path": "frame_verification/system_03_crop_boundary.png",
+      "sha256": "0427e0b75f0410f03a39b36a8dbe37af53a918438cfe668e8f0b76b0e513688b"
+    },
+    "crop_boundary_system_04": {
+      "path": "frame_verification/system_04_crop_boundary.png",
+      "sha256": "571569cd0750ae191cdfae3f91b85895715ab980d3cd5e5d349849c3002b46f4"
+    },
+    "crop_boundary_system_05": {
+      "path": "frame_verification/system_05_crop_boundary.png",
+      "sha256": "bf4e1a583d4e0058dee9a8052eb312ea36de133611642a4c9e517e4af6441a75"
+    },
+    "crop_boundary_system_06": {
+      "path": "frame_verification/system_06_crop_boundary.png",
+      "sha256": "b23345826843abeebc86bfb913df9644570fa0bef1bc9e9a622a6040f5e5ff47"
+    },
+    "crop_boundary_system_07": {
+      "path": "frame_verification/system_07_crop_boundary.png",
+      "sha256": "b18759b2e9fec03d5821ab29be2241ead816c47d318c72ad088a28da2bea9065"
+    },
+    "crop_boundary_system_08": {
+      "path": "frame_verification/system_08_crop_boundary.png",
+      "sha256": "0e4a56caabe24c03f76a8a54be75c029d308c07b3af7bfff241394a33727e229"
+    },
+    "crop_boundary_system_09": {
+      "path": "frame_verification/system_09_crop_boundary.png",
+      "sha256": "a485a7abb7927ecfcc1e53d03ab192896073d44318ea1d9feb739a874921c63a"
+    },
+    "crop_boundary_system_10": {
+      "path": "frame_verification/system_10_crop_boundary.png",
+      "sha256": "846fa591df9f543eee67e3542a71b8de7af65b6bacb4ac3d297795ca82bc974b"
+    },
+    "crop_boundary_system_11": {
+      "path": "frame_verification/system_11_crop_boundary.png",
+      "sha256": "58a77c7ef46974e4a1c1cbf8017dad5dc5de92a808f38feda830e6c360de16bb"
+    },
+    "crop_boundary_system_12": {
+      "path": "frame_verification/system_12_crop_boundary.png",
+      "sha256": "5b4b02eaf1dce6fb9c44acf73c022b673d8295c6ea65894af6995a03ecb8a376"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "c03774886dcb823f73b13241365e108ec7136d4613ad9de55d8297e9fffaddfe",
+      "width": 1760,
+      "height": 2295
+    },
+    {
+      "page": 2,
+      "path": "source_crops/page-2.png",
+      "sha256": "b33c051887f647a95536a55ce92312148585d0e7e7f56f293846d8c8c40f9c6f",
+      "width": 1760,
+      "height": 2295
+    },
+    {
+      "page": 3,
+      "path": "source_crops/page-3.png",
+      "sha256": "d1f2cd21ce090e8e0cf30d5b9a59c8ef928750e8759eb702f48c8a76461738e8",
+      "width": 1760,
+      "height": 1285
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 57,
+    "printed_meter": {
+      "beats": 6,
+      "beat_type": 8,
+      "printed_glyph": "6/8"
+    },
+    "key": {
+      "fifths": -1,
+      "mode": null,
+      "label": "one flat printed (D minor / F major)"
+    },
+    "printed_key_changes": [],
+    "pickup_or_partial_bars": [
+      {
+        "physical_bar": 1,
+        "id": "P001",
+        "capacity_q": "1/2",
+        "capacity_plain": "2 sixteenth-note units",
+        "kind": "opening pickup",
+        "flags": [
+          "OPENING_SIGNATURE",
+          "PICKUP",
+          "PARTIAL",
+          "NOTEWORTHY"
+        ],
+        "page": 1,
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "onset_q": "0",
+        "evidence_space": "system_crop",
+        "evidence_bbox_px": [
+          216,
+          76,
+          462,
+          408
+        ],
+        "evidence": "Direct print pixels in source_crops/system_01.png show P001 as an opening anacrusis: two beamed sixteenth notes in the right hand and one eighth rest in the left hand. The printed 6/8 meter is unchanged."
+      },
+      {
+        "physical_bar": 10,
+        "id": "P010",
+        "capacity_q": "1/2",
+        "capacity_plain": "2 sixteenth-note units",
+        "kind": "post-forward-repeat pickup",
+        "flags": [
+          "PICKUP",
+          "PARTIAL",
+          "NOTEWORTHY"
+        ],
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "onset_q": "0",
+        "evidence_space": "system_crop",
+        "evidence_bbox_px": [
+          136,
+          81,
+          370,
+          341
+        ],
+        "evidence": "After forward repeat opening system 3, P010 is a printed anacrusis of two beamed sixteenth-note units (capacity_q 1/2; capacity_plain \"2 sixteenth-note units\") before the first full 6/8 barline. Flags: PICKUP, PARTIAL, NOTEWORTHY."
+      },
+      {
+        "physical_bar": 18,
+        "id": "P018",
+        "capacity_q": "5/2",
+        "capacity_plain": "5 eighth-note units",
+        "kind": "closing partial before backward repeat",
+        "flags": [
+          "PARTIAL",
+          "REPEAT_END",
+          "CAUTIONARY_CLEF",
+          "CLEF_CHANGE",
+          "NOTEWORTHY"
+        ],
+        "page": 1,
+        "system": 4,
+        "crop_path": "source_crops/system_04.png",
+        "onset_q": "0",
+        "evidence_space": "system_crop",
+        "evidence_bbox_px": [
+          1319,
+          57,
+          1631,
+          385
+        ],
+        "evidence": "Direct print pixels in source_crops/system_04.png show P018 as a five-eighth-note closing partial before the backward repeat. The printed cautionary bass clef is not a rhythmic event."
+      },
+      {
+        "physical_bar": 19,
+        "id": "P019",
+        "capacity_q": "1/2",
+        "capacity_plain": "2 sixteenth-note units",
+        "kind": "post-repeat pickup",
+        "flags": [
+          "PICKUP",
+          "PARTIAL",
+          "NOTEWORTHY"
+        ],
+        "page": 2,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "onset_q": "0",
+        "evidence_space": "system_crop",
+        "evidence_bbox_px": [
+          139,
+          87,
+          354,
+          352
+        ],
+        "evidence": "System 5 / P019 after the P018 backward-repeat close is a printed anacrusis of two sixteenth-note units (capacity_q 1/2; capacity_plain \"2 sixteenth-note units\"), matching P010. Flags: PICKUP, PARTIAL, NOTEWORTHY. RH header bass REGION_START remains."
+      },
+      {
+        "physical_bar": 57,
+        "id": "P057",
+        "capacity_q": "3/2",
+        "capacity_plain": "3 eighth-note units",
+        "kind": "incomplete final close",
+        "flags": [
+          "PARTIAL",
+          "FINAL_BARLINE",
+          "NOTEWORTHY"
+        ],
+        "page": 3,
+        "system": 12,
+        "crop_path": "source_crops/system_12.png",
+        "onset_q": "0",
+        "evidence_space": "system_crop",
+        "evidence_bbox_px": [
+          1461,
+          43,
+          1628,
+          323
+        ],
+        "evidence": "Terminal P057 before thin-then-thick final double holds three eighth-note units (capacity_q 3/2; capacity_plain \"3 eighth-note units\"), not a full 6/8. Flags: PARTIAL, FINAL_BARLINE, NOTEWORTHY."
+      }
+    ],
+    "repeat_boundaries": [
+      {
+        "after_physical_bar": 9,
+        "kind": "backward",
+        "system": 2,
+        "page": 1,
+        "crop_path": "source_crops/system_02.png",
+        "evidence": "System 2 ends after P009 with thin-then-thick barline and repeat dots to the LEFT of the barline on both staves (middle spaces). Printed barline peak x=1629 on page-1. True backward repeat."
+      },
+      {
+        "before_physical_bar": 10,
+        "kind": "forward",
+        "system": 3,
+        "page": 1,
+        "crop_path": "source_crops/system_03.png",
+        "evidence": "System 3 opens after brace/clefs/key with thick-thin forward-repeat barline: repeat dots to the RIGHT of the barline on both staves. Forward repeat begins P010 under ff. Peak near x=370 on page-1 system 3."
+      },
+      {
+        "after_physical_bar": 18,
+        "kind": "backward",
+        "system": 4,
+        "page": 1,
+        "crop_path": "source_crops/system_04.png",
+        "evidence": "System 4 ends after P018 with thin-then-thick barline and repeat dots to the LEFT on both staves. Printed barline peak x=1631 on page-1. True backward repeat closes the second written strain."
+      }
+    ],
+    "clefs": {
+      "open": {
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        }
+      },
+      "changes": [
+        {
+          "physical_bar": 1,
+          "staff": 1,
+          "onset_q": "0",
+          "sign": "F",
+          "line": 4,
+          "kind": "effective",
+          "region": "RH opening bass clef after the signatures and before both pickup notes; governs P001 from onset 0.",
+          "page": 1,
+          "system": 1,
+          "crop_path": "source_crops/system_01.png",
+          "placement": "REGION_START",
+          "glyph_region": "P001",
+          "effective_region": "P001",
+          "evidence_bbox_px": [
+            350,
+            105,
+            404,
+            212
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 3,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "placement": "MID_REGION",
+          "glyph_region": "P003",
+          "effective_region": "P003",
+          "region": "RH bass-to-treble clef after the eighth rest and immediately before the closing two sixteenths in P003.",
+          "page": 1,
+          "system": 1,
+          "crop_path": "source_crops/system_01.png",
+          "evidence_bbox_px": [
+            995,
+            95,
+            1054,
+            222
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 5,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "F",
+          "line": 4,
+          "kind": "effective",
+          "placement": "MID_REGION",
+          "glyph_region": "P005",
+          "effective_region": "P005",
+          "region": "RH treble-to-bass clef after the second tied quarter chord and immediately before the closing two sixteenths in P005.",
+          "page": 1,
+          "system": 1,
+          "crop_path": "source_crops/system_01.png",
+          "evidence_bbox_px": [
+            1518,
+            101,
+            1580,
+            217
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 7,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "region": "RH bass-to-treble clef after the eighth rest and immediately before the closing two sixteenths in P007.",
+          "page": 1,
+          "system": 2,
+          "crop_path": "source_crops/system_02.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P007",
+          "effective_region": "P007",
+          "evidence_bbox_px": [
+            948,
+            74,
+            1008,
+            201
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 14,
+          "staff": 2,
+          "onset_q": "5/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "placement": "MID_REGION",
+          "glyph_region": "P014",
+          "effective_region": "P014",
+          "region": "LH bass-to-treble MID_REGION inside P014 near x=1510-1555; notes follow in P014. Not cautionary for P015.",
+          "page": 1,
+          "system": 3,
+          "crop_path": "source_crops/system_03.png",
+          "evidence_bbox_px": [
+            1510,
+            241,
+            1555,
+            336
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 18,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "F",
+          "line": 4,
+          "kind": "cautionary",
+          "glyph_region": "P018",
+          "effective_region": "P019",
+          "placement": "REGION_END_CAUTIONARY",
+          "region": "LH treble-to-bass REGION_END_CAUTIONARY at right of P018 before backward repeat; first governed LH event onset 0 of P019. Flags include CLEF_CHANGE.",
+          "page": 1,
+          "system": 4,
+          "crop_path": "source_crops/system_04.png",
+          "evidence_bbox_px": [
+            1570,
+            257,
+            1615,
+            352
+          ],
+          "evidence_space": "system_crop",
+          "flags": [
+            "CLEF_CHANGE",
+            "CAUTIONARY_CLEF"
+          ]
+        },
+        {
+          "physical_bar": 19,
+          "staff": 1,
+          "onset_q": "0",
+          "sign": "F",
+          "line": 4,
+          "kind": "effective",
+          "region": "RH header bass at start of post-repeat system 5 / P019 (REGION_START).",
+          "page": 2,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png",
+          "placement": "REGION_START",
+          "glyph_region": "P019",
+          "effective_region": "P019",
+          "evidence_bbox_px": [
+            245,
+            87,
+            295,
+            177
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 21,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "region": "RH bass-to-treble clef after the eighth rest and immediately before the closing two sixteenths in P021.",
+          "page": 2,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P021",
+          "effective_region": "P021",
+          "evidence_bbox_px": [
+            941,
+            71,
+            1001,
+            198
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 23,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "F",
+          "line": 4,
+          "kind": "effective",
+          "region": "RH treble-to-bass clef after the second tied quarter chord and immediately before the closing two sixteenths in P023.",
+          "page": 2,
+          "system": 5,
+          "crop_path": "source_crops/system_05.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P023",
+          "effective_region": "P023",
+          "evidence_bbox_px": [
+            1498,
+            78,
+            1566,
+            193
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 25,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "region": "RH bass-to-treble clef after the eighth rest and immediately before the closing two sixteenths in P025.",
+          "page": 2,
+          "system": 6,
+          "crop_path": "source_crops/system_06.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P025",
+          "effective_region": "P025",
+          "evidence_bbox_px": [
+            879,
+            66,
+            939,
+            198
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 27,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "F",
+          "line": 4,
+          "kind": "effective",
+          "region": "RH treble-to-bass clef after the quarter note and immediately before the closing two sixteenths in P027.",
+          "page": 2,
+          "system": 6,
+          "crop_path": "source_crops/system_06.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P027",
+          "effective_region": "P027",
+          "evidence_bbox_px": [
+            1497,
+            77,
+            1567,
+            192
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 28,
+          "staff": 1,
+          "onset_q": "1",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "region": "RH bass-to-treble clef after the opening eighth note and eighth rest, before the beamed sixteenth-note figure in P028.",
+          "page": 2,
+          "system": 7,
+          "crop_path": "source_crops/system_07.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P028",
+          "effective_region": "P028",
+          "evidence_bbox_px": [
+            316,
+            48,
+            369,
+            184
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 37,
+          "staff": 1,
+          "onset_q": "5/2",
+          "sign": "F",
+          "line": 4,
+          "kind": "effective",
+          "region": "RH treble-to-bass MID_REGION inside P037 near x=430-490; system 9 opens treble, then mid-bar bass after rests.",
+          "page": 2,
+          "system": 9,
+          "crop_path": "source_crops/system_09.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P037",
+          "effective_region": "P037",
+          "evidence_bbox_px": [
+            430,
+            61,
+            490,
+            166
+          ],
+          "evidence_space": "system_crop"
+        },
+        {
+          "physical_bar": 52,
+          "staff": 1,
+          "onset_q": "1",
+          "sign": "G",
+          "line": 2,
+          "kind": "effective",
+          "region": "RH bass-to-treble MID_REGION inside P052 after the opening undotted quarter-note chord and before the following eighth-note chord.",
+          "page": 3,
+          "system": 11,
+          "crop_path": "source_crops/system_11.png",
+          "placement": "MID_REGION",
+          "glyph_region": "P052",
+          "effective_region": "P052",
+          "evidence_bbox_px": [
+            1385,
+            65,
+            1440,
+            175
+          ],
+          "evidence_space": "system_crop"
+        }
+      ],
+      "cautionary": [
+        {
+          "physical_bar": 18,
+          "staff": 2,
+          "onset_q": "0",
+          "sign": "F",
+          "line": 4,
+          "kind": "cautionary",
+          "glyph_region": "P018",
+          "effective_region": "P019",
+          "placement": "REGION_END_CAUTIONARY",
+          "region": "LH treble-to-bass REGION_END_CAUTIONARY at right of P018 before backward repeat; first governed LH event onset 0 of P019. Flags include CLEF_CHANGE.",
+          "page": 1,
+          "system": 4,
+          "crop_path": "source_crops/system_04.png",
+          "evidence_bbox_px": [
+            1570,
+            257,
+            1615,
+            352
+          ],
+          "evidence_space": "system_crop",
+          "flags": [
+            "CLEF_CHANGE",
+            "CAUTIONARY_CLEF"
+          ]
+        }
+      ]
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          5
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "d802a6f9a8df2cf0201354835a2d402a7f3a341e9f20b579fec0bc84c6cd676a",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_01_crop_boundary.png",
+          "sha256": "ebb2acda0c967f98f08a67272fce519872d0aa4054eb63cfc6e6b72b9a9421be",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            330,
+            1760,
+            751
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "capacity_q": "1/2",
+            "capacity_plain": "2 sixteenth-note units"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P005",
+            "index": 5,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          6,
+          9
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "c18fe9fb44eabcc7f01b4bd1d6a6cbc12fa34ee18f353c9b71bbff3416d71f06",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_02_crop_boundary.png",
+          "sha256": "9d45ced177f24f9056a61907ca5fcaa379c8f79ec6495a18cb90219b1ecadfbf",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            802,
+            1760,
+            1202
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P006",
+            "index": 6,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P007",
+            "index": 7,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P009",
+            "index": 9,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          10,
+          14
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "a012ec7c02137b946946bd8ee3ef88570f9f7c990d025174cc1975f17863b3a5",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_03_crop_boundary.png",
+          "sha256": "0427e0b75f0410f03a39b36a8dbe37af53a918438cfe668e8f0b76b0e513688b",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1270,
+            1760,
+            1674
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P010",
+            "index": 10,
+            "capacity_q": "1/2",
+            "capacity_plain": "2 sixteenth-note units"
+          },
+          {
+            "id": "P011",
+            "index": 11,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P013",
+            "index": 13,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P014",
+            "index": 14,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          15,
+          18
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "180c2124e012968995898424de14fdfc3159a19b2ddcad1fdd50985658b58611",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_04_crop_boundary.png",
+          "sha256": "571569cd0750ae191cdfae3f91b85895715ab980d3cd5e5d349849c3002b46f4",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1704,
+            1760,
+            2137
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P015",
+            "index": 15,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P016",
+            "index": 16,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P017",
+            "index": 17,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P018",
+            "index": 18,
+            "capacity_q": "5/2",
+            "capacity_plain": "5 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 5,
+        "page": 2,
+        "physical_range": [
+          19,
+          23
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_05.png",
+        "crop_sha256": "b9e4530afaaae81446abccc65e9e34acbc166c80f2cce4347550ad38cf65adfa",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_05_crop_boundary.png",
+          "sha256": "bf4e1a583d4e0058dee9a8052eb312ea36de133611642a4c9e517e4af6441a75",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            173,
+            1760,
+            551
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P019",
+            "index": 19,
+            "capacity_q": "1/2",
+            "capacity_plain": "2 sixteenth-note units"
+          },
+          {
+            "id": "P020",
+            "index": 20,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P021",
+            "index": 21,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P022",
+            "index": 22,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P023",
+            "index": 23,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 6,
+        "page": 2,
+        "physical_range": [
+          24,
+          27
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_06.png",
+        "crop_sha256": "afe17d035e657aa9fdb36f5971f4eb7136229173035cf9d28799ea6f7c967e7e",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_06_crop_boundary.png",
+          "sha256": "b23345826843abeebc86bfb913df9644570fa0bef1bc9e9a622a6040f5e5ff47",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            566,
+            1760,
+            939
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P024",
+            "index": 24,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P025",
+            "index": 25,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P026",
+            "index": 26,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P027",
+            "index": 27,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "physical_range": [
+          28,
+          31
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_07.png",
+        "crop_sha256": "1de2235704687a72fef3d242fa6445b0e972e5d5836dc407802e1e0b0b5b68f2",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_07_crop_boundary.png",
+          "sha256": "b18759b2e9fec03d5821ab29be2241ead816c47d318c72ad088a28da2bea9065",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            970,
+            1760,
+            1329
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P028",
+            "index": 28,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P029",
+            "index": 29,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P030",
+            "index": 30,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P031",
+            "index": 31,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "physical_range": [
+          32,
+          36
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_08.png",
+        "crop_sha256": "a7416ac598dff765f1212f8b62fc728581633787149f7d70429de766e4bb0fae",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_08_crop_boundary.png",
+          "sha256": "0e4a56caabe24c03f76a8a54be75c029d308c07b3af7bfff241394a33727e229",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1356,
+            1760,
+            1714
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P032",
+            "index": 32,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P033",
+            "index": 33,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P034",
+            "index": 34,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P035",
+            "index": 35,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P036",
+            "index": 36,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "physical_range": [
+          37,
+          41
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_09.png",
+        "crop_sha256": "421cad684babd17acf6b9c7d25e1c18b231cc5075ec725e3df9f9726d47bea4f",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_09_crop_boundary.png",
+          "sha256": "a485a7abb7927ecfcc1e53d03ab192896073d44318ea1d9feb739a874921c63a",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1747,
+            1760,
+            2127
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P037",
+            "index": 37,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P038",
+            "index": 38,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P039",
+            "index": 39,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P040",
+            "index": 40,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P041",
+            "index": 41,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 10,
+        "page": 3,
+        "physical_range": [
+          42,
+          47
+        ],
+        "expected_region_count": 6,
+        "crop_path": "source_crops/system_10.png",
+        "crop_sha256": "6889b3975d29e615efbce0d0e7f7ce9c8577c82427494403e2b8937b0414e0c3",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_10_crop_boundary.png",
+          "sha256": "846fa591df9f543eee67e3542a71b8de7af65b6bacb4ac3d297795ca82bc974b",
+          "page": 3,
+          "crop_bbox_page_px": [
+            0,
+            153,
+            1760,
+            535
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P042",
+            "index": 42,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P043",
+            "index": 43,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P044",
+            "index": 44,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P045",
+            "index": 45,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P046",
+            "index": 46,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P047",
+            "index": 47,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 11,
+        "page": 3,
+        "physical_range": [
+          48,
+          52
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_11.png",
+        "crop_sha256": "7530ec73a6821f1c50cc04257eadaf1ad537698c71213469762a19075a45d9ed",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_11_crop_boundary.png",
+          "sha256": "58a77c7ef46974e4a1c1cbf8017dad5dc5de92a808f38feda830e6c360de16bb",
+          "page": 3,
+          "crop_bbox_page_px": [
+            0,
+            537,
+            1760,
+            918
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P048",
+            "index": 48,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P049",
+            "index": 49,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P050",
+            "index": 50,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P051",
+            "index": 51,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P052",
+            "index": 52,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          }
+        ]
+      },
+      {
+        "system": 12,
+        "page": 3,
+        "physical_range": [
+          53,
+          57
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_12.png",
+        "crop_sha256": "e8fe4b5e22430aa0dbb13c91e350845495520831eaa134d4b726261a792983e8",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_12_crop_boundary.png",
+          "sha256": "5b4b02eaf1dce6fb9c44acf73c022b673d8295c6ea65894af6995a03ecb8a376",
+          "page": 3,
+          "crop_bbox_page_px": [
+            0,
+            917,
+            1760,
+            1285
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P053",
+            "index": 53,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P054",
+            "index": 54,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P055",
+            "index": 55,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P056",
+            "index": 56,
+            "capacity_q": "3",
+            "capacity_plain": "6 eighth-note units"
+          },
+          {
+            "id": "P057",
+            "index": 57,
+            "capacity_q": "3/2",
+            "capacity_plain": "3 eighth-note units"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "CODEX_ISOLATED_FRAME_VERIFIER",
+    "edition_scope": "schumann_op68_source_890574",
+    "execution_mode": "cursor_piece_chat",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions. Red means a region has one or more named frame landmarks to verify; blue means it was directly checked and is a normal bar with none."
+}

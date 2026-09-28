@@ -1,0 +1,214 @@
+{
+  "schema": "prep-manifest.v2",
+  "piece_id": "mozart_k496_piano_trio_sample",
+  "run_directory": "C:\\Users\\User\\Desktop\\JJJS\\AICE\\website\\MirrorMind\\domains\\music\\_reports\\openai_omr_eval\\mozart_k496_piano_trio_sample",
+  "source_pdf_sha256": "775a089ba5b156bb8bcd93bd4dbfe8eba455447f0875f9dcbb29c6306cc7531d",
+  "reader_xml_hashes": {
+    "Audiveris_Mozart Piano Trio K496.xml": "3d34b9678da07b7846156e0c6b1b0eaa1dff079b7db54776ee82b9dcf43843c2",
+    "Playscore_Mozart Piano Trio K496.xml": "74bf3e757379c8eadd7195f6f9be44cde5ea4ff23aed1ef2612dd2c6ac53245b",
+    "Smartscore_Mozart Piano Trio K496.xml": "595ebe3a45ab34db58cec1b4194e71b281a859af940457ea432fd8d391e67fbe"
+  },
+  "baseline_complete": true,
+  "replay_matches": true,
+  "controls_assessed_before_candidates": true,
+  "physical_bar_count": 194,
+  "score_layout_sha256": "903f183b5e6adef1833510b2f69603a01693dd51e12a2df9e2b5c97c40994530",
+  "physical_score_lock_sha256": "fd9f1d666844b0403a9ff3a3a842829c18c298b3708c1590e3660839ec06fbac",
+  "reader_correspondence_sha256": "9ff2ce3c9c0dfe31634106a4b54cd707e7c7465b597d11d0e8a5cfdf39857d81",
+  "frame_visual_verification_sha256": "2559b0728aca35b147180118138992caefac107c713f520d4670c29eb466b9cc",
+  "reviewer_phase1_frame_lock_sha256": "feefb1ff1d6bf538dd54d35d67051c4d1582ee2fe8d6a32950894b3cb413d26d",
+  "audit_config_sha256": "e8e344015768a68bad77b86f77f6d68f981e10fee9de17ca4928dad89aff58fb",
+  "edition_session_sha256": "cfc8a5b3015cb7d580176eee06a69cf71d7fa4854c63f768c43794a7a4ea2fd2",
+  "source_budget_sha256": "55e1d6f39cca4d82abfa3f0344455c6ada4619fecea21150df270de75c1f9d2c",
+  "config_sha256": "7030d92b20e6fe98e65c79949652f90e23c93960be6d889afaddb846057133be",
+  "baseline_verification_sha256": "72410889b32a171deb321739e8f8e4a0e77661d7542bd7dd4daf8522952fd73a",
+  "prep_complete": true,
+  "ready_for_ensemble": true,
+  "frame_gate_required": true,
+  "timestamp": "2026-09-26T13:20:18.232871+00:00",
+  "reader_measure_elements": {
+    "Audiveris_Mozart Piano Trio K496.xml": 194,
+    "Playscore_Mozart Piano Trio K496.xml": 194,
+    "Smartscore_Mozart Piano Trio K496.xml": 195
+  },
+  "reader_claims": {
+    "schema": "reader-claims.v1",
+    "path": "reader_claims.json",
+    "sha256": "c8307150aaf96deb64a671fcf1dbd5172fed78ebbbf229911059cd23db7591e4",
+    "audit_config_sha256": "e8e344015768a68bad77b86f77f6d68f981e10fee9de17ca4928dad89aff58fb",
+    "reader_correspondence_sha256": "9ff2ce3c9c0dfe31634106a4b54cd707e7c7465b597d11d0e8a5cfdf39857d81",
+    "readers": {
+      "SmartScore": {
+        "measures": 194,
+        "events": 4490,
+        "included_canonical_parts": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "excluded_source_parts": [],
+        "skipped_source_measure_records": 3,
+        "source_path": "inputs/Smartscore_Mozart Piano Trio K496.xml",
+        "source_sha256": "595ebe3a45ab34db58cec1b4194e71b281a859af940457ea432fd8d391e67fbe"
+      },
+      "PlayScore": {
+        "measures": 194,
+        "events": 4664,
+        "included_canonical_parts": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "excluded_source_parts": [],
+        "skipped_source_measure_records": 0,
+        "source_path": "inputs/Playscore_Mozart Piano Trio K496.xml",
+        "source_sha256": "74bf3e757379c8eadd7195f6f9be44cde5ea4ff23aed1ef2612dd2c6ac53245b"
+      },
+      "Audiveris": {
+        "measures": 194,
+        "events": 4344,
+        "included_canonical_parts": [
+          "P1",
+          "P2",
+          "P3"
+        ],
+        "excluded_source_parts": [
+          {
+            "source_part_id": "P1",
+            "reason": "reader-created fragments/scaffolds outside their mapped range",
+            "measure_count": 190,
+            "event_count": 190
+          },
+          {
+            "source_part_id": "P2",
+            "reason": "reader-created fragments/scaffolds outside their mapped range",
+            "measure_count": 190,
+            "event_count": 190
+          },
+          {
+            "source_part_id": "P3",
+            "reason": "reader-created fragments/scaffolds outside their mapped range",
+            "measure_count": 190,
+            "event_count": 190
+          },
+          {
+            "source_part_id": "P4",
+            "reason": "reader-created fragments/scaffolds outside their mapped range",
+            "measure_count": 190,
+            "event_count": 190
+          },
+          {
+            "source_part_id": "P5",
+            "reason": "system 18 switches to raw P1-P4; P5-P7 are rest scaffolds",
+            "measure_count": 4,
+            "event_count": 4
+          },
+          {
+            "source_part_id": "P6",
+            "reason": "system 18 switches to raw P1-P4; P5-P7 are rest scaffolds",
+            "measure_count": 4,
+            "event_count": 4
+          },
+          {
+            "source_part_id": "P7",
+            "reason": "system 18 switches to raw P1-P4; P5-P7 are rest scaffolds",
+            "measure_count": 4,
+            "event_count": 8
+          }
+        ],
+        "skipped_source_measure_records": 0,
+        "source_path": "inputs/Audiveris_Mozart Piano Trio K496.xml",
+        "source_sha256": "3d34b9678da07b7846156e0c6b1b0eaa1dff079b7db54776ee82b9dcf43843c2"
+      }
+    }
+  },
+  "page_image_paths": [
+    "source_crops/page-1.png",
+    "source_crops/page-2.png",
+    "source_crops/page-3.png",
+    "source_crops/page-4.png",
+    "source_crops/page-5.png",
+    "source_crops/page-6.png",
+    "source_crops/page-7.png",
+    "source_crops/page-8.png"
+  ],
+  "page_image_hashes": {
+    "source_crops/page-1.png": "8ff8c6d942dc7f64c3ebb0ff2f258c7873219dc6d97cde984a6a02e33c2a762a",
+    "source_crops/page-2.png": "a517c2976d3d46fb6b0cf915ccbb92b30a2fa75052e736d175146fcf0a9f4f66",
+    "source_crops/page-3.png": "545a582b74aac6f1ecd0677c3534106c0867da08b1e18e750d1c716f3fc385ea",
+    "source_crops/page-4.png": "c6403cd5cb3309c46ee3b36968467424109626f8a9a34a438bd2e1ea9a5ceb76",
+    "source_crops/page-5.png": "078539138151d8f33961c10b630e440effd4efe8cdde957894bb30f8fca65890",
+    "source_crops/page-6.png": "90a7d3b34da104ae97930da3421fe6b194a01ac9d7cfd1961a8f909df7fc1038",
+    "source_crops/page-7.png": "a1cb135f7cf74421a68a50506e8c0b2b4e0170cf355b4873d47b4d7506bf6609",
+    "source_crops/page-8.png": "2e27ca38ab174fdac95492b47d67e5bbbddcb130f420d1d56f4cee98685dbbaf"
+  },
+  "page_images": {
+    "schema": "locked-page-images.v1",
+    "manifest_path": "source_crops/pages.json",
+    "manifest_sha256": "f2fb8856bb28b48cccaae5f924dae4b12d1039fb1f4124f7c3cab9d8b08bcd7e",
+    "pages": [
+      {
+        "page": 1,
+        "path": "source_crops/page-1.png",
+        "sha256": "8ff8c6d942dc7f64c3ebb0ff2f258c7873219dc6d97cde984a6a02e33c2a762a"
+      },
+      {
+        "page": 2,
+        "path": "source_crops/page-2.png",
+        "sha256": "a517c2976d3d46fb6b0cf915ccbb92b30a2fa75052e736d175146fcf0a9f4f66"
+      },
+      {
+        "page": 3,
+        "path": "source_crops/page-3.png",
+        "sha256": "545a582b74aac6f1ecd0677c3534106c0867da08b1e18e750d1c716f3fc385ea"
+      },
+      {
+        "page": 4,
+        "path": "source_crops/page-4.png",
+        "sha256": "c6403cd5cb3309c46ee3b36968467424109626f8a9a34a438bd2e1ea9a5ceb76"
+      },
+      {
+        "page": 5,
+        "path": "source_crops/page-5.png",
+        "sha256": "078539138151d8f33961c10b630e440effd4efe8cdde957894bb30f8fca65890"
+      },
+      {
+        "page": 6,
+        "path": "source_crops/page-6.png",
+        "sha256": "90a7d3b34da104ae97930da3421fe6b194a01ac9d7cfd1961a8f909df7fc1038"
+      },
+      {
+        "page": 7,
+        "path": "source_crops/page-7.png",
+        "sha256": "a1cb135f7cf74421a68a50506e8c0b2b4e0170cf355b4873d47b4d7506bf6609"
+      },
+      {
+        "page": 8,
+        "path": "source_crops/page-8.png",
+        "sha256": "2e27ca38ab174fdac95492b47d67e5bbbddcb130f420d1d56f4cee98685dbbaf"
+      }
+    ]
+  },
+  "frame_gate_passed": true,
+  "frame_gate_sha256": "cb479dbe171413a500b010a72d7a34639e4e6e502df35f5bf20aa01301248e06",
+  "frame_gate_completed_utc": "2026-09-26T13:21:39.263571+00:00",
+  "question_packets_freeze_sha256": "83adabe04c61a54675aa7c990d602e93cc424198a6638fe63c78aff6c1f15381",
+  "self_audit_metadata": {
+    "schema": "prep-self-audit-metadata.v1",
+    "available_readers": [
+      "SmartScore",
+      "PlayScore",
+      "Audiveris"
+    ],
+    "reader_inventory_sources": [
+      "audit_config.json",
+      "reader_correspondence.json"
+    ],
+    "frame_authority_inputs_unchanged": true,
+    "config_sha256": "7030d92b20e6fe98e65c79949652f90e23c93960be6d889afaddb846057133be",
+    "physical_score_lock_sha256": "fd9f1d666844b0403a9ff3a3a842829c18c298b3708c1590e3660839ec06fbac",
+    "frame_visual_verification_sha256": "2559b0728aca35b147180118138992caefac107c713f520d4670c29eb466b9cc",
+    "question_packets_freeze_sha256": "83adabe04c61a54675aa7c990d602e93cc424198a6638fe63c78aff6c1f15381",
+    "system_packet_count": 39
+  }
+}

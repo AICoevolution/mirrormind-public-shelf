@@ -1,0 +1,20 @@
+{
+  "status": "BLOCKED_SOURCE_FRAME",
+  "phase2_accessed": false,
+  "hashes_match": true,
+  "issues": [
+    {
+      "id": "FRAME-1",
+      "page": 2,
+      "system": 6,
+      "locked_bar": 38,
+      "staff": 2,
+      "locked_claim": "physical_bar=38; onset_q=\"0\"; sign=\"G\"; line=2; placement=\"REGION_START\"; glyph_region=\"P038\"; effective_region=\"P038\"; region=\"LH treble at the left of P038 under the second mf\"; evidence_box_px=[660,280,760,400] (system_crop)",
+      "printed": "P038 spans page x=687..960. Its lower-staff four sixteenths, eighth, and eighth rest precede the G clef near x=925, immediately before the right barline. P038 remains in F clef for all sounding events. The next half-note chord under the second mf is P039, x=960..1054, and is in G clef.",
+      "required_repair": "Keep 107 regions, existing bar boundaries, printed 2/4, and capacity 2 quarter units. Encode the G-clef glyph at the end of P038 (physical_bar=38, onset_q=\"2\", placement=\"REGION_END_CAUTIONARY\", glyph_region=\"P038\", effective_region=\"P039\"), or an equivalent explicit boundary change effective at P039 onset 0. Replace the erroneous evidence box with page/system-6 [900,280,970,430]. Reconcile physical_score_lock.json, reviewer_phase1_frame_lock.json and frame_visual_verification.json, then regenerate affected reader correspondence/packets and downstream frozen dependencies. Reissue handoff hashes and obtain a new matching human authorization. Astra has not performed these prepared-run modifications.",
+      "evidence": "reviewer/FRAME-1.png",
+      "confidence": "high"
+    }
+  ],
+  "human_outcome": null
+}

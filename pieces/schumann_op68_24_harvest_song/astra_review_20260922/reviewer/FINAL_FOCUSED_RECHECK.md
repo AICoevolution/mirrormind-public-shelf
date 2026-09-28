@@ -1,0 +1,7 @@
+# Final focused recheck
+
+Viewed both final rendered pages against all five source-system crops after the placement erratum. All 28 regions are covered individually in focused_recheck.json. Every changed pitch, octave, accidental, rhythm, chord, stem, beam, grace, voice, tie and mark context was included. P4/P8/P23/P27 grace pairs retain two beams; P11/P15/P16 single graces remain present. P14-16 and P19-20 simultaneous lines remain independent. Cross-system arcs P5-6, P15-16 and P21-22 were inspected at both ends. No pedal, tuplets or endings are printed; neither were invented. Both repeat closures and the second-section repeat opening were rechecked.
+
+The exact XML matches all 369 target note/rest elements and 55 paired slurs. Six tie connections produce 12 suppressed reattacks across the two repeat passes. Four hairpins, two fermatas and all printed directions/articulations are retained. Remaining musical uncertainty is limited to the precise onset of the two tempo text instructions around P25-27.
+
+OSMD's rendering is useful review evidence but has local spacing/curvature/rest-placement quirks documented in focused_recheck.json (P1, P5, P14-15, P23, P27). In particular, the visual hairpin extent must not be confused with the encoded endpoint. These are narrow display exceptions; none waives a playback, duration or cursor failure. The primary XML passes all three. This is an UNVERIFIED curator delivery, not publication engraving.

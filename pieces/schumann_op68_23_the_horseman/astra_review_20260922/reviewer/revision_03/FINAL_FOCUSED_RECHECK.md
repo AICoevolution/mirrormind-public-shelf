@@ -1,0 +1,7 @@
+# Final focused recheck
+
+All twelve final rendered system images were inspected against the corresponding direct print crops after Erratum 002. Every physical region is indexed in focused_recheck.json. Changed note/rest contexts and connected ties, slurs, hairpins, beams and repeats were followed across both endpoints. No pedal or tuplet is printed. The final bass sustain P53-P55, upper F-sharp/A ties P55-P57, inner D tie into P56, sharp F3 in P55 and the two final fermatas are present. P15 B-natural incoming ties, P17 moving chords and independent lower ties, P27 LH dotted-quarter/quarter/rest, P37 RH chord, P41 rest and P49 rest were rechecked.
+
+Primary event application, physical capacities, repeat schedule, full playback and cursor mapping pass. This does not certify the installed engraving. Remaining visible differences are recorded in focused_recheck.json: opening/cautionary clef rendering, P17 common-stem/common-beam appearance, and tempo/text layout. In particular the print P18 cautionary belongs to LH; the XML staff is 2 even where the installed viewer also draws it on RH. All notes still retain their exact pitch/staff and the independent playback comparison passes. No representation exception waives a playback or cursor failure.
+
+A1/P4 damaged ink, A2/P18 tiny staccatissimo and A3 hairpin attachment neighborhoods remain for Juan. Human outcome null. The rendered score is review evidence, not a publication engraving.

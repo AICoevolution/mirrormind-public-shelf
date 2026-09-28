@@ -1,0 +1,15 @@
+# Pipeline findings
+
+The prepared ensemble had 801 note/rest elements but no expressive directions, no beams, nearly all effective clef changes missing, wrong tied accidentals/chord pitches, copied rhythmic figures, duplicate bass notes and restarted voice labels. Its PROPER result and zero duration discrepancies did not establish print accuracy. All 184 ensemble disagreements were reviewed, including unflagged and unanimous claims throughout the score. Current provenance pitch selections matched the current candidate, but confidence did not make incorrect notes true.
+
+Reader system packets contained no claim arrays. Full reader claims were required. Audiveris omitted physical P33 and shifted subsequent XML correspondence; its duplicate raw label 17 also obscured P18/P19. All three supplied deterministic controls failed against print; one retained a misleading supplied pass. See Phase 2 for exact records.
+
+Final production consumer results: PROPER; all 57 physical capacities exact without changing 6/8; 841/841 independent sounding attacks with exact pitch/onset/duration/source position within the production millisecond rounding; 841/841 production note-to-SVG mappings; exact absolute cursor timeline; zero VexFlow duration mismatches. The original cross-voice tie joins retriggered six attacks; frozen Erratum 001 preserved four continuous voices and eliminated every schedule discrepancy.
+
+CORE: four justified lanes; no unexpressed CORE; actual Apply is byte-exact. Standalone rebuild is NOT lossless: P1 notes move +1 quarter and P18 notes +1/2 quarter through partial-bar padding. The exact comparison also reports harmless start/stop tie-tag ordering at P42/P46/P54/P56. The primary XML is not replaced by rebuilt XML. Sparse-voice warnings are mechanical heuristics: the printed inner and bass lines independently justify both sparse lanes.
+
+MARKS: no export warnings; text fixpoint; Apply preserves event projection, slur endpoint styles, and the exact multiset of (note ID, articulation type, placement). An ordered-list comparison failed only because simultaneous articulation siblings were reordered; zero attached articulations changed or disappeared. This narrowly scoped comparison issue does not waive a primary playback/cursor failure. ROUTE export/Apply passes and the independently expanded order is P1-9 twice, P10-18 twice, P19-57 once.
+
+Installed viewer engraving remains unsuitable as a publication certificate: simultaneous initial clefs, end-P18 cautionary placement, ignored hidden clef restatements, P17 stem/beam appearance, and P1/P24 text layout. The final rendered evidence records these rather than concealing them. ScoreAnalyzer's generic voice-role names sort sparse RH inner voice above the principal lane; voice_topology.json is the actual musical identity map. PROPER's arithmetic description of P18/P19 as a paired split is not adopted as a printed route interpretation.
+
+No prepared source, authorization, handoff, queue, orchestrator or production module was changed. Implementation snapshots and hashes identify the exact consumers used. No publication occurred.

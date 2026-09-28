@@ -1,0 +1,243 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op68_24_harvest_song",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 28,
+  "physical_bars_complete": 28,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "b5738495e93028d2261370c777630503784478b3dc9bc8503e3c29e99f4a1d04",
+      "events": 782
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "6390d791f8d0fb495faaa1164123a22328a290e1c8125b7777bbe8d1416f104f",
+        "events": 278,
+        "canonical": true
+      }
+    ],
+    "CURSOR_GROK": [
+      {
+        "path": "source_observations\\cursor_grok\\system_01.json",
+        "sha256": "109b4780a1ee31200e396d41e6af7170ee23538f2f8f93b06586618de793d9c3",
+        "events": 45
+      },
+      {
+        "path": "source_observations\\cursor_grok\\system_02.json",
+        "sha256": "b55fe2a690dc53e871c7ce4a04cfd1e92a9e0b79d03c0b169d5a95f6d9800ad4",
+        "events": 36
+      },
+      {
+        "path": "source_observations\\cursor_grok\\system_03.json",
+        "sha256": "95f6ba4c99dcac1609591cd614e999417395da20a1a73290eff9dcdf4420530e",
+        "events": 68
+      },
+      {
+        "path": "source_observations\\cursor_grok\\system_04.json",
+        "sha256": "88a21281e43a5874e26d42587fcc9a9974a19d2bbf5d987ce35f467cb98ee4cc",
+        "events": 62
+      },
+      {
+        "path": "source_observations\\cursor_grok\\system_05.json",
+        "sha256": "83ef558bad0128055c1f82062474d920550f41c60b74c66c2735043ccc145fe4",
+        "events": 71
+      }
+    ],
+    "GEMINI": [
+      {
+        "path": "source_observations\\gemini\\system_01.json",
+        "sha256": "fbcbd8e94008a9faa5942255170b6fc525c3c9ffff2109a1407fdeafd4a89fe0",
+        "events": 37
+      },
+      {
+        "path": "source_observations\\gemini\\system_02.json",
+        "sha256": "0f537ab763f3e992390f9ab31e550068091bdc6eac2a5b810199aab7104e81b1",
+        "events": 39
+      },
+      {
+        "path": "source_observations\\gemini\\system_03.json",
+        "sha256": "8d77eddaa311f2bc1e767fdc38983230d7f590ca586b91ba77ed59dd487ccc6f",
+        "events": 59
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "b1f2da2bc68eca94a24c8783efd1c5cfb6c1c3744f336edbd4bc9838aac850e1"
+  },
+  "independent_visual_provider": {
+    "provider_id": "CURSOR_GROK",
+    "directory_id": "cursor_grok",
+    "method": "fresh Cursor Grok general-purpose subagent",
+    "scope": "piece",
+    "enabled": true,
+    "requested_count": 5,
+    "requests": [
+      {
+        "system": 1,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_01.json",
+        "request_sha256": "1d242d89f4a6637ed92cbc3b713c4d97abff7e747b697bf54233a27666158d31",
+        "response_path": "source_observations/cursor_grok/system_01.json",
+        "response_exists": true,
+        "response_sha256": "109b4780a1ee31200e396d41e6af7170ee23538f2f8f93b06586618de793d9c3",
+        "validated": true
+      },
+      {
+        "system": 2,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_02.json",
+        "request_sha256": "baa830347b399e7367c153c8ab9f62ab132da13b8fef6c569351db4e0a25ca87",
+        "response_path": "source_observations/cursor_grok/system_02.json",
+        "response_exists": true,
+        "response_sha256": "b55fe2a690dc53e871c7ce4a04cfd1e92a9e0b79d03c0b169d5a95f6d9800ad4",
+        "validated": true
+      },
+      {
+        "system": 3,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_03.json",
+        "request_sha256": "5cc50d1722a310b81dc34d64c79259ce517a52379146b8cf16457214ead43e7e",
+        "response_path": "source_observations/cursor_grok/system_03.json",
+        "response_exists": true,
+        "response_sha256": "95f6ba4c99dcac1609591cd614e999417395da20a1a73290eff9dcdf4420530e",
+        "validated": true
+      },
+      {
+        "system": 4,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_04.json",
+        "request_sha256": "99fe41a204f24b98f049a5c62b339614f751d97aac7ed4e70a01d716d70997ec",
+        "response_path": "source_observations/cursor_grok/system_04.json",
+        "response_exists": true,
+        "response_sha256": "88a21281e43a5874e26d42587fcc9a9974a19d2bbf5d987ce35f467cb98ee4cc",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_05.json",
+        "request_sha256": "e7c7da29271fa3438e0fe022f936ff7d91bfe70f101dfb7caa5a2a39af65b62c",
+        "response_path": "source_observations/cursor_grok/system_05.json",
+        "response_exists": true,
+        "response_sha256": "83ef558bad0128055c1f82062474d920550f41c60b74c66c2735043ccc145fe4",
+        "validated": true
+      }
+    ],
+    "manifest_path": "source_observations/cursor_grok/manifest.json",
+    "manifest_sha256": "6d357b482b4669e7628135b94824bc82cc8b190fa843ec0421b7b8ed2b1356f7"
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 1,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_01.json",
+        "request_sha256": "2d8f0d24e202de888c7b6a2b8dc17d521fc4967b40a20f456dedfbd7e2e771e9",
+        "response_path": "source_observations/gemini/system_01.json",
+        "response_exists": true,
+        "response_sha256": "fbcbd8e94008a9faa5942255170b6fc525c3c9ffff2109a1407fdeafd4a89fe0",
+        "validated": true
+      },
+      {
+        "system": 2,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_02.json",
+        "request_sha256": "7476ccc5ee562bc663bf43561cfd3f4682080314d6ae08c305574f64738458ea",
+        "response_path": "source_observations/gemini/system_02.json",
+        "response_exists": true,
+        "response_sha256": "0f537ab763f3e992390f9ab31e550068091bdc6eac2a5b810199aab7104e81b1",
+        "validated": true
+      },
+      {
+        "system": 3,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_03.json",
+        "request_sha256": "7c57b4998fc9cbdb68267809463b847cbd9b1624fad0c5c0f3d29822954f0e32",
+        "response_path": "source_observations/gemini/system_03.json",
+        "response_exists": true,
+        "response_sha256": "8d77eddaa311f2bc1e767fdc38983230d7f590ca586b91ba77ed59dd487ccc6f",
+        "validated": true
+      },
+      {
+        "system": 4,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "a35f9c56a17a2e3c6851026e8ff60d1ac21bad15bb1f2b613efe2980bf544f94",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "2d02e63495d285d45b038a9629a4d36c38c1dc2d7943ab68aff7b93ff82c0684",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false
+      }
+    ],
+    "max_calls": 8,
+    "calls_made": 8,
+    "max_cost_usd": 0.25,
+    "actual_cost_usd": 0.20322675,
+    "budget_exhausted": true,
+    "budget_limited_completion": true,
+    "missing_responses": 2,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": []
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "unresolved_evidence_claims": 60,
+  "unresolved_nonblocking": 127,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_due_to_budget_exhaustion",
+    "unresolved_evidence_count": 60,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "missing_gemini_responses": 2,
+    "routing_exhausted": false,
+    "reason": "budget_limited_gemini"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "6f2020f3825252707004e4eb29aa43b28a60be9dd80577c2e11d3b2849cf6e1e"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "37c9765b39b970fcc255c9845c86e4daaa5a76ea0c1ddd6f2962c96e0b3d4c99"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "2ef63bf28b77b42fe23d173e1e604f6c994cc9614ca062203805a29432b635be"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "011ec36f7762a73fb1471a19e3675c645b3e758274be159ce4a572ab18b17934"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "capacity-valid source topology plus field-level weighted evidence; majority is evidence, never ground truth",
+  "source_isolation": "CURSOR_GROK and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-09-21T20:01:15.150635+00:00"
+}

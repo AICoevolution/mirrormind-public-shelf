@@ -1,0 +1,394 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_24_harvest_song",
+  "revision": 5,
+  "authority": "print_only",
+  "source_pdf_sha256": "120f8df46085e31e7ac11a81c7152d09a4e6c8bb3429d908a044725c819f8d3f",
+  "page_image_sha256": {
+    "page-1": "df24bcc78bef6234c2a2df7e7791daa8667eb09a83a85edab4e5f64c8426e82c",
+    "page-2": "42c05447b8c21bbff325390b1d1740773742884b85956cbf84cbadd389a48faf"
+  },
+  "printed_meter": "6/8 at the opening on both staves; only staff meter glyph",
+  "physical_bar_count": 28,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "print_plain": "Right hand: E5 eighth (filled head, stem up) after the 6/8 glyph. Left hand: eighth rest. Capacity one eighth.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "onset_q": "0",
+      "x_range_px": [
+        223,
+        466
+      ],
+      "evidence_bbox_px": [
+        330,
+        175,
+        470,
+        450
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 9,
+      "capacity_q": "5/2",
+      "kind": "five-eighth partial",
+      "flags": [
+        "PARTIAL",
+        "REPEAT_END"
+      ],
+      "print_plain": "Dotted A4+C5, A4 eighth, eighth rest, then backward-repeat dots and a thick right barline. Five eighth-note units.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "x_range_px": [
+        1337,
+        1628
+      ],
+      "evidence_bbox_px": [
+        1337,
+        40,
+        1645,
+        360
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 10,
+      "capacity_q": "1/2",
+      "kind": "second-strain pickup",
+      "flags": [
+        "REPEAT_START",
+        "PICKUP"
+      ],
+      "print_plain": "After the system-3 forward-repeat dots, right hand C-sharp5 eighth (stem down, finger 2) against a left-hand eighth rest, then the printed barline at x=377. Capacity one eighth.",
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "onset_q": "0",
+      "x_range_px": [
+        304,
+        377
+      ],
+      "evidence_bbox_px": [
+        304,
+        210,
+        380,
+        480
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 28,
+      "capacity_q": "5/2",
+      "kind": "five-eighth partial",
+      "flags": [
+        "PARTIAL",
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ],
+      "print_plain": "Same cadence figure as P009: dotted A+C, A eighth, eighth rest, backward-repeat dots and thick right barline. Five eighth-note units. Last printed region.",
+      "page": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "onset_q": "0",
+      "x_range_px": [
+        1466,
+        1630
+      ],
+      "evidence_bbox_px": [
+        1466,
+        20,
+        1655,
+        330
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P009",
+      "capacities_q": [
+        "1/2",
+        "5/2"
+      ],
+      "sum_q": "3",
+      "printed_meter": "6/8",
+      "result": "one_6_8_completed_by_pickup_and_first_strain_close",
+      "evidence": "P001 is an opening one-eighth pickup (capacity 1/2): E5 eighth against an eighth rest. P009 is five eighths (capacity 5/2) before the first-strain backward repeat. One eighth plus five eighths complete one 6/8.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "close_crop_path": "source_crops/system_02.png"
+    },
+    {
+      "pair": "P010+P028",
+      "capacities_q": [
+        "1/2",
+        "5/2"
+      ],
+      "sum_q": "3",
+      "printed_meter": "6/8",
+      "result": "one_6_8_completed_by_second_strain_pickup_and_close",
+      "evidence": "P010 is a one-eighth pickup (capacity 1/2) after the forward-repeat dots: C-sharp5 eighth against an eighth rest, closed at x=377. P028 is five eighths (capacity 5/2) before the second-strain backward repeat. One eighth plus five eighths complete one 6/8.",
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "close_crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "repeats": [
+    {
+      "after_physical_bar": 9,
+      "kind": "backward",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "System 2 closes P009 with dots left of a thick right barline on both staves at x=1628. First-strain backward repeat.",
+      "evidence_box_px": [
+        1588,
+        70,
+        1648,
+        330
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "before_physical_bar": 10,
+      "kind": "forward",
+      "flags": [
+        "REPEAT_START"
+      ],
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "After system-3 clefs and three reprinted sharps, a heavy-light barline with dots to the right at x=304 starts the second strain. The first region after those dots is the one-eighth pickup P010, closed by the printed barline at x=377.",
+      "evidence_box_px": [
+        270,
+        80,
+        340,
+        340
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "after_physical_bar": 28,
+      "kind": "backward",
+      "flags": [
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ],
+      "page": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "System 5 closes P028 with dots left of a thick right barline on both staves at x=1630. Second-strain backward repeat and final barline.",
+      "evidence_box_px": [
+        1590,
+        40,
+        1655,
+        300
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "repeat_boundary_checks": [
+    {
+      "kind": "backward",
+      "after_physical_bar": 9,
+      "result": "first_strain_repeat_end",
+      "evidence": "System 2 P009 ends with repeat dots and a thick right barline at x=1628.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "kind": "forward",
+      "before_physical_bar": 10,
+      "result": "second_strain_repeat_start",
+      "evidence": "System 3 after the reprinted signatures has a heavy-light barline with dots to the right at x=304. First region after the dots is the P010 one-eighth pickup.",
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "kind": "backward",
+      "after_physical_bar": 28,
+      "result": "second_strain_repeat_end",
+      "evidence": "System 5 P028 ends with repeat dots and a thick right barline at x=1630.",
+      "page": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          175,
+          215,
+          270
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of three sharps and the 6/8 glyph."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          345,
+          215,
+          445
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of three sharps and the 6/8 glyph."
+      }
+    },
+    "changes": [],
+    "printed_change_count": 0,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        513
+      ],
+      "barline_boundaries_x_px": [
+        223,
+        466,
+        737,
+        1018,
+        1361,
+        1641
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        513,
+        1010
+      ],
+      "barline_boundaries_x_px": [
+        141,
+        589,
+        923,
+        1337,
+        1628
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 2,
+      "measures": [
+        10,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        0,
+        539
+      ],
+      "barline_boundaries_x_px": [
+        304,
+        377,
+        643,
+        892,
+        1125,
+        1363,
+        1640
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "measures": [
+        16,
+        21
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        539,
+        928
+      ],
+      "barline_boundaries_x_px": [
+        200,
+        543,
+        766,
+        960,
+        1219,
+        1428,
+        1642
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "measures": [
+        22,
+        28
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        928,
+        1285
+      ],
+      "barline_boundaries_x_px": [
+        200,
+        444,
+        668,
+        889,
+        1079,
+        1248,
+        1466,
+        1630
+      ],
+      "printed_region_count": 7,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Proposed revision: system 1 has five regions with a boundary at x=737",
+    "Proposed total: five systems with 5+4+6+6+7 regions",
+    "Printed meter remains 6/8 throughout",
+    "All prior repeat, partial, crop, and clef claims require fresh verification"
+  ],
+  "repair_note": "Astra Phase 1 inserted the omitted system-1 boundary at x=737. Independent verifier review and fresh human approval are required."
+}

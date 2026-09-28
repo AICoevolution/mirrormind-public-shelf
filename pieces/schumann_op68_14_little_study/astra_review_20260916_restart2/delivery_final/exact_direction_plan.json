@@ -1,0 +1,341 @@
+{
+  "xml_sha256": "e7f491fd3a5bc5c87dac641f65cb9cf2d27d7d94e3796d2e45e9d095f17a52e6",
+  "source_inventory": {
+    "status": "PHASE1_COMPLETE",
+    "pages": 2,
+    "systems": 10,
+    "physical_bars": 32,
+    "printed_meter": "C (4/4)",
+    "key_fifths": 1,
+    "pickup_or_partials": [],
+    "capacities_q": {
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 4,
+      "22": 4,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 4,
+      "27": 4,
+      "28": 4,
+      "29": 4,
+      "30": 4,
+      "31": 4,
+      "32": 4
+    },
+    "tempo": {
+      "text": "Moderato",
+      "beat": "quarter",
+      "bpm": 132
+    },
+    "dynamics": {
+      "1": "pp",
+      "9": "p",
+      "21": "mf",
+      "25": "pp"
+    },
+    "text": {
+      "6": "cresc.",
+      "8": "dim.",
+      "14": "cresc.",
+      "16": "dim.",
+      "19": "cresc.",
+      "23": "dim.",
+      "24": "rit.",
+      "25": "a tempo"
+    },
+    "hairpins": [
+      {
+        "bar": 3,
+        "start_q": 0,
+        "end_q": 2,
+        "kind": "crescendo"
+      },
+      {
+        "bar": 4,
+        "start_q": 2,
+        "end_q": 4,
+        "kind": "diminuendo"
+      },
+      {
+        "bar": 11,
+        "start_q": 0,
+        "end_q": 2,
+        "kind": "crescendo"
+      },
+      {
+        "bar": 12,
+        "start_q": 2,
+        "end_q": 4,
+        "kind": "diminuendo"
+      },
+      {
+        "bar": 20,
+        "start_q": 2,
+        "end_q": 4,
+        "kind": "crescendo"
+      }
+    ],
+    "slurs": "Two LH-to-RH six-note cross-staff phrase slurs in each ordinary bar. P024 second half instead has separate two-quarter RH melody slur and two-quarter LH slur; P032 has only first six-note phrase. No ties seen.",
+    "other_marks": "No pedal, ornaments, fermatas or articulation marks identified. Fingerings omitted. Triplet indication explicit in opening; consistent continued triplet eighths.",
+    "route": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "repeat": {
+      "forward_before": 17,
+      "backward_after": 32
+    },
+    "clefs": {
+      "opening": [
+        "G2",
+        "F4"
+      ],
+      "staff2_changes": [
+        [
+          3,
+          2,
+          "G2"
+        ],
+        [
+          5,
+          0,
+          "F4"
+        ],
+        [
+          11,
+          2,
+          "G2"
+        ],
+        [
+          13,
+          0,
+          "F4"
+        ],
+        [
+          21,
+          0,
+          "G2"
+        ],
+        [
+          23,
+          0,
+          "F4"
+        ],
+        [
+          27,
+          2,
+          "G2"
+        ],
+        [
+          29,
+          0,
+          "F4"
+        ]
+      ],
+      "terminal_courtesy": "Locks at q3 in P012/P020/P022/P028 are within the LH silent interval; first new-clef attack is next bar. P004 reprints continuing treble."
+    },
+    "special_contexts": {
+      "24": "Second half has simultaneously sounding quarter melody, beamed inner eighths and LH quarters; audit voice identities independently.",
+      "32": "After first two triplet groups, bass eighth plus eighth rest plus quarter rest fill two quarters."
+    },
+    "ambiguities": [],
+    "human_outcome": null
+  },
+  "erratum01": {
+    "id": "ERRATUM01",
+    "category": "engraving_direction_placement",
+    "before": "Directions precede all notes and use offset. Text directions above staff1.",
+    "after": "Directions are serialized at their absolute onset within voice1, without offset. Interstaff words/dynamics/hairpins anchored above staff2. Moderato and metronome remain above staff1.",
+    "reason": "Source has expressive marks between staves. Installed OSMD shortens offset-positioned wedges and places text at the preceding bar; direct cursor placement better preserves printed alignment. Pitch, rhythm, route, voice, slur endpoints and direction onsets/semantics unchanged.",
+    "human_outcome": null
+  },
+  "actual_directions": [
+    {
+      "bar": 1,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>Moderato</words>\n        </direction-type>\n        <staff>1</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 1,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <metronome>\n            <beat-unit>quarter</beat-unit>\n            <per-minute>132</per-minute>\n          </metronome>\n        </direction-type>\n        <staff>1</staff>\n        <sound tempo=\"132\" />\n      </direction>\n      "
+    },
+    {
+      "bar": 1,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <dynamics>\n            <pp />\n          </dynamics>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 3,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"crescendo\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 3,
+      "onset_q": "2",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"stop\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 4,
+      "onset_q": "2",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"diminuendo\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 4,
+      "onset_q": "4",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"stop\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n    "
+    },
+    {
+      "bar": 6,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>cresc.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 8,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>dim.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 9,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <dynamics>\n            <p />\n          </dynamics>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 11,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"crescendo\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 11,
+      "onset_q": "2",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"stop\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 12,
+      "onset_q": "2",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"diminuendo\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 12,
+      "onset_q": "4",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"stop\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n    "
+    },
+    {
+      "bar": 14,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>cresc.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 16,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>dim.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 19,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>cresc.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 20,
+      "onset_q": "2",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"crescendo\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 20,
+      "onset_q": "4",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <wedge type=\"stop\" number=\"1\" />\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n    "
+    },
+    {
+      "bar": 21,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <dynamics>\n            <mf />\n          </dynamics>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 23,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>dim.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 24,
+      "onset_q": "2",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>rit.</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 25,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <dynamics>\n            <pp />\n          </dynamics>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    },
+    {
+      "bar": 25,
+      "onset_q": "0",
+      "xml": "<direction placement=\"above\">\n        <direction-type>\n          <words>a tempo</words>\n        </direction-type>\n        <staff>2</staff>\n      </direction>\n      "
+    }
+  ],
+  "human_outcome": null
+}

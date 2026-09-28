@@ -1,0 +1,461 @@
+{
+  "schema": "frame_verifier_response.v1",
+  "piece_id": "schumann_op68_24_harvest_song",
+  "request_sha256": "a36d32571567deaf78e3a64e379396685eb727c485652d459349a517d06907ec",
+  "verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "session_id": "cursor_isolated_frame_verifier_piece_chat_rev5_schumann_op68_24_harvest_song",
+    "edition_scope": "schumann_op68_source_890574"
+  },
+  "verdict": "PASS",
+  "source_blindness_confirmed": true,
+  "printed_physical_bar_count": 28,
+  "human_summary": "Two pages and five grand-staff systems. The printed meter is 6/8 with three sharps. Twenty-eight printed regions: system 1 is the opening one-eighth pickup plus four complete bars, and the stroke at crop x=737 is a full grand-staff barline, not the nearby hairpin; system 2 is three complete bars and a five-eighth close with a backward repeat; system 3 starts with a forward repeat and a one-eighth pickup, then five complete bars; system 4 is six complete bars; system 5 is six complete bars and a five-eighth close with a backward repeat that is the final barline. Both staves open treble over bass. Later systems reprint those clefs and the three sharps; no later clef, key, or meter change is printed. Each red crop rectangle holds the title, tempo, slurs, hairpins, dynamics, pedal-free notation, plate, page label, and final repeat.",
+  "clef_verification": {
+    "opening": [
+      {
+        "staff": 1,
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, upper staff, left of the three sharps and the 6/8 glyph",
+        "evidence_bbox_px": [200, 188, 218, 272]
+      },
+      {
+        "staff": 2,
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, lower staff, left of the three sharps and the 6/8 glyph",
+        "evidence_bbox_px": [200, 348, 218, 438]
+      }
+    ],
+    "changes": [],
+    "printed_change_count": 0,
+    "no_other_changes_visible": true,
+    "matches_proposed_frame": true,
+    "summary_plain": "Staff 1 opens with a treble clef and staff 2 opens with a bass clef. Systems 2 through 5 reprint those same clefs with the three sharps. No later clef change and no cautionary clef is printed."
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "crop_width_px": 1760,
+      "crop_height_px": 513,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [223, 466, 737, 1018, 1361, 1641],
+      "regions": [
+        {
+          "id": "P001",
+          "capacity_q": "1/2",
+          "capacity_plain": "1 eighth-note unit",
+          "kind_plain": "opening one-eighth pickup",
+          "evidence_bbox_px": [223, 165, 466, 450],
+          "review_class": "NOTEWORTHY",
+          "flags": ["OPENING_SIGNATURE", "PICKUP"],
+          "features_plain": ["At the left of system 1", "After the 6/8 glyph"]
+        },
+        {
+          "id": "P002",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [466, 165, 737, 450],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P003",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [737, 165, 1018, 450],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P004",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1018, 165, 1361, 450],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P005",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1361, 165, 1641, 450],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "crop_width_px": 1760,
+      "crop_height_px": 497,
+      "printed_region_count": 4,
+      "barline_boundaries_x_px": [141, 589, 923, 1337, 1628],
+      "regions": [
+        {
+          "id": "P006",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [141, 50, 589, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P007",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [589, 50, 923, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P008",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [923, 50, 1337, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P009",
+          "capacity_q": "5/2",
+          "capacity_plain": "5 eighth-note units",
+          "kind_plain": "five-eighth partial before the backward repeat",
+          "evidence_bbox_px": [1337, 40, 1645, 340],
+          "review_class": "NOTEWORTHY",
+          "flags": ["PARTIAL", "REPEAT_END"],
+          "features_plain": ["Before the right barline", "At the right barline"]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 3,
+      "page": 2,
+      "crop_path": "source_crops/system_03.png",
+      "crop_width_px": 1760,
+      "crop_height_px": 539,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [304, 377, 643, 892, 1125, 1363, 1640],
+      "regions": [
+        {
+          "id": "P010",
+          "capacity_q": "1/2",
+          "capacity_plain": "1 eighth-note unit",
+          "kind_plain": "second-strain one-eighth pickup",
+          "evidence_bbox_px": [304, 210, 380, 480],
+          "review_class": "NOTEWORTHY",
+          "flags": ["REPEAT_START", "PICKUP"],
+          "features_plain": ["After the reprinted signatures", "Immediately after the forward-repeat dots"]
+        },
+        {
+          "id": "P011",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [377, 210, 643, 480],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P012",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [643, 210, 892, 480],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P013",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [892, 210, 1125, 480],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P014",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1125, 210, 1363, 480],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P015",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1363, 210, 1640, 480],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "crop_path": "source_crops/system_04.png",
+      "crop_width_px": 1760,
+      "crop_height_px": 389,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [200, 543, 766, 960, 1219, 1428, 1642],
+      "regions": [
+        {
+          "id": "P016",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [200, 40, 543, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P017",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [543, 40, 766, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P018",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [766, 40, 960, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P019",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [960, 40, 1219, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P020",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1219, 40, 1428, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P021",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1428, 40, 1642, 340],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "crop_path": "source_crops/system_05.png",
+      "crop_width_px": 1760,
+      "crop_height_px": 357,
+      "printed_region_count": 7,
+      "barline_boundaries_x_px": [200, 444, 668, 889, 1079, 1248, 1466, 1630],
+      "regions": [
+        {
+          "id": "P022",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [200, 30, 444, 320],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P023",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [444, 30, 668, 320],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P024",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [668, 30, 889, 320],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P025",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [889, 20, 1079, 320],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P026",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1079, 20, 1248, 320],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P027",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [1248, 20, 1466, 320],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P028",
+          "capacity_q": "5/2",
+          "capacity_plain": "5 eighth-note units",
+          "kind_plain": "five-eighth partial with final backward repeat",
+          "evidence_bbox_px": [1466, 20, 1655, 330],
+          "review_class": "NOTEWORTHY",
+          "flags": ["PARTIAL", "REPEAT_END", "FINAL_BARLINE"],
+          "features_plain": ["Before the right barline", "At the closing repeat dots", "At the thick right barline"]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    }
+  ],
+  "irregular_checks": [
+    {
+      "where": "System 1 between the first complete bar and the next bar",
+      "question_plain": "Is the stroke near crop x=737 a printed grand-staff barline, or only the hairpin in the gap?",
+      "answer_plain": "It is a printed barline. A two-pixel vertical stroke at x=736-737 fills both staves and the gap. Notes sit on both sides: C plus A on the left, C plus A on the right. The hairpin around x=700 has almost no gap-crossing stroke.",
+      "evidence_bbox_px": [720, 165, 755, 450]
+    },
+    {
+      "where": "System 1 after the 6/8 glyph",
+      "question_plain": "Is the first region only one eighth, closed by the barline at x=466?",
+      "answer_plain": "Yes. Right hand E fifth-line eighth, left-hand eighth rest, then a full grand-staff barline at x=466.",
+      "evidence_bbox_px": [330, 175, 470, 450]
+    },
+    {
+      "where": "System 2 at the right end",
+      "question_plain": "Does the last region close with a backward repeat after only five eighths?",
+      "answer_plain": "Yes. Dotted A plus C, A eighth, eighth rest, then dots left of a thick right barline at x=1628.",
+      "evidence_bbox_px": [1337, 40, 1648, 340]
+    },
+    {
+      "where": "System 3 after the reprinted signatures",
+      "question_plain": "Is the first region after the forward-repeat dots a one-eighth pickup closed at x=377?",
+      "answer_plain": "Yes. Heavy-light barline with dots to the right at x=304, then C-sharp eighth against an eighth rest, then a printed barline at x=377.",
+      "evidence_bbox_px": [270, 210, 385, 480]
+    },
+    {
+      "where": "System 4 between x=960 and x=1428",
+      "question_plain": "Is there a printed grand-staff barline at x=1219?",
+      "answer_plain": "Yes. A full-height stroke at x=1219-1220 divides two complete 6/8 bars.",
+      "evidence_bbox_px": [1205, 40, 1235, 340]
+    },
+    {
+      "where": "System 5 between più lento and a tempo",
+      "question_plain": "Is there a printed grand-staff barline near x=1079?",
+      "answer_plain": "Yes. A vertical stroke at x=1078-1080 crosses both staves. It stands between the più lento bar and the fermata bar that leads into a tempo.",
+      "evidence_bbox_px": [1068, 70, 1090, 310]
+    },
+    {
+      "where": "System 5 at the right end",
+      "question_plain": "Does the last printed region close with a backward repeat after five eighths?",
+      "answer_plain": "Yes. Same cadence as the first-strain close: dotted A plus C, A eighth, eighth rest, dots left of a thick right barline.",
+      "evidence_bbox_px": [1466, 20, 1655, 330]
+    },
+    {
+      "where": "All five systems, clef inventory",
+      "question_plain": "Is any later clef printed after the opening treble and bass clefs?",
+      "answer_plain": "No. Systems 2 through 5 only reprint the same treble and bass clefs. No mid-bar, cautionary, or staff-change clef is visible.",
+      "evidence_bbox_px": [200, 188, 218, 272]
+    }
+  ],
+  "count_anomaly_review": {
+    "performed": true,
+    "printed_count_confirmed": 28,
+    "explanation_plain": "Independent crop-pixel counts of continuous grand-staff barlines give five regions on system 1, four on system 2, six on system 3, six on system 4, and seven on system 5. That is twenty-eight printed regions. The extra system-1 boundary is the confirmed stroke at x=737. No other added or omitted printed region was found."
+  },
+  "corrections": []
+}

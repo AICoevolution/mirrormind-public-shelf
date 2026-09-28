@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_SOURCE_FRAME",
+  "phase2_accessed": false,
+  "hashes_match": true,
+  "issues": [
+    {
+      "id": "FRAME-1",
+      "page": 3,
+      "system": 11,
+      "locked_bar": 52,
+      "locked_claim": "physical_score_lock.json, reviewer_phase1_frame_lock.json, and frame_visual_verification.json clefs.changes: physical_bar=52, staff=1, sign=G, line=2, onset_q=3/2, placement=MID_REGION.",
+      "printed": "P052 staff 1 starts with an undotted quarter-note chord under bass clef. The treble clef immediately follows this chord and precedes the next eighth-note chord. The effective onset is 1 quarter-note unit. The complete RH rhythm is quarter + eighth + quarter + eighth = 3 quarter units; the change is before the eighth at onset 1, not before the quarter at onset 3/2.",
+      "required_repair": "Change only the P052 staff-1 treble-clef onset_q from 3/2 to 1 in all synchronized frame declarations. Preserve sign=G, line=2, MID_REGION, P052 glyph/effective region, the repaired box [1385,65,1440,175], printed 6/8, and region capacity 3. Inspect dependent correspondence and packets for reliance on the wrong onset, regenerate affected freezes and handoff hashes, and obtain fresh matching human authorization.",
+      "evidence": "reviewer/revision_02/p052_clef_onset.png",
+      "human_outcome": null
+    }
+  ],
+  "human_outcome": null
+}

@@ -1,0 +1,168 @@
+{
+  "measure_count": 28,
+  "meter": [
+    6,
+    8
+  ],
+  "printed_meter": {
+    "beats": 6,
+    "beat_type": 8,
+    "printed_glyph": "6/8"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 3,
+    "mode": null,
+    "label": "three sharps printed (A major / F-sharp minor)"
+  },
+  "measure_capacities_q": {
+    "1": "1/2",
+    "2": "3",
+    "3": "3",
+    "4": "3",
+    "5": "3",
+    "6": "3",
+    "7": "3",
+    "8": "3",
+    "9": "5/2",
+    "10": "1/2",
+    "11": "3",
+    "12": "3",
+    "13": "3",
+    "14": "3",
+    "15": "3",
+    "16": "3",
+    "17": "3",
+    "18": "3",
+    "19": "3",
+    "20": "3",
+    "21": "3",
+    "22": "3",
+    "23": "3",
+    "24": "3",
+    "25": "3",
+    "26": "3",
+    "27": "3",
+    "28": "5/2"
+  },
+  "capacity_note": "The printed meter remains 6/8. The opening and second-strain pickups are one eighth each; their corresponding repeat closes are five eighths. Every other printed region is a complete 6/8 bar. Astra's Phase-1 crop shows the omitted system-1 barline at x=737, creating one additional complete bar without changing any printed music.",
+  "section_routes": [
+    {
+      "written_regions": [
+        1,
+        9
+      ],
+      "repeat": true,
+      "kind": "first_strain_with_opening_pickup_and_backward_repeat"
+    },
+    {
+      "written_regions": [
+        10,
+        28
+      ],
+      "repeat": true,
+      "kind": "second_strain_forward_to_backward_repeat"
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        513
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        513,
+        1010
+      ]
+    },
+    {
+      "system": 3,
+      "page": 2,
+      "measures": [
+        10,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        0,
+        539
+      ]
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "measures": [
+        16,
+        21
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        539,
+        928
+      ]
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "measures": [
+        22,
+        28
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        928,
+        1285
+      ]
+    }
+  ],
+  "addressing": "P001-P028 are one-based physical printed regions on two pages and five grand-staff systems (5+4+6+6+7). System 1 contains the opening pickup followed by four complete 6/8 bars; the printed barline at x=737 divides the former wide P002 span. P009 closes the first strain. P010 is the second-strain pickup after the forward repeat. P028 is the final partial closed by the backward repeat. Systems 4 and 5 retain the verified boundaries at x=1219 and x=1079. No volta.",
+  "source_frame_evidence": "Astra Phase 1 confirmed five printed regions in system 1, including a full-height grand-staff barline at crop x=737 inside the former 466-1018 span. The five systems contain 5+4+6+6+7 regions, total 28.",
+  "clefs_open": {
+    "staff1": {
+      "sign": "G",
+      "line": 2
+    },
+    "staff2": {
+      "sign": "F",
+      "line": 4
+    }
+  },
+  "clef_changes": [],
+  "readers": {
+    "SmartScore": "inputs/Smartscore_24- Harvest Song.xml",
+    "PlayScore": "inputs/Playscore_24- Harvest Song.xml",
+    "Audiveris": "inputs/Audiveris_24- Harvest Song.xml"
+  },
+  "reader_bar_map": {
+    "SmartScore": "28 elements, raw 1-28. Unmapped.",
+    "PlayScore": "28 elements, raw 1-28. Unmapped.",
+    "Audiveris": "27 elements, raw 0-26. Unmapped."
+  },
+  "correspondence_status": "Frozen unmapped: print 28 regions; SmartScore 28, PlayScore 28, Audiveris 27. Matching counts are not treated as a correspondence map.",
+  "reader_physical_to_ordinal": {
+    "SmartScore": {},
+    "PlayScore": {},
+    "Audiveris": {}
+  },
+  "crop_validation_sha256": "c64a1b1d3f9b92a4bebc023eeaebaa26700fbd5cab3432baff47c5d10e83f510",
+  "page_frame_validation_sha256": "84b248531e1580caa830281d6d23a3f9cdf18d85963009cdfd4f5b23f26a2aa3",
+  "human_outcome": null,
+  "frame_revision": 5,
+  "repair_authority": "Astra Phase 1 print-only blocker FRAME-1"
+}

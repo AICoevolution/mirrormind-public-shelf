@@ -1,0 +1,101 @@
+{
+  "schema": "astra_phase_hashes.v1",
+  "phase": 1,
+  "status": "BLOCKED_SOURCE_FRAME",
+  "frozen_utc": "2026-09-22T07:42:22.0190971Z",
+  "hashes_match": true,
+  "phase2_accessed": false,
+  "phase3_accessed": false,
+  "launch_gate": [
+    {
+      "path": "reviewer_handoff.json",
+      "sha256": "df96034b8939d29d81245fa658b73776cee3d603a3944e50b94d34f07f9cedb5",
+      "access": "launch gate read"
+    },
+    {
+      "path": "astra_authorization.json",
+      "sha256": "efd3f6ba7bd9e27d18813288bbcb67d2155c47bd9426cc6750d668c74c7f9a06",
+      "access": "launch gate read"
+    }
+  ],
+  "files": [
+    {
+      "path": "source/printed_source.pdf",
+      "expected_sha256": "7ca75524d1c6e6a3c29f6dfe56f5302877a9ee45732f353241edc68b05febc29",
+      "actual_sha256": "7ca75524d1c6e6a3c29f6dfe56f5302877a9ee45732f353241edc68b05febc29",
+      "matches": true,
+      "access": "hash only"
+    },
+    {
+      "path": "source_crops/page-1.png",
+      "expected_sha256": "52440e5dcdee7182e40306b191c975754b32e7a3c726ac53c9655c76ad50f0b4",
+      "actual_sha256": "52440e5dcdee7182e40306b191c975754b32e7a3c726ac53c9655c76ad50f0b4",
+      "matches": true,
+      "access": "hash and visual inspection"
+    },
+    {
+      "path": "source_crops/page-2.png",
+      "expected_sha256": "e6ccaeb63bb30425f9221c697d0eb095d7de2d06c3b56d6400afbf3baa32416c",
+      "actual_sha256": "e6ccaeb63bb30425f9221c697d0eb095d7de2d06c3b56d6400afbf3baa32416c",
+      "matches": true,
+      "access": "hash and visual inspection"
+    },
+    {
+      "path": "source_crops/page-3.png",
+      "expected_sha256": "e9bd48057425aaa0978d649ab6649fc6137c9f599a354bcef296863dcf9d0a80",
+      "actual_sha256": "e9bd48057425aaa0978d649ab6649fc6137c9f599a354bcef296863dcf9d0a80",
+      "matches": true,
+      "access": "hash and visual inspection"
+    },
+    {
+      "path": "source_crops/pages.json",
+      "expected_sha256": "f3cf334a01b05dcd336bf58666622e040e1e5656fef8c11b810aaa63d6b64066",
+      "actual_sha256": "f3cf334a01b05dcd336bf58666622e040e1e5656fef8c11b810aaa63d6b64066",
+      "matches": true,
+      "access": "hash and text read"
+    },
+    {
+      "path": "config.json",
+      "expected_sha256": "e1b79823f928ef86664750f6a24d0743438108fdfa4aa2099ea431c705c924f7",
+      "actual_sha256": "e1b79823f928ef86664750f6a24d0743438108fdfa4aa2099ea431c705c924f7",
+      "matches": true,
+      "access": "hash and text read"
+    },
+    {
+      "path": "physical_score_lock.json",
+      "expected_sha256": "c6ed3d695c1339303b08609ed2f51e7655ca543fc76868f5a9e0eb2a0f9c5a9d",
+      "actual_sha256": "c6ed3d695c1339303b08609ed2f51e7655ca543fc76868f5a9e0eb2a0f9c5a9d",
+      "matches": true,
+      "access": "hash and text read"
+    },
+    {
+      "path": "reviewer_phase1_frame_lock.json",
+      "expected_sha256": "2459edd4e546995b999efbf2a28a265d5414fb3e27e6a729ae16dc5172e9368f",
+      "actual_sha256": "2459edd4e546995b999efbf2a28a265d5414fb3e27e6a729ae16dc5172e9368f",
+      "matches": true,
+      "access": "hash and text read"
+    },
+    {
+      "path": "frame_visual_verification.json",
+      "expected_sha256": "76586b443470979550608537299adeac33bdb9c0f4b2a1bbcd03e09e85fa9778",
+      "actual_sha256": "76586b443470979550608537299adeac33bdb9c0f4b2a1bbcd03e09e85fa9778",
+      "matches": true,
+      "access": "hash and text read"
+    }
+  ],
+  "generated_artifacts": [
+    {
+      "path": "reviewer/PHASE1_FREEZE.md",
+      "sha256": "68d42d648bdc6716acf7605d2ec9645a3907bf8c874e011471c04ad87f2a4891"
+    },
+    {
+      "path": "reviewer/phase1_blockers.json",
+      "sha256": "681fe37a93a1c41ed51ebb0f6789d8cca55b33e31142684975f1ca3014915e81"
+    },
+    {
+      "path": "reviewer/FRAME-1.png",
+      "sha256": "a2f80b78fa3b1b6a10249ba07bf9f23fad6b6085a7125b265de15335f6f851b2"
+    }
+  ],
+  "human_outcome": null
+}

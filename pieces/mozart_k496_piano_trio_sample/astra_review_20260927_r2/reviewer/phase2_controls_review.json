@@ -1,0 +1,388 @@
+{
+  "schema": "deterministic-controls.v1",
+  "piece_id": "mozart_k496_piano_trio_sample",
+  "assessed_before_candidates": true,
+  "print_authority": "physical_score_lock.json",
+  "baseline_questions_sha256": "df23ab3f97af6df48bea38a375fcb4679b212f46ef3669e526911da65573161a",
+  "root_controls": [
+    {
+      "id": "physical-count-194",
+      "status": "PASS",
+      "print_finding": "39 systems contain exactly 194 visible physical regions; no P195 exists.",
+      "evidence": "frame_visual_verification.json"
+    },
+    {
+      "id": "smartscore-extra-108",
+      "status": "READER_MAPPING_RESOLVED",
+      "print_finding": "System 23 visibly contains six bars P107-P112.",
+      "reader_effect": "SmartScore XML ordinal 108 duplicates P107.",
+      "evidence": "reader_correspondence.json"
+    },
+    {
+      "id": "canonical-four-staff-layout",
+      "status": "PASS",
+      "print_finding": "Every system has violin, cello, and two piano staves.",
+      "staff_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "evidence": "score_layout.json"
+    }
+  ],
+  "failed_controls_preserved": [
+    {
+      "id": "7896b8ac9ac2",
+      "kind": "FRAME",
+      "detector": "missing-measures",
+      "span": [
+        194,
+        195
+      ],
+      "address": "m194\u2013m195",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "Audiveris has no measure m194\u2013m195 at all. Confirm the bar exists."
+    },
+    {
+      "id": "553bbdab6fc6",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        61,
+        61
+      ],
+      "address": "m61",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "Audiveris reads m61\u2013m61 exactly -12 staff positions from the other readers, in every note. That is a clef or octave sign, not 12 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "f550e44038df",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        15,
+        15
+      ],
+      "address": "m15",
+      "onset_q": null,
+      "ident": [
+        "SmartScore"
+      ],
+      "question": "In m15, SmartScore places 10 of 11 notes exactly 1/4 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "a46c7b247be6",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        84,
+        84
+      ],
+      "address": "m84",
+      "onset_q": null,
+      "ident": [
+        "SmartScore"
+      ],
+      "question": "SmartScore reads m84\u2013m84 exactly -2 staff positions from the other readers, in every note. That is a clef or octave sign, not 10 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "213dc3fce5f6",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        95,
+        95
+      ],
+      "address": "m95",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "Audiveris reads m95\u2013m95 exactly -12 staff positions from the other readers, in every note. That is a clef or octave sign, not 10 separate mistakes. Which reading matches the page? Independently: At m94 staff 2, Audiveris read (none) where SmartScore and PlayScore read G2. Which does the page show?"
+    },
+    {
+      "id": "79cc2b249165",
+      "kind": "FRAME",
+      "detector": "missing-measures",
+      "span": [
+        195,
+        195
+      ],
+      "address": "m195",
+      "onset_q": null,
+      "ident": [
+        "PlayScore"
+      ],
+      "question": "PlayScore has no measure m195 at all. Confirm the bar exists."
+    },
+    {
+      "id": "606053246ff4",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        17,
+        17
+      ],
+      "address": "m17",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m17, Audiveris places 9 of 11 notes exactly 1/4 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "19036c47d468",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        49,
+        50
+      ],
+      "address": "m49\u2013m50",
+      "onset_q": null,
+      "ident": [
+        "PlayScore"
+      ],
+      "question": "PlayScore reads m49\u2013m50 exactly -9 staff positions from the other readers, in every note. That is a clef or octave sign, not 9 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "b65e8e4818ff",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        84,
+        84
+      ],
+      "address": "m84",
+      "onset_q": null,
+      "ident": [
+        "PlayScore"
+      ],
+      "question": "PlayScore reads m84\u2013m84 exactly -2 staff positions from the other readers, in every note. That is a clef or octave sign, not 9 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "4ebb220295f4",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        25,
+        25
+      ],
+      "address": "m25",
+      "onset_q": null,
+      "ident": [
+        "PlayScore"
+      ],
+      "question": "In m25, PlayScore places 6 of 8 notes exactly 2 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "4c2b63bfddb4",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        51,
+        51
+      ],
+      "address": "m51",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m51, Audiveris places 6 of 8 notes exactly -1/2 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "63d666228c67",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        83,
+        83
+      ],
+      "address": "m83",
+      "onset_q": null,
+      "ident": [
+        "SmartScore"
+      ],
+      "question": "SmartScore reads m83\u2013m83 exactly +1 staff positions from the other readers, in every note. That is a clef or octave sign, not 6 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "c17f31f1e7b2",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        84,
+        84
+      ],
+      "address": "m84",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "Audiveris reads m84\u2013m84 exactly +1 staff positions from the other readers, in every note. That is a clef or octave sign, not 6 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "61be099d7050",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        85,
+        85
+      ],
+      "address": "m85",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m85, Audiveris places 6 of 8 notes exactly -1/2 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "c1bd8aa163f4",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        93,
+        93
+      ],
+      "address": "m93",
+      "onset_q": null,
+      "ident": [
+        "SmartScore"
+      ],
+      "question": "In m93, SmartScore places 6 of 8 notes exactly -1 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "bb920fab313c",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        50,
+        50
+      ],
+      "address": "m50",
+      "onset_q": null,
+      "ident": [
+        "SmartScore"
+      ],
+      "question": "In m50, SmartScore places 5 of 6 notes exactly -1/4 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "492190733521",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        64,
+        64
+      ],
+      "address": "m64",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m64, Audiveris places 5 of 6 notes exactly -1/8 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "74379066d023",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        73,
+        73
+      ],
+      "address": "m73",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m73, Audiveris places 5 of 6 notes exactly -1 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "a36f457d39d5",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        8,
+        8
+      ],
+      "address": "m8",
+      "onset_q": null,
+      "ident": [
+        "SmartScore"
+      ],
+      "question": "SmartScore reads m8\u2013m8 exactly +1 staff positions from the other readers, in every note. That is a clef or octave sign, not 4 separate mistakes. Which reading matches the page?"
+    },
+    {
+      "id": "c6b78f34d6fa",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        23,
+        23
+      ],
+      "address": "m23",
+      "onset_q": null,
+      "ident": [
+        "PlayScore"
+      ],
+      "question": "In m23, PlayScore places 4 of 4 notes exactly -2 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "390a53d5b6a3",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        23,
+        23
+      ],
+      "address": "m23",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m23, Audiveris places 4 of 4 notes exactly -2 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "cb84d31ebe8c",
+      "kind": "FRAME",
+      "detector": "onset-drift",
+      "span": [
+        3,
+        3
+      ],
+      "address": "m3",
+      "onset_q": null,
+      "ident": [
+        "Audiveris"
+      ],
+      "question": "In m3, Audiveris places 3 of 4 notes exactly -1/4 quarter-note earlier/later than the other readers \u2014 one duration read wrong slides the rest of the bar. Check the bar's rhythm."
+    },
+    {
+      "id": "58c4ac721b01",
+      "kind": "FRAME",
+      "detector": "implied-offset",
+      "span": [
+        80,
+        80
+      ],
+      "address": "m80",
+      "onset_q": null,
+      "ident": [
+        "PlayScore"
+      ],
+      "question": "PlayScore reads m80\u2013m80 exactly -7 staff positions from the other readers, in every note. That is a clef or octave sign, not 3 separate mistakes. Which reading matches the page?"
+    }
+  ],
+  "astra_independent_assessment": {
+    "physical-count-194": "PASS: all39 printed systems independently read; no195.",
+    "smartscore-extra-108": "PASS: six visible physical bars107-112; reader ordinal108 duplicate107; distinct ordinal109 resumes108.",
+    "canonical-four-staff-layout": "PASS: violin/cello/piano upper/lower throughout; Audiveris fragments88-91 map to same four printed staves.",
+    "failed_controls": "All23 preserved without suppression; answers appear under exact IDs in phase2_priority_answers.json.",
+    "scope": "These controls establish addressing, not musical accuracy."
+  }
+}

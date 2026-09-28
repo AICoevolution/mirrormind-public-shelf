@@ -1,0 +1,12 @@
+# Pipeline findings
+
+1. The repaired 28-region frame passed the phase gate. Earlier 20260921 blocker artifacts remain untouched. Launch authorization and all current allowlisted hashes matched.
+2. All three supplied deterministic reader controls failed against print; reader agreement and a PROPER candidate had not certified musical content. Source event ledgers also disagreed with actual accidental glyphs. The full correction/provenance evidence is retained.
+3. Source provenance traces selected pitch alternatives but not all fields. Final provenance instead links each exact XML note to print and review records.
+4. Empty reader packet claim arrays required correspondence reconstruction from allowlisted raw claims. Audiveris omitted physical P8, shifting its subsequent ordinal addresses.
+5. CORE export cannot express the P15 grace before a tie continuation. A full rebuild generated 463 elements instead of 369. The unchanged Apply path returns identical XML, but this does not prove general lossless application. Sparse real voices are also heuristically labelled possible OMR artifacts; the print-grounded topology overrides that heuristic.
+6. MARKS and ROUTE actual Apply pass their exported-statement and CORE checks. MARKS rewrites 114 note XML elements; ROUTE preserves all note XML after whitespace normalization. No byte-lossless claim is made. Unicode must be explicitly decoded as UTF-8 on Windows: an initial local harness decoding error was corrected, then consumers were rerun on the exact final XML.
+7. Slur identifiers must remain unique for spans sharing an XML measure, not merely chronologically overlapping spans, because voices serialize sequentially. The local correction writer assigns reusable 1-16 identifiers with measure-exclusive lifetimes. No musical endpoint changed.
+8. OSMD has local engraving limitations: close opening text/metro spacing, an overlong-looking P5 diminuendo, high P14 cross-voice slur curvature, low P15 upper-voice rests, cramped P23/P27 short slurs. These display exceptions do not waive timing, playback or cursor gates; all those gates passed independently.
+9. PROPER's generic short-bar partner messages associate P1/P28 and P9/P10 arithmetically. The printed route is specifically P1-9 twice and P10-28 twice. Independent print-derived route/schedule validation is therefore retained separately.
+10. No production pipeline, queue, authorization, source or orchestrator files were changed. No publishing or human approval was performed.

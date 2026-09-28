@@ -1,0 +1,208 @@
+{
+  "xml_sha256": "9b09ef0fe10f6aaf59ff6097613be23f1a80822dcb6d3fa8df3faf873b28f29c",
+  "print_spec_exact_match": true,
+  "field_differences": [],
+  "note_count": 369,
+  "unique_ids": 369,
+  "capacities_q": {
+    "1": "1/2",
+    "2": "3",
+    "3": "3",
+    "4": "3",
+    "5": "3",
+    "6": "3",
+    "7": "3",
+    "8": "3",
+    "9": "5/2",
+    "10": "1/2",
+    "11": "3",
+    "12": "3",
+    "13": "3",
+    "14": "3",
+    "15": "3",
+    "16": "3",
+    "17": "3",
+    "18": "3",
+    "19": "3",
+    "20": "3",
+    "21": "3",
+    "22": "3",
+    "23": "3",
+    "24": "3",
+    "25": "3",
+    "26": "3",
+    "27": "3",
+    "28": "5/2"
+  },
+  "capacity_mismatches": {},
+  "printed_meter": [
+    "<time>\n          <beats>6</beats>\n          <beat-type>8</beat-type>\n        </time>\n        "
+  ],
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [
+      {
+        "part": "P1",
+        "measure": "m1",
+        "missing_quarters": 2.5,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m28"
+      },
+      {
+        "part": "P1",
+        "measure": "m9",
+        "missing_quarters": 0.5,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m10"
+      },
+      {
+        "part": "P1",
+        "measure": "m10",
+        "missing_quarters": 2.5,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m9"
+      },
+      {
+        "part": "P1",
+        "measure": "m28",
+        "missing_quarters": 0.5,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m1"
+      }
+    ],
+    "cursor_slips": [],
+    "first_slip_measure": null,
+    "notes": [
+      "m1 is short by 2.5, and m28 holds exactly the rest of it — one bar split in two, and normal.",
+      "m9 is short by 0.5, and m10 holds exactly the rest of it — one bar split in two, and normal.",
+      "m10 is short by 2.5, and m9 holds exactly the rest of it — one bar split in two, and normal.",
+      "m28 is short by 0.5, and m1 holds exactly the rest of it — one bar split in two, and normal."
+    ]
+  },
+  "preflight": {
+    "census": [
+      {
+        "part": "P1",
+        "staff": "1",
+        "voice": "1",
+        "notes": 182,
+        "measures": 28
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "voice": "2",
+        "notes": 9,
+        "measures": 5
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "3",
+        "notes": 132,
+        "measures": 26
+      },
+      {
+        "part": "P1",
+        "staff": "2",
+        "voice": "4",
+        "notes": 5,
+        "measures": 2
+      }
+    ],
+    "merges": [
+      {
+        "part": "P1",
+        "staff": "2",
+        "src": "4",
+        "dst": "3",
+        "notes": 5,
+        "collisions": [
+          [
+            19,
+            120
+          ],
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            48
+          ],
+          [
+            20,
+            72
+          ]
+        ],
+        "safe": false,
+        "label": "v4 → v3 (staff 2)"
+      },
+      {
+        "part": "P1",
+        "staff": "1",
+        "src": "2",
+        "dst": "1",
+        "notes": 9,
+        "collisions": [
+          [
+            14,
+            72
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            15,
+            72
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            19,
+            0
+          ],
+          [
+            19,
+            72
+          ],
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            72
+          ]
+        ],
+        "safe": false,
+        "label": "v2 → v1 (staff 1)"
+      }
+    ],
+    "overflows": [],
+    "voice_columns_before": 4,
+    "voice_columns_mechanical": 4,
+    "voice_columns_after": 2,
+    "blockers": [],
+    "needs_judgement": [
+      "measure 14",
+      "measure 15",
+      "measure 16",
+      "measure 19",
+      "measure 20"
+    ],
+    "summary": "4 voice columns -> 4 mechanically -> 2 once resolved; 0 merge(s) need nobody, 2 have overlaps; 0 over-full bar(s); 5 bar(s) need a musician"
+  }
+}

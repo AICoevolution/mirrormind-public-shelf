@@ -1,0 +1,181 @@
+{
+  "schema": "astra.print_inventory_erratum.v1",
+  "number": 4,
+  "supersedes_only_listed_fields": true,
+  "prior_phase2_freeze_sha256": "90fd116eb867465ac39d37676ff48dfd36343a20499c29038b4aff48610ae9b1",
+  "changes": [
+    {
+      "before": {
+        "id": "print-P004-s4-020",
+        "staff": "4",
+        "onset_q": "2",
+        "duration_q": "2",
+        "pitch": null,
+        "rest": true,
+        "grace": false,
+        "chord": false,
+        "comparison_origin": "PlayScore:P3:m4:e18"
+      },
+      "after": null,
+      "event_id": "print-P004-s4-020",
+      "action": "remove",
+      "reason": "No printed half rest; continuation eighth notes form shared line after two bass quarters.",
+      "bar": 4,
+      "staff": 4
+    },
+    {
+      "before": {
+        "id": "print-P017-s3-009",
+        "staff": "3",
+        "onset_q": "0",
+        "duration_q": "1",
+        "pitch": null,
+        "rest": true,
+        "grace": false,
+        "chord": false,
+        "comparison_origin": "PlayScore:P3:m17:e7"
+      },
+      "after": null,
+      "event_id": "print-P017-s3-009",
+      "action": "remove",
+      "reason": "No printed quarter rest at onset0; real inner voice enters at1.",
+      "bar": 17,
+      "staff": 3
+    },
+    {
+      "before": {
+        "id": "print-P120-s4-020",
+        "staff": "4",
+        "onset_q": "2",
+        "duration_q": "2",
+        "pitch": null,
+        "rest": true,
+        "grace": false,
+        "chord": false,
+        "comparison_origin": "PlayScore:P3:m120:e18"
+      },
+      "after": null,
+      "event_id": "print-P120-s4-020",
+      "action": "remove",
+      "reason": "No half rest printed; independent bass quarters end atq2, shared eighth continuation.",
+      "bar": 120,
+      "staff": 4
+    },
+    {
+      "before": {
+        "id": "print-P133-s3-011",
+        "staff": "3",
+        "onset_q": "0",
+        "duration_q": "1",
+        "pitch": null,
+        "rest": true,
+        "grace": false,
+        "chord": false,
+        "comparison_origin": "PlayScore:P3:m133:e7"
+      },
+      "after": null,
+      "event_id": "print-P133-s3-011",
+      "action": "remove",
+      "reason": "No printed quarter rest at0; independently sustained innerG4 enters at1.",
+      "bar": 133,
+      "staff": 3
+    },
+    {
+      "mark_id": "print-mark-0261",
+      "before": {
+        "kind": "slur",
+        "staff": "3",
+        "start": {
+          "bar": 120,
+          "onset_q": "0",
+          "event_id": "print-P120-s3-003",
+          "pitch": "D5",
+          "coincident_print_event_ids": [
+            "print-P120-s3-003"
+          ]
+        },
+        "end": {
+          "bar": 120,
+          "onset_q": "3/2",
+          "event_id": "print-P120-s3-007",
+          "pitch": "C5",
+          "coincident_print_event_ids": [
+            "print-P120-s3-007"
+          ]
+        },
+        "placement": "above",
+        "evidence_basis": "Direct printed arc trace; ordinal endpoints exclude grace and count coincident attacks once.",
+        "id": "print-mark-0261"
+      },
+      "after": {
+        "kind": "slur",
+        "staff": "3",
+        "start": {
+          "bar": 120,
+          "onset_q": "0",
+          "event_id": "print-P120-s3-003",
+          "pitch": "D5",
+          "coincident_print_event_ids": [
+            "print-P120-s3-003"
+          ]
+        },
+        "end": {
+          "bar": 120,
+          "onset_q": "2",
+          "event_id": "print-P120-s3-008",
+          "pitch": "B4"
+        },
+        "placement": "above",
+        "evidence_basis": "Direct printed arc trace; ordinal endpoints exclude grace and count coincident attacks once.",
+        "id": "print-mark-0261"
+      },
+      "reason": "Magnified printed slur endpoint over B4quarter atq2.",
+      "evidence": "phase3_evidence/phase3_bar120_grace.png"
+    },
+    {
+      "event_id": "print-P063-s4-023",
+      "bar": 63,
+      "before": {
+        "chord": true
+      },
+      "after": {
+        "chord": false
+      },
+      "reason": "Canonical same-stem coincident member flag after deletions; no added or removed pitch."
+    },
+    {
+      "event_id": "print-P064-s3-007",
+      "bar": 64,
+      "before": {
+        "chord": true
+      },
+      "after": {
+        "chord": false
+      },
+      "reason": "Canonical same-stem coincident member flag after deletions; no added or removed pitch."
+    },
+    {
+      "event_id": "print-P080-s3-015",
+      "bar": 80,
+      "before": {
+        "chord": true
+      },
+      "after": {
+        "chord": false
+      },
+      "reason": "Canonical same-stem coincident member flag after deletions; no added or removed pitch."
+    },
+    {
+      "event_id": "print-P191-s2-011",
+      "bar": 191,
+      "before": {
+        "chord": true
+      },
+      "after": {
+        "chord": false
+      },
+      "reason": "Canonical same-stem coincident member flag after deletions; no added or removed pitch."
+    }
+  ],
+  "human_outcome": null
+}
