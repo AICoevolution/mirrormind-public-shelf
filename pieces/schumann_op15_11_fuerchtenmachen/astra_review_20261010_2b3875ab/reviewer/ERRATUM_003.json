@@ -1,0 +1,75 @@
+{
+  "id": "ERRATUM-003",
+  "status": "FROZEN_BEFORE_APPLICATION",
+  "reason": "Independent playback test found B3 tie P028/P029 reattacked because of a voice change. Preserve bass B3 as line3 through the tie; moving lower beamed notes in P028 use line4, genuinely simultaneous with held B3 in its last eighth. No pitch, onset, duration, tie, or staff change.",
+  "changes": [
+    {
+      "event": {
+        "staff": 2,
+        "line": 4,
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "pitches": [
+          "F#3"
+        ],
+        "rest": false,
+        "stem": "down"
+      },
+      "before_line": 3,
+      "after_line": 4
+    },
+    {
+      "event": {
+        "staff": 2,
+        "line": 4,
+        "onset_q": "1/2",
+        "duration_q": "1/2",
+        "pitches": [
+          "C#4",
+          "E4"
+        ],
+        "rest": false,
+        "stem": "down"
+      },
+      "before_line": 3,
+      "after_line": 4
+    },
+    {
+      "event": {
+        "staff": 2,
+        "line": 3,
+        "onset_q": "1",
+        "duration_q": "1",
+        "pitches": [
+          "B3"
+        ],
+        "rest": false,
+        "stem": "up"
+      },
+      "before_line": 2,
+      "after_line": 3
+    },
+    {
+      "event": {
+        "staff": 2,
+        "line": 4,
+        "onset_q": "3/2",
+        "duration_q": "1/2",
+        "pitches": [
+          "D#4",
+          "F#4"
+        ],
+        "rest": false,
+        "stem": "down"
+      },
+      "before_line": 3,
+      "after_line": 4
+    }
+  ],
+  "evidence": [
+    "reviewer/bar_028.png",
+    "reviewer/bars_029_030.png",
+    "validation/pre_tie/primary_playback.json"
+  ],
+  "human_outcome": null
+}

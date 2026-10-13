@@ -1,0 +1,58 @@
+{
+  "schema": "post_astra_consumer_recheck.v1",
+  "status": "PASS",
+  "primary_xml": "delivery_final/Schumann_Op68_28_In_Memoriam_Juan_Corrected.musicxml",
+  "primary_xml_sha256": "68929022cf47b7768fd1e904f9795974f59c49b83d7423bd4a4d9232e92f266f",
+  "primary_xml_unchanged_during_check": true,
+  "proper": {
+    "status": "PASS",
+    "result": {
+      "verdict": "PROPER",
+      "over_full": [],
+      "short": [
+        {
+          "part": "P1",
+          "measure": "m1",
+          "missing_quarters": 1.5,
+          "bar_quarters": 2.0,
+          "pickup": true,
+          "declared_partial": true,
+          "partner": "m24"
+        },
+        {
+          "part": "P1",
+          "measure": "m24",
+          "missing_quarters": 0.5,
+          "bar_quarters": 2.0,
+          "pickup": true,
+          "declared_partial": true,
+          "partner": "m1"
+        }
+      ],
+      "cursor_slips": [],
+      "first_slip_measure": null,
+      "notes": [
+        "m1 is short by 1.5, and m24 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+        "m24 is short by 0.5, and m1 holds exactly the rest of it \u2014 one bar split in two, and normal."
+      ]
+    }
+  },
+  "marks": {
+    "status": "PASS",
+    "warning_count": 0,
+    "export": "delivery_final/MARKS_export.json"
+  },
+  "engraving": {
+    "status": "PASS",
+    "broken_count": 0,
+    "evidence": "checks/marks_engraving_recheck.json"
+  },
+  "viewer_mapping": {
+    "status": "PASS",
+    "reason": "No note IDs, voices, staves, pitches, onsets or durations changed."
+  },
+  "rendering": {
+    "status": "PASS",
+    "evidence": "checks/focused_visual_recheck.json"
+  }
+}

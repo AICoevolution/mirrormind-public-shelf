@@ -1,0 +1,24 @@
+{
+  "schema": "astra_review_integrity_blocker.v1",
+  "status": "BLOCKED_PHASE2_FREEZE_HASH",
+  "phase": 2,
+  "phase1_frozen": true,
+  "phase2_complete": false,
+  "phase3_accessed": false,
+  "candidate_accessed": false,
+  "corrections_applied": false,
+  "launch_gate": "PASS",
+  "handoff_allowlist_hashes_match": true,
+  "issue": {
+    "id": "INTEGRITY-1",
+    "freeze_path": "question_packets/freeze.json",
+    "freeze_sha256": "8cf38f749fe3e040df59be7418d2eb2a8da689ff02399ab0627100789a23f462",
+    "referenced_path": "audit_config.json",
+    "freeze_declared_sha256": "3160f8a6ae6ff27cbf1c8285b05370932d94b8e34765754ca09b07167fc1afec",
+    "handoff_declared_sha256": "8a63c5668701c36380dabb26a9f8741281ec8c9e49ac752567e2c23ded0314d3",
+    "actual_sha256": "8a63c5668701c36380dabb26a9f8741281ec8c9e49ac752567e2c23ded0314d3",
+    "required_repair": "Responsible preparer must reconcile the Phase 2 freeze with the intended audit configuration and regenerate dependent freezes/handoff as appropriate. Obtain renewed human authorization if reviewer_handoff.json changes. Astra must not edit these source files or authorization."
+  },
+  "human_outcome": null,
+  "stopped_utc": "2026-09-21T22:11:19.4390024Z"
+}

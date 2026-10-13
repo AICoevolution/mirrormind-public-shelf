@@ -1,0 +1,497 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_06_wichtige_begebenheit",
+  "frame_revision": 1,
+  "authority": "print_only",
+  "source_pdf_sha256": "bae39ea25cfe327a1fb30ec807499d8abeddef2197b422d7e0cacdcb66588903",
+  "pages_json_sha256": "8ecdd1ce302c78d5193880b1ddf73df671156ba0ddb1434d6643ac3c9de95188",
+  "physical_bar_count": 27,
+  "printed_meter": {
+    "beats": 3,
+    "beat_type": 4,
+    "printed_glyph": "3/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      392,
+      248,
+      470,
+      450
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 3,
+    "mode": null,
+    "label": "three sharps (A major / F-sharp minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "Three sharps are printed after the opening clefs on both staves of system 1 and reprinted after the clefs of systems 2, 3, and 4. No key-signature change is printed.",
+    "evidence_box_px": [
+      330,
+      248,
+      400,
+      450
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [
+    {
+      "physical_bar": 1,
+      "id": "P001",
+      "role": "opening_pickup",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "After the treble and bass clefs, three sharps, and the 3/4 sign, P001 holds one quarter-length chord on each staff, then the barline at x 487. That is one quarter, capacity 1. It is not a full 3/4 bar. The wide spacing is the clef, the key signature, and the time signature.",
+      "evidence_box_px": [
+        270,
+        230,
+        500,
+        460
+      ],
+      "evidence_space": "page_px"
+    }
+  ],
+  "terminal_or_split_partials": [
+    {
+      "physical_bar": 9,
+      "id": "P009",
+      "role": "partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "P009 runs from the barline at x 444 to the forward-repeat at x 583. The bass staff has two quarter-note chords and the treble staff is empty. That is two quarters, capacity 2, not a full 3/4 bar.",
+      "evidence_box_px": [
+        444,
+        560,
+        600,
+        770
+      ],
+      "evidence_space": "page_px"
+    },
+    {
+      "physical_bar": 10,
+      "id": "P010",
+      "role": "partial",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "P010 runs from the forward-repeat at x 583 to the barline at x 698. The treble staff has one quarter-note chord and the bass staff has two eighths. That is one quarter, capacity 1. Together with P009 (capacity 2) the pair fills the printed 3/4 meter. The repeat barline stands between them.",
+      "evidence_box_px": [
+        583,
+        560,
+        720,
+        770
+      ],
+      "evidence_space": "page_px"
+    },
+    {
+      "physical_bar": 18,
+      "id": "P018",
+      "role": "partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "P018 runs from the barline at x 1085 to the end-repeat at x 1243. Each staff has a quarter chord and a quarter rest. That is two quarters, capacity 2.",
+      "evidence_box_px": [
+        1085,
+        870,
+        1260,
+        1090
+      ],
+      "evidence_space": "page_px"
+    },
+    {
+      "physical_bar": 19,
+      "id": "P019",
+      "role": "partial",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "P019 runs from the end-repeat at x 1243 to the barline at x 1368. Each staff has two eighths, which is one quarter, capacity 1. Together with P018 (capacity 2) the pair fills the printed 3/4 meter.",
+      "evidence_box_px": [
+        1243,
+        870,
+        1390,
+        1090
+      ],
+      "evidence_space": "page_px"
+    },
+    {
+      "physical_bar": 27,
+      "id": "P027",
+      "role": "terminal_partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P027 runs from the barline at x 1475 to the final thin-thick barline. The bass staff has two quarter-note chords. The treble staff prints neither notes nor a rest. That is two quarters, capacity 2. The bar is narrower than the full bars before it. Pickup capacity 1 plus this terminal capacity 2 equals the printed 3/4 meter.",
+      "evidence_box_px": [
+        1475,
+        1170,
+        1655,
+        1440
+      ],
+      "evidence_space": "page_px"
+    }
+  ],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "3",
+    "opening_pickup_q": "1",
+    "terminal_partial_q": "2",
+    "sum_q": "3",
+    "equals_meter": true,
+    "opening_bar": {
+      "physical_bar": 1,
+      "id": "P001",
+      "role": "opening_pickup",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "After the treble and bass clefs, three sharps, and the 3/4 sign, P001 holds one quarter-length chord on each staff, then the barline at x 487. That is one quarter, capacity 1. It is not a full 3/4 bar. The wide spacing is the clef, the key signature, and the time signature.",
+      "evidence_box_px": [
+        270,
+        230,
+        500,
+        460
+      ],
+      "evidence_space": "page_px"
+    },
+    "terminal_bar": {
+      "physical_bar": 27,
+      "id": "P027",
+      "role": "terminal_partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P027 runs from the barline at x 1475 to the final thin-thick barline. The bass staff has two quarter-note chords. The treble staff prints neither notes nor a rest. That is two quarters, capacity 2. The bar is narrower than the full bars before it. Pickup capacity 1 plus this terminal capacity 2 equals the printed 3/4 meter.",
+      "evidence_box_px": [
+        1475,
+        1170,
+        1655,
+        1440
+      ],
+      "evidence_space": "page_px"
+    },
+    "explanation": "P001 is one quarter and P027 is two quarters. Their sum is the printed 3/4 bar. The mid-piece split pairs are separate from this pickup complement: P009 plus P010 is 2+1=3, and P018 plus P019 is 2+1=3."
+  },
+  "split_pairs": [
+    {
+      "metrical_sum_q": "3",
+      "equals_meter": true,
+      "regions": [
+        {
+          "physical_bar": 9,
+          "id": "P009",
+          "role": "partial",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "page": 1,
+          "system": 2,
+          "crop_path": "source_crops/system_02.png",
+          "evidence": "P009 runs from the barline at x 444 to the forward-repeat at x 583. The bass staff has two quarter-note chords and the treble staff is empty. That is two quarters, capacity 2, not a full 3/4 bar.",
+          "evidence_box_px": [
+            444,
+            560,
+            600,
+            770
+          ],
+          "evidence_space": "page_px"
+        },
+        {
+          "physical_bar": 10,
+          "id": "P010",
+          "role": "partial",
+          "capacity_q": "1",
+          "capacity_plain": "1 quarter-note beat",
+          "page": 1,
+          "system": 2,
+          "crop_path": "source_crops/system_02.png",
+          "evidence": "P010 runs from the forward-repeat at x 583 to the barline at x 698. The treble staff has one quarter-note chord and the bass staff has two eighths. That is one quarter, capacity 1. Together with P009 (capacity 2) the pair fills the printed 3/4 meter. The repeat barline stands between them.",
+          "evidence_box_px": [
+            583,
+            560,
+            720,
+            770
+          ],
+          "evidence_space": "page_px"
+        }
+      ],
+      "repeat": {
+        "kind": "forward",
+        "at_physical_bar": 10,
+        "before_physical_bar": 10,
+        "after_physical_bar": 9,
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "evidence": "A heavy-light forward repeat stands between P009 and P010. The thick stroke is x 583-590 and the thin stroke is x 594-595. Two dots are printed to the right of the thin stroke on the treble staff and on the bass staff. No dots are printed on the left. The repeat does not add a printed bar.",
+        "evidence_box_px": [
+          560,
+          555,
+          650,
+          770
+        ],
+        "evidence_space": "page_px",
+        "flags": [
+          "REPEAT_START"
+        ]
+      }
+    },
+    {
+      "metrical_sum_q": "3",
+      "equals_meter": true,
+      "regions": [
+        {
+          "physical_bar": 18,
+          "id": "P018",
+          "role": "partial",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "page": 1,
+          "system": 3,
+          "crop_path": "source_crops/system_03.png",
+          "evidence": "P018 runs from the barline at x 1085 to the end-repeat at x 1243. Each staff has a quarter chord and a quarter rest. That is two quarters, capacity 2.",
+          "evidence_box_px": [
+            1085,
+            870,
+            1260,
+            1090
+          ],
+          "evidence_space": "page_px"
+        },
+        {
+          "physical_bar": 19,
+          "id": "P019",
+          "role": "partial",
+          "capacity_q": "1",
+          "capacity_plain": "1 quarter-note beat",
+          "page": 1,
+          "system": 3,
+          "crop_path": "source_crops/system_03.png",
+          "evidence": "P019 runs from the end-repeat at x 1243 to the barline at x 1368. Each staff has two eighths, which is one quarter, capacity 1. Together with P018 (capacity 2) the pair fills the printed 3/4 meter.",
+          "evidence_box_px": [
+            1243,
+            870,
+            1390,
+            1090
+          ],
+          "evidence_space": "page_px"
+        }
+      ],
+      "repeat": {
+        "kind": "end_repeat",
+        "at_physical_bar": 18,
+        "after_physical_bar": 18,
+        "before_physical_bar": 19,
+        "page": 1,
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "evidence": "A light-heavy end repeat stands between P018 and P019. Repeat dots sit to the left of the thin stroke at x 1238-1239, and the thick stroke is x 1243-1251. The dots are in the middle spaces of both staves. No forward-repeat dots are printed on the right of this barline. The repeat does not add a printed bar.",
+        "evidence_box_px": [
+          1188,
+          870,
+          1280,
+          1090
+        ],
+        "evidence_space": "page_px",
+        "flags": [
+          "REPEAT_END"
+        ]
+      }
+    }
+  ],
+  "repeat_boundaries": [
+    {
+      "kind": "forward",
+      "at_physical_bar": 10,
+      "before_physical_bar": 10,
+      "after_physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "A heavy-light forward repeat stands between P009 and P010. The thick stroke is x 583-590 and the thin stroke is x 594-595. Two dots are printed to the right of the thin stroke on the treble staff and on the bass staff. No dots are printed on the left. The repeat does not add a printed bar.",
+      "evidence_box_px": [
+        560,
+        555,
+        650,
+        770
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START"
+      ]
+    },
+    {
+      "kind": "end_repeat",
+      "at_physical_bar": 18,
+      "after_physical_bar": 18,
+      "before_physical_bar": 19,
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "A light-heavy end repeat stands between P018 and P019. Repeat dots sit to the left of the thin stroke at x 1238-1239, and the thick stroke is x 1243-1251. The dots are in the middle spaces of both staves. No forward-repeat dots are printed on the right of this barline. The repeat does not add a printed bar.",
+      "evidence_box_px": [
+        1188,
+        870,
+        1280,
+        1090
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END"
+      ]
+    }
+  ],
+  "section_landmarks": [
+    {
+      "kind": "forward",
+      "at_physical_bar": 10,
+      "before_physical_bar": 10,
+      "after_physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "A heavy-light forward repeat stands between P009 and P010. The thick stroke is x 583-590 and the thin stroke is x 594-595. Two dots are printed to the right of the thin stroke on the treble staff and on the bass staff. No dots are printed on the left. The repeat does not add a printed bar.",
+      "evidence_box_px": [
+        560,
+        555,
+        650,
+        770
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START"
+      ]
+    },
+    {
+      "kind": "end_repeat",
+      "at_physical_bar": 18,
+      "after_physical_bar": 18,
+      "before_physical_bar": 19,
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "A light-heavy end repeat stands between P018 and P019. Repeat dots sit to the left of the thin stroke at x 1238-1239, and the thick stroke is x 1243-1251. The dots are in the middle spaces of both staves. No forward-repeat dots are printed on the right of this barline. The repeat does not add a printed bar.",
+      "evidence_box_px": [
+        1188,
+        870,
+        1280,
+        1090
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END"
+      ]
+    },
+    {
+      "kind": "final_barline",
+      "at_physical_bar": 27,
+      "after_physical_bar": 27,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P027 ends with a thin stroke at x 1626-1627 and a thick stroke at x 1632-1640. No repeat dots are printed on either side. This is the final barline of the piece, not a repeat.",
+      "evidence_box_px": [
+        1605,
+        1175,
+        1655,
+        1420
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "FINAL_BARLINE"
+      ]
+    }
+  ],
+  "clef_changes": [],
+  "clef_change_check": "No clef change is printed. System 1 opens in treble and bass, and systems 2, 3, and 4 reprint those same clefs. No mid-bar clef and no cautionary clef is printed.",
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4
+      }
+    },
+    "changes": [],
+    "system_opening_reprints": [
+      {
+        "system": 1,
+        "page": 1,
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        },
+        "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. No other clef is printed in the system."
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        },
+        "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. No other clef is printed in the system."
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        },
+        "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. No other clef is printed in the system."
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4
+        },
+        "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. No other clef is printed in the system."
+      }
+    ],
+    "change_note": "No clef change is printed. The four systems reprint the opening treble and bass clefs."
+  }
+}

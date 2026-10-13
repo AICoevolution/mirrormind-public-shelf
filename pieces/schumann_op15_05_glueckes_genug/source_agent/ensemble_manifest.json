@@ -1,0 +1,227 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op15_05_glueckes_genug",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 25,
+  "physical_bars_complete": 25,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "1e4a19ed3d3e13f790b326cc861ffd79b67e8239d226a7594d393a179e8f4654",
+      "events": 1181
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "72723542b032fe14befcb8d6ffa10ce72209adbe48df6943338b66940bed537c",
+        "events": 375,
+        "canonical": true
+      }
+    ],
+    "GROK": [],
+    "GEMINI": [
+      {
+        "path": "source_observations\\gemini\\system_01.json",
+        "sha256": "6d98668475d4b90f86bed28e64c6acaf2e0a1daa8b715f198786d8b2371a72f2",
+        "events": 66
+      },
+      {
+        "path": "source_observations\\gemini\\system_02.json",
+        "sha256": "2fea579dfaf3a6f79c240a40a4ffa27eecd6634d5480621f962257aac45d0637",
+        "events": 58
+      },
+      {
+        "path": "source_observations\\gemini\\system_03.json",
+        "sha256": "0122b0dd295a662b7ebfc6a7becd0f025b2bb3353112c98b37ff9c931bed013c",
+        "events": 83
+      },
+      {
+        "path": "source_observations\\gemini\\system_04.json",
+        "sha256": "10a68d128ff1b947adea3e8663612f440d12777c80a89de673cc44f7d9a50484",
+        "events": 67
+      },
+      {
+        "path": "source_observations\\gemini\\system_05.json",
+        "sha256": "405fdda1146d4478e72761a780cdc5f4383e94afca9bad155b66d04f5e033bdb",
+        "events": 42
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "3ecc558a7f270b331532964e7c9b896519ac6adc1db76c3c12d695c023bff2c1"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "directory_id": "grok",
+    "method": null,
+    "scope": null,
+    "system_routes": [],
+    "enabled": false,
+    "requested_count": 0,
+    "requests": [],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "provider_manifests": [
+      {
+        "provider_id": "GROK",
+        "directory_id": "grok",
+        "manifest_path": "source_observations/grok/manifest.json",
+        "manifest_sha256": null
+      }
+    ]
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 1,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_01.json",
+        "request_sha256": "a3fe23f5377168ff032ca5b9fc60c829bb0e9333ab28afffa0c12441e2630712",
+        "response_path": "source_observations/gemini/system_01.json",
+        "response_exists": true,
+        "response_sha256": "6d98668475d4b90f86bed28e64c6acaf2e0a1daa8b715f198786d8b2371a72f2",
+        "validated": true
+      },
+      {
+        "system": 2,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_02.json",
+        "request_sha256": "b5798edf3ce173fc7a3e2e17286a768251a533451e85e324035e32ac0ee3da6f",
+        "response_path": "source_observations/gemini/system_02.json",
+        "response_exists": true,
+        "response_sha256": "2fea579dfaf3a6f79c240a40a4ffa27eecd6634d5480621f962257aac45d0637",
+        "validated": true
+      },
+      {
+        "system": 3,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_03.json",
+        "request_sha256": "38d53faebe0f0341844929ea75b000a68ebfd818b3acec98c7160e9d6d657c5b",
+        "response_path": "source_observations/gemini/system_03.json",
+        "response_exists": true,
+        "response_sha256": "0122b0dd295a662b7ebfc6a7becd0f025b2bb3353112c98b37ff9c931bed013c",
+        "validated": true
+      },
+      {
+        "system": 4,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "84ff8cf7114ae06958baa8bfc04c5219ec5c03d026013b5c5b1115646555749e",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": true,
+        "response_sha256": "10a68d128ff1b947adea3e8663612f440d12777c80a89de673cc44f7d9a50484",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "582f18a1f3a2e9f885c48add6d68b8b6f8e0491c90e1591fe4e76d26379ba931",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": true,
+        "response_sha256": "405fdda1146d4478e72761a780cdc5f4383e94afca9bad155b66d04f5e033bdb",
+        "validated": true
+      }
+    ],
+    "max_calls": 24,
+    "calls_made": 6,
+    "max_cost_usd": 1.0,
+    "actual_cost_usd": 0.2385375,
+    "execution_authorized": true,
+    "authorization_status": "authorized",
+    "paid_review_performed": true,
+    "responses_used": 5,
+    "claude_fallback_responses_used": 0,
+    "new_calls_made": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "cross_staff_voices": [],
+  "unresolved_evidence_claims": 60,
+  "unresolved_nonblocking": 189,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 60,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 0,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": true,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "0b200e9ad55e836e3fcb4d33a40bee38a3e1a2d0b254dc0e67a7519988173cf0"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "c5fdc643ae12c1ae8931ece2d33333f9d7758cb8dc81a04c83f422f05e779524"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "e72f6a8ab403aed62b30b532eef3c66d8e4e75b815daea267ecd5afd6a33b045"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "820d879b99b027abb9ccb3afb336ac24c2fb5fc27486eb421a62e1400f038d2c"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "exact interval-valid source topology plus field-level weighted pitch and tie evidence; unsupported tie endpoints are quarantined; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-10-04T20:52:44.621524+00:00"
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "BLOCKED_TECHNICAL",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op15_03_Hasche_Mann_Astra_import.musicxml",
+  "primary_xml_sha256": "66c7e9fc5d8b1828a0fbd26f9b07c963c238803a8617d4db3f8828740cb80077",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "gates/proper.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "gates/playback_schedule_check.json",
+        "gates/analysis_playback.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "gates/viewer_mapping.json",
+        "gates/viewer/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "BLOCKED",
+      "evidence": [
+        "gates/essential_notation_rendering.json",
+        "gates/cross_staff_beam_continuity.json",
+        "gates/viewer/full_score.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "BLOCKED",
+      "evidence": [
+        "gates/focused_visual_recheck.json",
+        "gates/technical_blockers.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": "PASS",
+    "MARKS": "PARTIAL",
+    "ROUTE": "PASS",
+    "evidence": [
+      "gates/layer_readiness.json"
+    ]
+  },
+  "files": {
+    "change_ledger.json": "c571feeb071dbfd6986173cdd97b5d2e572945989b2120e2b83e49e98ecdb36d",
+    "human_attention.json": "16e9aa56cb3d4e746b22b7569d01e86df01cc08ad38e98ed8fbb7c696911d6a0",
+    "PHASE3_RELEASE_REQUEST.json": "a95db9a993287f0e461d0b3f722c77c90faba8679bfd0109ad37bc3d950c123d",
+    "PIPELINE_FINDINGS.md": "9cf938cb9ee10452e52911d768b062a8453b8bca9f088f274abac835218b7519",
+    "REVIEW.md": "f12998774cabf6cc650050f88b0413a08323d7382f31ce3214904d9ea655a0ec",
+    "run_metrics.json": "9c3c0977dd290cf3c1a189eebed9cb35b53700ed67d5a631f2dfd301e8579b53",
+    "voice_topology.json": "26a4e297fe40a74ab26fab2b0bc958c797d825efefc8bd91ba526efd1aa5c39a",
+    "corrections/build.py": "7238e462de3739f640b180c46e9d4aef3c507c063cc48e78aed8cbddf360cd5b",
+    "corrections/checks.py": "621d0b16b0298fb39d2f92223995f58c8dfbd5c6ffe05570e6a84ed0a26276ae",
+    "corrections/finalize.py": "867b839bdc8237fb80fe65cb4c5688d1ef4cc193960fa25d872df2657583ad3d",
+    "corrections/frozen_candidate_copy.musicxml": "7c2bf21c20ede96552ba7df10aae47d1fe5887be48cc9faeecb62b25916c9ed5",
+    "corrections/viewer.cjs": "584dfa8efb02c4e0d391151e93d3a5c65008d4dde024878ca28c3ed84b6c7cbd",
+    "delivery_final/UNVERIFIED_Schumann_Op15_03_Hasche_Mann_Astra_import.musicxml": "66c7e9fc5d8b1828a0fbd26f9b07c963c238803a8617d4db3f8828740cb80077",
+    "focused_recheck/P001_print_vs_render.png": "ff33e13a0a0f30a6f74986e49215b8b09655d25d01eca6ee13492ee48e8ffd43",
+    "focused_recheck/P002_print_vs_render.png": "d2ca802b2dc94315823e2b33c3d3efbed3f8fed0bebf399216c0b4e3d52a8a6f",
+    "focused_recheck/P003_print_vs_render.png": "eefbe5981a3b101699fb8527ac3fd04e5dbddaa519bccfa57e612cbdf12cb88b",
+    "focused_recheck/P004_print_vs_render.png": "93afe5b76486cad24b36fbba58069ac17aa20b45f9da811600b0c776444878b6",
+    "focused_recheck/P005_print_vs_render.png": "9696ad4b9572a45da18144cb46852552b6f43dac509373a4d8d4d6231754ee54",
+    "focused_recheck/P006_print_vs_render.png": "8b38f7bb4ae07f763255b7051bee72c2ebca5487c5e43a4443d69a42e8b021ee",
+    "focused_recheck/P007_print_vs_render.png": "43fe3f4ca870271731795b41dac3a2f695b0c7d84ac91a197e6937fc2138f048",
+    "focused_recheck/P008_print_vs_render.png": "b650c10b5df26425499237238170dde760327b4a4ab73536c7c2ae7443a80d72",
+    "focused_recheck/P009_print_vs_render.png": "b5802b316906e22887c3bcf752c4bc9e4f961d2c9f0308f5d54d17a26df3f302",
+    "focused_recheck/P010_print_vs_render.png": "47aa94314503cadbfa50825c8afa8d6e8e55def009b91f98d80034d453296038",
+    "focused_recheck/P011_print_vs_render.png": "67bddc38cebef1868d342e06434968eb559bda418461b07892e5a8661ebaa9a3",
+    "focused_recheck/P012_print_vs_render.png": "3bf3ad00bdae6e157ebe3bf015718377884dfbcb4eafb9edc9fbca56f3c8c4b7",
+    "focused_recheck/P013_print_vs_render.png": "439edca694783715638700e017eaa7f362b36e4e16b255be7d8489a5df8ea02d",
+    "focused_recheck/P014_print_vs_render.png": "135063275b4baa1d8fab9fe1f6f9187a1ed8adfeb1a41cc7a5fe188949ef19ff",
+    "focused_recheck/P015_print_vs_render.png": "d5293decf96239b72a10bd403d57382aa61f536afcf3c74a971916eab0a2f888",
+    "focused_recheck/P016_print_vs_render.png": "1432ee3f23065053fde83a1b640d8e9ebd6e484b06ac79bf60b1db6723403ef6",
+    "focused_recheck/P017_print_vs_render.png": "4c2da80747ec40e51398392cd13dee6bb5e728b2051590bbba3fbfd82d676d7a",
+    "focused_recheck/P018_print_vs_render.png": "7c11cd6d861016d1856fcfe10e905c6a5bc83e183487550bbfa509e92f22685a",
+    "focused_recheck/P019_print_vs_render.png": "82bb810f12a279988377c580d82c105f011d0f729308da120234dd369ec85385",
+    "focused_recheck/P020_print_vs_render.png": "ba5120a8eaebab61e957e1fb8659216769862c7ec02b3fcaca4bc3eec54529d8",
+    "focused_recheck/P021_print_vs_render.png": "7734317e23dacc73a26d68732de9e00befb41e83ec8f819ba1682fdf0fa7bceb",
+    "gates/analysis_playback.json": "ebf68d7cd2be3c8cc46822957e04b27b0555bd2e26fe3aac86a38871356b49a3",
+    "gates/core_apply.musicxml": "66c7e9fc5d8b1828a0fbd26f9b07c963c238803a8617d4db3f8828740cb80077",
+    "gates/core_rebuild.musicxml": "d6ab24dcf9fdba1903f99de319e551540765c03db40467e594274e13fea2cc55",
+    "gates/cross_staff_beam_continuity.json": "16a9c7eb2675000845bc8d522b20cc7d16ee9e04d3b098c37ddb7010dd064149",
+    "gates/essential_notation_rendering.json": "c8011b75ecdbd7eae788b4e61f43162065ad37ab9be1662f75ad2101ba2c0c58",
+    "gates/focused_visual_recheck.json": "433c8ab01a484a4122a0428c8b51782710cb4c1b4e9634a751102c8d6cc38598",
+    "gates/freeze_integrity_final.json": "8837f4753027548c88c011b8644afc037f145d20e78c5a54d48d7a8803fcb2fa",
+    "gates/frozen_spec_application.json": "7f5fdcd742de5f1e7a267a6dc43814b72e89df845e64bbeacdd32d127160a38c",
+    "gates/handoff_integrity.json": "8bbabb34454d39ac32caf0e8ee8f8c0bb3dca7697c7c9da51310eb66bb96c0ea",
+    "gates/layer_readiness.json": "4f75bdbe780daaea613096a3b533e4a86759cfda085d97a7735031ec48f8561a",
+    "gates/marks_apply.musicxml": "1052adb55ca6e6719f467e351735599316cc84d869203d0a08cf9ddf0c5c0b1c",
+    "gates/playback_schedule_check.json": "a1a83a38d08334067c4156a3d6de182750d4bdad0533c07a7953413bddea9aec",
+    "gates/proper.json": "e48aee5987040cf19521c6fe38a0d9c92d011b2893f278e58e3d8fb1f9b077ee",
+    "gates/technical_blockers.json": "d9437e7c823e27b33ada8c09830dbbf6035f92cf70ee12fbcf1e899f169e2f82",
+    "gates/viewer_mapping.json": "1383b0c0f45d12400c40e5d129ad9f120163a19485a44c20a11e0eac3256551c",
+    "reviewer/candidate_event_audit.json": "5336ac1e63a26dde8eb45f7ea3eabfcb855d09f90820beca7290cde8739f7cf2",
+    "reviewer/controls_assessment.json": "b3e17cbfd467787dc7cb0abb38ec682fe796d11b9f4f6f52556635519120de75",
+    "reviewer/correction_spec.json": "3f75836d7eb249500ab4e916b3bcff60de29140c834640f2d5781b40253faa32",
+    "reviewer/ensemble_recheck.json": "ebc6b80c8dfc123cbd22e49379d201bc048e181d119aae701c0ac78348cbd9c4",
+    "reviewer/human_attention.json": "16e9aa56cb3d4e746b22b7569d01e86df01cc08ad38e98ed8fbb7c696911d6a0",
+    "reviewer/phase1_artifact_hashes.json": "ec39d7e88b8b9aa0e22991312c4114a4f7ccf757d008364b527faf9ecc0f6904",
+    "reviewer/PHASE1_FREEZE.md": "1e8bbe5202c9eadd16aae893c94213ad34e7d56bd44094d15996f3d17e71ae0d",
+    "reviewer/phase1_hashes.json": "a5a0f7db77b04bac04145629903ef16c9037fd9ac7a7e47ac15d5a321a55f81b",
+    "reviewer/phase2_artifact_hashes.json": "2594e7765a08df717169d913788be6d046de7868962a6e1faa527609c378c56c",
+    "reviewer/PHASE2_FREEZE.md": "4a8ba7829658f661235548f81b58e38c4a00067c1a70c840db79e76b973bf335",
+    "reviewer/phase2_hashes.json": "cf45304bcf0c1e1901f17f33b1a3476a39bb6fe8608e2585916cb6a08f47406d",
+    "reviewer/phase2_inventory_addendum.md": "6cd66bbe366e49540e106e1dc4e252fa4c65ad89333b3c503ec82792efbb7de1",
+    "reviewer/phase2_print_onsets.json": "a4f7851306a45915ee61e86399c6c17a7fa057645db8b87c21b6a0634b567586",
+    "reviewer/phase3_artifact_hashes.json": "01a7b38dfc1372a1c681addc5a5e555c240143dfa989bce0f520219fdb5e54ab",
+    "reviewer/PHASE3_FREEZE.md": "a620ec700804a86950d1241fcd5823421263c1f97d3f8ee90299a7092a8737b2",
+    "reviewer/phase3_hashes.json": "2c5584dae87e0fc38e998092c24bc3e99ec20e32e4ef47975a55c265869d8c1f",
+    "reviewer/phase3_integrity.json": "7148871a6032164879fce9178d6712cb692a6eccc21f103ee127dbf57a0ad400",
+    "reviewer/phase3_review.json": "809164f3168f056537d757b13a3394cd313292e1417aebd0d30e3f7624fa11ec",
+    "reviewer/print_P013.png": "5b6e1c63b52ffded4171d2104c8879926f1063fe91f42db1f14d0ea964639cd6",
+    "reviewer/print_P014.png": "baf7689209b6423abd5a5614118b3cb2814fa66d5cd1a8dbc07108f74d28d97e",
+    "reviewer/print_P015.png": "b4b7f2607b3064ff3a919018103435cf414aabfa650e88900cd7a55c79647347",
+    "reviewer/print_P016.png": "b33c842981c72cc4018fb802eb0913b538a860f40dba44b526a9d5fb6efe88ab",
+    "reviewer/print_system_01.png": "421933c6dec700dd8e2024f879bf6742381d3e077931b8f0723943d0b13ac515",
+    "reviewer/print_system_02.png": "e22809089ada04601e9ff444b69b9b38b3b3930c1acef1c37c69349af563dcaa",
+    "reviewer/print_system_03.png": "4b4f17e6cf50685190566f7f1c3f95b9ef96e192c5e09d711b3bd6ea6ab50492",
+    "reviewer/print_system_04.png": "6c11eafe1aa5589e6f23b3e9182e80c754e0aa55f6d1e57338bbf1a9c3f9bd37",
+    "reviewer/priority_answers.json": "ea5d7e3106e03191c0286059176d9f862fe447e15c990b475dbdd13586149dc7",
+    "reviewer/reader_correspondence_check.json": "afe364d223cb6438cba71eac7daeb8fb0e8a8f4502e5394fd81741519650e357",
+    "reviewer/reader_region_assessment.json": "b2d239b96d4ebb360e4fdc0912ac726b136f05de799d477f20900879240da6f3",
+    "delivery_final/layers/analysis_metadata.json": "10d7cad2523585f10b9c9486bc408c4630c5778e35fdaf97bf2e5d59dcd9fc25",
+    "delivery_final/layers/CORE.json": "93926efa7ef86cb6270c825a3a55d3107ae25a0c726f5991ddd92abeade9d5a5",
+    "delivery_final/layers/CORE.sep": "4122bd932e926a2e7d2f5069b7e637451c848c393a72bf23167b900657ba2463",
+    "delivery_final/layers/exact_event_ledger.json": "14cffbc1b80ceca38b302f612e935988a3bc29f0bdb7a23261dbf2ce40ab847a",
+    "delivery_final/layers/exact_mark_ledger.json": "edf58aee778db7e656a042bd99bbcd5cb0d0f1cdd6fa2cabb577b9fdd71e5c43",
+    "delivery_final/layers/MARKS.json": "b9e122a194e9ab78a8c012d2825591be67a68831d97c8da24b62cc212ed4b33b",
+    "delivery_final/layers/MARKS.sep": "24065f7191eced8460455409470cf597cb109fd8d921028660d5e409068fb710",
+    "delivery_final/layers/ROUTE.json": "e30c2ccd8a77945dad1a0ee0857dad30fb8fe6735f123927cafff11af195f99f",
+    "delivery_final/layers/ROUTE.sep": "68ddc1a5c513096177c6bec08771a20fe97a78ff06ef6841738ee44f22e60d1c",
+    "delivery_final/layers/route_playback_metadata.json": "eda6f5ac9140a479d15ef3d4c972e58ce7a12b9959bcfc9e517d306751f7ca8d",
+    "gates/viewer/full_score.png": "9d9485647e50da0cff6cfbf03e1f221f887e43ff539661be15ef0f16f3a97c5a",
+    "gates/viewer/report.json": "ebf577017e896ec8c434af33b0e4b5968c97069d0218c2afd1e842d75766a2f5",
+    "gates/viewer/score.svg": "16438bc4e2f0a1fb96ff19ea3da0f067498fc60f5e7f6e05dbee8e3535101c9a",
+    "delivery_final/artifact_manifest.json": "e25e481ed8e0ce4abeee842d52b3de906da88f337c84fbc8c95f52b871026497"
+  },
+  "human_outcome": null
+}

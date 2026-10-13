@@ -1,0 +1,350 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op68_22_roundelay",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 48,
+  "physical_bars_complete": 48,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "ff0fdc81cca8dc8dc319bce5fa976da1025a05efc6690e47ca7d7e6e83137a1e",
+      "events": 1654
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "cd8e1ffd3473958c0055e25d0ea4e973037df5e95d51fbd5145b106a99e8de7c",
+        "events": 557,
+        "canonical": true
+      }
+    ],
+    "GROK_APP_INDEPENDENT_SOURCE": [
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_01.json",
+        "sha256": "c774110d7cd0edb9b46c805ee5b6711c16bda1ceccfcc37f614de783a45528b7",
+        "events": 46
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_03.json",
+        "sha256": "f6f6fbcb4706a22e2edce4017db2dba030f452bb6e001ff2f2f0f8ec30d7b220",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_04.json",
+        "sha256": "82e8d3bdedd217e4c6debb585303bb11cb99239978f7d16fbd9e382bdc4d363e",
+        "events": 62
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_05.json",
+        "sha256": "0ad61b5a8ac78c74917bb056b4485bb980afffabc50cb0117dc2867cc85ce8c7",
+        "events": 73
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_07.json",
+        "sha256": "a9b274291f9341b310c944fc5136ce4cab8716cbdca83d12989da3934106a210",
+        "events": 50
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_08.json",
+        "sha256": "38b0e65bb19e4b9ad0ffe1e0f27729af3d242d2572939b892b7625d472f4d2e1",
+        "events": 65
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_09.json",
+        "sha256": "572126877b0fa49da33ae89f12cda35d4d9daa47675860de52a4d7da04c801da",
+        "events": 49
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source\\system_10.json",
+        "sha256": "7e442ad6f68e54bf077bb9e65f86e976e1adc4cb7c9e4d3e79c2047042ee0041",
+        "events": 47
+      }
+    ],
+    "GEMINI": [
+      {
+        "path": "source_observations\\gemini\\system_01.json",
+        "sha256": "8109896e2c80497e9e00fb162ff75d3d524d6eddc590f0b1ca75212d91cf30b9",
+        "events": 42
+      },
+      {
+        "path": "source_observations\\gemini\\system_03.json",
+        "sha256": "b820fe9d10a4a561ff413c30fe77e730f3fc26ed18dfe4b49dfa614143608f49",
+        "events": 54
+      },
+      {
+        "path": "source_observations\\gemini\\system_04.json",
+        "sha256": "7bb64268756943609f7d99119ec93ae820cd5c9699ee8f3b2be0e37465123028",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\gemini\\system_05.json",
+        "sha256": "da858c04422965bd2d5027d8f4b58f37503c3f9bd42e22e02b7e52c2c50237ec",
+        "events": 55
+      },
+      {
+        "path": "source_observations\\gemini\\system_07.json",
+        "sha256": "252f704e9fe563dde14f9673db4109b71819e4e36f9fc67b920191d5d31d912b",
+        "events": 51
+      },
+      {
+        "path": "source_observations\\gemini\\system_08.json",
+        "sha256": "6f9b3dea14abbd43aaa324b42554860739e8231f9a5a828ee6bf54d92f16b035",
+        "events": 77
+      },
+      {
+        "path": "source_observations\\gemini\\system_09.json",
+        "sha256": "d12762f322c89e3db370c0e306c9d7d8e845e92977023bd9016aec1bdbd75330",
+        "events": 51
+      },
+      {
+        "path": "source_observations\\gemini\\system_10.json",
+        "sha256": "af37748c65696826c8d6bdd19fc19fba89428c453190648d3fc9d8fc0f7c1bc2",
+        "events": 44
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "b5286eb1713078ad2faccde8ad4bbd73ac2351db368fa2919aeaea0d5b85991b"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK_APP_INDEPENDENT_SOURCE",
+    "directory_id": "grok",
+    "method": "persistent Grok Bot app edition-scoped Independent Source",
+    "scope": "one_persistent_session_per_edition",
+    "enabled": true,
+    "requested_count": 8,
+    "requests": [
+      {
+        "system": 1,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_01.json",
+        "request_sha256": "749879000dad630b49c5b326ac744b684e8735720739d995ad682623fa8d3c93",
+        "response_path": "source_observations/grok_app_independent_source/system_01.json",
+        "response_exists": true,
+        "response_sha256": "c774110d7cd0edb9b46c805ee5b6711c16bda1ceccfcc37f614de783a45528b7",
+        "validated": true
+      },
+      {
+        "system": 3,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_03.json",
+        "request_sha256": "6b27028e4ced1634785860b69769c645490094275d7e3cbd0a825d2033ca2096",
+        "response_path": "source_observations/grok_app_independent_source/system_03.json",
+        "response_exists": true,
+        "response_sha256": "f6f6fbcb4706a22e2edce4017db2dba030f452bb6e001ff2f2f0f8ec30d7b220",
+        "validated": true
+      },
+      {
+        "system": 4,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_04.json",
+        "request_sha256": "7adbff4c0e49b9b5ac1ab50c76b1022b70225398ba3ecf10533716d46e7b72d4",
+        "response_path": "source_observations/grok_app_independent_source/system_04.json",
+        "response_exists": true,
+        "response_sha256": "82e8d3bdedd217e4c6debb585303bb11cb99239978f7d16fbd9e382bdc4d363e",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_05.json",
+        "request_sha256": "1f50c180aa5300194360c1d1589b1d46faf5004368942ffa79f3b7ec6405dea4",
+        "response_path": "source_observations/grok_app_independent_source/system_05.json",
+        "response_exists": true,
+        "response_sha256": "0ad61b5a8ac78c74917bb056b4485bb980afffabc50cb0117dc2867cc85ce8c7",
+        "validated": true
+      },
+      {
+        "system": 7,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_07.json",
+        "request_sha256": "b193acb4abec2478214fd85102b96ef984bede49711b147accf154cf7de08e7e",
+        "response_path": "source_observations/grok_app_independent_source/system_07.json",
+        "response_exists": true,
+        "response_sha256": "a9b274291f9341b310c944fc5136ce4cab8716cbdca83d12989da3934106a210",
+        "validated": true
+      },
+      {
+        "system": 8,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_08.json",
+        "request_sha256": "e083a08b9b51949e29197dcfa4017fe5358ee9fedd0899310bd74e1b3dd37c37",
+        "response_path": "source_observations/grok_app_independent_source/system_08.json",
+        "response_exists": true,
+        "response_sha256": "38b0e65bb19e4b9ad0ffe1e0f27729af3d242d2572939b892b7625d472f4d2e1",
+        "validated": true
+      },
+      {
+        "system": 9,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_09.json",
+        "request_sha256": "a3c2549d60a3e25421dee5dc33a83634a7f54ff574a58490f66c668207953e6c",
+        "response_path": "source_observations/grok_app_independent_source/system_09.json",
+        "response_exists": true,
+        "response_sha256": "572126877b0fa49da33ae89f12cda35d4d9daa47675860de52a4d7da04c801da",
+        "validated": true
+      },
+      {
+        "system": 10,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source\\system_10.json",
+        "request_sha256": "5dc4d72a6a5a40570eef5700bf626de30010774e4e9298f5005d5e396fdd7bd3",
+        "response_path": "source_observations/grok_app_independent_source/system_10.json",
+        "response_exists": true,
+        "response_sha256": "7e442ad6f68e54bf077bb9e65f86e976e1adc4cb7c9e4d3e79c2047042ee0041",
+        "validated": true
+      }
+    ],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": "d484f4e11cd09b1af3685e026d5e82667b0f0366c6e2f2e40264c1c0c357d5a8"
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 1,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_01.json",
+        "request_sha256": "4c460ba21d83163cfe45e0a2ef491f492855966596c3d8c38dc9a084dddaa07d",
+        "response_path": "source_observations/gemini/system_01.json",
+        "response_exists": true,
+        "response_sha256": "8109896e2c80497e9e00fb162ff75d3d524d6eddc590f0b1ca75212d91cf30b9",
+        "validated": true
+      },
+      {
+        "system": 3,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_03.json",
+        "request_sha256": "ab0bf75187069f8d6274baf59bcdcaac42fd007652c671ab56019bd6379172d2",
+        "response_path": "source_observations/gemini/system_03.json",
+        "response_exists": true,
+        "response_sha256": "b820fe9d10a4a561ff413c30fe77e730f3fc26ed18dfe4b49dfa614143608f49",
+        "validated": true
+      },
+      {
+        "system": 4,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "52a89beca80b76b387c095e4a26fe4ecb9c3989259754194a68ff78543547065",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": true,
+        "response_sha256": "7bb64268756943609f7d99119ec93ae820cd5c9699ee8f3b2be0e37465123028",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "d7e827172ae370495660233701232cfcc1f943994d434cf6f997545e748be53c",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": true,
+        "response_sha256": "da858c04422965bd2d5027d8f4b58f37503c3f9bd42e22e02b7e52c2c50237ec",
+        "validated": true
+      },
+      {
+        "system": 7,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_07.json",
+        "request_sha256": "37d6cd82911a2591ac44cbcfa672f7a041ea645620a4f07cba91a60e51ef81e2",
+        "response_path": "source_observations/gemini/system_07.json",
+        "response_exists": true,
+        "response_sha256": "252f704e9fe563dde14f9673db4109b71819e4e36f9fc67b920191d5d31d912b",
+        "validated": true
+      },
+      {
+        "system": 8,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_08.json",
+        "request_sha256": "f719297c6bde34dd31b271836d4f8e76617ce0b23d88059eaedb376406fd7ba7",
+        "response_path": "source_observations/gemini/system_08.json",
+        "response_exists": true,
+        "response_sha256": "6f9b3dea14abbd43aaa324b42554860739e8231f9a5a828ee6bf54d92f16b035",
+        "validated": true
+      },
+      {
+        "system": 9,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_09.json",
+        "request_sha256": "30aa84e10aa8ddb1e09191f7316c410202ccc96dbe8ba29d181e9aa889f2b80e",
+        "response_path": "source_observations/gemini/system_09.json",
+        "response_exists": true,
+        "response_sha256": "d12762f322c89e3db370c0e306c9d7d8e845e92977023bd9016aec1bdbd75330",
+        "validated": true
+      },
+      {
+        "system": 10,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_10.json",
+        "request_sha256": "cabd5bfeeed2e3f766b643f3a0e3a6f8361eaedbfb61e4d016c5a6fbcb03c24d",
+        "response_path": "source_observations/gemini/system_10.json",
+        "response_exists": true,
+        "response_sha256": "af37748c65696826c8d6bdd19fc19fba89428c453190648d3fc9d8fc0f7c1bc2",
+        "validated": true
+      }
+    ],
+    "max_calls": 8,
+    "calls_made": 8,
+    "max_cost_usd": 0.25,
+    "actual_cost_usd": 0.22024649999999998,
+    "budget_exhausted": true,
+    "budget_limited_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": []
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "unresolved_evidence_claims": 90,
+  "unresolved_nonblocking": 287,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 90,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "missing_gemini_responses": 0,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "c3128e60d19d1a8c6b8f8d44f9661478e1237988c87338845821a26f2b0cbd76"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "eda72e4d11a8b600e207532d5cb290df5a68270e73a6d39c5cb75e58d69528bd"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "b690e82d04df0f0dd857791db3bf004c7e08d36db6561645954a5a5d7e5b8ab8"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "d5e88b84c23b1146b22ecdaf1923a51b996c03620a0eae0d863e79fa3825c235"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "capacity-valid source topology plus field-level weighted evidence; majority is evidence, never ground truth",
+  "source_isolation": "GROK_APP_INDEPENDENT_SOURCE and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-09-21T07:22:16.285099+00:00",
+  "frame_rebind": {
+    "status": "complete_offline_reader_consensus",
+    "bar": 48,
+    "provenance_path": "source_agent/frame_rebind_provenance.json",
+    "provenance_sha256": "c98ca3ce214db539bcdfc1182bba8e82d61c63d0033d9605ad2582e10fc2bbf0",
+    "isolated_visual_coverage_gap_retained": true
+  }
+}

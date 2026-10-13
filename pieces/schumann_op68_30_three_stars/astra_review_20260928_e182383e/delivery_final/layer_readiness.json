@@ -1,0 +1,24 @@
+{
+  "CORE": {
+    "status": "PASS",
+    "evidence": [
+      "validation/final/layer_apply_checks.json",
+      "validation/final/core_export.json"
+    ]
+  },
+  "MARKS": {
+    "status": "BLOCKED",
+    "reason": "other-notation dotted connectors remain outside the MARKS layer; tested Apply endpoints pass but no complete lossless MARKS claim.",
+    "evidence": [
+      "validation/final/layer_apply_checks.json",
+      "validation/final/marks_export.json"
+    ]
+  },
+  "ROUTE": {
+    "status": "PASS",
+    "evidence": [
+      "validation/final/layer_apply_checks.json",
+      "validation/final/route_export.json"
+    ]
+  }
+}

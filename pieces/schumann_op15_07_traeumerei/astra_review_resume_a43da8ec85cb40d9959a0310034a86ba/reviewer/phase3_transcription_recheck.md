@@ -1,0 +1,15 @@
+# Working transcription recheck — NOT a correction freeze
+
+The Phase 2 pitch inventory is a comparison aid, not an approved replacement score. Do not bulk-apply it. The following focused Phase 3 checks refine or question it without rewriting frozen evidence.
+
+- P015 upper first F5 has both up and down stems: the working inventory's inner-line X at onset zero omits a printed independent F5 quarter. The melody F5 is an eighth. See P015_cross_staff.png.
+- P015 high lower-staff A4 at onset 2 has both an eighth in the cross-staff ascending line and a separate half-note sustain; this is real simultaneous polyphony. The eighth connects to upper C#5 at 5/2. The next upper E5 at onset 3 needs assignment to the continuing line, not a blind global mapping.
+- P011 has the analogous D4/F#4 cross-staff pair. Lower D4 half sustain and the ascending D4 eighth share pitch but are different printed durations. Preserve both member roles.
+- P017 inner four-eighth beam crosses from upper F4/A4 to lower E4 and C#4/E4. Simultaneous upper G4 at 3/2 is a separate flagged eighth. The small C4 before P018 is a grace note, not a metrical eighth beginning at 7/2. The working inventory's small_note entry must not be applied as duration 1/2.
+- P025 upper Bb3 at onset 1 belongs to the downward-stem quarter line, while D4 is an upward-stem eighth. Do not duplicate Bb3 into the melody chord solely because the heads are close. The final lower F2/C3 half-note chord starts at onset 2. Reconcile the C3 tie from onset 1 with the intervening C2 eighth using exact printed stem roles.
+- P024 has an independent open upper lower-staff note simultaneous with the beamed lower line. Its exact pitch spelling needs focused review: reader Cb4 versus working provisional Bb3. The crop P024_polyphony.png exposes the half note, flat, ledger and first beamed note. This is an ordinary musical question; retain a technically usable provisional representation and list it for final human verification if it cannot be resolved. It must not be treated as an immediate technical gate.
+- P003 lower small notes are beamed sixteenth grace notes before the second beat, including a note on the B2 line (Bb2 by signature) and F3. The exact following open-note chord membership remains to be checked; P003_grace.png shows the overlapping shapes. P007/P019 need their own independent checks. Do not assume the same grace pitches merely from visual resemblance.
+
+All 12 encoded candidate tie endpoints have been enumerated. They represent six pairs: P002 F4, P013 lower A3 and D3, P014 Bb4, P017 lower A3, P022 F4. These existing pairs are supported by the print. Many other printed ties remain omitted; every proposed added endpoint needs the final member-level specification.
+
+No candidate beams, stems, grace notes, slurs, directions, wedges, fermatas or tuplets are encoded. The absence of tuplets agrees with the print; the other absences are not an acceptable final notation result. Beam/stem specification and slur endpoint coverage remain incomplete.

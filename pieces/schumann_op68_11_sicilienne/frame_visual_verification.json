@@ -1,0 +1,181 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_11_sicilienne",
+  "revision": 2,
+  "authority": "print_only",
+  "source_pdf_sha256": "2ff0fc593cdcd2a55ac638156dc392d3948b6f629af3a570c0d2cab7e95766d7",
+  "page_image_sha256": "f0657321dab40e7c99f4f03efbefd7326eb7f2a91b54ef8c3b96a0d600018ea9",
+  "printed_meter": "6/8 then 2/4 after Fine",
+  "physical_bar_count": 40,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup"
+    },
+    {
+      "physical_bar": 9,
+      "capacity_q": "5/2",
+      "kind": "first-strain ending"
+    },
+    {
+      "physical_bar": 10,
+      "capacity_q": "1/2",
+      "kind": "post-repeat pickup"
+    },
+    {
+      "physical_bar": 18,
+      "capacity_q": "5/2",
+      "kind": "first ending"
+    },
+    {
+      "physical_bar": 40,
+      "capacity_q": "3/2",
+      "kind": "terminal region"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P009",
+      "capacities_q": [
+        "1/2",
+        "5/2"
+      ],
+      "sum_q": "3",
+      "result": "pass"
+    },
+    {
+      "pair": "P010+P018",
+      "capacities_q": [
+        "1/2",
+        "5/2"
+      ],
+      "sum_q": "3",
+      "result": "pass"
+    }
+  ],
+  "repeats": [
+    {
+      "after_physical_bar": 9,
+      "kind": "backward_then_forward",
+      "system": 2,
+      "page": 1
+    },
+    {
+      "after_physical_bar": 18,
+      "kind": "first_ending_backward",
+      "system": 3,
+      "page": 1
+    },
+    {
+      "at_physical_bar": 19,
+      "kind": "second_ending",
+      "system": 3,
+      "page": 1
+    },
+    {
+      "after_physical_bar": 27,
+      "kind": "Fine then 2/4",
+      "system": 4,
+      "page": 1
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4
+      }
+    },
+    "changes": []
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        370
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        14
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        390,
+        700
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        15,
+        21
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        720,
+        1020
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        22,
+        27
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1050,
+        1360
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        28,
+        33
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1380,
+        1685
+      ]
+    },
+    {
+      "system": 6,
+      "page": 1,
+      "measures": [
+        34,
+        40
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "y_bounds_on_page": [
+        1705,
+        2089
+      ]
+    }
+  ],
+  "verified_repairs": [
+    "System 2: visible barline separates one-eighth pickup P010 from P011",
+    "First ending P018 contains five eighth-note units",
+    "Terminal P040 contains three eighth-note units"
+  ]
+}

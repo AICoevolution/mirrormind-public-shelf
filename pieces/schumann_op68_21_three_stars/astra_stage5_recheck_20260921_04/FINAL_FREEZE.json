@@ -1,0 +1,102 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN",
+  "piece_id": "schumann_op68_21_three_stars",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "publication_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op68_21_Three_Stars_Astra_import.musicxml",
+  "primary_xml_sha256": "47b57f4fc59af0813c817caca894b1e2f351f13ffed374e37695d85b74254b06",
+  "stage4_binding": "stage4_binding.json",
+  "stage4_binding_sha256": "e691489a772bcf9967903afceb94495d571e07ecc06ba3b3c08cac0837158db1",
+  "voice_topology_sha256": "ef8bf2018b8235a6a38f1fe9e8658e9f106f8342fbacafa6f91c2212cfe1d65d",
+  "human_readiness": {
+    "proper": {
+      "status": "PRINT_LOCKED_PARTIAL_PASS",
+      "evidence": "checks/independent_consumers.json",
+      "scope": "20 regions; printed partial capacities P1/P9/P10/P20 retained, no padding of primary"
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": "checks/independent_playback_comparison.json",
+      "all_events_compared": true,
+      "attacks": 542,
+      "tempo_bpm": 72,
+      "route": "1\u201320 then10\u201320",
+      "timing_basis": "Consumer base80 schedule, viewer preferred-tempo scaling80/72; grace execution discretionary, printed tied continuity verified"
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": "render_checks/integrated/report.json",
+      "mapped_entries": 542,
+      "source_onset_buckets": 129,
+      "vexflow_non_grace_durations": 341,
+      "mismatches": 0
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "render_checks/native_essential/report.json",
+        "checks/independent_render_geometry.json"
+      ],
+      "rolls": 2,
+      "grace_slurs": 2,
+      "pedal_marks": 2,
+      "focused_rests": 8,
+      "rest_notehead_collisions": 0,
+      "rest_stem_collisions": 0
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": "FOCUSED_RECHECK.md",
+      "repaired_contexts": [
+        2,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "PASS",
+      "unexpressed_core": [],
+      "lanes": 5,
+      "continuous_lines": 4,
+      "rebuild_sounding_projection_exact": true,
+      "unchanged_actual_apply_byte_exact": true,
+      "scope": "No-op Apply byte-preservation and sounding rebuild semantics; not a claim that CORE alone carries engraved layout or arbitrary edits."
+    },
+    "MARKS": {
+      "status": "PASS",
+      "warnings": [],
+      "text_fixpoint": true,
+      "slur_pairings_exact": 40,
+      "staccato_attributes_exact": 14,
+      "arpeggiate_elements_preserved": 6,
+      "scope": "Checked types/locations, slur endpoints, staccato placements and musical projection; no byte-identical regenerated layout claim."
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "actual_apply_projection_exact": true,
+      "semantic_fixpoint": true
+    }
+  },
+  "remaining_uncertainty_regions": [
+    8,
+    18,
+    19,
+    20
+  ],
+  "prior_blocked_final_freeze_sha256": "ae44c8911d3a1fab1942db4551cd1e135bc7e9c1ffd0b85ec2a7df1456fa5295",
+  "supersedes_for_readiness_only": true,
+  "prior_snapshots_preserved": true,
+  "closed_utc": "2026-09-21T02:18:30.635079+00:00",
+  "human_outcome": null,
+  "artifact_manifest_sha256": "af316846d6d9be4578c374ab007a3fd1f9edb6d5a153d0a2bf18153b41071ef7"
+}

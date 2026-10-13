@@ -1,0 +1,389 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_30_three_stars",
+  "revision": 6,
+  "authority": "print_only",
+  "source_pdf_sha256": "2a31fe46a4f3e623c3cdb89df3a72ef8c5e1552e5312109263e5eba457ffc67a",
+  "page_image_sha256": {
+    "page-1": "7da323bc2d018f5a7591b82570e35767ebf1b0b626037cb92fa826cb6031b45f"
+  },
+  "printed_meter": "C common time (4/4) at the opening on both staves; only staff meter glyph",
+  "physical_bar_count": 49,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1",
+      "kind": "opening pickup",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "x_range_px": [
+        217,
+        453
+      ],
+      "evidence_bbox_px": [
+        217,
+        10,
+        453,
+        500
+      ],
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "evidence": "Juan REJECT/signoff: P001 is one quarter-note beat (opening incomplete), not a full 4/4. Region between system-1 barlines x=217 and x=453 after clefs, one-flat key, and C common-time."
+    },
+    {
+      "physical_bar": 49,
+      "capacity_q": "3",
+      "kind": "incomplete terminal close before FINAL_BARLINE",
+      "page": 2,
+      "system": 12,
+      "crop_path": "source_crops/system_12.png",
+      "x_range_px": [
+        1387,
+        1637
+      ],
+      "evidence_bbox_px": [
+        1387,
+        10,
+        1637,
+        450
+      ],
+      "flags": [
+        "PARTIAL",
+        "FINAL_BARLINE"
+      ],
+      "evidence": "Juan REJECT/signoff: P049 holds three quarter-note beats (not a full 4/4). Incomplete terminal close before FINAL_BARLINE on system 12 (barlines x=1387 to x=1637)."
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": [
+        "P001",
+        "P049"
+      ],
+      "capacities_q": [
+        "1",
+        "3"
+      ],
+      "sum_q": "4",
+      "printed_meter": "4/4",
+      "result": "pass",
+      "evidence": "P001 opening pickup capacity 1 + P049 incomplete terminal capacity 3 = 4 quarter-note units, matching printed C / 4/4. Juan confirmed both capacities."
+    }
+  ],
+  "repeats": [],
+  "repeat_boundary_checks": [],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          310,
+          220,
+          375
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of the C common-time glyph. One flat (B-flat) key signature left of the C common-time glyph."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          460,
+          220,
+          535
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of the C common-time glyph. One flat (B-flat) key signature left of the C common-time glyph."
+      }
+    },
+    "changes": [],
+    "printed_change_count": 0,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        531
+      ],
+      "barline_boundaries_x_px": [
+        217,
+        453,
+        761,
+        1074,
+        1320,
+        1639
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        531,
+        852
+      ],
+      "barline_boundaries_x_px": [
+        136,
+        616,
+        994,
+        1291,
+        1640
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        10,
+        13
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        852,
+        1170
+      ],
+      "barline_boundaries_x_px": [
+        137,
+        598,
+        956,
+        1251,
+        1641
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        14,
+        17
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1170,
+        1489
+      ],
+      "barline_boundaries_x_px": [
+        136,
+        646,
+        1054,
+        1368,
+        1642
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        18,
+        21
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1489,
+        1826
+      ],
+      "barline_boundaries_x_px": [
+        137,
+        596,
+        927,
+        1278,
+        1643
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 6,
+      "page": 1,
+      "measures": [
+        22,
+        25
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "y_bounds_on_page": [
+        1826,
+        2295
+      ],
+      "barline_boundaries_x_px": [
+        140,
+        610,
+        940,
+        1330,
+        1642
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        26,
+        29
+      ],
+      "crop_path": "source_crops/system_07.png",
+      "y_bounds_on_page": [
+        173,
+        475
+      ],
+      "barline_boundaries_x_px": [
+        133,
+        597,
+        954,
+        1256,
+        1629
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        30,
+        33
+      ],
+      "crop_path": "source_crops/system_08.png",
+      "y_bounds_on_page": [
+        475,
+        823
+      ],
+      "barline_boundaries_x_px": [
+        135,
+        558,
+        958,
+        1345,
+        1634
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        34,
+        37
+      ],
+      "crop_path": "source_crops/system_09.png",
+      "y_bounds_on_page": [
+        823,
+        1155
+      ],
+      "barline_boundaries_x_px": [
+        135,
+        579,
+        906,
+        1267,
+        1636
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        38,
+        41
+      ],
+      "crop_path": "source_crops/system_10.png",
+      "y_bounds_on_page": [
+        1155,
+        1490
+      ],
+      "barline_boundaries_x_px": [
+        137,
+        593,
+        933,
+        1308,
+        1638
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "measures": [
+        42,
+        45
+      ],
+      "crop_path": "source_crops/system_11.png",
+      "y_bounds_on_page": [
+        1490,
+        1827
+      ],
+      "barline_boundaries_x_px": [
+        140,
+        597,
+        958,
+        1245,
+        1639
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 12,
+      "page": 2,
+      "measures": [
+        46,
+        49
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "y_bounds_on_page": [
+        1827,
+        2295
+      ],
+      "barline_boundaries_x_px": [
+        142,
+        578,
+        998,
+        1387,
+        1637
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Print layout 5+4x11 = 49 complete common-time bars across 12 systems on two pages.",
+    "System crops from staff-line midpoints; system 1 is [0,531] on page 1 (one grand staff only).",
+    "One flat at every system start; C common time only at the piece opening.",
+    "No pickups, no partial bars, no repeats, no voltas.",
+    "Opening clefs treble over bass with no mid-piece clef changes.",
+    "System 12 ends with a light-heavy final double barline.",
+    "S4 barline index 2 corrected to x=1054 (print ink / geometry).",
+    "System 7 re-cropped with top y=100 so uppermost beams/slurs are inside the crop.",
+    "Juan: P001 capacity 1 (opening pickup); P049 capacity 3 (terminal incomplete); 1+3=4."
+  ]
+}

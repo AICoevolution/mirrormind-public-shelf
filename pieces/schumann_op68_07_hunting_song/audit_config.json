@@ -1,0 +1,517 @@
+{
+  "measure_count": 30,
+  "meter": [
+    6,
+    8
+  ],
+  "printed_meter": {
+    "beats": 6,
+    "beat_type": 8,
+    "printed_glyph": "6/8"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": -1,
+    "mode": null,
+    "label": "one printed flat (F major / D minor)"
+  },
+  "measure_capacities_q": {
+    "1": "1/2",
+    "2": "3",
+    "3": "3",
+    "4": "3",
+    "5": "3",
+    "6": "3",
+    "7": "3",
+    "8": "3",
+    "9": "5/2",
+    "10": "1/2",
+    "11": "3",
+    "12": "3",
+    "13": "3",
+    "14": "3",
+    "15": "3",
+    "16": "3",
+    "17": "3",
+    "18": "3",
+    "19": "3",
+    "20": "3",
+    "21": "3",
+    "22": "3",
+    "23": "3",
+    "24": "3",
+    "25": "3",
+    "26": "3",
+    "27": "3",
+    "28": "3",
+    "29": "3",
+    "30": "5/2"
+  },
+  "capacity_note": "Printed meter is 6/8 throughout; only the system-1 opening glyph on both staves. Complete regions have capacity 3 quarter-note units (six eighths). P001 is a one-eighth opening pickup (capacity 1/2). P009 is the five-eighth first-strain terminal (capacity 5/2). P010 is a one-eighth second-strain pickup (capacity 1/2). P030 is the five-eighth second-strain close (capacity 5/2). Two conventional pairs: P001+P009 = 3 and P010+P030 = 3, each matching printed 6/8. No rest is invented in P009.",
+  "section_routes": [
+    {
+      "written_regions": [
+        1,
+        9
+      ],
+      "repeat": true,
+      "kind": "first_strain_backward_repeat_from_beginning"
+    },
+    {
+      "written_regions": [
+        10,
+        30
+      ],
+      "repeat": true,
+      "kind": "second_strain_forward_P010_backward_P030"
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        394
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        13
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        394,
+        772
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        14,
+        18
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        772,
+        1156
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        19,
+        24
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1156,
+        1537
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        25,
+        30
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1537,
+        1905
+      ]
+    }
+  ],
+  "addressing": "P001-P030 are one-based physical printed 6/8 regions on one page. Five grand-staff systems at pypdfium2 scale 2.5 (6+7+5+6+6). P001 is a one-eighth opening pickup. P002-P008 are complete 6/8 bars. P009 is a five-eighth first-strain terminal (capacity 5/2) closed by the combined repeat at x=813. P010 is a one-eighth second-strain pickup closed by the staff-spanning barline at x=894. P011-P029 are complete 6/8 bars. P030 is a five-eighth terminal (capacity 5/2) before a thin-plus-thick close that also carries backward-repeat dots. Combined repeat after P009 / forward start before P010. Backward close after P030. Pickup-plus-terminal pairs: 1/2+5/2=3 (P001+P009) and 1/2+5/2=3 (P010+P030). No volta.",
+  "source_frame_evidence": "Inspected one page render at pypdfium2 scale 2.5 (1570x1905) plus five grand-staff children from staff-line detection with inter-system midpoints. Printed tempo Vivace dotted-quarter=100, 6/8 on both staves, one flat. RH opens G clef line 2; LH opens F clef line 4. LH changes to G in P008 after bass A3, C4, and F4 (last 3 notes A4, F4, G4 in treble) and returns to F on the last eighth of P012 (first governed event is the staccato C3 eighth in the second space, no ledger). Combined repeat at P009/P010; staff-spanning barline at x=894 splits the second-strain pickup P010 from full P011. Backward close after P030. System-start clefs are reprints. P030 ends with a cautionary G, backward-repeat dots, and a thin-plus-thick close. Five systems 6+7+5+6+6 = 30 printed regions. No musical ink on the page boundary.",
+  "clefs_open": {
+    "staff1": {
+      "sign": "G",
+      "line": 2
+    },
+    "staff2": {
+      "sign": "F",
+      "line": 4
+    }
+  },
+  "clef_changes": [
+    {
+      "physical_bar": 8,
+      "staff": 2,
+      "onset_q": "3/2",
+      "sign": "G",
+      "line": 2,
+      "kind": "change",
+      "region": "LH bass to treble in P008 after the first 3 notes of the lower staff (onset 3/2). Those first 3 left-hand eighths stay in bass: A3, C4, and F4. Previous event is the bass F4 eighth immediately left of the G clef. Glyph sits on source_crops/system_02.png between barlines x=328 and x=594, immediately left of the last 3 left-hand eighths, which are in treble: A4, F4, and G4. First governed event is A4 after the G clef.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence_box_px": [
+        432,
+        218,
+        482,
+        302
+      ],
+      "evidence_space": "system_crop",
+      "page_evidence_bbox_px": [
+        432,
+        612,
+        482,
+        696
+      ]
+    },
+    {
+      "physical_bar": 12,
+      "staff": 2,
+      "onset_q": "5/2",
+      "sign": "F",
+      "line": 4,
+      "kind": "change",
+      "region": "LH treble to bass on the last eighth of P012 (onset 5/2). Glyph sits on source_crops/system_02.png immediately left of the staccato C3 eighth (second space of the bass staff, no ledger) and the barline at x=1310. First governed event is that staccato C3 eighth; P013 p chords continue in bass.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence_box_px": [
+        1218,
+        228,
+        1266,
+        292
+      ],
+      "evidence_space": "system_crop",
+      "page_evidence_bbox_px": [
+        1218,
+        622,
+        1266,
+        686
+      ]
+    },
+    {
+      "physical_bar": 30,
+      "staff": 2,
+      "onset_q": "5/2",
+      "sign": "G",
+      "line": 2,
+      "kind": "cautionary",
+      "region": "LH cautionary G clef at the close of P030 after the eighth rest, immediately left of the backward-repeat dots and the thin-plus-thick close. No remaining sounding event of this piece is governed.",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence_box_px": [
+        1472,
+        218,
+        1520,
+        305
+      ],
+      "evidence_space": "system_crop",
+      "page_evidence_bbox_px": [
+        1472,
+        1755,
+        1520,
+        1842
+      ]
+    }
+  ],
+  "readers": {
+    "SmartScore": "inputs/Smartscore_7- Hunting Song.xml",
+    "PlayScore": "inputs/Playscore_7- Hunting Song.xml",
+    "Audiveris": "inputs/Audiveris_7- Hunting Song.xml"
+  },
+  "reader_bar_map": {
+    "SmartScore": "30 elements, raw 1-30. Ordinal 1:1 to P001-P030.",
+    "PlayScore": "30 elements, raw 1-30. Ordinal 1:1 to P001-P030.",
+    "Audiveris": "30 elements, raw 0,1,2,3,3,4,5,6,7,X7,8-27. Ordinal 1:1 to P001-P030; raw labels are not 1:1."
+  },
+  "correspondence_status": "Print 30 regions. SmartScore/PlayScore 30 measures labeled 1-30 map 1:1 by ordinal. Audiveris 30 measures map 1:1 by ordinal; raw labels 0,1,2,3,3,4,5,6,7,X7,8-27.",
+  "reader_physical_to_ordinal": {
+    "SmartScore": {
+      "P001": [
+        1
+      ],
+      "P002": [
+        2
+      ],
+      "P003": [
+        3
+      ],
+      "P004": [
+        4
+      ],
+      "P005": [
+        5
+      ],
+      "P006": [
+        6
+      ],
+      "P007": [
+        7
+      ],
+      "P008": [
+        8
+      ],
+      "P009": [
+        9
+      ],
+      "P010": [
+        10
+      ],
+      "P011": [
+        11
+      ],
+      "P012": [
+        12
+      ],
+      "P013": [
+        13
+      ],
+      "P014": [
+        14
+      ],
+      "P015": [
+        15
+      ],
+      "P016": [
+        16
+      ],
+      "P017": [
+        17
+      ],
+      "P018": [
+        18
+      ],
+      "P019": [
+        19
+      ],
+      "P020": [
+        20
+      ],
+      "P021": [
+        21
+      ],
+      "P022": [
+        22
+      ],
+      "P023": [
+        23
+      ],
+      "P024": [
+        24
+      ],
+      "P025": [
+        25
+      ],
+      "P026": [
+        26
+      ],
+      "P027": [
+        27
+      ],
+      "P028": [
+        28
+      ],
+      "P029": [
+        29
+      ],
+      "P030": [
+        30
+      ]
+    },
+    "PlayScore": {
+      "P001": [
+        1
+      ],
+      "P002": [
+        2
+      ],
+      "P003": [
+        3
+      ],
+      "P004": [
+        4
+      ],
+      "P005": [
+        5
+      ],
+      "P006": [
+        6
+      ],
+      "P007": [
+        7
+      ],
+      "P008": [
+        8
+      ],
+      "P009": [
+        9
+      ],
+      "P010": [
+        10
+      ],
+      "P011": [
+        11
+      ],
+      "P012": [
+        12
+      ],
+      "P013": [
+        13
+      ],
+      "P014": [
+        14
+      ],
+      "P015": [
+        15
+      ],
+      "P016": [
+        16
+      ],
+      "P017": [
+        17
+      ],
+      "P018": [
+        18
+      ],
+      "P019": [
+        19
+      ],
+      "P020": [
+        20
+      ],
+      "P021": [
+        21
+      ],
+      "P022": [
+        22
+      ],
+      "P023": [
+        23
+      ],
+      "P024": [
+        24
+      ],
+      "P025": [
+        25
+      ],
+      "P026": [
+        26
+      ],
+      "P027": [
+        27
+      ],
+      "P028": [
+        28
+      ],
+      "P029": [
+        29
+      ],
+      "P030": [
+        30
+      ]
+    },
+    "Audiveris": {
+      "P001": [
+        1
+      ],
+      "P002": [
+        2
+      ],
+      "P003": [
+        3
+      ],
+      "P004": [
+        4
+      ],
+      "P005": [
+        5
+      ],
+      "P006": [
+        6
+      ],
+      "P007": [
+        7
+      ],
+      "P008": [
+        8
+      ],
+      "P009": [
+        9
+      ],
+      "P010": [
+        10
+      ],
+      "P011": [
+        11
+      ],
+      "P012": [
+        12
+      ],
+      "P013": [
+        13
+      ],
+      "P014": [
+        14
+      ],
+      "P015": [
+        15
+      ],
+      "P016": [
+        16
+      ],
+      "P017": [
+        17
+      ],
+      "P018": [
+        18
+      ],
+      "P019": [
+        19
+      ],
+      "P020": [
+        20
+      ],
+      "P021": [
+        21
+      ],
+      "P022": [
+        22
+      ],
+      "P023": [
+        23
+      ],
+      "P024": [
+        24
+      ],
+      "P025": [
+        25
+      ],
+      "P026": [
+        26
+      ],
+      "P027": [
+        27
+      ],
+      "P028": [
+        28
+      ],
+      "P029": [
+        29
+      ],
+      "P030": [
+        30
+      ]
+    }
+  },
+  "crop_validation_sha256": "6145e34c30eb6e20ed349fc2b6dba7f2441f25fcfd4eab44c3d2dac4aaede768",
+  "page_frame_validation_sha256": "f17e29dad614d171dde14f75737b83d808142c24478d50de3222403e2ad49d15",
+  "human_outcome": null
+}

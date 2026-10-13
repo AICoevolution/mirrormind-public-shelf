@@ -1,0 +1,57 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "UNISON-P029-P041",
+      "address": "Page 2, systems 6/8, P029/P041 lower staff onset 0",
+      "question": "Do the two displaced open heads on A3 represent separate half-note and dotted-half-note unison voices?",
+      "alternatives": [
+        "Two simultaneous A3 voices, durations 2 and 3 quarters",
+        "A single held A3 with engraving duplication"
+      ],
+      "confidence": "medium",
+      "provisional_treatment": "Encode both heads as A3: voice 5 half note, voice 4 dotted half. Voice 5 continues into G4 at offset 2 and ties into the next bar. This retains all visible ink and yields a provisional doubled unison attack.",
+      "evidence": [
+        "reviewer/detail_P029.png",
+        "reviewer/detail_P041.png",
+        "reviewer/ERRATUM_001_FREEZE.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "SLUR-CROSS-028-042",
+      "address": "P028\u2013P030 and P040\u2013P042, lower-to-upper phrase curve; other chord-member slur attachments",
+      "question": "Confirm the chosen chord-member endpoints of the short phrase curves. The long lower phrase endpoint has been corrected by Juan.",
+      "confidence": "medium",
+      "provisional_treatment": "Long slurs now end on the second B4 at offset 2 of P029/P041, per Juan. Short slurs retain their provisional chord-member endpoints and still require verification.",
+      "evidence": [
+        "rendered/P29.png",
+        "rendered/P41.png",
+        "reviewer/print_system_06.png",
+        "reviewer/print_system_08.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": {
+        "scope": "Long lower phrase only",
+        "decision": "Second B4 in P029/P041",
+        "unresolved": "Short-slur chord-member endpoints"
+      }
+    },
+    {
+      "id": "SILENCE-P008-P016",
+      "address": "P008/P016 lower bass E3, offset 0\u20132",
+      "question": "Confirm the filled E3 quarter is followed by unprinted silence before the E4 at offset 2.",
+      "confidence": "medium",
+      "provisional_treatment": "Retain the written quarter duration; use a forward gap at offset 1 instead of inventing a rest or extending duration. Playback releases E3 after one quarter.",
+      "evidence": [
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png",
+        "validation/production_render/P008.png",
+        "validation/production_render/P016_018.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_07_hunting_song",
+  "revision": 7,
+  "authority": "print_only",
+  "source_pdf_sha256": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a",
+  "page_image_sha256": {
+    "page-1": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9"
+  },
+  "printed_meter": "6/8 at the opening; only staff meter glyph",
+  "physical_bar_count": 30,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "id": "P001",
+      "capacity_q": "1/2",
+      "kind": "pickup",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "onset_q": "0",
+      "evidence_space": "system_crop",
+      "evidence_box_px": [
+        116,
+        90,
+        324,
+        320
+      ],
+      "page_evidence_bbox_px": [
+        116,
+        90,
+        324,
+        320
+      ],
+      "evidence": "On source_crops/system_01.png after G/F clefs, one flat, and 6/8, a single staccato eighth on both staves (upper F4, lower F3 under f) is closed by the staff-spanning barline at x=324. One eighth-note unit (capacity 1/2)."
+    },
+    {
+      "physical_bar": 9,
+      "id": "P009",
+      "capacity_q": "5/2",
+      "kind": "incomplete first-strain terminal",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "evidence_space": "system_crop",
+      "evidence_box_px": [
+        594,
+        80,
+        813,
+        310
+      ],
+      "page_evidence_bbox_px": [
+        594,
+        474,
+        813,
+        704
+      ],
+      "evidence": "On source_crops/system_02.png, P009 occupies x=594 to the combined repeat at x=813. Each staff has three beamed eighths then one quarter (1/2+1/2+1/2+1 = five eighth-note units). No sixth eighth, rest, or dot fills the missing half quarter before the backward-repeat dots. Capacity 5/2. Incomplete first-strain terminal; pairs with P001 pickup 1/2. Printed 6/8 is unchanged; no rest is invented."
+    },
+    {
+      "physical_bar": 10,
+      "id": "P010",
+      "capacity_q": "1/2",
+      "kind": "pickup",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "evidence_space": "system_crop",
+      "evidence_box_px": [
+        813,
+        80,
+        894,
+        310
+      ],
+      "page_evidence_bbox_px": [
+        813,
+        474,
+        894,
+        704
+      ],
+      "evidence": "On source_crops/system_02.png, after the combined repeat at x=813 (forward dots ~x=828-835, then ff), one staccato eighth on each staff (upper C5, lower C4) is closed by the staff-spanning barline at x=894. One eighth-note unit (capacity 1/2). Second-strain pickup; pairs with P030 terminal 5/2."
+    },
+    {
+      "physical_bar": 30,
+      "id": "P030",
+      "capacity_q": "5/2",
+      "kind": "incomplete terminal close",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "onset_q": "0",
+      "evidence_space": "system_crop",
+      "evidence_box_px": [
+        1296,
+        63,
+        1548,
+        323
+      ],
+      "page_evidence_bbox_px": [
+        1296,
+        1600,
+        1548,
+        1860
+      ],
+      "evidence": "On source_crops/system_05.png the last region after x=1296 is five eighths: upper staff accented A4 quarter, quarter rest, eighth rest; lower staff opening eighth, four sixteenths rising to a staccato D, eighth rest, then a cautionary G clef. Backward-repeat dots occupy ~x=1524-1532 in the second and third spaces of both staves, immediately left of the thin-plus-thick close (thick column x=1548). Capacity 5/2. REPEAT_END as well as the five-eighth terminal."
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": [
+        "P001",
+        "P009"
+      ],
+      "result": "pass",
+      "printed_meter": "6/8",
+      "pickup_capacity_q": "1/2",
+      "terminal_capacity_q": "5/2",
+      "sum_q": "3",
+      "expected_full_bar_q": "3",
+      "evidence": "First-strain incomplete pair. P001 is one printed eighth (staccato F octave under f) closed by the barline at x=324 on system_01.png. P009 is five printed eighths (three beamed eighths then one quarter on each staff) closed by the combined backward repeat at x=813 on system_02.png. No sixth eighth, rest, or dot. 1/2 + 5/2 = 3 quarter-note units, equal to one printed 6/8 bar. No exception."
+    },
+    {
+      "pair": [
+        "P010",
+        "P030"
+      ],
+      "result": "pass",
+      "printed_meter": "6/8",
+      "pickup_capacity_q": "1/2",
+      "terminal_capacity_q": "5/2",
+      "sum_q": "3",
+      "expected_full_bar_q": "3",
+      "evidence": "Second-strain incomplete pair. P010 is one printed eighth (staccato C5/C4 under ff) after the combined forward repeat at x=813, closed by the staff-spanning barline at x=894 on system_02.png. P030 is five printed eighths closed by the thin-plus-thick final barline at x=1548 on system_05.png. 1/2 + 5/2 = 3 quarter-note units, equal to one printed 6/8 bar. No exception."
+    }
+  ],
+  "repeats": [
+    {
+      "after_physical_bar": 9,
+      "kind": "combined",
+      "starts_physical_bar": 10,
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "evidence_box_px": [
+        780,
+        80,
+        850,
+        300
+      ],
+      "evidence_space": "system_crop",
+      "evidence": "On source_crops/system_02.png the P009/P010 barline is a combined repeat. Backward dots occupy ~x=790-798 in the second and third spaces of both staves, left of thick columns at ~x=805-822 (core x=813). Matching forward dots occupy ~x=828-835 in the same spaces, right of that double bar and left of the P010 ff. First strain repeats from P001 and closes after P009; second strain starts P010 (one-eighth pickup) and closes with the P030 backward repeat. No volta."
+    },
+    {
+      "before_physical_bar": 10,
+      "kind": "forward",
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "evidence_box_px": [
+        813,
+        80,
+        850,
+        300
+      ],
+      "evidence_space": "system_crop",
+      "evidence": "Forward repeat dots ~x=828-835 sit right of the P009/P010 combined double bar on both staves, immediately left of the P010 ff. Printed forward start at P010; matching backward close after P030."
+    },
+    {
+      "after_physical_bar": 30,
+      "kind": "backward",
+      "system": 5,
+      "page": 1,
+      "crop_path": "source_crops/system_05.png",
+      "evidence_box_px": [
+        1520,
+        80,
+        1558,
+        310
+      ],
+      "evidence_space": "system_crop",
+      "evidence": "On source_crops/system_05.png both staves carry backward-repeat dots ~x=1524-1532 in the second and third spaces, immediately right of the cautionary G and left of the thin column ~x=1538 and thick column x=1548. This closes the P010 forward start. P030 remains the five-eighth terminal (capacity 5/2)."
+    }
+  ],
+  "repeat_boundary_checks": [
+    {
+      "kind": "combined",
+      "after_physical_bar": 9,
+      "starts_physical_bar": 10,
+      "result": "pass",
+      "evidence": "System 2 P009/P010 barline has repeat dots on both sides: backward ~x=790-798 left of thick columns (core x=813), forward ~x=828-835 right of that double bar before the P010 ff. Combined repeat. Matching backward close after P030. No volta.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "kind": "backward",
+      "after_physical_bar": 30,
+      "result": "pass",
+      "evidence": "System 5 P030 ends with backward-repeat dots ~x=1524-1532 on both staves, right of the cautionary G and left of the thin-plus-thick close (thick column x=1548). This is REPEAT_END and still the five-eighth terminal (P010 1/2 + P030 5/2 = 3).",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          135,
+          98,
+          200,
+          178
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of 6/8 and the one-flat key signature."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          135,
+          248,
+          205,
+          318
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of 6/8 and the one-flat key signature."
+      }
+    },
+    "changes": [
+      {
+        "physical_bar": 8,
+        "staff": 2,
+        "onset_q": "3/2",
+        "sign": "G",
+        "line": 2,
+        "kind": "change",
+        "region": "LH bass to treble in P008 after the first 3 notes of the lower staff (onset 3/2). Those first 3 left-hand eighths stay in bass: A3, C4, and F4. Previous event is the bass F4 eighth immediately left of the G clef. Glyph sits on source_crops/system_02.png between barlines x=328 and x=594, immediately left of the last 3 left-hand eighths, which are in treble: A4, F4, and G4. First governed event is A4 after the G clef.",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "evidence_box_px": [
+          432,
+          218,
+          482,
+          302
+        ],
+        "evidence_space": "system_crop",
+        "page_evidence_bbox_px": [
+          432,
+          612,
+          482,
+          696
+        ]
+      },
+      {
+        "physical_bar": 12,
+        "staff": 2,
+        "onset_q": "5/2",
+        "sign": "F",
+        "line": 4,
+        "kind": "change",
+        "region": "LH treble to bass on the last eighth of P012 (onset 5/2). Glyph sits on source_crops/system_02.png immediately left of the staccato C3 eighth (second space of the bass staff, no ledger) and the barline at x=1310. First governed event is that staccato C3 eighth; P013 p chords continue in bass.",
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "evidence_box_px": [
+          1218,
+          228,
+          1266,
+          292
+        ],
+        "evidence_space": "system_crop",
+        "page_evidence_bbox_px": [
+          1218,
+          622,
+          1266,
+          686
+        ]
+      },
+      {
+        "physical_bar": 30,
+        "staff": 2,
+        "onset_q": "5/2",
+        "sign": "G",
+        "line": 2,
+        "kind": "cautionary",
+        "region": "LH cautionary G clef at the close of P030 after the eighth rest, immediately left of the backward-repeat dots and the thin-plus-thick close. No remaining sounding event of this piece is governed.",
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "evidence_box_px": [
+          1472,
+          218,
+          1520,
+          305
+        ],
+        "evidence_space": "system_crop",
+        "page_evidence_bbox_px": [
+          1472,
+          1755,
+          1520,
+          1842
+        ]
+      }
+    ],
+    "printed_change_count": 2,
+    "cautionary_count": 1,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        394
+      ],
+      "barline_boundaries_x_px": [
+        116,
+        324,
+        557,
+        759,
+        1022,
+        1276,
+        1548
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        13
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        394,
+        772
+      ],
+      "barline_boundaries_x_px": [
+        38,
+        328,
+        594,
+        813,
+        894,
+        1114,
+        1310,
+        1550
+      ],
+      "printed_region_count": 7,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        14,
+        18
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        772,
+        1156
+      ],
+      "barline_boundaries_x_px": [
+        40,
+        427,
+        716,
+        950,
+        1254,
+        1550
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        19,
+        24
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1156,
+        1537
+      ],
+      "barline_boundaries_x_px": [
+        42,
+        369,
+        604,
+        833,
+        1076,
+        1311,
+        1550
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        25,
+        30
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1537,
+        1905
+      ],
+      "barline_boundaries_x_px": [
+        46,
+        341,
+        610,
+        870,
+        1104,
+        1296,
+        1548
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Printed meter is 6/8 throughout; no 2/4 or common-time glyph",
+    "One printed flat at the opening and later system starts; no later key change",
+    "Five complete grand staves 6+7+5+6+6 = 30 printed regions",
+    "P001 is a one-eighth opening pickup; P009 is a five-eighth first-strain terminal; 1/2+5/2=3",
+    "P010 is a one-eighth second-strain pickup closed at x=894; P030 is a five-eighth terminal; 1/2+5/2=3",
+    "Combined repeat at P009/P010; backward close after P030; no volta",
+    "Staff-spanning barline at x=894 was omitted from revision-6 geometry and is now locked",
+    "LH G clef in P008 after bass A3, C4, and F4; last 3 notes A4, F4, G4 are in treble",
+    "LH F clef glyph on the last eighth of P012; first governed note is the staccato C3 eighth (second space, no ledger)",
+    "P030 lower-staff G is a cautionary left of the backward-repeat dots, not a sounding change",
+    "System-start clef reprints are not additional changes",
+    "Page outermost musical ink stays inside the white margin",
+    "P009 has five eighth-note units and no invented sixth eighth, rest, or dot"
+  ]
+}

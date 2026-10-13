@@ -1,0 +1,72 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "UNVERIFIED_READY_FOR_JUAN_RECHECK",
+  "piece_id": "schumann_op68_21_three_stars",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "verified": false,
+  "publication_ready": false,
+  "publication_approved": false,
+  "published": false,
+  "human_outcome": null,
+  "human_recheck_required": true,
+  "primary_xml": "delivery_final/Schumann_Op68_21_Three_Stars_Juan_Corrected.musicxml",
+  "primary_xml_sha256": "ceea3df6925bf4f4a5284478f4273a764fa8bddd76d1ab092a589f7e5f3ca266",
+  "parent_checkpoint": "astra_stage5_recheck_20260921_04/FINAL_FREEZE.json",
+  "parent_checkpoint_sha256": "38e80b81af1c2fb877d3b21ee6e63ac34ce88a0ed8c0bd0a9766eb500fa54ee3",
+  "parent_primary": "astra_stage5_recheck_20260921_04/delivery_final/UNVERIFIED_Schumann_Op68_21_Three_Stars_Astra_import.musicxml",
+  "parent_primary_sha256": "47b57f4fc59af0813c817caca894b1e2f351f13ffed374e37695d85b74254b06",
+  "correction": {
+    "event_id": "m017-s2-v2-e09",
+    "printed_bar": 17,
+    "field": "staff",
+    "before": "2",
+    "after": "1"
+  },
+  "human_readiness": {
+    "proper": {
+      "status": "PRINT_LOCKED_PARTIAL_PASS",
+      "evidence": [
+        "checks/human_correction_audit.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "checks/human_correction_audit.json",
+        "checks/post_astra_consumer_recheck.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "checks/focused_visual_recheck.json",
+        "rendered_final/report.json",
+        "rendered_final/full_score.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "checks/focused_visual_recheck.json",
+        "rendered_final/P017_parent_before.png",
+        "rendered_final/P017_focus.png"
+      ]
+    }
+  },
+  "checks": {
+    "exact_diff": "PASS",
+    "post_astra": "PASS",
+    "focused_visual": "PASS"
+  },
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "7f9eb98f9500bd1339dc1af9007c81f9619231dab6ef1f4d366d03e3e20631fe",
+  "frozen_utc": "2026-09-29T10:14:57.929430+00:00"
+}

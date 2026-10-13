@@ -1,0 +1,91 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schumann_op15_05_human_pitches.musicxml",
+  "primary_xml_sha256": "ccc20a05158077571282c4f98b1d143ec227e3812010b19cb4a1f4df81c53519",
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "f0c1a68956457396c9fc791116b162eecf7090549713afa87f752680676bdfe9",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "601bbf52ac730c8b4a73a517d46dad08d756afc84206e666b09ae51de2aaba3b",
+    "CORE": {
+      "status": "BLOCKED_APPLY",
+      "export": "PASS",
+      "rebuild_musical_projection": "PASS",
+      "actual_apply": "FAIL",
+      "reason": "Actual Apply adds 1/2-quarter pickup padding and an unprinted P020 rest; do not claim lossless or apply this export unchanged.",
+      "evidence": [
+        "validation/current_consumer_checks.json",
+        "validation/core_apply_difference.json"
+      ]
+    },
+    "MARKS": {
+      "status": "PASS",
+      "evidence": [
+        "validation/current_consumer_checks.json"
+      ],
+      "checks": "Exact note/chord-member slur endpoints, orientation/placement, articulation placement and sounding projection preserved."
+    },
+    "ROUTE": {
+      "status": "PASS_PROVISIONAL_MUSICAL_ROUTE",
+      "evidence": [
+        "validation/independent_playback.json"
+      ],
+      "human_question": "DC-TERMINATION"
+    }
+  },
+  "published": false,
+  "publication_approved": false,
+  "verified": false,
+  "human_outcome": null,
+  "scope": "Parent completed musical audit plus bounded user pitch corrections; consumer regression validated, unresolved musical questions and layer limitations retained."
+}

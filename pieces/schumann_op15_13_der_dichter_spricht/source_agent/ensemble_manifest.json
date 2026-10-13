@@ -1,0 +1,234 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op15_13_der_dichter_spricht",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 26,
+  "physical_bars_complete": 26,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "6407026c84ae49fa790a69ea98e4207f798600887f96011b70cff11dffc594a4",
+      "events": 602
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "ffb01a209ff4998001aff4e54822b43d173e445117883f13021a2f2b7afb9319",
+        "events": 205,
+        "canonical": true
+      }
+    ],
+    "GROK": [],
+    "GEMINI": [],
+    "CLAUDE": [
+      {
+        "path": "source_observations\\claude\\system_01.json",
+        "sha256": "91a0d6cfe8a7353662975b94a2322456f9682fe9bf32fd48ce78fae82733c242",
+        "events": 52
+      },
+      {
+        "path": "source_observations\\claude\\system_02.json",
+        "sha256": "815e64a35be586cd0db60b2bbedd277ef2e8025c1bb6622ae3733fed447aa2b2",
+        "events": 54
+      },
+      {
+        "path": "source_observations\\claude\\system_03.json",
+        "sha256": "075d1535c269b4fa05ffe16e713d0ab067460dda6e5b347f58cad1f926a4d0ef",
+        "events": 52
+      },
+      {
+        "path": "source_observations\\claude\\system_04.json",
+        "sha256": "311dee95df3e5237075c53687e825670e39ae0002aa71286824d6853eee1acea",
+        "events": 55
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "4ac5814d14c0f7c9b085b9de3822bd73ebb94d492c6f848f62d26658db1e6038"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "directory_id": "grok",
+    "method": null,
+    "scope": null,
+    "system_routes": [],
+    "enabled": false,
+    "requested_count": 0,
+    "requests": [],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "provider_manifests": [
+      {
+        "provider_id": "GROK",
+        "directory_id": "grok",
+        "manifest_path": "source_observations/grok/manifest.json",
+        "manifest_sha256": null
+      }
+    ]
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 1,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_01.json",
+        "request_sha256": "6a325e4d1506eb14731dab13507e8ca250acc097eb78a85542b537c413f8295a",
+        "response_path": "source_observations/gemini/system_01.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_01.json",
+          "response_sha256": "91a0d6cfe8a7353662975b94a2322456f9682fe9bf32fd48ce78fae82733c242",
+          "validated": true
+        }
+      },
+      {
+        "system": 2,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_02.json",
+        "request_sha256": "4b9afd92838a2e9066671114472e903e03a3dd0608879d2af70621cb17e400c3",
+        "response_path": "source_observations/gemini/system_02.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_02.json",
+          "response_sha256": "815e64a35be586cd0db60b2bbedd277ef2e8025c1bb6622ae3733fed447aa2b2",
+          "validated": true
+        }
+      },
+      {
+        "system": 3,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_03.json",
+        "request_sha256": "b8ad8783c0ee07d5ac1e6189ac23299d3c8bd78aecb1a71e80ce8d6507406cde",
+        "response_path": "source_observations/gemini/system_03.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_03.json",
+          "response_sha256": "075d1535c269b4fa05ffe16e713d0ab067460dda6e5b347f58cad1f926a4d0ef",
+          "validated": true
+        }
+      },
+      {
+        "system": 4,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "7fae574444bb5a452e1665df99ab48c73c932f6f924e33cec6d15ec76161f489",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_04.json",
+          "response_sha256": "311dee95df3e5237075c53687e825670e39ae0002aa71286824d6853eee1acea",
+          "validated": true
+        }
+      }
+    ],
+    "max_calls": 24,
+    "calls_made": 0,
+    "max_cost_usd": 1.0,
+    "actual_cost_usd": 0,
+    "execution_authorized": true,
+    "authorization_status": "authorized",
+    "paid_review_performed": false,
+    "responses_used": 0,
+    "claude_fallback_responses_used": 4,
+    "new_calls_made": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "cross_staff_voices": [],
+  "unresolved_evidence_claims": 88,
+  "unresolved_nonblocking": 46,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 88,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 0,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": false,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "38d7ae55ed802ba2b95c2e7836082f31207d8140d35e8f7d3b42b360e59b17cd"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "bc6e5441918411432f7c104bce3f670216038de4a70505cd2d588c4a1c18ff5b"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "0894803c6c2644113e660d8a8825d2265f906974aab152044bad27af119dbb78"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "e8d9e54ca1b96d98687bf2910bd2edac123e0a77fe99bf76e2c514cc20bc13c0"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "exact interval-valid source topology plus field-level weighted pitch and tie evidence; unsupported tie endpoints are quarantined; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-10-07T05:18:45.686629+00:00"
+}

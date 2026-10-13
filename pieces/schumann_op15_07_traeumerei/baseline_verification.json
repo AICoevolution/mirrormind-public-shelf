@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "schumann_op15_07_traeumerei",
+  "verified_utc": "2026-10-04T23:36:39.405769+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "fa76c6c32c99247cc342e7010f720b80f1df857b5d61c546bd0d9fbab66d9bb6",
+      "replay_sha256": "955662b3a0b14d84575b234b83288c80987e177d6aea8fdee84cbb69f6e4abbf"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "2e8ce3317a8d0f7e6275889905ad10e67126a4ee6d1a707e40d853ce8c090737",
+      "replay_sha256": "2e8ce3317a8d0f7e6275889905ad10e67126a4ee6d1a707e40d853ce8c090737"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "27676687fe074dc321290eeb06604a49b4ae9a40d2157fe5c5058faa540f80de",
+      "replay_sha256": "e4cfdd38cc2d6b0ae4bd3eae048da7024d349f8b66f692a57b9c9c02ccedd36a"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "5447514057e0510f252c2ad757185b5f7e86c173cb43a360056b4c73247fec5f",
+      "replay_sha256": "a1f833a201e245a54316273d996bfabed95ca4be0a5c9758b3098c807bcbf55d"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "0e40811c4a5dd3e351d8c98a7e54ce8a07cc8bc1aafbb1f0a8c1354daeaefe7f",
+      "replay_sha256": "6a6642097cfb8d70e0118d6f4bccaa50839d593e58e3b90c5893a13ce7a3aeb9"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

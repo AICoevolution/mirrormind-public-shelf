@@ -1,26 +1,66 @@
 {
-  "schema": "mirrormind_public_evidence.legacy.v1",
-  "profile": "legacy_shelf_snapshot",
+  "schema": "mirrormind_public_evidence.v2",
   "piece_id": "schumann_op68_28_in_memoriam",
+  "profile": "validated_delivery",
   "queue_status_at_export": "VERIFIED",
-  "created_utc": "2026-10-11T06:04:36.724403+00:00",
-  "standard_profile_blocker": "delivery hash mismatch: analysis_metadata.json",
-  "limitations": [
-    "This piece predates one or more current evidence-profile gates.",
-    "Absence of a frame freeze or canonical delivery manifest is not backfilled.",
-    "This bundle proves the exact published PROD MusicXML and public shelf metadata only.",
-    "The source scan, page crops, and raw reader files are not redistributed."
-  ],
-  "files": [
-    {
-      "path": "schumann_op68_28_in_memoriam.musicxml",
-      "bytes": 145136,
-      "sha256": "4d7ca8f6f5279919841833574f118816000722d05faca7d92ad4522d9073de39"
-    },
-    {
-      "path": "SHELF_RECORD.json",
-      "bytes": 1703,
-      "sha256": "c0dcb2be13cd85949458225c0681ae739b3836cd9d4beebfcf2abb603162d7fd"
-    }
-  ]
+  "published_score": "published.musicxml",
+  "published_xml_sha256": "7d1759efa2a6f068b1f661d447e53eb718fea596c8b56db0ee7d44e2c450a480",
+  "published_score_alias": "schumann_op68_28_in_memoriam.musicxml",
+  "reviewer_primary": "astra_review_20260922/juan_resolution_03/delivery_final/Schumann_Op68_28_In_Memoriam_Juan_Corrected.musicxml",
+  "source_reference": {
+    "scan_url": "https://imslp.org/wiki/Special:ReverseLookup/890574",
+    "scan_sha256": "36d54a5d01e94b2e67802ab7ca44aa07251e0052a22bb81f86d3c26656bdad63",
+    "source_citation": "G. Schirmer (1946), ed. Harold Bauer (1873–1951)",
+    "scan_redistributed": false,
+    "public_repository": "https://github.com/AICoevolution/mirrormind-public-shelf/tree/main/pieces/schumann_op68_28_in_memoriam",
+    "pipeline": "ensemble_v1"
+  },
+  "publication_binding": "ledger_head_plus_published_namecard",
+  "files": {
+    "astra_review_20260922/delivery_final/UNVERIFIED_schumann_op68_28_in_memoriam.musicxml": "329155839f66838f10df60f02126dbe17e4a968a88d856f23348adc27ab543ef",
+    "astra_review_20260922/FINAL_FREEZE.json": "35778cacad58ffdac25fa9303c8d39674d4efccf2c68e15b3cbb48a84c7e61d6",
+    "astra_review_20260922/juan_resolution_03/checks/exact_diff_audit.json": "f1c49bee793c3f57f0c18135240a82051d8c703b7a838e80cd9b8b43f0f8d732",
+    "astra_review_20260922/juan_resolution_03/checks/focused_visual_recheck.json": "6895702991e977e21840d2a1569e9e19b5eeda8864af0ff5975060fb127b6699",
+    "astra_review_20260922/juan_resolution_03/checks/marks_engraving_recheck.json": "44e0654ed424fd13faf7760cd2b3db0127344f84fa06fdd2c2a1f831ef0108b1",
+    "astra_review_20260922/juan_resolution_03/checks/post_astra_consumer_recheck.json": "8cd4146169a173c3c6a87701813ceab3dc49921a8c0c102666194b970cf7aac2",
+    "astra_review_20260922/juan_resolution_03/delivery_final/MARKS.sep": "a83376fd35f4945430c3413258084f39ceae4288540f1ae1e028528bb0aa0e93",
+    "astra_review_20260922/juan_resolution_03/delivery_final/MARKS_export.json": "527db0ba33e2ce4a2d8d03b8e7bb7908458bd03ce8f86747d959ef251400bbd8",
+    "astra_review_20260922/juan_resolution_03/delivery_final/Schumann_Op68_28_In_Memoriam_Juan_Corrected.musicxml": "68929022cf47b7768fd1e904f9795974f59c49b83d7423bd4a4d9232e92f266f",
+    "astra_review_20260922/juan_resolution_03/FINAL_FREEZE.json": "ac7112d7ae959998dd1efe7cfd779ac96b1681ff518ea2157ea7e4892404ad11",
+    "astra_review_20260922/juan_resolution_03/JUAN_DECISIONS.json": "be9cb626dce6072b5cf4aa4f527dbf46b5a43518a86b0ac354aae1788adb4011",
+    "astra_review_20260922/juan_resolution_03/REVIEW.md": "880186d521647bfd73b9c29693d21694cd3f8fcc47c9c888a40b7ef7a81cbc3e",
+    "astra_review_20260922/juan_resolution_03/supervisor_delivery_manifest.json": "7a049a4e0bcc43424532d945e1459f1f87d26440e5e756fbb840c7a21ce5d008",
+    "audit_config.json": "f5f402903d063a44a8b4e2928736f2ce492834357c98ebcd135593ac274c47a7",
+    "baseline_verification.json": "4d69bb38f7d0a930814f2767f52dd60d03decba0d3b7375870b54411721aa4f0",
+    "frame_verification/freeze.json": "2047839387767b25c1621663c427ffb2e7db9676107fe5404f8934c25a6a4ab3",
+    "frame_verification/human_signoff.json": "9ab6ba1e217ad90e5e4a59eba07e5c70af558d14386d7e076431a10193a05dd7",
+    "frame_verification/index.html": "80a68ac0bbfb9163f777eaadbcd3d290c740399801068c03ad36ee0130feaee6",
+    "frame_verification/report.json": "158ae9beb6fd9da153379c0397948953912da03859783c59b154ecf20ca32dd3",
+    "frame_verification/request.json": "374eb8210633323102c4a916d414ff1907486437063763467de8f1238a0d997f",
+    "frame_verification/request_freeze.json": "e2821b06450b56d12f9a95cc945077173b2fbb5860053542357531afa06cc3b9",
+    "frame_verification/response.json": "a83e8796f8c3db34c20b2c538bd172adb58e1bc49eb2fbbe05c40adce550dd4f",
+    "frame_verification/system_01_annotated.png": "e114a4e506460fa0cdd726c6a17cdf344fa0cdf38bc5d59cd4700e91ca8e42ca",
+    "frame_verification/system_01_crop_boundary.png": "a2dfcff779040e2db575df5cef7869ca557875f48add01076e8e9dd6b7097827",
+    "frame_verification/system_02_annotated.png": "3742416ffa5848a6be2d8e018422297f182ec90fb82d9ac9edc93e10fb8256c9",
+    "frame_verification/system_02_crop_boundary.png": "1ef7c839254373a7370769660cf265d9b56cd63fd5debc784aa577ba0dba10f1",
+    "frame_verification/system_03_annotated.png": "652abd8172cb0fe77ebeb55868f6d25ba0c9ea0393a7a72f4076909372557011",
+    "frame_verification/system_03_crop_boundary.png": "4bd8f25d55f4807aa16611da36c89ce1f15829d1b537bbe593df4853aabcc389",
+    "frame_verification/system_04_annotated.png": "d6cc73af65946fd62c9b8ac22801bc05593cf8c00ccc9edec9ae495780402b18",
+    "frame_verification/system_04_crop_boundary.png": "31007706b604ec7754ead14a58c49431690f1b89932c1466b9483069a569a195",
+    "frame_verification/system_05_annotated.png": "6ed8cc446a0944cf9b23c1f839e071207e2cebd4406da5b07d8d579077f2a350",
+    "frame_verification/system_05_crop_boundary.png": "d7c9cf01d117dce190c1fd3ddb63d7ebfa4666adaadc5772626c1ef8cab0451a",
+    "frame_verification/validation.json": "2f1955154041190fd6def89f63c613f91905f035a723178522882cf7e6c0e4ad",
+    "frame_visual_verification.json": "54572442e16ddfa5807545007e8b3488b0b90297bdd4bf5b56cf2460d3a7846c",
+    "parent_controls_freeze.json": "be911515eba2a75af252b35b525d6e3fd128dd2c7e7d40183a8bb444c98b8fd4",
+    "physical_score_lock.json": "9f0b8475ce8b63467f81d1596f27c850f573e06694ef982356538baa1340dda7",
+    "prep_manifest.json": "f7d1a6e7a8c15034829d3c9489cd09abb6701aafff8160c01ebc105a593e64f1",
+    "published.musicxml": "7d1759efa2a6f068b1f661d447e53eb718fea596c8b56db0ee7d44e2c450a480",
+    "schumann_op68_28_in_memoriam.musicxml": "7d1759efa2a6f068b1f661d447e53eb718fea596c8b56db0ee7d44e2c450a480",
+    "SHELF_RECORD.json": "aa464e4b626653598dccb963bc4c95824bd649c4066f3bc6cdd9661a2710c54c",
+    "source_agent/ensemble_disagreements.json": "a6820e60bb84abb21fded8fac3bfac5dfce216d3c1dabf1ad89402043463f734",
+    "source_agent/ensemble_manifest.json": "674c3ade5081eafa15085f3b8f3407b4769b92b7950226ba79931bf2c123abd5",
+    "source_agent/FREEZE.json": "20ca22821c14f779ef62334f68716e61979ef6167d46d2d3ec00dff1405575cf",
+    "source_agent/provenance_ledger.json": "be0eabfd41c00039101f56f611318334912002b58b1939835b0308398f4ba533"
+  },
+  "scope": "Published score and curated existing evidence; historical UNVERIFIED filenames retain their original meaning. No new approval is granted."
 }

@@ -1,0 +1,410 @@
+{
+  "schema": "frame_verifier_response.v1",
+  "piece_id": "schumann_op15_09_ritter_vom_steckenpferd",
+  "request_sha256": "60b4befdb19c24551ed6e219b30c6b1e3cc6d79c2c9318bc89a030361ab65c62",
+  "verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "session_id": "21171a9127fd4b6aa7d38fbf3a218bc3",
+    "edition_scope": "schumann_op15_breitkopf_1880_imslp289791"
+  },
+  "verdict": "PASS",
+  "source_blindness_confirmed": true,
+  "printed_physical_bar_count": 24,
+  "human_summary": "Twenty-four complete bars of 3/4, eight on each of three systems on the single page. There is no pickup and the last bar is a full bar. The upper staff opens in treble and stays in treble. The lower staff opens in bass, changes to treble before the first note of the first bar, and prints a cautionary bass clef immediately before the backward repeat that closes the eighth bar; that bass clef takes effect on the ninth bar. Systems 2 and 3 reprint treble and bass, and those reprints are not further clef changes. No key signature and no later meter or key change are printed. A backward repeat closes the eighth bar, a forward repeat opens the ninth, and the twenty-fourth bar closes with a final thin-thick barline that also carries a backward repeat. Slurs, pedal marks, dynamics, and the low notes of the last system stay inside the three page-wide crops.",
+  "clef_verification": {
+    "opening": [
+      {
+        "staff": 1,
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, upper staff",
+        "evidence_bbox_px": [288, 216, 322, 304]
+      },
+      {
+        "staff": 2,
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, lower staff",
+        "evidence_bbox_px": [289, 359, 324, 409]
+      }
+    ],
+    "changes": [
+      {
+        "physical_bar": 1,
+        "staff": 2,
+        "onset_q": "0",
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "from_clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "glyph_region": "P001",
+        "effective_region": "P001",
+        "placement": "MID_REGION",
+        "glyph_location_plain": "Lower staff of the first bar, after the 3/4 and before the first note",
+        "previous_event_plain": "The 3/4 printed on the lower staff",
+        "first_event_under_new_clef_plain": "The first left-hand chord of the first bar",
+        "where_plain": "First bar, lower staff: bass clef to treble clef before the first note",
+        "evidence_bbox_px": [362, 330, 401, 426]
+      },
+      {
+        "physical_bar": 8,
+        "staff": 2,
+        "onset_q": "3",
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "from_clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "glyph_region": "P008",
+        "effective_region": "P009",
+        "placement": "REGION_END_CAUTIONARY",
+        "glyph_location_plain": "Lower staff, immediately before the backward repeat",
+        "previous_event_plain": "The last left-hand note of the eighth bar, still in treble",
+        "first_event_under_new_clef_plain": "The first left-hand note of the ninth bar",
+        "where_plain": "Eighth bar, lower staff: cautionary bass clef before the repeat, taking effect at the ninth bar",
+        "evidence_bbox_px": [1572, 358, 1616, 427]
+      }
+    ],
+    "printed_change_count": 2,
+    "no_other_changes_visible": true,
+    "matches_proposed_frame": true,
+    "summary_plain": "The upper staff opens in treble and the lower staff opens in bass. One treble clef is printed on the lower staff of the first bar before its first note, and one cautionary bass clef is printed on the lower staff at the end of the eighth bar. Systems 2 and 3 reprint treble and bass. No other clef is printed."
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "crop_width_px": 1780,
+      "crop_height_px": 492,
+      "printed_region_count": 8,
+      "barline_boundaries_x_px": [278, 527, 675, 818, 976, 1122, 1271, 1458, 1626],
+      "regions": [
+        {
+          "id": "P001",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar with the opening 3/4 and a lower-staff clef change",
+          "evidence_bbox_px": [278, 190, 527, 475],
+          "review_class": "NOTEWORTHY",
+          "flags": ["OPENING_SIGNATURE", "CLEF_CHANGE"],
+          "features_plain": ["After the opening clefs", "Lower staff, after the 3/4"]
+        },
+        {
+          "id": "P002",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [527, 190, 675, 475],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P003",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [675, 190, 818, 475],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P004",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [818, 190, 976, 475],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P005",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [976, 190, 1122, 475],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P006",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1122, 190, 1271, 475],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P007",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1271, 190, 1458, 475],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P008",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar closed by a backward repeat",
+          "evidence_bbox_px": [1458, 190, 1642, 475],
+          "review_class": "NOTEWORTHY",
+          "flags": ["REPEAT_END", "DOUBLE_BARLINE", "CAUTIONARY_CLEF"],
+          "features_plain": ["At the right barline", "Thin stroke then thick stroke", "Lower staff, before the repeat"]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "crop_width_px": 1780,
+      "crop_height_px": 313,
+      "printed_region_count": 8,
+      "barline_boundaries_x_px": [213, 385, 569, 762, 918, 1082, 1268, 1471, 1638],
+      "regions": [
+        {
+          "id": "P009",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar opened by a forward repeat",
+          "evidence_bbox_px": [213, 16, 385, 290],
+          "review_class": "NOTEWORTHY",
+          "flags": ["REPEAT_START"],
+          "features_plain": ["Dots in the central spaces, right of the thin stroke"]
+        },
+        {
+          "id": "P010",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [385, 16, 569, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P011",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [569, 16, 762, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P012",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [762, 16, 918, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P013",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [918, 16, 1082, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P014",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1082, 16, 1268, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P015",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1268, 16, 1471, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P016",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1471, 16, 1640, 290],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "crop_width_px": 1780,
+      "crop_height_px": 308,
+      "printed_region_count": 8,
+      "barline_boundaries_x_px": [158, 378, 560, 754, 929, 1111, 1284, 1455, 1626],
+      "regions": [
+        {
+          "id": "P017",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [158, 20, 378, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P018",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [378, 20, 560, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P019",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [560, 20, 754, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P020",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [754, 20, 929, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P021",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [929, 20, 1111, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P022",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1111, 20, 1284, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P023",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [1284, 20, 1455, 302],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P024",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar closed by a final backward repeat",
+          "evidence_bbox_px": [1455, 20, 1642, 302],
+          "review_class": "NOTEWORTHY",
+          "flags": ["FINAL_BARLINE", "REPEAT_END", "DOUBLE_BARLINE"],
+          "features_plain": ["At the right barline", "Dots left of the thin stroke", "Thin stroke then thick stroke"]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    }
+  ],
+  "irregular_checks": [
+    {
+      "where": "System 1, right end of the eighth bar",
+      "question_plain": "Does a backward repeat close the eighth bar, and is the following thick stroke a separate bar?",
+      "answer_plain": "Yes, a thin-thick barline with two dots in the central spaces of each staff stands left of the thin stroke. The thick stroke is part of that repeat, not another bar.",
+      "evidence_bbox_px": [1614, 240, 1642, 420]
+    },
+    {
+      "where": "System 1, lower staff of the eighth bar",
+      "question_plain": "Is the bass clef before the repeat cautionary, with the notes of that bar still in treble?",
+      "answer_plain": "Yes. The bass glyph sits after the last left-hand note and before the thin stroke. The note before it remains under the treble clef. Bass takes effect at the first left-hand note of the ninth bar.",
+      "evidence_bbox_px": [1540, 345, 1626, 430]
+    },
+    {
+      "where": "System 2 opening, spanning from the eighth bar",
+      "question_plain": "Does a forward repeat open the ninth bar and pair with the backward repeat of the eighth bar?",
+      "answer_plain": "Yes. Thick then thin strokes, with dots to the right of the thin stroke on both staves. No dots stand left of the thick stroke. The system then continues as eight ordinary full bars and ends on a single barline.",
+      "evidence_bbox_px": [158, 28, 250, 270]
+    },
+    {
+      "where": "System 3, right end of the twenty-fourth bar",
+      "question_plain": "Is the closing barline a full bar, a final barline, and a backward repeat?",
+      "answer_plain": "Yes. The bar holds three quarter-note beats. Two dots sit left of a thin stroke, and a thick stroke follows. It is not a shortened bar and it does not continue onto another system.",
+      "evidence_bbox_px": [1605, 55, 1642, 240]
+    },
+    {
+      "where": "Page crop seams at the system boundaries",
+      "question_plain": "Does any slur, pedal mark, stem, or other musical ink cross a crop edge?",
+      "answer_plain": "No. The three red rectangles tile the page. The rows between the systems are blank, and the lowest notes and pedal marks of each system remain inside that system's crop.",
+      "evidence_bbox_px": [0, 466, 1780, 520]
+    }
+  ],
+  "count_anomaly_review": {
+    "performed": true,
+    "printed_count_confirmed": 24,
+    "explanation_plain": "System 1 has 8 regions, system 2 has 8, and system 3 has 8, totaling 24. Each region is a complete 3/4 bar between barlines that cross both staves. The thick strokes beside the repeats at the end of systems 1 and 3 are not extra bars. Repeat dots are not barlines. Short vertical strokes that enter the space between the staves, including one near the middle of system 2 and three in system 3, do not cross both staves and are stems, not barlines. The brace left of each system is not a barline. There is no pickup, no split bar at a system break, and no missing barline at a system end."
+  },
+  "corrections": []
+}

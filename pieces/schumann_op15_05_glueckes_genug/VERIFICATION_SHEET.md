@@ -1,10 +1,9 @@
-# Legacy shelf snapshot — schumann_op15_05_glueckes_genug
+# Public evidence — schumann_op15_05_glueckes_genug
 
-This is not the current full verification-evidence profile. The piece was published on the production shelf and is VERIFIED/PUBLISHED in the DEV queue, but its older run lacks one or more artifacts now required by the modern exporter.
+Published score: `published.musicxml`
 
-Modern-profile blocker: delivery manifest has no hashed files
+Published XML SHA-256: `9c6a93cdf0603aac4c502d7547a7973a530c5c479a3e45272079ecb19a70d9b4`
 
-Published MusicXML SHA-256: `9c6a93cdf0603aac4c502d7547a7973a530c5c479a3e45272079ecb19a70d9b4`  
-Manifest SHA-256: `557ce02d42b39eb8b9972531768c7e61ca56094c41a609ac7cc52eb9c6f0db4a`
+Recorded reviewer primary: `astra_review_recheck_d0eca11de5a1432ca2fd476e779c7222/human_pitch_corrections_20261012/delivery_final/UNVERIFIED_schumann_op15_05_human_pitches.musicxml`. Publication binding: `ledger_head_plus_published_namecard`.
 
-No source scan, page crop, or raw reader file is redistributed here.
+Review files document earlier pipeline decisions and can retain UNVERIFIED names or provisional findings. SHELF_RECORD.json records the published shelf metadata; this export grants no new approval. The manifest records every evidence file hash. Original scans and raw model transcripts are excluded.

@@ -1,0 +1,41 @@
+{
+  "status": "BLOCKED_TECHNICAL",
+  "kind": "consumer",
+  "phase": 5,
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "blocks_safe_continuation": true,
+  "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op15_01_Von_fremden_Laendern_und_Menschen_Astra_import.musicxml",
+  "primary_xml_sha256": "b0c838dd592495732c8826cefb4801c31b4f91b165b9f3ae6b81418fc1be7ee5",
+  "issues": [
+    {
+      "id": "RENDER-HALF-P014",
+      "kind": "consumer",
+      "address": "P014 staff2 onset0 voice4 D3",
+      "printed": "Separate hollow half-note head D3, sustained for two quarter units, beside the filled arpeggio D3.",
+      "encoded": "print-014-inner-268 is a half note, duration 2q, separate from the arpeggio.",
+      "observed": "Production renderer overlays the hollow head with the filled arpeggio head; the sustained half note cannot be read as printed.",
+      "evidence": [
+        "reviewer/bar_14.png",
+        "stage5/render_p14.png",
+        "stage5/production_render/report.json"
+      ]
+    },
+    {
+      "id": "RENDER-HALF-P022",
+      "kind": "consumer",
+      "address": "P022 staff2 onset0 D3 in bass half-note chord",
+      "printed": "Both G2 and D3 have hollow heads.",
+      "encoded": "Voice3 G2+D3 half-note chord, with independent arpeggio D3 sharing the onset.",
+      "observed": "G2 remains hollow but D3 is covered by the arpeggio filled head. Shared-head separation is required to display the printed half note.",
+      "evidence": [
+        "reviewer/bar_22.png",
+        "stage5/render_p22.png",
+        "stage5/production_render/report.json"
+      ]
+    }
+  ],
+  "required_action": "Repair shared-unison half-note head rendering in production consumer without changing frozen primary music; rerun all readiness gates in a new immutable Stage5 recheck workspace. CORE tuplets also need consumer support before claiming layer Apply readiness.",
+  "human_outcome": null
+}

@@ -1,0 +1,942 @@
+{
+  "schema": "voice_topology_census.v1",
+  "piece_id": "schumann_op15_08_am_camin",
+  "authority": "diagnostic_only_astra_decides",
+  "source": "api_response_final (part, staff, voice) occupancy plus CORE.sep header and MusicXML staff/voice occupancy; consolidation reserved for Astra",
+  "created_utc": "2026-10-05T07:22:57+00:00",
+  "consolidation_forbidden": true,
+  "notes": [
+    "Every pitched and all-rest source lane is listed. Assembly did not merge or rename any lane.",
+    "Source voice numbers are staff-scoped. Colliding labels received distinct MusicXML voice numbers.",
+    "Internal bar gaps are restart or fragmentation candidates for Astra, not permission to consolidate.",
+    "SEP header column order is the serializer's top-down layout. It is not a new voice identity."
+  ],
+  "xml_voice_disambiguation": [
+    {
+      "part": "P1",
+      "staff": 2,
+      "source_voice": "1",
+      "xml_voice": 3,
+      "reason": "Ensemble voice labels are staff-scoped and collide across staves. MusicXML voices are part-scoped, so colliding lanes received distinct voice numbers. No pitches or durations moved."
+    },
+    {
+      "part": "P1",
+      "staff": 2,
+      "source_voice": "2",
+      "xml_voice": 4,
+      "reason": "Ensemble voice labels are staff-scoped and collide across staves. MusicXML voices are part-scoped, so colliding lanes received distinct voice numbers. No pitches or durations moved."
+    },
+    {
+      "part": "P1",
+      "staff": 2,
+      "source_voice": "3",
+      "xml_voice": 7,
+      "reason": "Ensemble voice labels are staff-scoped and collide across staves. MusicXML voices are part-scoped, so colliding lanes received distinct voice numbers. No pitches or durations moved."
+    },
+    {
+      "part": "P1",
+      "staff": 2,
+      "source_voice": "5",
+      "xml_voice": 9,
+      "reason": "Ensemble voice labels are staff-scoped and collide across staves. MusicXML voices are part-scoped, so colliding lanes received distinct voice numbers. No pitches or durations moved."
+    },
+    {
+      "part": "P1",
+      "staff": 2,
+      "source_voice": "6",
+      "xml_voice": 10,
+      "reason": "Ensemble voice labels are staff-scoped and collide across staves. MusicXML voices are part-scoped, so colliding lanes received distinct voice numbers. No pitches or durations moved."
+    }
+  ],
+  "lanes": [
+    {
+      "id": "P1-s1-v1",
+      "part": "P1",
+      "staff": 1,
+      "voice": "1",
+      "xml_voice": 1,
+      "pitched_count": 96,
+      "rest_count": 6,
+      "all_rest": false,
+      "bars": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31,
+        33,
+        34
+      ],
+      "bar_gaps": [
+        4,
+        8,
+        20,
+        29,
+        30,
+        32
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            4
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            8
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            20
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            29,
+            30
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            32
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 96,
+      "xml_rests": 6,
+      "all_rest_xml": false,
+      "event_count": 102,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s1-v2",
+      "part": "P1",
+      "staff": 1,
+      "voice": "2",
+      "xml_voice": 2,
+      "pitched_count": 57,
+      "rest_count": 29,
+      "all_rest": false,
+      "bars": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        33,
+        34
+      ],
+      "bar_gaps": [
+        4,
+        8,
+        20,
+        27,
+        29,
+        30,
+        31,
+        32
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            4
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            8
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            20
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            27
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            29,
+            30,
+            31,
+            32
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 57,
+      "xml_rests": 29,
+      "all_rest_xml": false,
+      "event_count": 86,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s1-v5",
+      "part": "P1",
+      "staff": 1,
+      "voice": "5",
+      "xml_voice": 5,
+      "pitched_count": 12,
+      "rest_count": 1,
+      "all_rest": false,
+      "bars": [
+        4,
+        8,
+        20,
+        29,
+        30,
+        32
+      ],
+      "bar_gaps": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            5,
+            6,
+            7
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            31
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 12,
+      "xml_rests": 1,
+      "all_rest_xml": false,
+      "event_count": 13,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s1-v6",
+      "part": "P1",
+      "staff": 1,
+      "voice": "6",
+      "xml_voice": 6,
+      "pitched_count": 14,
+      "rest_count": 7,
+      "all_rest": false,
+      "bars": [
+        4,
+        8,
+        20,
+        29,
+        30,
+        32
+      ],
+      "bar_gaps": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            5,
+            6,
+            7
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            31
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 14,
+      "xml_rests": 7,
+      "all_rest_xml": false,
+      "event_count": 21,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s1-v8",
+      "part": "P1",
+      "staff": 1,
+      "voice": "8",
+      "xml_voice": 8,
+      "pitched_count": 8,
+      "rest_count": 3,
+      "all_rest": false,
+      "bars": [
+        4,
+        8,
+        20
+      ],
+      "bar_gaps": [
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            5,
+            6,
+            7
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 8,
+      "xml_rests": 3,
+      "all_rest_xml": false,
+      "event_count": 11,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s2-v1",
+      "part": "P1",
+      "staff": 2,
+      "voice": "1",
+      "xml_voice": 3,
+      "pitched_count": 109,
+      "rest_count": 25,
+      "all_rest": false,
+      "bars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31,
+        32
+      ],
+      "bar_gaps": [
+        9,
+        28
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            28
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 109,
+      "xml_rests": 25,
+      "all_rest_xml": false,
+      "event_count": 134,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s2-v2",
+      "part": "P1",
+      "staff": 2,
+      "voice": "2",
+      "xml_voice": 4,
+      "pitched_count": 56,
+      "rest_count": 3,
+      "all_rest": false,
+      "bars": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29,
+        30,
+        32
+      ],
+      "bar_gaps": [
+        9,
+        27,
+        28,
+        31
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            27,
+            28
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            31
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 56,
+      "xml_rests": 3,
+      "all_rest_xml": false,
+      "event_count": 59,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s2-v3",
+      "part": "P1",
+      "staff": 2,
+      "voice": "3",
+      "xml_voice": 7,
+      "pitched_count": 31,
+      "rest_count": 18,
+      "all_rest": false,
+      "bars": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24,
+        32
+      ],
+      "bar_gaps": [
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            19,
+            20
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 31,
+      "xml_rests": 18,
+      "all_rest_xml": false,
+      "event_count": 49,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s2-v5",
+      "part": "P1",
+      "staff": 2,
+      "voice": "5",
+      "xml_voice": 9,
+      "pitched_count": 7,
+      "rest_count": 2,
+      "all_rest": false,
+      "bars": [
+        9,
+        28,
+        33,
+        34
+      ],
+      "bar_gaps": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31,
+        32
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            29,
+            30,
+            31,
+            32
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 7,
+      "xml_rests": 2,
+      "all_rest_xml": false,
+      "event_count": 9,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    },
+    {
+      "id": "P1-s2-v6",
+      "part": "P1",
+      "staff": 2,
+      "voice": "6",
+      "xml_voice": 10,
+      "pitched_count": 12,
+      "rest_count": 0,
+      "all_rest": false,
+      "bars": [
+        9,
+        28,
+        33
+      ],
+      "bar_gaps": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31,
+        32
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        },
+        {
+          "kind": "bar_gap",
+          "bars": [
+            29,
+            30,
+            31,
+            32
+          ],
+          "note": "Lane is absent across these intervening bars. Assembly did not insert rests or merge the lane."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": [],
+      "xml_pitched": 12,
+      "xml_rests": 0,
+      "all_rest_xml": false,
+      "event_count": 12,
+      "sep_header": "V1(P1,v1, 96 pitches), V2(P1,v5, 12 pitches), V3(P1,v2, 57 pitches), V4(P1,v8, 8 pitches), V5(P1,v6, 14 pitches), V6(P2,v3, 109 pitches), V7(P2,v7, 31 pitches), V8(P2,v4, 56 pitches), V9(P2,v9, 7 pitches), V10(P2,v10, 12 pitches)"
+    }
+  ],
+  "sep_header_unmatched": [],
+  "xml_lanes_observed": [
+    {
+      "staff": "1",
+      "xml_voice": "1",
+      "pitched": 96,
+      "rests": 6
+    },
+    {
+      "staff": "1",
+      "xml_voice": "2",
+      "pitched": 57,
+      "rests": 29
+    },
+    {
+      "staff": "1",
+      "xml_voice": "5",
+      "pitched": 12,
+      "rests": 1
+    },
+    {
+      "staff": "1",
+      "xml_voice": "6",
+      "pitched": 14,
+      "rests": 7
+    },
+    {
+      "staff": "1",
+      "xml_voice": "8",
+      "pitched": 8,
+      "rests": 3
+    },
+    {
+      "staff": "2",
+      "xml_voice": "3",
+      "pitched": 109,
+      "rests": 25
+    },
+    {
+      "staff": "2",
+      "xml_voice": "4",
+      "pitched": 56,
+      "rests": 3
+    },
+    {
+      "staff": "2",
+      "xml_voice": "7",
+      "pitched": 31,
+      "rests": 18
+    },
+    {
+      "staff": "2",
+      "xml_voice": "9",
+      "pitched": 7,
+      "rests": 2
+    },
+    {
+      "staff": "2",
+      "xml_voice": "10",
+      "pitched": 12,
+      "rests": 0
+    }
+  ]
+}

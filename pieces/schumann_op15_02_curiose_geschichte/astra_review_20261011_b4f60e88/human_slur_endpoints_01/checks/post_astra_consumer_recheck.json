@@ -1,0 +1,65 @@
+{
+  "schema": "astra.post-human-consumer-recheck.v1",
+  "status": "PASS",
+  "primary_xml_sha256": "d7e06e3e60048be9dd58997de57e031306e6b18a6682c0381dea35a9d2a2c17d",
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [
+      {
+        "part": "P1",
+        "measure": "m1",
+        "missing_quarters": 2.0,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m42"
+      },
+      {
+        "part": "P1",
+        "measure": "m17",
+        "missing_quarters": 1.0,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m18"
+      },
+      {
+        "part": "P1",
+        "measure": "m18",
+        "missing_quarters": 2.0,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m17"
+      },
+      {
+        "part": "P1",
+        "measure": "m42",
+        "missing_quarters": 1.0,
+        "bar_quarters": 3.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m1"
+      }
+    ],
+    "cursor_slips": [],
+    "declared_long": [],
+    "first_slip_measure": null,
+    "notes": [
+      "m1 is short by 2, and m42 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+      "m17 is short by 1, and m18 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+      "m18 is short by 2, and m17 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+      "m42 is short by 1, and m1 holds exactly the rest of it \u2014 one bar split in two, and normal."
+    ]
+  },
+  "engraving": {
+    "findings": [],
+    "clean": true,
+    "counts": {}
+  },
+  "playback_basis": "All non-target-slur XML is semantically identical; parent playback validation remains applicable. No pitches, durations, voices or routes changed.",
+  "render_evidence": "rendered/render.json",
+  "visual_check": "Inspected P29/P41 screenshots: lower phrase reaches the second upper B4. P29 retains its system-break incoming continuation.",
+  "scope": "Only two slur stops changed; original full musical audit is preserved. Short phrase attachments remain unresolved."
+}

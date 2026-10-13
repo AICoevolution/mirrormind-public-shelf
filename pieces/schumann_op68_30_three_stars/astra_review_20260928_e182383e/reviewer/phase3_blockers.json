@@ -1,0 +1,30 @@
+{
+  "status": "BLOCKED_MUSICAL",
+  "phase": 3,
+  "phase1_reused_unchanged": true,
+  "phase2_complete": true,
+  "phase3_complete": false,
+  "stage4_complete": false,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "phase3_freeze_written": false,
+  "later_phase_request_accessed": false,
+  "source_candidate_modified": false,
+  "issues": [
+    {
+      "id": "MUSICAL-CORE",
+      "kind": "musical",
+      "evidence": "reviewer/phase3_review_in_progress.json",
+      "finding": "Confirmed wrong, missing and duplicate notes, cross-staff errors, and unminimized voice fragments remain unapplied. Full note-member, stem, accidental, voice-continuity and ensemble-disagreement audit is incomplete. The 38 persisted records are a partial findings checkpoint, not a complete correction specification.",
+      "required_continuation": "Astra must finish the independent Phase 3 audit and freeze exact corrections before applying them in Stage 5. Do not delegate musical completion to an automatic correction bot."
+    },
+    {
+      "id": "MUSICAL-NOTATION",
+      "kind": "musical",
+      "evidence": "reviewer/phase3_candidate_diagnostics.json",
+      "finding": "Exact source XML has zero direction, slur, beam and barline elements; source mark ledger is empty. Printed directions, phrasing, beaming and final barline remain unreconstructed. Exact member endpoints and connected spans have not been fully audited.",
+      "required_continuation": "Complete the member-level comparison to PHASE1_FREEZE.md, preserve ERRATUM_1, then restore notation with frozen corrections and run all Stage 5 checks."
+    }
+  ],
+  "human_outcome": null
+}

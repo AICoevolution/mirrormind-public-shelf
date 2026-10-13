@@ -1,0 +1,25 @@
+{
+  "id": "ERRATUM-003",
+  "status": "FROZEN_BEFORE_APPLICATION",
+  "kind": "representation_only",
+  "changes": [
+    {
+      "before": "principal=1,bass=2,brief inner=3",
+      "after": "principal=1,brief inner=2,bass=3",
+      "scope": "All note and forward voice references; stable note IDs retained. Three independent musical lines unchanged.",
+      "reason": "Production VexFlow displaces bass attacks and severely elongates bass beams at P007/P025 with bass label2 and inner label3; top-to-bottom numeric ordering fixes this with unchanged notes/staff/stems/marks/timing."
+    },
+    {
+      "before": "Full title duplicated as work and movement title, clipping at 1200px",
+      "after": "Work title Wichtige Begebenheit \u2014 UNVERIFIED; movement title Kinderszenen, Op. 15 No. 6",
+      "reason": "Readable title metadata, no musical change."
+    }
+  ],
+  "evidence": [
+    "viewer_probe_final/full_score.png",
+    "viewer_probe_final/P007_beam_detail.png",
+    "viewer_probe_final/report.json"
+  ],
+  "old_xml_sha256": "b5c8ce91269d28358e06160799f165a391c0fc587dc39b346a20134c2c4ba88a",
+  "human_outcome": null
+}

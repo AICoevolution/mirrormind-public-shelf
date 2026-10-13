@@ -1,0 +1,261 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_01_von_fremden_laendern_und_menschen",
+  "frame_revision": 1,
+  "authority": "print_only",
+  "physical_bar_count": 22,
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 4,
+    "printed_glyph": "2/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      345,
+      421,
+      390,
+      595
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 1,
+    "mode": null,
+    "label": "one sharp (G major / E minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "One sharp is printed after the opening clefs on both staves of system 1 and reprinted at the start of systems 2-4. No key change is printed.",
+    "evidence_box_px": [
+      312,
+      406,
+      348,
+      594
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "2",
+    "opening_pickup_q": "0",
+    "terminal_partial_q": "0",
+    "sum_q": "0",
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "2",
+      "evidence": "P001 is a complete 2/4 bar after the treble and bass clefs, one sharp, and the 2/4 sign. The two triplet eighths plus the following quarter fill two quarter-lengths. It is not a pickup.",
+      "evidence_box_px": [
+        274,
+        390,
+        616,
+        600
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_01.png"
+    },
+    "terminal_bar": {
+      "physical_bar": 22,
+      "capacity_q": "2",
+      "evidence": "P022 is a complete 2/4 bar closed by the thin-thick repeat barline. It is not a shortened terminal.",
+      "evidence_box_px": [
+        1365,
+        1264,
+        1639,
+        1437
+      ],
+      "evidence_space": "page_px",
+      "evidence_page": 1,
+      "crop_path": "source_crops/system_04.png"
+    },
+    "note": "No opening pickup and no terminal partial are printed. Pickup partial 0 plus terminal partial 0. Every region is a full 2/4 bar, so there is no incomplete pickup section whose remainder must sum with a terminal partial to the meter.",
+    "exception_evidence": null,
+    "ok": true
+  },
+  "repeats": [
+    {
+      "kind": "backward",
+      "at_physical_bar": 8,
+      "after_physical_bar": 8,
+      "before_physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "Combined repeat barline between P008 and P009. Two dots sit on the left of the barline (end repeat of P001-P008) and two dots sit on the right (start repeat of the second strain). Thin stroke x 932-933, thick stroke x 936-943.",
+      "evidence_box_px": [
+        910,
+        701,
+        970,
+        878
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END",
+        "COMBINED_REPEAT"
+      ]
+    },
+    {
+      "kind": "forward",
+      "at_physical_bar": 9,
+      "before_physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "Start-repeat dots on the right side of the same combined barline. The second strain begins at P009 and closes at the final repeat after P022.",
+      "evidence_box_px": [
+        910,
+        701,
+        970,
+        878
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START",
+        "COMBINED_REPEAT"
+      ]
+    },
+    {
+      "kind": "backward_final",
+      "at_physical_bar": 22,
+      "after_physical_bar": 22,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "Closing barline of the piece: repeat dots on the left, thin stroke x 1625-1626 and thick stroke x 1630-1637. The second strain P009-P022 is repeated. The thin and thick strokes are one final barline, not an extra bar.",
+      "evidence_box_px": [
+        1595,
+        1263,
+        1639,
+        1437
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ]
+    }
+  ],
+  "clef_changes": [],
+  "system_opening_clefs_are_not_changes": [
+    {
+      "system": 1,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          268,
+          401,
+          320,
+          510
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          268,
+          520,
+          320,
+          598
+        ]
+      },
+      "crop_path": "source_crops/system_01.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 1,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          150,
+          683,
+          215,
+          790
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          150,
+          800,
+          215,
+          873
+        ]
+      },
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 6,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          150,
+          965,
+          215,
+          1070
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          150,
+          1085,
+          215,
+          1153
+        ]
+      },
+      "crop_path": "source_crops/system_03.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 12,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          150,
+          1245,
+          215,
+          1355
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          150,
+          1365,
+          215,
+          1436
+        ]
+      },
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 18,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    }
+  ],
+  "checked_on": "source_crops/page-1.png and source_crops/system_01.png through system_04.png"
+}

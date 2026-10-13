@@ -1,0 +1,308 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_21_three_stars",
+  "revision": 6,
+  "authority": "print_only",
+  "source_pdf_sha256": "63601911b6c3193ea08785db535e066169f2b9411fa42b57593fb414c8a02c6d",
+  "page_image_sha256": {
+    "page-1": "2bfe85a930b418d3793b3d0bef9e95f886e2be37e79e76b059cdf13480911b25"
+  },
+  "printed_meter": "C (common time) / 4/4 throughout",
+  "physical_bar_count": 20,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1",
+      "kind": "opening pickup",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "x_range_px": [
+        217,
+        397
+      ],
+      "evidence_bbox_px": [
+        217,
+        10,
+        397,
+        355
+      ],
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "evidence": "After clefs and C meter at system 1 start; quarter-note anacrusis under p before first full bar (barline peaks x=217 to x=397)."
+    },
+    {
+      "physical_bar": 9,
+      "capacity_q": "3",
+      "kind": "partial section close before forward-repeat pickup",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "x_range_px": [
+        1345,
+        1639
+      ],
+      "evidence_bbox_px": [
+        1345,
+        10,
+        1639,
+        335
+      ],
+      "flags": [
+        "PARTIAL",
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence": "Astra Phase 1 print review: P009 contains three beats on both staves and closes at the section double; printed common time remains unchanged."
+    },
+    {
+      "physical_bar": 10,
+      "capacity_q": "1",
+      "kind": "partial after forward repeat",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "x_range_px": [
+        231,
+        325
+      ],
+      "evidence_bbox_px": [
+        231,
+        10,
+        325,
+        325
+      ],
+      "flags": [
+        "REPEAT_START",
+        "PARTIAL"
+      ],
+      "evidence": "After forward-repeat barline on system 3; one-beat partial under f / a tempo to barline x=325, then three full bars."
+    },
+    {
+      "physical_bar": 20,
+      "capacity_q": "3",
+      "kind": "incomplete terminal close before FINAL_BARLINE+REPEAT_END",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "x_range_px": [
+        1367,
+        1629
+      ],
+      "evidence_bbox_px": [
+        1367,
+        10,
+        1629,
+        360
+      ],
+      "flags": [
+        "PARTIAL",
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ],
+      "evidence": "Juan signoff: P020 holds three quarter-note beats (not a full 4/4). Incomplete terminal close before FINAL_BARLINE+REPEAT_END on system 5."
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": [
+        "P001",
+        "P020"
+      ],
+      "result": "pass",
+      "evidence": "P001 opening pickup capacity 1 + P020 incomplete terminal capacity 3 = 4 quarter-note units, matching printed C / 4/4. Juan confirmed P020 is three quarters, not a full bar."
+    },
+    {
+      "pair": [
+        "P009",
+        "P010"
+      ],
+      "result": "print_confirmed_partial_section_transition",
+      "evidence": "Astra Phase 1 confirmed the three-beat P009 close followed by the one-beat P010 pickup after the forward repeat; common time remains printed."
+    }
+  ],
+  "repeats": [
+    {
+      "before_physical_bar": 10,
+      "kind": "forward",
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "System 3 opens after brace and clefs with a thick-thin forward-repeat barline; dots to the right on both staves. Forward repeat begins P010 (1q partial) under a tempo / f."
+    },
+    {
+      "after_physical_bar": 20,
+      "kind": "backward",
+      "system": 5,
+      "page": 1,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "System 5 ends after incomplete terminal P020 (capacity 3) with backward-repeat dots then thin-plus-thick close (FINAL_BARLINE + REPEAT_END + PARTIAL). Juan signoff."
+    }
+  ],
+  "repeat_boundary_checks": [
+    {
+      "kind": "section_double",
+      "after_physical_bar": 9,
+      "result": "not_a_repeat",
+      "evidence": "System 2 ends with thin-then-thicker double after P009 with no repeat dots. section_landmarks only (not REPEAT_*).",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "kind": "forward",
+      "before_physical_bar": 10,
+      "result": "true_repeat",
+      "evidence": "System 3 opens after brace and clefs with a thick-thin forward-repeat barline; dots to the right on both staves. Forward repeat begins P010 (1q partial) under a tempo / f.",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "kind": "backward",
+      "after_physical_bar": 20,
+      "result": "true_repeat",
+      "evidence": "System 5 ends after incomplete terminal P020 (capacity 3) with backward-repeat dots then thin-plus-thick close (FINAL_BARLINE + REPEAT_END + PARTIAL).",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    },
+    {
+      "kind": "volta",
+      "result": "absent",
+      "evidence": "No 1./2. volta brackets observed.",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4
+      }
+    },
+    "changes": []
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        180,
+        545
+      ],
+      "barline_boundaries_x_px": [
+        217,
+        397,
+        734,
+        1012,
+        1337,
+        1643
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        600,
+        945
+      ],
+      "barline_boundaries_x_px": [
+        200,
+        604,
+        966,
+        1345,
+        1639
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        10,
+        13
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        1000,
+        1335
+      ],
+      "barline_boundaries_x_px": [
+        231,
+        325,
+        801,
+        1162,
+        1644
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        14,
+        16
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1370,
+        1755
+      ],
+      "barline_boundaries_x_px": [
+        210,
+        648,
+        1136,
+        1642
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        17,
+        20
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1775,
+        2145
+      ],
+      "barline_boundaries_x_px": [
+        200,
+        572,
+        967,
+        1367,
+        1629
+      ]
+    }
+  ],
+  "verified_claims": [
+    "Printed meter C; no key signature",
+    "20 physical regions: 5+4+4+3+4",
+    "P001 opening pickup capacity 1; P010 post-forward partial capacity 1",
+    "Section double after P009 without repeat dots",
+    "System 4 has three regions only (no barline at x=890)",
+    "No mid-piece clef changes",
+    "P020 is incomplete terminal capacity 3 with FINAL_BARLINE+REPEAT_END (Juan signoff)",
+    "Pickup-plus-terminal P001(1)+P020(3)=4 matches printed meter",
+    "P009 is a three-beat partial section close before the P010 forward-repeat pickup"
+  ],
+  "repair_source": "Astra Phase 1 BLOCKED_SOURCE_FRAME evidence dated 2026-09-21"
+}

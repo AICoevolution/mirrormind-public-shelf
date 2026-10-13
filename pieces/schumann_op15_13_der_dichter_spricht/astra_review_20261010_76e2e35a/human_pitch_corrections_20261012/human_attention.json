@@ -1,0 +1,70 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "CADENZA-P012",
+      "address": {
+        "page": 1,
+        "system": 2,
+        "physical_bar": "P012"
+      },
+      "question": "Confirm independent held lines, small-note timing, tuplet membership, grace interpretation and phrase endpoints.",
+      "provisional_treatment": "Four independent lines initially: held A4, dotted-quarter C4 from 1/2, cross-staff eighths, held F#2. Fermata quarter at 2; eighth rest at 3; measured provisional small run begins 7/2. Last five notes are sixteenths, not a chord. Extent 47/4 follows values; grace timing and shared unisons remain provisional.",
+      "evidence": [
+        "reviewer/phase3_cadenza12.png",
+        "reviewer/phase3_print_spec.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "CADENZA-P013",
+      "address": {
+        "page": 1,
+        "system": 3,
+        "physical_bar": "P013"
+      },
+      "question": "Confirm independent held lines, small-note timing, tuplet membership, grace interpretation and phrase endpoints.",
+      "provisional_treatment": "E5 whole; lower A#3 dotted half/B3 quarter then C#4+E4 half; B4 quarter/A#4 dotted half. Four small-note triplet groups and final six eighths give run extent 9. Unprinted lower staff stays empty. Whole-note-to-run tie is rejected; printed phrase curve is provisional slur.",
+      "evidence": [
+        "reviewer/phase3_cadenza13.png",
+        "reviewer/phase3_print_spec.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium",
+      "operator_comment": "Opening dotted minim corrected from G#3 to A#3 per Juan, 2026-10-12. Other cadenza questions remain pending.",
+      "operator_context": {
+        "schema": "omr_operator_musical_context.v1",
+        "region": "P013",
+        "confirmed_quarters": "9",
+        "comment_verbatim": "correct. 9 quarters. Its the longest duration in a voice (bass), because the top voice its actually wrtitten in a smaller noteheads, inferring that they are sort of following their own time signature to fit with the base",
+        "final_human_approval": false
+      }
+    },
+    {
+      "id": "CURVES-P008-P021-P023",
+      "address": "P008/P021/P023 upper chord members",
+      "question": "Confirm middle common-pitch ties and changing-pitch outside member slurs.",
+      "provisional_treatment": "Tie E4 in P008/P021 and D4 in P023; outside curves as member-specific slurs, with playback reattack on changing pitches.",
+      "evidence": [
+        "reviewer/print_system_1.png",
+        "reviewer/print_system_4.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "P025-TOP",
+      "address": "P025 upper member on bass staff",
+      "question": "D4 or E4?",
+      "provisional_treatment": "D4 retained; position matches following D4 whole and lies above C4 ledger.",
+      "evidence": [
+        "reviewer/phase3_ending.png"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null
+    }
+  ]
+}

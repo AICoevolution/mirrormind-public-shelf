@@ -1,0 +1,43 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "PHRASE-ENDPOINTS",
+      "address": "P001\u2013P014, phrase pairs on all three systems",
+      "question": "Confirm whether descending phrase arcs attach to each final accompaniment note or end without a specific notehead attachment.",
+      "provisional_treatment": "Use final accompaniment note at q=7/4 of each answering bar, with above placement. This is a provisional endpoint choice and has no playback pitch/duration effect.",
+      "evidence": [
+        "reviewer/print_system_1.png",
+        "reviewer/print_system_2.png",
+        "reviewer/print_system_3.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "FINAL-PHRASE",
+      "address": "P015\u2013P017 upper staff",
+      "question": "Does the faint final phrase arc reach the first P017 chord?",
+      "provisional_treatment": "Attach from P015 first melody to P017 G5, above. Faint/broken ink is not treated as a confirmed endpoint.",
+      "evidence": [
+        "reviewer/print_P016_P017.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "ARPEGGIO-TIES",
+      "address": "P016 q=1 through P017 q=0, both staves",
+      "question": "Confirm the five arpeggiated final ties and intended sustain between their staggered written attacks and the final chord.",
+      "provisional_treatment": "Keep printed sixteenth/eighth/quarter values and tie each matching pitch. Do not silently lengthen note values to fill a gap. Playback and notation gates must establish usable technical behavior.",
+      "evidence": [
+        "reviewer/print_P016_P017.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "high for printed five arcs; medium for consumer sustain treatment",
+      "human_outcome": null
+    }
+  ]
+}

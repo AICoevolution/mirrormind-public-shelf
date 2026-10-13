@@ -1,0 +1,63 @@
+{
+  "schema": "astra.post-human-consumer-recheck.v1",
+  "status": "PASS",
+  "primary_xml_sha256": "ccc20a05158077571282c4f98b1d143ec227e3812010b19cb4a1f4df81c53519",
+  "scope": "Two user-authorized pitch changes only. Parent full audit retained. Exact semantic reversal reproduces parent XML; current consumer before/after preserves every attack timing and all but two written pitches. Score renders without errors; screenshots inspected for G3+C#4 and D2 with A2 in P025.",
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [
+      {
+        "part": "P1",
+        "measure": "m1",
+        "missing_quarters": 1.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": null
+      }
+    ],
+    "cursor_slips": [],
+    "declared_long": [],
+    "first_slip_measure": null,
+    "notes": [
+      "m1 is short by 1.5 \u2014 that is a pickup, and normal."
+    ]
+  },
+  "engraving": {
+    "findings": [],
+    "clean": true,
+    "counts": {}
+  },
+  "playback": "delivery_final/playback_metadata.json",
+  "render": "rendered/render.json",
+  "layer_limitations": {
+    "primary_xml_sha256": "601bbf52ac730c8b4a73a517d46dad08d756afc84206e666b09ae51de2aaba3b",
+    "CORE": {
+      "status": "BLOCKED_APPLY",
+      "export": "PASS",
+      "rebuild_musical_projection": "PASS",
+      "actual_apply": "FAIL",
+      "reason": "Actual Apply adds 1/2-quarter pickup padding and an unprinted P020 rest; do not claim lossless or apply this export unchanged.",
+      "evidence": [
+        "validation/current_consumer_checks.json",
+        "validation/core_apply_difference.json"
+      ]
+    },
+    "MARKS": {
+      "status": "PASS",
+      "evidence": [
+        "validation/current_consumer_checks.json"
+      ],
+      "checks": "Exact note/chord-member slur endpoints, orientation/placement, articulation placement and sounding projection preserved."
+    },
+    "ROUTE": {
+      "status": "PASS_PROVISIONAL_MUSICAL_ROUTE",
+      "evidence": [
+        "validation/independent_playback.json"
+      ],
+      "human_question": "DC-TERMINATION"
+    }
+  },
+  "visual_check": "PASS: P25.png inspected: corrected note positions, same durations and notation."
+}

@@ -1,0 +1,12 @@
+# Pipeline findings
+
+1. Repaired physical frame is usable:30 bars, partial capacities0.5/2.5/0.5/2.5 at1/9/10/30, missing former barline now present. Residual prose pitches in the lock are wrong; printed notes determine the answer. The prior blocked review folder was preserved.
+2. Raw reader labels are not physical bar addresses. Audiveris contains30 elements with labels0 through27 plus duplicated3 andX7. Priority missing-measure and implied-offset reports were misleading. Empty reader packets required complete reader_claims inspection.
+3. Parent controls failed at openingC4 (claimedF4) and finalF4 dotted quarter (claimedA4 quarter); the C5 second pickup passed. Failed controls are preserved.
+4. All MARKS were omitted from the candidate although uncertainty prose suggests reader derivation. All accents, staccatos, tenutos, ties, tempo, dynamics, grace slurs and pedals needed direct reconstruction. Agreement is not proof.
+5. Three candidate accidental symbols landed on A4 while pitch/alter says natural, causing downstream SEP to report A-sharp. Correct chord-member attachment matters. P29 selectedG4+Bb4 is a wrong fused result despite recorded model support.
+6. Old voice6 changes musical role within27; global consolidation is unsafe. The final inner voice is two independently sounding notes. Mechanical voice-fragment labels must not erase true counterpoint. Final3 lanes are justified and fresh CORE export confirms them.
+7. PROPER pairs short bars by arithmetic (1+30,9+10), not musical strain (1+9,10+30). Independent source capacities and route comparison are required.
+8. CORE rebuild shifts pickups and pads inactive lanes. Actual CORE Apply fails on P10 precise marks. No lossless claim is made. MARKS cannot fully represent metronome/grace slurs; Apply loses slur stops and articulation placement. ROUTE Apply adds explicit opening forward repeat but preserves616-note playback.
+9. OSMD ignores offset for pedal glyph placement; serializing at the actual staff-time point fixes it without moving the musical event. Frozen erratum001 records this. It still draws grace curves below explicit above/over and suppresses the terminal cautionary clef. These are viewer limitations; XML and primary schedule remain correct.
+10. Primary runtime validation covers actual installed production mapping,316 VexFlow durations,124 onset cursor buckets and616 repeated played notes. No primary failure was excused as a representation exception. No production fixes were made in this review.

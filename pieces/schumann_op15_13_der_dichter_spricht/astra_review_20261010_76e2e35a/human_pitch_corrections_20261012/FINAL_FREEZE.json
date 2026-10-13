@@ -1,0 +1,83 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schumann_op15_13_human_pitches.musicxml",
+  "primary_xml_sha256": "05bc37abd8dbf728861bcb988903dd8a841b9ba697d86219f172c9442f02abea",
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "4a7749494971834db2e32eb4f709ce600decc3de98eb22e10c2256784e4f5962",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json",
+        "checks/correction.json",
+        "delivery_final/playback_metadata.json",
+        "rendered/render.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "BLOCKED",
+      "evidence": [
+        "validation/layer_roundtrips.json"
+      ]
+    },
+    "MARKS": {
+      "status": "BLOCKED",
+      "evidence": [
+        "validation/layer_roundtrips.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/route_roundtrip.json"
+      ]
+    }
+  },
+  "published": false,
+  "publication_approved": false,
+  "verified": false,
+  "human_outcome": null,
+  "scope": "Parent completed musical audit plus bounded user pitch corrections; consumer regression validated, unresolved cadenza and layer limitations retained."
+}

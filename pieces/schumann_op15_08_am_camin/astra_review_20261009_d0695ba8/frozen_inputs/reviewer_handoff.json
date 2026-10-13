@@ -1,0 +1,488 @@
+{
+  "schema": "reviewer-handoff.ensemble-v1",
+  "piece_id": "schumann_op15_08_am_camin",
+  "status": "READY_FOR_ASTRA_REVIEWER",
+  "pipeline_mode": "ensemble_v1",
+  "coordinator": "Stage 3 Assembly Bot",
+  "source_agent": "ensemble_v1 deterministic fusion",
+  "source_api_cost_usd": 0.24213225,
+  "api_calls": 4,
+  "bar_count": 34,
+  "expected_bars": 34,
+  "schema_valid": true,
+  "uncertainty_count": 223,
+  "duration_discrepancy_count": 0,
+  "freeze_state": "ENSEMBLE_CANDIDATE_FREEZE",
+  "candidate_packet_count": 4,
+  "reviewer_model": "Astra (pending; not contacted)",
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 110,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 0,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": true,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "gemini_budget": {
+    "budget_exhausted": false,
+    "calls_made": 4,
+    "max_calls": 24,
+    "actual_cost_usd": 0.24213225,
+    "max_cost_usd": 1.0,
+    "missing_responses": 0,
+    "claude_fallback_responses_used": 0,
+    "responses_used": 4,
+    "note": "Gemini recorded 4 of 24 calls and stayed under the $1.00 cap. responses_used is 4; claude_fallback_responses_used is 0; missing_responses is 0. Assembly did not call Gemini or Claude."
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "enabled": false,
+    "requested_count": 0,
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "note": "GROK was not requested for this piece. Assembly did not call it."
+  },
+  "phases": {
+    "phase_1": {
+      "purpose": "Freeze a print-only structural, marks, and route inventory.",
+      "allowlist": [
+        {
+          "path": "source/printed_source.pdf",
+          "sha256": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3"
+        },
+        {
+          "path": "source_crops/page-1.png",
+          "sha256": "ec64aa8258e3ee476079409b47d36c5f898968acddd20b6a2c8195086d2d9d07"
+        },
+        {
+          "path": "source_crops/pages.json",
+          "sha256": "846a07096f5d5636d782fff78d5f38637ebfae1db99d2158806731dcf806e693"
+        },
+        {
+          "path": "config.json",
+          "sha256": "542b4ec2788286d8a64fe9a8ea4e080dc44cd73895edc484166b657da9aa1e9e"
+        },
+        {
+          "path": "physical_score_lock.json",
+          "sha256": "d82b04da8e65e4cf818e6f23dbd22a199a43f5c2da3bb06d86f0a68b8087bb1a"
+        },
+        {
+          "path": "reviewer_phase1_frame_lock.json",
+          "sha256": "d9cc130af846ca4d5d39d60a07447d24c01caf96ae6ae67a1328d00c1130ac61"
+        },
+        {
+          "path": "frame_visual_verification.json",
+          "sha256": "fc84e32a8fee2178ed08ff0f28c6b970cd6ad35cccb91ca44f78b5c30e2cbe7a"
+        }
+      ]
+    },
+    "phase_2": {
+      "purpose": "Expose readers only after Phase 1 freeze.",
+      "allowlist": [
+        {
+          "path": "source/printed_source.pdf",
+          "sha256": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3"
+        },
+        {
+          "path": "source_crops/page-1.png",
+          "sha256": "ec64aa8258e3ee476079409b47d36c5f898968acddd20b6a2c8195086d2d9d07"
+        },
+        {
+          "path": "source_crops/pages.json",
+          "sha256": "846a07096f5d5636d782fff78d5f38637ebfae1db99d2158806731dcf806e693"
+        },
+        {
+          "path": "config.json",
+          "sha256": "542b4ec2788286d8a64fe9a8ea4e080dc44cd73895edc484166b657da9aa1e9e"
+        },
+        {
+          "path": "physical_score_lock.json",
+          "sha256": "d82b04da8e65e4cf818e6f23dbd22a199a43f5c2da3bb06d86f0a68b8087bb1a"
+        },
+        {
+          "path": "reviewer_phase1_frame_lock.json",
+          "sha256": "d9cc130af846ca4d5d39d60a07447d24c01caf96ae6ae67a1328d00c1130ac61"
+        },
+        {
+          "path": "frame_visual_verification.json",
+          "sha256": "fc84e32a8fee2178ed08ff0f28c6b970cd6ad35cccb91ca44f78b5c30e2cbe7a"
+        },
+        {
+          "path": "reader_correspondence.json",
+          "sha256": "2e800a9db6f1cbc8e5aaa8bb3730bde2b5960efb36c6088f8fc4604772f70b32"
+        },
+        {
+          "path": "audit_config.json",
+          "sha256": "b0e2b089b0b68dd5c817bebe67e1f15f8285f1b2f4a2be4edc08c7aac240ea5f"
+        },
+        {
+          "path": "question_packets/priority.json",
+          "sha256": "8b7e42087e35a1ba13db0c9873a406357d81121538e47314b95d5858f77135a1"
+        },
+        {
+          "path": "question_packets/controls.json",
+          "sha256": "4b9e17a6231d34050b0bcd28deef70161db97f5555e00968864c5eb1011f9577"
+        },
+        {
+          "path": "question_packets/system_01.json",
+          "sha256": "08a15da237813ae0fdeae2363927386cca9f8fa1c7b1a67cd40c0db6a695b9d5"
+        },
+        {
+          "path": "question_packets/system_02.json",
+          "sha256": "8e83d579ca8ed0eaea0e6fddabd7b96fe59dd403afeb1d22444cac3830b62ea9"
+        },
+        {
+          "path": "question_packets/system_03.json",
+          "sha256": "9ebf6c10abe4fc2816f7f93dc16cc23652d28885f7a51ef3c571cc5d5c336402"
+        },
+        {
+          "path": "question_packets/system_04.json",
+          "sha256": "ba0732c093a6276cbdfe792a22958fd6d7e8a786a7d27cc630da5b8f8a7cca3f"
+        },
+        {
+          "path": "question_packets/freeze.json",
+          "sha256": "07fcf62a9242303906e519fbc174d859fdf8478606222a144a5e3e1b2e556ba2"
+        },
+        {
+          "path": "baseline/state.json",
+          "sha256": "475ff0136c093912957289887796dcacf2c5a08fc8c5e8e40f5fa6be3e668aa1"
+        },
+        {
+          "path": "baseline/questions.json",
+          "sha256": "f1e857628e0e78ae0ca620cd7f5786e99b245831be2791f8969452c34d82f67e"
+        },
+        {
+          "path": "reader_claims.json",
+          "sha256": "b51f2527f64f748b708b16cba5b5771235d9160198dd474b9d0ebdab110437ec"
+        },
+        {
+          "path": "parent_controls.json",
+          "sha256": "4aa13a77a4e3d8a37e12c484dfbf7bb2e7be3136203d71ddfec0b4fb3d2c5542"
+        },
+        {
+          "path": "inputs/Smartscore_8- Am Camin.xml",
+          "sha256": "b8989ac3f9b9b1d1984420bbab5e02ddba87a0b885b3a51280ef6834e0d418fe"
+        },
+        {
+          "path": "inputs/Playscore_8- Am Camin.xml",
+          "sha256": "1035f9204ae24bafa5febc48f9abbbef491b644ed9495ad8e53ad9fc939b8d60"
+        },
+        {
+          "path": "inputs/Audiveris_8- Am Camin.xml",
+          "sha256": "62995584304c1cc56de695a2cf61e835705216f6854d69a76b8c92283e172c96"
+        },
+        {
+          "path": "baseline/summary.json",
+          "sha256": "7331041461862f15469cc1a09f935b2ad634a613c68f7969808a805e34835f23"
+        },
+        {
+          "path": "baseline/reconciliation.json",
+          "sha256": "2b56e247187fa84477a4f3c136186e909619d17261983d2cb2e0798caa86c788"
+        }
+      ]
+    },
+    "phase_3": {
+      "purpose": "Expose the candidate plus ensemble provenance and disagreements only after Phase 2 freeze.",
+      "allowlist": [
+        {
+          "path": "source/printed_source.pdf",
+          "sha256": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3"
+        },
+        {
+          "path": "source_crops/page-1.png",
+          "sha256": "ec64aa8258e3ee476079409b47d36c5f898968acddd20b6a2c8195086d2d9d07"
+        },
+        {
+          "path": "source_crops/pages.json",
+          "sha256": "846a07096f5d5636d782fff78d5f38637ebfae1db99d2158806731dcf806e693"
+        },
+        {
+          "path": "config.json",
+          "sha256": "542b4ec2788286d8a64fe9a8ea4e080dc44cd73895edc484166b657da9aa1e9e"
+        },
+        {
+          "path": "physical_score_lock.json",
+          "sha256": "d82b04da8e65e4cf818e6f23dbd22a199a43f5c2da3bb06d86f0a68b8087bb1a"
+        },
+        {
+          "path": "reviewer_phase1_frame_lock.json",
+          "sha256": "d9cc130af846ca4d5d39d60a07447d24c01caf96ae6ae67a1328d00c1130ac61"
+        },
+        {
+          "path": "frame_visual_verification.json",
+          "sha256": "fc84e32a8fee2178ed08ff0f28c6b970cd6ad35cccb91ca44f78b5c30e2cbe7a"
+        },
+        {
+          "path": "reader_correspondence.json",
+          "sha256": "2e800a9db6f1cbc8e5aaa8bb3730bde2b5960efb36c6088f8fc4604772f70b32"
+        },
+        {
+          "path": "audit_config.json",
+          "sha256": "b0e2b089b0b68dd5c817bebe67e1f15f8285f1b2f4a2be4edc08c7aac240ea5f"
+        },
+        {
+          "path": "question_packets/priority.json",
+          "sha256": "8b7e42087e35a1ba13db0c9873a406357d81121538e47314b95d5858f77135a1"
+        },
+        {
+          "path": "question_packets/controls.json",
+          "sha256": "4b9e17a6231d34050b0bcd28deef70161db97f5555e00968864c5eb1011f9577"
+        },
+        {
+          "path": "question_packets/system_01.json",
+          "sha256": "08a15da237813ae0fdeae2363927386cca9f8fa1c7b1a67cd40c0db6a695b9d5"
+        },
+        {
+          "path": "question_packets/system_02.json",
+          "sha256": "8e83d579ca8ed0eaea0e6fddabd7b96fe59dd403afeb1d22444cac3830b62ea9"
+        },
+        {
+          "path": "question_packets/system_03.json",
+          "sha256": "9ebf6c10abe4fc2816f7f93dc16cc23652d28885f7a51ef3c571cc5d5c336402"
+        },
+        {
+          "path": "question_packets/system_04.json",
+          "sha256": "ba0732c093a6276cbdfe792a22958fd6d7e8a786a7d27cc630da5b8f8a7cca3f"
+        },
+        {
+          "path": "question_packets/freeze.json",
+          "sha256": "07fcf62a9242303906e519fbc174d859fdf8478606222a144a5e3e1b2e556ba2"
+        },
+        {
+          "path": "baseline/state.json",
+          "sha256": "475ff0136c093912957289887796dcacf2c5a08fc8c5e8e40f5fa6be3e668aa1"
+        },
+        {
+          "path": "baseline/questions.json",
+          "sha256": "f1e857628e0e78ae0ca620cd7f5786e99b245831be2791f8969452c34d82f67e"
+        },
+        {
+          "path": "reader_claims.json",
+          "sha256": "b51f2527f64f748b708b16cba5b5771235d9160198dd474b9d0ebdab110437ec"
+        },
+        {
+          "path": "parent_controls.json",
+          "sha256": "4aa13a77a4e3d8a37e12c484dfbf7bb2e7be3136203d71ddfec0b4fb3d2c5542"
+        },
+        {
+          "path": "candidate_packets/system_01.json",
+          "sha256": "39a8f97b2d9129076e42d81af8a5acc6bd449ca0e04b9175ba86c3c07c1b2a8d"
+        },
+        {
+          "path": "candidate_packets/system_02.json",
+          "sha256": "74310bc16b137f73fb8a8a4529aa1cce0b4a00b4de1c56d16f4a66c9a2b686b3"
+        },
+        {
+          "path": "candidate_packets/system_03.json",
+          "sha256": "b51ca46950e67bf450b43bafd1edf875010fc72ec811d905cdb14881e2fca321"
+        },
+        {
+          "path": "candidate_packets/system_04.json",
+          "sha256": "e77c58960aece619a31183df87e5fd5f2a2aefcac0d9c6f7342e8d309905d618"
+        },
+        {
+          "path": "candidate_packets/comparison.json",
+          "sha256": "4134d9eb4272467054256423449bd8ee2fc58ac9ac74ab7be07656c96dfad0b4"
+        },
+        {
+          "path": "candidate_packets/freeze.json",
+          "sha256": "6387c353e6e6d1aa4b23968a95c612c01c34eceec873adf5b9e31c2d2a783c03"
+        },
+        {
+          "path": "source_agent/UNVERIFIED_source.musicxml",
+          "sha256": "f44282a0ecde80a2d4c5b69f7778832509c23abc6e514cff3bb14b1a0e52831c"
+        },
+        {
+          "path": "source_agent/CORE.sep",
+          "sha256": "0bedf6b46a45de1c39e6084530b73e86f02e203bb275a1cb519c492c75ad4c3a"
+        },
+        {
+          "path": "source_agent/MARKS.sep",
+          "sha256": "a2569c3acaa122d71f147c1b6e32fa8049c873f0cbbf200ef9fdb7a9752d6396"
+        },
+        {
+          "path": "source_agent/ROUTE.sep",
+          "sha256": "176a0afb79df4d659911b04abeb0ac3d63778ad8490c6f03ec6dcc5a4bb938be"
+        },
+        {
+          "path": "source_agent/coverage.json",
+          "sha256": "417f94a787d6bf515fa2b439e22b70ba2a7523a3556ae467937326d0a2066c41"
+        },
+        {
+          "path": "source_agent/uncertainties.json",
+          "sha256": "c6fa39f9d05a3bca20171b4d1c41840fddd9813fe404d96ea1b98fb5faa699c1"
+        },
+        {
+          "path": "source_agent/exact_event_ledger.json",
+          "sha256": "ae2723a2583d57196c80610cafe6ddacc1878ac1fd30892d9020db0ac8bc36cb"
+        },
+        {
+          "path": "source_agent/exact_mark_ledger.json",
+          "sha256": "27a9d031a459c5c08fef4a670cd734113a73d445704f1fb3ecc143c3f10b04e3"
+        },
+        {
+          "path": "source_agent/duration_discrepancies.json",
+          "sha256": "9858bda4e26fc2cbf7e30760da1e4184925945722af131dfb7998b0b9c04fffb"
+        },
+        {
+          "path": "source_agent/structural_checks.json",
+          "sha256": "6ba9d3faba6a3a223c91d3df2916bd86e17da5c5a45306e807dde4096ffe4a49"
+        },
+        {
+          "path": "source_agent/voice_topology_census.json",
+          "sha256": "1741c30d42019c8d5569175d1848e986127e2b8812f30cf508fd32830f80a363"
+        },
+        {
+          "path": "source_agent/FREEZE.json",
+          "sha256": "d64e715590ab3458577c3c7823061efb09ce9441898766698b22d4ac81e86a2f"
+        },
+        {
+          "path": "source_agent/ensemble_manifest.json",
+          "sha256": "2a752c33b084ca1674c61e4f88188427a3ffb87ad0a31eb8c69de183574c884c"
+        },
+        {
+          "path": "source_agent/provenance_ledger.json",
+          "sha256": "463ad8909195ad83ad63574ba476b83df4d865fb1dfc3df3a1ee816e681ae63f"
+        },
+        {
+          "path": "source_agent/ensemble_disagreements.json",
+          "sha256": "c455dd9c6b458dd61c19c9a31e098b5c505c0c356d26ac775ed901ea79e1ce57"
+        },
+        {
+          "path": "inputs/Smartscore_8- Am Camin.xml",
+          "sha256": "b8989ac3f9b9b1d1984420bbab5e02ddba87a0b885b3a51280ef6834e0d418fe"
+        },
+        {
+          "path": "inputs/Playscore_8- Am Camin.xml",
+          "sha256": "1035f9204ae24bafa5febc48f9abbbef491b644ed9495ad8e53ad9fc939b8d60"
+        },
+        {
+          "path": "inputs/Audiveris_8- Am Camin.xml",
+          "sha256": "62995584304c1cc56de695a2cf61e835705216f6854d69a76b8c92283e172c96"
+        },
+        {
+          "path": "baseline/summary.json",
+          "sha256": "7331041461862f15469cc1a09f935b2ad634a613c68f7969808a805e34835f23"
+        },
+        {
+          "path": "baseline/reconciliation.json",
+          "sha256": "2b56e247187fa84477a4f3c136186e909619d17261983d2cb2e0798caa86c788"
+        }
+      ]
+    }
+  },
+  "phase1_allowlist": {
+    "source/printed_source.pdf": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3",
+    "source_crops/page-1.png": "ec64aa8258e3ee476079409b47d36c5f898968acddd20b6a2c8195086d2d9d07",
+    "source_crops/pages.json": "846a07096f5d5636d782fff78d5f38637ebfae1db99d2158806731dcf806e693",
+    "config.json": "542b4ec2788286d8a64fe9a8ea4e080dc44cd73895edc484166b657da9aa1e9e",
+    "physical_score_lock.json": "d82b04da8e65e4cf818e6f23dbd22a199a43f5c2da3bb06d86f0a68b8087bb1a",
+    "reviewer_phase1_frame_lock.json": "d9cc130af846ca4d5d39d60a07447d24c01caf96ae6ae67a1328d00c1130ac61",
+    "frame_visual_verification.json": "fc84e32a8fee2178ed08ff0f28c6b970cd6ad35cccb91ca44f78b5c30e2cbe7a"
+  },
+  "phase2_allowlist": {
+    "source/printed_source.pdf": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3",
+    "source_crops/page-1.png": "ec64aa8258e3ee476079409b47d36c5f898968acddd20b6a2c8195086d2d9d07",
+    "source_crops/pages.json": "846a07096f5d5636d782fff78d5f38637ebfae1db99d2158806731dcf806e693",
+    "config.json": "542b4ec2788286d8a64fe9a8ea4e080dc44cd73895edc484166b657da9aa1e9e",
+    "physical_score_lock.json": "d82b04da8e65e4cf818e6f23dbd22a199a43f5c2da3bb06d86f0a68b8087bb1a",
+    "reviewer_phase1_frame_lock.json": "d9cc130af846ca4d5d39d60a07447d24c01caf96ae6ae67a1328d00c1130ac61",
+    "frame_visual_verification.json": "fc84e32a8fee2178ed08ff0f28c6b970cd6ad35cccb91ca44f78b5c30e2cbe7a",
+    "reader_correspondence.json": "2e800a9db6f1cbc8e5aaa8bb3730bde2b5960efb36c6088f8fc4604772f70b32",
+    "audit_config.json": "b0e2b089b0b68dd5c817bebe67e1f15f8285f1b2f4a2be4edc08c7aac240ea5f",
+    "question_packets/priority.json": "8b7e42087e35a1ba13db0c9873a406357d81121538e47314b95d5858f77135a1",
+    "question_packets/controls.json": "4b9e17a6231d34050b0bcd28deef70161db97f5555e00968864c5eb1011f9577",
+    "question_packets/system_01.json": "08a15da237813ae0fdeae2363927386cca9f8fa1c7b1a67cd40c0db6a695b9d5",
+    "question_packets/system_02.json": "8e83d579ca8ed0eaea0e6fddabd7b96fe59dd403afeb1d22444cac3830b62ea9",
+    "question_packets/system_03.json": "9ebf6c10abe4fc2816f7f93dc16cc23652d28885f7a51ef3c571cc5d5c336402",
+    "question_packets/system_04.json": "ba0732c093a6276cbdfe792a22958fd6d7e8a786a7d27cc630da5b8f8a7cca3f",
+    "question_packets/freeze.json": "07fcf62a9242303906e519fbc174d859fdf8478606222a144a5e3e1b2e556ba2",
+    "baseline/state.json": "475ff0136c093912957289887796dcacf2c5a08fc8c5e8e40f5fa6be3e668aa1",
+    "baseline/questions.json": "f1e857628e0e78ae0ca620cd7f5786e99b245831be2791f8969452c34d82f67e",
+    "reader_claims.json": "b51f2527f64f748b708b16cba5b5771235d9160198dd474b9d0ebdab110437ec",
+    "parent_controls.json": "4aa13a77a4e3d8a37e12c484dfbf7bb2e7be3136203d71ddfec0b4fb3d2c5542",
+    "inputs/Smartscore_8- Am Camin.xml": "b8989ac3f9b9b1d1984420bbab5e02ddba87a0b885b3a51280ef6834e0d418fe",
+    "inputs/Playscore_8- Am Camin.xml": "1035f9204ae24bafa5febc48f9abbbef491b644ed9495ad8e53ad9fc939b8d60",
+    "inputs/Audiveris_8- Am Camin.xml": "62995584304c1cc56de695a2cf61e835705216f6854d69a76b8c92283e172c96",
+    "baseline/summary.json": "7331041461862f15469cc1a09f935b2ad634a613c68f7969808a805e34835f23",
+    "baseline/reconciliation.json": "2b56e247187fa84477a4f3c136186e909619d17261983d2cb2e0798caa86c788"
+  },
+  "phase3_allowlist": {
+    "source/printed_source.pdf": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3",
+    "source_crops/page-1.png": "ec64aa8258e3ee476079409b47d36c5f898968acddd20b6a2c8195086d2d9d07",
+    "source_crops/pages.json": "846a07096f5d5636d782fff78d5f38637ebfae1db99d2158806731dcf806e693",
+    "config.json": "542b4ec2788286d8a64fe9a8ea4e080dc44cd73895edc484166b657da9aa1e9e",
+    "physical_score_lock.json": "d82b04da8e65e4cf818e6f23dbd22a199a43f5c2da3bb06d86f0a68b8087bb1a",
+    "reviewer_phase1_frame_lock.json": "d9cc130af846ca4d5d39d60a07447d24c01caf96ae6ae67a1328d00c1130ac61",
+    "frame_visual_verification.json": "fc84e32a8fee2178ed08ff0f28c6b970cd6ad35cccb91ca44f78b5c30e2cbe7a",
+    "reader_correspondence.json": "2e800a9db6f1cbc8e5aaa8bb3730bde2b5960efb36c6088f8fc4604772f70b32",
+    "audit_config.json": "b0e2b089b0b68dd5c817bebe67e1f15f8285f1b2f4a2be4edc08c7aac240ea5f",
+    "question_packets/priority.json": "8b7e42087e35a1ba13db0c9873a406357d81121538e47314b95d5858f77135a1",
+    "question_packets/controls.json": "4b9e17a6231d34050b0bcd28deef70161db97f5555e00968864c5eb1011f9577",
+    "question_packets/system_01.json": "08a15da237813ae0fdeae2363927386cca9f8fa1c7b1a67cd40c0db6a695b9d5",
+    "question_packets/system_02.json": "8e83d579ca8ed0eaea0e6fddabd7b96fe59dd403afeb1d22444cac3830b62ea9",
+    "question_packets/system_03.json": "9ebf6c10abe4fc2816f7f93dc16cc23652d28885f7a51ef3c571cc5d5c336402",
+    "question_packets/system_04.json": "ba0732c093a6276cbdfe792a22958fd6d7e8a786a7d27cc630da5b8f8a7cca3f",
+    "question_packets/freeze.json": "07fcf62a9242303906e519fbc174d859fdf8478606222a144a5e3e1b2e556ba2",
+    "baseline/state.json": "475ff0136c093912957289887796dcacf2c5a08fc8c5e8e40f5fa6be3e668aa1",
+    "baseline/questions.json": "f1e857628e0e78ae0ca620cd7f5786e99b245831be2791f8969452c34d82f67e",
+    "reader_claims.json": "b51f2527f64f748b708b16cba5b5771235d9160198dd474b9d0ebdab110437ec",
+    "parent_controls.json": "4aa13a77a4e3d8a37e12c484dfbf7bb2e7be3136203d71ddfec0b4fb3d2c5542",
+    "candidate_packets/system_01.json": "39a8f97b2d9129076e42d81af8a5acc6bd449ca0e04b9175ba86c3c07c1b2a8d",
+    "candidate_packets/system_02.json": "74310bc16b137f73fb8a8a4529aa1cce0b4a00b4de1c56d16f4a66c9a2b686b3",
+    "candidate_packets/system_03.json": "b51ca46950e67bf450b43bafd1edf875010fc72ec811d905cdb14881e2fca321",
+    "candidate_packets/system_04.json": "e77c58960aece619a31183df87e5fd5f2a2aefcac0d9c6f7342e8d309905d618",
+    "candidate_packets/comparison.json": "4134d9eb4272467054256423449bd8ee2fc58ac9ac74ab7be07656c96dfad0b4",
+    "candidate_packets/freeze.json": "6387c353e6e6d1aa4b23968a95c612c01c34eceec873adf5b9e31c2d2a783c03",
+    "source_agent/UNVERIFIED_source.musicxml": "f44282a0ecde80a2d4c5b69f7778832509c23abc6e514cff3bb14b1a0e52831c",
+    "source_agent/CORE.sep": "0bedf6b46a45de1c39e6084530b73e86f02e203bb275a1cb519c492c75ad4c3a",
+    "source_agent/MARKS.sep": "a2569c3acaa122d71f147c1b6e32fa8049c873f0cbbf200ef9fdb7a9752d6396",
+    "source_agent/ROUTE.sep": "176a0afb79df4d659911b04abeb0ac3d63778ad8490c6f03ec6dcc5a4bb938be",
+    "source_agent/coverage.json": "417f94a787d6bf515fa2b439e22b70ba2a7523a3556ae467937326d0a2066c41",
+    "source_agent/uncertainties.json": "c6fa39f9d05a3bca20171b4d1c41840fddd9813fe404d96ea1b98fb5faa699c1",
+    "source_agent/exact_event_ledger.json": "ae2723a2583d57196c80610cafe6ddacc1878ac1fd30892d9020db0ac8bc36cb",
+    "source_agent/exact_mark_ledger.json": "27a9d031a459c5c08fef4a670cd734113a73d445704f1fb3ecc143c3f10b04e3",
+    "source_agent/duration_discrepancies.json": "9858bda4e26fc2cbf7e30760da1e4184925945722af131dfb7998b0b9c04fffb",
+    "source_agent/structural_checks.json": "6ba9d3faba6a3a223c91d3df2916bd86e17da5c5a45306e807dde4096ffe4a49",
+    "source_agent/voice_topology_census.json": "1741c30d42019c8d5569175d1848e986127e2b8812f30cf508fd32830f80a363",
+    "source_agent/FREEZE.json": "d64e715590ab3458577c3c7823061efb09ce9441898766698b22d4ac81e86a2f",
+    "source_agent/ensemble_manifest.json": "2a752c33b084ca1674c61e4f88188427a3ffb87ad0a31eb8c69de183574c884c",
+    "source_agent/provenance_ledger.json": "463ad8909195ad83ad63574ba476b83df4d865fb1dfc3df3a1ee816e681ae63f",
+    "source_agent/ensemble_disagreements.json": "c455dd9c6b458dd61c19c9a31e098b5c505c0c356d26ac775ed901ea79e1ce57",
+    "inputs/Smartscore_8- Am Camin.xml": "b8989ac3f9b9b1d1984420bbab5e02ddba87a0b885b3a51280ef6834e0d418fe",
+    "inputs/Playscore_8- Am Camin.xml": "1035f9204ae24bafa5febc48f9abbbef491b644ed9495ad8e53ad9fc939b8d60",
+    "inputs/Audiveris_8- Am Camin.xml": "62995584304c1cc56de695a2cf61e835705216f6854d69a76b8c92283e172c96",
+    "baseline/summary.json": "7331041461862f15469cc1a09f935b2ad634a613c68f7969808a805e34835f23",
+    "baseline/reconciliation.json": "2b56e247187fa84477a4f3c136186e909619d17261983d2cb2e0798caa86c788"
+  },
+  "phase1_instruction": "Phase 1 freezes a print-only structural, marks, and route inventory.",
+  "phase2_instruction": "Phase 2 exposes readers only after Phase 1 freeze.",
+  "phase3_instruction": "Phase 3 exposes the candidate plus ensemble provenance/disagreements only after Phase 2 freeze.",
+  "instructions": [
+    "Phase 1 freezes a print-only structural, marks, and route inventory.",
+    "Phase 2 exposes readers only after Phase 1 freeze.",
+    "Phase 3 exposes the candidate plus ensemble provenance/disagreements only after Phase 2 freeze.",
+    "Provenance and disagreements guide scrutiny but do not replace direct print review.",
+    "Astra must check every event, mark, and route element, including unanimous claims and claims with no recorded disagreement.",
+    "110 unresolved evidence claims are carried to Astra. Routing is exhausted. Gemini stayed inside its hard budget. GROK was not requested. Assembly did not call a source API and did not treat agreement as truth. The fused marks and route arrays are empty. The forward repeat before P010, the first ending on P025, the end repeat after P025, the second ending on P026, the bass-clef change in P030, and the final barline after P034 were encoded from the Stage 1 print lock. Stage 1 froze question_packets/priority.json; priorities.json was not produced, so Phase 2 authorizes priority.json."
+  ],
+  "created_utc": "2026-10-05T07:22:57+00:00",
+  "self_audit": "not_yet_run",
+  "blockers": [],
+  "technical_migration": {
+    "schema": "op15_legacy_migration.v1",
+    "created_at": 1791536158.3887727,
+    "original_handoff_sha256": "2fda1663f1eb472f070e094fae747b3e7fc2150007d0e5da0f99d7bf0060f932",
+    "original_questions": 181,
+    "physical_comparisons": 181,
+    "frame_unchanged": true,
+    "candidate_unchanged": true,
+    "model_calls": 0,
+    "authorization": "Required for this changed handoff; previous authorization is historical.",
+    "note": "Baseline detector alignment offsets were reversed before mapping XML labels to physical bars. Original questions and priority variants remain in each question. Multiple physical locations are kept as separate comparisons only where source records require them. The original preparation manifest remains a historical receipt; current metadata hashes are in this handoff."
+  }
+}

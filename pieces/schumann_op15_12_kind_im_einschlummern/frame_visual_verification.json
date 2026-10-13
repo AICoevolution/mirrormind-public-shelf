@@ -1,0 +1,360 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_12_kind_im_einschlummern",
+  "authority": "print_only",
+  "source_pdf_sha256": "59c48f708a1ccdeb51b337744174426a36f21566d174bf551b116884faaf58f8",
+  "physical_bar_count": 32,
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 4,
+    "printed_glyph": "2/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      340,
+      120,
+      382,
+      340
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 1,
+    "mode": null,
+    "label": "one sharp",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "One sharp is printed after the opening clef on each staff of system 1, before the 2/4. Systems 2 reprints that one sharp. No other key is in force until P009.",
+    "evidence_box_px": [
+      330,
+      121,
+      390,
+      337
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [
+    {
+      "physical_bar": 9,
+      "fifths": 4,
+      "from_fifths": 1,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "flags": [
+        "KEY_CHANGE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_box_px": [
+        690,
+        455,
+        820,
+        680
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P008 ends at a thin-thick double bar (thin stroke x 705, thick stroke x 709) with no repeat dots. P009 then prints four sharps on each staff before the notes."
+    },
+    {
+      "physical_bar": 25,
+      "fifths": 1,
+      "from_fifths": 4,
+      "page": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "onset_q": "0",
+      "flags": [
+        "KEY_CHANGE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_box_px": [
+        165,
+        505,
+        280,
+        750
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P024 ends at a double bar (left stroke x 1564, right stroke about x 1568-1571) with no repeat dots. Immediately right of that double bar, still on system 4, each staff prints two sharp glyphs. System 5 then opens P025 with one sharp after the clef on each staff, and the lullaby figure returns under that one sharp. The signature in force from P025 is one sharp."
+    }
+  ],
+  "pickup_checks": [],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "2",
+    "opening_pickup_q": null,
+    "terminal_partial_q": null,
+    "opening_bar_capacity_q": "2",
+    "terminal_bar_capacity_q": "2",
+    "sum_q": null,
+    "equals_meter": true,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "2",
+      "evidence": "P001 runs from the barline at x 276 to the barline at x 583 on page 1, system 1. After the one sharp and the 2/4, the upper staff has an eighth rest, an eighth note, a dotted eighth, and a sixteenth. That is 2 quarters, the printed meter. The lower staff has a chord under the same span. P001 is a complete bar, not a pickup.",
+      "evidence_bbox_px": [
+        276,
+        110,
+        583,
+        350
+      ],
+      "evidence_space": "page_px"
+    },
+    "terminal_bar": {
+      "physical_bar": 32,
+      "capacity_q": "2",
+      "evidence": "P032 runs from the barline at x 1515 to the thin final stroke at x 1617 on page 2, system 5. Each staff holds a quarter-note chord and two eighth notes. That is 2 quarters, the printed meter. P031, immediately before it, holds a half-note chord with a fermata on each staff, also 2 quarters. P032 is a complete bar, not a partial.",
+      "evidence_bbox_px": [
+        1515,
+        500,
+        1635,
+        760
+      ],
+      "evidence_space": "page_px"
+    },
+    "explanation": "There is no incomplete pickup and no terminal partial. The opening bar and the final bar are each a complete 2/4 bar of 2 quarters."
+  },
+  "clef_changes": [
+    {
+      "physical_bar": 11,
+      "staff": 1,
+      "onset_q": "1",
+      "sign": "F",
+      "line": 4,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "page": 1,
+      "kind": "bass clef after the first quarter chord on the upper staff",
+      "placement": "MID_REGION",
+      "glyph_region": "P011",
+      "effective_region": "P011",
+      "from_sign": "G",
+      "from_line": 2,
+      "evidence_box_px": [
+        1273,
+        462,
+        1310,
+        522
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Upper staff of P011. A quarter-note chord stands immediately after the barline at x 1208, still in treble. The bass clef is printed after that chord, before the eighth notes. The lower staff stays bass."
+    },
+    {
+      "physical_bar": 12,
+      "staff": 1,
+      "onset_q": "2",
+      "sign": "G",
+      "line": 2,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "page": 1,
+      "kind": "cautionary treble clef at the end of the upper staff",
+      "placement": "REGION_END_CAUTIONARY",
+      "glyph_region": "P012",
+      "effective_region": "P013",
+      "from_sign": "F",
+      "from_line": 4,
+      "evidence_box_px": [
+        1560,
+        460,
+        1635,
+        530
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Upper staff of P012, after that bar's notes and before the barline at x 1643. The notes of P012 stay in bass. Treble takes effect on P013, whose system opening reprints the treble clef."
+    },
+    {
+      "physical_bar": 15,
+      "staff": 1,
+      "onset_q": "1",
+      "sign": "F",
+      "line": 4,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "page": 1,
+      "kind": "bass clef after the first quarter chord on the upper staff",
+      "placement": "MID_REGION",
+      "glyph_region": "P015",
+      "effective_region": "P015",
+      "from_sign": "G",
+      "from_line": 2,
+      "evidence_box_px": [
+        769,
+        806,
+        808,
+        866
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Upper staff of P015. A quarter-note chord stands immediately after the barline at x 708, still in treble. The bass clef is printed after that chord, before the eighth notes, and stays in force through P017. The lower staff stays bass."
+    },
+    {
+      "physical_bar": 18,
+      "staff": 1,
+      "onset_q": "2",
+      "sign": "G",
+      "line": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "page": 1,
+      "kind": "cautionary treble clef at the end of the upper staff",
+      "placement": "REGION_END_CAUTIONARY",
+      "glyph_region": "P018",
+      "effective_region": "P019",
+      "from_sign": "F",
+      "from_line": 4,
+      "evidence_box_px": [
+        1545,
+        800,
+        1635,
+        875
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Upper staff of P018, after that bar's notes and before the barline at x 1644. The notes of P018 stay in bass. Treble takes effect on P019, whose system opening reprints the treble clef."
+    }
+  ],
+  "repeat_boundaries": [],
+  "section_double_bars": [
+    {
+      "after_physical_bar": 8,
+      "physical_bar": 8,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "thin_x_px": 705,
+      "thick_x_px": [
+        709,
+        712
+      ],
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_box_px": [
+        690,
+        455,
+        730,
+        675
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P008 ends with a thin stroke at x 705 and a thick stroke at x 709. No repeat dots are printed on either side."
+    },
+    {
+      "after_physical_bar": 16,
+      "physical_bar": 16,
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "thin_x_px": 1160,
+      "thick_x_px": [
+        1165,
+        1168
+      ],
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_box_px": [
+        1145,
+        800,
+        1185,
+        1010
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P016 ends with a thin stroke at x 1160 and a thick stroke at x 1165. No repeat dots and no new key signature are printed there. The four sharps continue."
+    },
+    {
+      "after_physical_bar": 24,
+      "physical_bar": 24,
+      "page": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "thin_x_px": 1564,
+      "thick_x_px": [
+        1568,
+        1572
+      ],
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_box_px": [
+        1548,
+        165,
+        1640,
+        410
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P024 ends with a double bar near x 1564-1572. No repeat dots. Two sharp glyphs stand to the right of the double bar on each staff. System 5 opens in one sharp."
+    }
+  ],
+  "final_barline": {
+    "after_physical_bar": 32,
+    "page": 2,
+    "system": 5,
+    "thin_x_px": 1617,
+    "thick_x_px": [
+      1624,
+      1630
+    ],
+    "flags": [
+      "FINAL_BARLINE"
+    ],
+    "evidence_box_px": [
+      1600,
+      510,
+      1660,
+      750
+    ],
+    "evidence_space": "page_px",
+    "evidence": "P032 ends with a thin stroke at x 1617 and a thick stroke at x 1624-1630. Its left boundary is the barline at x 1515, which runs through both staves. No repeat dots are printed beside the final barline."
+  },
+  "system_bar_counts": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "count": 6
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        12
+      ],
+      "count": 6
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        13,
+        18
+      ],
+      "count": 6
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "measures": [
+        19,
+        24
+      ],
+      "count": 6
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "measures": [
+        25,
+        32
+      ],
+      "count": 8
+    }
+  ]
+}

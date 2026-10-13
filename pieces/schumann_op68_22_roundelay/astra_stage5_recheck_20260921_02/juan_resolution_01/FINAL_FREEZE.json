@@ -1,0 +1,68 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "UNVERIFIED_READY_FOR_JUAN_RECHECK",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op68_No22_Roundelay_Astra.musicxml",
+  "primary_xml_sha256": "02c286bc7d4ca6e734f68dbcd84c5024660cbb143692e3129232777e692d94ef",
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "907df3675350af1eb7b92119fac8dad701e1e425baa9a9ea47dcb6750e2a00ec",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "checks/duration_cursor_check.json",
+        "checks/post_astra_consumer_recheck.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "checks/playback_route_equality.json",
+        "checks/post_astra_consumer_recheck.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "rendered_final/report.json",
+        "checks/playback_route_equality.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "rendered_final/report.json",
+        "rendered_final/full_score.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "checks/focused_visual_recheck.json",
+        "rendered_final/P048_final_barline.png"
+      ]
+    }
+  },
+  "correction": {
+    "bar": 48,
+    "location": "right",
+    "before": "none",
+    "after": "light-heavy",
+    "all_playback_events_equal": true,
+    "unrelated_xml_fields_unchanged": true
+  },
+  "previous_checkpoint": "astra_stage5_recheck_20260921_02/FINAL_FREEZE.json",
+  "previous_checkpoint_sha256": "96d13e4e91757bf98354dd23b469b8aa1a1b34b2375a38c51c935b107ee01ae7",
+  "parent_primary_sha256": "d5f1c747dd020a137ba4bf85a0b4a454319260544aaef7de3ee2872e3630911b",
+  "prior_snapshots_preserved": true,
+  "remaining_uncertainties": [],
+  "verified": false,
+  "published": false,
+  "publication_approved": false,
+  "juan_recheck_required": true,
+  "human_outcome": null,
+  "frozen_utc": "2026-09-29T08:23:44.880183+00:00",
+  "parent_primary": "astra_stage5_recheck_20260921_02/delivery_final/UNVERIFIED_Schumann_Op68_No22_Roundelay_Astra.musicxml"
+}

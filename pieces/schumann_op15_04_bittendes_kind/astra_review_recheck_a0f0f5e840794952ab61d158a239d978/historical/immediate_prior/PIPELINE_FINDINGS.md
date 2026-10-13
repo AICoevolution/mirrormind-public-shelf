@@ -1,0 +1,1 @@
+Collision-free geometry is insufficient for musical notation readiness. The repaired writeAbovePhrase produces bracket-shaped slurs. Require direct visual comparison plus smooth phrase-curve geometry and existing endpoint/beam checks. Production code and primary XML were not edited.

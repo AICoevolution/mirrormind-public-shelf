@@ -1,0 +1,31 @@
+{
+  "xml_sha256": "8a8bdcb0b30f01372dea70f2ecd08042d996cd31edd305906bb4b87155485912",
+  "layers": {
+    "primary_musicxml": "READY_FOR_JUAN_VERIFICATION_UNVERIFIED",
+    "CORE": {
+      "status": "EXPORTED_APPLY_UNCHANGED_PASS_REBUILD_NOT_READY",
+      "actual_apply_byte_exact": true,
+      "standalone_rebuild_exact": false,
+      "limitation": "Rebuild adds a leading eighth rest and shifts all 14 pitched pickup elements in P001/P010 by 1/2 quarter. Do not substitute rebuilt XML."
+    },
+    "MARKS": {
+      "status": "EXPORTED_APPLY_NOT_READY",
+      "limitation": "Apply mispairs P018->P020 cross-voice slur with P020->P022 same-voice span. Export records intended spans; primary XML retains them. No lossless Apply claim."
+    },
+    "ROUTE": {
+      "status": "READY",
+      "actual_apply_semantic_fixpoint": true,
+      "physical_visits": 66
+    },
+    "viewer": {
+      "status": "PLAYBACK_DURATION_CURSOR_PASS_VISUAL_WARNINGS",
+      "warnings": [
+        "cresc. at P006/P030 overlaps the upper beam/staff because installed below-words adapter uses notehead bottom rather than staff bottom. XML placement=below and italic preserved.",
+        "Viewer reflows seven source systems into its own rows. Physical bar IDs remain authoritative."
+      ]
+    }
+  },
+  "all_layers_lossless": false,
+  "primary_playback_exception": false,
+  "human_outcome": null
+}

@@ -1,0 +1,81 @@
+{
+  "schema": "astra.juan-resolution.v1",
+  "piece_id": "schumann_op68_28_in_memoriam",
+  "blocked_checkpoint": "../FINAL_FREEZE.json",
+  "blocked_primary_sha256": "329155839f66838f10df60f02126dbe17e4a968a88d856f23348adc27ab543ef",
+  "resolved_primary": "delivery_final/Schumann_Op68_28_In_Memoriam_Juan_Corrected.musicxml",
+  "resolved_primary_sha256": "68929022cf47b7768fd1e904f9795974f59c49b83d7423bd4a4d9232e92f266f",
+  "decisions": [
+    {
+      "decision": "P013_OCTAVE",
+      "bar": 13,
+      "staff": 1,
+      "voice": "2",
+      "pitches": [
+        "E4",
+        "E5"
+      ],
+      "onset_q": "3/2",
+      "duration_q": "1/2",
+      "engraving_note": "The octave is a simultaneous voice-2 entry with its own downward stem and flag; the printed rightward displacement separates the phrase ending from the new phrase start.",
+      "slur": "Start number 4 is on upper E5 of the P013 octave and closes on a14-s1-v1-072 at the end of P014.",
+      "id": "JUAN-P013-OCTAVE-SLUR-01",
+      "stem": "down"
+    },
+    {
+      "decision": "P015_TEXT_LAYOUT",
+      "bar": 15,
+      "text": "a tempo",
+      "relative_x": 18,
+      "relative_y": -14,
+      "musical_time_changed": false,
+      "id": "JUAN-P015-TEXT-LAYOUT-01"
+    },
+    {
+      "decision": "P021_TEXT_LAYOUT",
+      "bar": 21,
+      "text": "a tempo",
+      "relative_x": 18,
+      "relative_y": -14,
+      "musical_time_changed": false,
+      "id": "JUAN-P021-TEXT-LAYOUT-01"
+    },
+    {
+      "id": "JUAN-P013-OCTAVE-DOWNSTEM-02",
+      "decision": "P013_OCTAVE_DOWNSTEM",
+      "bar": 13,
+      "event_ids": [
+        "juan13-s1-v2-e4",
+        "juan13-s1-v2-e5"
+      ],
+      "before": "stem up",
+      "after": "stem down",
+      "authority": "Juan phrase-interpretation correction",
+      "semantic_note": "The final voice-1 B4 ends one slur while the simultaneous voice-2 octave starts the next slur from E5."
+    },
+    {
+      "id": "JUAN-P013-P014-SLUR-PAIR-03",
+      "decision": "P013_TO_P014_DISTINCT_SLUR_PAIR",
+      "start": {
+        "bar": 13,
+        "note_id": "juan13-s1-v2-e5",
+        "number": "4"
+      },
+      "stop": {
+        "bar": 14,
+        "note_id": "a14-s1-v1-072",
+        "number": "4"
+      },
+      "reason": "A unique MusicXML slur number prevents collision with the simultaneous lower-staff slur and lets MARKS emit the cross-voice phrase explicitly."
+    }
+  ],
+  "unresolved_print_decisions": [],
+  "resolved_utc": "2026-09-22T10:50:31.007589+00:00",
+  "parent_checkpoint": "astra_review_20260922/FINAL_FREEZE.json",
+  "parent_checkpoint_sha256": "35778cacad58ffdac25fa9303c8d39674d4efccf2c68e15b3cbb48a84c7e61d6",
+  "parent_primary": "astra_review_20260922/delivery_final/UNVERIFIED_schumann_op68_28_in_memoriam.musicxml",
+  "parent_primary_sha256": "329155839f66838f10df60f02126dbe17e4a968a88d856f23348adc27ab543ef",
+  "publication_approved": false,
+  "visual_verification": "checks/focused_visual_recheck.json",
+  "marks_verification": "checks/marks_engraving_recheck.json"
+}

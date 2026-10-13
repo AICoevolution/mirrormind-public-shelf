@@ -1,0 +1,314 @@
+{
+  "schema": "voice_topology_census.v1",
+  "piece_id": "schumann_op68_01_melody",
+  "authority": "diagnostic_only_astra_decides",
+  "source": "api_response_final (part, staff, voice) occupancy plus CORE.sep header and MusicXML staff/voice occupancy; consolidation reserved for Astra",
+  "created_utc": "2026-09-16T13:53:03.303306+00:00",
+  "consolidation_forbidden": true,
+  "notes": [
+    "Assembly recorded ensemble identities as-is and did not merge, rename, or drop lanes.",
+    "Astra owns the print-grounded minimal-topology decision via SEP Map:/empty-voice or an explicitly ledgered context-scoped correction.",
+    "CORE.sep P1/P2 labels are staff-oriented diagnostics, not extra MusicXML parts."
+  ],
+  "lanes": [
+    {
+      "id": "V3",
+      "part": "P1",
+      "staff": 1,
+      "voice": "1",
+      "xml_voice": 1,
+      "pitched_count": 77,
+      "rest_count": 7,
+      "all_rest": false,
+      "bars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20
+      ],
+      "bar_gaps": [
+        8,
+        16
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            8,
+            16
+          ],
+          "note": "Lane is absent from intervening bars; Astra decides whether this is a restart or a distinct identity."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": null,
+      "xml_pitched": 85,
+      "xml_rests": 7,
+      "all_rest_xml": false,
+      "event_count": 84,
+      "sep_header": {
+        "id": "V3",
+        "sep_part": "P1",
+        "sep_voice": 1,
+        "sep_pitched_count": 85
+      }
+    },
+    {
+      "id": "V1",
+      "part": "P1",
+      "staff": 1,
+      "voice": "5",
+      "xml_voice": 5,
+      "pitched_count": 3,
+      "rest_count": 3,
+      "all_rest": false,
+      "bars": [
+        8,
+        16
+      ],
+      "bar_gaps": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "note": "Lane is absent from intervening bars; Astra decides whether this is a restart or a distinct identity."
+        },
+        {
+          "kind": "local_fragment",
+          "bars": [
+            8,
+            16
+          ],
+          "note": "Lane occupies only a subset of the printed 20 bars."
+        }
+      ],
+      "likely_omr_artifact": true,
+      "artifact_pitches": "Measure 8 onset 2 (F5); Measure 8 onset 7/2 (D5); Measure 16 onset 2 (F5)",
+      "xml_pitched": 3,
+      "xml_rests": 3,
+      "all_rest_xml": false,
+      "event_count": 6,
+      "sep_header": {
+        "id": "V1",
+        "sep_part": "P1",
+        "sep_voice": 5,
+        "sep_pitched_count": 3
+      }
+    },
+    {
+      "id": "V2",
+      "part": "P1",
+      "staff": 1,
+      "voice": "6",
+      "xml_voice": 6,
+      "pitched_count": 16,
+      "rest_count": 0,
+      "all_rest": false,
+      "bars": [
+        8,
+        16
+      ],
+      "bar_gaps": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "restart_or_fragmentation_candidates": [
+        {
+          "kind": "bar_gap",
+          "bars": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "note": "Lane is absent from intervening bars; Astra decides whether this is a restart or a distinct identity."
+        },
+        {
+          "kind": "local_fragment",
+          "bars": [
+            8,
+            16
+          ],
+          "note": "Lane occupies only a subset of the printed 20 bars."
+        }
+      ],
+      "likely_omr_artifact": false,
+      "artifact_pitches": null,
+      "xml_pitched": 16,
+      "xml_rests": 0,
+      "all_rest_xml": false,
+      "event_count": 16,
+      "sep_header": {
+        "id": "V2",
+        "sep_part": "P1",
+        "sep_voice": 6,
+        "sep_pitched_count": 16
+      }
+    },
+    {
+      "id": "V4",
+      "part": "P1",
+      "staff": 2,
+      "voice": "1",
+      "xml_voice": 3,
+      "pitched_count": 156,
+      "rest_count": 0,
+      "all_rest": false,
+      "bars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "bar_gaps": [],
+      "restart_or_fragmentation_candidates": [],
+      "likely_omr_artifact": false,
+      "artifact_pitches": null,
+      "xml_pitched": 156,
+      "xml_rests": 0,
+      "all_rest_xml": false,
+      "event_count": 156,
+      "sep_header": {
+        "id": "V4",
+        "sep_part": "P2",
+        "sep_voice": 1,
+        "sep_pitched_count": 156
+      }
+    }
+  ],
+  "sep_header_unmatched": [],
+  "xml_lanes_observed": [
+    {
+      "part": "P1",
+      "staff": 1,
+      "xml_voice": 1,
+      "xml_pitched": 85,
+      "xml_rests": 7,
+      "bars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "part": "P1",
+      "staff": 1,
+      "xml_voice": 5,
+      "xml_pitched": 3,
+      "xml_rests": 3,
+      "bars": [
+        8,
+        16
+      ]
+    },
+    {
+      "part": "P1",
+      "staff": 1,
+      "xml_voice": 6,
+      "xml_pitched": 16,
+      "xml_rests": 0,
+      "bars": [
+        8,
+        16
+      ]
+    },
+    {
+      "part": "P1",
+      "staff": 2,
+      "xml_voice": 3,
+      "xml_pitched": 156,
+      "xml_rests": 0,
+      "bars": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  ]
+}

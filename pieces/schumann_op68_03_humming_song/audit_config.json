@@ -1,0 +1,192 @@
+{
+  "measure_count": 24,
+  "meter": [
+    4,
+    4
+  ],
+  "printed_meter": {
+    "beats": 4,
+    "beat_type": 4,
+    "symbol": "common",
+    "printed_glyph": "C"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 0,
+    "mode": null,
+    "label": "no printed key signature (C / A minor)"
+  },
+  "measure_capacities_q": {
+    "1": "4",
+    "2": "4",
+    "3": "4",
+    "4": "4",
+    "5": "4",
+    "6": "4",
+    "7": "4",
+    "8": "4",
+    "9": "4",
+    "10": "4",
+    "11": "4",
+    "12": "4",
+    "13": "4",
+    "14": "4",
+    "15": "4",
+    "16": "4",
+    "17": "4",
+    "18": "4",
+    "19": "4",
+    "20": "4",
+    "21": "4",
+    "22": "4",
+    "23": "4",
+    "24": "4"
+  },
+  "capacity_note": "Printed meter is common-time C (4/4) throughout; only the system-1 opening glyph on both staves. Every physical region is a complete 4/4 bar of capacity 4 quarter-note units. P001 opens with a complete common-time bar under piano; P024 is a complete common-time close before the thin-plus-thick final barline. Pickup-plus-terminal versus printed 4/4 therefore does not apply.",
+  "section_routes": [
+    {
+      "written_regions": [
+        1,
+        24
+      ],
+      "repeat": false,
+      "kind": "through_composed_no_printed_repeat"
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        4
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        420
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        5,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        420,
+        846
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        10,
+        14
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        846,
+        1280
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        15,
+        19
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1280,
+        1680
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        20,
+        24
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1680,
+        2272
+      ]
+    }
+  ],
+  "addressing": "P001-P024 are one-based physical printed common-time bars on one page. Five grand-staff systems at pypdfium2 scale 2.5 (4+5+5+5+5). P001 is a complete common-time opening under piano. P024 is a complete common-time close before the thin-plus-thick final barline. No pickup, no incomplete terminal, no volta, no printed repeat.",
+  "source_frame_evidence": "Inspected one page render at pypdfium2 scale 2.5 (1639x2272) plus five grand-staff children. Title Humming Song implied by source folder; printed tempo Moderato quarter=100, common-time C on both staves, no key signature. Both hands open G clef line 2. LH changes to bass F at the P008/P009 barline and returns to G at the P016/P017 barline. Later system-start clefs are reprints. Five systems 4+5+5+5+5 complete 4/4 bars. No musical ink on the page boundary.",
+  "clefs_open": {
+    "staff1": {
+      "sign": "G",
+      "line": 2
+    },
+    "staff2": {
+      "sign": "G",
+      "line": 2
+    }
+  },
+  "clef_changes": [
+    {
+      "physical_bar": 8,
+      "staff": 2,
+      "onset_q": "4",
+      "sign": "F",
+      "line": 4,
+      "region": "LH treble to bass at the P008/P009 barline. Glyph sits after the P008 eighth rest on system_02.png, immediately left of the barline at x=1283. First governed event is the mf C-sharp quarter on the lower staff of P009.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence_box_px": [
+        1208,
+        255,
+        1276,
+        340
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 16,
+      "staff": 2,
+      "onset_q": "4",
+      "sign": "G",
+      "line": 2,
+      "region": "LH bass to treble at the P016/P017 barline. Glyph sits after the four sixteenths that close the dotted-half-plus-turn figure of P016 on system_04.png, immediately left of the barline at x=704. First governed event is the first left-hand eighth of P017.",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence_box_px": [
+        642,
+        248,
+        702,
+        335
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "readers": {
+    "SmartScore": "inputs/Smartscore_3- Humming Song.xml",
+    "PlayScore": "inputs/Playscore_3- Humming Song.xml",
+    "Audiveris": "inputs/Audiveris_3- Humming Song.xml"
+  },
+  "reader_bar_map": {
+    "SmartScore": "24 elements, raw 1-24. Unmapped.",
+    "PlayScore": "23 elements, raw 1-23. Unmapped.",
+    "Audiveris": "13 elements, raw 1-11,13,15. Unmapped."
+  },
+  "correspondence_status": "Frozen unmapped: print 24 complete 4/4 bars; SmartScore 24; PlayScore 23; Audiveris 13. Count match with SmartScore is not a 1:1 map.",
+  "reader_physical_to_ordinal": {
+    "SmartScore": {},
+    "PlayScore": {},
+    "Audiveris": {}
+  },
+  "crop_validation_sha256": "8737e1b0d3e204d1cda0d4ac384bf64221419d4acf15af5a7df8eae9fb447510",
+  "page_frame_validation_sha256": "c4af7d654a544efbed2cab870baa7aa705a8f109d167d44fc5f1dab3f1b69ffb",
+  "human_outcome": null
+}

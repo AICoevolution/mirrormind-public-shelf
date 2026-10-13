@@ -1,0 +1,76 @@
+{
+  "schema": "astra.human-correction-exact-diff.v1",
+  "status": "PASS",
+  "source_sha256": "329155839f66838f10df60f02126dbe17e4a968a88d856f23348adc27ab543ef",
+  "resolved_sha256": "68929022cf47b7768fd1e904f9795974f59c49b83d7423bd4a4d9232e92f266f",
+  "only_declared_human_corrections": true,
+  "authorized_decision_ids": [
+    "JUAN-P013-OCTAVE-SLUR-01",
+    "JUAN-P015-TEXT-LAYOUT-01",
+    "JUAN-P021-TEXT-LAYOUT-01",
+    "JUAN-P013-OCTAVE-DOWNSTEM-02",
+    "JUAN-P013-P014-SLUR-PAIR-03"
+  ],
+  "prior_resolution": {
+    "primary_sha256": "bc1d8b9613a16cb127de394aaacba3f17fcb114eaae00c26d3471928ea70fb8c",
+    "exact_diff_audit_sha256": "c65fa849648945933d13883b866ac8b69c8bbeebc84984112423f21bc1d862db"
+  },
+  "resolution_03_changes_from_resolution_02": [
+    {
+      "event_id": "juan13-s1-v2-e5",
+      "slur": "start",
+      "number": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "event_id": "a14-s1-v1-072",
+      "slur": "stop",
+      "number": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "event_id": "a12-s1-v2-168",
+      "removed": "speculative slur stop number 3"
+    },
+    {
+      "event_id": "a23-s1-v1-140",
+      "removed": "speculative slur start number 3"
+    }
+  ],
+  "sounding_events_unchanged": true,
+  "timing_unchanged": true,
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [
+      {
+        "part": "P1",
+        "measure": "m1",
+        "missing_quarters": 1.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m24"
+      },
+      {
+        "part": "P1",
+        "measure": "m24",
+        "missing_quarters": 0.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m1"
+      }
+    ],
+    "cursor_slips": [],
+    "first_slip_measure": null,
+    "notes": [
+      "m1 is short by 1.5, and m24 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+      "m24 is short by 0.5, and m1 holds exactly the rest of it \u2014 one bar split in two, and normal."
+    ]
+  }
+}

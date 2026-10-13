@@ -1,0 +1,667 @@
+{
+  "schema": "frame_verifier_response.v1",
+  "piece_id": "schumann_op15_06_wichtige_begebenheit",
+  "request_sha256": "e4b3f36c8c984ace5c7054a9d14eabb3c32c61aa6a0d507724d9d8d6df82d684",
+  "verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "session_id": "56ae2ae97fcb4391888643500516629f",
+    "edition_scope": "schumann_op15_breitkopf_1880_imslp289791"
+  },
+  "verdict": "PASS",
+  "source_blindness_confirmed": true,
+  "geometry_assist_review": {
+    "manifest_sha256": "e59f5911e052b718318bb08990977c161c8bc08454f1682c231bcc9b4a51f553",
+    "print_remains_authority": true,
+    "semantic_omr_content_not_used": true,
+    "systems": [
+      {
+        "system": 1,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed single barlines sit on the proposed boundaries. Several candidate positions sit one or two pixels to the right of those strokes, so the returned boundaries follow the print."
+      },
+      {
+        "system": 2,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "The forward repeat is a thick-thin pair from the left of the thick stroke through the thin stroke, with dots on the right. The candidate uses the thin stroke. The returned boundary is the left edge of the thick stroke, on the printed ink."
+      },
+      {
+        "system": 3,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "The frozen boundaries stay in place. The end-repeat candidate sits a few pixels to the right, still on the printed thick stroke."
+      },
+      {
+        "system": 4,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "The frozen boundaries stay in place. The candidate closing position sits on the thick stroke of the same printed final barline."
+      }
+    ]
+  },
+  "printed_physical_bar_count": 27,
+  "human_summary": "The print shows 27 bar regions in 3/4 across four systems on one page. Only the printed page, the system crops, the proposed frame, and the non-authoritative geometry aid were used. System 1 opens with a treble clef, a bass clef, three sharps, and a 3/4 sign, then one quarter-note chord on each staff. Systems 2, 3, and 4 reprint the treble and bass clefs and the three sharps. No later clef is printed. A forward repeat stands between a two-beat partial and a one-beat partial in system 2. The frozen end repeat in system 3 and the frozen final bar in system 4 agree with the full page. The opening one-beat pickup and the closing two-beat bar together fill one 3/4 bar. The proposed barlines sit on the printed strokes, and the crop rectangles include the slurs, hairpins, stems, and dynamics.",
+  "clef_verification": {
+    "opening": [
+      {
+        "staff": 1,
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, upper staff",
+        "evidence_bbox_px": [
+          280,
+          63,
+          314,
+          152
+        ]
+      },
+      {
+        "staff": 2,
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, lower staff",
+        "evidence_bbox_px": [
+          276,
+          213,
+          324,
+          265
+        ]
+      }
+    ],
+    "changes": [],
+    "printed_change_count": 0,
+    "no_other_changes_visible": true,
+    "matches_proposed_frame": true,
+    "summary_plain": "The upper staff opens in the treble clef and the lower staff opens in the bass clef. Systems 2, 3, and 4 reprint those clefs. No later clef is printed."
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "crop_width_px": 1781,
+      "crop_height_px": 358,
+      "printed_region_count": 7,
+      "barline_boundaries_x_px": [
+        270,
+        487,
+        675,
+        871,
+        1065,
+        1254,
+        1442,
+        1636
+      ],
+      "regions": [
+        {
+          "id": "P001",
+          "capacity_q": "1",
+          "capacity_plain": "1 quarter-note beat",
+          "kind_plain": "opening pickup",
+          "evidence_bbox_px": [
+            270,
+            36,
+            487,
+            357
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "OPENING_SIGNATURE",
+            "PICKUP"
+          ],
+          "features_plain": [
+            "At the left of the system",
+            "After the time signature"
+          ]
+        },
+        {
+          "id": "P002",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            487,
+            36,
+            675,
+            357
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P003",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            675,
+            36,
+            871,
+            357
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P004",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            871,
+            36,
+            1065,
+            357
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P005",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1065,
+            36,
+            1254,
+            357
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P006",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1254,
+            36,
+            1442,
+            357
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P007",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1442,
+            36,
+            1636,
+            357
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "crop_width_px": 1781,
+      "crop_height_px": 324,
+      "printed_region_count": 7,
+      "barline_boundaries_x_px": [
+        157,
+        444,
+        583,
+        698,
+        907,
+        1156,
+        1389,
+        1638
+      ],
+      "regions": [
+        {
+          "id": "P008",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            157,
+            8,
+            444,
+            323
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P009",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "partial bar before the forward repeat",
+          "evidence_bbox_px": [
+            444,
+            8,
+            583,
+            323
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "PARTIAL",
+            "REPEAT_START"
+          ],
+          "features_plain": [
+            "Before the forward repeat",
+            "At the right barline"
+          ]
+        },
+        {
+          "id": "P010",
+          "capacity_q": "1",
+          "capacity_plain": "1 quarter-note beat",
+          "kind_plain": "partial bar after the forward repeat",
+          "evidence_bbox_px": [
+            583,
+            8,
+            698,
+            323
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "PARTIAL"
+          ],
+          "features_plain": [
+            "After the forward repeat"
+          ]
+        },
+        {
+          "id": "P011",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            698,
+            8,
+            907,
+            323
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P012",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            907,
+            8,
+            1156,
+            323
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P013",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1156,
+            8,
+            1389,
+            323
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P014",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1389,
+            8,
+            1638,
+            323
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "crop_width_px": 1781,
+      "crop_height_px": 280,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [
+        156,
+        553,
+        777,
+        1085,
+        1243,
+        1368,
+        1639
+      ],
+      "regions": [
+        {
+          "id": "P015",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            156,
+            20,
+            553,
+            279
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P016",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            553,
+            20,
+            777,
+            279
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P017",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            777,
+            20,
+            1085,
+            279
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P018",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "partial bar before the end repeat",
+          "evidence_bbox_px": [
+            1085,
+            20,
+            1243,
+            279
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "PARTIAL",
+            "REPEAT_END"
+          ],
+          "features_plain": [
+            "Before the end repeat",
+            "At the right barline"
+          ]
+        },
+        {
+          "id": "P019",
+          "capacity_q": "1",
+          "capacity_plain": "1 quarter-note beat",
+          "kind_plain": "partial bar after the end repeat",
+          "evidence_bbox_px": [
+            1243,
+            20,
+            1368,
+            279
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "PARTIAL"
+          ],
+          "features_plain": [
+            "After the end repeat"
+          ]
+        },
+        {
+          "id": "P020",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1368,
+            20,
+            1639,
+            279
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "crop_path": "source_crops/system_04.png",
+      "crop_width_px": 1781,
+      "crop_height_px": 324,
+      "printed_region_count": 7,
+      "barline_boundaries_x_px": [
+        157,
+        454,
+        660,
+        852,
+        1057,
+        1269,
+        1475,
+        1632
+      ],
+      "regions": [
+        {
+          "id": "P021",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            157,
+            15,
+            454,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P022",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            454,
+            15,
+            660,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P023",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            660,
+            15,
+            852,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P024",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            852,
+            15,
+            1057,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P025",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1057,
+            15,
+            1269,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P026",
+          "capacity_q": "3",
+          "capacity_plain": "3 quarter-note beats",
+          "kind_plain": "full 3/4 bar",
+          "evidence_bbox_px": [
+            1269,
+            15,
+            1475,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P027",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "terminal partial closed by the final barline",
+          "evidence_bbox_px": [
+            1475,
+            15,
+            1632,
+            310
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "PARTIAL",
+            "FINAL_BARLINE"
+          ],
+          "features_plain": [
+            "Before the final barline",
+            "At the right barline"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    }
+  ],
+  "irregular_checks": [
+    {
+      "where": "System 1, first region",
+      "question_plain": "Is the first region one quarter-note beat after the clefs, three sharps, and the 3/4 sign?",
+      "answer_plain": "Yes. Each staff has one quarter-note chord, then a single barline.",
+      "evidence_bbox_px": [
+        270,
+        36,
+        487,
+        357
+      ]
+    },
+    {
+      "where": "System 2, between the two short regions",
+      "question_plain": "Is the barline between those regions a forward repeat, with two beats before it and one beat after it?",
+      "answer_plain": "Yes. The thick-thin barline has dots on the right. The lower staff has two quarter-note chords before it and two eighth notes after it.",
+      "evidence_bbox_px": [
+        444,
+        8,
+        698,
+        323
+      ]
+    },
+    {
+      "where": "Systems 3 and 4 on the full page",
+      "question_plain": "Does the full page contradict the frozen end repeat or the frozen final barline?",
+      "answer_plain": "No. System 3 has an end repeat with dots on the left, and system 4 closes with a thin-thick final barline.",
+      "evidence_bbox_px": [
+        1085,
+        20,
+        1368,
+        279
+      ]
+    }
+  ],
+  "count_anomaly_review": {
+    "performed": false,
+    "printed_count_confirmed": 0,
+    "explanation_plain": ""
+  },
+  "corrections": []
+}

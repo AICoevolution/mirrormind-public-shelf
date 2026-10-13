@@ -1,0 +1,404 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_28_in_memoriam",
+  "revision": 7,
+  "authority": "print_only",
+  "source_pdf_sha256": "36d54a5d01e94b2e67802ab7ca44aa07251e0052a22bb81f86d3c26656bdad63",
+  "page_image_sha256": {
+    "page-1": "b006d6b0c7af0a8e1c1087f066e446066123e40f1ec66d62f6bdb1f78b2292c3"
+  },
+  "printed_meter": "2/4 at the opening on both staves; only staff meter glyph",
+  "physical_bar_count": 24,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "Juan REJECT: P001 is a pickup of one eighth (capacity 1/2), not a complete 2/4. The region sits after the opening G/F, three sharps, and 2/4 and ends at the first-strain forward repeat at x=441.",
+      "evidence_box_px": [
+        220,
+        300,
+        441,
+        575
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 24,
+      "id": "P024",
+      "capacity_q": "3/2",
+      "capacity_plain": "3 eighth-note units",
+      "kind": "terminal_partial_3_8",
+      "flags": [
+        "PARTIAL",
+        "NOTEWORTHY",
+        "SECOND_ENDING",
+        "FINAL_BARLINE"
+      ],
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "onset_q": "0",
+      "evidence_space": "system_crop",
+      "evidence_bbox_px": [
+        1328,
+        40,
+        1638,
+        500
+      ],
+      "evidence": "Direct print pixels in source_crops/system_05.png show P024 under the printed 2. volta as a terminal 3/8 partial: upper dotted-quarter chord with an inner moving line totaling three eighth-note units, and bass four sixteenths plus an eighth totaling three eighth-note units. No final eighth rest is printed before the thin-thick final barline. Printed meter remains 2/4."
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P024",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "pass",
+      "evidence": "Opening eighth pickup P001 (1/2) and terminal 3/8 partial P024 (3/2) together fill one printed 2/4 span. The P024 reading comes from printed note values on both staves, not from pairing arithmetic alone."
+    },
+    {
+      "pair": "P024_terminal_partial_3_8",
+      "capacities_q": [
+        "3/2"
+      ],
+      "sum_q": "3/2",
+      "printed_meter": "2/4",
+      "result": "terminal_partial",
+      "evidence": "P024 under the 2. volta is a terminal 3/8 partial: upper dotted-quarter chord and inner line each span three eighth-note units; bass four sixteenths plus an eighth span three eighth-note units. No final eighth rest before the final barline.",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "repeats": [
+    {
+      "before_physical_bar": 2,
+      "kind": "forward",
+      "flags": [
+        "REPEAT_START"
+      ],
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "After the eighth pickup of P001, a heavy-light barline with dots to the right stands on both staves at x=441. First-strain forward repeat. Next region P002 is a complete 2/4.",
+      "evidence_box_px": [
+        420,
+        320,
+        470,
+        575
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "after_physical_bar": 11,
+      "kind": "backward",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "System 2 closes P011 with dots left of a thick right barline on both staves at x=1638. First-strain backward repeat. Last region is a complete 2/4; a slur continues into system 3 on the second time.",
+      "evidence_box_px": [
+        1595,
+        70,
+        1660,
+        330
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "before_physical_bar": 12,
+      "kind": "forward",
+      "flags": [
+        "REPEAT_START"
+      ],
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "After system-3 clefs and three reprinted sharps, a heavy-light barline with dots to the right at x=133 starts the second strain. First region after the dots is a complete 2/4 under cresc., not a pickup.",
+      "evidence_box_px": [
+        100,
+        70,
+        180,
+        320
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "after_physical_bar": 23,
+      "kind": "first_ending_backward",
+      "flags": [
+        "REPEAT_END",
+        "FIRST_ENDING"
+      ],
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "P023 sits under the printed 1. volta. The region is a complete 2/4 under mf and closes with dots left of a thick right barline at x=1328.",
+      "evidence_box_px": [
+        1280,
+        40,
+        1380,
+        340
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "repeat_boundary_checks": [
+    {
+      "at": "after_P001_before_P002",
+      "kind": "forward",
+      "result": "printed_forward_repeat",
+      "evidence": "After the eighth pickup of P001, a heavy-light barline with dots to the right stands on both staves at x=441. First-strain forward repeat. Next region P002 is a complete 2/4.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png"
+    },
+    {
+      "at": "after_P011",
+      "kind": "backward",
+      "result": "printed_backward_repeat",
+      "evidence": "System 2 closes P011 with dots left of a thick right barline on both staves at x=1638. First-strain backward repeat. Last region is a complete 2/4; a slur continues into system 3 on the second time.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "at": "before_P012",
+      "kind": "forward",
+      "result": "printed_forward_repeat",
+      "evidence": "After system-3 clefs and three reprinted sharps, a heavy-light barline with dots to the right at x=133 starts the second strain. First region after the dots is a complete 2/4 under cresc., not a pickup.",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "at": "after_P023",
+      "kind": "first_ending_backward",
+      "result": "printed_first_ending_backward_repeat",
+      "evidence": "P023 sits under the printed 1. volta. The region is a complete 2/4 under mf and closes with dots left of a thick right barline at x=1328.",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "special_barlines": [
+    {
+      "at_physical_bar": 24,
+      "kind": "second_ending_final",
+      "flags": [
+        "SECOND_ENDING",
+        "FINAL_BARLINE"
+      ],
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "P024 sits under the printed 2. volta. The region is a terminal 3/8 partial (capacity 3/2) with no final eighth rest before the thin-thick final barline",
+      "evidence_box_px": [
+        1590,
+        70,
+        1680,
+        340
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          300,
+          205,
+          415
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of three sharps and the 2/4 glyph."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          490,
+          205,
+          575
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of three sharps and the 2/4 glyph."
+      }
+    },
+    "changes": [],
+    "printed_change_count": 0,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        642
+      ],
+      "barline_boundaries_x_px": [
+        210,
+        441,
+        655,
+        878,
+        1124,
+        1351,
+        1643
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        11
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        642,
+        1019
+      ],
+      "barline_boundaries_x_px": [
+        133,
+        512,
+        768,
+        1042,
+        1359,
+        1638
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        12,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        1019,
+        1386
+      ],
+      "barline_boundaries_x_px": [
+        133,
+        634,
+        960,
+        1275,
+        1645
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        16,
+        19
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1386,
+        1767
+      ],
+      "barline_boundaries_x_px": [
+        133,
+        556,
+        920,
+        1286,
+        1646
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        20,
+        24
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1767,
+        2295
+      ],
+      "barline_boundaries_x_px": [
+        135,
+        508,
+        762,
+        1033,
+        1328,
+        1638
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Printed meter is 2/4 throughout; only the system-1 opening glyph",
+    "Three printed sharps at every system start; later accidentals are chromatic or courtesy",
+    "Forward repeat after P001; backward repeat after P011",
+    "No mid-piece clef, meter, or key change",
+    "Page canvas keeps plate 41459 and the footnote; no later movement to trim",
+    "System 2 barlines repaired to 133, 512, 768, 1042, 1359, 1638; P011 REPEAT_END at x=1638",
+    "Juan REJECT: P001 is an eighth pickup (capacity 1/2), not a complete 2/4",
+    "Five grand staves 6+5+4+4+5 = 24 regions",
+    "Forward repeat before P012; first ending P023; second ending P024 with final barline",
+    "Juan REJECT: old P016 is not a region; merge into P015 (rit. + p a) ending at x=1645",
+    "x=1507 is not a printed region boundary",
+    "P001 remains an eighth pickup (capacity 1/2); no complementary 3/8 is printed",
+    "Juan REJECT of annotated 25-region report: P001 is 1 eighth, not 2 quarter-note beats",
+    "Juan REJECT of annotated 25-region report: no P016; system 3 is P012-P015 closing at x=1645",
+    "System 5 volta split remains 1328; endings are P023 first / P024 second+final"
+  ],
+  "frame_revision": 7,
+  "frame_revision_status": "proposed capacity repair awaiting independent verification",
+  "repair_note": "Proposed capacity frame awaiting independent verification and fresh human approval.",
+  "printed_key": {
+    "fifths": 3,
+    "mode": null,
+    "label": "three sharps (A major / F-sharp minor) reprinted at each system start"
+  },
+  "key_claim": "Three printed sharps at every system start; later accidentals are chromatic or courtesy",
+  "capacity_note": "Printed meter remains 2/4. P001 stays an opening eighth pickup (capacity 1/2). P024 is a terminal 3/8 partial (capacity 3/2) under the printed 2. volta, closed by a thin-thick final barline; printed values on each staff sum to three eighth-note units with no final eighth rest. Physical region IDs, barline boundaries, clefs, crops, and key fifths=3 are unchanged. Open uncertainty (not a capacity repair): P013 upper-staff close timing versus the beamed eighths remains unresolved; do not tripletize or invent duration solely to force a sum.",
+  "open_print_uncertainties": [
+    {
+      "id": "P013_upper_close_timing",
+      "page": 1,
+      "system": 3,
+      "physical_bar": 13,
+      "note": "Upper staff on P013 shows four singly beamed eighths with a separately flagged E4/E5 octave close near the last beamed note while the lower staff fills 2 quarter units. Exact simultaneous-versus-successive timing is unresolved. Do not silently tripletize or assign duration solely to make the bar sum. Not a deterministic capacity repair."
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_10_fast_zu_ernst",
+  "frame_revision": 2,
+  "authority": "print_only",
+  "source_pdf_sha256": "dec4344b1dac7a1e0dd5a52ef4451cbdf2005e2d4489f1b6403499fc76243535",
+  "physical_bar_count": 58,
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 8,
+    "printed_glyph": "2/8",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      386,
+      112,
+      418,
+      308
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 5,
+    "mode": null,
+    "label": "five sharps (B major / G-sharp minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "Five sharps are printed after the opening clef on each staff of system 1, before the 2/8 sign. Systems 2 through 6 reprint the five sharps after their clefs. No key-signature change is printed.",
+    "evidence_box_px": [
+      346,
+      96,
+      386,
+      318
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [
+    {
+      "physical_bar": 1,
+      "id": "P001",
+      "capacity_q": "1/4",
+      "capacity_plain": "1 sixteenth-note unit",
+      "kind": "opening anacrusis of one sixteenth",
+      "flags": [
+        "PICKUP"
+      ],
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "onset_q": "0",
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        276,
+        96,
+        476,
+        322
+      ],
+      "evidence": "P001 runs from the barline at x 276 to the barline at x 476 on page 1, system 1. The five sharps and the 2/8 stand on the left of the region. After the 2/8, the upper staff has one note with two flags and the lower staff has one rest with two flags. No other note or rest is printed before the next barline. Those glyphs are one sixteenth, which is 1/4 quarter."
+    }
+  ],
+  "terminal_or_split_partials": [
+    {
+      "physical_bar": 58,
+      "id": "P058",
+      "capacity_q": "2",
+      "capacity_plain": "4 eighth-note units",
+      "kind": "terminal bar written as one minim",
+      "flags": [
+        "PARTIAL"
+      ],
+      "page": 2,
+      "system": 6,
+      "crop_path": "source_crops/system_06.png",
+      "onset_q": "0",
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        1551,
+        790,
+        1636,
+        1080
+      ],
+      "evidence": "P058 runs from the barline at x 1551 to the thin stroke of the final barline at x 1626 on page 2, system 6. Each staff prints one open-note chord with a stem and no flags. A fermata stands above the upper chord. An open notehead with a stem is a minim, and a minim equals four eighths, which is 2 quarters. The printed 2/8 meter is one quarter, so this written duration is longer than the meter. The thick stroke at x 1631-1636 closes the bar."
+    }
+  ],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "1",
+    "opening_pickup_q": "1/4",
+    "terminal_partial_q": "2",
+    "sum_q": "9/4",
+    "equals_meter": false,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "1/4",
+      "evidence": "P001 runs from the barline at x 276 to the barline at x 476 on page 1, system 1. The five sharps and the 2/8 stand on the left of the region. After the 2/8, the upper staff has one note with two flags and the lower staff has one rest with two flags. No other note or rest is printed before the next barline. Those glyphs are one sixteenth, which is 1/4 quarter.",
+      "evidence_box_px": [
+        276,
+        96,
+        476,
+        322
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_01.png"
+    },
+    "terminal_bar": {
+      "physical_bar": 58,
+      "capacity_q": "2",
+      "evidence": "P058 runs from the barline at x 1551 to the thin stroke of the final barline at x 1626 on page 2, system 6. Each staff prints one open-note chord with a stem and no flags. A fermata stands above the upper chord. An open notehead with a stem is a minim, and a minim equals four eighths, which is 2 quarters. The printed 2/8 meter is one quarter, so this written duration is longer than the meter. The thick stroke at x 1631-1636 closes the bar.",
+      "evidence_box_px": [
+        1551,
+        790,
+        1636,
+        1080
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_06.png"
+    },
+    "note": "The opening anacrusis is one sixteenth, 1/4 quarter. A conventional complement of the printed 2/8 meter would be three sixteenths, 3/4 quarter. P058 is not that complement. It is engraved as a minim on each staff, four eighths, 2 quarters, under a fermata.",
+    "exception_evidence": "Page 1 system 1, P001, x 434-474: one double-flagged note on the upper staff and one double-flagged rest on the lower staff. Page 2 system 6, P058, x 1551 to the thin stroke at x 1626: open-note chords with stems and no flags, and a fermata above the upper chord. Pickup 1/4 plus terminal 2 equals 9/4 quarters, which is not the 2/8 meter of 1 quarter.",
+    "ok": true
+  },
+  "repeats": [],
+  "clef_changes": [],
+  "system_opening_clefs": [
+    {
+      "system": 1,
+      "page": 1,
+      "first_physical_bar": 1,
+      "crop_path": "source_crops/system_01.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          278,
+          99,
+          348,
+          192
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          278,
+          248,
+          346,
+          322
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "first_physical_bar": 10,
+      "crop_path": "source_crops/system_02.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          161,
+          418,
+          237,
+          509
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          161,
+          580,
+          237,
+          643
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "first_physical_bar": 19,
+      "crop_path": "source_crops/system_03.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          160,
+          749,
+          236,
+          843
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          160,
+          902,
+          236,
+          966
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "first_physical_bar": 29,
+      "crop_path": "source_crops/system_04.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          156,
+          156,
+          232,
+          248
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          156,
+          308,
+          232,
+          369
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "first_physical_bar": 39,
+      "crop_path": "source_crops/system_05.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          157,
+          474,
+          233,
+          567
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          157,
+          642,
+          233,
+          704
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "first_physical_bar": 49,
+      "crop_path": "source_crops/system_06.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          158,
+          812,
+          234,
+          905
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          158,
+          973,
+          234,
+          1035
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    }
+  ],
+  "final_barline": {
+    "after_physical_bar": 58,
+    "page": 2,
+    "system": 6,
+    "thin_x_px": 1626,
+    "thick_x_px": [
+      1631,
+      1636
+    ],
+    "flags": [
+      "FINAL_BARLINE"
+    ],
+    "evidence_box_px": [
+      1614,
+      820,
+      1648,
+      1050
+    ],
+    "evidence_space": "page_px",
+    "evidence": "The last system ends with a thin stroke at x 1626 and a thick stroke at x 1631-1636. No repeat dots are printed beside it."
+  },
+  "bar_count_by_system": [
+    {
+      "system": 1,
+      "page": 1,
+      "physical_range": [
+        1,
+        9
+      ],
+      "count": 9
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "physical_range": [
+        10,
+        18
+      ],
+      "count": 9
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "physical_range": [
+        19,
+        28
+      ],
+      "count": 10
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "physical_range": [
+        29,
+        38
+      ],
+      "count": 10
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "physical_range": [
+        39,
+        48
+      ],
+      "count": 10
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "physical_range": [
+        49,
+        58
+      ],
+      "count": 10
+    }
+  ]
+}

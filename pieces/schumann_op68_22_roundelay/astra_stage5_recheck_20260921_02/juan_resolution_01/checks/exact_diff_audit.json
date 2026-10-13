@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "source_sha256": "d5f1c747dd020a137ba4bf85a0b4a454319260544aaef7de3ee2872e3630911b",
+  "resolved_sha256": "02c286bc7d4ca6e734f68dbcd84c5024660cbb143692e3129232777e692d94ef",
+  "byte_length_before": 280933,
+  "byte_length_after": 280940,
+  "changed_opcodes": [
+    {
+      "tag": "replace",
+      "source": [
+        280853,
+        280857
+      ],
+      "resolved": [
+        280853,
+        280864
+      ],
+      "source_text": "none",
+      "resolved_text": "light-heavy"
+    }
+  ],
+  "semantic_tree_equal_after_normalizing_only_p048_bar_style": true,
+  "asserted_only_change": "P048 terminal right bar-style none -> light-heavy",
+  "schema": "astra.human-correction-exact-diff.v1",
+  "only_declared_human_corrections": true,
+  "authorized_decision_ids": [
+    "P048_FINAL_RIGHT_BARLINE_LIGHT_HEAVY"
+  ],
+  "authorized_changes": [
+    {
+      "decision_id": "P048_FINAL_RIGHT_BARLINE_LIGHT_HEAVY",
+      "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op68_No22_Roundelay_Astra.musicxml",
+      "printed_bar": "P048",
+      "measure_number": "48",
+      "selector": "part[1]/measure[@number='48']/barline[@location='right']/bar-style",
+      "before": "none",
+      "after": "light-heavy",
+      "occurrence": "terminal right barline only"
+    }
+  ],
+  "unauthorized_changes": []
+}

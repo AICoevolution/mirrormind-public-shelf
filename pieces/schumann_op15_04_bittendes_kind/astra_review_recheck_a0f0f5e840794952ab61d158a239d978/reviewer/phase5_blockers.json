@@ -1,0 +1,45 @@
+{
+  "status": "BLOCKED_TECHNICAL",
+  "kind": "consumer",
+  "phase": 5,
+  "blocks_safe_continuation": true,
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml_sha256": "51346cdf99ab9081394a534818f15c9cd10cbf53a51eb3a0d46bf8536abd899f",
+  "issues": [
+    {
+      "id": "PLAYBACK-FINAL-TIES",
+      "kind": "consumer",
+      "address": "P016\u2013P017: E4 q=5/4 and C#4 q=3/2 into final chord",
+      "description": "ScoreAnalyzer merges only contiguous ties. Printed arpeggiated ties span intervening written events; two starts end early and reattack at P017. Independent schedule expects 230 attacks, actual 232.",
+      "cannot_isolate": "This affects primary audio. Keeping a human attention question cannot waive wrong playback; extending visible written values or removing the ties would change the reviewed notation. Consumer implementation changes are outside this reviewer assignment.",
+      "evidence": [
+        "gates/playback_schedule_check.json",
+        "reviewer/print_P016_P017.png"
+      ]
+    },
+    {
+      "id": "RENDER-PHRASE-ARCS",
+      "kind": "consumer",
+      "address": "P005\u2013P012",
+      "description": "Cross-staff phrase-arc adapter draws through note/beam region; print arches above the phrases.",
+      "cannot_isolate": "Required focused visual/essential-notation gate cannot pass on path existence alone. Changing endpoint interpretation to mask this layout defect is not justified.",
+      "evidence": [
+        "gates/focused_visual_recheck/report.json",
+        "gates/production_viewer/full_score.png"
+      ]
+    },
+    {
+      "id": "CORE-P017",
+      "kind": "consumer",
+      "address": "P017",
+      "description": "CORE cannot preserve incoming noncontiguous and cross-voice/chord-member ties. Actual Apply refuses Measure 17; rebuild projection differs. This is a separate layer-readiness failure, not by itself a waiver or failure of primary notation.",
+      "evidence": [
+        "gates/layer_readiness.json",
+        "layers/CORE_export.json"
+      ]
+    }
+  ],
+  "human_outcome": null
+}

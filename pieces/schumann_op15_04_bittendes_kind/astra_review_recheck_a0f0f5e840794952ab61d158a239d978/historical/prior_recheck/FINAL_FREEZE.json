@@ -1,0 +1,148 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "BLOCKED_TECHNICAL",
+  "piece_id": "schumann_op15_04_bittendes_kind",
+  "reviewer": "Astra review protocol; assigned Codex reviewer",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op15_04_Bittendes_Kind_Astra_import.musicxml",
+  "primary_xml_sha256": "51346cdf99ab9081394a534818f15c9cd10cbf53a51eb3a0d46bf8536abd899f",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "gates/proper.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "gates/playback_schedule_check.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "gates/viewer_mapping_check.json",
+        "gates/vexflow_duration_cursor_check.json",
+        "gates/production_viewer/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "BLOCKED",
+      "evidence": [
+        "gates/essential_notation_rendering.json",
+        "gates/phrase_arc_clearance.json",
+        "gates/cross_staff_beam_check.json",
+        "gates/production_viewer/full_score.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "BLOCKED",
+      "evidence": [
+        "gates/focused_visual_recheck/report.json",
+        "gates/focused_visual_recheck/render_system_1.png",
+        "gates/focused_visual_recheck/render_system_2.png",
+        "gates/focused_visual_recheck/render_system_3.png",
+        "gates/focused_visual_recheck/render_system_4.png"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": "PASS",
+    "MARKS": "PASS",
+    "ROUTE": "PASS",
+    "evidence": [
+      "gates/layer_readiness.json"
+    ]
+  },
+  "human_attention": "human_attention.json",
+  "human_outcome": null,
+  "files": {
+    "CHANGE_LEDGER.json": "7cfaecf17f33e67fbcdd46eb8c537e0f8057bded5b9be2c416a0c13a4dd3e58c",
+    "PIPELINE_FINDINGS.md": "75a825cb6fac0f2e136a17017e6ecec00e295d183c016b911ab37899192b2cdd",
+    "REVIEW.md": "550e7d98a5f801ae4e149be104f1ec417bf035f3af992b9b1ceb8334ca77e901",
+    "delivery_final/UNVERIFIED_Schumann_Op15_04_Bittendes_Kind_Astra_import.musicxml": "51346cdf99ab9081394a534818f15c9cd10cbf53a51eb3a0d46bf8536abd899f",
+    "final_integrity_validation.json": "fb05ff3a16f8f40735d8cde460bffc221492cd52db91b60c21f93ce3bf59db6f",
+    "gates/clearance_probe.cjs": "ab7500a3b2d848b7500619f574429b481830fd93ec6c8222d3b52bdd5d0403bd",
+    "gates/consumer_implementation_hashes.json": "7814dc79dd028ef115754d920a685b28d2e414a6f1db1e85530e6297da39c5e5",
+    "gates/cross_staff_beam_check.json": "786a23697d32379777708ff589b73a018d634db7118680783bcd31a1ed0a46ba",
+    "gates/essential_notation_rendering.json": "f54cf3b877093e59619bb0726b579939e207372426ab0f4ead2f119e74fe1394",
+    "gates/focused_visual_recheck/render_system_1.png": "bdfc2941463ab5762b6ecd832dcb53ea9c2c4a29e3952e36a0ccc812210c8fec",
+    "gates/focused_visual_recheck/render_system_2.png": "244a58a06ad8520c1ceb8371a1c24a1d70917bb9f80e4bbc95f35026abfb689f",
+    "gates/focused_visual_recheck/render_system_3.png": "f8353b16b101cd4400eb2700e751212905a606112c1122546711693ed16da7dc",
+    "gates/focused_visual_recheck/render_system_4.png": "56182d89e1ef35bdc9a265896eba5a09c81dbbe88424cc01604bd6adbc567377",
+    "gates/focused_visual_recheck/report.json": "0a266e1fc5071990c29fc8e68cda32f1e99749a8cb55f829707b1f0c41fb81f8",
+    "gates/layer_readiness.json": "a235420fd43eb31decdd15daffa4098a7a22a257cd9d7dec32bdc6ea30f969bd",
+    "gates/phrase_arc_clearance.json": "7248118bbeb30034d3c23c1fdd63d53b2ab4d17a4dc701da3f1631228b272477",
+    "gates/playback_schedule_check.json": "528a9e1b874d46337002ac103835153f0222dbcb9769514db74ae398a49028d1",
+    "gates/production_viewer/full_score.png": "aa2bcec809ed8199999e02b576ee9307bb8d7001095e53ece8bfb1c6ddeaf92f",
+    "gates/production_viewer/rendered.html": "940352a1b0b6f083a69391d0e8ae37a22fb19684848c70b86c4735da167b90a4",
+    "gates/production_viewer/report.json": "e319b019af09865e9a3abb6ef9236eb0c11236b8029f1b2ddf75c2e7dcb00cc6",
+    "gates/proper.json": "a6d9bf1994ff7d2bb852ce4bcd409c1acc462a6c4a2532c3a4d630be7432e897",
+    "gates/scoreanalyzer.json": "f99c97ec86af08a129ff7771b6d3dfba940a2f6a1d484cd6e90388265b1aca37",
+    "gates/validate.py": "a420798b47f13adb199347ce9632b3993ad1bb99c632209f4dfee64eddaa5bd4",
+    "gates/vexflow_duration_cursor_check.json": "1e89e27b4b33e2df8ff2af3197eb70ffadcdf3f2b97a02795a46410ee5b5f51e",
+    "gates/viewer_mapping_check.json": "c38c5d677a449e607c3476f5db9f62b084193e2cae0fcae0707bad80c07fb8eb",
+    "gates/viewer_probe.cjs": "f6c68edcf87d59de50e33c305d26cb45af495d7beec6015ffd1bb7264196f735",
+    "historical/PIPELINE_FINDINGS.md": "559f470ea665d2148476c6858f2d8b35a035f2b9200f4eabdb955026529c9fd5",
+    "historical/REVIEW.md": "3f3aae818f25e1939b5406cfd077bd223e0278a624f3ff83a6a84730c7dafdf2",
+    "historical/run_metrics.json": "cdf5fa230c136c34a68a070d43bed7c7f44ad2a14d2ec0c1fe9f7faacf7b9e1f",
+    "human_attention.json": "d9ea5123839a1e037dfc00da903fb729d5897cbb280d2142772363d059a1581a",
+    "layers/CORE.sep": "48d9de888893dfe1905b6164aa4d5142ad9472cb67fb80008d6c299ad2704dbb",
+    "layers/CORE_export.json": "1a4a402e4c8e36fe67bd8e161bee32eac78fa84ace3b20876ec8c9c2d6ae3900",
+    "layers/MARKS.sep": "b45508fd0880e4a3a14629ccec780ca77899be0fe33591c143d34aff7ec5cd25",
+    "layers/MARKS_export.json": "1f8d64d4626f3fe10f452fce7e4b4080b88c804a70f81ec6309033fc606b41a0",
+    "layers/ROUTE.sep": "e0158655451e9c8be361c06a10da1cd50f242603aab03ce4ea2b890d2ba6ec47",
+    "layers/ROUTE_export.json": "5be82c725544e33369f54dd64e48275035b4a0808474b018166e64a87fb03c49",
+    "layers/core_applied.musicxml": "51346cdf99ab9081394a534818f15c9cd10cbf53a51eb3a0d46bf8536abd899f",
+    "layers/core_rebuilt.musicxml": "2becd713c53c2b9d83ae2971c3a705a25fb6e379ea7a080a430cb75a5b5a79a7",
+    "layers/exact_event_ledger.json": "527ff89ae9244c040f5afd2dc627473f11bc1e0370798d755d8331c7fa52706a",
+    "layers/exact_mark_ledger.json": "c9520c61b96648865e5a3aa0b62b912bd1c338da9c1a33cbfa5d3dbfcb533c3c",
+    "layers/marks_applied.musicxml": "7804d3f74927d71b15dd863d4d1e39781fcf01842f1fce29099cc9803a8611d9",
+    "recheck_blockers.json": "2a40f9eb1a97662ad4e0d0f59ee8d6d1af995cc49521ef30d37a813969565c7a",
+    "recheck_integrity.json": "84b2d6d2ca536a8ed051b3c129d3dbcd9d4f3c3d78f47c06e4777eebd37d07a1",
+    "reviewer/E002_before.musicxml": "1060847072e3b687f72163956644162c2b826c95c63ffa72d6c4c6b5d049163c",
+    "reviewer/ERRATUM_E001.json": "c0e628f8c526c1a28bab432739f44eb0a122525b5c66d1ba9da73d8429c727f6",
+    "reviewer/ERRATUM_E001_FREEZE.json": "cda2aad67c452c2d6bc179f6dd1295258901dfcdb1a842ef93a493b727571132",
+    "reviewer/ERRATUM_E001_target.json": "283deac5027754950aa07157da8277b82b763b68e614abda1730868a7c8746f3",
+    "reviewer/ERRATUM_E002.json": "ecac49357da36c76f88e804f54d0fdc60010dfd685d0b6ad927fe24838c8783a",
+    "reviewer/ERRATUM_E002_FREEZE.json": "f332c608ef6b5ca3567606601185fde6d58ca67daedeb82bb04fd1f7442753c0",
+    "reviewer/PHASE1_FREEZE.md": "20f0ce41b44e27f6e58fd379bd0944145a010139723fcd9b9f5780d0100dd7a8",
+    "reviewer/PHASE2_FREEZE.md": "70b7ce30220458144d4ac4725b4b6e4fb962d009b0c2a770aa7e7bd8fe6c6b0d",
+    "reviewer/PHASE3_FREEZE.md": "01d4cc15a2b427387ebecd2197d7711daa659c1d636d21b2b2e38797e3d49a95",
+    "reviewer/candidate_event_audit.json": "02765efdea67f481fc14b7c9b7d66e5b58e70ffba1e913f820c8d688dc660fa4",
+    "reviewer/candidate_ledger_consistency.json": "78b7d833e2e259f87050838c20277982c40cff1c71ee097325ec6c097e55a754",
+    "reviewer/controls_assessment.json": "f0bc4fb8eaf25fd40b5a8255ca50003cb434a94ca43ac39dea6f930d90718ed9",
+    "reviewer/correction_specification.json": "2f66d421df22e4ea2d3ed22f97f6203c03c0a57c39764acb60ea6f14d392c762",
+    "reviewer/ensemble_recheck.json": "3e809262078ad14d6209d6d2d06a0be642ddfb73ee73cdb22288018c112e57f3",
+    "reviewer/launch_verification.json": "8824147be775de8f742bd17080044c5d3696bd928f0c26605984533a367984b8",
+    "reviewer/marks_correction_specification.json": "e88097eb3f724fe7506c320717238f6c128dd731f9f54732f859b3569f9b6c7c",
+    "reviewer/phase1_artifact_hashes.json": "b0f084ce334e3c01386e3fff16b0327c0cf9925d3ecfbb0f5ddb0cc39af68419",
+    "reviewer/phase1_hashes.json": "696006e9011a6d60fead4fcb6664914b2c1e13205d076d9ba947444c49e1e4c8",
+    "reviewer/phase2_artifact_hashes.json": "c645b30d69634694d478df4d67c15fc79ab9b85dadb0ad64d421c6605b538ebd",
+    "reviewer/phase2_hashes.json": "af61fb33b4707365337c9cc749154d63afdc62cd9d096d1570485035c125f24f",
+    "reviewer/phase3_artifact_hashes.json": "134a93c07024bffdbe6bd3aac9091e000a7de2ac6b7a4568c53d0f294ca158c0",
+    "reviewer/phase3_hashes.json": "0f0719fd40d2afe4ddfacc6290bfe06570a22e630d94941a45e1cd9e22b2a182",
+    "reviewer/phase3_review.json": "9ad43a4653940a27b87dd54706f5b5341df608a4945c88cebc85ae5964badb2f",
+    "reviewer/phase5_blockers.json": "1e8ed991f6b2020749ff0d96683ef4743c3634003547fe78c766255020f7fdac",
+    "reviewer/print_P002.png": "f8a35e9907480f37ce4eae1138921dc7f1bf07dd3b404ec6844ae97f991c7f09",
+    "reviewer/print_P005.png": "4a63a74d8e787fdb8cb798d90eb069f8f2c0cb333231ab1df32edebfd953d64e",
+    "reviewer/print_P009_P010.png": "dbcd2ba501660e22f5688808aa57230df561af97cbfdf6d95c9087d61b8bf320",
+    "reviewer/print_P016_P017.png": "89a0f0d186662b54a30c6189ccf0f24160b5ef1e0f568e5c95ca466502f01704",
+    "reviewer/print_note_inventory.json": "cb8fb94b50a614c4703e41385fdcecfaef9c1fd1ff07518cb004d103b6ade488",
+    "reviewer/print_system_1.png": "029a6cca4979d5c12ce67cbf37dd99e8e29875fc84d01dc61705748ec25f0772",
+    "reviewer/print_system_2.png": "c3af3893c66561e0b326d2272292639e4929782229755087d6407e01cd4837e3",
+    "reviewer/print_system_3.png": "94a9039029fe2088d8ecda09e8f99f6c64d3b241eba5bd21f18c73d99e6224dc",
+    "reviewer/priority_answers.json": "a59e441024645780833faa7be94fc8cce97c4c9ce71de3782e76e8946e0f6264",
+    "reviewer/reader_correspondence_check.json": "6c0e57fe7d48f37369c0f1e116373ba31e0fbaa7f37c324204522ac2246ad2b5",
+    "reviewer/reader_differences.json": "88e27ebfccfe3e1d0c06d0f34ceda41eed86d61308918516f100718a5b959c3d",
+    "run_metrics.json": "ae2244174ffd6c2c33d3abc62fa6147cd88d4f79d048548dc86a0224f5dae1e9",
+    "voice_topology.json": "0ed01be7342450f724d1f5585a8a4c7d4266c1da62668214dccbcaa485938758",
+    "artifact_manifest.json": "c1283d29f40622a5faef921ef6c1973747ff00eef8d0c0836264f31c87e1a006"
+  },
+  "frozen_at_utc": "2026-10-11T07:35:09.528993+00:00",
+  "review_mode": "stage5_recheck",
+  "prior_review": "astra_review_fresh_98ffd8dfc5914ddcb90aa3617eae3150"
+}

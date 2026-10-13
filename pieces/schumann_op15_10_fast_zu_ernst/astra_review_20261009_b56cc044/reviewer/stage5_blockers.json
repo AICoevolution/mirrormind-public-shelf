@@ -1,0 +1,32 @@
+{
+  "status": "BLOCKED_TECHNICAL",
+  "phase": 5,
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "issues": [
+    {
+      "id": "CONSUMER-FINAL-SLUR",
+      "kind": "consumer",
+      "status": "BLOCKED",
+      "primary_xml_sha256": "9d76fde77f5f113d1b2f8fa7c147aba4f6a7d546ff4f2d1412d83756ac3ac318",
+      "blocks_safe_continuation": true,
+      "failure_kind": "consumer",
+      "address": "P055 lower D#3 onset 3/4 to P058 upper G#4 onset 0",
+      "finding": "The production cross-staff slur adapter locates the first SVG notehead in the chord instead of the bound G#4 member. At 1200px score width its endpoint is y=2910.756, 3.491px above the D#4 head top (2914.247), but 11.509px below the G#4 head top (2899.247). It is attached to the lower member rather than above the frozen upper member. At 1500px score width it additionally draws a single diagonal across two systems because both systems share the same SVG.",
+      "attempted_isolation": "ERRATUM-001 reordered the final chord and added a system break at P055 without changing any pitch or endpoint. OSMD sorts chord heads and the production layout ignores the requested break here, so both defects persist. Switching to an unsupported printed endpoint or hiding the slur would change the frozen music rather than fix rendering.",
+      "why_not_musical_uncertainty": "The frozen endpoint remains provisional for final human verification, but the consumer cannot faithfully render the representation actually retained. The cross-system diagonal is a technical defect independent of which final chord member is chosen.",
+      "required_repair": "Make crossStaffSlurRendering member-aware and system-aware; rerun production renderer at both widths against this exact XML. Do not modify frozen primary XML or Phase 1\u20133 evidence during a consumer-only recheck.",
+      "evidence": [
+        "production_render_1200/report.json",
+        "production_render_1200/final_span_detail.png",
+        "production_render_verified/report.json",
+        "production_render_verified/final_span_detail.png",
+        "reviewer/ERRATUM_001.json"
+      ],
+      "production_code_modified": false,
+      "human_outcome": null
+    }
+  ],
+  "human_outcome": null
+}

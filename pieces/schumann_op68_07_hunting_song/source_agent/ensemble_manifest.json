@@ -1,0 +1,163 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op68_07_hunting_song",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 30,
+  "physical_bars_complete": 30,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "2121dbde6db7e162abd987bd3abfc35f16ceadc065df960820e82f3b617781db",
+      "events": 748
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "cd5690aa89a0852bbc8dd51f0e2cbc52bc21068cd792392373b7bb2b8b3283fb",
+        "events": 247,
+        "canonical": true
+      }
+    ],
+    "CURSOR_GROK": [
+      {
+        "path": "source_observations\\cursor_grok\\system_04.json",
+        "sha256": "2d6553d05d7679adfa2d502edce185a22140c7d9d5c89dc69457215650abaa01",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\cursor_grok\\system_05.json",
+        "sha256": "e515febfd879d11ce800c1ecac8c92d88dcd516ffbb2a4095148a794cda8f4e4",
+        "events": 44
+      }
+    ],
+    "GEMINI": [
+      {
+        "path": "source_observations\\gemini\\system_04.json",
+        "sha256": "7805e8203bc3f14875b989a34302946dd2b7c0d800132beb753962cf0a5d6c23",
+        "events": 68
+      },
+      {
+        "path": "source_observations\\gemini\\system_05.json",
+        "sha256": "a9c44cf5a881317a5b44c12dfcbbfad3380c1d7ec545ade2d58a7fd4b7bc8a2d",
+        "events": 54
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "4e7ade05066ccefc1fb88110a66ef926c7dc806e77df56a7c611352c90005540"
+  },
+  "independent_visual_provider": {
+    "provider_id": "CURSOR_GROK",
+    "directory_id": "grok",
+    "method": "fresh Cursor Grok general-purpose subagent",
+    "scope": "one context for this movement",
+    "enabled": true,
+    "requested_count": 2,
+    "requests": [
+      {
+        "system": 4,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_04.json",
+        "request_sha256": "670aac8a25892b922e0db6a3a3269a37b63efd15cab86de92d28747c84509fae",
+        "response_path": "source_observations/cursor_grok/system_04.json",
+        "response_exists": true,
+        "response_sha256": "2d6553d05d7679adfa2d502edce185a22140c7d9d5c89dc69457215650abaa01",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\cursor_grok\\system_05.json",
+        "request_sha256": "7bf40ec6aa04f7e9ce5324dfe2b83dab08e944f303aff8796672c4e13206bf12",
+        "response_path": "source_observations/cursor_grok/system_05.json",
+        "response_exists": true,
+        "response_sha256": "e515febfd879d11ce800c1ecac8c92d88dcd516ffbb2a4095148a794cda8f4e4",
+        "validated": true
+      }
+    ],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": "13a86db06db1c07fd89cfd548c4e0563a7ca63765e2cfbdc6f75c49a0dfd2e8e"
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 4,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "5b2e13958da7e9d5b0548e7fea71407767d4a40d210908e26acaf18c40a812cd",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": true,
+        "response_sha256": "7805e8203bc3f14875b989a34302946dd2b7c0d800132beb753962cf0a5d6c23",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "1951bcce6e4fbaf0d40e70f40c61c157bc791563c57e3eeac3b0fa813d9b6110",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": true,
+        "response_sha256": "a9c44cf5a881317a5b44c12dfcbbfad3380c1d7ec545ade2d58a7fd4b7bc8a2d",
+        "validated": true
+      }
+    ],
+    "max_calls": 8,
+    "calls_made": 2,
+    "max_cost_usd": 0.25,
+    "actual_cost_usd": 0.06105375,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": []
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "unresolved_evidence_claims": 3,
+  "unresolved_nonblocking": 99,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 3,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "missing_gemini_responses": 0,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "d9d7cc24e89639e5970c46e275dbec930040db7a23498442e7bf648fc47289ec"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "8ff769fd3fec71e54b05ca863cf33869cce826ffdb00bb565e32218fa87daf8b"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "f2bb9025d2a3828a29adf750ceda3045f8a22169de780c8c4e4851e90c4d756e"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "ce7821266eacadd53cf05c3abee1606bdd444ecb50d23b1a93a56da9517723cb"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "capacity-valid source topology plus field-level weighted evidence; majority is evidence, never ground truth",
+  "source_isolation": "CURSOR_GROK and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-09-17T07:39:37.116852+00:00"
+}

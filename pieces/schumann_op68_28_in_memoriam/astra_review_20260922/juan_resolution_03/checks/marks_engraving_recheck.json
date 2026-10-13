@@ -1,0 +1,50 @@
+{
+  "schema": "astra.marks-engraving-recheck.v1",
+  "status": "PASS",
+  "primary_xml_sha256": "68929022cf47b7768fd1e904f9795974f59c49b83d7423bd4a4d9232e92f266f",
+  "engraving": {
+    "findings": [],
+    "clean": true,
+    "counts": {}
+  },
+  "marks_warning_count": 0,
+  "marks_warnings": [],
+  "p013_p014_statement": [
+    "Slur: Measure 13 Beat 2 v2 -> Measure 14 Beat 2.2 v1"
+  ],
+  "removed_unsupported_repeat_pair": {
+    "p012_stop": "a12-s1-v2-168 slur number 3",
+    "p023_start": "a23-s1-v1-140 slur number 3",
+    "reason": "The pair runs backward in document order, was not drawable or MARKS-linearizable, and was a speculative prior addition rather than a print-grounded P013 correction."
+  },
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [
+      {
+        "part": "P1",
+        "measure": "m1",
+        "missing_quarters": 1.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m24"
+      },
+      {
+        "part": "P1",
+        "measure": "m24",
+        "missing_quarters": 0.5,
+        "bar_quarters": 2.0,
+        "pickup": true,
+        "declared_partial": true,
+        "partner": "m1"
+      }
+    ],
+    "cursor_slips": [],
+    "first_slip_measure": null,
+    "notes": [
+      "m1 is short by 1.5, and m24 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+      "m24 is short by 0.5, and m1 holds exactly the rest of it \u2014 one bar split in two, and normal."
+    ]
+  }
+}

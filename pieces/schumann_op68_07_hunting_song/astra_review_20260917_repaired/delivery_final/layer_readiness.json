@@ -1,0 +1,23 @@
+{
+  "xml_sha256": "020034bebf2b3a023e995a645977d90b7aa9d2841e5c4ba207487f0f0b9ddd08",
+  "status": "UNVERIFIED",
+  "primary_xml": "TECHNICAL_PASS_WITH_DOCUMENTED_VIEWER_LIMITATIONS",
+  "CORE": {
+    "export": "READY_AS_REFERENCE_3_JUSTIFIED_LANES",
+    "rebuild": "NOT_LOSSLESS: shifts P1 attacks from0 to1 quarter and P10 from0 to2.5; expands inactive lane rests",
+    "actual_apply": "FAILS_SAFELY: precise P10 staff-time mark has no matching attack after rebuild",
+    "recommendation": "Use primary MusicXML; do not rebuild this delivery from CORE."
+  },
+  "MARKS": {
+    "export": "PARTIAL: tempo metronome and grace slurs not represented; warning comments preserved",
+    "actual_apply": "Sounding event/tie and playback schedule preserved, but staccato/accent placement is lost and P20/P22 slur-stop attachments disappear",
+    "lossless": false
+  },
+  "ROUTE": {
+    "export": "READY: Repeat1–9 and10–30",
+    "actual_apply": "Playback preserved exactly; adds explicit forward repeat at opening",
+    "semantically_ready": true,
+    "byte_or_glyph_lossless": false
+  },
+  "human_outcome": null
+}

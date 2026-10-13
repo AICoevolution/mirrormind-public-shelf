@@ -1,0 +1,241 @@
+{
+  "measure_count": 24,
+  "meter": [
+    2,
+    4
+  ],
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 4,
+    "printed_glyph": "2/4"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 3,
+    "mode": null,
+    "label": "three sharps (A major / F-sharp minor) reprinted at each system start"
+  },
+  "measure_capacities_q": {
+    "1": "1/2",
+    "2": "2",
+    "3": "2",
+    "4": "2",
+    "5": "2",
+    "6": "2",
+    "7": "2",
+    "8": "2",
+    "9": "2",
+    "10": "2",
+    "11": "2",
+    "12": "2",
+    "13": "2",
+    "14": "2",
+    "15": "2",
+    "16": "2",
+    "17": "2",
+    "18": "2",
+    "19": "2",
+    "20": "2",
+    "21": "2",
+    "22": "2",
+    "23": "2",
+    "24": "3/2"
+  },
+  "capacity_note": "Printed meter remains 2/4. P001 stays an opening eighth pickup (capacity 1/2). P024 is a terminal 3/8 partial (capacity 3/2) under the printed 2. volta, closed by a thin-thick final barline; printed values on each staff sum to three eighth-note units with no final eighth rest. Physical region IDs, barline boundaries, clefs, crops, and key fifths=3 are unchanged. Open uncertainty (not a capacity repair): P013 upper-staff close timing versus the beamed eighths remains unresolved; do not tripletize or invent duration solely to force a sum.",
+  "section_routes": [
+    {
+      "written_regions": [
+        1,
+        1
+      ],
+      "repeat": false,
+      "kind": "eighth_pickup_before_first_forward_repeat"
+    },
+    {
+      "written_regions": [
+        2,
+        11
+      ],
+      "repeat": true,
+      "kind": "first_strain_complete_2_4"
+    },
+    {
+      "written_regions": [
+        12,
+        22
+      ],
+      "repeat": true,
+      "kind": "second_strain_body_complete_2_4"
+    },
+    {
+      "written_regions": [
+        23,
+        23
+      ],
+      "repeat": true,
+      "kind": "first_ending_complete_2_4"
+    },
+    {
+      "written_regions": [
+        24,
+        24
+      ],
+      "repeat": false,
+      "kind": "second_ending_terminal_partial_3_8_to_final_barline"
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        642
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        11
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        642,
+        1019
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        12,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        1019,
+        1386
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        16,
+        19
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1386,
+        1767
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        20,
+        24
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1767,
+        2295
+      ]
+    }
+  ],
+  "addressing": "P001-P024 are one-based physical printed regions on one page and five grand-staff systems at pypdfium2 scale 2.5 (6+5+4+4+5). P001 is an eighth pickup (capacity 1/2) before the first-strain forward repeat at x=441. P002-P011 are the first repeated strain (complete 2/4; backward repeat after P011). P012-P014 are complete 2/4 of the second strain. P015 is one complete 2/4 from x=1275 to x=1645 covering rit. and p a (old extra ID dropped). P016-P022 are complete 2/4. P023 is first ending 1. with a backward repeat. P024 is second ending 2. as a terminal 3/8 partial (capacity 3/2), closed by a thin-thick final barline. No mid-piece clef, meter, or key change. System-start G/F and three-sharp reprints are not changes.",
+  "source_frame_evidence": "Inspected one page render at pypdfium2 scale 2.5 (1760x2295) plus five grand-staff children from staff-line groups. Printed tempo Allegretto molto cantabile quarter=60, 2/4 on both staves, three sharps. RH opens G clef line 2; LH opens F clef line 4. No mid-piece clef change. Five systems 6+5+4+4+5 = 24 regions. P015 closes at the real system-3 barline x=1645. Plate 41459 is footer ink. Page label 44 is not a later movement. No musical ink on a page boundary.",
+  "clefs_open": {
+    "staff1": {
+      "sign": "G",
+      "line": 2
+    },
+    "staff2": {
+      "sign": "F",
+      "line": 4
+    }
+  },
+  "clef_changes": [],
+  "readers": {
+    "SmartScore": "inputs/Smartscore_28- In Memoriam.xml",
+    "PlayScore": "inputs/Playscore_28- In Memoriam.xml",
+    "Audiveris": "inputs/Audiveris_28- In Memoriam.xml"
+  },
+  "reader_bar_map": {
+    "SmartScore": "24 elements, raw 1-24. Unmapped versus print 24.",
+    "PlayScore": "24 elements, raw 1-24. Unmapped versus print 24.",
+    "Audiveris": "24 elements, raw 0-23. Unmapped versus print 24."
+  },
+  "correspondence_status": "Print has 24 physical regions: P001 opening pickup (1/2); P024 terminal_partial_3_8 (3/2); remaining regions keep frozen capacities. SmartScore/PlayScore/Audiveris remain 24 unmapped as previously recorded.",
+  "reader_physical_to_ordinal": {
+    "SmartScore": {},
+    "PlayScore": {},
+    "Audiveris": {}
+  },
+  "crop_validation_sha256": "ba7fb6b5f751f3884591c9d5b9797e3378d02426ee787168b94e3b739aa53b83",
+  "page_frame_validation_sha256": "0d6216d9df1abfaf3c2ebeabcec4b4a0db1086be8d6e2c79cc002bce8af105e5",
+  "human_outcome": null,
+  "frame_revision": 7,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 24,
+      "id": "P024",
+      "capacity_q": "3/2",
+      "capacity_plain": "3 eighth-note units",
+      "kind": "terminal_partial_3_8",
+      "flags": [
+        "PARTIAL",
+        "NOTEWORTHY",
+        "SECOND_ENDING",
+        "FINAL_BARLINE"
+      ],
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "onset_q": "0",
+      "evidence_space": "system_crop",
+      "evidence_bbox_px": [
+        1328,
+        40,
+        1638,
+        500
+      ],
+      "evidence": "Direct print pixels in source_crops/system_05.png show P024 under the printed 2. volta as a terminal 3/8 partial: upper dotted-quarter chord with an inner moving line totaling three eighth-note units, and bass four sixteenths plus an eighth totaling three eighth-note units. No final eighth rest is printed before the thin-thick final barline. Printed meter remains 2/4."
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P024",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "pass",
+      "evidence": "Opening eighth pickup P001 (1/2) and terminal 3/8 partial P024 (3/2) together fill one printed 2/4 span. The P024 reading comes from printed note values on both staves, not from pairing arithmetic alone."
+    },
+    {
+      "pair": "P024_terminal_partial_3_8",
+      "capacities_q": [
+        "3/2"
+      ],
+      "sum_q": "3/2",
+      "printed_meter": "2/4",
+      "result": "terminal_partial",
+      "evidence": "P024 under the 2. volta is a terminal 3/8 partial: upper dotted-quarter chord and inner line each span three eighth-note units; bass four sixteenths plus an eighth span three eighth-note units. No final eighth rest before the final barline.",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "frame_revision_status": "proposed capacity repair awaiting independent verification"
+}

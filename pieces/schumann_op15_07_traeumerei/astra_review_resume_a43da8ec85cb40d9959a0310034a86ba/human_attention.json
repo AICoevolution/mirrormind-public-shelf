@@ -1,0 +1,126 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "HA-GRACE-003",
+      "address": "P003 lower staff before beat 2",
+      "question": "Confirm small grace notes and the overlapping open-note/fingering shape.",
+      "provisional_treatment": "Use Bb2\u2013F3 sixteenth grace notes and one dotted-half F3; no metrical time stolen in XML.",
+      "evidence": [
+        "reviewer/P003_grace.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "alternatives": [
+        "Single F3 with overlapping fingering",
+        "Additional obscured chord member"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-GRACE-007",
+      "address": "P007 lower staff before beat 2",
+      "question": "Confirm lower small-note pitch C3 and A3 sustained note/chord membership.",
+      "provisional_treatment": "Use C3\u2013A3 sixteenth graces and one dotted-half A3.",
+      "evidence": [
+        "reviewer/P007_grace.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "alternatives": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-GRACE-019",
+      "address": "P019 lower staff before beat 2",
+      "question": "Confirm small grace pitches independently of P003.",
+      "provisional_treatment": "Use Bb2\u2013F3 sixteenth graces; F3 dotted-half sustain.",
+      "evidence": [
+        "reviewer/system_03.png",
+        "reviewer/P019_full_detail.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "alternatives": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-CURVES",
+      "address": "P007\u2013008 and P023\u2013024 upper inner voices",
+      "question": "Confirm which members of the sustained chords carry each overlapping curve.",
+      "provisional_treatment": "Tie A4 P007 to P008 and F4 P023 to P024; do not tie unmatched pitches.",
+      "evidence": [
+        "reviewer/system_01.png",
+        "reviewer/system_02.png",
+        "reviewer/system_04.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "alternatives": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-PHRASE-ENDPOINTS",
+      "address": "Phrase curves throughout; especially P016\u2013018 and P024\u2013025",
+      "question": "Confirm detailed notehead endpoints where the engraving ends between adjacent notes or above the grace pickup.",
+      "provisional_treatment": "Use member endpoints in phase3_completed_event_spec.json; P018 opening phrase provisionally starts on F4 rather than the preceding C4 grace. No playback tie is inferred from a phrase.",
+      "evidence": [
+        "reviewer/system_01.png",
+        "reviewer/system_02.png",
+        "reviewer/system_03.png",
+        "reviewer/system_04.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "alternatives": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-P025",
+      "address": "P025 both staves, beats 2\u20133",
+      "question": "Confirm shared C3 quarter/eighth notehead and final chord stem membership.",
+      "provisional_treatment": "Preserve C3 quarter in tenor tied to final C3 half, and independent C3 eighth to C2 eighth in bass; upper Bb3 quarter is inner only.",
+      "evidence": [
+        "reviewer/P025_capacity.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "alternatives": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-P024",
+      "address": "P024 lower staff beat 2",
+      "question": "Is the independently sustained half note C-flat4 or B-flat3?",
+      "provisional_treatment": "Use C-flat4 half in independent sustain line; ledger-line height supports C4 with explicit flat.",
+      "evidence": [
+        "reviewer/P024_polyphony.png"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "alternatives": [
+        "Cb4",
+        "Bb3"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "HA-P017-ACCIDENTALS",
+      "address": "P017 lower staff onset 3, adjacent B/C noteheads",
+      "question": "Confirm the natural sign attachment and whether the earlier C-sharp remains active in this crowded two-note chord.",
+      "alternatives": [
+        "B3+C4",
+        "Bb3+C4",
+        "B3+C#4"
+      ],
+      "provisional_treatment": "Retain B3+C4 from the frozen working reading; the renderer displays both cancellations. This is provisional, not a confirmed accidental correction.",
+      "confidence": "low",
+      "evidence": [
+        "reviewer/P017_cross_staff.png",
+        "render_production/P017_focused.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    }
+  ]
+}

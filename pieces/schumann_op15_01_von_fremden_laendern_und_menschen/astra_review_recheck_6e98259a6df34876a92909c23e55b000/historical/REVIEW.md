@@ -1,0 +1,10 @@
+# Independent review — delivery blocked by rendering
+All 22 physical bars on four print systems were independently reviewed in three frozen phases. The candidate had 267 note/rest records, incorrect pitches/rhythms, a blank P017 and no expressive marks. The corrected UNVERIFIED XML has 274 noteheads/rests and restores the frozen print reading and marks. The source candidate and all Phase1–3 evidence remain unchanged.
+
+**Not ready for human delivery.** Production rendering hides the printed D3 half-note head at P014 and the upper D3 half-note head of the P022 bass chord. See [rendering findings](stage5/essential_notation_rendering.json), [P014](stage5/render_p14.png), [P022](stage5/render_p22.png), and matching [print P014](reviewer/bar_14.png)/[print P022](reviewer/bar_22.png). These essential notation failures cannot be waived by an uncertainty label or a passing playback check. Production code was not modified.
+
+PROPER passes; all 482 playback attacks, durations, voices, source times and the full 44-bar repeat schedule match an independent reference. All 482 attacks map to the correct printed measure; all 274 rendered durations match VexFlow timing after explicit isolated-tuplet metadata. Cross-staff beam proof covers all 44 groups/132 members. The lower tempo text is actually rendered below its staff. Full visual recheck remains blocked by the half-note collisions.
+
+CORE export is diagnostic only: rebuild and actual Apply fail on unsupported cross-staff/isolated tuplets. MARKS Apply preserves exact slur/chord-member endpoints and CORE; ROUTE Apply preserves events. Layer limitations are separate from primary playback readiness.
+
+Final human questions remain **HELD-INNER** (shared-head sustaining/tie durations) and **HAIRPINS** (precise spatial endpoint timing). Their provisional representations were frozen before correction; see [human_attention.json](human_attention.json). No human outcome has been inferred. Consumer repair and recheck must preserve these questions and the exact primary XML.

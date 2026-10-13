@@ -1,0 +1,68 @@
+{
+  "schema": "astra.post-human-consumer-recheck.v1",
+  "status": "PASS",
+  "primary_xml_sha256": "05bc37abd8dbf728861bcb988903dd8a841b9ba697d86219f172c9442f02abea",
+  "scope": "Three user-authorized pitch steps only. Parent full audit retained. Exact semantic reversal reproduces parent XML; current consumer before/after preserves every attack timing and all but three pitches. Score renders without errors; screenshots inspected for B3 chords in P008/P021 and A#3 dotted half P013.",
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [],
+    "cursor_slips": [],
+    "declared_long": [
+      {
+        "part": "P1",
+        "measure": "m12",
+        "extent_quarters": 11.75,
+        "bar_quarters": 4.0
+      },
+      {
+        "part": "P1",
+        "measure": "m13",
+        "extent_quarters": 9.0,
+        "bar_quarters": 4.0
+      }
+    ],
+    "first_slip_measure": null,
+    "notes": [
+      "Every bar holds exactly its metre. The cursor will traverse from m1 beat 1 to the final beat without slipping \u2014 so what you hear from here is about the MUSIC, not the arithmetic."
+    ]
+  },
+  "engraving": {
+    "findings": [
+      {
+        "check": "voice-phantom",
+        "severity": "odd",
+        "where": "m13",
+        "what": "voice 4 exists only in this bar (4 notes) and overlaps the main line",
+        "why": "voice 1 already sounds at 0, 4 in this bar \u2014 so the reader believed two things sound here. That is a page question, not a formatting one: same pitch and onset with a different duration is also how a SHARED NOTEHEAD looks. Nothing is folded"
+      }
+    ],
+    "clean": false,
+    "counts": {
+      "odd": 1
+    }
+  },
+  "playback": "delivery_final/playback_metadata.json",
+  "render": "rendered/render.json",
+  "layer_limitations": {
+    "CORE": {
+      "status": "BLOCKED",
+      "evidence": [
+        "validation/layer_roundtrips.json"
+      ]
+    },
+    "MARKS": {
+      "status": "BLOCKED",
+      "evidence": [
+        "validation/layer_roundtrips.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/route_roundtrip.json"
+      ]
+    }
+  },
+  "visual_check": "PASS: P8.png, P13.png, P21.png inspected. Same noteheads and durations, corrected staff positions."
+}

@@ -1,0 +1,317 @@
+{
+  "measure_count": 20,
+  "meter": [
+    4,
+    4
+  ],
+  "printed_meter": {
+    "beats": 4,
+    "beat_type": 4,
+    "printed_glyph": "C (common time)"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 0,
+    "mode": null,
+    "label": "no printed key signature (C / A minor)"
+  },
+  "measure_capacities_q": {
+    "1": "1",
+    "2": "4",
+    "3": "4",
+    "4": "4",
+    "5": "4",
+    "6": "4",
+    "7": "4",
+    "8": "4",
+    "9": "3",
+    "10": "1",
+    "11": "4",
+    "12": "4",
+    "13": "4",
+    "14": "4",
+    "15": "4",
+    "16": "4",
+    "17": "4",
+    "18": "4",
+    "19": "4",
+    "20": "3"
+  },
+  "capacity_note": "C (common time)=4/4 throughout. P001 is the opening one-beat pickup; P009 is a three-beat partial section close; P010 is the one-beat pickup after the forward repeat; P020 is the three-beat incomplete terminal before the backward-repeat final close. All other printed regions have four beats. These are partial bars, not meter changes.",
+  "section_routes": [
+    {
+      "written_regions": [
+        1,
+        9
+      ],
+      "repeat": false,
+      "kind": "opening_pickup_and_strain_to_section_double"
+    },
+    {
+      "written_regions": [
+        10,
+        20
+      ],
+      "repeat": true,
+      "kind": "second_strain_forward_partial_then_full_to_backward"
+    }
+  ],
+  "section_landmarks": [
+    {
+      "kind": "section_double",
+      "after_physical_bar": 9,
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "System 2 ends with thin-then-thicker double after P009 with no repeat dots. section_landmarks only (not REPEAT_*)."
+    }
+  ],
+  "repeat_boundaries": [
+    {
+      "before_physical_bar": 10,
+      "kind": "forward",
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "System 3 opens after brace and clefs with a thick-thin forward-repeat barline; dots to the right on both staves. Forward repeat begins P010 (1q partial) under a tempo / f."
+    },
+    {
+      "after_physical_bar": 20,
+      "kind": "backward",
+      "system": 5,
+      "page": 1,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "System 5 ends after incomplete terminal P020 (capacity 3) with backward-repeat dots then thin-plus-thick close (FINAL_BARLINE + REPEAT_END + PARTIAL). Juan signoff."
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        180,
+        545
+      ],
+      "barline_boundaries_x_px": [
+        217,
+        397,
+        734,
+        1012,
+        1337,
+        1643
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        600,
+        945
+      ],
+      "barline_boundaries_x_px": [
+        200,
+        604,
+        966,
+        1345,
+        1639
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        10,
+        13
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        1000,
+        1335
+      ],
+      "barline_boundaries_x_px": [
+        231,
+        325,
+        801,
+        1162,
+        1644
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        14,
+        16
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1370,
+        1755
+      ],
+      "barline_boundaries_x_px": [
+        210,
+        648,
+        1136,
+        1642
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        17,
+        20
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1775,
+        2145
+      ],
+      "barline_boundaries_x_px": [
+        200,
+        572,
+        967,
+        1367,
+        1629
+      ]
+    }
+  ],
+  "addressing": "P001-P020 one-based physical regions on one page. Counts 5+4+4+3+4=20. System barline peaks: sys1 [217,397,734,1012,1337,1643]; sys2 [200,604,966,1345,1639]; sys3 [231,325,801,1162,1644]; sys4 [210,648,1136,1642]; sys5 [200,572,967,1367,1629].",
+  "source_frame_evidence": "Frame revision 6: Astra Phase 1 identified P009 as a three-beat partial section close before the P010 forward-repeat pickup. Printed common time, the twenty-region census, and crop geometry are unchanged.",
+  "clefs_open": {
+    "staff1": {
+      "sign": "G",
+      "line": 2
+    },
+    "staff2": {
+      "sign": "F",
+      "line": 4
+    }
+  },
+  "clef_changes": [],
+  "readers": {
+    "SmartScore": "inputs/Smartscore_21- Three Stars.xml",
+    "PlayScore": "inputs/Playscore_21- Three Stars.xml",
+    "Audiveris": "inputs/Audiveris_21- Three Stars.xml"
+  },
+  "reader_bar_map": {
+    "SmartScore": "20 elements; print also 20 but with pickup+partial structure — left unmapped.",
+    "PlayScore": "20 elements; print structure differs (pickup/partial) — unmapped.",
+    "Audiveris": "19 broken labels — unmapped."
+  },
+  "correspondence_status": "All readers unmapped; print frame from Verifier2 barline census.",
+  "reader_physical_to_ordinal": {
+    "SmartScore": {},
+    "PlayScore": {},
+    "Audiveris": {}
+  },
+  "crop_validation_sha256": "f688c3669731962565b94ff39e3a8f4753bdd12b8abdb223f9838d6ba3b188f5",
+  "page_frame_validation_sha256": "cda90a3869b470947f14da9be52c92dcee2a202155ff4bb6ce26c92103f6ac9f",
+  "human_outcome": null,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1",
+      "kind": "opening pickup",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "x_range_px": [
+        217,
+        397
+      ],
+      "evidence_bbox_px": [
+        217,
+        10,
+        397,
+        355
+      ],
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "evidence": "After clefs and C meter at system 1 start; quarter-note anacrusis under p before first full bar (barline peaks x=217 to x=397)."
+    },
+    {
+      "physical_bar": 9,
+      "capacity_q": "3",
+      "kind": "partial section close before forward-repeat pickup",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "x_range_px": [
+        1345,
+        1639
+      ],
+      "evidence_bbox_px": [
+        1345,
+        10,
+        1639,
+        335
+      ],
+      "flags": [
+        "PARTIAL",
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence": "Astra Phase 1 print review: P009 contains three beats on both staves and closes at the section double; printed common time remains unchanged."
+    },
+    {
+      "physical_bar": 10,
+      "capacity_q": "1",
+      "kind": "partial after forward repeat",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "x_range_px": [
+        231,
+        325
+      ],
+      "evidence_bbox_px": [
+        231,
+        10,
+        325,
+        325
+      ],
+      "flags": [
+        "REPEAT_START",
+        "PARTIAL"
+      ],
+      "evidence": "After forward-repeat barline on system 3; one-beat partial under f / a tempo to barline x=325, then three full bars."
+    },
+    {
+      "physical_bar": 20,
+      "capacity_q": "3",
+      "kind": "incomplete terminal close before FINAL_BARLINE+REPEAT_END",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "x_range_px": [
+        1367,
+        1629
+      ],
+      "evidence_bbox_px": [
+        1367,
+        10,
+        1629,
+        360
+      ],
+      "flags": [
+        "PARTIAL",
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ],
+      "evidence": "Juan signoff: P020 holds three quarter-note beats (not a full 4/4). Incomplete terminal close before FINAL_BARLINE+REPEAT_END on system 5."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "measure_count": 20,
+  "meter": [
+    4,
+    4
+  ],
+  "printed_meter": {
+    "beats": 4,
+    "beat_type": 4,
+    "symbol": "common",
+    "printed_glyph": "C"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 0,
+    "mode": null,
+    "label": "no printed key signature (C / A minor)"
+  },
+  "measure_capacities_q": {
+    "1": "4",
+    "2": "4",
+    "3": "4",
+    "4": "4",
+    "5": "4",
+    "6": "4",
+    "7": "4",
+    "8": "4",
+    "9": "4",
+    "10": "4",
+    "11": "4",
+    "12": "4",
+    "13": "4",
+    "14": "4",
+    "15": "4",
+    "16": "4",
+    "17": "4",
+    "18": "4",
+    "19": "4",
+    "20": "4"
+  },
+  "capacity_note": "Printed meter is common-time C (4/4) throughout; only the system-1 opening glyph on both staves. Every physical region is a complete 4/4 bar of capacity 4 quarter-note units. P001 opens with a complete common-time bar under piano; P020 is a complete common-time close before the thin-plus-thick final barline. Pickup-plus-terminal versus printed 4/4 therefore does not apply.",
+  "section_routes": [
+    {
+      "written_regions": [
+        1,
+        4
+      ],
+      "repeat": true,
+      "kind": "first_strain_backward_repeat_from_beginning"
+    },
+    {
+      "written_regions": [
+        5,
+        20
+      ],
+      "repeat": false,
+      "kind": "through_composed_after_first_repeat"
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        486
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        10
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        486,
+        934
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        11,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        934,
+        1376
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        16,
+        20
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1376,
+        2048
+      ]
+    }
+  ],
+  "addressing": "P001-P020 are one-based physical printed common-time bars on one page. Four grand-staff systems at pypdfium2 scale 2.5 (5+5+5+5). P001-P004 are the first strain, closed by a backward repeat; P005 begins the second strain on the same system. P020 carries the thin-plus-thick final barline. No pickup, no incomplete terminal, no volta.",
+  "source_frame_evidence": "Inspected one page render at pypdfium2 scale 2.5 (1652x2048) plus the four recropped grand-staff children. Title Melody, Moderato semplice, common-time C on both staves, no key signature. Both hands open G clef line 2; later system-start treble reprints are not clef changes. Backward repeat after P004. Four systems of five complete 4/4 bars. No musical ink on the page boundary.",
+  "clefs_open": {
+    "staff1": {
+      "sign": "G",
+      "line": 2
+    },
+    "staff2": {
+      "sign": "G",
+      "line": 2
+    }
+  },
+  "clef_changes": [],
+  "readers": {
+    "SmartScore": "inputs/Smartscore_1- Melody.xml",
+    "PlayScore": "inputs/Playscore_1- Melody.xml",
+    "Audiveris": "inputs/Audiveris_1- Melody.xml"
+  },
+  "reader_bar_map": {
+    "SmartScore": "20 elements, raw 1-20; light-heavy only at the last element; no printed backward-repeat token. Unmapped.",
+    "PlayScore": "20 elements, raw 1-20. Unmapped.",
+    "Audiveris": "8 elements, raw 1-8. Unmapped."
+  },
+  "correspondence_status": "Frozen unmapped: print 20 complete 4/4 bars; SmartScore/PlayScore 20; Audiveris 8. Count match is not a 1:1 map. Unfolded-repeat behaviour makes a 1:1 map unsafe.",
+  "reader_physical_to_ordinal": {
+    "SmartScore": {},
+    "PlayScore": {},
+    "Audiveris": {}
+  },
+  "crop_validation_sha256": "bfa627bfaa8705bfa313980e48d2fe42c0166f4921dc0dd1db8b336e56e06863",
+  "page_frame_validation_sha256": "e0a21c081941cdea9b05cb640e1e50199e199db312ed512bafe0fe678e3cc346",
+  "human_outcome": null
+}

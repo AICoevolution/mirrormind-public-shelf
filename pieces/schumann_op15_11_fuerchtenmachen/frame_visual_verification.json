@@ -1,0 +1,381 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_11_fuerchtenmachen",
+  "authority": "print_only",
+  "source_pdf_sha256": "93d150a0a37400a44eb620b9acc96894d7d733f3960101c15783a5558d5c9ceb",
+  "physical_bar_count": 48,
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 4,
+    "printed_glyph": "2/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      396,
+      108,
+      430,
+      310
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 1,
+    "mode": null,
+    "label": "one sharp",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "One F-sharp glyph is printed on each staff after the clef and before the 2/4. Systems 2 through 6 reprint that same one sharp. No C-sharp key-signature glyph is present. No key-signature change is printed.",
+    "evidence_box_px": [
+      340,
+      100,
+      390,
+      320
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "2",
+    "opening_pickup_q": null,
+    "terminal_partial_q": null,
+    "opening_bar_capacity_q": "2",
+    "terminal_bar_capacity_q": "2",
+    "sum_q": null,
+    "equals_meter": true,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "2",
+      "evidence": "P001 runs from the barline at x 279 to the barline at x 563 on page 1, system 1. The one sharp and the 2/4 stand on the left of the region. After the 2/4, the upper staff has an eighth rest, one flagged eighth, and two eighths under one beam. Four eighths are 2 quarters, the printed 2/4 meter. The bass staff has no note or rest in the region. P001 is a complete bar, not a pickup.",
+      "evidence_bbox_px": [
+        279,
+        96,
+        563,
+        322
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_01.png"
+    },
+    "terminal_bar": {
+      "physical_bar": 48,
+      "capacity_q": "2",
+      "evidence": "P048 runs from the barline at x 1503 to the thin stroke at x 1627 on page 2, system 6. Each staff prints two stemmed filled-note chords and no beams or flags. Two quarters fill the printed 2/4 meter. The thick stroke at x 1633-1639 closes the piece.",
+      "evidence_bbox_px": [
+        1503,
+        800,
+        1640,
+        1030
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_06.png"
+    },
+    "note": "P001 is a complete 2/4 bar of 2 quarters, not a pickup. P048 is a complete 2/4 bar of 2 quarters. There is no incomplete opening to add to the final bar.",
+    "exception_evidence": "Page 1 system 1, P001, after the 2/4: one eighth rest, one flagged eighth, and one beam joining two eighths. Four eighths equal the printed 2/4 meter of 2 quarters. Page 2 system 6, P048: two stemmed filled-note chords on each staff and a thin-thick final barline with no repeat dots. Both bars equal the meter.",
+    "ok": true
+  },
+  "repeats": [
+    {
+      "kind": "end repeat",
+      "after_physical_bar": 8,
+      "at_physical_bar": 8,
+      "physical_bar": 8,
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        1590,
+        100,
+        1650,
+        320
+      ],
+      "evidence": "P008 ends with a thin stroke at x 1626 and a thick stroke at x 1634-1640. Two stacked dots are printed in each staff immediately left of the thin stroke."
+    },
+    {
+      "kind": "start repeat",
+      "before_physical_bar": 9,
+      "at_physical_bar": 9,
+      "physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "flags": [
+        "REPEAT_START"
+      ],
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        220,
+        410,
+        275,
+        660
+      ],
+      "evidence": "P009 opens on the start-repeat thin stroke at x 243. A thick stroke stands immediately left of it, and two stacked dots are printed in each staff immediately right of the thin stroke, after the clef and the one sharp. The barline at x 158 is the staff barline before the clef and is not the left edge of P009."
+    },
+    {
+      "kind": "end repeat",
+      "after_physical_bar": 12,
+      "at_physical_bar": 12,
+      "physical_bar": 12,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        1220,
+        420,
+        1300,
+        650
+      ],
+      "evidence": "P012 ends with a thin stroke at x 1263-1264 and a thick stroke at x 1268-1274. Two stacked dots are printed in each staff immediately left of the thin stroke."
+    },
+    {
+      "kind": "start repeat",
+      "before_physical_bar": 37,
+      "at_physical_bar": 37,
+      "physical_bar": 37,
+      "page": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "flags": [
+        "REPEAT_START",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        530,
+        470,
+        580,
+        720
+      ],
+      "evidence": "The thin stroke at x 554 has a thick stroke at x 544-549 immediately to its left. Two stacked dots are printed in each staff immediately right of the thin stroke, so the sign opens P037."
+    },
+    {
+      "kind": "end repeat",
+      "after_physical_bar": 40,
+      "at_physical_bar": 40,
+      "physical_bar": 40,
+      "page": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        1588,
+        490,
+        1660,
+        710
+      ],
+      "evidence": "P040 ends with a thin stroke at x 1626 and a thick stroke at x 1632-1638. Two stacked dots are printed in each staff immediately left of the thin stroke."
+    }
+  ],
+  "clef_changes": [],
+  "system_opening_clefs": [
+    {
+      "system": 1,
+      "page": 1,
+      "first_physical_bar": 1,
+      "crop_path": "source_crops/system_01.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          279,
+          96,
+          409,
+          178
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          279,
+          241,
+          409,
+          307
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "first_physical_bar": 9,
+      "crop_path": "source_crops/system_02.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          158,
+          417,
+          288,
+          500
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          158,
+          557,
+          288,
+          635
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "first_physical_bar": 15,
+      "crop_path": "source_crops/system_03.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          158,
+          726,
+          288,
+          809
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          158,
+          870,
+          277,
+          954
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "first_physical_bar": 25,
+      "crop_path": "source_crops/system_04.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          156,
+          158,
+          286,
+          241
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          156,
+          302,
+          286,
+          385
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "first_physical_bar": 35,
+      "crop_path": "source_crops/system_05.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          155,
+          480,
+          285,
+          563
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          155,
+          619,
+          285,
+          702
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "first_physical_bar": 41,
+      "crop_path": "source_crops/system_06.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          156,
+          798,
+          286,
+          881
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          156,
+          939,
+          286,
+          1003
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    }
+  ],
+  "final_barline": {
+    "after_physical_bar": 48,
+    "page": 2,
+    "system": 6,
+    "thin_x_px": 1627,
+    "thick_x_px": [
+      1633,
+      1639
+    ],
+    "flags": [
+      "FINAL_BARLINE"
+    ],
+    "evidence_box_px": [
+      1600,
+      800,
+      1660,
+      1030
+    ],
+    "evidence_space": "page_px",
+    "evidence": "P048 ends with a thin stroke at x 1627 and a thick stroke at x 1633-1639. No repeat dots are printed beside it."
+  }
+}

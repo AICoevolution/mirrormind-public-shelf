@@ -1,0 +1,658 @@
+{
+  "schema": "frame_verifier_response.v1",
+  "piece_id": "schumann_op15_13_der_dichter_spricht",
+  "request_sha256": "5b0cf0de938f606ea585a861bfe95b9d61b5e59f049a819daae33d4884f7e16e",
+  "verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "session_id": "5c9257c548dc470f9cfeaf602c9837b0",
+    "edition_scope": "schumann_op15_breitkopf_1880_imslp289791"
+  },
+  "verdict": "PASS",
+  "source_blindness_confirmed": true,
+  "geometry_assist_review": {
+    "manifest_sha256": "558b8447c8504c48143fbdbf67fcd94dab6c541e44ec5e02c73d9db6bc11f6cf",
+    "print_remains_authority": true,
+    "semantic_omr_content_not_used": true,
+    "systems": [
+      {
+        "system": 1,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "Frozen system copied unchanged. The candidate boundaries sit on the same barline strokes as that frame, within one pixel."
+      },
+      {
+        "system": 2,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The four barlines sit on the printed strokes. The low-confidence right mark is the end of the staff lines near x 1631, not a barline; the gap there is blank. The vertical strokes near x 1146 are stems of the fermata chord and do not cross the gap between the staves."
+      },
+      {
+        "system": 3,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "The single barlines match the printed strokes. At the double bar the candidate sits on the thick stroke near x 768; the region closes on the thin stroke at x 763. No repeat dots are printed."
+      },
+      {
+        "system": 4,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "The single barlines match the printed strokes. The disagreed right mark at x 1642 lies inside the thick final stroke. The bar closes on the thin stroke at x 1626, with the thick stroke immediately to its right and no repeat dots."
+      }
+    ]
+  },
+  "printed_physical_bar_count": 26,
+  "human_summary": "Twenty-six printed regions on one page, in common time with one sharp. The upper staff opens in treble and the lower staff opens in bass, and each later system reprints those same clefs. No clef change, meter change, key change, repeat, or ending is printed. System 2 ends without a barline: its last region and the first region of system 3 are one cadenza split by the system break. That cadenza closes on a thin-thick double bar. The last region is a whole-note bar closed by a thin-thick final barline. The cadenza's longest voice holds eleven and a half quarter-note beats on system 2 and eight and a half quarter-note beats on system 3.",
+  "clef_verification": {
+    "opening": [
+      {
+        "staff": 1,
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, upper staff",
+        "evidence_bbox_px": [
+          279,
+          105,
+          313,
+          196
+        ]
+      },
+      {
+        "staff": 2,
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, lower staff",
+        "evidence_bbox_px": [
+          279,
+          248,
+          310,
+          304
+        ]
+      }
+    ],
+    "changes": [],
+    "printed_change_count": 0,
+    "no_other_changes_visible": true,
+    "matches_proposed_frame": true,
+    "summary_plain": "The upper staff opens in treble and the lower staff opens in bass. Each later system reprints those clefs with the same one sharp. No clef change and no cautionary clef is printed."
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 360,
+      "printed_region_count": 8,
+      "barline_boundaries_x_px": [
+        273,
+        485,
+        601,
+        795,
+        905,
+        1037,
+        1229,
+        1477,
+        1632
+      ],
+      "regions": [
+        {
+          "id": "P001",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            273,
+            110,
+            485,
+            310
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "OPENING_SIGNATURE"
+          ],
+          "features_plain": [
+            "Before the first note"
+          ]
+        },
+        {
+          "id": "P002",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            485,
+            110,
+            601,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P003",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            601,
+            110,
+            795,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P004",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            795,
+            110,
+            905,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P005",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            905,
+            110,
+            1037,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P006",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1037,
+            110,
+            1229,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P007",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1229,
+            110,
+            1477,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P008",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1477,
+            110,
+            1632,
+            310
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 294,
+      "printed_region_count": 4,
+      "barline_boundaries_x_px": [
+        160,
+        503,
+        710,
+        988,
+        1631
+      ],
+      "regions": [
+        {
+          "id": "P009",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            160,
+            45,
+            503,
+            250
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P010",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            503,
+            45,
+            710,
+            250
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P011",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            710,
+            45,
+            988,
+            250
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P012",
+          "capacity_q": "23/2",
+          "capacity_plain": "23/2 quarters, the longest voice",
+          "kind_plain": "first part of the cadenza",
+          "evidence_bbox_px": [
+            988,
+            45,
+            1631,
+            250
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "CADENZA",
+            "SPLIT_REGION",
+            "PARTIAL"
+          ],
+          "features_plain": [
+            "After the third barline",
+            "At the right end of the staff",
+            "In the upper-staff run"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": false,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 322,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [
+        161,
+        763,
+        917,
+        1066,
+        1332,
+        1473,
+        1641
+      ],
+      "regions": [
+        {
+          "id": "P013",
+          "capacity_q": "17/2",
+          "capacity_plain": "17/2 quarters, the longest voice",
+          "kind_plain": "second part of the cadenza",
+          "evidence_bbox_px": [
+            161,
+            70,
+            763,
+            275
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "CADENZA",
+            "SPLIT_REGION",
+            "PARTIAL",
+            "DOUBLE_BARLINE",
+            "SECTION_BOUNDARY"
+          ],
+          "features_plain": [
+            "Before the double bar",
+            "At the left system barline",
+            "In the upper-staff run",
+            "At the right barline",
+            "At the thin-thick barline"
+          ]
+        },
+        {
+          "id": "P014",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            763,
+            70,
+            917,
+            275
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P015",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            917,
+            70,
+            1066,
+            275
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P016",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1066,
+            70,
+            1332,
+            275
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P017",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1332,
+            70,
+            1473,
+            275
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P018",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1473,
+            70,
+            1641,
+            275
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "crop_path": "source_crops/system_04.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 410,
+      "printed_region_count": 8,
+      "barline_boundaries_x_px": [
+        164,
+        449,
+        686,
+        847,
+        1049,
+        1209,
+        1375,
+        1545,
+        1626
+      ],
+      "regions": [
+        {
+          "id": "P019",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            164,
+            55,
+            449,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P020",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            449,
+            55,
+            686,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P021",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            686,
+            55,
+            847,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P022",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            847,
+            55,
+            1049,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P023",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1049,
+            55,
+            1209,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P024",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1209,
+            55,
+            1375,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P025",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "full common-time bar",
+          "evidence_bbox_px": [
+            1375,
+            55,
+            1545,
+            270
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P026",
+          "capacity_q": "4",
+          "capacity_plain": "4 quarter-note beats",
+          "kind_plain": "final common-time bar",
+          "evidence_bbox_px": [
+            1545,
+            55,
+            1626,
+            270
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "FINAL_BARLINE"
+          ],
+          "features_plain": [
+            "At the right barline"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    }
+  ],
+  "irregular_checks": [
+    {
+      "where": "System 2, right end of the staff",
+      "question_plain": "Does system 2 end with a closing barline?",
+      "answer_plain": "No. The staff lines stop near x 1631 and the gap between the staves is blank, so the last region continues on system 3.",
+      "evidence_bbox_px": [
+        1580,
+        50,
+        1640,
+        250
+      ]
+    },
+    {
+      "where": "System 2, stems under the first fermata",
+      "question_plain": "Is the vertical stroke near x 1146 a barline?",
+      "answer_plain": "No. It is the stem of the fermata chord. It does not cross the blank gap between the staves.",
+      "evidence_bbox_px": [
+        1125,
+        70,
+        1165,
+        230
+      ]
+    },
+    {
+      "where": "System 3, end of the cadenza",
+      "question_plain": "Is the double bar a repeat?",
+      "answer_plain": "No. A thin stroke at x 763 and a thick stroke at x 768 close the cadenza. No repeat dots are printed.",
+      "evidence_bbox_px": [
+        745,
+        70,
+        790,
+        275
+      ]
+    },
+    {
+      "where": "System 4, last region",
+      "question_plain": "Which stroke closes the final bar?",
+      "answer_plain": "The thin stroke at x 1626. The thick stroke beside it runs to about x 1644 and has no repeat dots.",
+      "evidence_bbox_px": [
+        1605,
+        55,
+        1655,
+        280
+      ]
+    }
+  ],
+  "count_anomaly_review": {
+    "performed": true,
+    "printed_count_confirmed": 26,
+    "explanation_plain": "System 1 has 8 regions, system 2 has 4, system 3 has 6, and system 4 has 8, totaling 26. System 2's staff end is not an extra bar, and the fermata-chord stems near x 1146 do not cross the gap. The thin-thick pair on system 3 is one boundary, and the thin-thick final pair on system 4 is one boundary. No repeat dots add a bar."
+  },
+  "corrections": []
+}

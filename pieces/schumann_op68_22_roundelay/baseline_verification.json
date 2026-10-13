@@ -1,0 +1,20 @@
+{
+  "schema": "baseline-replay-verification.v1",
+  "required_outputs": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "raw_outputs_equal": {
+    "state.json": false,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": false,
+    "questions.json": false,
+    "summary.json": false
+  },
+  "semantic_generated_id_normalization": "12-hex generated detector IDs normalized; all surrounding claims and references must still match",
+  "all_equal": true,
+  "timestamp": "2026-09-18T04:27:59.996221+00:00"
+}

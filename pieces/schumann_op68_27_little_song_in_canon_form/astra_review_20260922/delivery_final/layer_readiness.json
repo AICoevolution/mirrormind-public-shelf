@@ -1,0 +1,42 @@
+{
+  "exact_xml_sha256": "f0d0625b21aa700edfc2797b76644fb277d938cf004aec1200e4f30648288f9f",
+  "primary_musicxml": {
+    "status": "UNVERIFIED_READY_FOR_JUAN",
+    "structural": "PASS",
+    "score_analyzer": "PASS",
+    "independent_schedule": "PASS_WITH_1MS_ROUNDING_TOLERANCE",
+    "production_cursor": "PASS",
+    "vexflow_durations": "PASS",
+    "engraving": "LIMITED_CROSS_STAFF_GEOMETRY"
+  },
+  "CORE": {
+    "status": "EXPORTED_NOT_LOSSLESS_FOR_REBUILD",
+    "lanes": 5,
+    "musical_lines": 4,
+    "unchanged_actual_apply": "PASS",
+    "changed_and_restored_P2_apply": "PASS",
+    "full_rebuild": "FAIL",
+    "locations": [
+      1,
+      3,
+      11,
+      30,
+      32
+    ],
+    "reason": "Pickup onset shift and F4 duration extension in dangling/gapped staff voice at P3/P11/P32. Exact comparison in checks/layer_semantic_comparison.json. Do not rebuild primary from CORE."
+  },
+  "MARKS": {
+    "status": "MUSICALLY_READY_WITH_LAYOUT_LIMITATION",
+    "export_warnings": [],
+    "actual_apply": "PASS",
+    "lossless": false,
+    "limitation": "Actual Apply retains marks and anchors but drops explicit wedge spread values at P41; primary retains them."
+  },
+  "ROUTE": {
+    "status": "READY",
+    "export_warnings": [],
+    "actual_apply_semantics": "PASS",
+    "path": "1\u201348 once"
+  },
+  "human_outcome": null
+}

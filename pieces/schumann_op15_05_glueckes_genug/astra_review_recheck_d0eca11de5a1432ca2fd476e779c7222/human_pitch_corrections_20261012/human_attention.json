@@ -1,0 +1,85 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "SMALL-BASS-06-14",
+      "address": "Page 1 systems 1/3, P006/P014 staff 2 opening",
+      "question": "How should the small bass A1 note and nearby short curve be interpreted and timed?",
+      "provisional_treatment": "Encode A1 as a slashed zero-duration grace before A2. Consumer realizes it on the beat by stealing 1/4 beat from its host; small-curve attachment remains unresolved.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_03.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "BASS-20",
+      "address": "Page 1 system 4, P020 staff 2 beat 2",
+      "question": "Does the upper bass line cease for an eighth before E3, or should a printed value sustain through that interval?",
+      "provisional_treatment": "Retain frozen provisional upper-line forward of 1/2 quarter at onset 1, without an invented printed rest. Lower bass G3 continues independently.",
+      "evidence": [
+        "reviewer/P020_detail.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "HAIRPIN-ENDPOINTS",
+      "address": "P008, P016\u2013P017 and the eleven crescendos",
+      "question": "Confirm exact rhythmic endpoints of hairpins whose horizontal ends lie between printed attacks.",
+      "provisional_treatment": "Use the explicitly frozen quantitative offsets in correction_specification.json; these are provisional. The separate renderer collision is technical and is not waived by this musical question.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png",
+        "reviewer/print_system_04.png",
+        "reviewer/print_system_05.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "RITARDANDO",
+      "address": "P024\u2013P025, above staff 1",
+      "question": "Confirm desired performance pacing and distributed placement of ri-tar-dan-do.",
+      "provisional_treatment": "One italic ritardando word at P024 onset 1/2; printed rit. at P008/P016 retained. No invented numeric tempo change; default consumer tempo is 80 BPM.",
+      "evidence": [
+        "reviewer/print_system_05.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "DC-TERMINATION",
+      "address": "P025 end, below staff 2",
+      "question": "Where should the da-capo return terminate when no Fine is printed?",
+      "provisional_treatment": "Remove false end repeat; play P001\u2013P025 twice and stop after second pass, without adding a printed Fine.",
+      "evidence": [
+        "reviewer/P025_detail.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    },
+    {
+      "id": "SHORT-CURVES",
+      "address": "P004/P012/P020 polyphonic opening and P025 upper bass",
+      "question": "Confirm member attachments of close parallel curves and the repeated-A2 ending tie.",
+      "provisional_treatment": "Use frozen explicit voice endpoints and repeated-A2 tie; preserve independent lower/upper parts.",
+      "evidence": [
+        "reviewer/P004_detail.png",
+        "reviewer/P012_detail.png",
+        "reviewer/P020_detail.png",
+        "reviewer/P025_detail.png"
+      ],
+      "status": "UNRESOLVED",
+      "confidence": "medium",
+      "human_outcome": null
+    }
+  ]
+}

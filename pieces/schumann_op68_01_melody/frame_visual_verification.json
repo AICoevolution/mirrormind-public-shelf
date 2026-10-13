@@ -1,0 +1,188 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_01_melody",
+  "revision": 3,
+  "authority": "print_only",
+  "source_pdf_sha256": "fcbce95b7cee88a359e32f94cfe61d3ca78b91c084484e902288ce72eebf9b93",
+  "page_image_sha256": {
+    "page-1": "be65dcc2aad573bd8e01e023fefa31887bf6acd87c685c4f1f6d0af20b04e889"
+  },
+  "printed_meter": "C common time (4/4) at the opening; only staff meter glyph",
+  "physical_bar_count": 20,
+  "pickup_or_partial_bars": [],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": null,
+      "result": "not_applicable",
+      "evidence": "No opening pickup and no incomplete terminal. P001 is a complete common-time bar under piano. P020 is a complete common-time bar closed by a thin-plus-thick final barline. Pickup-plus-terminal capacity versus printed 4/4 therefore does not apply."
+    }
+  ],
+  "repeats": [
+    {
+      "after_physical_bar": 4,
+      "kind": "backward",
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "On system_01.png after four complete common-time bars a backward-repeat dot pair (x 1298-1314) plus thin stroke (x 1316-1318) then thick right barline closes P004 at the thick stroke, measured core x 1324 (ink x 1321-1328). Keep five regions; the thin-plus-thick pair is one close. P005 then begins on the same system as the triplet D-C-B rest under poco cre-."
+    }
+  ],
+  "repeat_boundary_checks": [
+    {
+      "kind": "backward",
+      "after_physical_bar": 4,
+      "result": "pass",
+      "evidence": "System 1 right of P004 has stacked repeat dots (x 1298-1314) and a thick close after a complete 4/4 bar at measured core x 1324 (ink x 1321-1328). The thin stroke at x 1316-1318 is not the region boundary. No printed forward dots at P001; the strain repeats from the beginning.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png"
+    },
+    {
+      "kind": "final_double",
+      "after_physical_bar": 20,
+      "result": "not_a_repeat",
+      "evidence": "System 4 P020 ends with a thin-plus-thick final barline and no repeat dots (measured thick column x 1580).",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          232,
+          118,
+          300,
+          216
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of common-time C and the first E5."
+      },
+      "staff2": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          232,
+          308,
+          300,
+          402
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff G clef left of common-time C; not a bass clef."
+      }
+    },
+    "changes": [],
+    "printed_change_count": 0,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        486
+      ],
+      "barline_boundaries_x_px": [
+        227,
+        574,
+        819,
+        1069,
+        1324,
+        1588
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        10
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        486,
+        934
+      ],
+      "barline_boundaries_x_px": [
+        84,
+        455,
+        748,
+        1034,
+        1311,
+        1588
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        11,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        934,
+        1376
+      ],
+      "barline_boundaries_x_px": [
+        85,
+        437,
+        715,
+        1012,
+        1303,
+        1588
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        16,
+        20
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1376,
+        2048
+      ],
+      "barline_boundaries_x_px": [
+        87,
+        465,
+        757,
+        1043,
+        1317,
+        1580
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Staff 2 opens G clef line 2; box 232,308-300,402 on system_01.png",
+    "No printed clef changes; system-start treble reprints are not CLEF_CHANGE",
+    "Recrop complete grand staves y 0-486 / 486-934 / 934-1376 / 1376-2048",
+    "Physical count 20 as P001-P020; four systems of five complete 4/4 bars",
+    "P020 carries FINAL_BARLINE thin-then-thick; system 4 is a grand staff",
+    "Common-time C only at the opening on both staves; no key signature",
+    "Backward-repeat dots plus thick barline close P004; P005 is a complete 4/4 bar",
+    "Page outermost musical ink stays inside the white margin",
+    "P004/P005 boundary is the thick backward-repeat stroke at measured core x 1324 (ink x 1321-1328), not the thin stroke at x 1316"
+  ]
+}

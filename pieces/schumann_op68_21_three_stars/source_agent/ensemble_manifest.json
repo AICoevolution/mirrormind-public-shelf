@@ -1,0 +1,146 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "schumann_op68_21_three_stars",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 20,
+  "physical_bars_complete": 20,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "85bf4b9ddc968d6430b93b607e5dfd5b61bac8e4d0d48b83ce4198b887c96a32",
+      "events": 913
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "af93a43f9c4df72eb75e66280dba21a011994f96b4e6679c2fd195b80560031f",
+        "events": 310,
+        "canonical": true
+      }
+    ],
+    "GROK_APP_INDEPENDENT_SOURCE": [
+      {
+        "path": "source_observations\\grok_app_independent_source_repaired\\system_01.json",
+        "sha256": "96ac9372af0496489b50af04720e1e7b2cb215ba13f2548588c3eedd9cef1345",
+        "events": 91
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source_repaired\\system_02.json",
+        "sha256": "217f294cb8d5733b8d41a7056272ea928312ad877d0fd67aa916cafcbe166da0",
+        "events": 74
+      },
+      {
+        "path": "source_observations\\grok_app_independent_source_repaired\\system_05.json",
+        "sha256": "f389bb35620e65debc17a7db6eb14fdcb9bfaa7f39f8ecbde32e7baff6c00fcd",
+        "events": 73
+      }
+    ],
+    "GEMINI": []
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "518b137799534c12037677fbcf34ec53b62a2cabd929b9604a0cb1191c8c3657"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK_APP_INDEPENDENT_SOURCE",
+    "directory_id": "grok_app_independent_source_repaired",
+    "method": "completed isolated Grok source observations, deterministically rebound to approved frame revision 6 with out-of-capacity padding removed",
+    "scope": "existing source-blind observations only; no new model call",
+    "enabled": true,
+    "requested_count": 3,
+    "requests": [
+      {
+        "system": 1,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source_repaired\\system_01.json",
+        "request_sha256": "b6934be2c1be1fce3a4564c1f74af0070196108c61980b96cb5ab014d378da88",
+        "response_path": "source_observations/grok_app_independent_source_repaired/system_01.json",
+        "response_exists": true,
+        "response_sha256": "96ac9372af0496489b50af04720e1e7b2cb215ba13f2548588c3eedd9cef1345",
+        "validated": true
+      },
+      {
+        "system": 2,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source_repaired\\system_02.json",
+        "request_sha256": "64f786eff3e5983e618888e685d8cb189d19d5ada9bf1cc1924b60c50aab0933",
+        "response_path": "source_observations/grok_app_independent_source_repaired/system_02.json",
+        "response_exists": true,
+        "response_sha256": "217f294cb8d5733b8d41a7056272ea928312ad877d0fd67aa916cafcbe166da0",
+        "validated": true
+      },
+      {
+        "system": 5,
+        "requested": true,
+        "request_path": "source_requests\\grok_app_independent_source_repaired\\system_05.json",
+        "request_sha256": "dce9bfcaea3b3a0e5bd65f86150937322badab891308b57b1b93f3a8f3e11ef7",
+        "response_path": "source_observations/grok_app_independent_source_repaired/system_05.json",
+        "response_exists": true,
+        "response_sha256": "f389bb35620e65debc17a7db6eb14fdcb9bfaa7f39f8ecbde32e7baff6c00fcd",
+        "validated": true
+      }
+    ],
+    "manifest_path": "source_observations/grok_app_independent_source_repaired/manifest.json",
+    "manifest_sha256": "2b6f553e3237bf3944b32193007cdd3c10278c566b35e4ef89906ab8b417f394"
+  },
+  "gemini": {
+    "enabled": false,
+    "requests": [],
+    "max_calls": 6,
+    "calls_made": 0,
+    "max_cost_usd": 0.25,
+    "actual_cost_usd": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": []
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": []
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "unresolved_evidence_claims": 41,
+  "unresolved_nonblocking": 68,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 41,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "missing_gemini_responses": 0,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "1b33a0dcecf0d598d03ce994752c859747f03ebe5bc4e718d6458573ff983315"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "44d1045ac4f8dea32d2736b5b66b0380f0189ae28bc920b7e8ee4cc04d70622d"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "5464c31045f3402358a837de718c404b1b3815d99a4765d70027e2d8084c43af"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "afd8453a8b6ee298f237fd78b35055a4b986dafc813d0527082d32620fc9af01"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "capacity-valid source topology plus field-level weighted evidence; majority is evidence, never ground truth",
+  "source_isolation": "GROK_APP_INDEPENDENT_SOURCE and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-09-20T13:00:34.649453+00:00"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "schumann_op15_08_am_camin",
+  "verified_utc": "2026-10-05T01:36:24.520519+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "475ff0136c093912957289887796dcacf2c5a08fc8c5e8e40f5fa6be3e668aa1",
+      "replay_sha256": "d91b7f6a81eae792c76c45010bbe72c36b7d95e367a7551bdf38d84d9d6b04f1"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "2b56e247187fa84477a4f3c136186e909619d17261983d2cb2e0798caa86c788",
+      "replay_sha256": "2b56e247187fa84477a4f3c136186e909619d17261983d2cb2e0798caa86c788"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "46a2384bf3a8139cbe82c224efb46174e8d9eeeeb03a3ed3f38ad2fc5e9e6e9d",
+      "replay_sha256": "3189b7bf90d645ad152ce5d80144d0c5633743ae7a3f623358645bf37c5c1ca6"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e46864366b68f46823bf338a69f29de2345e43e8d51c42fed40dbc9ac661cd8c",
+      "replay_sha256": "8adb1df79f37067a87afb86dd7113499cfebd132c16c798ad9e45258b4469eee"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "7331041461862f15469cc1a09f935b2ad634a613c68f7969808a805e34835f23",
+      "replay_sha256": "f8b3f15d66222e81f9549ed38b809a0a59a8dc609807ea9a2185bf5b3212dc81"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

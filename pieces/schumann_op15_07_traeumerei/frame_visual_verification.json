@@ -1,0 +1,263 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_07_traeumerei",
+  "frame_revision": 1,
+  "authority": "print_only",
+  "source_pdf_sha256": "629e1f11af3d48b30a06db51b5b9a750297436ec055421dee6dda4d2503cfe96",
+  "physical_bar_count": 25,
+  "printed_meter": {
+    "beats": 4,
+    "beat_type": 4,
+    "printed_glyph": "C",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      250,
+      100,
+      360,
+      300
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": -1,
+    "mode": null,
+    "label": "one flat (F major / D minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "One flat is printed after the opening clef on each staff of system 1, before the common-time sign. The same one-flat signature is reprinted after the clefs of systems 2-4. No key-signature change is printed.",
+    "evidence_box_px": [
+      210,
+      100,
+      280,
+      300
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [
+    {
+      "id": "P001",
+      "physical_bar": 1,
+      "kind": "pickup",
+      "flags": [
+        "PICKUP"
+      ],
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "P001 is the region from the opening barline x 268 to the forward-repeat thick stroke x 420. The upper staff has one quarter-note chord and the lower staff has one quarter rest. Nothing else occupies the region. Capacity is 1 quarter in common time.",
+      "evidence_box_px": [
+        268,
+        90,
+        430,
+        310
+      ],
+      "evidence_space": "page_px"
+    }
+  ],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "4",
+    "opening_pickup_q": "1",
+    "terminal_partial_q": "0",
+    "sum_q": "1",
+    "equals_meter": false,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "1",
+      "evidence": "P001 is the region from the opening barline x 268 to the forward-repeat thick stroke x 420. The upper staff has one quarter-note chord and the lower staff has one quarter rest. Nothing else occupies the region. Capacity is 1 quarter in common time.",
+      "evidence_box_px": [
+        268,
+        90,
+        430,
+        310
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_01.png"
+    },
+    "terminal_bar": {
+      "physical_bar": 25,
+      "capacity_q": "4",
+      "evidence": "P025 runs from barline x 1430 to the final thin stroke x 1631. It holds beamed eighths and quarter-length chords, then a half-note chord with a fermata on each staff. The fermata chord is the last event and has a stem, so it is a half note, not a whole note. Those events fill four quarter-lengths. There is no barline inside the region and the bar is not cut short.",
+      "evidence_box_px": [
+        1430,
+        470,
+        1660,
+        740
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_04.png"
+    },
+    "note": "The opening anacrusis is one quarter. The final bar is a complete common-time bar of four quarters, closed by a thin-thick final barline. Pickup 1 plus a terminal partial of 0 does not equal the meter, because the final bar is not the complement of the anacrusis.",
+    "exception_evidence": "Page 2, system 4, P025, barline x 1430 through final thick stroke x 1637-1645. The last printed event is a stemmed open-note chord under a fermata, after beamed notes that occupy the earlier part of the same bar. The bar is complete.",
+    "ok": true
+  },
+  "repeats": [
+    {
+      "kind": "forward",
+      "at_physical_bar": 2,
+      "before_physical_bar": 2,
+      "after_physical_bar": 1,
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "Forward repeat between P001 and P002. Thick stroke x 420-427, thin stroke x 433-434, and repeat dots on the right of the thin stroke in the middle spaces of both staves. No dots stand on the left. The repeated section opens at P002.",
+      "evidence_box_px": [
+        400,
+        90,
+        480,
+        310
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START"
+      ]
+    },
+    {
+      "kind": "backward",
+      "at_physical_bar": 9,
+      "after_physical_bar": 9,
+      "before_physical_bar": 10,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "End repeat after P009. Repeat dots on the left at about x 704-710, thin stroke x 713-715, thick stroke x 718-725. The middle spaces to the right of the thick stroke are empty of dots. The locked boundary is x 718.",
+      "evidence_box_px": [
+        690,
+        380,
+        760,
+        620
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END"
+      ]
+    }
+  ],
+  "clef_changes": [],
+  "clef_opening_reprints": [
+    {
+      "system": 1,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          190,
+          95,
+          255,
+          165
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          190,
+          225,
+          255,
+          300
+        ]
+      },
+      "crop_path": "source_crops/system_01.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 1,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          155,
+          378,
+          220,
+          470
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          155,
+          520,
+          220,
+          610
+        ]
+      },
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 8,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 3,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          157,
+          150,
+          230,
+          240
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          157,
+          300,
+          380,
+          380
+        ]
+      },
+      "crop_path": "source_crops/system_03.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 14,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          156,
+          475,
+          230,
+          560
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          156,
+          615,
+          230,
+          710
+        ]
+      },
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 20,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    }
+  ],
+  "split_partials": []
+}

@@ -1,0 +1,17 @@
+# Phase 3 freeze
+
+Completed independent print audit of all 27 regions in four systems, every one of the 472 candidate note/rest members, and every mark and route element. phase3_coverage.json identifies every reviewed event. The candidate XML note IDs match the exact event ledger. All current Phase 3 allowlist hashes match phase3_hashes.json. No candidate was modified and no later-phase request or prior repair narrative was read before this freeze.
+
+phase3_review.json contains 27 complete before/after bar specifications plus marks and historical provenance findings. phase3_correction_spec.json is the exact frozen correction specification. Its event groups state pitches, onset, duration, staff, minimal musical voice, chord membership, absence of ties/grace/tuplets, and printed beams/stems. Every physical location, including repeated passages, was examined in its own crop. There are 443 printed note/rest members in this provisional specification. No source duration discrepancies were reported; the passing duration arithmetic does not validate pitches or omit the missing expressive marks.
+
+Candidate errors include spurious upper-staff events at P007/P026, phantom rests on empty upper staves, lost bass octave members and wrong bass notes at P008/P010/P011/P012/P025, wrong chords at P013/P014/P016/P017, shifted/missing upper events at P021, and omitted sustained upper chord member at P007/P025. Event groups specify exact replacements. P009/P027 final bass chord is A1+E2: the earlier Phase 2 transcription's A1+A2 was a reviewer transcription error, corrected here without rewriting frozen Phase 2.
+
+All 131 ensemble disagreements are rechecked in ensemble_disagreements_recheck.json, including historical resolved/unresolved alternatives. provenance_check.json records candidate membership and alternatives for every provenance record. The ensemble manifest's historical reader-claims hash differs from current authorized reader evidence; this is preserved as PROV-1, not treated as authority. The current authorized readers and print were independently reviewed, so this historical bookkeeping defect is isolated from musical correction. Current candidate, freeze, and allowlist bindings match.
+
+All expressive marks are absent in the candidate. Restore the six dynamics, eight slurs, four hairpins and the accents explicitly listed in the specification, with orientation/location from Phase 1. Repeat before P010, backward repeat after P018, final after P027 are correct. Path 1–18,10–27 is retained; no other navigation.
+
+Minimal topology is three independent lines: the principal chord melody (voice 1, crossing to staff 2 in P007–9 and P025–27), bass (voice 2), and brief lower right-hand eighth line (voice 3) simultaneously under held upper dyads in P003/P007/P021/P025. Context-scoped relabeling is necessary; a global map of mixed-role candidate labels is unsafe. No synthetic printed rests or vacant staff lane retained. No cross-staff beam spans: staff transitions occur between measures; the small eighth figures have beams within their actual staff.
+
+Provisional decisions are explicitly frozen: six chord-member slur endpoints and hairpin rhythmic endpoints are listed in human_attention.json (HA-SLUR, HA-WEDGE). They are final human-verification questions, not technical blockers. Do not describe these as confirmed endpoints. All other correction values are supported by direct print reading.
+
+Stage 4 complete. Stage 5 has not yet run; delivery is not ready.

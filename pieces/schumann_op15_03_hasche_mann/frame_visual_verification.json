@@ -1,0 +1,302 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_03_hasche_mann",
+  "frame_revision": 1,
+  "authority": "print_only",
+  "physical_bar_count": 21,
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 4,
+    "printed_glyph": "2/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      358,
+      226,
+      392,
+      430
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 2,
+    "mode": null,
+    "label": "two sharps (D major / B minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "Two sharps are printed after the opening clefs on both staves of system 1 and reprinted after the clefs of systems 2-4. No key-signature change is printed.",
+    "evidence_box_px": [
+      328,
+      214,
+      364,
+      428
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "2",
+    "opening_pickup_q": "0",
+    "terminal_partial_q": "0",
+    "sum_q": "0",
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "2",
+      "evidence": "P001, between the opening barline x 286 and the next barline x 638, is a complete 2/4 bar. After the clefs, two sharps, and the 2/4 sign, the upper staff has a beamed pair of sixteenths, an eighth, and a quarter: 1/4 + 1/4 + 1/2 + 1 = 2 quarter-lengths. It is not a pickup.",
+      "evidence_box_px": [
+        286,
+        170,
+        650,
+        450
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_01.png"
+    },
+    "terminal_bar": {
+      "physical_bar": 21,
+      "capacity_q": "2",
+      "evidence": "P021 is the second-ending bar between the end-repeat thick stroke x 1432 and the final thin-thick barline. The upper staff has four sixteenths and a quarter, which is two quarter-lengths. It is not a shortened terminal.",
+      "evidence_box_px": [
+        1432,
+        1093,
+        1650,
+        1385
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_04.png"
+    },
+    "note": "No opening pickup and no terminal partial are printed. Pickup partial 0 plus terminal partial 0. Every region is a full 2/4 bar, so there is no incomplete pickup section whose remainder must sum with a terminal partial to the meter.",
+    "exception_evidence": null,
+    "ok": true
+  },
+  "repeats": [
+    {
+      "kind": "forward",
+      "at_physical_bar": 9,
+      "before_physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "Forward-repeat barline between P008 and P009. Thick stroke x 1075-1082, thin stroke x 1084-1085, and repeat dots on the right at x 1086-1097 in the middle spaces of both staves. No dots stand on the left. The repeated section opens at P009.",
+      "evidence_box_px": [
+        1070,
+        530,
+        1110,
+        748
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START"
+      ]
+    },
+    {
+      "kind": "backward",
+      "at_physical_bar": 20,
+      "after_physical_bar": 20,
+      "before_physical_bar": 21,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "End-repeat after P020. Repeat dots on the left at x 1420-1427, thin stroke x 1428-1429, thick stroke x 1432-1440. It closes the first ending. The locked boundary is x 1432, the left edge of the thick stroke.",
+      "evidence_box_px": [
+        1414,
+        1094,
+        1446,
+        1370
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END",
+        "FIRST_ENDING"
+      ]
+    }
+  ],
+  "clef_changes": [],
+  "system_opening_reprints": [
+    {
+      "system": 1,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          290,
+          214,
+          328,
+          308
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          290,
+          360,
+          328,
+          428
+        ]
+      },
+      "crop_path": "source_crops/system_01.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 1,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          163,
+          519,
+          205,
+          617
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          163,
+          682,
+          203,
+          737
+        ]
+      },
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 6,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          161,
+          829,
+          201,
+          926
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          161,
+          990,
+          201,
+          1046
+        ]
+      },
+      "crop_path": "source_crops/system_03.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 11,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          161,
+          1144,
+          201,
+          1242
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          161,
+          1305,
+          201,
+          1360
+        ]
+      },
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 16,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    }
+  ],
+  "section_landmarks": [
+    {
+      "kind": "first_ending",
+      "at_physical_bar": 20,
+      "physical_bar": 20,
+      "through_physical_bar": 20,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "Volta bracket '1.' above P020, from the barline x 1190 to the end-repeat. The bracket is the top musical ink of system 4.",
+      "evidence_box_px": [
+        1186,
+        1094,
+        1442,
+        1130
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "FIRST_ENDING",
+        "REPEAT_END"
+      ]
+    },
+    {
+      "kind": "second_ending",
+      "at_physical_bar": 21,
+      "physical_bar": 21,
+      "through_physical_bar": 21,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "Volta bracket '2.' above P021, immediately after the end-repeat and running to the final barline. P021 is the closing bar on the second pass.",
+      "evidence_box_px": [
+        1432,
+        1094,
+        1650,
+        1130
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "SECOND_ENDING",
+        "FINAL_BARLINE"
+      ]
+    },
+    {
+      "kind": "final_barline",
+      "at_physical_bar": 21,
+      "after_physical_bar": 21,
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "Thin stroke x 1630-1631 and thick stroke x 1635-1642 close P021 and the piece. No repeat dots. The locked boundary is x 1635, the left edge of the thick stroke.",
+      "evidence_box_px": [
+        1624,
+        1155,
+        1650,
+        1370
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "FINAL_BARLINE"
+      ]
+    }
+  ],
+  "checked_utc": "2026-10-04T07:33:07.785784+00:00"
+}

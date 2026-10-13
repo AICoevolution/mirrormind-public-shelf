@@ -1,0 +1,560 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_02_curiose_geschichte",
+  "frame_revision": 1,
+  "authority": "print_only",
+  "physical_bar_count": 42,
+  "printed_meter": {
+    "beats": 3,
+    "beat_type": 4,
+    "printed_glyph": "3/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      358,
+      115,
+      392,
+      285
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 2,
+    "mode": null,
+    "label": "two sharps (D major / B minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "Two sharps are printed after the opening clefs on both staves of system 1 and reprinted after the clefs of systems 2-8. No key-signature change is printed, including at the double bar between P017 and P018.",
+    "evidence_box_px": [
+      318,
+      110,
+      360,
+      290
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [
+    {
+      "id": "P001",
+      "physical_bar": 1,
+      "kind": "pickup",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "P001 contains one filled, stemmed, unbeamed chord on each staff after the 3/4 sign and before barline x 454. There is no flag, beam, or augmentation dot. That is one quarter-length, not a full 3/4 bar.",
+      "evidence_box_px": [
+        390,
+        100,
+        460,
+        300
+      ],
+      "evidence_space": "page_px"
+    },
+    {
+      "id": "P018",
+      "physical_bar": 18,
+      "kind": "section_pickup",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P018, between the double barline (strokes x 432-437) and barline x 567, holds one beamed pair of eighth-notes on each staff and no rest or further event before that barline. Two eighth-lengths are one quarter-length.",
+      "evidence_box_px": [
+        438,
+        448,
+        567,
+        778
+      ],
+      "evidence_space": "page_px"
+    }
+  ],
+  "terminal_or_split_partials": [
+    {
+      "id": "P017",
+      "physical_bar": 17,
+      "kind": "split_partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P017, between barline x 157 and the double barline at x 432, holds two filled, stemmed, unbeamed notes on each staff. There is no rest, beam, flag, dot, or third event. That is two quarter-lengths. The bass clef stands after those notes, immediately left of the double barline.",
+      "evidence_box_px": [
+        157,
+        448,
+        432,
+        778
+      ],
+      "evidence_space": "page_px"
+    },
+    {
+      "id": "P042",
+      "physical_bar": 42,
+      "kind": "terminal_partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 2,
+      "system": 8,
+      "crop_path": "source_crops/system_08.png",
+      "evidence": "P042, between barline x 1520 and the final thin-thick barline, holds two separate filled quarter-notes on each staff and no rest or third event between them. The bar is shorter than the full bars beside it. Capacity is 2 quarter-lengths.",
+      "evidence_box_px": [
+        1520,
+        1840,
+        1645,
+        2110
+      ],
+      "evidence_space": "page_px"
+    }
+  ],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "3",
+    "opening_pickup_q": "1",
+    "terminal_partial_q": "2",
+    "sum_q": "3",
+    "opening_bar": {
+      "id": "P001",
+      "physical_bar": 1,
+      "kind": "pickup",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "P001 contains one filled, stemmed, unbeamed chord on each staff after the 3/4 sign and before barline x 454. There is no flag, beam, or augmentation dot. That is one quarter-length, not a full 3/4 bar.",
+      "evidence_box_px": [
+        390,
+        100,
+        460,
+        300
+      ],
+      "evidence_space": "page_px"
+    },
+    "terminal_bar": {
+      "id": "P042",
+      "physical_bar": 42,
+      "kind": "terminal_partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 2,
+      "system": 8,
+      "crop_path": "source_crops/system_08.png",
+      "evidence": "P042, between barline x 1520 and the final thin-thick barline, holds two separate filled quarter-notes on each staff and no rest or third event between them. The bar is shorter than the full bars beside it. Capacity is 2 quarter-lengths.",
+      "evidence_box_px": [
+        1520,
+        1840,
+        1645,
+        2110
+      ],
+      "evidence_space": "page_px"
+    },
+    "note": "Pickup of 1 quarter plus terminal partial of 2 quarters equals the printed 3/4 meter. At the double barline, P017 holds 2 quarters and P018 holds 1 quarter; 2 + 1 = 3, the same printed meter.",
+    "exception_evidence": null,
+    "ok": true
+  },
+  "repeats": [],
+  "clef_changes": [
+    {
+      "physical_bar": 8,
+      "staff": "staff2",
+      "sign": "G",
+      "line": 2,
+      "onset_q": "2",
+      "page": 1,
+      "system": 2,
+      "evidence_box_px": [
+        689,
+        510,
+        731,
+        590
+      ],
+      "evidence": "Four eighth-notes occupy offsets 0, 1/2, 1, and 3/2. The treble clef precedes the following dotted eighth at offset 2. The eighth at 3/2 stays in the upper staff.",
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "is_clef_change": true
+    },
+    {
+      "physical_bar": 9,
+      "staff": "staff2",
+      "sign": "F",
+      "line": 4,
+      "onset_q": "2",
+      "page": 1,
+      "system": 2,
+      "evidence_box_px": [
+        961,
+        516,
+        1003,
+        590
+      ],
+      "evidence": "Two quarter-note attacks in treble occupy offsets 0 and 1. The bass clef follows the second quarter and precedes the third-quarter chord at offset 2.",
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "is_clef_change": true
+    },
+    {
+      "physical_bar": 16,
+      "staff": "staff2",
+      "sign": "G",
+      "line": 2,
+      "onset_q": "2",
+      "page": 2,
+      "system": 3,
+      "evidence_box_px": [
+        1487,
+        294,
+        1529,
+        374
+      ],
+      "evidence": "Four beamed eighth-notes occupy offsets 0, 1/2, 1, and 3/2. The dotted eighth after the new treble clef begins at offset 2. The next system reprints this treble clef.",
+      "crop_path": "source_crops/system_03.png",
+      "evidence_space": "page_px",
+      "is_clef_change": true
+    },
+    {
+      "physical_bar": 17,
+      "staff": "staff2",
+      "sign": "F",
+      "line": 4,
+      "onset_q": "2",
+      "page": 2,
+      "system": 4,
+      "evidence_box_px": [
+        388,
+        657,
+        430,
+        731
+      ],
+      "evidence": "Bass clef on the lower staff at the end of P017, immediately left of the double barline (strokes x 432-437), after that bar's two quarter-lengths. Onset 2. The following systems open in bass.",
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "is_clef_change": true
+    }
+  ],
+  "system_opening_reprints": [
+    {
+      "system": 1,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          286,
+          108,
+          328,
+          188
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          288,
+          218,
+          330,
+          292
+        ]
+      },
+      "crop_path": "source_crops/system_01.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 1,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          170,
+          390,
+          212,
+          470
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          168,
+          516,
+          210,
+          590
+        ]
+      },
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 7,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 3,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          165,
+          164,
+          207,
+          244
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          165,
+          305,
+          207,
+          379
+        ]
+      },
+      "crop_path": "source_crops/system_03.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 12,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          164,
+          494,
+          206,
+          574
+        ]
+      },
+      "staff2": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          162,
+          651,
+          204,
+          731
+        ]
+      },
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 17,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          166,
+          843,
+          208,
+          923
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          165,
+          984,
+          207,
+          1058
+        ]
+      },
+      "crop_path": "source_crops/system_05.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 22,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          165,
+          1174,
+          207,
+          1254
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          163,
+          1340,
+          205,
+          1414
+        ]
+      },
+      "crop_path": "source_crops/system_06.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 27,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          163,
+          1524,
+          205,
+          1604
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          163,
+          1667,
+          205,
+          1741
+        ]
+      },
+      "crop_path": "source_crops/system_07.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 32,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          164,
+          1849,
+          206,
+          1929
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          162,
+          2018,
+          204,
+          2092
+        ]
+      },
+      "crop_path": "source_crops/system_08.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 37,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    }
+  ],
+  "section_landmarks": [
+    {
+      "kind": "double_barline",
+      "at_physical_bar": 17,
+      "after_physical_bar": 17,
+      "before_physical_bar": 18,
+      "page": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "Two thin full-height strokes, x 432-433 and x 436-437, form one double barline between P017 and P018. No repeat dots are printed on it. The key signature does not change.",
+      "evidence_box_px": [
+        420,
+        500,
+        450,
+        730
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "DOUBLE_BARLINE"
+      ]
+    },
+    {
+      "kind": "final_barline",
+      "at_physical_bar": 42,
+      "after_physical_bar": 42,
+      "page": 2,
+      "system": 8,
+      "crop_path": "source_crops/system_08.png",
+      "evidence": "Thin stroke x 1626-1628 and thick stroke x 1632-1638 close P042 and the piece. No repeat dots are printed. The locked boundary is x 1635, inside the thick stroke.",
+      "evidence_box_px": [
+        1610,
+        1860,
+        1650,
+        2100
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "FINAL_BARLINE"
+      ]
+    }
+  ],
+  "checked_utc": "2026-10-03T22:48:04.031627+00:00",
+  "section_split_vs_meter": {
+    "meter_capacity_q": "3",
+    "before_double_bar_q": "2",
+    "after_double_bar_q": "1",
+    "sum_q": "3",
+    "before_double_bar": {
+      "id": "P017",
+      "physical_bar": 17,
+      "kind": "split_partial",
+      "capacity_q": "2",
+      "capacity_plain": "2 quarter-note beats",
+      "page": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P017, between barline x 157 and the double barline at x 432, holds two filled, stemmed, unbeamed notes on each staff. There is no rest, beam, flag, dot, or third event. That is two quarter-lengths. The bass clef stands after those notes, immediately left of the double barline.",
+      "evidence_box_px": [
+        157,
+        448,
+        432,
+        778
+      ],
+      "evidence_space": "page_px"
+    },
+    "after_double_bar": {
+      "id": "P018",
+      "physical_bar": 18,
+      "kind": "section_pickup",
+      "capacity_q": "1",
+      "capacity_plain": "1 quarter-note beat",
+      "page": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence": "P018, between the double barline (strokes x 432-437) and barline x 567, holds one beamed pair of eighth-notes on each staff and no rest or further event before that barline. Two eighth-lengths are one quarter-length.",
+      "evidence_box_px": [
+        438,
+        448,
+        567,
+        778
+      ],
+      "evidence_space": "page_px"
+    },
+    "note": "P017 holds 2 quarters and P018 holds 1 quarter. 2 + 1 = 3, the printed 3/4 meter, split by the thin-thin double barline. No repeat dots are printed.",
+    "ok": true
+  }
+}

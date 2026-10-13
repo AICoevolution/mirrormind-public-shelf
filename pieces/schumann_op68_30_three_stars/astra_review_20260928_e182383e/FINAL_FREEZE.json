@@ -1,0 +1,93 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "COMPLETE",
+  "created_utc": "2026-09-28T10:14:36.241849+00:00",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schumann_op68_30_three_stars.musicxml",
+  "primary_xml_sha256": "98e5bae5b6af62d0538c9170ee96026bdd75150a2e8e2ee3613e7f63968e554d",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/proper.json",
+        "validation/final/frozen_spec_application_check.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/independent_playback_comparison.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/viewer_mapping_check.json",
+        "validation/render_final/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/essential_notation_rendering.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/layer_apply_checks.json",
+        "validation/final/core_export.json"
+      ]
+    },
+    "MARKS": {
+      "status": "BLOCKED",
+      "reason": "other-notation dotted connectors remain outside the MARKS layer; tested Apply endpoints pass but no complete lossless MARKS claim.",
+      "evidence": [
+        "validation/final/layer_apply_checks.json",
+        "validation/final/marks_export.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/layer_apply_checks.json",
+        "validation/final/route_export.json"
+      ]
+    }
+  },
+  "phase_freezes": {
+    "reviewer/PHASE1_FREEZE.md": "0549e5de26ed37f2a88e2cb1d34f63d4597a723fd5728c157b6d8cfb6f3bdfcf",
+    "reviewer/PHASE2_FREEZE.md": "595cc999eb510f69d1773dcb80582842d74e7764a9421fd21b88a5016d7ed4a3",
+    "reviewer/PHASE3_FREEZE.md": "47189acd3aee6e018b50e1374c95ad858bdbdcdf821ac5b82221ec49152cf4ee",
+    "reviewer/phase1_hashes.json": "5d0bbdcb53d11d505f522860793931305cd91bae52f6a939a7436864b2b87569",
+    "reviewer/phase2_hashes.json": "545569f25e730196771b7c496caa3f1731c3b5b705ff2752a41aa2f38984b304",
+    "reviewer/phase3_hashes.json": "3079aa56eb0451ed27dad6ea55cc36c016c6952aec68151e8ade06843a68884b"
+  },
+  "files": {
+    "delivery_final/analysis_metadata.json": "f46c88cf60ca4c696e7e7763870958a3cab133d0da4ebf7748f3c4ba91351fc1",
+    "delivery_final/CORE.sep": "a7bc2db0f054ca25b4a0f5cbacbee546fc0ae75dd5892d54916eb38d5bf75d2c",
+    "delivery_final/exact_event_ledger.json": "e005c828982469f3b4b25dca79a4014b191663dd66407f94d195a8c6fbe1db00",
+    "delivery_final/exact_mark_ledger.json": "2173518335a72e20e956aec004dbe6d20d15f2ca1f61d60058f6f8b01ff31563",
+    "delivery_final/layer_readiness.json": "33b0d58e76229b65b78c5cc292240acdaccc4b53328bc90728da2888cffe686e",
+    "delivery_final/MARKS.sep": "48869b7d74fabe1e1680eea970303ec3d87a48d8ace845330d68a4cb41cea70b",
+    "delivery_final/playback_schedule.json": "07cf20a185f3d75bc1792fc9494efc21a810eaca179e23287c9d79884ce11b82",
+    "delivery_final/print_member_to_xml_id.json": "14d6448c19b20c3dc31822d1850160d03dd62a8a7814a2d0a6d554f84483746c",
+    "delivery_final/ROUTE.sep": "12bfddb09fc0abf7567b5df28b569fadea57c442979ecc68224b91db825ba451",
+    "delivery_final/route_metadata.json": "634f6cd95fcab8975990aaa33105e1272227ca73abe1240b26720b1e3bcfb68e",
+    "delivery_final/UNVERIFIED_schumann_op68_30_three_stars.musicxml": "98e5bae5b6af62d0538c9170ee96026bdd75150a2e8e2ee3613e7f63968e554d",
+    "delivery_final/voice_topology.json": "6b3a0a6bf2328ce442edd14fcd67474262146b35f936625a72379f6e45a62da7"
+  },
+  "human_outcome": null,
+  "stop_reason": null,
+  "prior_review": "astra_review_20260928_fe9e6170"
+}

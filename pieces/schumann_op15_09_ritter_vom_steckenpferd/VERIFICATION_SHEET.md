@@ -1,10 +1,9 @@
-# Legacy shelf snapshot — schumann_op15_09_ritter_vom_steckenpferd
+# Public evidence — schumann_op15_09_ritter_vom_steckenpferd
 
-This is not the current full verification-evidence profile. The piece was published on the production shelf and is VERIFIED/PUBLISHED in the DEV queue, but its older run lacks one or more artifacts now required by the modern exporter.
+Published score: `published.musicxml`
 
-Modern-profile blocker: delivery manifest has no hashed files
+Published XML SHA-256: `0c47b070dafc991054fd3888ae1e4a7baa0207b3a56e9a90f92cb2264a2d12bf`
 
-Published MusicXML SHA-256: `0c47b070dafc991054fd3888ae1e4a7baa0207b3a56e9a90f92cb2264a2d12bf`  
-Manifest SHA-256: `bea166f7a1eb025b399f48cb36691cd20385ae490e61948ffc62a9008c959c0a`
+Recorded reviewer primary: `astra_review_20261009_526a32ff/delivery_final/UNVERIFIED_Schumann_Op15_09_Ritter_vom_Steckenpferd_Astra_import.musicxml`. Publication binding: `ledger_head_plus_published_namecard`.
 
-No source scan, page crop, or raw reader file is redistributed here.
+Review files document earlier pipeline decisions and can retain UNVERIFIED names or provisional findings. SHELF_RECORD.json records the published shelf metadata; this export grants no new approval. The manifest records every evidence file hash. Original scans and raw model transcripts are excluded.

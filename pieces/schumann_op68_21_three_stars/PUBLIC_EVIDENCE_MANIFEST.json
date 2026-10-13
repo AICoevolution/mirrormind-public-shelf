@@ -1,26 +1,63 @@
 {
-  "schema": "mirrormind_public_evidence.legacy.v1",
-  "profile": "legacy_shelf_snapshot",
+  "schema": "mirrormind_public_evidence.v2",
   "piece_id": "schumann_op68_21_three_stars",
+  "profile": "validated_delivery",
   "queue_status_at_export": "VERIFIED",
-  "created_utc": "2026-10-11T06:04:37.620562+00:00",
-  "standard_profile_blocker": "delivery manifest has no hashed files",
-  "limitations": [
-    "This piece predates one or more current evidence-profile gates.",
-    "Absence of a frame freeze or canonical delivery manifest is not backfilled.",
-    "This bundle proves the exact published PROD MusicXML and public shelf metadata only.",
-    "The source scan, page crops, and raw reader files are not redistributed."
-  ],
-  "files": [
-    {
-      "path": "schumann_op68_21_three_stars.musicxml",
-      "bytes": 142953,
-      "sha256": "20c44f9cfdbe43c7de27f45c4c1b719efba565305e5ae958de9f97946cc92c80"
-    },
-    {
-      "path": "SHELF_RECORD.json",
-      "bytes": 1703,
-      "sha256": "6cc0c14f207e5d993f89b182759bd5e00549e4231a0a07f96e5e527d978c9b1d"
-    }
-  ]
+  "published_score": "published.musicxml",
+  "published_xml_sha256": "29d811178f78e43b81bcec52d0de1c2982b4731bc0ca4b8820960c151d545caf",
+  "published_score_alias": "schumann_op68_21_three_stars.musicxml",
+  "reviewer_primary": "astra_stage5_recheck_20260921_04/juan_resolution_02/delivery_final/Schumann_Op68_21_Three_Stars_Juan_Corrected.musicxml",
+  "source_reference": {
+    "scan_url": "https://imslp.org/wiki/Special:ReverseLookup/890574",
+    "scan_sha256": "63601911b6c3193ea08785db535e066169f2b9411fa42b57593fb414c8a02c6d",
+    "source_citation": "G. Schirmer (1946), ed. Harold Bauer (1873–1951)",
+    "scan_redistributed": false,
+    "public_repository": "https://github.com/AICoevolution/mirrormind-public-shelf/tree/main/pieces/schumann_op68_21_three_stars",
+    "pipeline": "ensemble_v1"
+  },
+  "publication_binding": "ledger_head_plus_published_namecard",
+  "files": {
+    "astra_stage5_recheck_20260921_04/delivery_final/UNVERIFIED_Schumann_Op68_21_Three_Stars_Astra_import.musicxml": "47b57f4fc59af0813c817caca894b1e2f351f13ffed374e37695d85b74254b06",
+    "astra_stage5_recheck_20260921_04/FINAL_FREEZE.json": "38e80b81af1c2fb877d3b21ee6e63ac34ce88a0ed8c0bd0a9766eb500fa54ee3",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/checks/focused_visual_recheck.json": "17de36cd348c4335b95e6a911f1a5b6a61213edb52c8711dbd7ad7843ad27f11",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/checks/human_correction_audit.json": "a404923b38f3d7b1dc4c8f69ce5c7052f626cac46aba104784ce8e8e24433f42",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/checks/post_astra_consumer_recheck.json": "1933ef607e4b0c23dc9c3ae280284792ac8135591d5ae1d41277234b9651395d",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/delivery_final/Schumann_Op68_21_Three_Stars_Juan_Corrected.musicxml": "ceea3df6925bf4f4a5284478f4273a764fa8bddd76d1ab092a589f7e5f3ca266",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/FINAL_FREEZE.json": "f8346a4f6f0accf031bc1bc45bc4421a16373f96b02ae7a919206c8731e13cd1",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/JUAN_DECISIONS.json": "0511da11c32b4bedd76fccdce597ecc8a19d919c627f16abcda36aa15fc5a7dd",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/REVIEW.md": "0dd2d27ec45417a16d8282f531e29c9aa6d2255a3e3ae1d9a28c17a2e87b08e0",
+    "astra_stage5_recheck_20260921_04/juan_resolution_02/supervisor_delivery_manifest.json": "a986b815c6259460192dc701da37f9a06b92d2c0af46835d7f348947b71e6597",
+    "audit_config.json": "f21074c56bdad9723cd96baa466dc9a6aca6fc31b8620995afa9e1a6c3ecb459",
+    "baseline_verification.json": "ffef864e409ff496d44e20d9df786a9e1b03cc97e54bffc809c2eb2cea6c91f6",
+    "frame_verification/freeze.json": "a24935b2975e8bb6432cff205f0acc886c0fa04e06d3df663c851302faf6e38e",
+    "frame_verification/human_signoff.json": "bf36e3ef49432fb7a7c8984097cedc7ad2ef4eff17449efddabe3713831088bd",
+    "frame_verification/index.html": "f24890a88ae5b8238afe18f4ce03b78a84590cd2f966c89e596a9a78c3cb22a4",
+    "frame_verification/report.json": "7024953dbb374716169c24bf069e749ec80a2b52bdb800dd6088f9001e7d563a",
+    "frame_verification/request.json": "ec5312d0181aea1c1b59e718baf61e1cbfeb87fdb6c088bcf18100948b1a8cd7",
+    "frame_verification/request_freeze.json": "9078608171be9a0c36a80056873159c87a2e2630d24214debeb6a5ed9572bd54",
+    "frame_verification/response.json": "1b868c0b7b04c3fc81808140d533b0cb98547d1a8fb7ee15f86e1cdccc036d2b",
+    "frame_verification/system_01_annotated.png": "deb2e8922b754ea5b538c8c1f919e0d6588b5cf1df8a4061968884e2bd50a004",
+    "frame_verification/system_01_crop_boundary.png": "f428f51390299cc2f6435604ae7aca662e57b6e850fc8e15543193c716d3ae9e",
+    "frame_verification/system_02_annotated.png": "1532ec098867199f42ebb0e454ba321cdbca8626d242cc49300a0c42f0abab3b",
+    "frame_verification/system_02_crop_boundary.png": "3dc88a4de721004591b8dc075b5a019f1d4859aad28aec6ab0db761c6012d5ec",
+    "frame_verification/system_03_annotated.png": "77b48388295aa1ba625a22435c261a796f6745e3adcfb62166fb7bfbcf47c929",
+    "frame_verification/system_03_crop_boundary.png": "cf7f16faa62e0074de59a8d014ae784af218e26ae90a07f50e23fc7dc56bcc1b",
+    "frame_verification/system_04_annotated.png": "b1819203cc451011635e33e3db16728bc4af12451e1b26f87c5c02a49d2bcc5a",
+    "frame_verification/system_04_crop_boundary.png": "0e0a1cb7e714d67522af292165876254df51a1e7f3ec179eb80d4e9319baaaa9",
+    "frame_verification/system_05_annotated.png": "2885eaf3be7cab6ca2e96df0000ecb5ca22679a2e6cc2f025dd8738203b88a30",
+    "frame_verification/system_05_crop_boundary.png": "ecf0c6f2f7484d4db00ef94ed09536ec7e89c0eb8f00c8c6350d52c71615762c",
+    "frame_verification/validation.json": "faeea02912b3a8e01b23232afbb6251e26698c8364458f86a5753f6bbd3edd77",
+    "frame_visual_verification.json": "6c2118783f05215704aa048726a279fdac145118410d6396cd6a1b9bdf112fc7",
+    "parent_controls_freeze.json": "3daad95b0957b0dc509d2cf226cd231a3e7294700dbe78cc7b5de2a836a0c0f6",
+    "physical_score_lock.json": "2440159961aa1bb47559ab5f15c9609ea8c05495c19aa5674e583702f9cb3a32",
+    "prep_manifest.json": "cb9511e9801a65fd08889d32e613154e1d4878b7f9dab181f6cfd478fd5408d8",
+    "published.musicxml": "29d811178f78e43b81bcec52d0de1c2982b4731bc0ca4b8820960c151d545caf",
+    "schumann_op68_21_three_stars.musicxml": "29d811178f78e43b81bcec52d0de1c2982b4731bc0ca4b8820960c151d545caf",
+    "SHELF_RECORD.json": "e4683b9beba5a3bd04934742c406f7149d8bdebb211c7e6cf0e22c7d9ea369b1",
+    "source_agent/ensemble_disagreements.json": "5464c31045f3402358a837de718c404b1b3815d99a4765d70027e2d8084c43af",
+    "source_agent/ensemble_manifest.json": "b786b7cd04ad2d87f4dc8d46d4f63aa61c18ea9da4d9ad7876a17a37f02ecaee",
+    "source_agent/FREEZE.json": "b9ec6d1acdc7ec3c080772ac404e9697f9bf073e611e336bbd6650190c0c649c",
+    "source_agent/provenance_ledger.json": "44d1045ac4f8dea32d2736b5b66b0380f0189ae28bc920b7e8ee4cc04d70622d"
+  },
+  "scope": "Published score and curated existing evidence; historical UNVERIFIED filenames retain their original meaning. No new approval is granted."
 }

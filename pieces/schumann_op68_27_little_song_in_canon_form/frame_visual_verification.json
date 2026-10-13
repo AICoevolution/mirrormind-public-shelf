@@ -1,0 +1,406 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_27_little_song_in_canon_form",
+  "revision": 4,
+  "authority": "print_only",
+  "source_pdf_sha256": "07e3de3f17c580de29a80e6402ec3b930942638d0f1f1a2befbb0937e1475de4",
+  "page_image_sha256": {
+    "page-1": "89a3b270d69336d0fae87c10dde9f842c162ab0dccb9e73e06dabf33df80bf2a"
+  },
+  "printed_meter": "2/4 at the opening on both staves; only staff meter glyph",
+  "physical_bar_count": 48,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "flags": [
+        "PICKUP",
+        "OPENING_SIGNATURE"
+      ],
+      "print_plain": "After 2/4 with no key signature, one eighth: RH G#4 with a note-accidental sharp under p, against an LH eighth rest. Not a complete 2/4.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence_box_px": [
+        220,
+        290,
+        379,
+        535
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 29,
+      "capacity_q": "3/2",
+      "kind": "first-section terminal partial three eighths",
+      "flags": [
+        "PARTIAL",
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "print_plain": "The first section ends with three eighth-note units on both staves: a dotted-quarter line against three moving eighths, followed by a light-light double bar and cancellation naturals. Not a complete 2/4.",
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence_box_px": [
+        1458,
+        70,
+        1640,
+        340
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 30,
+      "capacity_q": "1/2",
+      "kind": "second-section pickup",
+      "flags": [
+        "PICKUP",
+        "KEY_CHANGE"
+      ],
+      "print_plain": "After the section double bar and cancellation naturals, system 4 opens with no key signature and one eighth under p before the first measure barline at x=271. Not a complete 2/4.",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "evidence_box_px": [
+        139,
+        80,
+        271,
+        360
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 48,
+      "capacity_q": "3/2",
+      "kind": "terminal partial three eighths",
+      "flags": [
+        "PARTIAL",
+        "FINAL_BARLINE"
+      ],
+      "print_plain": "Final region is three eighth-note units in both hands (sounding note then two eighth rests) under pp, closed by a thin-thick final barline. Not a complete 2/4.",
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence_box_px": [
+        1512,
+        80,
+        1680,
+        360
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "printed_key_changes": [
+    {
+      "physical_bar": 18,
+      "from_fifths": 0,
+      "fifths": 3,
+      "label": "0 sharps to 3 sharps (A major / F-sharp minor)",
+      "flags": [
+        "KEY_CHANGE"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "evidence": "At the start of P018, after the barline at x=1288, both staves print a new three-sharp key signature (F#, C#, G#) before the mf music. Opening and systems 1-2 until this barline have no key signature.",
+      "evidence_box_px": [
+        1288,
+        70,
+        1380,
+        340
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 30,
+      "from_fifths": 3,
+      "fifths": 0,
+      "label": "3 sharps back to no sharps",
+      "flags": [
+        "KEY_CHANGE"
+      ],
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "glyph_crop_path": "source_crops/system_03.png",
+      "onset_q": "0",
+      "evidence": "After the P029 light-light double bar, system 3 prints three cancellation naturals on each staff. System 4 then opens with G/F clefs and no key signature; the new 0-sharp key governs P030.",
+      "evidence_box_px": [
+        139,
+        80,
+        230,
+        360
+      ],
+      "evidence_space": "system_crop",
+      "glyph_evidence_box_px": [
+        1575,
+        70,
+        1660,
+        340
+      ],
+      "glyph_evidence_space": "system_crop"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "first_section_P001_plus_P029",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "pairs_to_printed_meter",
+      "evidence": "P001 is one eighth before the first barline. P029 is the three-eighth first-section ending: a dotted-quarter line against three moving eighths on both staves, closed by a light-light double bar. Together they fill one 2/4 bar.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "close_crop_path": "source_crops/system_03.png"
+    },
+    {
+      "pair": "second_section_P030_plus_P048",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "pairs_to_printed_meter",
+      "evidence": "P030 after the double bar is one eighth under p before x=271. P048 is three eighths. 1/2 + 3/2 = 2.",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "close_crop_path": "source_crops/system_05.png"
+    }
+  ],
+  "repeats": [],
+  "repeat_boundary_checks": [],
+  "special_barlines": [
+    {
+      "after_physical_bar": 29,
+      "kind": "section_double",
+      "flags": [
+        "DOUBLE_BARLINE"
+      ],
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "System 3 closes P029 with a light-light double bar on both staves at x=1576/1582. No repeat dots. P029 spans three eighth-note units on both staves: a dotted-quarter line against three moving eighths. Three cancellation naturals follow the double bar.",
+      "evidence_box_px": [
+        1458,
+        70,
+        1640,
+        340
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "after_physical_bar": 48,
+      "kind": "final",
+      "flags": [
+        "FINAL_BARLINE"
+      ],
+      "page": 1,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "evidence": "System 5 closes P048 with a thin-thick final barline on both staves at x=1628-1636. P048 is a three-eighth terminal under pp: one sounding eighth in each staff followed by two eighth rests. It is not a complete 2/4 region.",
+      "evidence_box_px": [
+        1512,
+        70,
+        1680,
+        340
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          300,
+          210,
+          370
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of the 2/4 glyph. No printed key signature."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          455,
+          210,
+          535
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of the 2/4 glyph. No printed key signature."
+      }
+    },
+    "changes": [],
+    "printed_change_count": 0,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        9
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        608
+      ],
+      "barline_boundaries_x_px": [
+        220,
+        379,
+        527,
+        692,
+        839,
+        1001,
+        1154,
+        1302,
+        1457,
+        1637
+      ],
+      "printed_region_count": 9,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        10,
+        19
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        608,
+        1006
+      ],
+      "barline_boundaries_x_px": [
+        138,
+        365,
+        495,
+        608,
+        747,
+        873,
+        992,
+        1110,
+        1288,
+        1499,
+        1639
+      ],
+      "printed_region_count": 10,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        20,
+        29
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        1006,
+        1402
+      ],
+      "barline_boundaries_x_px": [
+        139,
+        417,
+        561,
+        684,
+        816,
+        936,
+        1087,
+        1219,
+        1346,
+        1458,
+        1579
+      ],
+      "printed_region_count": 10,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        30,
+        39
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        1402,
+        1798
+      ],
+      "barline_boundaries_x_px": [
+        139,
+        271,
+        418,
+        582,
+        724,
+        889,
+        1034,
+        1178,
+        1329,
+        1472,
+        1640
+      ],
+      "printed_region_count": 10,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        40,
+        48
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        1798,
+        2295
+      ],
+      "barline_boundaries_x_px": [
+        142,
+        377,
+        550,
+        705,
+        862,
+        1030,
+        1195,
+        1361,
+        1512,
+        1633
+      ],
+      "printed_region_count": 9,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Printed meter is 2/4 throughout; only the system-1 opening glyph",
+    "No printed key signature at the opening; first RH sharp is a G# accidental",
+    "P001 is a one-eighth pickup; P030 is a one-eighth second-section pickup",
+    "P018 prints a key change from 0 sharps to 3 sharps; KEY_CHANGE",
+    "Cancellation naturals after the P029 double bar; P030 restores 0 sharps; KEY_CHANGE",
+    "P048 is a three-eighth terminal; P001+P048 and P030+P048 each pair to 2/4",
+    "Five grand staves 9+10+10+10+9 = 48 regions",
+    "No repeats; no mid-piece clef or meter change",
+    "Page canvas keeps plate 41459; no later movement to trim",
+    "Astra Phase 1 evidence-description repair: P048 contains one sounding eighth followed by two eighth rests in each staff",
+    "Juan revision 3 rejection: P029 is a three-eighth first-section ending, with a dotted-quarter line against three moving eighths on both staves"
+  ],
+  "revision_from": 3
+}

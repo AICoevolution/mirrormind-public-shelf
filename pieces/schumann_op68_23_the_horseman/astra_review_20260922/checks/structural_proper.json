@@ -1,0 +1,60 @@
+{
+  "verdict": "PROPER",
+  "over_full": [],
+  "short": [
+    {
+      "part": "P1",
+      "measure": "m1",
+      "missing_quarters": 2.5,
+      "bar_quarters": 3.0,
+      "pickup": true,
+      "declared_partial": true,
+      "partner": null
+    },
+    {
+      "part": "P1",
+      "measure": "m10",
+      "missing_quarters": 2.5,
+      "bar_quarters": 3.0,
+      "pickup": false,
+      "declared_partial": true,
+      "partner": null
+    },
+    {
+      "part": "P1",
+      "measure": "m18",
+      "missing_quarters": 0.5,
+      "bar_quarters": 3.0,
+      "pickup": true,
+      "declared_partial": true,
+      "partner": "m19"
+    },
+    {
+      "part": "P1",
+      "measure": "m19",
+      "missing_quarters": 2.5,
+      "bar_quarters": 3.0,
+      "pickup": true,
+      "declared_partial": true,
+      "partner": "m18"
+    },
+    {
+      "part": "P1",
+      "measure": "m57",
+      "missing_quarters": 1.5,
+      "bar_quarters": 3.0,
+      "pickup": false,
+      "declared_partial": true,
+      "partner": null
+    }
+  ],
+  "cursor_slips": [],
+  "first_slip_measure": null,
+  "notes": [
+    "m1 is short by 2.5 — that is a pickup, and normal.",
+    "m10 is shorter than the active metre and is explicitly declared partial in the MusicXML — normal; verify its printed extent during visual review.",
+    "m18 is short by 0.5, and m19 holds exactly the rest of it — one bar split in two, and normal.",
+    "m19 is short by 2.5, and m18 holds exactly the rest of it — one bar split in two, and normal.",
+    "m57 is shorter than the active metre and is explicitly declared partial in the MusicXML — normal; verify its printed extent during visual review."
+  ]
+}

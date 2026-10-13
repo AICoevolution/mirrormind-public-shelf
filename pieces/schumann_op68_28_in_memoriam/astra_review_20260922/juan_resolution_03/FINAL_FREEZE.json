@@ -1,0 +1,68 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "UNVERIFIED_READY_FOR_JUAN_RECHECK",
+  "piece_id": "schumann_op68_28_in_memoriam",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "verified": false,
+  "publication_ready": false,
+  "publication_approved": false,
+  "published": false,
+  "human_outcome": null,
+  "human_recheck_required": true,
+  "primary_xml": "delivery_final/Schumann_Op68_28_In_Memoriam_Juan_Corrected.musicxml",
+  "primary_xml_sha256": "68929022cf47b7768fd1e904f9795974f59c49b83d7423bd4a4d9232e92f266f",
+  "parent_checkpoint": "astra_review_20260922/FINAL_FREEZE.json",
+  "parent_checkpoint_sha256": "35778cacad58ffdac25fa9303c8d39674d4efccf2c68e15b3cbb48a84c7e61d6",
+  "parent_primary": "astra_review_20260922/delivery_final/UNVERIFIED_schumann_op68_28_in_memoriam.musicxml",
+  "parent_primary_sha256": "329155839f66838f10df60f02126dbe17e4a968a88d856f23348adc27ab543ef",
+  "human_readiness": {
+    "proper": {
+      "status": "PRINT_LOCKED_PARTIAL_PASS",
+      "evidence": [
+        "checks/exact_diff_audit.json",
+        "checks/marks_engraving_recheck.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "checks/exact_diff_audit.json",
+        "checks/post_astra_consumer_recheck.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "checks/post_astra_consumer_recheck.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "checks/focused_visual_recheck.json",
+        "rendered_final/report.json",
+        "rendered_final/full_score.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "checks/focused_visual_recheck.json",
+        "rendered_final/P013_P014_focus.png",
+        "checks/marks_engraving_recheck.json"
+      ]
+    }
+  },
+  "checks": {
+    "exact_diff": "PASS",
+    "post_astra": "PASS",
+    "focused_visual": "PASS",
+    "marks": "PASS",
+    "engraving": "PASS"
+  },
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "1e04556c5544a1992a667dcbb942acacd9996cd6178641187a1a21aed17eedd1",
+  "frozen_utc": "2026-09-29T11:17:02.134457+00:00"
+}

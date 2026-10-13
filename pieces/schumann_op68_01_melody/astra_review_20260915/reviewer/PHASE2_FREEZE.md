@@ -1,0 +1,22 @@
+# Phase 2 — reader evidence freeze
+
+Completed before candidate access. All 20 phase-two allowed files match handoff SHA-256. No raw reader XML or unlisted system image was accessed. Reader claims include ordinal event/attribute/notation content sufficient to independently establish correspondence despite empty prepared maps.
+
+## Correspondence / all-region coverage
+See reviewer_reader_correspondence.json for every physical region. SmartScore and PlayScore ordinals 1–20 correspond to P001–P020 by their actual pitch/rhythm contours, with the entire upper staff absent in ordinals 1–5. Missing repeat tokens do NOT establish an unfolded reader: these twenty elements follow the twenty physical bars, including the distinct P005 and P020 cadences. Audiveris has only upper/lower first-bar pairs for the four systems: ordinals 1/2=P001, 3/4=P006, 5/6=P011, 7/8=P016. Both hands are incorrectly labelled staff 1. Its other physical bars are absent. This is a recoverable prepared-correspondence omission, not a reason to fabricate consensus or mutate the frozen map.
+
+S1 P001–P005: upper omission shared by SmartScore and PlayScore; Audiveris only P001. SmartScore P002 and latter P003 introduce false triplets from fingerings. PlayScore P003–P005 shift lower events and add rests. SmartScore P004 lower fourth eighth D4 conflicts with printed fourth eighth D4? Pixel recheck reserved; no consensus accepted. Upper printed P004 contains an accidental chord requiring direct review.
+S2 P006–P010: both main readers correspond by distinctive F5/E5/D5 rest, A5/G5/F5/E5, overlapping P008, return chord P009, and P010 neighbour figure. Both duplicate/converge D5 at P008 end across voices. SmartScore omits leading silence in its secondary voice; PlayScore supplies it. Audiveris P006 only.
+S3 P011–P015: both main readers match bar order by octave-leap accompaniment P011, cadence/rest P012, quarter/rest P013–P014 and ascent to P015. Audiveris P011 only. Agreement does not certify the marks.
+S4 P016–P020: both main readers map in order through overlapping P016, chord return P017, neighbour figure P018, octave accompaniment P019, final cadence P020. Audiveris P016 only. PlayScore inserts an upper rest at P016 final eighth while the print has D5 with upward flag. Rough ink at P018 does not establish a different duration.
+
+## Priorities and controls
+All ten priority questions answered in priority_answers.json. Baseline questions are generated under unsafe raw-ordinal alignment; MIDI disagreements cannot be read as physical disagreements until remapped. Baseline has 170 ask-now and 260 deferred items; the frozen priority list selects ten. These broad baseline statistics are evidence of misalignment, not a certification.
+Zero exact three-reader deterministic controls were supplied (empty controls.json). Independently checked all three parent print anchors: P001 upper E5 quarter onset0 PASS; P010 upper A4 eighth onset0 PASS; P020 upper D5 eighth onset0 PASS. No whole-score validation follows from these passes. The parent P020 prose omits intervening notes but its selected event is correct.
+
+## MARKS and ROUTE compared against Phase 1
+SmartScore: dynamics p at P001/P009/P017 survive but tempo/first-system upper marks omitted. False staccatos occur throughout; P009–P010 and P017–P018 lower phrases mislabelled ties. Slur starts often shifted to second note (P006/P007/P009/P014/P015); cross-system P015–P016 spans truncated. Phantom pedal at P007 not in print. Tuplet digits in P002/P003 are fingerings. Crescendo text fragments only partly captured. Diminuendo endpoints displaced; P015 onset omitted and P016 restarted. Backward repeat P004 missing, final barline P020 present.
+PlayScore: printed p at P001/P009/P017 survives. First-system upper marks missing. Accents missing or misread staccato; several lower phrase endpoints misplaced. P015–P016 cross-system slurs lost/broken; diminuendo starts at negative P007 onset and stops too early P008, second wedge absent. Tempo and crescendo words absent. P004 backward repeat missing, P020 final barline present.
+Audiveris: tempo 96 survives but at incorrect onset; text Moderato semplice survives. Isolated slur beginnings lack later endpoints because most bars absent; extraneous accent on lower P001 and staccato on P006. Misread scen-do as seen and p at P006 beat3. No reliable route coverage.
+
+No reader overrides direct pixels. Phase 1 tempo corrected in frozen ERRATUM_001.md after a focused enlargement: quarter=96. Human outcome null.

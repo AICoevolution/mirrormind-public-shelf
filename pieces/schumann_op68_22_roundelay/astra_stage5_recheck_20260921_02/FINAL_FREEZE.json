@@ -1,0 +1,287 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_Schumann_Op68_No22_Roundelay_Astra.musicxml",
+  "primary_xml_sha256": "d5f1c747dd020a137ba4bf85a0b4a454319260544aaef7de3ee2872e3630911b",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "proper": {
+        "verdict": "PROPER",
+        "over_full": [],
+        "short": [],
+        "cursor_slips": [],
+        "first_slip_measure": null,
+        "notes": [
+          "Every bar holds exactly its metre. The cursor will traverse from m1 beat 1 to the final beat without slipping — so what you hear from here is about the MUSIC, not the arithmetic."
+        ]
+      },
+      "capacity_errors": [],
+      "overlaps": [],
+      "regions": 48,
+      "written_quarters": "144",
+      "note_rest_elements": 701,
+      "pitched": 669,
+      "graces": 6,
+      "voice_census": [
+        {
+          "part": "P1",
+          "staff": "1",
+          "voice": "1",
+          "notes": 309,
+          "pitched": 304,
+          "empty": false
+        },
+        {
+          "part": "P1",
+          "staff": "1",
+          "voice": "2",
+          "notes": 103,
+          "pitched": 93,
+          "empty": false
+        },
+        {
+          "part": "P1",
+          "staff": "2",
+          "voice": "4",
+          "notes": 215,
+          "pitched": 202,
+          "empty": false
+        },
+        {
+          "part": "P1",
+          "staff": "2",
+          "voice": "3",
+          "notes": 68,
+          "pitched": 64,
+          "empty": false
+        },
+        {
+          "part": "P1",
+          "staff": "1",
+          "voice": "3",
+          "notes": 6,
+          "pitched": 6,
+          "empty": false
+        }
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "all_events_equal": true,
+      "expected_attacks": 589,
+      "actual_attacks": 589,
+      "route_equal": true,
+      "play_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "tempo_bpm": 114,
+      "base_schedule_bpm": 80,
+      "tie_errors": [],
+      "max_serialization_error_seconds": 0.0005000000000023874
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "playback_notes": 589,
+      "mapped_notes": 589,
+      "cursor_buckets": 249,
+      "cursor_mismatches": 0,
+      "vexflow_duration_checks": 663,
+      "vexflow_duration_mismatches": 0,
+      "prepared_core_unchanged": true,
+      "evidence": "render_checks/independent_02/report.json"
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "cross_staff_beam_groups": 4,
+      "exact_beam_members": 12,
+      "suppressed_isolated_flags": 12,
+      "positioned_rests": 14,
+      "notehead_collisions": 0,
+      "stem_collisions": 0,
+      "positive_control_old_collisions": 10,
+      "arpeggios": 7,
+      "grace_slurs": 4,
+      "below_staff_words": 5,
+      "evidence": [
+        "render_checks/independent_02/report.json",
+        "checks/rest_geometry_recheck.json",
+        "checks/focused_visual_recheck.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "all_ten_systems_inspected": true,
+      "evidence": "checks/focused_visual_recheck.json"
+    }
+  },
+  "layer_readiness": {
+    "xml_sha256": "d5f1c747dd020a137ba4bf85a0b4a454319260544aaef7de3ee2872e3630911b",
+    "CORE": {
+      "status": "PASS",
+      "fresh_lanes": [
+        "s1v1",
+        "s1v2",
+        "s1v3",
+        "s2v3",
+        "s2v4"
+      ],
+      "continuous_musical_lines": 4,
+      "rebuild_sounding_projection_exact": true,
+      "actual_noop_apply_byte_exact": true,
+      "warnings": [],
+      "scope": "Pitch/onset/duration/grace/tie multiplicities exact. No claim of engraving-identical MusicXML reconstruction from CORE text."
+    },
+    "MARKS": {
+      "status": "PASS",
+      "text_fixpoint": true,
+      "actual_apply_core_projection_exact": true,
+      "slur_spans_exact": 68,
+      "slur_endpoints_exact": 136,
+      "point_notation_member_and_attributes_exact": true,
+      "accents_above_at_original_ids": true,
+      "scope": "Actual unchanged export/apply checked for exact slur and point attachments/styles, tie/arpeggiate notation and musical projection."
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "actual_apply_semantic_fixpoint": true,
+      "play_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    "primary_MusicXML": {
+      "status": "READY_FOR_HUMAN_UNVERIFIED",
+      "hash_unchanged": true,
+      "playback": "PASS",
+      "viewer_fidelity": "PASS"
+    }
+  },
+  "voice_topology": "delivery_final/voice_topology.json",
+  "voice_topology_sha256": "4fc68cca38ed9ad3d759aa7cf212525ba8d2cdcc9f84a84d3d782f3a64028003",
+  "prior_astra_freeze_sha256": "7942f612a8eecd5a2ff180519d2791ffcc19264f5ea566a45cfe9c7664ba591f",
+  "prior_blocked_recheck_freeze_sha256": "24d3710032bff5abd284aa2f74f611646f529cd6eb8f950a71f01290aee20735",
+  "phase_freeze_bindings": {
+    "1": {
+      "PHASE1_FREEZE.json": "034861b9c2affc0b2e7c791dbd94b44477bdfde396dc3b18278e8b0354bb0555",
+      "PHASE1_FREEZE.md": "9443823a3ba8abb275a3bee378eaecf5e6d84ac04e794327caddcdbae9ff9dbf",
+      "phase1_hashes.json": "552a5dc03be3b55295c3c4fe8d81fb6c5933112d81b5a4ddf8f39c2462fb90dd"
+    },
+    "2": {
+      "PHASE2_FREEZE.json": "2ddb2ceb408a8f092a0ef852741a5633532f69341ac6755ded3aa4d014033e3b",
+      "PHASE2_FREEZE.md": "44927a60822a486a77c3015fa56007669ceb620efdc9433ca8234e0d615fd065",
+      "phase2_hashes.json": "f00249557a6b60da7c867ac3b24417fb63ae31b4219c36897eb27036cecfc6b8"
+    },
+    "3": {
+      "PHASE3_FREEZE.json": "7bdf18e72008a67107e26a54531239e27cce7982764091d8f2306b9fb9b68b3f",
+      "PHASE3_FREEZE.md": "a0e94c8084dc25365742120018b112dc8e269022c4384559b7bedbeb6ef2a693",
+      "phase3_hashes.json": "3dd5149a2e48fc649431cbf5cf357f6f4dbf2441385d50048c17fa5083404f9c"
+    }
+  },
+  "implementation_hashes": "checks/end_integrity.json",
+  "native_fixture_contract_scope": "checks/native_render_contract_scope.json",
+  "prior_reviews_preserved": true,
+  "musical_interpretation_reopened": false,
+  "xml_changed": false,
+  "remaining_print_uncertainties": "delivery_final/remaining_uncertainties.json",
+  "remaining_technical_blockers": [],
+  "human_outcome": null,
+  "published": false,
+  "created_utc": "2026-09-21T10:47:56.001348+00:00"
+}

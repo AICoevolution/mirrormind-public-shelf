@@ -1,0 +1,431 @@
+{
+  "schema": "reviewer-handoff.ensemble-v1",
+  "piece_id": "schumann_op68_07_hunting_song",
+  "status": "READY_FOR_ASTRA_REVIEWER",
+  "pipeline_mode": "ensemble_v1",
+  "coordinator": "parent Cursor Grok",
+  "source_agent": "ensemble_v1 / CURSOR_GROK+Gemini deterministic fusion",
+  "source_api_cost_usd": 0.06105375,
+  "api_calls": 2,
+  "bar_count": 30,
+  "expected_bars": 30,
+  "schema_valid": true,
+  "uncertainty_count": 112,
+  "duration_discrepancy_count": 0,
+  "freeze_state": "ENSEMBLE_CANDIDATE_FREEZE",
+  "candidate_packet_count": 5,
+  "reviewer_model": "Astra (pending; not contacted)",
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 3,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "missing_gemini_responses": 0,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "independent_visual_provider": {
+    "provider_id": "CURSOR_GROK",
+    "method": "fresh Cursor Grok general-purpose subagent",
+    "scope": "one context for this movement",
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": "13a86db06db1c07fd89cfd548c4e0563a7ca63765e2cfbdc6f75c49a0dfd2e8e"
+  },
+  "phases": {
+    "phase_1": {
+      "purpose": "Freeze a print-only structural, marks, and route inventory.",
+      "allowlist": [
+        {
+          "path": "source/printed_source.pdf",
+          "sha256": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a"
+        },
+        {
+          "path": "source_crops/page-1.png",
+          "sha256": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9"
+        },
+        {
+          "path": "source_crops/pages.json",
+          "sha256": "9ca63bc257bcb24a3a6e9020319e366f3f97e86c2157728e03f5a06b2fdffb63"
+        },
+        {
+          "path": "config.json",
+          "sha256": "8cdf95e80000c84e3faffa35a495eafbb3f6d3feb0ac845808ffdd917c817dfe"
+        },
+        {
+          "path": "physical_score_lock.json",
+          "sha256": "4ab88575cf7cd48a2adeb30bc97205c925648c1323a6ae159c43e48662e88b73"
+        },
+        {
+          "path": "reviewer_phase1_frame_lock.json",
+          "sha256": "d8151e0cf75b7f06e097ec4870f6533bc0ca155bda6438db90ad16a36bb4d9fa"
+        },
+        {
+          "path": "frame_visual_verification.json",
+          "sha256": "d6fbc38a08c7ab34b444d0739860b0ead6e9e4999387631da1b1ea052ad6e621"
+        }
+      ]
+    },
+    "phase_2": {
+      "purpose": "Expose reader/question evidence only after Phase 1 freeze.",
+      "allowlist": [
+        {
+          "path": "source/printed_source.pdf",
+          "sha256": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a"
+        },
+        {
+          "path": "source_crops/page-1.png",
+          "sha256": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9"
+        },
+        {
+          "path": "source_crops/pages.json",
+          "sha256": "9ca63bc257bcb24a3a6e9020319e366f3f97e86c2157728e03f5a06b2fdffb63"
+        },
+        {
+          "path": "config.json",
+          "sha256": "8cdf95e80000c84e3faffa35a495eafbb3f6d3feb0ac845808ffdd917c817dfe"
+        },
+        {
+          "path": "physical_score_lock.json",
+          "sha256": "4ab88575cf7cd48a2adeb30bc97205c925648c1323a6ae159c43e48662e88b73"
+        },
+        {
+          "path": "reviewer_phase1_frame_lock.json",
+          "sha256": "d8151e0cf75b7f06e097ec4870f6533bc0ca155bda6438db90ad16a36bb4d9fa"
+        },
+        {
+          "path": "frame_visual_verification.json",
+          "sha256": "d6fbc38a08c7ab34b444d0739860b0ead6e9e4999387631da1b1ea052ad6e621"
+        },
+        {
+          "path": "audit_config.json",
+          "sha256": "56fc2caf1e09e6f0421e75ccb4b52851aad05b8a6138899596718a41ffc71c2b"
+        },
+        {
+          "path": "reader_correspondence.json",
+          "sha256": "7bae5f1ad52361638eae1c1de8243a6ead1ef99216aa93f488901e24af2599ee"
+        },
+        {
+          "path": "question_packets/priorities.json",
+          "sha256": "f2f43737b325e4e3fd7581b4fdbc2750643c106438d253fb81402c6586bb4208"
+        },
+        {
+          "path": "question_packets/controls.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "question_packets/system_01.json",
+          "sha256": "f27e39a86ad7b8d4966bd4c6b3963b8f3f9809213657743a3e3de299e04670f8"
+        },
+        {
+          "path": "question_packets/system_02.json",
+          "sha256": "fee99de4aacc6c883e9612d98ad8d285c4d2cf981cd396d1e8a4926bb95be641"
+        },
+        {
+          "path": "question_packets/system_03.json",
+          "sha256": "38b5ee1b277825c2e58bd361cdb0bc5e3ac30458ff19725489e407205bae3f94"
+        },
+        {
+          "path": "question_packets/system_04.json",
+          "sha256": "bf52c51d5eeaf349efef759f71db217d184cfa0faee2d511411f760a4c9a3037"
+        },
+        {
+          "path": "question_packets/system_05.json",
+          "sha256": "bdc044d70d6259707585aa3136517af02cbf6a6366bc07792ef27dbf7b37d210"
+        },
+        {
+          "path": "question_packets/freeze.json",
+          "sha256": "bb468c1075055bac23d540e7e521eaa0b15fe78f80375cd4be1ecc7cb9a08650"
+        },
+        {
+          "path": "baseline/state.json",
+          "sha256": "f817060d62e1ab6ba58901b18a56dfe9613f57047f3144c1478423bd192f2d30"
+        },
+        {
+          "path": "baseline/questions.json",
+          "sha256": "43edbcef6b160a122d786c4a39976eb97309680b4dd0e78294e05d95c0cf7007"
+        },
+        {
+          "path": "reader_claims.json",
+          "sha256": "2121dbde6db7e162abd987bd3abfc35f16ceadc065df960820e82f3b617781db"
+        },
+        {
+          "path": "parent_controls.json",
+          "sha256": "7b6e5df581d02d728ee4b199336d768e192d66dd61911de973a3dcaf6bff4809"
+        }
+      ]
+    },
+    "phase_3": {
+      "purpose": "Expose the candidate and complete ensemble provenance/disagreements only after Phase 2 freeze.",
+      "allowlist": [
+        {
+          "path": "source/printed_source.pdf",
+          "sha256": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a"
+        },
+        {
+          "path": "source_crops/page-1.png",
+          "sha256": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9"
+        },
+        {
+          "path": "source_crops/pages.json",
+          "sha256": "9ca63bc257bcb24a3a6e9020319e366f3f97e86c2157728e03f5a06b2fdffb63"
+        },
+        {
+          "path": "config.json",
+          "sha256": "8cdf95e80000c84e3faffa35a495eafbb3f6d3feb0ac845808ffdd917c817dfe"
+        },
+        {
+          "path": "physical_score_lock.json",
+          "sha256": "4ab88575cf7cd48a2adeb30bc97205c925648c1323a6ae159c43e48662e88b73"
+        },
+        {
+          "path": "reviewer_phase1_frame_lock.json",
+          "sha256": "d8151e0cf75b7f06e097ec4870f6533bc0ca155bda6438db90ad16a36bb4d9fa"
+        },
+        {
+          "path": "frame_visual_verification.json",
+          "sha256": "d6fbc38a08c7ab34b444d0739860b0ead6e9e4999387631da1b1ea052ad6e621"
+        },
+        {
+          "path": "audit_config.json",
+          "sha256": "56fc2caf1e09e6f0421e75ccb4b52851aad05b8a6138899596718a41ffc71c2b"
+        },
+        {
+          "path": "reader_correspondence.json",
+          "sha256": "7bae5f1ad52361638eae1c1de8243a6ead1ef99216aa93f488901e24af2599ee"
+        },
+        {
+          "path": "question_packets/priorities.json",
+          "sha256": "f2f43737b325e4e3fd7581b4fdbc2750643c106438d253fb81402c6586bb4208"
+        },
+        {
+          "path": "question_packets/controls.json",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "path": "question_packets/system_01.json",
+          "sha256": "f27e39a86ad7b8d4966bd4c6b3963b8f3f9809213657743a3e3de299e04670f8"
+        },
+        {
+          "path": "question_packets/system_02.json",
+          "sha256": "fee99de4aacc6c883e9612d98ad8d285c4d2cf981cd396d1e8a4926bb95be641"
+        },
+        {
+          "path": "question_packets/system_03.json",
+          "sha256": "38b5ee1b277825c2e58bd361cdb0bc5e3ac30458ff19725489e407205bae3f94"
+        },
+        {
+          "path": "question_packets/system_04.json",
+          "sha256": "bf52c51d5eeaf349efef759f71db217d184cfa0faee2d511411f760a4c9a3037"
+        },
+        {
+          "path": "question_packets/system_05.json",
+          "sha256": "bdc044d70d6259707585aa3136517af02cbf6a6366bc07792ef27dbf7b37d210"
+        },
+        {
+          "path": "question_packets/freeze.json",
+          "sha256": "bb468c1075055bac23d540e7e521eaa0b15fe78f80375cd4be1ecc7cb9a08650"
+        },
+        {
+          "path": "baseline/state.json",
+          "sha256": "f817060d62e1ab6ba58901b18a56dfe9613f57047f3144c1478423bd192f2d30"
+        },
+        {
+          "path": "baseline/questions.json",
+          "sha256": "43edbcef6b160a122d786c4a39976eb97309680b4dd0e78294e05d95c0cf7007"
+        },
+        {
+          "path": "reader_claims.json",
+          "sha256": "2121dbde6db7e162abd987bd3abfc35f16ceadc065df960820e82f3b617781db"
+        },
+        {
+          "path": "parent_controls.json",
+          "sha256": "7b6e5df581d02d728ee4b199336d768e192d66dd61911de973a3dcaf6bff4809"
+        },
+        {
+          "path": "candidate_packets/system_01.json",
+          "sha256": "80efbdd8929ff3cdd4dd5857f54d2c007007f28bd7a47d0d99dd38e812d4889d"
+        },
+        {
+          "path": "candidate_packets/system_02.json",
+          "sha256": "5538081556be59a8932cbe352c9228dd7667e78e5c7a77c2677de04745995079"
+        },
+        {
+          "path": "candidate_packets/system_03.json",
+          "sha256": "d54716a03f4383c20b9b53511b7347a55169394e36073dc19fa1ff28a07122e4"
+        },
+        {
+          "path": "candidate_packets/system_04.json",
+          "sha256": "9b554fbd029c33a88d00fc27c8c64616ea2eb5ce7a6561298e522f2a75078b9c"
+        },
+        {
+          "path": "candidate_packets/system_05.json",
+          "sha256": "12db1dd76ae0c8c89aec367488b25ca0bf7aa3bdfe0128489fb49b54976306cb"
+        },
+        {
+          "path": "candidate_packets/comparison.json",
+          "sha256": "49734d49da4d0a8283b18dbb808406846fdd8d9b9a36c4661eef4a4b55d893cd"
+        },
+        {
+          "path": "candidate_packets/freeze.json",
+          "sha256": "312e108ba542808c171fa75a4d6a0c3cb3c396f3c95f6428b29d057c536c8fa3"
+        },
+        {
+          "path": "source_agent/UNVERIFIED_source.musicxml",
+          "sha256": "56147d71f744f8e0bfb3f54a56986e150f63ab1446e403aa0c126d6cc25e5ea7"
+        },
+        {
+          "path": "source_agent/CORE.sep",
+          "sha256": "2be1ec2fc39d6592f851590a95ca9a6c11b3dc600808125e4769edca4db45b89"
+        },
+        {
+          "path": "source_agent/MARKS.sep",
+          "sha256": "230ce832e4208d3242e081cc74c0be2c1e917658487906afe4eaf5c08560b864"
+        },
+        {
+          "path": "source_agent/ROUTE.sep",
+          "sha256": "211c6f21112d086667474408e7f7e9465c3779b41067c5c4c88c0cb3e3bfe86a"
+        },
+        {
+          "path": "source_agent/coverage.json",
+          "sha256": "c99e99075130af5f5596791ebfe75fb7ab1fbb51b657673ab27b73e36a296c37"
+        },
+        {
+          "path": "source_agent/uncertainties.json",
+          "sha256": "b98910fd9f8ea999fc5bfa2f8e1659eaa884c2f26311d24b23ed79b8870d5612"
+        },
+        {
+          "path": "source_agent/exact_event_ledger.json",
+          "sha256": "a1e1491b2846e7f210f94780beb43f02f71bd9c5f22bc6350dd4fb1fd3a2935c"
+        },
+        {
+          "path": "source_agent/exact_mark_ledger.json",
+          "sha256": "2d4266df9aa44df51ac67cc1a01e861458f40c681136032f4ef6e5180cd2462d"
+        },
+        {
+          "path": "source_agent/duration_discrepancies.json",
+          "sha256": "9a75020ff02376041d693fb1d2c46f4f10f6b3bc1fcc183a54924dfb9ab3de4f"
+        },
+        {
+          "path": "source_agent/structural_checks.json",
+          "sha256": "00109b9d384db8da934f62a2b4bb6a6690b9007a122afd819c66ad26ab0e4bb8"
+        },
+        {
+          "path": "source_agent/voice_topology_census.json",
+          "sha256": "9751f6646d77c9784cce64ae71350becf8b085f40f3bcc765052db1e6d4abe43"
+        },
+        {
+          "path": "source_agent/FREEZE.json",
+          "sha256": "fabdc617be99963256b13283ec6863a01b06c66e469858c384d5b0630b08774c"
+        },
+        {
+          "path": "source_agent/ensemble_manifest.json",
+          "sha256": "fa56c194196c5e4c36560d05048e21da1e74d52660b6d9b84bb5ed7ffa626136"
+        },
+        {
+          "path": "source_agent/provenance_ledger.json",
+          "sha256": "8ff769fd3fec71e54b05ca863cf33869cce826ffdb00bb565e32218fa87daf8b"
+        },
+        {
+          "path": "source_agent/ensemble_disagreements.json",
+          "sha256": "f2bb9025d2a3828a29adf750ceda3045f8a22169de780c8c4e4851e90c4d756e"
+        },
+        {
+          "path": "source_observations/grok/manifest.json",
+          "sha256": "13a86db06db1c07fd89cfd548c4e0563a7ca63765e2cfbdc6f75c49a0dfd2e8e"
+        }
+      ]
+    }
+  },
+  "phase1_allowlist": {
+    "source/printed_source.pdf": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a",
+    "source_crops/page-1.png": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9",
+    "source_crops/pages.json": "9ca63bc257bcb24a3a6e9020319e366f3f97e86c2157728e03f5a06b2fdffb63",
+    "config.json": "8cdf95e80000c84e3faffa35a495eafbb3f6d3feb0ac845808ffdd917c817dfe",
+    "physical_score_lock.json": "4ab88575cf7cd48a2adeb30bc97205c925648c1323a6ae159c43e48662e88b73",
+    "reviewer_phase1_frame_lock.json": "d8151e0cf75b7f06e097ec4870f6533bc0ca155bda6438db90ad16a36bb4d9fa",
+    "frame_visual_verification.json": "d6fbc38a08c7ab34b444d0739860b0ead6e9e4999387631da1b1ea052ad6e621"
+  },
+  "phase2_allowlist": {
+    "source/printed_source.pdf": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a",
+    "source_crops/page-1.png": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9",
+    "source_crops/pages.json": "9ca63bc257bcb24a3a6e9020319e366f3f97e86c2157728e03f5a06b2fdffb63",
+    "config.json": "8cdf95e80000c84e3faffa35a495eafbb3f6d3feb0ac845808ffdd917c817dfe",
+    "physical_score_lock.json": "4ab88575cf7cd48a2adeb30bc97205c925648c1323a6ae159c43e48662e88b73",
+    "reviewer_phase1_frame_lock.json": "d8151e0cf75b7f06e097ec4870f6533bc0ca155bda6438db90ad16a36bb4d9fa",
+    "frame_visual_verification.json": "d6fbc38a08c7ab34b444d0739860b0ead6e9e4999387631da1b1ea052ad6e621",
+    "audit_config.json": "56fc2caf1e09e6f0421e75ccb4b52851aad05b8a6138899596718a41ffc71c2b",
+    "reader_correspondence.json": "7bae5f1ad52361638eae1c1de8243a6ead1ef99216aa93f488901e24af2599ee",
+    "question_packets/priorities.json": "f2f43737b325e4e3fd7581b4fdbc2750643c106438d253fb81402c6586bb4208",
+    "question_packets/controls.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "question_packets/system_01.json": "f27e39a86ad7b8d4966bd4c6b3963b8f3f9809213657743a3e3de299e04670f8",
+    "question_packets/system_02.json": "fee99de4aacc6c883e9612d98ad8d285c4d2cf981cd396d1e8a4926bb95be641",
+    "question_packets/system_03.json": "38b5ee1b277825c2e58bd361cdb0bc5e3ac30458ff19725489e407205bae3f94",
+    "question_packets/system_04.json": "bf52c51d5eeaf349efef759f71db217d184cfa0faee2d511411f760a4c9a3037",
+    "question_packets/system_05.json": "bdc044d70d6259707585aa3136517af02cbf6a6366bc07792ef27dbf7b37d210",
+    "question_packets/freeze.json": "bb468c1075055bac23d540e7e521eaa0b15fe78f80375cd4be1ecc7cb9a08650",
+    "baseline/state.json": "f817060d62e1ab6ba58901b18a56dfe9613f57047f3144c1478423bd192f2d30",
+    "baseline/questions.json": "43edbcef6b160a122d786c4a39976eb97309680b4dd0e78294e05d95c0cf7007",
+    "reader_claims.json": "2121dbde6db7e162abd987bd3abfc35f16ceadc065df960820e82f3b617781db",
+    "parent_controls.json": "7b6e5df581d02d728ee4b199336d768e192d66dd61911de973a3dcaf6bff4809"
+  },
+  "phase3_allowlist": {
+    "source/printed_source.pdf": "d12f16d6c45887fe401791a9a758d47f185aa4f1b783eb0a792e75314305344a",
+    "source_crops/page-1.png": "eccfb0f217642b6f9e4a06d21ca904542a44b3a50e396e17e92c444ae45629e9",
+    "source_crops/pages.json": "9ca63bc257bcb24a3a6e9020319e366f3f97e86c2157728e03f5a06b2fdffb63",
+    "config.json": "8cdf95e80000c84e3faffa35a495eafbb3f6d3feb0ac845808ffdd917c817dfe",
+    "physical_score_lock.json": "4ab88575cf7cd48a2adeb30bc97205c925648c1323a6ae159c43e48662e88b73",
+    "reviewer_phase1_frame_lock.json": "d8151e0cf75b7f06e097ec4870f6533bc0ca155bda6438db90ad16a36bb4d9fa",
+    "frame_visual_verification.json": "d6fbc38a08c7ab34b444d0739860b0ead6e9e4999387631da1b1ea052ad6e621",
+    "audit_config.json": "56fc2caf1e09e6f0421e75ccb4b52851aad05b8a6138899596718a41ffc71c2b",
+    "reader_correspondence.json": "7bae5f1ad52361638eae1c1de8243a6ead1ef99216aa93f488901e24af2599ee",
+    "question_packets/priorities.json": "f2f43737b325e4e3fd7581b4fdbc2750643c106438d253fb81402c6586bb4208",
+    "question_packets/controls.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "question_packets/system_01.json": "f27e39a86ad7b8d4966bd4c6b3963b8f3f9809213657743a3e3de299e04670f8",
+    "question_packets/system_02.json": "fee99de4aacc6c883e9612d98ad8d285c4d2cf981cd396d1e8a4926bb95be641",
+    "question_packets/system_03.json": "38b5ee1b277825c2e58bd361cdb0bc5e3ac30458ff19725489e407205bae3f94",
+    "question_packets/system_04.json": "bf52c51d5eeaf349efef759f71db217d184cfa0faee2d511411f760a4c9a3037",
+    "question_packets/system_05.json": "bdc044d70d6259707585aa3136517af02cbf6a6366bc07792ef27dbf7b37d210",
+    "question_packets/freeze.json": "bb468c1075055bac23d540e7e521eaa0b15fe78f80375cd4be1ecc7cb9a08650",
+    "baseline/state.json": "f817060d62e1ab6ba58901b18a56dfe9613f57047f3144c1478423bd192f2d30",
+    "baseline/questions.json": "43edbcef6b160a122d786c4a39976eb97309680b4dd0e78294e05d95c0cf7007",
+    "reader_claims.json": "2121dbde6db7e162abd987bd3abfc35f16ceadc065df960820e82f3b617781db",
+    "parent_controls.json": "7b6e5df581d02d728ee4b199336d768e192d66dd61911de973a3dcaf6bff4809",
+    "candidate_packets/system_01.json": "80efbdd8929ff3cdd4dd5857f54d2c007007f28bd7a47d0d99dd38e812d4889d",
+    "candidate_packets/system_02.json": "5538081556be59a8932cbe352c9228dd7667e78e5c7a77c2677de04745995079",
+    "candidate_packets/system_03.json": "d54716a03f4383c20b9b53511b7347a55169394e36073dc19fa1ff28a07122e4",
+    "candidate_packets/system_04.json": "9b554fbd029c33a88d00fc27c8c64616ea2eb5ce7a6561298e522f2a75078b9c",
+    "candidate_packets/system_05.json": "12db1dd76ae0c8c89aec367488b25ca0bf7aa3bdfe0128489fb49b54976306cb",
+    "candidate_packets/comparison.json": "49734d49da4d0a8283b18dbb808406846fdd8d9b9a36c4661eef4a4b55d893cd",
+    "candidate_packets/freeze.json": "312e108ba542808c171fa75a4d6a0c3cb3c396f3c95f6428b29d057c536c8fa3",
+    "source_agent/UNVERIFIED_source.musicxml": "56147d71f744f8e0bfb3f54a56986e150f63ab1446e403aa0c126d6cc25e5ea7",
+    "source_agent/CORE.sep": "2be1ec2fc39d6592f851590a95ca9a6c11b3dc600808125e4769edca4db45b89",
+    "source_agent/MARKS.sep": "230ce832e4208d3242e081cc74c0be2c1e917658487906afe4eaf5c08560b864",
+    "source_agent/ROUTE.sep": "211c6f21112d086667474408e7f7e9465c3779b41067c5c4c88c0cb3e3bfe86a",
+    "source_agent/coverage.json": "c99e99075130af5f5596791ebfe75fb7ab1fbb51b657673ab27b73e36a296c37",
+    "source_agent/uncertainties.json": "b98910fd9f8ea999fc5bfa2f8e1659eaa884c2f26311d24b23ed79b8870d5612",
+    "source_agent/exact_event_ledger.json": "a1e1491b2846e7f210f94780beb43f02f71bd9c5f22bc6350dd4fb1fd3a2935c",
+    "source_agent/exact_mark_ledger.json": "2d4266df9aa44df51ac67cc1a01e861458f40c681136032f4ef6e5180cd2462d",
+    "source_agent/duration_discrepancies.json": "9a75020ff02376041d693fb1d2c46f4f10f6b3bc1fcc183a54924dfb9ab3de4f",
+    "source_agent/structural_checks.json": "00109b9d384db8da934f62a2b4bb6a6690b9007a122afd819c66ad26ab0e4bb8",
+    "source_agent/voice_topology_census.json": "9751f6646d77c9784cce64ae71350becf8b085f40f3bcc765052db1e6d4abe43",
+    "source_agent/FREEZE.json": "fabdc617be99963256b13283ec6863a01b06c66e469858c384d5b0630b08774c",
+    "source_agent/ensemble_manifest.json": "fa56c194196c5e4c36560d05048e21da1e74d52660b6d9b84bb5ed7ffa626136",
+    "source_agent/provenance_ledger.json": "8ff769fd3fec71e54b05ca863cf33869cce826ffdb00bb565e32218fa87daf8b",
+    "source_agent/ensemble_disagreements.json": "f2bb9025d2a3828a29adf750ceda3045f8a22169de780c8c4e4851e90c4d756e",
+    "source_observations/grok/manifest.json": "13a86db06db1c07fd89cfd548c4e0563a7ca63765e2cfbdc6f75c49a0dfd2e8e"
+  },
+  "phase1_instruction": "Source PDF and page images only. Freeze print-only structural, marks, and route inventory.",
+  "phase2_instruction": "After Phase 1 freeze, expose reader/question packets.",
+  "phase3_instruction": "After Phase 2 freeze, expose candidate and ensemble trail; review every event, mark, and route element.",
+  "framing_reconciliation": "If Phase 1 contradicts physical system/bar mapping, stop and rebuild packets before Phase 2.",
+  "post_review_plan": "Astra has not been run or contacted.",
+  "instructions": [
+    "Phase 1 freezes a print-only structural, marks, and route inventory.",
+    "Phase 2 exposes readers only after Phase 1 freeze.",
+    "Phase 3 exposes candidate plus ensemble provenance/disagreements only after Phase 2 freeze.",
+    "Provenance and disagreements guide scrutiny but do not replace direct print review.",
+    "Astra must check every event, mark, and route element, including unanimous claims and claims with no recorded disagreement.",
+    "The independent visual provider for this run is CURSOR_GROK, same family as the parent coordinator."
+  ],
+  "created_utc": "2026-09-17T07:52:44.525328+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ERRATUM-001",
+  "status": "FROZEN_BEFORE_APPLICATION",
+  "reason": "Phase3 prose correctly records downward eighth turns in16, but script encoding exception left the earlier event JSON stems unchanged. Resolve serialized expected state to directly observed print; anchor upper short slur on upper chord A4.",
+  "evidence": "source_crops/page-1.png, system4 bar16",
+  "changes": [
+    {
+      "event_id": "a016-s1-v1-e02-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s1-v1-e03-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s1-v1-e04-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s1-v1-e05-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s2-v2-e02-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s2-v2-e02-c2",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s2-v2-e03-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s2-v2-e04-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "event_id": "a016-s2-v2-e05-c1",
+      "field": "stem",
+      "before": "up",
+      "after": "down"
+    },
+    {
+      "mark": {
+        "kind": "slur",
+        "staff": 1,
+        "voice": "1",
+        "start": [
+          16,
+          "0"
+        ],
+        "end": [
+          16,
+          "2"
+        ],
+        "placement": "above",
+        "confidence": "high",
+        "start_pitch": "A4",
+        "end_pitch": null
+      },
+      "field": "start_pitch",
+      "before": null,
+      "after": "A4"
+    }
+  ],
+  "human_outcome": null
+}

@@ -1,0 +1,858 @@
+{
+  "schema": "frame_verifier_response.v1",
+  "piece_id": "schumann_op15_12_kind_im_einschlummern",
+  "request_sha256": "c45e0750da8db048e0e08300b7ec99e790b759ec63f1a928b5b7968297640b06",
+  "verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "session_id": "c4b5616b4188430283e2f8aed30739ec",
+    "edition_scope": "schumann_op15_breitkopf_1880_imslp289791"
+  },
+  "verdict": "PASS",
+  "source_blindness_confirmed": true,
+  "printed_physical_bar_count": 32,
+  "human_summary": "Thirty-two printed bars in 2/4: six on each of systems 1 through 4 and eight on system 5. Every bar is a complete bar of two quarter-note beats. There is no pickup and no repeat, and every system ends with a barline through both staves, so no bar is split by a system break. The piece opens with treble over bass and one sharp. P008 ends at a thin-thick double bar, and P009 prints four sharps on each staff. The upper staff changes to bass after the first quarter chord of P011, then prints a cautionary treble before the barline of P012, which governs P013. It changes to bass again after the first quarter chord of P015, and prints a cautionary treble before the barline of P018, which governs P019. The lower staff stays in bass. P016 ends at a thin-thick double bar and the four sharps continue. P024 ends at a double bar with two courtesy sharps on each staff, and P025 prints one sharp on each staff. P031 holds half-note chords with fermatas and still fills two quarter-note beats. P032 fills two quarter-note beats and closes with the thin-and-thick final barline. Red crop rectangles cover both pages, and slurs, hairpins, dynamics, and the final barline stay inside the crops. This reading used only the request, the print, and the proposed frame.",
+  "clef_verification": {
+    "opening": [
+      {
+        "staff": 1,
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, upper staff",
+        "evidence_bbox_px": [
+          286,
+          115,
+          318,
+          203
+        ]
+      },
+      {
+        "staff": 2,
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1, lower staff",
+        "evidence_bbox_px": [
+          283,
+          287,
+          316,
+          337
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "physical_bar": 11,
+        "staff": 1,
+        "onset_q": "1",
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "from_clef_plain": "treble clef",
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "glyph_region": "P011",
+        "effective_region": "P011",
+        "placement": "MID_REGION",
+        "glyph_location_plain": "After the upper-staff quarter chord in P011",
+        "previous_event_plain": "The upper-staff quarter-note chord at the start of P011",
+        "first_event_under_new_clef_plain": "The upper-staff eighth notes that follow the bass clef in P011",
+        "where_plain": "P011, upper staff: treble clef to bass clef after the first quarter chord",
+        "evidence_bbox_px": [
+          1274,
+          118,
+          1310,
+          166
+        ]
+      },
+      {
+        "physical_bar": 12,
+        "staff": 1,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "from_clef_plain": "bass clef",
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "glyph_region": "P012",
+        "effective_region": "P013",
+        "placement": "REGION_END_CAUTIONARY",
+        "glyph_location_plain": "Before the right barline of P012",
+        "previous_event_plain": "The last upper-staff eighth notes of P012, still in bass",
+        "first_event_under_new_clef_plain": "The first upper-staff chord of P013",
+        "where_plain": "P012, upper staff: cautionary treble clef before the right barline, governing P013",
+        "evidence_bbox_px": [
+          1586,
+          104,
+          1632,
+          184
+        ]
+      },
+      {
+        "physical_bar": 15,
+        "staff": 1,
+        "onset_q": "1",
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "from_clef_plain": "treble clef",
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "glyph_region": "P015",
+        "effective_region": "P015",
+        "placement": "MID_REGION",
+        "glyph_location_plain": "After the upper-staff quarter chord in P015",
+        "previous_event_plain": "The upper-staff quarter-note chord at the start of P015",
+        "first_event_under_new_clef_plain": "The upper-staff eighth notes that follow the bass clef in P015",
+        "where_plain": "P015, upper staff: treble clef to bass clef after the first quarter chord",
+        "evidence_bbox_px": [
+          768,
+          96,
+          812,
+          145
+        ]
+      },
+      {
+        "physical_bar": 18,
+        "staff": 1,
+        "onset_q": "2",
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "from_clef_plain": "bass clef",
+        "system": 3,
+        "crop_path": "source_crops/system_03.png",
+        "glyph_region": "P018",
+        "effective_region": "P019",
+        "placement": "REGION_END_CAUTIONARY",
+        "glyph_location_plain": "Before the right barline of P018",
+        "previous_event_plain": "The last upper-staff eighth notes of P018, still in bass",
+        "first_event_under_new_clef_plain": "The first upper-staff chord of P019",
+        "where_plain": "P018, upper staff: cautionary treble clef before the right barline, governing P019",
+        "evidence_bbox_px": [
+          1586,
+          80,
+          1632,
+          160
+        ]
+      }
+    ],
+    "printed_change_count": 4,
+    "no_other_changes_visible": true,
+    "matches_proposed_frame": true,
+    "summary_plain": "The upper staff opens in treble and the lower staff opens in bass. Four later upper-staff clefs are printed: bass after the first quarter chord of P011, a cautionary treble at the end of P012, bass after the first quarter chord of P015, and a cautionary treble at the end of P018. Later system openings reprint the clef already in force. No other clef change is printed."
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 389,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [
+        276,
+        583,
+        794,
+        1005,
+        1217,
+        1423,
+        1641
+      ],
+      "regions": [
+        {
+          "id": "P001",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            276,
+            110,
+            583,
+            345
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "OPENING_SIGNATURE"
+          ],
+          "features_plain": [
+            "After the clefs, before the first note"
+          ]
+        },
+        {
+          "id": "P002",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            583,
+            110,
+            794,
+            345
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P003",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            794,
+            110,
+            1005,
+            345
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P004",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1005,
+            110,
+            1217,
+            345
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P005",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1217,
+            110,
+            1423,
+            345
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P006",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1423,
+            110,
+            1641,
+            345
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 390,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [
+        158,
+        465,
+        705,
+        999,
+        1208,
+        1427,
+        1643
+      ],
+      "regions": [
+        {
+          "id": "P007",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            158,
+            90,
+            465,
+            340
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P008",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            465,
+            90,
+            705,
+            340
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "DOUBLE_BARLINE",
+            "SECTION_BOUNDARY"
+          ],
+          "features_plain": [
+            "At the right barline",
+            "At the right barline"
+          ]
+        },
+        {
+          "id": "P009",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            705,
+            90,
+            999,
+            340
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "KEY_CHANGE"
+          ],
+          "features_plain": [
+            "After the clefs, before the first note"
+          ]
+        },
+        {
+          "id": "P010",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            999,
+            90,
+            1208,
+            340
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P011",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1208,
+            90,
+            1427,
+            340
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "CLEF_CHANGE"
+          ],
+          "features_plain": [
+            "After the first upper-staff quarter chord"
+          ]
+        },
+        {
+          "id": "P012",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1427,
+            90,
+            1643,
+            340
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "CAUTIONARY_CLEF"
+          ],
+          "features_plain": [
+            "Before the right barline"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 573,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [
+        157,
+        482,
+        708,
+        934,
+        1160,
+        1398,
+        1644
+      ],
+      "regions": [
+        {
+          "id": "P013",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            157,
+            60,
+            482,
+            320
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P014",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            482,
+            60,
+            708,
+            320
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P015",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            708,
+            60,
+            934,
+            320
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "CLEF_CHANGE"
+          ],
+          "features_plain": [
+            "After the first upper-staff quarter chord"
+          ]
+        },
+        {
+          "id": "P016",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            934,
+            60,
+            1160,
+            320
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "DOUBLE_BARLINE",
+            "SECTION_BOUNDARY"
+          ],
+          "features_plain": [
+            "At the right barline",
+            "At the right barline"
+          ]
+        },
+        {
+          "id": "P017",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1160,
+            60,
+            1398,
+            320
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P018",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1398,
+            60,
+            1644,
+            320
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "CAUTIONARY_CLEF"
+          ],
+          "features_plain": [
+            "Before the right barline"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "crop_path": "source_crops/system_04.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 450,
+      "printed_region_count": 6,
+      "barline_boundaries_x_px": [
+        152,
+        456,
+        684,
+        900,
+        1132,
+        1346,
+        1564
+      ],
+      "regions": [
+        {
+          "id": "P019",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            152,
+            165,
+            456,
+            400
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P020",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            456,
+            165,
+            684,
+            400
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P021",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            684,
+            165,
+            900,
+            400
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P022",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            900,
+            165,
+            1132,
+            400
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P023",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1132,
+            165,
+            1346,
+            400
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P024",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1346,
+            165,
+            1564,
+            400
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "DOUBLE_BARLINE",
+            "SECTION_BOUNDARY",
+            "OTHER_NOTEWORTHY"
+          ],
+          "features_plain": [
+            "At the right barline",
+            "At the right barline",
+            "After the right barline, two courtesy accidentals on each staff"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "crop_path": "source_crops/system_05.png",
+      "crop_width_px": 1782,
+      "crop_height_px": 385,
+      "printed_region_count": 8,
+      "barline_boundaries_x_px": [
+        155,
+        424,
+        636,
+        842,
+        1061,
+        1278,
+        1442,
+        1515,
+        1617
+      ],
+      "regions": [
+        {
+          "id": "P025",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            155,
+            60,
+            424,
+            350
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "KEY_CHANGE"
+          ],
+          "features_plain": [
+            "After the clefs, before the first note"
+          ]
+        },
+        {
+          "id": "P026",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            424,
+            60,
+            636,
+            350
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P027",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            636,
+            60,
+            842,
+            350
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P028",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            842,
+            60,
+            1061,
+            350
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P029",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1061,
+            60,
+            1278,
+            350
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P030",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1278,
+            60,
+            1442,
+            350
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P031",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1442,
+            60,
+            1515,
+            350
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P032",
+          "capacity_q": "2",
+          "capacity_plain": "2 quarter-note beats",
+          "kind_plain": "full 2/4 bar",
+          "evidence_bbox_px": [
+            1515,
+            60,
+            1617,
+            350
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "FINAL_BARLINE"
+          ],
+          "features_plain": [
+            "At the right barline"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    }
+  ],
+  "irregular_checks": [
+    {
+      "where": "System 2, right edge of P008",
+      "question_plain": "Is the double bar a repeat, or a section boundary with a new signature in the next bar?",
+      "answer_plain": "Thin stroke at crop x 705 and thick stroke at crop x 709, through both staves, with no repeat dots. P009 then prints four sharps on each staff.",
+      "evidence_bbox_px": [
+        690,
+        100,
+        860,
+        330
+      ]
+    },
+    {
+      "where": "System 3, right edge of P016",
+      "question_plain": "Does the double bar start a repeat or a new key?",
+      "answer_plain": "Thin stroke at crop x 1160 and thick stroke at crop x 1165, through both staves, with no repeat dots and no new signature. The four sharps continue in P017.",
+      "evidence_bbox_px": [
+        1145,
+        70,
+        1200,
+        300
+      ]
+    },
+    {
+      "where": "System 4 end into system 5, P024 and P025",
+      "question_plain": "Which signature is in force when the lullaby figure returns?",
+      "answer_plain": "P024 ends on a double bar and prints two courtesy sharps on each staff. System 5 opens P025 with one sharp after the clef on each staff.",
+      "evidence_bbox_px": [
+        1548,
+        155,
+        1680,
+        400
+      ]
+    },
+    {
+      "where": "System 5, P031 and P032",
+      "question_plain": "Do the fermata bar and the closing bar still fill the printed 2/4, and where is the final barline?",
+      "answer_plain": "P031, from crop x 1442 to 1515, holds a half-note chord with a fermata on each staff, which fills two quarter-note beats. P032, from crop x 1515 to the thin stroke at crop x 1617, holds a quarter-note chord and two eighth notes on each staff. The thick final stroke is at crop x 1624 to 1629. No repeat dots stand beside it.",
+      "evidence_bbox_px": [
+        1440,
+        70,
+        1640,
+        340
+      ]
+    }
+  ],
+  "count_anomaly_review": {
+    "performed": true,
+    "printed_count_confirmed": 32,
+    "explanation_plain": "System 1 has 6 regions, system 2 has 6, system 3 has 6, system 4 has 6, and system 5 has 8, totaling 32. Each counted boundary is one stroke through both staves. The double bars after P008, P016, and P024 are a thin stroke plus a thick stroke and were counted once each. The final barline after P032 is a thin stroke at crop x 1617 plus a thick stroke near crop x 1624 and was counted once. Note stems, beams, and the fermatas in P031 are not barlines. There is no pickup and no bar continued across a system break."
+  },
+  "corrections": []
+}

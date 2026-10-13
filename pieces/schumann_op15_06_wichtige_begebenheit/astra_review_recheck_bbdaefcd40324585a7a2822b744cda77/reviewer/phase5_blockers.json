@@ -1,0 +1,117 @@
+{
+  "status": "BLOCKED_TECHNICAL",
+  "phase": 5,
+  "primary_xml": "delivery_final/UNVERIFIED_schumann_op15_06.musicxml",
+  "primary_xml_sha256": "ca896157857a3c743bfcb4f89b9c8b59d5b191db76e5512f1f6b255529e5e312",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "blocks_safe_continuation": true,
+  "issues": [
+    {
+      "id": "RENDER-1",
+      "kind": "consumer",
+      "address": "P007 staff2 inner voice2, onset2 F#3 and onset2.5 E3; related P025 spacing",
+      "gate": "essential_notation_rendering / focused_visual_recheck",
+      "finding": "The installed production renderer shifts the first inner eighth toward the next attack; the two notehead bounding boxes overlap about 5.30\u00d75.47 px. The final focused image confirms touching/overlapping noteheads and a compressed beam. The print separates them.",
+      "dependency": "A passing human delivery requires a readable faithful rendering of this simultaneous held-dyad/inner-eighth/bass-octave texture. Documenting provisional music cannot isolate a renderer geometry failure.",
+      "attempted_isolation": "Frozen erratum2 corrected upward inner stems and empty-staff hairpin carriers. Frozen erratum3 top-to-bottom voice numbering fixes the bass beam distortion but leaves the inner-eighth collision. Both iterations and final exact XML are preserved. No production code modified.",
+      "required_action": "Repair production polyphonic note spacing for this texture, preserving final XML and frozen review hashes, then run a new Stage5 consumer recheck including focused visual evidence.",
+      "evidence": [
+        "viewer_delivery/P007_inner_collision.png",
+        "viewer_delivery/P025_inner_spacing.png",
+        "viewer_delivery/full_score.png",
+        "viewer_delivery/report.json",
+        "reviewer/erratum2_P007.png",
+        "reviewer/print_system_4.png"
+      ],
+      "measurements": [
+        {
+          "bar": 7,
+          "staff": 2,
+          "voice": "2",
+          "onsets_q": [
+            2,
+            2.5
+          ],
+          "anchors": [
+            {
+              "bar": 7,
+              "staff": 2,
+              "onset": 2,
+              "voice": "2",
+              "rest": false,
+              "bounds": {
+                "x": 1131.4788818359375,
+                "y": 281.56793212890625,
+                "width": 12.0181884765625,
+                "height": 10.473785400390625
+              }
+            },
+            {
+              "bar": 7,
+              "staff": 2,
+              "onset": 2.5,
+              "voice": "2",
+              "rest": false,
+              "bounds": {
+                "x": 1138.1953125,
+                "y": 286.5679016113281,
+                "width": 12.0181884765625,
+                "height": 10.473785400390625
+              }
+            }
+          ],
+          "bbox_overlap_px": {
+            "x": 5.3017578125,
+            "y": 5.47381591796875
+          },
+          "conclusion": "visible overlapping sequential noteheads"
+        },
+        {
+          "bar": 25,
+          "staff": 2,
+          "voice": "2",
+          "onsets_q": [
+            2,
+            2.5
+          ],
+          "anchors": [
+            {
+              "bar": 25,
+              "staff": 2,
+              "onset": 2,
+              "voice": "2",
+              "rest": false,
+              "bounds": {
+                "x": 828.2072143554688,
+                "y": 1247.35595703125,
+                "width": 12.0181884765625,
+                "height": 10.4737548828125
+              }
+            },
+            {
+              "bar": 25,
+              "staff": 2,
+              "onset": 2.5,
+              "voice": "2",
+              "rest": false,
+              "bounds": {
+                "x": 839.4236450195312,
+                "y": 1252.35595703125,
+                "width": 12.01824951171875,
+                "height": 10.4737548828125
+              }
+            }
+          ],
+          "bbox_overlap_px": {
+            "x": 0.8017578125,
+            "y": 5.4737548828125
+          },
+          "conclusion": "cramped adjacent notes; secondary context"
+        }
+      ]
+    }
+  ],
+  "human_outcome": null
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "astra.juan-resolution.v1",
+  "piece_id": "schumann_op15_05_glueckes_genug",
+  "parent_checkpoint": "astra_review_recheck_d0eca11de5a1432ca2fd476e779c7222/FINAL_FREEZE.json",
+  "parent_checkpoint_sha256": "c316eb2a354438ecb31c34373f311015030a3cc975e767ae810b2328d039ccab",
+  "parent_primary": "astra_review_recheck_d0eca11de5a1432ca2fd476e779c7222/delivery_final/UNVERIFIED_Schumann_Op15_05_Glueckes_genug_Astra_import.musicxml",
+  "parent_primary_sha256": "601bbf52ac730c8b4a73a517d46dad08d756afc84206e666b09ae51de2aaba3b",
+  "resolved_primary": "delivery_final/UNVERIFIED_schumann_op15_05_human_pitches.musicxml",
+  "resolved_primary_sha256": "ccc20a05158077571282c4f98b1d143ec227e3812010b19cb4a1f4df81c53519",
+  "decisions": [
+    {
+      "id": "P025-TREBLE-FSHARP3-TO-G3",
+      "change": {
+        "id": "astra-p025-v2-e04-n1",
+        "before": "<pitch>\n          <step>F</step>\n          <alter>1</alter>\n          <octave>3</octave>\n        </pitch>\n        ",
+        "after": "<pitch>\n          <step>G</step>\n          <octave>3</octave>\n        </pitch>\n        ",
+        "midi_delta": 1
+      }
+    },
+    {
+      "id": "P025-BASS-E2-TO-D2",
+      "change": {
+        "id": "astra-p025-v4-e03-n1",
+        "before": "<pitch>\n          <step>E</step>\n          <octave>2</octave>\n        </pitch>\n        ",
+        "after": "<pitch>\n          <step>D</step>\n          <octave>2</octave>\n        </pitch>\n        ",
+        "midi_delta": -2
+      }
+    }
+  ],
+  "clarification": "P025 final sixteenth of first beat: F#3 to G3, retain C#4. Final bass quarter: E2 to D2, retain A2 and its tie.",
+  "publication_approved": false
+}

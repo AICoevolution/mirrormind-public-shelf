@@ -1,0 +1,153 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "BLOCKED_DELIVERY_READINESS",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "stage5_note": "Correction, regeneration, testing and packaging executed; readiness not achieved. Print decisions and production rendering/CORE limitations remain.",
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_schumann_op68_28_in_memoriam.musicxml",
+  "primary_xml_sha256": "329155839f66838f10df60f02126dbe17e4a968a88d856f23348adc27ab543ef",
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "30c623ba7bc20fb69de622159663d1c0b542afbafaeac9ab33ac1429e833df7b",
+  "voice_topology_sha256": "c91442bd65c398078c7e5067a6963bf49d3fedbc5cd4db4c2e1de47fe330cfdc",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "report": "checks/proper.json"
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "report": "checks/independent_schedule.json"
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "report": "rendered_final/report.json"
+    },
+    "vexflow_duration": {
+      "status": "PASS",
+      "report": "rendered_final/report.json"
+    },
+    "essential_notation_rendering": {
+      "status": "FAIL",
+      "report": "checks/focused_visual_recheck.json"
+    },
+    "focused_visual_recheck": {
+      "status": "FAIL",
+      "report": "checks/focused_visual_recheck.json"
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "NOT_LOSSLESS_NOT_READY",
+      "lanes": "PASS: exactly s1v1,s1v2,s2v3,s2v4",
+      "rebuild": "FAIL",
+      "actual_unchanged_apply": "PASS exact event projection; not proof of editable rebuild",
+      "print_limitation": "P013 flagged octave remains unencoded pending timing/voice decision",
+      "warnings": [
+        "Measure 4: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 4: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 5: the reader filled this bar to 3.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 5: the reader filled this bar to 3.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 14: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 14: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 18: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 18: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 20: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 20: the reader filled this bar to 2.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 23: the reader filled this bar to 3.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "Measure 23: the reader filled this bar to 3.5 quarter-note(s); the file says 2. Shown as the FILE has it.",
+        "1 trailing grace note(s) NOT EXPRESSED — a grace with no following attack in its measure has no host to attach to. These notes survive in the stored XML but CORE Apply will refuse losing them: Measure 6 V1(P1,v1)"
+      ]
+    },
+    "MARKS": {
+      "status": "PARTIAL_NOT_READY",
+      "xml": "102 frozen initial marks, corrected by numbered errata; 3 fermatas, 8 wedges, one tied pitch",
+      "export_warnings": [],
+      "apply_fixpoint": true,
+      "limitations": [
+        "P013-P014 slur start provisional",
+        "P023 outgoing repeat curve unresolved",
+        "P015/P021 rendered text collisions",
+        "Source subtitle/footnote retained in supplement, not production rendering"
+      ]
+    },
+    "ROUTE": {
+      "status": "TECHNICAL_PASS_UNVERIFIED",
+      "print_route": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24
+      ],
+      "physical_regions": 24,
+      "expanded_visits": 45,
+      "expanded_quarters": 88,
+      "apply": "PASS",
+      "publication_authorized": false
+    }
+  },
+  "remaining_uncertainties": [
+    {
+      "id": "U013",
+      "bar": 13,
+      "staff": 1,
+      "observation": "Separately flagged E4/E5 octave visible after four beamed eighth groups; metric placement/voice relationship not certified. Not inserted or trimmed to force 2/4.",
+      "effect": "CORE incomplete at this locus; connecting slur into P014 also provisional.",
+      "evidence": "reviewer/P013_P014_detail.png",
+      "human_outcome": null
+    },
+    {
+      "id": "U023",
+      "bar": 23,
+      "staff": 1,
+      "observation": "Outgoing slur after E5 points toward repeated P012; exact stop not uniquely certified. No invented tie or slur endpoint.",
+      "effect": "MARKS outgoing repeat slur retained in uncertainty ledger, not guessed in XML.",
+      "evidence": "reviewer/system_detail_05.png",
+      "human_outcome": null
+    }
+  ],
+  "human_outcome": null,
+  "published": false,
+  "frozen_utc": "2026-09-22T10:34:51.965824+00:00"
+}

@@ -1,0 +1,11 @@
+# Pipeline findings
+
+1. Supplied correspondence maps were empty for all24 bars. Count-matched SmartScore was usable only after phrase-by-phrase recovery; PlayScore shifts after the broken opening, and Audiveris mixes parts/staves. Reader-only packets therefore contained zero claims. Audiveris part1's13 measure elements were misleadingly reported as its full measure count, although authorized reader_claims includes another part.
+2. The ensemble selected lower-staff duplicates of upper melody from misassigned Audiveris claims. Unmapped reader ordinals contaminated bar8 with bar9 upper material. Provenance accurately lists selected pitches but does not prove physical correspondence or field-level rhythm validity.
+3. Capacity validation passed even for fabricated bar16 triplets, wrong notes, duplicate staves and missing expression. Duration-only success must not certify music.
+4. Frame prose incorrectly described bar8 rest, bar9 first pitch and bar16 rhythm. Clef timing and physical capacities themselves were correct and usable; no prepared files were changed.
+5. Shared noteheads9–15 require independent durations. A three-voice model is minimal, with a genuine inner eighth strand; automatic merging would lose sustained pitches. Old lower voice3 changes role, so only context-scoped repair is safe.
+6. MARKS was empty in the candidate. Reader expression recovery requires direct print checking: false nonadjacent ties, missing slurs, shifted endpoints and corrupted tempo/dynamic text were present.
+7. Source white masking obscures contours13–15 and pieces of other expression lines. Evidence is retained; unresolved visual interpretation remains human-facing.
+8. Production checks pass for the final XML. Real SEP Apply preserves sounding notes and span times, but CORE/MARKS Apply moves chord-member slur anchors in16 and collapses above/below detail. CORE rebuild omits marks/tempo; MARKS excludes metronome. No production workaround or code mutation was made; no lossless SEP claim is justified.
+9. Local review script had a Windows encoding-name exception while synchronizing expected stems; numbered ERRATUM_001 freezes the corrected serialized values before application. Exact final XML-to-plan comparison passes.

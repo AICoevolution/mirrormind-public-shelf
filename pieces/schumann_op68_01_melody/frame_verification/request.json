@@ -1,0 +1,280 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "schumann_op68_01_melody",
+  "edition_id": "schumann_op68_source_890574",
+  "created_utc": "2026-09-16T12:04:23.472325+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, route mark, special/final barline, meter/key/clef transition and crop boundary. Classify every printed region NORMAL or NOTEWORTHY and state every noteworthy feature in plain musical language for the annotated system report.",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "b54c703964f594281a58f23a794f023b30cefec4b1d7f9edf4876561592d6be9"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "fcbce95b7cee88a359e32f94cfe61d3ca78b91c084484e902288ce72eebf9b93"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "4498f4e92fdad9ac06f737091b85bb7c2c8e5122f4a2acd62014275b8d63fbf6"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "4e7462050911b4d341d45523356f943992aedcdc717da17f1a01d77cce88aedc"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "dc2199f7a5017adb536715d189aa55bda00a0233716713f6b278c213e8cd13d3"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "77c7cfb5c9924690ed190d0976ef83248c7a916c1ce7e1227d19b23610fb88df"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "e0a21c081941cdea9b05cb640e1e50199e199db312ed512bafe0fe678e3cc346"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "bfa627bfaa8705bfa313980e48d2fe42c0166f4921dc0dd1db8b336e56e06863"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "2db4a14b2728366a766ccc120a76dc86a18a945d97410c06e302df3925253dfb"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "be65dcc2aad573bd8e01e023fefa31887bf6acd87c685c4f1f6d0af20b04e889",
+      "width": 1652,
+      "height": 2048
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 20,
+    "printed_meter": {
+      "beats": 4,
+      "beat_type": 4,
+      "symbol": "common",
+      "printed_glyph": "C"
+    },
+    "key": {
+      "fifths": 0,
+      "mode": null,
+      "label": "no printed key signature (C / A minor)"
+    },
+    "pickup_or_partial_bars": [],
+    "repeat_boundaries": [
+      {
+        "after_physical_bar": 4,
+        "kind": "backward",
+        "system": 1,
+        "page": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence": "On system_01.png after four complete common-time bars a backward-repeat dot pair (x 1298-1314) plus thin stroke (x 1316-1318) then thick right barline closes P004 at the thick stroke, measured core x 1324 (ink x 1321-1328). Keep five regions; the thin-plus-thick pair is one close. P005 then begins on the same system as the triplet D-C-B rest under poco cre-."
+      }
+    ],
+    "clefs": {
+      "open": {
+        "staff1": {
+          "sign": "G",
+          "line": 2
+        },
+        "staff2": {
+          "sign": "G",
+          "line": 2
+        }
+      },
+      "changes": []
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          5
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "fedaa96a58c1e92d7c5e8e6b7d532bb62d5e43fe111efd088e24678e418d7f5c",
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P005",
+            "index": 5,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          6,
+          10
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "abf21be150b2fa91390cd7d09d5c17b08a7c68470476db5c1fb19b20c7fc4cf3",
+        "proposed_regions": [
+          {
+            "id": "P006",
+            "index": 6,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P007",
+            "index": 7,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P009",
+            "index": 9,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P010",
+            "index": 10,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          11,
+          15
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "7965ae7090540f0b0bb3220f6d1205228b9972d93137a40d991503393dc2163e",
+        "proposed_regions": [
+          {
+            "id": "P011",
+            "index": 11,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P013",
+            "index": 13,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P014",
+            "index": 14,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P015",
+            "index": 15,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          16,
+          20
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "5c1e13ed43f2e56a2760876c8990f80c7c97faf5c7c3fcfa7c29025c78cdd98c",
+        "proposed_regions": [
+          {
+            "id": "P016",
+            "index": 16,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P017",
+            "index": 17,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P018",
+            "index": 18,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P019",
+            "index": 19,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          },
+          {
+            "id": "P020",
+            "index": 20,
+            "capacity_q": "4",
+            "capacity_plain": "4 quarter-note beats"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "edition_scope": "schumann_op68_source_890574",
+    "execution_mode": "cursor_piece_chat",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions. Red means a region has one or more named frame landmarks to verify; blue means it was directly checked and is a normal bar with none."
+}

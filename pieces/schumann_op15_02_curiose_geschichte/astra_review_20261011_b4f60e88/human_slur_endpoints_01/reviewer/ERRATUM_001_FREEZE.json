@@ -1,0 +1,60 @@
+{
+  "schema": "astra_numbered_erratum.v1",
+  "id": "ERRATUM-001",
+  "changes": [
+    {
+      "bar": 29,
+      "before": "missing separate half-note A3",
+      "after": {
+        "id": "aP029-held-A3",
+        "staff": "2",
+        "onset_q": "0",
+        "duration_q": "2",
+        "pitch": "A3",
+        "grace": false,
+        "voice": 5,
+        "stem": "up"
+      },
+      "evidence": "reviewer/detail_P029.png",
+      "confidence": "medium",
+      "provisional": true,
+      "reason": "Two horizontally displaced open heads at the upper bass staff line, one stem up half and one dotted half stem down. Retain both unison held voices provisionally pending human inspection."
+    },
+    {
+      "bar": 41,
+      "before": "missing separate half-note A3",
+      "after": {
+        "id": "aP041-held-A3",
+        "staff": "2",
+        "onset_q": "0",
+        "duration_q": "2",
+        "pitch": "A3",
+        "grace": false,
+        "voice": 5,
+        "stem": "up"
+      },
+      "evidence": "reviewer/detail_P041.png",
+      "confidence": "medium",
+      "provisional": true,
+      "reason": "Two horizontally displaced open heads at the upper bass staff line, one stem up half and one dotted half stem down. Retain both unison held voices provisionally pending human inspection."
+    },
+    {
+      "before": "Lower long slurs P028/P040 to lower F#4 in P030/P042",
+      "after": "End on upper D5 at offset 1, cross-staff line voice 3, distinct from upper melody D5 voice 1",
+      "confidence": "medium",
+      "provisional": true,
+      "evidence": [
+        "reviewer/print_system_06.png",
+        "reviewer/print_system_08.png"
+      ]
+    }
+  ],
+  "additional_stem_corrections": "Lower rhythmic chords in P007/P015/P025/P037 before offset 2, P027/P039 throughout, P009 offset 2: down stems as printed; target original default up stems was incorrect.",
+  "spec": "reviewer/ERRATUM_001_correction_spec.json",
+  "sha256": "f64e746b02afae4be976dfc3c82c9ca8190a5c31363019d4189a0c20fe891a95",
+  "evidence_hashes": {
+    "reviewer/detail_P029.png": "e8af2a7d0eae51c602ef735868db9f31980950567628732dbc7f205ab05b2f2c",
+    "reviewer/detail_P041.png": "2c5bf0497efaf34ba54ae0aceda15acf7594600a9b843bdd60542103b55dc6b8"
+  },
+  "human_outcome": null
+}

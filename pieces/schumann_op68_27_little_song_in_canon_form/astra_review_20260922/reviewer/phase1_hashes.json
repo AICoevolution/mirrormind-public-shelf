@@ -1,0 +1,56 @@
+{
+  "status": "BLOCKED_SOURCE_FRAME",
+  "phase": 1,
+  "hashes_match": true,
+  "files": [
+    {
+      "path": "source/printed_source.pdf",
+      "expected": "07e3de3f17c580de29a80e6402ec3b930942638d0f1f1a2befbb0937e1475de4",
+      "actual": "07e3de3f17c580de29a80e6402ec3b930942638d0f1f1a2befbb0937e1475de4",
+      "match": true
+    },
+    {
+      "path": "source_crops/page-1.png",
+      "expected": "89a3b270d69336d0fae87c10dde9f842c162ab0dccb9e73e06dabf33df80bf2a",
+      "actual": "89a3b270d69336d0fae87c10dde9f842c162ab0dccb9e73e06dabf33df80bf2a",
+      "match": true
+    },
+    {
+      "path": "source_crops/pages.json",
+      "expected": "58ffd2f100590896c5c445aee9aa742c8e34817e372055e7f9b7414d90831a27",
+      "actual": "58ffd2f100590896c5c445aee9aa742c8e34817e372055e7f9b7414d90831a27",
+      "match": true
+    },
+    {
+      "path": "config.json",
+      "expected": "9e63d6abe52ef545fb0ed4ba4dde9fc09094b95e0265405274266bef07b29a4a",
+      "actual": "9e63d6abe52ef545fb0ed4ba4dde9fc09094b95e0265405274266bef07b29a4a",
+      "match": true
+    },
+    {
+      "path": "physical_score_lock.json",
+      "expected": "dec6f29c0607a85a9123512b34535fc56913a6af40e199a05dddcd48c7201622",
+      "actual": "dec6f29c0607a85a9123512b34535fc56913a6af40e199a05dddcd48c7201622",
+      "match": true
+    },
+    {
+      "path": "reviewer_phase1_frame_lock.json",
+      "expected": "dda6ba89ee981e17c1bd3b0103108c51fedf2a4df94e1ecc64be665930756642",
+      "actual": "dda6ba89ee981e17c1bd3b0103108c51fedf2a4df94e1ecc64be665930756642",
+      "match": true
+    },
+    {
+      "path": "frame_visual_verification.json",
+      "expected": "9589998592fcf82219df213709a94abdb727ace1cb82dc471db52d054f141c9b",
+      "actual": "9589998592fcf82219df213709a94abdb727ace1cb82dc471db52d054f141c9b",
+      "match": true
+    }
+  ],
+  "launch_gate": {
+    "authorization_sha256": "aebab6199a5386925c77db24f62baee39c6dabd07d025e30009db330632e1297",
+    "reviewer_handoff_sha256": "c3829eed7ae5e12cf1bdc25370b8e83e45ab2500394167ae00fa84232f7fd5c7"
+  },
+  "phase2_accessed": false,
+  "phase3_accessed": false,
+  "access_note": "All seven allowlisted files hashed. Musical evidence inspected from page PNG and derived crops; PDF content not separately rendered. JSON configuration/frame files read. No later-phase evidence accessed."
+}

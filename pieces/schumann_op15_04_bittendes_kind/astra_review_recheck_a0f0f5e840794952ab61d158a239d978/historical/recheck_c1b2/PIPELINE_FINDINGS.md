@@ -1,0 +1,1 @@
+Shared geometry acceptance is necessary but insufficient: outgoing cross-system phrase segments can pass beam/notehead tests while crossing stems. Preserve the shared test and supplement its scoped coverage with system-break visual inspection. No production changes made.

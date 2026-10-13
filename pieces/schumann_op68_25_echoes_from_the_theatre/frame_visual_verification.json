@@ -1,0 +1,439 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op68_25_echoes_from_the_theatre",
+  "revision": 4,
+  "authority": "print_only",
+  "source_pdf_sha256": "5ab54b9d39ba275b66ecae5b260a996ba7008cfb8c52dec1fc22826663da2230",
+  "page_image_sha256": {
+    "page-1": "3655bbc82e825386ef83b0263f3c640a1f0b8a782894cd1570fdbd9fd89ea112",
+    "page-2": "5598325642d8cb25b60865f984611c08f4944d4f0b723be03e9fd89301b1d0ec"
+  },
+  "printed_meter": "2/4 at the opening on both staves; only staff meter glyph",
+  "physical_bar_count": 33,
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "flags": [
+        "OPENING_SIGNATURE",
+        "PICKUP"
+      ],
+      "print_plain": "After the 2/4 glyph, two beamed sixteenths (double beams) totaling one eighth before the first measure barline at x=440. Not two eighths. Not one quarter. Capacity one eighth.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "onset_q": "0",
+      "x_range_px": [
+        220,
+        440
+      ],
+      "evidence_bbox_px": [
+        250,
+        180,
+        440,
+        460
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 9,
+      "capacity_q": "3/2",
+      "kind": "three-eighth partial",
+      "flags": [
+        "PARTIAL",
+        "REPEAT_END"
+      ],
+      "print_plain": "Three eighth-note units before backward-repeat dots and a thick right barline at x=1637. Capacity three eighths.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "x_range_px": [
+        1476,
+        1637
+      ],
+      "evidence_bbox_px": [
+        1476,
+        20,
+        1655,
+        330
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 10,
+      "capacity_q": "1/2",
+      "kind": "second-strain pickup",
+      "flags": [
+        "PICKUP",
+        "REPEAT_START"
+      ],
+      "print_plain": "After the system-3 forward-repeat dots at x=176, two beamed sixteenths (double beams) totaling one eighth before the next measure barline at x=375. Not two eighths. Not one quarter. Capacity one eighth.",
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "onset_q": "0",
+      "x_range_px": [
+        176,
+        375
+      ],
+      "evidence_bbox_px": [
+        176,
+        200,
+        375,
+        470
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "physical_bar": 33,
+      "capacity_q": "3/2",
+      "kind": "three-eighth partial",
+      "flags": [
+        "PARTIAL",
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ],
+      "print_plain": "Three eighth-note units before backward-repeat dots and a thick right barline at x=1636. Capacity three eighths.",
+      "page": 2,
+      "system": 7,
+      "crop_path": "source_crops/system_07.png",
+      "onset_q": "0",
+      "x_range_px": [
+        1434,
+        1636
+      ],
+      "evidence_bbox_px": [
+        1434,
+        20,
+        1660,
+        360
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "repeat_pair_capacity_checks": [
+    {
+      "pair": "P001+P009",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "one_2_4_completed_by_pickup_and_first_strain_close",
+      "evidence": "P001 is two beamed sixteenths (double beams) totaling one eighth (capacity 1/2) after the 2/4 glyph, not two eighths. P009 is three eighths (capacity 3/2) before the first-strain backward repeat. One eighth plus three eighths complete one 2/4.",
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "close_crop_path": "source_crops/system_02.png"
+    },
+    {
+      "pair": "P010+P033",
+      "capacities_q": [
+        "1/2",
+        "3/2"
+      ],
+      "sum_q": "2",
+      "printed_meter": "2/4",
+      "result": "one_2_4_completed_by_second_strain_pickup_and_close",
+      "evidence": "P010 is two beamed sixteenths (double beams) totaling one eighth (capacity 1/2) after the system-3 forward-repeat dots, not two eighths. P033 is three eighths (capacity 3/2) before the second-strain backward repeat. One eighth plus three eighths complete one 2/4.",
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "close_crop_path": "source_crops/system_07.png"
+    }
+  ],
+  "repeats": [
+    {
+      "after_physical_bar": 9,
+      "kind": "backward",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "System 2 closes P009 with dots left of a thick right barline on both staves at x=1637. First-strain backward repeat after a three-eighth partial.",
+      "evidence_box_px": [
+        1588,
+        40,
+        1655,
+        320
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "before_physical_bar": 10,
+      "kind": "forward",
+      "flags": [
+        "REPEAT_START"
+      ],
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "After system-3 G/F reprints, a heavy-light barline with dots to the right at x=176 starts the second strain. First region after the dots is a one-eighth pickup, not a complete 2/4.",
+      "evidence_box_px": [
+        145,
+        200,
+        210,
+        470
+      ],
+      "evidence_space": "system_crop"
+    },
+    {
+      "after_physical_bar": 33,
+      "kind": "backward",
+      "flags": [
+        "REPEAT_END",
+        "FINAL_BARLINE"
+      ],
+      "page": 2,
+      "system": 7,
+      "crop_path": "source_crops/system_07.png",
+      "evidence": "System 7 closes P033 with dots left of a thick right barline on both staves at x=1636. Second-strain backward repeat after a three-eighth partial.",
+      "evidence_box_px": [
+        1588,
+        40,
+        1660,
+        360
+      ],
+      "evidence_space": "system_crop"
+    }
+  ],
+  "repeat_boundary_checks": [
+    {
+      "kind": "backward",
+      "after_physical_bar": 9,
+      "result": "first_strain_repeat_end",
+      "evidence": "System 2 P009 ends with repeat dots and a thick right barline at x=1637 after a three-eighth partial.",
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png"
+    },
+    {
+      "kind": "forward",
+      "before_physical_bar": 10,
+      "result": "second_strain_repeat_start",
+      "evidence": "System 3 after the reprinted clefs has a heavy-light barline with dots to the right at x=176. The first region after those dots is a one-eighth pickup.",
+      "page": 2,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png"
+    },
+    {
+      "kind": "backward",
+      "after_physical_bar": 33,
+      "result": "second_strain_repeat_end",
+      "evidence": "System 7 P033 ends with repeat dots and a thick right barline at x=1636 after a three-eighth partial.",
+      "page": 2,
+      "system": 7,
+      "crop_path": "source_crops/system_07.png"
+    }
+  ],
+  "clefs": {
+    "open": {
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          200,
+          215,
+          290
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Upper-staff G clef left of the 2/4 glyph. No printed key accidentals."
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "crop_path": "source_crops/system_01.png",
+        "evidence_box_px": [
+          145,
+          360,
+          215,
+          460
+        ],
+        "evidence_space": "system_crop",
+        "evidence": "Lower-staff F clef left of the 2/4 glyph. No printed key accidentals."
+      }
+    },
+    "changes": [],
+    "printed_change_count": 0,
+    "system_start_reprints_are_not_changes": true
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        4
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "y_bounds_on_page": [
+        0,
+        522
+      ],
+      "barline_boundaries_x_px": [
+        220,
+        440,
+        856,
+        1219,
+        1642
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        5,
+        9
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "y_bounds_on_page": [
+        522,
+        1010
+      ],
+      "barline_boundaries_x_px": [
+        140,
+        483,
+        822,
+        1165,
+        1476,
+        1637
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 3,
+      "page": 2,
+      "measures": [
+        10,
+        15
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "y_bounds_on_page": [
+        0,
+        552
+      ],
+      "barline_boundaries_x_px": [
+        176,
+        375,
+        608,
+        842,
+        1152,
+        1396,
+        1635
+      ],
+      "printed_region_count": 6,
+      "both_staves_present": true
+    },
+    {
+      "system": 4,
+      "page": 2,
+      "measures": [
+        16,
+        20
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "y_bounds_on_page": [
+        552,
+        969
+      ],
+      "barline_boundaries_x_px": [
+        138,
+        408,
+        688,
+        992,
+        1306,
+        1638
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "measures": [
+        21,
+        25
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "y_bounds_on_page": [
+        969,
+        1363
+      ],
+      "barline_boundaries_x_px": [
+        140,
+        504,
+        782,
+        1054,
+        1344,
+        1640
+      ],
+      "printed_region_count": 5,
+      "both_staves_present": true
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        26,
+        29
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "y_bounds_on_page": [
+        1363,
+        1759
+      ],
+      "barline_boundaries_x_px": [
+        140,
+        603,
+        930,
+        1320,
+        1642
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        30,
+        33
+      ],
+      "crop_path": "source_crops/system_07.png",
+      "y_bounds_on_page": [
+        1759,
+        2295
+      ],
+      "barline_boundaries_x_px": [
+        144,
+        654,
+        1092,
+        1434,
+        1636
+      ],
+      "printed_region_count": 4,
+      "both_staves_present": true
+    }
+  ],
+  "verified_repairs": [
+    "Printed meter is 2/4 throughout; only the system-1 opening glyph",
+    "P001 and P010 are two beamed sixteenths totaling one eighth (capacity 1/2)",
+    "Those pickups are not two eighths and not one-quarter pickups",
+    "P009 and P033 are three-eighth backward-repeat closes",
+    "P001 plus P009 complete one 2/4; P010 plus P033 complete one 2/4",
+    "Revision 4 moves missed interior/right-of-pickup barlines onto printed grand-staff ink",
+    "Region count stays 33; no splits added or dropped",
+    "No mid-piece clef change; system-start G/F reprints are not changes"
+  ],
+  "capacity_note": "Printed meter is 2/4 throughout; only the system-1 opening glyph on both staves. Complete 2/4 = 2 quarter-note units. P001 is an opening pickup of two beamed sixteenths (double beams), together one eighth (capacity 1/2), after the 2/4 glyph and before the first measure barline at x=440. Those notes are not two eighths and not a one-quarter pickup. P009 is three eighths (capacity 3/2) before the first-strain backward repeat. P001 (1 eighth) plus P009 (3 eighths) complete one 2/4. P010 is two beamed sixteenths totaling one eighth (capacity 1/2) after the system-3 forward repeat. Those notes are not two eighths and not a one-quarter pickup. P033 is three eighths (capacity 3/2) before the second-strain backward repeat. P010 plus P033 complete one 2/4. Both strains have conventional pickup-plus-terminal pairing against the printed meter."
+}

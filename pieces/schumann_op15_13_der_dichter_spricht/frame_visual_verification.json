@@ -1,0 +1,290 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_13_der_dichter_spricht",
+  "authority": "print_only",
+  "source_pdf_sha256": "83ef635596fdcb05ff2fa47ced70acad30913b0fd614079c32d844b595014bc8",
+  "pages_json_sha256": "86493d8a7def8aef33d44e8ec97e68d36e79ca3bb767985c604f6bb511fcbd34",
+  "physical_bar_count": 26,
+  "printed_meter": {
+    "beats": 4,
+    "beat_type": 4,
+    "printed_glyph": "common time",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      300,
+      115,
+      390,
+      320
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 1,
+    "mode": null,
+    "label": "one sharp",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "One sharp is printed after the opening clef on each staff of system 1, before the common-time sign. Later systems reprint that one sharp. No other signature is printed.",
+    "evidence_box_px": [
+      250,
+      110,
+      320,
+      320
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 12,
+      "id": "P012",
+      "capacity_q": "23/2",
+      "capacity_plain": "23/2 quarters, the longest voice",
+      "kind": "system-2 part of the cadenza bar that continues on system 3",
+      "flags": [
+        "CADENZA",
+        "SPLIT_REGION",
+        "PARTIAL"
+      ],
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "onset_q": "0",
+      "evidence_space": "page_px",
+      "evidence_box_px": [
+        988,
+        398,
+        1631,
+        652
+      ],
+      "print_plain": "From the barline at x 988 to the end of the system-2 staves at x 1631 is the first part of one cadenza. The stroke at x 1146 is the stems of the fermata chord, not a barline: the gap between the staves there is blank. No closing barline is printed, and the same bar continues on system 3. The longest voice is the upper staff. It begins with an open half note tied to an open half note under a fermata (2 + 2 quarters). A second voice of two filled quarter-note heads under those halves totals 2 quarters. The upper voice then continues with an eighth rest (1/2), two eighth-note triplets (1 + 1), a dotted quarter (3/2), two eighths (1/2 + 1/2), a quarter-note chord with a fermata (1), an eighth rest (1/2), and four sixteenths (1). That continuation is 15/2 quarters. The longest voice is 4 + 15/2 = 23/2 quarters. The lower staff has the fermata chord, then an eighth rest with a fermata and a half rest with a fermata, and is shorter."
+    },
+    {
+      "physical_bar": 13,
+      "id": "P013",
+      "capacity_q": "17/2",
+      "capacity_plain": "17/2 quarters, the longest voice",
+      "kind": "system-3 part of the same cadenza bar, closed by a thin-thick double bar",
+      "flags": [
+        "CADENZA",
+        "SPLIT_REGION",
+        "PARTIAL",
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "onset_q": "0",
+      "evidence_space": "page_px",
+      "evidence_box_px": [
+        240,
+        676,
+        780,
+        980
+      ],
+      "print_plain": "System 3 opens with a brace and the reprinted clefs. No barline stands before the notes. This is the second part of the cadenza that began at x 988 on system 2, and it ends at the thin-thick double bar. The longest voice is the upper staff: an eighth rest (1/2) outside the following triplet, one eighth-note triplet of three beamed eighths under a single 3 (1), a dotted quarter (3/2), one flagged eighth with no triplet numeral (1/2), two further eighth-note triplets (1 + 1), and six ordinary eighths in two beamed groups of three with no triplet numeral (3), ending at the thin stroke. Those durations sum to 17/2 quarters. A lower voice, a dotted half then a chord with a turn and a fermata, sounds under the first part of that line and is shorter. The lower staff is empty until the double bar. The thin stroke is at x 763 and the thick stroke at x 767-768, with no repeat dots."
+    }
+  ],
+  "split_printed_bars": [
+    {
+      "regions": [
+        "P012",
+        "P013"
+      ],
+      "statement": "P012 and P013 are one printed cadenza. System 2 ends without a closing barline, and the bar continues on system 3 until the thin-thick double bar. The stems at x 1146 belong to the fermata chord. They do not cross the gap between the staves, so they are not a barline. System 3 has no opening barline; its first barline is that double bar. P012's longest voice is the upper staff: a half note tied to a half note under a fermata (4 quarters), then an eighth rest, two eighth-note triplets, a dotted quarter, two eighths, a quarter-note chord with a fermata, an eighth rest, and four sixteenths (15/2 quarters). The total is 23/2 quarters. P013's longest voice is the upper staff: an eighth rest outside the following triplet, one eighth-note triplet, a dotted quarter, one flagged eighth, two further eighth-note triplets, and six ordinary eighths with no triplet numeral, totaling 17/2 quarters. The shorter voices end early."
+    }
+  ],
+  "repeat_boundaries": [],
+  "clef_changes": [],
+  "pickup_plus_terminal_check": {
+    "meter_capacity_q": "4",
+    "pickup_present": false,
+    "opening_bar": {
+      "id": "P001",
+      "capacity_q": "4",
+      "evidence": "P001, from x 273 to x 485, holds half-note chords and then quarter-note chords on both staves."
+    },
+    "terminal_bar": {
+      "id": "P026",
+      "capacity_q": "4",
+      "evidence": "P026, from x 1545 to the thin final stroke at x 1626, holds a whole-note chord with a fermata on each staff."
+    },
+    "result": "No incomplete pickup is printed. The opening bar and the final bar each equal the printed 4 quarters, so there is no pickup-plus-terminal pair to add. P012 and P013 are partials of one split cadenza, not a pickup and not a terminal bar."
+  },
+  "section_double_bars": [
+    {
+      "after_physical_bar": 13,
+      "physical_bar": 13,
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "thin_x_px": 763,
+      "thick_x_px": [
+        767,
+        768
+      ],
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ],
+      "evidence_box_px": [
+        740,
+        740,
+        800,
+        950
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P013 ends with a thin stroke at x 763 and a thick stroke at x 767-768. No repeat dots are printed on either side, and the one-sharp signature does not change."
+    }
+  ],
+  "final_barline": {
+    "after_physical_bar": 26,
+    "page": 1,
+    "system": 4,
+    "thin_x_px": 1626,
+    "thick_x_px": [
+      1637,
+      1644
+    ],
+    "flags": [
+      "FINAL_BARLINE"
+    ],
+    "evidence_box_px": [
+      1605,
+      1055,
+      1660,
+      1280
+    ],
+    "evidence_space": "page_px",
+    "evidence": "P026 ends with a thin stroke at x 1626 and a thick stroke at x 1637-1644. No repeat dots are printed beside it. The bar holds a whole-note chord with a fermata on each staff."
+  },
+  "system_end_without_barline": {
+    "after_physical_bar": 12,
+    "system": 2,
+    "x_px": 1631,
+    "evidence": "P012 and P013 are one printed cadenza. P012 runs from the barline at x 988 to the end of the system-2 staves at x 1631. The stems at x 1146 belong to the fermata chord and do not cross the gap between the staves. No closing barline is printed. The bar continues on system 3, which has no opening barline, and ends at the thin-thick double bar of P013."
+  },
+  "system_opening_clefs": [
+    {
+      "system": 1,
+      "page": 1,
+      "first_physical_bar": 1,
+      "crop_path": "source_crops/system_01.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          190,
+          105,
+          275,
+          190
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          190,
+          230,
+          275,
+          320
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "first_physical_bar": 9,
+      "crop_path": "source_crops/system_02.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          165,
+          400,
+          250,
+          500
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          165,
+          540,
+          255,
+          630
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "first_physical_bar": 13,
+      "crop_path": "source_crops/system_03.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          165,
+          720,
+          255,
+          820
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          165,
+          860,
+          255,
+          950
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "first_physical_bar": 19,
+      "crop_path": "source_crops/system_04.png",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          168,
+          1035,
+          255,
+          1130
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          168,
+          1170,
+          260,
+          1265
+        ]
+      },
+      "kind": "system_opening_clef",
+      "is_clef_change": false,
+      "evidence_space": "page_px"
+    }
+  ]
+}

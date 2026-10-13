@@ -1,0 +1,100 @@
+{
+  "status": "FROZEN_BEFORE_APPLICATION",
+  "changes": [
+    {
+      "event_id": "ASTRA-n0129",
+      "before": {
+        "bar": 9,
+        "staff": 2,
+        "line": "tenor",
+        "onset_q": "3/2",
+        "duration_q": "1/2",
+        "pitch": "Bb3",
+        "id": "ASTRA-n0129",
+        "voice": 3,
+        "stem": "up",
+        "ties": [],
+        "beams": [
+          {
+            "number": 1,
+            "value": "end"
+          }
+        ],
+        "slurs": [],
+        "evidence": "reviewer/system_02.png",
+        "confidence": "high"
+      },
+      "after_patch": {
+        "pitch": "B3"
+      },
+      "evidence": "reviewer/P009_full_detail.png",
+      "reason": "The natural on the first B3 remains in force for the later B3 in the same bar; no cancelling flat is printed.",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ASTRA-n0370",
+      "before": "fermata on G2 member",
+      "after": "fermata on ASTRA-n0369 B3 member",
+      "evidence": "reviewer/system_04.png",
+      "reason": "Attach the above-staff fermata to the upper member as printed.",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ASTRA-n0369",
+      "before": "fermata on G2 member",
+      "after": "fermata on ASTRA-n0369 B3 member",
+      "evidence": "reviewer/system_04.png",
+      "reason": "Attach the above-staff fermata to the upper member as printed.",
+      "confidence": "high"
+    },
+    {
+      "before": "small lower grace curve absent from completed endpoint specification",
+      "after": {
+        "id": "SLUR-044",
+        "start": "ASTRA-n0024",
+        "end": "ASTRA-n0030",
+        "placement": "below",
+        "orientation": "under",
+        "provisional": true,
+        "evidence": "reviewer/system_01.png"
+      },
+      "evidence": "reviewer/system_01.png",
+      "reason": "Preserve the visible curve from first grace to sustained bass note; member identity inherits the frozen grace uncertainty.",
+      "confidence": "medium",
+      "provisional": true
+    },
+    {
+      "before": "small lower grace curve absent from completed endpoint specification",
+      "after": {
+        "id": "SLUR-045",
+        "start": "ASTRA-n0093",
+        "end": "ASTRA-n0097",
+        "placement": "below",
+        "orientation": "under",
+        "provisional": true,
+        "evidence": "reviewer/system_01.png"
+      },
+      "evidence": "reviewer/system_01.png",
+      "reason": "Preserve the visible curve from first grace to sustained bass note; member identity inherits the frozen grace uncertainty.",
+      "confidence": "medium",
+      "provisional": true
+    },
+    {
+      "before": "small lower grace curve absent from completed endpoint specification",
+      "after": {
+        "id": "SLUR-046",
+        "start": "ASTRA-n0298",
+        "end": "ASTRA-n0304",
+        "placement": "below",
+        "orientation": "under",
+        "provisional": true,
+        "evidence": "reviewer/system_03.png"
+      },
+      "evidence": "reviewer/system_03.png",
+      "reason": "Preserve the visible curve from first grace to sustained bass note; member identity inherits the frozen grace uncertainty.",
+      "confidence": "medium",
+      "provisional": true
+    }
+  ],
+  "human_outcome": null
+}

@@ -1,0 +1,226 @@
+{
+  "schema": "post_astra_consumer_recheck.v1",
+  "status": "PASS",
+  "scope": "Post-Astra consumer recheck bound to the visually verified Juan correction.",
+  "primary_xml": "delivery_final/Schumann_Op68_21_Three_Stars_Juan_Corrected.musicxml",
+  "primary_xml_sha256_before": "ceea3df6925bf4f4a5284478f4273a764fa8bddd76d1ab092a589f7e5f3ca266",
+  "primary_xml_sha256_after": "ceea3df6925bf4f4a5284478f4273a764fa8bddd76d1ab092a589f7e5f3ca266",
+  "primary_xml_unchanged": true,
+  "original_counts": {
+    "arpeggiate": 6,
+    "slur_endpoints": 80
+  },
+  "gates": {
+    "proper": {
+      "status": "PASS",
+      "result": {
+        "verdict": "PROPER",
+        "over_full": [],
+        "short": [
+          {
+            "part": "P1",
+            "measure": "m1",
+            "missing_quarters": 3.0,
+            "bar_quarters": 4.0,
+            "pickup": true,
+            "declared_partial": true,
+            "partner": "m20"
+          },
+          {
+            "part": "P1",
+            "measure": "m9",
+            "missing_quarters": 1.0,
+            "bar_quarters": 4.0,
+            "pickup": true,
+            "declared_partial": true,
+            "partner": "m10"
+          },
+          {
+            "part": "P1",
+            "measure": "m10",
+            "missing_quarters": 3.0,
+            "bar_quarters": 4.0,
+            "pickup": true,
+            "declared_partial": true,
+            "partner": "m9"
+          },
+          {
+            "part": "P1",
+            "measure": "m20",
+            "missing_quarters": 1.0,
+            "bar_quarters": 4.0,
+            "pickup": true,
+            "declared_partial": true,
+            "partner": "m1"
+          }
+        ],
+        "cursor_slips": [],
+        "first_slip_measure": null,
+        "notes": [
+          "m1 is short by 3, and m20 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+          "m9 is short by 1, and m10 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+          "m10 is short by 3, and m9 holds exactly the rest of it \u2014 one bar split in two, and normal.",
+          "m20 is short by 1, and m1 holds exactly the rest of it \u2014 one bar split in two, and normal."
+        ]
+      }
+    },
+    "core": {
+      "status": "PASS",
+      "lanes": [
+        [
+          0,
+          "1"
+        ],
+        [
+          0,
+          "2"
+        ],
+        [
+          1,
+          "4"
+        ],
+        [
+          1,
+          "3"
+        ]
+      ],
+      "expected_lanes": [
+        [
+          0,
+          "1"
+        ],
+        [
+          0,
+          "2"
+        ],
+        [
+          1,
+          "4"
+        ],
+        [
+          1,
+          "3"
+        ]
+      ],
+      "warnings": [
+        "Measure 10: starts mid-bar (pickup) \u2014 legitimate in fermata-phrased pieces, or OMR damage; verify by ear"
+      ],
+      "unexpressed_core": [],
+      "rebuild_musical_projection_exact": true,
+      "actual_apply_projection_exact": true,
+      "actual_apply_byte_exact": true,
+      "actual_apply_proper": "PROPER",
+      "applied_arpeggiate": 6,
+      "applied_slur_endpoints": 80
+    },
+    "marks": {
+      "status": "PASS",
+      "warnings": [],
+      "required_token": "metro(quarter=72)",
+      "required_token_present": true,
+      "text_fixpoint": true,
+      "actual_apply_projection_exact": true,
+      "applied_arpeggiate": 6,
+      "applied_slur_endpoints": 80,
+      "articulation_placement_exact": true,
+      "slur_endpoint_styles_exact": true
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "tempo_bpm": 72,
+      "expected_tempo_bpm": 72.0,
+      "attack_count": 542,
+      "expected_attack_count": 542
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "report": "C:\\Users\\User\\Desktop\\JJJS\\AICE\\website\\MirrorMind\\domains\\music\\_reports\\openai_omr_eval\\schumann_op68_21_three_stars\\astra_stage5_recheck_20260921_04\\juan_resolution_01\\rendered_final\\report.json",
+      "report_sha256": "13028ce08b88e3c12825e5625921b19b8b715dda1feae371bb0ac999cf5b14ac",
+      "probe_status": "passed",
+      "observed": {
+        "prepared_changed": true,
+        "arpeggios": 2,
+        "grace_slurs": 2,
+        "pedals": 2,
+        "focused_positioned_rests": 8,
+        "p19_slur_start_delta_px": 1.824996047616878e-07,
+        "rest_notehead_collisions": [],
+        "rest_stem_collisions": [],
+        "ids": [
+          "arpeggio-1",
+          "arpeggio-4",
+          "grace-slur-astra-m018-s2-grace-to-m018-s2-v1-e03",
+          "grace-slur-astra-m019-s1-g01-to-m020-s1-v1-e01",
+          "pedal-6",
+          "pedal-7",
+          "below-words-2",
+          "below-words-3",
+          "below-words-5"
+        ]
+      },
+      "rest_collisions": {
+        "noteheads": [],
+        "stems": [],
+        "source": "probe_summary"
+      }
+    }
+  },
+  "consumer_implementation_hashes": [
+    {
+      "path": "domains/music/sep_serializer.py",
+      "sha256": "6c927e88ae43d6d83f4ca0da60cde2d75efa4d6a1c802375d87d181b355b9548"
+    },
+    {
+      "path": "domains/music/sep_parser.py",
+      "sha256": "4b06033d4e6f8ffc6d4672056d085a28cd5c9dcc31234277efb214954a5d91ff"
+    },
+    {
+      "path": "domains/music/sep_marks.py",
+      "sha256": "e03cb4d6c4236c31d8fbfe83bdbdccc302e1a47fe2d70a2633e465d99f721552"
+    },
+    {
+      "path": "domains/music/sep_preserve.py",
+      "sha256": "ac66bda7cd8794717fc6562fe5c6fb066d347e7036925620891685d0e907ca6d"
+    },
+    {
+      "path": "domains/music/sep_apply.py",
+      "sha256": "d898e41d05a8e9d024405f103e411c20caeee2d560e824cfd07e953a3715e42c"
+    },
+    {
+      "path": "domains/music/proper.py",
+      "sha256": "a955cfe6cc170270cf81ee74d23486ae8d8b8153916cacfdbe998fd7449541bb"
+    },
+    {
+      "path": "domains/music/score_analyzer.py",
+      "sha256": "ae2d7fc24ae3ea704162220150e06d3d5dd6760128bc591c1ba2561a7e779416"
+    },
+    {
+      "path": "apps/AICOEVO-React/src/domains/music/components/ScoreViewer.tsx",
+      "sha256": "7c1767d54f96e93581e700bd8f174a67a4ce358fb36fe9006d3ff45c55def7f1"
+    },
+    {
+      "path": "apps/AICOEVO-React/src/domains/music/components/essentialNotationRendering.ts",
+      "sha256": "2e39448fa91822899a8af7e591742f77967c562067c61a7005fc4bf40603ecd3"
+    },
+    {
+      "path": "apps/AICOEVO-React/src/domains/music/components/crossStaffBeamRendering.ts",
+      "sha256": "6c282527dc6f22842203adefb2d601d6f4239fcb9a713f84b3b5a4204edb913c"
+    },
+    {
+      "path": "apps/AICOEVO-React/src/domains/music/components/crossStaffSlurRendering.ts",
+      "sha256": "240916334becfccb9f5ff11221d75288e3da12271d4e94207d1d97636c8f5dcf"
+    },
+    {
+      "path": "apps/AICOEVO-React/src/domains/music/components/voltaSlurRendering.ts",
+      "sha256": "02402051e0467f05bb706328ac3a7f25f28b3e094ca2f86b12e899349cbcf0da"
+    },
+    {
+      "path": "domains/music/_reports/openai_omr_eval/STAGED_PIPELINE/essential_notation_probe.cjs",
+      "sha256": "90094b453167a9f9ea433358fe5259408c639ce8f18a3e110f69c07e10f0ded0"
+    }
+  ],
+  "astra_reapproval_required": true,
+  "modifies_existing_final_freeze": false,
+  "human_outcome": null,
+  "primary_xml_sha256": "ceea3df6925bf4f4a5284478f4273a764fa8bddd76d1ab092a589f7e5f3ca266"
+}

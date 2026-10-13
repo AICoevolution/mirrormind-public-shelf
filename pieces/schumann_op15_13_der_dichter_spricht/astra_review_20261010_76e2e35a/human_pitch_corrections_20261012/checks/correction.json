@@ -1,0 +1,64 @@
+{
+  "source_sha256": "91aab770128c332d977bff64084385667c365a561936e5ae691d3b07ac812d5d",
+  "resolved_sha256": "05bc37abd8dbf728861bcb988903dd8a841b9ba697d86219f172c9442f02abea",
+  "changes": [
+    {
+      "id": "a008-01-n1",
+      "before": "A",
+      "after": "B",
+      "midi_delta": 2
+    },
+    {
+      "id": "a013-02-n1",
+      "before": "G",
+      "after": "A",
+      "midi_delta": 2
+    },
+    {
+      "id": "a021-01-n1",
+      "before": "A",
+      "after": "B",
+      "midi_delta": 2
+    }
+  ],
+  "only_declared_pitch_steps_changed": true,
+  "proper": {
+    "verdict": "PROPER",
+    "over_full": [],
+    "short": [],
+    "cursor_slips": [],
+    "declared_long": [
+      {
+        "part": "P1",
+        "measure": "m12",
+        "extent_quarters": 11.75,
+        "bar_quarters": 4.0
+      },
+      {
+        "part": "P1",
+        "measure": "m13",
+        "extent_quarters": 9.0,
+        "bar_quarters": 4.0
+      }
+    ],
+    "first_slip_measure": null,
+    "notes": [
+      "Every bar holds exactly its metre. The cursor will traverse from m1 beat 1 to the final beat without slipping \u2014 so what you hear from here is about the MUSIC, not the arithmetic."
+    ]
+  },
+  "engraving": {
+    "findings": [
+      {
+        "check": "voice-phantom",
+        "severity": "odd",
+        "where": "m13",
+        "what": "voice 4 exists only in this bar (4 notes) and overlaps the main line",
+        "why": "voice 1 already sounds at 0, 4 in this bar \u2014 so the reader believed two things sound here. That is a page question, not a formatting one: same pitch and onset with a different duration is also how a SHARED NOTEHEAD looks. Nothing is folded"
+      }
+    ],
+    "clean": false,
+    "counts": {
+      "odd": 1
+    }
+  }
+}

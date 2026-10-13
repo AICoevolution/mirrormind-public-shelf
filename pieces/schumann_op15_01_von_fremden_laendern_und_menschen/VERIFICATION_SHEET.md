@@ -1,10 +1,9 @@
-# Legacy shelf snapshot — schumann_op15_01_von_fremden_laendern_und_menschen
+# Public evidence — schumann_op15_01_von_fremden_laendern_und_menschen
 
-This is not the current full verification-evidence profile. The piece was published on the production shelf and is VERIFIED/PUBLISHED in the DEV queue, but its older run lacks one or more artifacts now required by the modern exporter.
+Published score: `published.musicxml`
 
-Modern-profile blocker: delivery manifest has no hashed files
+Published XML SHA-256: `89f5c985aba7e0836c51ddcf1d300226602f922a4ee5f8c39a990d63a8c99a6b`
 
-Published MusicXML SHA-256: `89f5c985aba7e0836c51ddcf1d300226602f922a4ee5f8c39a990d63a8c99a6b`  
-Manifest SHA-256: `3c8c2b5d4f14beccc4bdf9977b6d8147db9117cb2121da6b69beb81508a0790d`
+Recorded reviewer primary: `astra_review_recheck_6e98259a6df34876a92909c23e55b000/delivery_final/UNVERIFIED_Schumann_Op15_01_Von_fremden_Laendern_und_Menschen_Astra_import.musicxml`. Publication binding: `ledger_head_plus_published_namecard`.
 
-No source scan, page crop, or raw reader file is redistributed here.
+Review files document earlier pipeline decisions and can retain UNVERIFIED names or provisional findings. SHELF_RECORD.json records the published shelf metadata; this export grants no new approval. The manifest records every evidence file hash. Original scans and raw model transcripts are excluded.

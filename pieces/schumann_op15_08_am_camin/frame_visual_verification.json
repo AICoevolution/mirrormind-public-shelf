@@ -1,0 +1,322 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schumann_op15_08_am_camin",
+  "frame_revision": 2,
+  "authority": "print_only",
+  "source_pdf_sha256": "095230dfc6ce36a31581647db10b8dc76086b572210a23f978a2fb04629c02d3",
+  "physical_bar_count": 34,
+  "printed_meter": {
+    "beats": 2,
+    "beat_type": 4,
+    "printed_glyph": "2/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      230,
+      110,
+      285,
+      360
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": -1,
+    "mode": null,
+    "label": "one flat (F major / D minor)",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence": "One flat is printed after the opening clef on each staff of system 1, before the 2/4 sign. The same one-flat signature is reprinted after the clefs of systems 2-4. No key-signature change is printed.",
+    "evidence_box_px": [
+      200,
+      115,
+      250,
+      360
+    ],
+    "evidence_space": "page_px"
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [
+    {
+      "physical_bar": 1,
+      "id": "P001",
+      "capacity_q": "1/2",
+      "kind": "opening pickup",
+      "flags": [
+        "PICKUP"
+      ],
+      "page": 1,
+      "system": 1,
+      "crop_path": "source_crops/system_01.png",
+      "evidence": "Page 1, system 1, P001 runs from the barline at x 280 to the barline at x 435. The clef, one flat, and 2/4 stand at the left of the region. The upper staff then prints one eighth note, and the lower staff prints a rest. The eighth-note chord to the right of x 435 belongs to P002. The region holds one eighth.",
+      "evidence_box_px": [
+        280,
+        100,
+        435,
+        360
+      ],
+      "evidence_space": "page_px"
+    }
+  ],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "2",
+    "opening_pickup_q": "1/2",
+    "terminal_partial_q": "0",
+    "sum_q": "1/2",
+    "equals_meter": false,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "evidence": "Page 1, system 1, P001 runs from the barline at x 280 to the barline at x 435. The clef, one flat, and 2/4 stand at the left of the region. The upper staff then prints one eighth note, and the lower staff prints a rest. The eighth-note chord to the right of x 435 belongs to P002. The region holds one eighth.",
+      "evidence_box_px": [
+        280,
+        100,
+        435,
+        360
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_01.png"
+    },
+    "terminal_bar": {
+      "physical_bar": 34,
+      "capacity_q": "2",
+      "evidence": "P034 runs from barline x 1491 to the final thick stroke x 1634. Each staff has a stemmed open-note chord under a fermata. The stemmed open note is a half note, which fills 2/4. The bar is not cut short.",
+      "evidence_box_px": [
+        1491,
+        1080,
+        1650,
+        1360
+      ],
+      "evidence_space": "page_px",
+      "crop_path": "source_crops/system_04.png"
+    },
+    "note": "P001 is an opening pickup of one eighth. P034 is a complete 2/4 bar, not a shortened complement. Pickup 1/2 plus a terminal partial of 0 does not equal the printed meter, because the final bar is complete.",
+    "exception_evidence": "Page 1, system 1, P001, barline x 280 to x 435, holds one eighth. Page 1, system 4, P034, barline x 1491 to thick stroke x 1634, holds a half note on each staff and fills the printed 2/4 meter.",
+    "ok": true
+  },
+  "repeats": [
+    {
+      "kind": "forward",
+      "at_physical_bar": 10,
+      "before_physical_bar": 10,
+      "after_physical_bar": 9,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "Forward repeat opening P010. Thick stroke x 239-245, thin stroke x 250-251, and repeat dots on the right of the thin stroke in the middle spaces of both staves. No dots stand on the left. The repeated section opens at P010.",
+      "evidence_box_px": [
+        220,
+        440,
+        290,
+        690
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START"
+      ]
+    },
+    {
+      "kind": "backward",
+      "at_physical_bar": 25,
+      "after_physical_bar": 25,
+      "before_physical_bar": 26,
+      "page": 1,
+      "system": 3,
+      "crop_path": "source_crops/system_03.png",
+      "evidence": "End repeat after P025. Repeat dots on the left, thin stroke x 1629-1630, thick stroke x 1636-1642. It closes the first ending. The locked boundary is x 1636, the left edge of the thick stroke.",
+      "evidence_box_px": [
+        1580,
+        740,
+        1660,
+        1040
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END",
+        "FIRST_ENDING"
+      ]
+    }
+  ],
+  "clef_changes": [
+    {
+      "physical_bar": 30,
+      "staff": "1",
+      "staff_id": "1",
+      "sign": "F",
+      "line": 4,
+      "from": {
+        "sign": "G",
+        "line": 2
+      },
+      "to": {
+        "sign": "F",
+        "line": 4
+      },
+      "onset": "after the two dotted-quarter noteheads on staff 1 of P030, governing the final eighth",
+      "onset_q": "3/2",
+      "page": 1,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "glyph_region": "P030",
+      "effective_region": "P030",
+      "placement": "MID_REGION",
+      "evidence": "The upper-staff bass clef in P030 is not on the barline at x 865. Staff 1 first prints two dotted-quarter noteheads on one stem, each with an augmentation dot. There is no rest on staff 1. The bass clef follows that chord and governs the final eighth note of the bar. The glyph sits at about x 926-973 and y 1108-1172 on page 1, system 4.",
+      "evidence_box_px": [
+        926,
+        1108,
+        973,
+        1172
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "CLEF_CHANGE"
+      ],
+      "is_clef_change": true
+    }
+  ],
+  "clef_opening_reprints": [
+    {
+      "system": 1,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          263,
+          138,
+          280,
+          211
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          264,
+          240,
+          280,
+          335
+        ]
+      },
+      "crop_path": "source_crops/system_01.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 1,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          137,
+          470,
+          148,
+          546
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          137,
+          560,
+          149,
+          654
+        ]
+      },
+      "crop_path": "source_crops/system_02.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 10,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          141,
+          786,
+          153,
+          871
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          140,
+          890,
+          153,
+          980
+        ]
+      },
+      "crop_path": "source_crops/system_03.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 18,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          138,
+          1118,
+          156,
+          1201
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          140,
+          1205,
+          154,
+          1303
+        ]
+      },
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "first_physical_bar": 26,
+      "kind": "system_opening_clef",
+      "is_clef_change": false
+    }
+  ],
+  "same_clef_reprints": [
+    {
+      "system": 4,
+      "page": 1,
+      "physical_bar": 30,
+      "staff": "2",
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          880,
+          1230,
+          933,
+          1321
+        ]
+      },
+      "crop_path": "source_crops/system_04.png",
+      "evidence_space": "page_px",
+      "kind": "same_clef_reprint",
+      "is_clef_change": false,
+      "evidence": "A bass clef is printed on the lower staff at the start of P030. That staff was already bass, so this restates the active clef."
+    }
+  ],
+  "split_partials": []
+}

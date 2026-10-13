@@ -1,0 +1,69 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "ATTN-SLUR-1",
+      "address": "P001\u2013005, P013\u2013017, P029\u2013033, P041\u2013045",
+      "question": "Exact notehead attachment of the long curved phrase that crosses from upper accompaniment to the bass arrival.",
+      "provisional_treatment": "Use first accompaniment E4 to tied bass D3 arrival, below, as explicitly specified. This affects engraving only; pitches and playback ties remain separate.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png",
+        "reviewer/print_system_04.png",
+        "reviewer/print_system_06.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "ATTN-39-DOT",
+      "address": "P039 staff 1 first chord at 1/4",
+      "question": "Damaged staccato dot above first flagged chord.",
+      "provisional_treatment": "Encode staccato, supported by visible small mark; verify against print at human review.",
+      "evidence": [
+        "reviewer/print_system_05.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "ATTN-48-UNISON",
+      "address": "P048 staff 2 onset 0",
+      "question": "Black D3 in quarter dyad beside offset half-note D3: simultaneous unison voices or engraving damage?",
+      "provisional_treatment": "Keep both quarter D3/A3 dyad and simultaneous half D3, with final low G2 quarter at onset 1. Half-note offset treated as head displacement, not a late onset. Explicitly provisional; playback will include coincident D3 voices.",
+      "evidence": [
+        "reviewer/final_bass.png",
+        "reviewer/bar_048.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium"
+    },
+    {
+      "id": "ATTN-28-TIE",
+      "address": "P028\u2013029 bass B3",
+      "question": "Which bass member continues across boundary?",
+      "provisional_treatment": "B3 upstem quarter at P028 onset 1 ties to P029 half B3; other last-eighth chord members D#4/F#4 are separate.",
+      "evidence": [
+        "reviewer/bar_028.png",
+        "reviewer/bars_029_030.png"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null
+    },
+    {
+      "id": "ATTN-47-TIE",
+      "address": "P047 staff 1 inner G4",
+      "question": "Inner tie endpoint.",
+      "provisional_treatment": "Tie G4 onset 1/2 to G4 onset 1 only.",
+      "evidence": [
+        "reviewer/bar_047.png"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "ERRATUM-001",
+  "status": "FROZEN_BEFORE_APPLICATION",
+  "kind": "representation_only",
+  "reason": "Production cross-staff slur adapter selects first notehead in a chord and draws an invalid diagonal when endpoint systems differ within the same SVG. Preserve frozen G#4 member endpoint by storing G#4 first in final chord; force system start at P055 to keep the complete final crossing span on one system at the tested desktop widths.",
+  "before": [
+    {
+      "bar": 58,
+      "staff": 1,
+      "voice": 1,
+      "pitch": "D#4",
+      "onset_q": "0",
+      "duration_q": "2",
+      "chord": false,
+      "source_crop": "reviewer/print_system_06.png",
+      "ties": [
+        "stop"
+      ],
+      "grace": false,
+      "tuplet": null,
+      "stem": "up",
+      "beams": [],
+      "id": "print-0541"
+    },
+    {
+      "bar": 58,
+      "staff": 1,
+      "voice": 1,
+      "pitch": "G#4",
+      "onset_q": "0",
+      "duration_q": "2",
+      "chord": true,
+      "source_crop": "reviewer/print_system_06.png",
+      "ties": [],
+      "grace": false,
+      "tuplet": null,
+      "stem": "up",
+      "beams": [],
+      "id": "print-0542"
+    }
+  ],
+  "after": [
+    {
+      "bar": 58,
+      "staff": 1,
+      "voice": 1,
+      "pitch": "G#4",
+      "onset_q": "0",
+      "duration_q": "2",
+      "chord": false,
+      "source_crop": "reviewer/print_system_06.png",
+      "ties": [],
+      "grace": false,
+      "tuplet": null,
+      "stem": "up",
+      "beams": [],
+      "id": "print-0542"
+    },
+    {
+      "bar": 58,
+      "staff": 1,
+      "voice": 1,
+      "pitch": "D#4",
+      "onset_q": "0",
+      "duration_q": "2",
+      "chord": true,
+      "source_crop": "reviewer/print_system_06.png",
+      "ties": [
+        "stop"
+      ],
+      "grace": false,
+      "tuplet": null,
+      "stem": "up",
+      "beams": [],
+      "id": "print-0541"
+    }
+  ],
+  "layout": {
+    "bar": 55,
+    "new-system": "yes"
+  },
+  "changes_pitch_onset_duration_voice_or_endpoint": false,
+  "evidence": [
+    "production_render/report.json",
+    "production_render/full_score.png",
+    "reviewer/print_system_06.png"
+  ],
+  "human_outcome": null
+}

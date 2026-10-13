@@ -1,0 +1,4 @@
+# Pipeline findings
+The fused candidate's PROPER report and zero duration discrepancies did not detect musically wrong full bars, missing triplets/notes, empty P017, or wholesale missing expressive marks. Readers have extensive stream/onset and staff/voice fragmentation. The corrected arpeggio is one musical line across two staves, not two voices.
+
+Current CORE consumer loses cross-staff tuplet representability; actual Apply explicitly refuses all bars. Explicit invisible tuplet groups are needed for isolated inner-line VexFlow durations. Existing production adapters successfully reconnect all 44 cross-staff beam groups, and below-staff words render in the correct lane. OSMD still obscures simultaneous filled/hollow unison noteheads at P014/P022. This is the remaining primary rendering blocker; do not fix it by deleting the sustained print notes.

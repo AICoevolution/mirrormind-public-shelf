@@ -1,0 +1,28 @@
+{
+  "phase2_accessed": false,
+  "status": "BLOCKED_SOURCE_FRAME",
+  "hashes_match": true,
+  "issues": [
+    {
+      "printed": "P048 contains an eighth-note chord on staff 1 and an eighth-note octave on staff 2, each followed by two eighth rests, then the final thin-thick barline. Capacity is 3/2 quarter units. Neither staff prints the claimed half rest/half note.",
+      "evidence": "reviewer/FRAME-1_P048.png",
+      "id": "FRAME-1",
+      "page": 1,
+      "required_repair": "Retain printed 2/4 and P048 capacity 3/2. Replace the stale P048 special-barline evidence in all three Phase 1 frame files with the actual eighth-note-plus-two-eighth-rest reading. Reconcile all redundant terminal capacity claims, regenerate dependent freezes and handoff hashes, and obtain a new human authorization for the replacement handoff. Do not pad P048 to 2.",
+      "locked_claim": "physical_score_lock.json / special_barlines[1].evidence (also reviewer_phase1_frame_lock.json and frame_visual_verification.json): Last region is a complete 2/4: RH half rest against LH half E2 under pp. This conflicts with measure_capacities_q[48] = 3/2 and the terminal-partial entries.",
+      "system": 5,
+      "locked_bar": 48
+    },
+    {
+      "printed": "P029 is a full 2/4 region with four moving beamed eighths in the upper line, a sustained dotted-quarter inner note, and moving lower-staff material. It is not a region of half notes. The following light-light double bar and cancellation naturals are visible.",
+      "evidence": "reviewer/FRAME-2_P029.png",
+      "id": "FRAME-2",
+      "page": 1,
+      "required_repair": "Keep P029 capacity 2, its existing region boundaries, and the section double bar. Replace all half-note descriptions of P029 in Phase 1 framing/capacity evidence with the printed moving-note reading. Reconcile derived frame evidence, regenerate affected freezes and the handoff, and renew human authorization. This is an evidence-description repair, not a request to change P029 duration.",
+      "locked_claim": "physical_score_lock.json / special_barlines[0].evidence (also reviewer_phase1_frame_lock.json and frame_visual_verification.json): Last region is a complete 2/4 of half notes. frame_visual_verification.json / repeat_pair_capacity_checks[2].evidence repeats: P029 is a complete 2/4 of half notes.",
+      "system": 3,
+      "locked_bar": 29
+    }
+  ],
+  "human_outcome": null
+}

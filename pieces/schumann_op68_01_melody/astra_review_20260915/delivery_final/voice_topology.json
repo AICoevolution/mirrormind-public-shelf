@@ -1,0 +1,118 @@
+{
+  "pre_voice_census": [
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "1",
+      "notes": 92,
+      "pitched": 85,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "2",
+      "voice": "3",
+      "notes": 156,
+      "pitched": 156,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "5",
+      "notes": 6,
+      "pitched": 3,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "6",
+      "notes": 16,
+      "pitched": 16,
+      "empty": false
+    }
+  ],
+  "post_voice_census": [
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "1",
+      "notes": 101,
+      "pitched": 94,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "2",
+      "voice": "3",
+      "notes": 154,
+      "pitched": 154,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "2",
+      "notes": 10,
+      "pitched": 8,
+      "empty": false
+    }
+  ],
+  "continuous_musical_lines": 3,
+  "identities": [
+    {
+      "voice": "1",
+      "staff": 1,
+      "role": "continuous melody through all 20 bars"
+    },
+    {
+      "voice": "2",
+      "staff": 1,
+      "role": "independent inner counterline P008/P016 beats3–4, overlapping dotted-quarter F5; unison D5 convergence has two stems"
+    },
+    {
+      "voice": "3",
+      "staff": 2,
+      "role": "continuous accompaniment"
+    }
+  ],
+  "final_sep_lanes": [
+    {
+      "lane": "V1",
+      "sep_part": "P1",
+      "sep_voice": "1",
+      "xml_staff": 1,
+      "xml_voice": "1",
+      "pitched_count": 94
+    },
+    {
+      "lane": "V2",
+      "sep_part": "P1",
+      "sep_voice": "2",
+      "xml_staff": 1,
+      "xml_voice": "2",
+      "pitched_count": 8
+    },
+    {
+      "lane": "V3",
+      "sep_part": "P2",
+      "sep_voice": "1",
+      "xml_staff": 2,
+      "xml_voice": "3",
+      "pitched_count": 154
+    }
+  ],
+  "context_scoped_relabels": {
+    "P008/P016": "original v6 onset<2 -> v1; original v6 onset>=2 -> v2; pitched v5 -> v1; original v5 half rest -> hidden alignment rest v2"
+  },
+  "global_maps": [],
+  "removed_empty_lanes": [],
+  "retained_extra_voice_justification": "v2 sounds independently while melody F5 is held in P008 and P016; merging creates overlapping durations in one line",
+  "cross_staff_lines": 0,
+  "final_xml_sha256": "5cc0225e5e29a46f9ed38dede72bcdd471a251b6fc16add24b32e0fc3470a457",
+  "human_outcome": null,
+  "fresh_core_export_lane_count": 3,
+  "fresh_core_export_sha256": "45cc1cb79e30c634a834335506b893b54f2c51a34c29829c049df655f2d01713",
+  "export_note": "P2 in CORE is music21 staff-oriented export partition, not a second MusicXML instrument or extra musical line. The likely OMR artifact warning for V2 is a false positive; its simultaneous pitches are printed."
+}

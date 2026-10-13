@@ -1,0 +1,68 @@
+{
+  "xml_sha256": "020034bebf2b3a023e995a645977d90b7aa9d2841e5c4ba207487f0f0b9ddd08",
+  "status": "FOCUSED_RECHECK_COMPLETE_WITH_LIMITATIONS",
+  "evidence": [
+    "render_checks/final_v3/full_score.png",
+    "render_checks/final_v3/focused_final.png",
+    "evidence/source_crops/page-1.png"
+  ],
+  "all_changed_contexts_checked": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "checks": [
+    "All5 source systems checked against final pitches/rests/chords/onsets/durations and regenerated render",
+    "Ties3/7/12/16: both endpoints, all chord members and orientations",
+    "Pedal10:0–12:2.5 and14:2.5–16:2.5: sign/release positions now correct after serialization erratum",
+    "GraceA4/slurs20/22: pitches, slash, metrical zero-duration and G4 host attachment retained",
+    "Beams: 33 printed groups,99 XML beam tags,33 rendered paths; lower30 final eighth unjoined",
+    "Accidental C#4 attachments24/27/28, naturalB4 at9 and courtesyBb3 at13",
+    "P27 independent first-half inner line and joined chord, no invented rests; accent below",
+    "P29 E4+G4 opening chord; P30 dotted-quarterF4, two upper rests and four lower eighths plusrest",
+    "Backward repeats9/30, forward10, paired partial capacities1+9 and10+30"
+  ],
+  "remaining_viewer_limitations": [
+    {
+      "bar": [
+        20,
+        22
+      ],
+      "staff": 1,
+      "issue": "Installed OSMD draws grace curves below despite above/over XML; XML endpoints preserved. Printed curves are above. Human visual check required."
+    },
+    {
+      "bar": 30,
+      "staff": 2,
+      "issue": "Installed OSMD suppresses terminal cautionary G2 clef; exact XML retains it at onset2.5 for return to10. Pitch/cursor validation unaffected."
+    }
+  ],
+  "human_outcome": null
+}

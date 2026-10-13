@@ -1,0 +1,49 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "HA-SLUR",
+      "address": "P003\u21924, P005\u21926, P007\u21928, P021\u219222, P023\u219224, P025\u219226",
+      "question": "Confirm exact chord-member attachment of the six slurs.",
+      "provisional_treatment": "Provisionally attach to top note of each printed upper-line chord, above/over; no tie or playback duration change.",
+      "evidence": [
+        "reviewer/print_system_1.png",
+        "reviewer/print_system_2.png",
+        "reviewer/print_system_3.png",
+        "reviewer/print_system_4.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium",
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "HA-WEDGE",
+      "address": "P007, P008, P015, P025\u219226",
+      "question": "Confirm hairpin time endpoints where engraving spacing does not identify an exact beat.",
+      "provisional_treatment": "Use P007 0\u20133 diminuendo, P008 0\u20131.5 diminuendo, P015 0\u20133 crescendo, P025 0\u2013P026 2 diminuendo; explicit provisional placement.",
+      "evidence": [
+        "reviewer/print_system_1.png",
+        "reviewer/print_system_2.png",
+        "reviewer/print_system_3.png",
+        "reviewer/print_system_4.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "confidence": "medium",
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "HA-P007-HAIRPIN",
+      "address": "P007",
+      "question": "Opening or closing hairpin?",
+      "provisional_treatment": "Resolved by enlarged print: diminuendo; corrects earlier frozen inventory error.",
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/erratum2_P007.png",
+        "reviewer/ERRATUM_002.json"
+      ]
+    }
+  ]
+}

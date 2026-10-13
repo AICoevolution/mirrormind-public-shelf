@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "schumann_op15_02_curiose_geschichte",
+  "verified_utc": "2026-10-03T22:24:11.398586+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e3e2fda2c33b4987e4c5ef6970739ffea7c50601409975cba8789e988cec4c64",
+      "replay_sha256": "db69c708215d73eea204cf4ae18dbfce222856f55147f35f8ec362d42b154f83"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "785b2e6870065fa711df28134813a1374e3900d92d3996a8f109b6e7e131148b",
+      "replay_sha256": "785b2e6870065fa711df28134813a1374e3900d92d3996a8f109b6e7e131148b"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "c104dbf27995f90fc3c7f7636878ca54616c0c670111a24cfcebeacaee0d979f",
+      "replay_sha256": "acf1c9f6329ae23fad6369603061f70f73706bc78bdee90cb9315e5d00fea63a"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "651166b4ba5b74d56557aebc4cab06a51741e2b280fb273660c8004574ffcc67",
+      "replay_sha256": "232953772c94ccd6baf9e60677bf7fd4e28b71220335f7c79eea157773c60782"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "a72cc3ad13435c43539728502671b43eaa3250e090891cbf7a50b59e6955460f",
+      "replay_sha256": "cecbcc0ae1a7fe118d49d93e932eddc539f479ef2a4f4b82b456e71faf92bb0b"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

@@ -1,0 +1,28 @@
+{
+  "xml_sha256": "5cc0225e5e29a46f9ed38dede72bcdd471a251b6fc16add24b32e0fc3470a457",
+  "layers": {
+    "CORE": {
+      "status": "READY_FOR_CORE_CONTENT_WITH_LIMITATIONS",
+      "fresh_lanes": 3,
+      "note_multiset_rebuild_pass": true,
+      "actual_apply_pass": true,
+      "core_roundtrip_text_pass": true,
+      "limitation": "Standalone CORE rebuild preserves note onsets/pitches/durations but omits title, expression/route/metronome and original engraving. Do not replace the primary XML with CORE-only rebuild. Sparse true inner lane triggers heuristic warning."
+    },
+    "MARKS": {
+      "status": "READY_FOR_GOVERNED_MARKS_WITH_METRONOME_EXCEPTION",
+      "actual_apply_pass": true,
+      "paired_slur_and_wedge_endpoints_preserved": true,
+      "limitation": "Metronome is outside exported MARKS vocabulary; retained in primary XML and actual Apply. Slur numbers may safely change without changing paired endpoints."
+    },
+    "ROUTE": {
+      "status": "READY",
+      "actual_apply_pass": true,
+      "path": "1-4 | 1-20",
+      "played_bars": 24,
+      "limitation": null
+    }
+  },
+  "lossless_complete_score_rebuild_claimed": false,
+  "human_outcome": null
+}

@@ -1,0 +1,15 @@
+# Phase 3 freeze
+
+The independent audit is complete for 49 physical regions, 12 systems and both pages. Current authorization, staged evidence, nested saved evidence and current phase allowlists were verified. Phase 1 and Phase 2 remain byte-identical. The historical partial findings remain preserved and are superseded for application only by this nonoverlapping final specification. No later-phase request or job logs were read before this freeze.
+
+All 832 candidate members are covered: 702 match printed pitch/staff/onset/duration, 130 are removed or replaced, and 73 missing/replacement printed members are specified. The 775-member print specification binds written type/dots, accidental glyphs, stems, chord membership, minimal voice assignment, ties, beams, tuplet/grace state and omission/extra decisions. It includes 146 slurs, 32 member ties, two dotted voice-leading connectors, 29 directions, 22 hairpins, 15 upper arpeggios and 16 accents. Fingerings and their connectors are excluded. Additive ERRATUM_2 resolves the imprecise historical phrase descriptions without rewriting frozen evidence.
+
+Every source provenance entry (724) and disagreement entry (491), resolved or unresolved, has an explicit print-spec adjudication. Candidate packet core claims match the actual XML after canonical rest normalization. Twenty-two ledger records incorrectly propagate chord-root accidental glyphs to other members; these are recorded as provenance issues. Empty MARKS and passing source structural reports do not establish print accuracy. Source CORE's fragmented lanes and warned tie loss do not authorize lossy application.
+
+Four independent sounding voices are necessary and sufficient. The proposed final five staff/voice lanes include one cross-staff line only once in the logical voice count. All retained members have exact context mappings; opposed-stem lower notes in P021/P022/P037/P038 are split correctly. No global source-label merge is authorized. Shared rests are serialized once, absent voice segments use silent time transport, and no phantom rest lanes are introduced. No same-voice overlap or physical capacity overflow occurs in the specification.
+
+Printed common time and one-flat key remain unchanged. P001 is a one-quarter pickup and P049 a three-quarter close. The route is linear 1 through 49, without repeats/endings/navigation, ending light-heavy. No grace, pedal, fermata or unlisted ornament is present. The only tuplets are the five-sixteenth groups in P024 and P040.
+
+Print uncertainty is preserved for the damaged P008 phrase segment; its continuation and endpoint are visible. Hairpin anchors state musical scope; graphical endpoint clearance, polyphonic rest lanes and dotted diagonal connectors require production-renderer inspection. Stage 5 remains incomplete; no playback, Apply, rendering, or delivery readiness is claimed.
+
+Corrections are authorized only by phase3_review.json and phase3_notation_member_spec.json, with the bound topology proposal and errata. Stage 5 must copy the immutable source candidate and own correction, export, consumer validation and focused visual recheck.
