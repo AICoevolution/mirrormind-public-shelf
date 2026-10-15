@@ -1,0 +1,1060 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "grieg_op12_05_volksweise",
+  "edition_id": "grieg_op12_peters_imslp27335",
+  "created_utc": "2026-10-12T05:48:34.114434+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false,
+    "semantic_omr_content_exposed": false,
+    "non_authoritative_geometry_exposed": false
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, route mark, special/final barline, meter/key/clef transition and crop boundary. Classify every printed region NORMAL or NOTEWORTHY and state every noteworthy feature in plain musical language for the annotated system report. Use each full-page red crop-boundary overlay to prove that no musical ink is excluded.",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "ddd2e754a38357b436eb70b182a4a5abd7773a4eac000e40c72489103c73d850"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "4ccfe351941f51d9d2f86301fe35a7f2a3039752090455db0a29495810a0b008"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "c6adab33c33ef0de0aafb793263c1e95e7c168a12265a2ae4150a07e36b0f30e"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "0d3c6588eaf3802471bcabdc5f7f4765e5d43e4a70eb4fab27707277a5924783"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "ca09fe5e1063095a2aed21a95adf3bc66550e1b9867be8a6a99f9749472ee8d3"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "70ce5602fbf1254c5b40fcc2b44836770ad3d9c4fb639323fe835798fe7addb1"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "46bc17c0dc4c33c86425c65b5f875b5ec198c0a16fd639d732e69554774066d0"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "9f9275e99130b0978e979f0838b211a41685551ed5662988776959ec46f0d349"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "bd6afbb0d35c421e463c258494baf23838c7cfb14e43c131ae0defa76e352438"
+    },
+    "crop_boundary_system_01": {
+      "path": "frame_verification/system_01_crop_boundary.png",
+      "sha256": "8095b5e1999e82516e8be97ff6287cf40e426b1ecfb3575eaa04b319b91d9795"
+    },
+    "crop_boundary_system_02": {
+      "path": "frame_verification/system_02_crop_boundary.png",
+      "sha256": "3c09a6c8b5e89eeb168ef636b5f5a7b530764677c53dd09be25c818c9318e0d3"
+    },
+    "crop_boundary_system_03": {
+      "path": "frame_verification/system_03_crop_boundary.png",
+      "sha256": "ae4ef9390eb893311d34e2dd382002e599355ad62a730542824d14c7c18367ac"
+    },
+    "crop_boundary_system_04": {
+      "path": "frame_verification/system_04_crop_boundary.png",
+      "sha256": "32bf43ed94e6c9e64824d791a6641afaf2347c52bf4bb2a7b0097f74e9767032"
+    },
+    "crop_boundary_system_05": {
+      "path": "frame_verification/system_05_crop_boundary.png",
+      "sha256": "bef55dbeeb7bde91d94d286f45caf5516192d66deeafa12738c6168ec6436ee6"
+    },
+    "crop_boundary_system_06": {
+      "path": "frame_verification/system_06_crop_boundary.png",
+      "sha256": "0221449602833b8406e12538202a28acdef2f139ec977e87f2484323276c797b"
+    },
+    "crop_boundary_system_07": {
+      "path": "frame_verification/system_07_crop_boundary.png",
+      "sha256": "01b39b642bbc92a1c476d4a2470cd8d29c8c1a8735dba51b1c2977bc1bc87e49"
+    },
+    "crop_boundary_system_08": {
+      "path": "frame_verification/system_08_crop_boundary.png",
+      "sha256": "a4870425867d7f4c7ceb93df7f484179bda25d9b7f3d969eeb8329cbc7f4e2fb"
+    },
+    "crop_boundary_system_09": {
+      "path": "frame_verification/system_09_crop_boundary.png",
+      "sha256": "e34bb77a33d95e416422df53a26267ec7afd7e277715a01026777b7550333e61"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "6641801bcbced361737a10f0d86ac6b40098d233a804cc3e366ef4ff470ee2ba",
+      "width": 1631,
+      "height": 2098,
+      "pdf_page_size_pt": [
+        652.1400146484375,
+        839.1599731445312
+      ],
+      "edge_ink": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "trim": "none"
+    },
+    {
+      "page": 2,
+      "path": "source_crops/page-2.png",
+      "sha256": "b4bbd37451b7ede8fdf167d5233d886e6cfa5fe143e87447207b2adfb505f491",
+      "width": 1631,
+      "height": 2098,
+      "pdf_page_size_pt": [
+        652.1400146484375,
+        839.1599731445312
+      ],
+      "edge_ink": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "trim": "none"
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 41,
+    "printed_meter": {
+      "beats": 3,
+      "beat_type": 4,
+      "printed_glyph": "3/4",
+      "physical_bar": 1,
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        345,
+        450,
+        395,
+        695
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Both staves of system 1 print a 3 over a 4 after three sharps and before the quarter note. No other meter is printed. A full bar is three quarter notes."
+    },
+    "key": {
+      "fifths": 3,
+      "mode": null,
+      "label": "three sharps",
+      "physical_bar": 1,
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        275,
+        452,
+        350,
+        695
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Both staves print three sharps between the clef and the 3/4. Every later system reprints those three sharps. No new signature is printed."
+    },
+    "printed_key_changes": [],
+    "pickup_or_partial_bars": [
+      {
+        "id": "P001",
+        "physical_bar": 1,
+        "capacity_q": "1",
+        "kind": "one-quarter anacrusis",
+        "flags": [
+          "PICKUP"
+        ],
+        "page": 1,
+        "system": 1,
+        "evidence_box_px": [
+          390,
+          450,
+          470,
+          720
+        ],
+        "evidence_space": "page_px",
+        "evidence": "After the treble and bass clefs, three sharps, and 3/4, P001 contains one quarter note on the upper staff and one quarter rest on the lower staff, then the barline at x 466. No further note or rest is printed in that bar."
+      }
+    ],
+    "repeat_boundaries": [],
+    "score_layout": {
+      "schema": "score-layout.v1",
+      "layout_kind": "solo_piano_grand_staff",
+      "capacity_model": "bar_shared",
+      "players": [
+        {
+          "id": "piano",
+          "name": "Piano",
+          "instrument": "piano",
+          "part_ids": [
+            "P1"
+          ],
+          "staff_ids": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "staves": [
+        {
+          "id": "1",
+          "part_id": "P1",
+          "staff_in_part": "1",
+          "player_id": "piano",
+          "label": "Piano upper",
+          "default_clef": {
+            "sign": "G",
+            "line": 2
+          }
+        },
+        {
+          "id": "2",
+          "part_id": "P1",
+          "staff_in_part": "2",
+          "player_id": "piano",
+          "label": "Piano lower",
+          "default_clef": {
+            "sign": "F",
+            "line": 4
+          }
+        }
+      ]
+    },
+    "clefs": {
+      "open": {
+        "staff1": {
+          "sign": "G",
+          "line": 2,
+          "evidence_box_px": [
+            246,
+            453,
+            296,
+            534
+          ],
+          "evidence_space": "page_px"
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4,
+          "evidence_box_px": [
+            246,
+            636,
+            296,
+            695
+          ],
+          "evidence_space": "page_px"
+        }
+      },
+      "changes": [],
+      "system_opening_clefs": [
+        {
+          "system": 1,
+          "page": 1,
+          "physical_bar": 1,
+          "first_physical_bar": 1,
+          "crop_path": "source_crops/system_01.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              246,
+              453,
+              296,
+              534
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              246,
+              636,
+              296,
+              695
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 2,
+          "page": 1,
+          "physical_bar": 6,
+          "first_physical_bar": 6,
+          "crop_path": "source_crops/system_02.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              136,
+              853,
+              186,
+              933
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              136,
+              1035,
+              186,
+              1095
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 3,
+          "page": 1,
+          "physical_bar": 11,
+          "first_physical_bar": 11,
+          "crop_path": "source_crops/system_03.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              137,
+              1253,
+              187,
+              1334
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              137,
+              1434,
+              187,
+              1495
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 4,
+          "page": 1,
+          "physical_bar": 16,
+          "first_physical_bar": 16,
+          "crop_path": "source_crops/system_04.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              143,
+              1648,
+              193,
+              1728
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              143,
+              1830,
+              193,
+              1891
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 5,
+          "page": 2,
+          "physical_bar": 20,
+          "first_physical_bar": 20,
+          "crop_path": "source_crops/system_05.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              157,
+              154,
+              207,
+              236
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              157,
+              326,
+              207,
+              386
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 6,
+          "page": 2,
+          "physical_bar": 24,
+          "first_physical_bar": 24,
+          "crop_path": "source_crops/system_06.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              155,
+              531,
+              205,
+              612
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              155,
+              704,
+              205,
+              765
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 7,
+          "page": 2,
+          "physical_bar": 29,
+          "first_physical_bar": 29,
+          "crop_path": "source_crops/system_07.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              158,
+              912,
+              208,
+              991
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              158,
+              1083,
+              208,
+              1145
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 8,
+          "page": 2,
+          "physical_bar": 34,
+          "first_physical_bar": 34,
+          "crop_path": "source_crops/system_08.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              160,
+              1292,
+              210,
+              1368
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              160,
+              1473,
+              210,
+              1526
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 9,
+          "page": 2,
+          "physical_bar": 38,
+          "first_physical_bar": 38,
+          "crop_path": "source_crops/system_09.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              164,
+              1671,
+              214,
+              1744
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              164,
+              1847,
+              214,
+              1903
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff, then three sharps. Neither clef differs from the clef already in force."
+        }
+      ]
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          5
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "24276fc4510c969ed64559403ca1f893319265f55a5647fa81fc9f002b0f8fac",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_01_crop_boundary.png",
+          "sha256": "8095b5e1999e82516e8be97ff6287cf40e426b1ecfb3575eaa04b319b91d9795",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            370,
+            1631,
+            780
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "flags": [
+              "PICKUP"
+            ],
+            "capacity_q": "1",
+            "capacity_plain": "1 quarter-note beat"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P005",
+            "index": 5,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          6,
+          10
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "c16eed9014734e5c5b2da74eb4665514da3e073a58068201061445b09668bf28",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_02_crop_boundary.png",
+          "sha256": "3c09a6c8b5e89eeb168ef636b5f5a7b530764677c53dd09be25c818c9318e0d3",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            780,
+            1631,
+            1180
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P006",
+            "index": 6,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P007",
+            "index": 7,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P009",
+            "index": 9,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P010",
+            "index": 10,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          11,
+          15
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "ba0d99eb07660a60b5208ca0c505f3aaf2558e48ff1ac63eb7632b46ed7f49aa",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_03_crop_boundary.png",
+          "sha256": "ae4ef9390eb893311d34e2dd382002e599355ad62a730542824d14c7c18367ac",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1180,
+            1631,
+            1580
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P011",
+            "index": 11,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P013",
+            "index": 13,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P014",
+            "index": 14,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P015",
+            "index": 15,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          16,
+          19
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "41ee908a476b599043e0966139a04587e124c287d39caaee6c95c4988333c3d8",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_04_crop_boundary.png",
+          "sha256": "32bf43ed94e6c9e64824d791a6641afaf2347c52bf4bb2a7b0097f74e9767032",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1580,
+            1631,
+            1970
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P016",
+            "index": 16,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P017",
+            "index": 17,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P018",
+            "index": 18,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P019",
+            "index": 19,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 5,
+        "page": 2,
+        "physical_range": [
+          20,
+          23
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_05.png",
+        "crop_sha256": "bc7596591a799f0ae8ac623d80e17b4c9a6c644cedeba36120b10c6fa2fd061f",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_05_crop_boundary.png",
+          "sha256": "bef55dbeeb7bde91d94d286f45caf5516192d66deeafa12738c6168ec6436ee6",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            90,
+            1631,
+            465
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P020",
+            "index": 20,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P021",
+            "index": 21,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P022",
+            "index": 22,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P023",
+            "index": 23,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 6,
+        "page": 2,
+        "physical_range": [
+          24,
+          28
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_06.png",
+        "crop_sha256": "8b5beec38c0322d8173662f45a03d0937a8adc512ae981fd6cf77ea2efcafc30",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_06_crop_boundary.png",
+          "sha256": "0221449602833b8406e12538202a28acdef2f139ec977e87f2484323276c797b",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            465,
+            1631,
+            845
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P024",
+            "index": 24,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P025",
+            "index": 25,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P026",
+            "index": 26,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P027",
+            "index": 27,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P028",
+            "index": 28,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "physical_range": [
+          29,
+          33
+        ],
+        "expected_region_count": 5,
+        "crop_path": "source_crops/system_07.png",
+        "crop_sha256": "4caacb7b57bd12a72f33693c7e5952ce0acfc6d33be050dea122397563de0e42",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_07_crop_boundary.png",
+          "sha256": "01b39b642bbc92a1c476d4a2470cd8d29c8c1a8735dba51b1c2977bc1bc87e49",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            845,
+            1631,
+            1220
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P029",
+            "index": 29,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P030",
+            "index": 30,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P031",
+            "index": 31,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P032",
+            "index": 32,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P033",
+            "index": 33,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "physical_range": [
+          34,
+          37
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_08.png",
+        "crop_sha256": "66ee6909e4bf0cfcdf8149e2aa6e6e7770621339149a244f3b22034bd285287d",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_08_crop_boundary.png",
+          "sha256": "a4870425867d7f4c7ceb93df7f484179bda25d9b7f3d969eeb8329cbc7f4e2fb",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1220,
+            1631,
+            1600
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P034",
+            "index": 34,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P035",
+            "index": 35,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P036",
+            "index": 36,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P037",
+            "index": 37,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "physical_range": [
+          38,
+          41
+        ],
+        "expected_region_count": 4,
+        "crop_path": "source_crops/system_09.png",
+        "crop_sha256": "c6c04d7f8baef9b5373374b6296528102128c71af8c0507a1fa2207d23149d6c",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_09_crop_boundary.png",
+          "sha256": "e34bb77a33d95e416422df53a26267ec7afd7e277715a01026777b7550333e61",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1600,
+            1631,
+            1970
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P038",
+            "index": 38,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P039",
+            "index": 39,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P040",
+            "index": 40,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P041",
+            "index": 41,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "edition_scope": "grieg_op12_peters_imslp27335",
+    "execution_mode": "cursor_piece_chat",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions. Red means a region has one or more named frame landmarks to verify; blue means it was directly checked and is a normal bar with none."
+}

@@ -1,0 +1,96 @@
+{
+  "pre_voice_census": {
+    "s1:v1": 217,
+    "s2:v3": 234,
+    "s2:v15": 44,
+    "s2:v16": 6,
+    "s2:v4": 42,
+    "s1:v5": 30,
+    "s1:v6": 56
+  },
+  "post_voice_census": {
+    "s1:v1": 260,
+    "s2:v3": 278,
+    "s2:v4": 46,
+    "s1:v2": 56
+  },
+  "continuous_musical_lines": 4,
+  "identities": [
+    "upper main and sustained line v1",
+    "upper independently moving inner line v2",
+    "lower moving accompaniment v3",
+    "lower sustained bass v4"
+  ],
+  "final_sep_lanes": [
+    [
+      0,
+      "1"
+    ],
+    [
+      0,
+      "2"
+    ],
+    [
+      1,
+      "3"
+    ],
+    [
+      1,
+      "4"
+    ]
+  ],
+  "mapping": {
+    "staff1": {
+      "1": "1",
+      "5": "1",
+      "6": "2"
+    },
+    "staff2": {
+      "3": "3",
+      "15": "3",
+      "4": "4",
+      "16": "4"
+    }
+  },
+  "removed_empty_lanes": [],
+  "removed_unprinted_rests": [
+    "m012-s1-v5-e01",
+    "m012-s1-v5-e03",
+    "m013-s1-v5-e01",
+    "m013-s1-v5-e03",
+    "m017-s1-v5-e01",
+    "m020-s1-v5-e01",
+    "m020-s1-v5-e03",
+    "m021-s1-v5-e01",
+    "m021-s1-v5-e03",
+    "m025-s2-v2-e06",
+    "m036-s1-v5-e01",
+    "m036-s1-v5-e03",
+    "m037-s1-v5-e01",
+    "m037-s1-v5-e03",
+    "m041-s1-v5-e01",
+    "m044-s1-v5-e01",
+    "m044-s1-v5-e03",
+    "m045-s1-v5-e01",
+    "m045-s1-v5-e03",
+    "m049-s2-v2-e06"
+  ],
+  "retained_extra_voices": "Upper v2 overlaps the sustained upper voice in ten bars. Lower v4 overlaps moving bass in polyphonic bars. Shared double-stem unisons retain both durations. No cross-staff changes.",
+  "primary_xml_sha256": "72d5967918367d1bd49f94bc70ce1d9c4d0cae7b7728e3f9a8642910576099f9",
+  "human_outcome": null,
+  "sep_staff_indexing": "zero-based exporter index (0 upper, 1 lower); census staff numbers are MusicXML one-based",
+  "hidden_silence_carriers": [
+    "astra-hidden-p012-v1",
+    "astra-hidden-p013-v1",
+    "astra-hidden-p017-v1",
+    "astra-hidden-p020-v1",
+    "astra-hidden-p021-v1",
+    "astra-hidden-p036-v1",
+    "astra-hidden-p037-v1",
+    "astra-hidden-p041-v1",
+    "astra-hidden-p044-v1",
+    "astra-hidden-p045-v1"
+  ],
+  "hidden_carrier_justification": "Ten unprinted initial silent spans within existing upper main voice, replacing forward; no new line or printed rest. ERRATUM-001.",
+  "final_lane_check": "PASS: exactly four justified lanes"
+}

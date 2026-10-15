@@ -1,0 +1,37 @@
+{
+  "id": "ERRATUM-001",
+  "frozen_before_application": true,
+  "basis": "Focused production rendering revealed the need to specify the printed auxiliary rest lane explicitly; consumer inserts low display positions for secondary lower voice.",
+  "changes": [
+    {
+      "bars": [
+        26,
+        30,
+        34,
+        38
+      ],
+      "staff": 2,
+      "voice": 4,
+      "events": "Printed quarter/eighth rests at offsets 0,1,2,3",
+      "before": "No explicit rest display position",
+      "after": {
+        "display-step": "A",
+        "display-octave": 3
+      },
+      "evidence": [
+        "reviewer/print_system_05.png",
+        "reviewer/print_system_06.png",
+        "reviewer/print_system_07.png",
+        "reviewer/print_system_08.png"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "technical_encoding_change": {
+    "before": "Pedal <sound> nested in pedal direction",
+    "after": "Same damper-pedal sound attributes as standalone measure child at same zero onset",
+    "reason": "Production essentialNotationRendering removes the pedal direction-type but leaves sound-only direction, and OSMD silently discards that entire measure. Separate playback sound from visible pedal direction; preserve exact pedal semantics.",
+    "changes_musical_interpretation": false
+  },
+  "human_outcome": null
+}

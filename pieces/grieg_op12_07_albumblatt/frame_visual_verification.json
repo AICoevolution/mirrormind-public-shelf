@@ -1,0 +1,80 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_07_albumblatt",
+  "authority": "print_only",
+  "source_pdf_sha256": "81353f3265dcb6de58a4fe8582029a3ba9a1fd8ec3250e6c9892fb8ca88c6c7d",
+  "pages_json_sha256": "60ee117215c2b890cd9197eed660d1d0463f752c76e26b410cb0f3bf9c67dd81",
+  "physical_bar_count": 57,
+  "meter_check": "The only meter glyph is 2/4 on both staves of system 1. A full bar is two quarter notes. No later system prints a new meter.",
+  "pickup_plus_terminal": {
+    "pickup": "P001",
+    "pickup_capacity_q": "1/2",
+    "terminal": "P057",
+    "terminal_capacity_q": "2",
+    "opening_bar": "P001",
+    "opening_capacity_q": "1/2",
+    "meter_capacity_q": "2",
+    "sum_q": "5/2",
+    "matches_meter": false,
+    "explanation": "P001 was checked against the printed 2/4. Its capacity is one eighth note, and it closes at the barline at x 440, so the bar is a pickup. P057 was checked the same way: it runs from x 1282 to the thin final stroke at x 1500 and holds a complete 2/4, closed by the thick stroke beside it. The pickup of one eighth plus the full final bar is 5/2 quarters, not the printed two. The final bar is not shortened to balance the pickup.",
+    "terminal_evidence_box_px": [
+      1282,
+      1748,
+      1524,
+      1965
+    ],
+    "terminal_page": 2,
+    "terminal_system": 11,
+    "opening_evidence_box_px": [
+      360,
+      420,
+      448,
+      640
+    ],
+    "opening_page": 1,
+    "opening_system": 1
+  },
+  "pickup_or_partial_bars": [
+    {
+      "id": "P001",
+      "physical_bar": 1,
+      "capacity_q": "1/2",
+      "capacity_plain": "1 eighth-note unit",
+      "kind": "opening pickup of one eighth",
+      "flags": [
+        "PICKUP"
+      ],
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        360,
+        420,
+        448,
+        640
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P001 runs from the signature to the barline at x 440. Its capacity is one eighth note, which is short of the printed 2/4."
+    }
+  ],
+  "repeat_boundaries": [],
+  "repeat_check": "Every barline that crosses both staves was measured. No repeat dots stand in the staff spaces beside any barline. P057 ends with a thin stroke at x 1500 and a thick stroke immediately to its right. No earlier bar ends with a double bar.",
+  "clef_changes": [],
+  "clef_check": "The upper staff stays treble and the lower staff stays bass. Each of the eleven systems reprints those clefs at its left edge. No clef is printed in the middle of a bar, and no cautionary clef is printed before a barline.",
+  "key_check": "One sharp is printed after the opening clefs and reprinted at the start of every later system. No signature cancels or replaces it.",
+  "final_barline": {
+    "physical_bar": 57,
+    "page": 2,
+    "system": 11,
+    "thin_x_px": 1500,
+    "thick_x_px": 1506,
+    "evidence_box_px": [
+      1490,
+      1756,
+      1520,
+      1955
+    ],
+    "flags": [
+      "FINAL_BARLINE"
+    ]
+  }
+}

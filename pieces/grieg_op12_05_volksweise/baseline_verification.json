@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "grieg_op12_05_volksweise",
+  "verified_utc": "2026-10-12T05:39:01.896215+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "841bf0029bb127463e42baf8c8b5d2580c76886c0d110ab8854f3a35e1c1541d",
+      "replay_sha256": "aadf9e9a4ed76fa116e488cb0b37661283c89a2f0935d4e023cf5ddc490da20d"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "7ed33c550bf8d31514a0d56f7e049d346190b1cb5ff4a7b33ff788733cbfe7e2",
+      "replay_sha256": "7ed33c550bf8d31514a0d56f7e049d346190b1cb5ff4a7b33ff788733cbfe7e2"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "c00817fa2073ee68ca723c15fbd7929c9642ec3fec494972865db33e4c5d0233",
+      "replay_sha256": "efffb2007760b5c4b787c0621435284eac267d333a652d76f0df6fb6e1bf12a3"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "509eefc3cc23cba97c158a1ff5be1086c8b4ad51269a0d0fa8823c02039d17f1",
+      "replay_sha256": "e3a709666b5559875fe132470dbc1a74847758f24b7b629baafdaaf7d8e301ab"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "f583194e08190be5602f8df2a101a42c05eb7d3e52f51437da87f8c71e23371e",
+      "replay_sha256": "cce5efc48d8672860836cf58d5f94df2cdb4da434bcdd4277c6074c0a9c79547"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

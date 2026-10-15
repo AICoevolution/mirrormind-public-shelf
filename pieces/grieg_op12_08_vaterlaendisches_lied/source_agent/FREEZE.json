@@ -1,0 +1,83 @@
+{
+  "state": "ENSEMBLE_CANDIDATE_FREEZE",
+  "candidate_kind": "ensemble_v1",
+  "source_model": "ensemble_v1 deterministic fusion",
+  "source_pdf_sha256": "41bc300d6a355f535286e429ccdf1a2a551dd5fd46a36f06a5cdbdb890f58679",
+  "files_sha256": {
+    "UNVERIFIED_source.musicxml": "8235da8621bfdef4c5e41397b4bf227ac9561489d40691693783d0ba8f01fdd7",
+    "CORE.sep": "a8b6e8aeba721216537998b6620d620a32889d6b530ada58caded6dc99b0f3a0",
+    "MARKS.sep": "56b30d68a91e8b6e89d5ab1bbaba0d32c9ce91572c75ba52483cc15b082d9dee",
+    "ROUTE.sep": "1ab4fdd75b3db148daa04e64faea14647ae7852740124dd14522cad2f20d93a7",
+    "exact_event_ledger.json": "6683d34bfc0bfa03c1ca547311b49783e3ed301f5f612ab1ff88cb06d6426a39",
+    "exact_mark_ledger.json": "f89c265e2eb41f19c73723fc1faa4314620ba3e3e5c53cc45b4ef966796f41fd",
+    "uncertainties.json": "3303270caf09bbc78331a20f303cead9e41300d246997e419b1a03580a66e2cb",
+    "coverage.json": "6baa711f9168a2b7354248e42f0cc6f907c4143984c8851be541a9d2f9d18fb7",
+    "structural_checks.json": "5f9d2a905b25d43b9d662e88b02085c046be8ee80444fe39dc1bba853c2851e9",
+    "duration_discrepancies.json": "8cd2cdba07da6f00e4c35d6ec821740c0a993195db75df7a776455386081ccc4",
+    "voice_topology_census.json": "e68da33a49106f392ffdd602bcc401b4e03484daa3e57289088a69c21ecb8b51",
+    "ensemble_manifest.json": "2dbdf27dc12101dff3db7bbad4da1c8480958f0791aeec7b64cd7f9b6bdebbab"
+  },
+  "ensemble_contract_sha256": {
+    "ensemble_manifest.json": "2dbdf27dc12101dff3db7bbad4da1c8480958f0791aeec7b64cd7f9b6bdebbab",
+    "api_response_final.json": "44c48762d6c57a39fdcb1df59ddf5bd05a45b0afd34a38111409f2cc94475ac5",
+    "provenance_ledger.json": "1a8051a365ce27798207af14aa55216f9ee7d797d70eb83edb441dae268809dc",
+    "ensemble_disagreements.json": "1fa2d63f4cebb52753b431b9a2840e731e91c34c15377826c6d0b0fcecca882a"
+  },
+  "stage1_lock_sha256": {
+    "audit_config.json": "e01b842e01b44f0129b89e82ca2b5a0a0470560c0d4d5a46497ba35114caac84",
+    "physical_score_lock.json": "68fc4a58ee298d971dc07dad4c94232dd439f55e920f37734574a7973fbdf136",
+    "prep_manifest.json": "b2d3e77820078cb0f1aa3750d4ae4b0a1402bd460dcb507f6bcbb1f00f1186dc",
+    "config.json": "d94c215103969ffe3bb14b43444d2f49439321a3655d65c35438521973a91941"
+  },
+  "reader_claims": "withheld",
+  "api_total_cost_usd": 0.0493905,
+  "api_calls": 2,
+  "source_budgets_consumed": {
+    "gemini_actual_cost_usd": 0.0493905,
+    "gemini_calls_made": 2,
+    "gemini_max_calls": 24,
+    "gemini_max_cost_usd": 1.0,
+    "claude_fallback_responses_used": 4,
+    "independent_visual_enabled": false,
+    "grok_requested_count": 0,
+    "assembly_cost_usd": 0.0
+  },
+  "human_outcomes": null,
+  "fingerings": "deliberately excluded",
+  "physical_regions": 32,
+  "printed_region_range": "1-32",
+  "duration_discrepancy_count": 1,
+  "empty_staves_preserved": [
+    {
+      "bar": 1,
+      "staff": 2,
+      "marker": "empty_or_bare_list"
+    },
+    {
+      "bar": 2,
+      "staff": 1,
+      "marker": "empty_or_bare_list"
+    },
+    {
+      "bar": 3,
+      "staff": 1,
+      "marker": "empty_or_bare_list"
+    },
+    {
+      "bar": 5,
+      "staff": 2,
+      "marker": "empty_or_bare_list"
+    },
+    {
+      "bar": 6,
+      "staff": 1,
+      "marker": "empty_or_bare_list"
+    },
+    {
+      "bar": 7,
+      "staff": 1,
+      "marker": "empty_or_bare_list"
+    }
+  ],
+  "immutable_instruction": "Ensemble candidate freeze (not Sol/DeepSeek). Preserve; later corrections must use separate files/directories."
+}

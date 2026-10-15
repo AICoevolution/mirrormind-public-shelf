@@ -1,0 +1,176 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_04_elfentanz",
+  "authority": "print_only",
+  "source_pdf_sha256": "63d0101797a2e47ce2d03ac1e888d250d19c3410022e9e481b7f8eccb27c908f",
+  "pages_json_sha256": "6018b606379b6bee6d7fbf69d0f08df196bb814e7cd686b8cf243c054e7bcaa2",
+  "physical_bar_count": 72,
+  "meter_check": "The only meter glyph is 3/4 on both staves of system 1. A full bar is three quarter notes.",
+  "pickup_plus_terminal": {
+    "pickup": null,
+    "pickup_capacity_q": null,
+    "terminal": "P072",
+    "terminal_capacity_q": "3",
+    "opening_bar": "P001",
+    "opening_capacity_q": "3",
+    "meter_capacity_q": "3",
+    "sum_q": null,
+    "matches_meter": true,
+    "explanation": "P001 is a complete 3/4 bar: the 3/4 and one sharp are followed by three quarters of notes before the barline at x 515. There is no incomplete anacrusis. P072 is also a complete 3/4 bar, a quarter-note chord and two quarter rests on each staff, between the thin barline at x 1500 and the thick final stroke at x 1509. The opening and the close were both checked against the printed 3/4. Nothing is left over to balance.",
+    "terminal_evidence_box_px": [
+      1330,
+      1740,
+      1520,
+      1980
+    ],
+    "terminal_page": 2,
+    "terminal_system": 11,
+    "opening_evidence_box_px": [
+      243,
+      410,
+      515,
+      640
+    ],
+    "opening_page": 1,
+    "opening_system": 1
+  },
+  "pickup_or_partial_bars": [],
+  "repeat_boundaries": [],
+  "repeat_check": "Barlines that cross both staves and the space between them were measured on every system. The only paired strokes are the thin-thick final barline of P072, at x 1500 and x 1509. No repeat dots are printed in the staff spaces.",
+  "clef_changes": [
+    {
+      "physical_bar": 71,
+      "staff": 2,
+      "onset_q": "3",
+      "sign": "G",
+      "line": 2,
+      "system": 11,
+      "crop_path": "source_crops/system_11.png",
+      "page": 2,
+      "kind": "cautionary treble clef on the lower staff",
+      "placement": "REGION_END_CAUTIONARY",
+      "glyph_region": "P071",
+      "effective_region": "P072",
+      "from_sign": "F",
+      "from_line": 4,
+      "evidence_box_px": [
+        1268,
+        1874,
+        1323,
+        1955
+      ],
+      "evidence_space": "page_px",
+      "evidence": "On the lower staff of P071, after a quarter-note chord and two quarter rests, a treble clef stands immediately before the barline at x 1330. The notes of P071 stay in bass. Treble on the lower staff takes effect at P072. The upper staff stays in treble."
+    }
+  ],
+  "double_barlines": [],
+  "final_barline": {
+    "physical_bar": 72,
+    "page": 2,
+    "system": 11,
+    "thin_x_px": 1500,
+    "thick_x_px": 1509,
+    "kind": "thin-thick final barline"
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        13
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        14,
+        20
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        21,
+        26
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        27,
+        32
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        33,
+        38
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        39,
+        45
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        46,
+        51
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        52,
+        58
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        59,
+        65
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "measures": [
+        66,
+        72
+      ],
+      "bar_count": 7
+    }
+  ]
+}

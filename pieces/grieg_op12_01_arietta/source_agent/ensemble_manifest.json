@@ -1,0 +1,234 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "grieg_op12_01_arietta",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 23,
+  "physical_bars_complete": 23,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "c35795d4e4717b85525bee78989a8c1d85c35beb0499fc2cf350a24b3610dad7",
+      "events": 881
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "caf1cad7324d7bbaed8229bc7e005368ef98d8c11088fece4e9cc8b8568d170c",
+        "events": 367,
+        "canonical": true
+      }
+    ],
+    "GROK": [],
+    "GEMINI": [],
+    "CLAUDE": [
+      {
+        "path": "source_observations\\claude\\system_01.json",
+        "sha256": "dab93ac3052fc95b3923234d3bede013c24bda6934f5233ae057fc0493cde5e9",
+        "events": 66
+      },
+      {
+        "path": "source_observations\\claude\\system_03.json",
+        "sha256": "480a99c24d370e255ce15c5d76950f0668af51c7955034243a75308c77c6011c",
+        "events": 58
+      },
+      {
+        "path": "source_observations\\claude\\system_04.json",
+        "sha256": "db7ea8362f3e55a4ee3e9bd13ad251655584abb95d81a76dd036091f39e4bbcc",
+        "events": 58
+      },
+      {
+        "path": "source_observations\\claude\\system_05.json",
+        "sha256": "cc84b06696ea0ee784f0e7771b15089a50a20451486498b51cf1c2a6a29ac06f",
+        "events": 69
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "10d9061b682a8f1cfe2950289842d3dcff858f51effcd3075408f2605d8e4401"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "directory_id": "grok",
+    "method": null,
+    "scope": null,
+    "system_routes": [],
+    "enabled": false,
+    "requested_count": 0,
+    "requests": [],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "provider_manifests": [
+      {
+        "provider_id": "GROK",
+        "directory_id": "grok",
+        "manifest_path": "source_observations/grok/manifest.json",
+        "manifest_sha256": null
+      }
+    ]
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 1,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_01.json",
+        "request_sha256": "b02076d3f22e4a0755f8267c557c38ed3b0e9b23418cec82f52b0819f43492af",
+        "response_path": "source_observations/gemini/system_01.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_01.json",
+          "response_sha256": "dab93ac3052fc95b3923234d3bede013c24bda6934f5233ae057fc0493cde5e9",
+          "validated": true
+        }
+      },
+      {
+        "system": 3,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_03.json",
+        "request_sha256": "afef5a355c6904541939622c29424625d9a965089e1911241941cd7c909a5f26",
+        "response_path": "source_observations/gemini/system_03.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_03.json",
+          "response_sha256": "480a99c24d370e255ce15c5d76950f0668af51c7955034243a75308c77c6011c",
+          "validated": true
+        }
+      },
+      {
+        "system": 4,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "e56266cb716882106b53bb44bc104097c3d28576a8b3c6411e8590c80e3238f4",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_04.json",
+          "response_sha256": "db7ea8362f3e55a4ee3e9bd13ad251655584abb95d81a76dd036091f39e4bbcc",
+          "validated": true
+        }
+      },
+      {
+        "system": 5,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "266d07543d16e391e9023540ac71bf8e7a4be67ebbbdc9948a24274175bc0aad",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_05.json",
+          "response_sha256": "cc84b06696ea0ee784f0e7771b15089a50a20451486498b51cf1c2a6a29ac06f",
+          "validated": true
+        }
+      }
+    ],
+    "max_calls": 24,
+    "calls_made": 0,
+    "max_cost_usd": 1.0,
+    "actual_cost_usd": 0,
+    "execution_authorized": true,
+    "authorization_status": "authorized",
+    "paid_review_performed": false,
+    "responses_used": 0,
+    "claude_fallback_responses_used": 4,
+    "new_calls_made": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "cross_staff_voices": [],
+  "unresolved_evidence_claims": 51,
+  "unresolved_nonblocking": 96,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 51,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 0,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": false,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "dd6a91b627c2c4d7542285f0cb639d475b45c4a9a8843bdeb014afd909a86d7f"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "664b570d4189530e9a1576569015283e007424f4b741f98ecfb305f322cb8205"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "f09e8b691970028c2204c4894126c1e6d85859ccd94211c6ffd91b83d1c1bfaf"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "5d5f69572f516a449cd54586dca5406f53d8e99539147073255cd61279a0acd5"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "exact interval-valid source topology plus field-level weighted pitch and tie evidence; unsupported tie endpoints are quarantined; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-10-11T21:21:38.954529+00:00"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_08_vaterlaendisches_lied",
+  "authority": "print_only",
+  "source_pdf_sha256": "41bc300d6a355f535286e429ccdf1a2a551dd5fd46a36f06a5cdbdb890f58679",
+  "pages_json_sha256": "3573e42590af2289648751ad1a03a8a16647b78e13bbe3320d9a4eef361400bf",
+  "physical_bar_count": 32,
+  "meter_check": "The only meter glyph is common time on both staves of system 1. A full bar is four quarter notes. No later system prints a new meter.",
+  "pickup_plus_terminal": {
+    "pickup": null,
+    "pickup_capacity_q": null,
+    "terminal": "P032",
+    "terminal_capacity_q": "4",
+    "opening_bar": "P001",
+    "opening_capacity_q": "4",
+    "meter_capacity_q": "4",
+    "sum_q": null,
+    "matches_meter": false,
+    "explanation": "Proposed P031 spans x1217-1390 and contains successive half-note attacks at offsets 0 and 2; the upper chord belongs to the second attack. P032 spans x1390-1476 and contains whole notes. The stroke near x1390 crosses both staves and the inter-staff space and is separate from the chord stems. Each bar has four quarters. Independent verification and fresh human signoff remain required.",
+    "terminal_evidence_box_px": [
+      1390,
+      1725,
+      1496,
+      1930
+    ],
+    "terminal_page": 1,
+    "terminal_system": 5,
+    "opening_evidence_box_px": [
+      360,
+      360,
+      540,
+      640
+    ],
+    "opening_page": 1,
+    "opening_system": 1
+  },
+  "pickup_or_partial_bars": [],
+  "repeat_boundaries": [],
+  "repeat_check": "No repeat dots; P032 ends at the thin-thick final barline.",
+  "clef_changes": [],
+  "clef_check": "The upper staff stays treble and the lower staff stays bass. Each of the five systems reprints those clefs at its left edge. No clef is printed in the middle of a bar, and no cautionary clef is printed before a barline.",
+  "key_check": "Three flats are printed after the opening clefs and reprinted at the start of every later system. No signature cancels or replaces them.",
+  "final_barline": {
+    "physical_bar": 32,
+    "page": 1,
+    "system": 5,
+    "thin_x_px": 1476,
+    "thick_x_px": 1485,
+    "evidence_box_px": [
+      1470,
+      1724,
+      1496,
+      1920
+    ],
+    "flags": [
+      "FINAL_BARLINE"
+    ]
+  },
+  "capacity_check": "P001-P032 each contain four quarters. Proposed P031 spans x1217-1390 and contains successive half-note attacks at offsets 0 and 2; the upper chord belongs to the second attack. P032 spans x1390-1476 and contains whole notes. The stroke near x1390 crosses both staves and the inter-staff space and is separate from the chord stems. Each bar has four quarters. Independent verification and fresh human signoff remain required.",
+  "frame_revision_status": "proposal awaiting independent verification and human signoff"
+}

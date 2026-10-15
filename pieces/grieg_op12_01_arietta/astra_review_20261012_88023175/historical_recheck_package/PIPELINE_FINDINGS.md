@@ -1,0 +1,1 @@
+Shared cross-staff phrase geometry PASS does not cover hairpin-to-hairpin or hairpin-to-phrase-slur readability. Independent screenshot inspection exposed CONSUMER-HAIRPIN-JOIN despite geometric PASS. See recheck/technical_blockers.json. No production code was changed.

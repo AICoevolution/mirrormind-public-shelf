@@ -1,0 +1,3556 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "grieg_op12_04_elfentanz",
+  "edition_id": "grieg_op12_peters_imslp27335",
+  "created_utc": "2026-10-12T04:05:18.190277+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false,
+    "semantic_omr_content_exposed": false,
+    "non_authoritative_geometry_exposed": true
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, route mark, special/final barline, meter/key/clef transition and crop boundary. Classify every printed region NORMAL or NOTEWORTHY and state every noteworthy feature in plain musical language for the annotated system report. Use each full-page red crop-boundary overlay to prove that no musical ink is excluded. Systems listed under frozen_systems were already verified against these exact pixels in an earlier isolated session and are byte-identical now; copy each frozen system's verified blocks into your response unchanged, place no corrections on them, and spend the inspection on open_systems plus the whole-frame totals (region count, pickup-plus-terminal capacity, repeat pairs, clef inventory).",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "b0413d7807039d1f04fa75d0e2e36badbdda797210750120a16c3bfa94f59d46"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "63d0101797a2e47ce2d03ac1e888d250d19c3410022e9e481b7f8eccb27c908f"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "6018b606379b6bee6d7fbf69d0f08df196bb814e7cd686b8cf243c054e7bcaa2"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "6a747bc3bbde30dfccb79b66929430c0c04138d3f468c8df95c4d464907db0a2"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "0012c14751950501fc67eb33fee93f087ef769c6dee24044bccac9a75706d0bf"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "4860ae6add644fdab7ef5cb8a910e1ffecbfe31d2bd1aa5b127240c56dd18998"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "8183744d5478ebe2035160c389d563ef09a3582b505dbbb4367a6b753d99ebc6"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "db34bedbccdc39a66875ac49d4a8c3e55b0a57c776f36d5adf6da151e26d8226"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "32d0733ee450457cf7fe9437d1546d19f89224bd50fb2b3e5b5e255709306175"
+    },
+    "geometry_manifest": {
+      "path": "frame_geometry/manifest.json",
+      "sha256": "58d650f64c5d2aada650e1a30b1a65b913b78607648d6eab1b5c0182c3ea76ad"
+    },
+    "geometry_system_01_skeleton": {
+      "path": "frame_geometry/system_01_skeleton.png",
+      "sha256": "5c4baa0086ead15f4e10e7e30a0c2de984927b09154487dac3cef40662cf5b74"
+    },
+    "geometry_system_01_geometry_evidence": {
+      "path": "frame_geometry/system_01_geometry.png",
+      "sha256": "a07d08b6f55a6c6a0dcbef8c92ed3d13f105c4a4ebf438657dae574cbab89639"
+    },
+    "geometry_system_01_comparison": {
+      "path": "frame_geometry/system_01_comparison.png",
+      "sha256": "7e048778092db1d6dec6b27baba3d501c580ae259eda6689a46a8c2ba805b02d"
+    },
+    "geometry_system_02_skeleton": {
+      "path": "frame_geometry/system_02_skeleton.png",
+      "sha256": "7506f1a4f5b935f2291379b5f9d82dbce9090e2ecae82cc2bcb2a17ab045040f"
+    },
+    "geometry_system_02_geometry_evidence": {
+      "path": "frame_geometry/system_02_geometry.png",
+      "sha256": "1e19af72a5bdb3164c24663f271e2ab867368c3e3960afc517e83900b8a7e637"
+    },
+    "geometry_system_02_comparison": {
+      "path": "frame_geometry/system_02_comparison.png",
+      "sha256": "5becdb5a2f7928e7f48b0f99e03f8cf34e4e09f3aa96469442b95536d435ccaf"
+    },
+    "geometry_system_03_skeleton": {
+      "path": "frame_geometry/system_03_skeleton.png",
+      "sha256": "268eb3696c72be965e201658f1e1c16a83c47cd8633d74d7939e733edb04e596"
+    },
+    "geometry_system_03_geometry_evidence": {
+      "path": "frame_geometry/system_03_geometry.png",
+      "sha256": "78b6967f469f1c1d804b526e325488f2a63ae8a547c4de795c2dddcbf8f1c6aa"
+    },
+    "geometry_system_03_comparison": {
+      "path": "frame_geometry/system_03_comparison.png",
+      "sha256": "00313367c29bc21f752f477ce506d61dfc68acbbe16fa5ed147ca64581b5e120"
+    },
+    "geometry_system_04_skeleton": {
+      "path": "frame_geometry/system_04_skeleton.png",
+      "sha256": "e3d79fb33965504f46ca5778196b6dfdd859c810f149a878932aa1c9eb4a9c47"
+    },
+    "geometry_system_04_geometry_evidence": {
+      "path": "frame_geometry/system_04_geometry.png",
+      "sha256": "c0afffdf73e39ece4b9730ac01c9dad9ad85fb568c85a20a538a44106cb6c0dc"
+    },
+    "geometry_system_04_comparison": {
+      "path": "frame_geometry/system_04_comparison.png",
+      "sha256": "f6bbd7f1527cf99805899db37c09905645772de8f9f81ab03cb3ac30dd572d59"
+    },
+    "geometry_system_05_skeleton": {
+      "path": "frame_geometry/system_05_skeleton.png",
+      "sha256": "99c677aeea39faff3a28d8c6d159dffdaf7fcae739c068b8f890e749df2100c3"
+    },
+    "geometry_system_05_geometry_evidence": {
+      "path": "frame_geometry/system_05_geometry.png",
+      "sha256": "3d11d378582ba0b7fdf3fc4df59faa11dca476bb28f3e01b4d68f7a199f6ac95"
+    },
+    "geometry_system_05_comparison": {
+      "path": "frame_geometry/system_05_comparison.png",
+      "sha256": "ec0244b9245362e2444d6de91334b5b7071c290fbac465df410894f130bfc601"
+    },
+    "geometry_system_06_skeleton": {
+      "path": "frame_geometry/system_06_skeleton.png",
+      "sha256": "0871d5358cf549ba109d26998954c5a325c6dbad5dd5d3a398f239bc793e688e"
+    },
+    "geometry_system_06_geometry_evidence": {
+      "path": "frame_geometry/system_06_geometry.png",
+      "sha256": "1f2c5ed9fc9ae39cad9b271970f5c564b8b7db361b29bdbe2fd1db670bbf0d50"
+    },
+    "geometry_system_06_comparison": {
+      "path": "frame_geometry/system_06_comparison.png",
+      "sha256": "22c6d7b1b272be54cce8864556d11ba3e0d5b0202411cf717a3fc8062b957f2c"
+    },
+    "geometry_system_07_skeleton": {
+      "path": "frame_geometry/system_07_skeleton.png",
+      "sha256": "f6456a04bd165d055c2dab5b689fa4394a478ecff2f8b403c0c7fbe5f88571a5"
+    },
+    "geometry_system_07_geometry_evidence": {
+      "path": "frame_geometry/system_07_geometry.png",
+      "sha256": "91a5cbef061208c9ba8ac0077ca1842f2fbfdff8cfcaccdefd532502a9019413"
+    },
+    "geometry_system_07_comparison": {
+      "path": "frame_geometry/system_07_comparison.png",
+      "sha256": "41c0aeaae8d1d723246d789bc04500662c8d5e80c5f8ed935468efe01d9251f1"
+    },
+    "geometry_system_08_skeleton": {
+      "path": "frame_geometry/system_08_skeleton.png",
+      "sha256": "99fe1c25e8afb16f5bf7dcd1319729fd346e3ec50d6cd75ab5ff1c68d0515641"
+    },
+    "geometry_system_08_geometry_evidence": {
+      "path": "frame_geometry/system_08_geometry.png",
+      "sha256": "3b45e61085458192ed2a3a54f7c72786632f38d5f0fb4683a634c39954bdeaba"
+    },
+    "geometry_system_08_comparison": {
+      "path": "frame_geometry/system_08_comparison.png",
+      "sha256": "f64d84a84755ec7fd15d40f2679245d1acead4ee93d2ed3d93c74372d232e221"
+    },
+    "geometry_system_09_skeleton": {
+      "path": "frame_geometry/system_09_skeleton.png",
+      "sha256": "b20844f4d661cdbe5ffcf21a9cea6f5997432bdcfb710e1dd7fe6f489387da92"
+    },
+    "geometry_system_09_geometry_evidence": {
+      "path": "frame_geometry/system_09_geometry.png",
+      "sha256": "2700f8341ed74faee6bad5f1637424a647bbc9ffafab19d3b658be552707e4a2"
+    },
+    "geometry_system_09_comparison": {
+      "path": "frame_geometry/system_09_comparison.png",
+      "sha256": "ce4d9553f339f388ae40d20e2667c3ef28539de6d4ecd9eea2029612734a37af"
+    },
+    "geometry_system_10_skeleton": {
+      "path": "frame_geometry/system_10_skeleton.png",
+      "sha256": "0b8752875b25e085e6e473cc72ba6ab330da8134c00d519c8fa0c9a731929551"
+    },
+    "geometry_system_10_geometry_evidence": {
+      "path": "frame_geometry/system_10_geometry.png",
+      "sha256": "cc6aeab3126ddd994d1497145292d54f97c1c7586826174825c453f1ca74e435"
+    },
+    "geometry_system_10_comparison": {
+      "path": "frame_geometry/system_10_comparison.png",
+      "sha256": "e89773473feb8067cba3078a17fc1f7f92d91ee49eed68296b59b6bd66fee9e9"
+    },
+    "geometry_system_11_skeleton": {
+      "path": "frame_geometry/system_11_skeleton.png",
+      "sha256": "3a979cca8bbe8f39c71b81b00e63b966f8fb25a05c04e10f24ccdd33ceacd814"
+    },
+    "geometry_system_11_geometry_evidence": {
+      "path": "frame_geometry/system_11_geometry.png",
+      "sha256": "3e6ba4bcf97b0524902b4ee8bd4bc67a6bd934e34593c3800af62d571f0f7855"
+    },
+    "geometry_system_11_comparison": {
+      "path": "frame_geometry/system_11_comparison.png",
+      "sha256": "7c9f1d9eccecbdb7554647f654d5fc06feb7c3811e43babc3be845b2a4e3a1c5"
+    },
+    "crop_boundary_system_01": {
+      "path": "frame_verification/system_01_crop_boundary.png",
+      "sha256": "91302c208ccd7b31e18f90a9edbfb0b060fb137fe3c4805841df36152f388e8c"
+    },
+    "crop_boundary_system_02": {
+      "path": "frame_verification/system_02_crop_boundary.png",
+      "sha256": "ef75c36b9b0534a9fca4ea2ce52dec8599799c89f0c4528036ad49d495a4bbe5"
+    },
+    "crop_boundary_system_03": {
+      "path": "frame_verification/system_03_crop_boundary.png",
+      "sha256": "3330db3475c0be371d97fbbbe30d864daccae883996b80e203395c33ef85a5b8"
+    },
+    "crop_boundary_system_04": {
+      "path": "frame_verification/system_04_crop_boundary.png",
+      "sha256": "b69f5e69f03d46b5cf126d2b1ad4dd1f6bf8a6446dd406f7bf7c348b4cd9ca23"
+    },
+    "crop_boundary_system_05": {
+      "path": "frame_verification/system_05_crop_boundary.png",
+      "sha256": "f054215981099a5324bc9d838168a0b168172a0ea62ccefdda7301b55840535c"
+    },
+    "crop_boundary_system_06": {
+      "path": "frame_verification/system_06_crop_boundary.png",
+      "sha256": "c0e2727029066fb63e10d9a7298af0075410e609aea752a6e79a1faa0fc2a0ae"
+    },
+    "crop_boundary_system_07": {
+      "path": "frame_verification/system_07_crop_boundary.png",
+      "sha256": "0945a8f6b1b7073bca66dafbd5672d52e621a0769e2258ac5591ddee582e960b"
+    },
+    "crop_boundary_system_08": {
+      "path": "frame_verification/system_08_crop_boundary.png",
+      "sha256": "805285fdcf0e01a264e3418905f8f659de3198ecb7f29b037e2acf53a82f3e95"
+    },
+    "crop_boundary_system_09": {
+      "path": "frame_verification/system_09_crop_boundary.png",
+      "sha256": "a5c714e7a3539b255a0f455a83085bcab26aa06162a0b7daa1779d6bb905baea"
+    },
+    "crop_boundary_system_10": {
+      "path": "frame_verification/system_10_crop_boundary.png",
+      "sha256": "db3da1b4b8f9e153563fc0aff523d7c2a253735da94ee253147674f63d59a87a"
+    },
+    "crop_boundary_system_11": {
+      "path": "frame_verification/system_11_crop_boundary.png",
+      "sha256": "bd69380417fbd1292bd1b62f843728f5955e4f83d08ab3ddcf2e4607c7ef8212"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "234044b9d63180a41a6895e4ca2c4a0b92bc636cf82299ff8069e9406413b631",
+      "width": 1631,
+      "height": 2098,
+      "pdf_page_size_pt": [
+        652.1400146484375,
+        839.1599731445312
+      ],
+      "edge_ink": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "trim": "none"
+    },
+    {
+      "page": 2,
+      "path": "source_crops/page-2.png",
+      "sha256": "6add95310b9ffe52f87a723c80816b94e8b08b4cde0b00d6ebd8a76b6df0ddad",
+      "width": 1631,
+      "height": 2098,
+      "pdf_page_size_pt": [
+        652.1400146484375,
+        839.1599731445312
+      ],
+      "edge_ink": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "trim": "none"
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 72,
+    "printed_meter": {
+      "beats": 3,
+      "beat_type": 4,
+      "printed_glyph": "3/4",
+      "physical_bar": 1,
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        300,
+        415,
+        380,
+        640
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Both staves of system 1 print a 3 over a 4 after one sharp and before the first chord. No other meter is printed. A full bar is three quarter notes."
+    },
+    "key": {
+      "fifths": 1,
+      "mode": null,
+      "label": "one sharp",
+      "physical_bar": 1,
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        270,
+        410,
+        325,
+        640
+      ],
+      "evidence_space": "page_px",
+      "evidence": "Both staves print one sharp between the clef and the 3/4. Every later system reprints that one sharp. No new signature is printed."
+    },
+    "printed_key_changes": [],
+    "pickup_or_partial_bars": [],
+    "repeat_boundaries": [],
+    "score_layout": {
+      "schema": "score-layout.v1",
+      "layout_kind": "solo_piano_grand_staff",
+      "capacity_model": "bar_shared",
+      "players": [
+        {
+          "id": "piano",
+          "name": "Piano",
+          "instrument": "piano",
+          "part_ids": [
+            "P1"
+          ],
+          "staff_ids": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "staves": [
+        {
+          "id": "1",
+          "part_id": "P1",
+          "staff_in_part": "1",
+          "player_id": "piano",
+          "label": "Piano upper"
+        },
+        {
+          "id": "2",
+          "part_id": "P1",
+          "staff_in_part": "2",
+          "player_id": "piano",
+          "label": "Piano lower"
+        }
+      ]
+    },
+    "clefs": {
+      "open": {
+        "staff1": {
+          "sign": "G",
+          "line": 2,
+          "evidence_box_px": [
+            247,
+            401,
+            290,
+            494
+          ],
+          "evidence_space": "page_px"
+        },
+        "staff2": {
+          "sign": "F",
+          "line": 4,
+          "evidence_box_px": [
+            247,
+            558,
+            288,
+            610
+          ],
+          "evidence_space": "page_px"
+        }
+      },
+      "changes": [
+        {
+          "physical_bar": 71,
+          "staff": 2,
+          "onset_q": "3",
+          "sign": "G",
+          "line": 2,
+          "system": 11,
+          "crop_path": "source_crops/system_11.png",
+          "page": 2,
+          "kind": "cautionary treble clef on the lower staff",
+          "placement": "REGION_END_CAUTIONARY",
+          "glyph_region": "P071",
+          "effective_region": "P072",
+          "from_sign": "F",
+          "from_line": 4,
+          "evidence_box_px": [
+            1268,
+            1874,
+            1323,
+            1955
+          ],
+          "evidence_space": "page_px",
+          "evidence": "On the lower staff of P071, after a quarter-note chord and two quarter rests, a treble clef stands immediately before the barline at x 1330. The notes of P071 stay in bass. Treble on the lower staff takes effect at P072. The upper staff stays in treble."
+        }
+      ],
+      "system_opening_clefs": [
+        {
+          "system": 1,
+          "page": 1,
+          "physical_bar": 1,
+          "first_physical_bar": 1,
+          "crop_path": "source_crops/system_01.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              247,
+              401,
+              290,
+              494
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              247,
+              558,
+              288,
+              610
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 2,
+          "page": 1,
+          "physical_bar": 7,
+          "first_physical_bar": 7,
+          "crop_path": "source_crops/system_02.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              137,
+              729,
+              176,
+              822
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              137,
+              891,
+              190,
+              944
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 3,
+          "page": 1,
+          "physical_bar": 14,
+          "first_physical_bar": 14,
+          "crop_path": "source_crops/system_03.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              139,
+              1046,
+              185,
+              1142
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              139,
+              1213,
+              192,
+              1265
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 4,
+          "page": 1,
+          "physical_bar": 21,
+          "first_physical_bar": 21,
+          "crop_path": "source_crops/system_04.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              140,
+              1376,
+              179,
+              1463
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              140,
+              1536,
+              179,
+              1588
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 5,
+          "page": 1,
+          "physical_bar": 27,
+          "first_physical_bar": 27,
+          "crop_path": "source_crops/system_05.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              143,
+              1694,
+              196,
+              1787
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              143,
+              1873,
+              188,
+              1926
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 6,
+          "page": 2,
+          "physical_bar": 33,
+          "first_physical_bar": 33,
+          "crop_path": "source_crops/system_06.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              157,
+              146,
+              210,
+              238
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              157,
+              299,
+              210,
+              351
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 7,
+          "page": 2,
+          "physical_bar": 39,
+          "first_physical_bar": 39,
+          "crop_path": "source_crops/system_07.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              155,
+              437,
+              208,
+              530
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              155,
+              603,
+              192,
+              655
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 8,
+          "page": 2,
+          "physical_bar": 46,
+          "first_physical_bar": 46,
+          "crop_path": "source_crops/system_08.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              152,
+              753,
+              205,
+              848
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              152,
+              930,
+              205,
+              982
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 9,
+          "page": 2,
+          "physical_bar": 52,
+          "first_physical_bar": 52,
+          "crop_path": "source_crops/system_09.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              153,
+              1092,
+              194,
+              1188
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              153,
+              1249,
+              206,
+              1301
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 10,
+          "page": 2,
+          "physical_bar": 59,
+          "first_physical_bar": 59,
+          "crop_path": "source_crops/system_10.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              161,
+              1413,
+              196,
+              1506
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              158,
+              1574,
+              198,
+              1626
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with a treble clef on the upper staff and a bass clef on the lower staff. Neither clef differs from the clef already in force."
+        },
+        {
+          "system": 11,
+          "page": 2,
+          "physical_bar": 66,
+          "first_physical_bar": 66,
+          "crop_path": "source_crops/system_11.png",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              154,
+              1721,
+              197,
+              1816
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              154,
+              1888,
+              207,
+              1940
+            ]
+          },
+          "kind": "system_opening_clef",
+          "is_clef_change": false,
+          "evidence_space": "page_px",
+          "evidence": "The system opens with treble on the upper staff and bass on the lower staff. The treble clef printed at the end of P071 is the cautionary change, not this opening bass clef."
+        }
+      ]
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          6
+        ],
+        "expected_region_count": 6,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "f9d7a563612b0d55117cd11f779e0239721f566ce19c1e6326195f2a2e8e253c",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_01_crop_boundary.png",
+          "sha256": "91302c208ccd7b31e18f90a9edbfb0b060fb137fe3c4805841df36152f388e8c",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            300,
+            1631,
+            660
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P005",
+            "index": 5,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P006",
+            "index": 6,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          7,
+          13
+        ],
+        "expected_region_count": 7,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "c59cac0c9ea9aefd3c10918666b7fbdd75243ce602e7113fc0035975ab7c3c64",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_02_crop_boundary.png",
+          "sha256": "ef75c36b9b0534a9fca4ea2ce52dec8599799c89f0c4528036ad49d495a4bbe5",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            640,
+            1631,
+            1013
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P007",
+            "index": 7,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P009",
+            "index": 9,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P010",
+            "index": 10,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P011",
+            "index": 11,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P013",
+            "index": 13,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          14,
+          20
+        ],
+        "expected_region_count": 7,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "3aa78db3f8a14f561f69cf646e75fd01c21d788076106ec72d31ac037c80cf85",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_03_crop_boundary.png",
+          "sha256": "3330db3475c0be371d97fbbbe30d864daccae883996b80e203395c33ef85a5b8",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1000,
+            1631,
+            1335
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P014",
+            "index": 14,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P015",
+            "index": 15,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P016",
+            "index": 16,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P017",
+            "index": 17,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P018",
+            "index": 18,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P019",
+            "index": 19,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P020",
+            "index": 20,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          21,
+          26
+        ],
+        "expected_region_count": 6,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "0d1fbf413ba3a35c35c05f399448fc56904c925677a3ecf424bb16ae40f6591a",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_04_crop_boundary.png",
+          "sha256": "b69f5e69f03d46b5cf126d2b1ad4dd1f6bf8a6446dd406f7bf7c348b4cd9ca23",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1320,
+            1631,
+            1675
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P021",
+            "index": 21,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P022",
+            "index": 22,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P023",
+            "index": 23,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P024",
+            "index": 24,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P025",
+            "index": 25,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P026",
+            "index": 26,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "physical_range": [
+          27,
+          32
+        ],
+        "expected_region_count": 6,
+        "crop_path": "source_crops/system_05.png",
+        "crop_sha256": "72ec7bbf2ed2d3788077ea5980140b14ca14230a7c096a1565472f1a8588f198",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_05_crop_boundary.png",
+          "sha256": "f054215981099a5324bc9d838168a0b168172a0ea62ccefdda7301b55840535c",
+          "page": 1,
+          "crop_bbox_page_px": [
+            0,
+            1650,
+            1631,
+            1996
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P027",
+            "index": 27,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P028",
+            "index": 28,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P029",
+            "index": 29,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P030",
+            "index": 30,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P031",
+            "index": 31,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P032",
+            "index": 32,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 6,
+        "page": 2,
+        "physical_range": [
+          33,
+          38
+        ],
+        "expected_region_count": 6,
+        "crop_path": "source_crops/system_06.png",
+        "crop_sha256": "f58a3178273041c774ffb89298ccffa0bdb42f0038fe962fc5e7db9263202b94",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_06_crop_boundary.png",
+          "sha256": "c0e2727029066fb63e10d9a7298af0075410e609aea752a6e79a1faa0fc2a0ae",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            60,
+            1631,
+            419
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P033",
+            "index": 33,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P034",
+            "index": 34,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P035",
+            "index": 35,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P036",
+            "index": 36,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P037",
+            "index": 37,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P038",
+            "index": 38,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "physical_range": [
+          39,
+          45
+        ],
+        "expected_region_count": 7,
+        "crop_path": "source_crops/system_07.png",
+        "crop_sha256": "62a0f66dc32cc43464a576a2ffcc30d46f322246ee50c0e992b4c7f8eb99ca7a",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_07_crop_boundary.png",
+          "sha256": "0945a8f6b1b7073bca66dafbd5672d52e621a0769e2258ac5591ddee582e960b",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            360,
+            1631,
+            725
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P039",
+            "index": 39,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P040",
+            "index": 40,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P041",
+            "index": 41,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P042",
+            "index": 42,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P043",
+            "index": 43,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P044",
+            "index": 44,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P045",
+            "index": 45,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "physical_range": [
+          46,
+          51
+        ],
+        "expected_region_count": 6,
+        "crop_path": "source_crops/system_08.png",
+        "crop_sha256": "8f568aade87f00b32f4092c68ffc519dce9997a2841dfd882fd6fbdfb6caf49e",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_08_crop_boundary.png",
+          "sha256": "805285fdcf0e01a264e3418905f8f659de3198ecb7f29b037e2acf53a82f3e95",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            700,
+            1631,
+            1042
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P046",
+            "index": 46,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P047",
+            "index": 47,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P048",
+            "index": 48,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P049",
+            "index": 49,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P050",
+            "index": 50,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P051",
+            "index": 51,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "physical_range": [
+          52,
+          58
+        ],
+        "expected_region_count": 7,
+        "crop_path": "source_crops/system_09.png",
+        "crop_sha256": "a6481b3facec55a1ff6a821f41a6550e3d8cb37c707f8f2ef72acfc53f52c791",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_09_crop_boundary.png",
+          "sha256": "a5c714e7a3539b255a0f455a83085bcab26aa06162a0b7daa1779d6bb905baea",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1000,
+            1631,
+            1360
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P052",
+            "index": 52,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P053",
+            "index": 53,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P054",
+            "index": 54,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P055",
+            "index": 55,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P056",
+            "index": 56,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P057",
+            "index": 57,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P058",
+            "index": 58,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 10,
+        "page": 2,
+        "physical_range": [
+          59,
+          65
+        ],
+        "expected_region_count": 7,
+        "crop_path": "source_crops/system_10.png",
+        "crop_sha256": "1b815d69c07c5ebe638901fed2d75ac56a80241e261a7f42a808a615adb1e116",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_10_crop_boundary.png",
+          "sha256": "db3da1b4b8f9e153563fc0aff523d7c2a253735da94ee253147674f63d59a87a",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1340,
+            1631,
+            1678
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P059",
+            "index": 59,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P060",
+            "index": 60,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P061",
+            "index": 61,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P062",
+            "index": 62,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P063",
+            "index": 63,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P064",
+            "index": 64,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P065",
+            "index": 65,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 11,
+        "page": 2,
+        "physical_range": [
+          66,
+          72
+        ],
+        "expected_region_count": 7,
+        "crop_path": "source_crops/system_11.png",
+        "crop_sha256": "36cc0f8861e3409a3c0c20949b289a85d9d06b69fa71718d1fa913b017c3bdc5",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_11_crop_boundary.png",
+          "sha256": "bd69380417fbd1292bd1b62f843728f5955e4f83d08ab3ddcf2e4607c7ef8212",
+          "page": 2,
+          "crop_bbox_page_px": [
+            0,
+            1655,
+            1631,
+            2020
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P066",
+            "index": 66,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P067",
+            "index": 67,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P068",
+            "index": 68,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P069",
+            "index": 69,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P070",
+            "index": 70,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P071",
+            "index": 71,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P072",
+            "index": 72,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "edition_scope": "grieg_op12_peters_imslp27335",
+    "execution_mode": "cursor_piece_chat",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions. Red means a region has one or more named frame landmarks to verify; blue means it was directly checked and is a normal bar with none.",
+  "geometry_assist": {
+    "schema": "frame-geometry-assist.v1",
+    "manifest_path": "frame_geometry/manifest.json",
+    "manifest_sha256": "58d650f64c5d2aada650e1a30b1a65b913b78607648d6eab1b5c0182c3ea76ad",
+    "authority": "non_authoritative_geometry_assist",
+    "print_remains_authority": true,
+    "semantic_omr_content_exposed": false,
+    "instructions": "Use the skeleton and barline evidence to prioritize inspection. Confirm every final boundary against the printed crop. Candidate geometry may be accepted, adjusted, or rejected; never pass from model confidence or agreement alone.",
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          244,
+          517,
+          706,
+          927,
+          1145,
+          1305,
+          1496
+        ],
+        "proposed_boundaries_crop_px": [
+          243,
+          515,
+          704,
+          925,
+          1142,
+          1303,
+          1494
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2
+        ],
+        "confidence_counts": {
+          "high": 7,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_01_skeleton.png",
+            "sha256": "5c4baa0086ead15f4e10e7e30a0c2de984927b09154487dac3cef40662cf5b74"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_01_geometry.png",
+            "sha256": "a07d08b6f55a6c6a0dcbef8c92ed3d13f105c4a4ebf438657dae574cbab89639"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_01_comparison.png",
+            "sha256": "7e048778092db1d6dec6b27baba3d501c580ae259eda6689a46a8c2ba805b02d"
+          }
+        }
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          133,
+          433,
+          625,
+          785,
+          956,
+          1149,
+          1342,
+          1497
+        ],
+        "proposed_boundaries_crop_px": [
+          133,
+          431,
+          623,
+          782,
+          954,
+          1147,
+          1340,
+          1494
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          2,
+          2,
+          3,
+          2,
+          2,
+          2,
+          3
+        ],
+        "confidence_counts": {
+          "high": 8,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_02_skeleton.png",
+            "sha256": "7506f1a4f5b935f2291379b5f9d82dbce9090e2ecae82cc2bcb2a17ab045040f"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_02_geometry.png",
+            "sha256": "1e19af72a5bdb3164c24663f271e2ab867368c3e3960afc517e83900b8a7e637"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_02_comparison.png",
+            "sha256": "5becdb5a2f7928e7f48b0f99e03f8cf34e4e09f3aa96469442b95536d435ccaf"
+          }
+        }
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          136,
+          397,
+          610,
+          801,
+          950,
+          1111,
+          1318,
+          1497
+        ],
+        "proposed_boundaries_crop_px": [
+          135,
+          394,
+          608,
+          799,
+          948,
+          1108,
+          1316,
+          1495
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          3,
+          2,
+          2,
+          2,
+          3,
+          2,
+          2
+        ],
+        "confidence_counts": {
+          "high": 8,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_03_skeleton.png",
+            "sha256": "268eb3696c72be965e201658f1e1c16a83c47cd8633d74d7939e733edb04e596"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_03_geometry.png",
+            "sha256": "78b6967f469f1c1d804b526e325488f2a63ae8a547c4de795c2dddcbf8f1c6aa"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_03_comparison.png",
+            "sha256": "00313367c29bc21f752f477ce506d61dfc68acbbe16fa5ed147ca64581b5e120"
+          }
+        }
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          137,
+          388,
+          571,
+          795,
+          1026,
+          1259,
+          1498
+        ],
+        "proposed_boundaries_crop_px": [
+          136,
+          386,
+          569,
+          793,
+          1024,
+          1257,
+          1496
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "confidence_counts": {
+          "high": 7,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_04_skeleton.png",
+            "sha256": "e3d79fb33965504f46ca5778196b6dfdd859c810f149a878932aa1c9eb4a9c47"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_04_geometry.png",
+            "sha256": "c0afffdf73e39ece4b9730ac01c9dad9ad85fb568c85a20a538a44106cb6c0dc"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_04_comparison.png",
+            "sha256": "f6bbd7f1527cf99805899db37c09905645772de8f9f81ab03cb3ac30dd572d59"
+          }
+        }
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          140,
+          457,
+          698,
+          915,
+          1144,
+          1315,
+          1497
+        ],
+        "proposed_boundaries_crop_px": [
+          139,
+          455,
+          696,
+          913,
+          1142,
+          1313,
+          1494
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3
+        ],
+        "confidence_counts": {
+          "high": 7,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_05_skeleton.png",
+            "sha256": "99c677aeea39faff3a28d8c6d159dffdaf7fcae739c068b8f890e749df2100c3"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_05_geometry.png",
+            "sha256": "3d11d378582ba0b7fdf3fc4df59faa11dca476bb28f3e01b4d68f7a199f6ac95"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_05_comparison.png",
+            "sha256": "ec0244b9245362e2444d6de91334b5b7071c290fbac465df410894f130bfc601"
+          }
+        }
+      },
+      {
+        "system": 6,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          154,
+          444,
+          652,
+          819,
+          1014,
+          1267,
+          1511
+        ],
+        "proposed_boundaries_crop_px": [
+          153,
+          441,
+          650,
+          817,
+          1012,
+          1265,
+          1509
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "confidence_counts": {
+          "high": 7,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_06_skeleton.png",
+            "sha256": "0871d5358cf549ba109d26998954c5a325c6dbad5dd5d3a398f239bc793e688e"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_06_geometry.png",
+            "sha256": "1f2c5ed9fc9ae39cad9b271970f5c564b8b7db361b29bdbe2fd1db670bbf0d50"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_06_comparison.png",
+            "sha256": "22c6d7b1b272be54cce8864556d11ba3e0d5b0202411cf717a3fc8062b957f2c"
+          }
+        }
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          151,
+          387,
+          560,
+          772,
+          971,
+          1126,
+          1298,
+          1513
+        ],
+        "proposed_boundaries_crop_px": [
+          151,
+          385,
+          558,
+          770,
+          969,
+          1124,
+          1296,
+          1511
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "confidence_counts": {
+          "high": 8,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_07_skeleton.png",
+            "sha256": "f6456a04bd165d055c2dab5b689fa4394a478ecff2f8b403c0c7fbe5f88571a5"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_07_geometry.png",
+            "sha256": "91a5cbef061208c9ba8ac0077ca1842f2fbfdff8cfcaccdefd532502a9019413"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_07_comparison.png",
+            "sha256": "41c0aeaae8d1d723246d789bc04500662c8d5e80c5f8ed935468efe01d9251f1"
+          }
+        }
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          150,
+          447,
+          664,
+          895,
+          1101,
+          1307,
+          1513
+        ],
+        "proposed_boundaries_crop_px": [
+          149,
+          445,
+          663,
+          894,
+          1100,
+          1305,
+          1512
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        "confidence_counts": {
+          "high": 7,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_08_skeleton.png",
+            "sha256": "99fe1c25e8afb16f5bf7dcd1319729fd346e3ec50d6cd75ab5ff1c68d0515641"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_08_geometry.png",
+            "sha256": "3b45e61085458192ed2a3a54f7c72786632f38d5f0fb4683a634c39954bdeaba"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_08_comparison.png",
+            "sha256": "f64d84a84755ec7fd15d40f2679245d1acead4ee93d2ed3d93c74372d232e221"
+          }
+        }
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          151,
+          441,
+          600,
+          773,
+          969,
+          1166,
+          1322,
+          1512
+        ],
+        "proposed_boundaries_crop_px": [
+          149,
+          439,
+          598,
+          771,
+          966,
+          1164,
+          1321,
+          1510
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          2,
+          2,
+          2,
+          2,
+          3,
+          2,
+          1,
+          2
+        ],
+        "confidence_counts": {
+          "high": 8,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_09_skeleton.png",
+            "sha256": "b20844f4d661cdbe5ffcf21a9cea6f5997432bdcfb710e1dd7fe6f489387da92"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_09_geometry.png",
+            "sha256": "2700f8341ed74faee6bad5f1637424a647bbc9ffafab19d3b658be552707e4a2"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_09_comparison.png",
+            "sha256": "ce4d9553f339f388ae40d20e2667c3ef28539de6d4ecd9eea2029612734a37af"
+          }
+        }
+      },
+      {
+        "system": 10,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          153,
+          445,
+          635,
+          789,
+          952,
+          1133,
+          1316,
+          1515
+        ],
+        "proposed_boundaries_crop_px": [
+          154,
+          443,
+          636,
+          787,
+          949,
+          1131,
+          1314,
+          1512
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          2,
+          1,
+          2,
+          3,
+          2,
+          2,
+          3
+        ],
+        "confidence_counts": {
+          "high": 7,
+          "medium": 1,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_10_skeleton.png",
+            "sha256": "0b8752875b25e085e6e473cc72ba6ab330da8134c00d519c8fa0c9a731929551"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_10_geometry.png",
+            "sha256": "cc6aeab3126ddd994d1497145292d54f97c1c7586826174825c453f1ca74e435"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_10_comparison.png",
+            "sha256": "e89773473feb8067cba3078a17fc1f7f92d91ee49eed68296b59b6bd66fee9e9"
+          }
+        }
+      },
+      {
+        "system": 11,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          151,
+          430,
+          638,
+          807,
+          977,
+          1130,
+          1331,
+          1511
+        ],
+        "proposed_boundaries_crop_px": [
+          150,
+          428,
+          636,
+          805,
+          976,
+          1129,
+          1330,
+          1500
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          11
+        ],
+        "confidence_counts": {
+          "high": 8,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": false,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_11_skeleton.png",
+            "sha256": "3a979cca8bbe8f39c71b81b00e63b966f8fb25a05c04e10f24ccdd33ceacd814"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_11_geometry.png",
+            "sha256": "3e6ba4bcf97b0524902b4ee8bd4bc67a6bd934e34593c3800af62d571f0f7855"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_11_comparison.png",
+            "sha256": "7c9f1d9eccecbdb7554647f654d5fc06feb7c3811e43babc3be845b2a4e3a1c5"
+          }
+        }
+      }
+    ]
+  },
+  "frozen_systems": [
+    {
+      "system": 1,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "1cff90274bb6ef08e03759742ab2aef96d3f85f982c4ac4631c36abdfba560a6",
+      "verified": {
+        "system": {
+          "system": 1,
+          "page": 1,
+          "crop_path": "source_crops/system_01.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 360,
+          "printed_region_count": 6,
+          "barline_boundaries_x_px": [
+            243,
+            515,
+            704,
+            925,
+            1142,
+            1303,
+            1494
+          ],
+          "regions": [
+            {
+              "id": "P001",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                243,
+                0,
+                515,
+                360
+              ],
+              "review_class": "NOTEWORTHY",
+              "flags": [
+                "OPENING_SIGNATURE"
+              ],
+              "features_plain": [
+                "Both staves after the left barline"
+              ]
+            },
+            {
+              "id": "P002",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                515,
+                0,
+                704,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P003",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                704,
+                0,
+                925,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P004",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                925,
+                0,
+                1142,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P005",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1142,
+                0,
+                1303,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P006",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1303,
+                0,
+                1494,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 1,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 2,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "a30468ed46eb4a72827b91291b3520caf77398ab1f7251496a05fe6e4a5b3b61",
+      "verified": {
+        "system": {
+          "system": 2,
+          "page": 1,
+          "crop_path": "source_crops/system_02.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 373,
+          "printed_region_count": 7,
+          "barline_boundaries_x_px": [
+            133,
+            431,
+            623,
+            782,
+            954,
+            1147,
+            1340,
+            1494
+          ],
+          "regions": [
+            {
+              "id": "P007",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                133,
+                0,
+                431,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P008",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                431,
+                0,
+                623,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P009",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                623,
+                0,
+                782,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P010",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                782,
+                0,
+                954,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P011",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                954,
+                0,
+                1147,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P012",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1147,
+                0,
+                1340,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P013",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1340,
+                0,
+                1494,
+                373
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 2,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 3,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "6a14310d88100403454ce26359e9af5731c21f7d9c811856a0cc567f06dc97cd",
+      "verified": {
+        "system": {
+          "system": 3,
+          "page": 1,
+          "crop_path": "source_crops/system_03.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 335,
+          "printed_region_count": 7,
+          "barline_boundaries_x_px": [
+            135,
+            394,
+            608,
+            799,
+            948,
+            1108,
+            1316,
+            1495
+          ],
+          "regions": [
+            {
+              "id": "P014",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                135,
+                0,
+                394,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P015",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                394,
+                0,
+                608,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P016",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                608,
+                0,
+                799,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P017",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                799,
+                0,
+                948,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P018",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                948,
+                0,
+                1108,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P019",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1108,
+                0,
+                1316,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P020",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1316,
+                0,
+                1495,
+                335
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 3,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 4,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "00b7a1b65ec34850277b14d51123814ca5ae3b9b81c9564960411d096b63de4d",
+      "verified": {
+        "system": {
+          "system": 4,
+          "page": 1,
+          "crop_path": "source_crops/system_04.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 355,
+          "printed_region_count": 6,
+          "barline_boundaries_x_px": [
+            136,
+            386,
+            569,
+            793,
+            1024,
+            1257,
+            1496
+          ],
+          "regions": [
+            {
+              "id": "P021",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                136,
+                0,
+                386,
+                355
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P022",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                386,
+                0,
+                569,
+                355
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P023",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                569,
+                0,
+                793,
+                355
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P024",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                793,
+                0,
+                1024,
+                355
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P025",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1024,
+                0,
+                1257,
+                355
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P026",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1257,
+                0,
+                1496,
+                355
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 4,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 5,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "f1068cc8d5512bff99d76bb7d96702e2ca46e51de826a5fa011d2003cfac6050",
+      "verified": {
+        "system": {
+          "system": 5,
+          "page": 1,
+          "crop_path": "source_crops/system_05.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 346,
+          "printed_region_count": 6,
+          "barline_boundaries_x_px": [
+            139,
+            455,
+            696,
+            913,
+            1142,
+            1313,
+            1494
+          ],
+          "regions": [
+            {
+              "id": "P027",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                139,
+                0,
+                455,
+                346
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P028",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                455,
+                0,
+                696,
+                346
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P029",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                696,
+                0,
+                913,
+                346
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P030",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                913,
+                0,
+                1142,
+                346
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P031",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1142,
+                0,
+                1313,
+                346
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P032",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1313,
+                0,
+                1494,
+                346
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 5,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 6,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "91c4407739c2396a16e003f0aaf37ce9bd58c91168a012e7c52cfca5f2388885",
+      "verified": {
+        "system": {
+          "system": 6,
+          "page": 2,
+          "crop_path": "source_crops/system_06.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 359,
+          "printed_region_count": 6,
+          "barline_boundaries_x_px": [
+            153,
+            441,
+            650,
+            817,
+            1012,
+            1265,
+            1509
+          ],
+          "regions": [
+            {
+              "id": "P033",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                153,
+                0,
+                441,
+                359
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P034",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                441,
+                0,
+                650,
+                359
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P035",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                650,
+                0,
+                817,
+                359
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P036",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                817,
+                0,
+                1012,
+                359
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P037",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1012,
+                0,
+                1265,
+                359
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P038",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1265,
+                0,
+                1509,
+                359
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 6,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 7,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "3e67e28349a22a0d2fd5ccade67c53ebe4f93277d1aed785b7c9e915b48fef4f",
+      "verified": {
+        "system": {
+          "system": 7,
+          "page": 2,
+          "crop_path": "source_crops/system_07.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 365,
+          "printed_region_count": 7,
+          "barline_boundaries_x_px": [
+            151,
+            385,
+            558,
+            770,
+            969,
+            1124,
+            1296,
+            1511
+          ],
+          "regions": [
+            {
+              "id": "P039",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                151,
+                0,
+                385,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P040",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                385,
+                0,
+                558,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P041",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                558,
+                0,
+                770,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P042",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                770,
+                0,
+                969,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P043",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                969,
+                0,
+                1124,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P044",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1124,
+                0,
+                1296,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P045",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1296,
+                0,
+                1511,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 7,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 9,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "c37bd1e07f9816e22f62ad8c5e4976415a637a7f4b4d61057599a3e51d5b1e03",
+      "verified": {
+        "system": {
+          "system": 9,
+          "page": 2,
+          "crop_path": "source_crops/system_09.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 360,
+          "printed_region_count": 7,
+          "barline_boundaries_x_px": [
+            149,
+            439,
+            598,
+            771,
+            966,
+            1164,
+            1321,
+            1510
+          ],
+          "regions": [
+            {
+              "id": "P052",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                149,
+                0,
+                439,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P053",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                439,
+                0,
+                598,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P054",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                598,
+                0,
+                771,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P055",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                771,
+                0,
+                966,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P056",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                966,
+                0,
+                1164,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P057",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1164,
+                0,
+                1321,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P058",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1321,
+                0,
+                1510,
+                360
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 9,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "The printed barlines through both staves confirm the candidate positions. Each proposed coordinate sits on the left edge of the same stroke."
+        }
+      }
+    },
+    {
+      "system": 10,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "18fca31b895a235c0682b0789b3eb3c7e1443f2f436d9ff12ec68a52faed5461",
+      "verified": {
+        "system": {
+          "system": 10,
+          "page": 2,
+          "crop_path": "source_crops/system_10.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 338,
+          "printed_region_count": 7,
+          "barline_boundaries_x_px": [
+            154,
+            443,
+            636,
+            787,
+            949,
+            1131,
+            1314,
+            1512
+          ],
+          "regions": [
+            {
+              "id": "P059",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                154,
+                0,
+                443,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P060",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                443,
+                0,
+                636,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P061",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                636,
+                0,
+                787,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P062",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                787,
+                0,
+                949,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P063",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                949,
+                0,
+                1131,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P064",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1131,
+                0,
+                1314,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P065",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1314,
+                0,
+                1512,
+                338
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 10,
+          "pixel_check_complete": true,
+          "candidate_verdict": "CONFIRMED",
+          "deep_review_complete": true,
+          "explanation_plain": "Close review of every boundary, including the stroke near crop x 636. That stroke runs through both staves beside a chord stem, and the stem is not a barline. Each candidate boundary sits on a printed barline. The proposed positions are the left side of those same strokes."
+        }
+      }
+    },
+    {
+      "system": 11,
+      "frozen_by": "verifier",
+      "frozen_utc": "2026-10-12T04:05:07.835303+00:00",
+      "verified_by_session": "b6f096d6a2984ff58bf3f84c19c4ee34",
+      "fingerprint": "8bb89f1e00cac2b5b67ff1b4e5e8e309487a502647c1874f27031367cdcb7b25",
+      "verified": {
+        "system": {
+          "system": 11,
+          "page": 2,
+          "crop_path": "source_crops/system_11.png",
+          "crop_width_px": 1631,
+          "crop_height_px": 365,
+          "printed_region_count": 7,
+          "barline_boundaries_x_px": [
+            150,
+            428,
+            636,
+            805,
+            976,
+            1129,
+            1330,
+            1500
+          ],
+          "regions": [
+            {
+              "id": "P066",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                150,
+                0,
+                428,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P067",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                428,
+                0,
+                636,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P068",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                636,
+                0,
+                805,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P069",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                805,
+                0,
+                976,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P070",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                976,
+                0,
+                1129,
+                365
+              ],
+              "review_class": "NORMAL",
+              "flags": [],
+              "features_plain": []
+            },
+            {
+              "id": "P071",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1129,
+                0,
+                1330,
+                365
+              ],
+              "review_class": "NOTEWORTHY",
+              "flags": [
+                "CAUTIONARY_CLEF"
+              ],
+              "features_plain": [
+                "Before the right barline on the lower staff"
+              ]
+            },
+            {
+              "id": "P072",
+              "capacity_q": "3",
+              "capacity_plain": "3 quarter-note beats",
+              "kind_plain": "full 3/4 bar",
+              "evidence_bbox_px": [
+                1330,
+                0,
+                1500,
+                365
+              ],
+              "review_class": "NOTEWORTHY",
+              "flags": [
+                "CLEF_CHANGE",
+                "FINAL_BARLINE"
+              ],
+              "features_plain": [
+                "Lower staff from the left barline",
+                "At the right barline"
+              ]
+            }
+          ],
+          "checks": {
+            "crop_boundary_overlay_checked": true,
+            "first_last_barlines_complete": true,
+            "outermost_musical_ink_complete": true
+          }
+        },
+        "geometry_review": {
+          "system": 11,
+          "pixel_check_complete": true,
+          "candidate_verdict": "ADJUSTED",
+          "deep_review_complete": true,
+          "explanation_plain": "The first seven boundaries sit on single strokes through both staves. The candidate closing boundary at crop x 1511 is the thick stroke of the final barline. The thin stroke that closes the bar is at crop x 1500, and the returned boundary stays there."
+        }
+      }
+    }
+  ],
+  "open_systems": [
+    8
+  ],
+  "unfrozen_systems": []
+}

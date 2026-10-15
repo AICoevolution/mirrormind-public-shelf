@@ -1,0 +1,153 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_05_volksweise",
+  "authority": "print_only",
+  "source_pdf_sha256": "4ccfe351941f51d9d2f86301fe35a7f2a3039752090455db0a29495810a0b008",
+  "pages_json_sha256": "c6adab33c33ef0de0aafb793263c1e95e7c168a12265a2ae4150a07e36b0f30e",
+  "physical_bar_count": 41,
+  "meter_check": "The only meter glyph is 3/4 on both staves of system 1. A full bar is three quarter notes.",
+  "pickup_plus_terminal": {
+    "pickup": "P001",
+    "pickup_capacity_q": "1",
+    "terminal": "P041",
+    "terminal_capacity_q": "3",
+    "opening_bar": "P001",
+    "opening_capacity_q": "1",
+    "meter_capacity_q": "3",
+    "sum_q": "4",
+    "matches_meter": false,
+    "explanation": "P001 is a one-quarter anacrusis: one quarter note over one quarter rest, between the 3/4 and the barline at x 466. P041 is a complete 3/4 bar, not a shortened close. The bass prints a dotted half note. The treble prints a half-note chord tied to a quarter-note chord, with a fermata over the half-note chord. One quarter plus three quarters is four, so the anacrusis is not balanced by the final bar. That is what the print shows.",
+    "terminal_evidence_box_px": [
+      1308,
+      1640,
+      1530,
+      1960
+    ],
+    "terminal_page": 2,
+    "terminal_system": 9,
+    "opening_evidence_box_px": [
+      244,
+      430,
+      466,
+      720
+    ],
+    "opening_page": 1,
+    "opening_system": 1
+  },
+  "pickup_or_partial_bars": [
+    {
+      "id": "P001",
+      "physical_bar": 1,
+      "capacity_q": "1",
+      "kind": "one-quarter anacrusis",
+      "flags": [
+        "PICKUP"
+      ],
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        390,
+        450,
+        470,
+        720
+      ],
+      "evidence_space": "page_px",
+      "evidence": "After the treble and bass clefs, three sharps, and 3/4, P001 contains one quarter note on the upper staff and one quarter rest on the lower staff, then the barline at x 466. No further note or rest is printed in that bar."
+    }
+  ],
+  "repeat_boundaries": [],
+  "repeat_check": "Barlines that cross both staves were measured on every system. The only paired strokes are the thin-thick final barline of P041, thin at x 1514 and thick at x 1523. No repeat dots are printed in the staff spaces.",
+  "clef_changes": [],
+  "double_barlines": [],
+  "final_barline": {
+    "physical_bar": 41,
+    "page": 2,
+    "system": 9,
+    "thin_x_px": 1514,
+    "thick_x_px": 1523,
+    "kind": "thin-thick final barline"
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        5
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        6,
+        10
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        11,
+        15
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        16,
+        19
+      ],
+      "bar_count": 4
+    },
+    {
+      "system": 5,
+      "page": 2,
+      "measures": [
+        20,
+        23
+      ],
+      "bar_count": 4
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        24,
+        28
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        29,
+        33
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        34,
+        37
+      ],
+      "bar_count": 4
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        38,
+        41
+      ],
+      "bar_count": 4
+    }
+  ]
+}

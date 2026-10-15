@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "grieg_op12_03_waechterlied",
+  "verified_utc": "2026-10-12T00:37:13.044121+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "278d3f3716ded025b9da91d06f918282201b2a742f5bbc495e68f6bc511a8d6d",
+      "replay_sha256": "d9c659ac5ee4e544b318a126d61b82ff1982819146be5110bffdac0670986241"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "589a6173b99431f68bb6b2807084c7cc509d9f4e4f298ff8d2f9eecc8dcb1810",
+      "replay_sha256": "589a6173b99431f68bb6b2807084c7cc509d9f4e4f298ff8d2f9eecc8dcb1810"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e25340161e442dc963cf99877a8d46af2c862258c663e99a87d949bfc821a998",
+      "replay_sha256": "da189e69c93c02ccad98b568dce602699dcbdbafcdd215c4a1e38a1fb4c37d91"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "44dd30b8e8da116eca9c8ba7568d7420e3bf4e36cd9d3678a8a563deef7878d7",
+      "replay_sha256": "5f3146e481218c88c161f6c1e7630b6a7d62e8b8845a91a6ce8f408253c11947"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "8546cc792fe86a03093017341155e72981ddbb19654470038218012e40f1f7ba",
+      "replay_sha256": "02b40e0f9c062e4d1f7d9f66422e1a5d144d35bdf9db3546db04a1b340248b94"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

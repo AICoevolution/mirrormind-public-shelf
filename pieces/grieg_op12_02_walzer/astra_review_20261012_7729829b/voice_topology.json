@@ -1,0 +1,116 @@
+{
+  "schema": "astra_voice_topology.v1",
+  "pre_census": [
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "1",
+      "notes": 275,
+      "pitched": 233,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "2",
+      "voice": "3",
+      "notes": 286,
+      "pitched": 286,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "2",
+      "notes": 13,
+      "pitched": 11,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "5",
+      "notes": 37,
+      "pitched": 35,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "6",
+      "notes": 26,
+      "pitched": 26,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "2",
+      "voice": "15",
+      "notes": 45,
+      "pitched": 41,
+      "empty": false
+    }
+  ],
+  "post_census": [
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "1",
+      "notes": 330,
+      "pitched": 287,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "2",
+      "voice": "3",
+      "notes": 335,
+      "pitched": 331,
+      "empty": false
+    },
+    {
+      "part": "P1",
+      "staff": "1",
+      "voice": "2",
+      "notes": 27,
+      "pitched": 27,
+      "empty": false
+    }
+  ],
+  "continuous_musical_lines": 3,
+  "lines": [
+    {
+      "staff": 1,
+      "voice": "1",
+      "role": "upper melody/chord line"
+    },
+    {
+      "staff": 1,
+      "voice": "2",
+      "role": "independent upper inner line, sustained against moving melody or moving against sustained upper"
+    },
+    {
+      "staff": 2,
+      "voice": "3",
+      "role": "lower accompaniment and central-section melody"
+    }
+  ],
+  "final_sep_lanes": [
+    [
+      0,
+      "1"
+    ],
+    [
+      0,
+      "2"
+    ],
+    [
+      1,
+      "3"
+    ]
+  ],
+  "mappings": "Lower15 to3 globally; upper5/6/2 context-scoped according to frozen spec and source-to-target event mapping. Upper inner merges into unison-duration chord76/78; member ties retained.",
+  "removed_empty_lanes": "No globally empty source lane, but local phantom rests4/76 removed; no padding printed rests added.",
+  "retained_extra_voices": [],
+  "primary_xml_sha256": "22214314679072cfdf041e3d9fa24e11192ddfaf2f83f1856cb61c64e3df08a6",
+  "human_outcome": null
+}

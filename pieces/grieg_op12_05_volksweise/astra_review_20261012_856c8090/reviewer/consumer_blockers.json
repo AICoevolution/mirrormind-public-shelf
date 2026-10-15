@@ -1,0 +1,40 @@
+{
+  "id": "CONSUMER-PEDAL-1",
+  "kind": "consumer",
+  "status": "BLOCKED_TECHNICAL",
+  "blocks_safe_continuation": true,
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_Grieg_Op12_05_Volksweise_Astra_import.musicxml",
+  "primary_xml_sha256": "194e5a0d3d79b2c26b893929ae07fb22ef179335a74936dfb2afd2db4868dcc0",
+  "affected_bars": [
+    4,
+    13,
+    20,
+    21,
+    25,
+    29,
+    36,
+    37,
+    41
+  ],
+  "operation_blocked": "essential_notation_rendering and focused_visual_recheck",
+  "reason": "Required pedal-release stars collide with Ped. text at distinct encoded times. Source has separated glyphs. Playback/cursor and layer roundtrips pass; generic rendering process success does not detect this layout failure.",
+  "why_not_isolatable": "Omitting pedal stops or adding unprinted notes/rests would alter the notation. Moving them to another staff would contradict the print. The production adapter controls their x placement and must respect the encoded onset when that staff has no attack. Production pipeline modifications are outside this job authorization.",
+  "required_repair": "Repair production essentialNotationRendering.ts pedalPlacement to anchor/interpolate pedal marks at the encoded onset even over sustained notes or cross-staff accompaniment. Retain staff placement and avoid collisions. Preserve this exact primary XML and Phase 1\u20133 hashes; rerun all Stage 5 gates in a new workspace after consumer repair.",
+  "evidence": [
+    "validation/pedal_geometry.json",
+    "validation/viewer_geometry/report.json",
+    "validation/pedal_collision_P004.png",
+    "validation/pedal_collision_P013.png",
+    "validation/pedal_collision_P020.png",
+    "validation/pedal_collision_P021.png",
+    "validation/pedal_collision_P025.png",
+    "validation/pedal_collision_P029.png",
+    "validation/pedal_collision_P036.png",
+    "validation/pedal_collision_P037.png",
+    "validation/pedal_collision_P041.png"
+  ],
+  "human_outcome": null
+}

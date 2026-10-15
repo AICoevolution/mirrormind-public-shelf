@@ -1,0 +1,431 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_02_walzer",
+  "authority": "print_only",
+  "source_pdf_sha256": "0b985b1ac8d390483a991ed11eeb15d55965258b1552bb9286fd640b3b6a206c",
+  "physical_bar_count": 79,
+  "printed_meter": {
+    "beats": 3,
+    "beat_type": 4,
+    "printed_glyph": "3/4",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      305,
+      390,
+      348,
+      590
+    ],
+    "evidence_space": "page_px",
+    "evidence": "Both staves of system 1 print a 3 over a 4 after the clef and before the first notes. No other meter is printed."
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 0,
+    "mode": null,
+    "label": "no sharps or flats",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      290,
+      396,
+      308,
+      448
+    ],
+    "evidence_space": "page_px",
+    "evidence": "The upper staff prints the treble clef and then the 3/4 with no sharp or flat between them. The lower staff does the same after the bass clef. The empty signature continues through P036."
+  },
+  "printed_key_changes": [
+    {
+      "fifths": 3,
+      "mode": null,
+      "label": "three sharps",
+      "physical_bar": 37,
+      "page": 1,
+      "system": 5,
+      "courtesy_after_physical_bar": 36,
+      "evidence_box_px": [
+        1440,
+        1692,
+        1496,
+        1772
+      ],
+      "evidence_space": "page_px",
+      "evidence": "After the double bar that closes P036, both staves print three sharps. Page 2 reprints those three sharps at the start of P037. No notes stand between the double bar and the sharps."
+    },
+    {
+      "fifths": 0,
+      "mode": null,
+      "label": "no sharps or flats",
+      "physical_bar": 53,
+      "page": 2,
+      "system": 8,
+      "evidence_box_px": [
+        880,
+        775,
+        940,
+        845
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P053 begins after the double bar at x 771. Natural signs cancel the three sharps on both staves. Bass already governs the lower staff from the cautionary clef at the end of P052. The empty signature is then reprinted on the later systems through P070."
+    },
+    {
+      "fifths": 3,
+      "mode": null,
+      "label": "three sharps",
+      "physical_bar": 71,
+      "page": 2,
+      "system": 10,
+      "courtesy_after_physical_bar": 70,
+      "evidence_box_px": [
+        1465,
+        1405,
+        1515,
+        1475
+      ],
+      "evidence_space": "page_px",
+      "evidence": "After the double bar that closes P070, both staves print three sharps. The coda system reprints those three sharps at the start of P071. The lower staff stays in bass."
+    }
+  ],
+  "pickup_checks": [],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "3",
+    "opening_pickup_q": null,
+    "terminal_partial_q": null,
+    "opening_bar_capacity_q": "3",
+    "terminal_bar_capacity_q": "3",
+    "sum_q": null,
+    "equals_meter": true,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "3",
+      "evidence": "P001 runs from the barline at x 248 to the barline at x 484 on page 1, system 1. After the clefs and the 3/4, the upper staff has a quarter rest and a half rest, which is 3 quarters. The lower staff has three quarter-note chords, which is also 3 quarters. P001 is a complete bar, not a pickup.",
+      "evidence_bbox_px": [
+        248,
+        370,
+        484,
+        620
+      ],
+      "evidence_space": "page_px"
+    },
+    "terminal_bar": {
+      "physical_bar": 79,
+      "capacity_q": "3",
+      "evidence": "P079 runs from the barline at x 1381 to the thin final stroke at x 1501 on page 2, system 11. The upper staff prints a whole rest, the full-bar rest in 3/4, so the bar holds 3 quarters. A thick stroke follows the thin stroke, with no repeat dots. P079 is a complete bar, not a partial.",
+      "evidence_bbox_px": [
+        1381,
+        1710,
+        1512,
+        1980
+      ],
+      "evidence_space": "page_px"
+    },
+    "explanation": "There is no incomplete pickup and no terminal partial. The opening bar and the final bar are each a complete 3/4 bar of 3 quarters, so there is no pickup-plus-terminal sum to compare with the meter."
+  },
+  "clef_changes": [
+    {
+      "physical_bar": 36,
+      "staff": 2,
+      "onset_q": "3",
+      "sign": "G",
+      "line": 2,
+      "system": 5,
+      "crop_path": "source_crops/system_05.png",
+      "page": 1,
+      "kind": "cautionary treble clef on the lower staff",
+      "placement": "REGION_END_CAUTIONARY",
+      "glyph_region": "P036",
+      "effective_region": "P037",
+      "from_sign": "F",
+      "from_line": 4,
+      "evidence_box_px": [
+        1388,
+        1850,
+        1428,
+        1940
+      ],
+      "evidence_space": "page_px",
+      "evidence": "On the lower staff of P036, a treble clef is printed after the notes and before the double bar at x 1431. The notes of P036 stay in bass. Treble on the lower staff takes effect at P037."
+    },
+    {
+      "physical_bar": 52,
+      "staff": 2,
+      "onset_q": "3",
+      "sign": "F",
+      "line": 4,
+      "system": 8,
+      "crop_path": "source_crops/system_08.png",
+      "page": 2,
+      "kind": "cautionary bass clef on the lower staff",
+      "placement": "REGION_END_CAUTIONARY",
+      "glyph_region": "P052",
+      "effective_region": "P053",
+      "from_sign": "G",
+      "from_line": 2,
+      "evidence_box_px": [
+        688,
+        904,
+        766,
+        980
+      ],
+      "evidence_space": "page_px",
+      "evidence": "On the lower staff of P052, a bass clef is printed after the notes and before the double bar at x 771. The notes of P052 stay in treble. Bass on the lower staff takes effect at the first note of P053."
+    }
+  ],
+  "repeat_boundaries": [],
+  "section_double_bars": [
+    {
+      "after_physical_bar": 36,
+      "page": 1,
+      "system": 5,
+      "left_x_px": 1431,
+      "right_x_px": 1436,
+      "flags": [
+        "DOUBLE_BARLINE",
+        "KEY_CHANGE"
+      ],
+      "evidence": "Two thin strokes close P036. Three sharps follow, and the lower staff has already printed a cautionary treble clef. No repeat dots."
+    },
+    {
+      "after_physical_bar": 52,
+      "page": 2,
+      "system": 8,
+      "left_x_px": 771,
+      "right_x_px": 777,
+      "flags": [
+        "DOUBLE_BARLINE",
+        "KEY_CHANGE"
+      ],
+      "evidence": "Two thin strokes close P052. The lower staff has already printed a cautionary bass clef. Natural signs follow on both staves. No repeat dots."
+    },
+    {
+      "after_physical_bar": 70,
+      "page": 2,
+      "system": 10,
+      "left_x_px": 1446,
+      "right_x_px": 1451,
+      "flags": [
+        "DOUBLE_BARLINE",
+        "KEY_CHANGE"
+      ],
+      "evidence": "Two thin strokes close P070. Three sharps follow on both staves. No repeat dots."
+    }
+  ],
+  "bar_count_by_system": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        7
+      ],
+      "barlines_x_px": [
+        248,
+        484,
+        624,
+        792,
+        970,
+        1139,
+        1278,
+        1496
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        8,
+        14
+      ],
+      "barlines_x_px": [
+        134,
+        426,
+        622,
+        789,
+        964,
+        1147,
+        1316,
+        1498
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        15,
+        22
+      ],
+      "barlines_x_px": [
+        135,
+        345,
+        528,
+        698,
+        826,
+        980,
+        1129,
+        1311,
+        1495
+      ],
+      "bar_count": 8
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        23,
+        29
+      ],
+      "barlines_x_px": [
+        136,
+        364,
+        518,
+        749,
+        974,
+        1162,
+        1326,
+        1494
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        30,
+        36
+      ],
+      "barlines_x_px": [
+        137,
+        362,
+        531,
+        709,
+        889,
+        1089,
+        1285,
+        1431
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        37,
+        43
+      ],
+      "barlines_x_px": [
+        155,
+        426,
+        617,
+        799,
+        988,
+        1153,
+        1318,
+        1509
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        44,
+        49
+      ],
+      "barlines_x_px": [
+        152,
+        465,
+        659,
+        883,
+        1107,
+        1319,
+        1509
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        50,
+        56
+      ],
+      "barlines_x_px": [
+        151,
+        441,
+        610,
+        771,
+        989,
+        1137,
+        1320,
+        1512
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        57,
+        63
+      ],
+      "barlines_x_px": [
+        149,
+        398,
+        558,
+        775,
+        993,
+        1180,
+        1340,
+        1510
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        64,
+        70
+      ],
+      "barlines_x_px": [
+        147,
+        375,
+        551,
+        731,
+        903,
+        1095,
+        1301,
+        1446
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "measures": [
+        71,
+        79
+      ],
+      "barlines_x_px": [
+        146,
+        388,
+        544,
+        716,
+        863,
+        994,
+        1132,
+        1289,
+        1381,
+        1501
+      ],
+      "bar_count": 9
+    }
+  ],
+  "explanation": "Eleven grand-staff systems were read from the frozen pages: five on page 4 of the edition and six on page 5. Through-barlines were located where a vertical stroke crosses the spaces of both staves and the gap between them. The counts are 7, 7, 8, 7, 7, 7, 6, 7, 7, 7, and 9, which is 79 bars. The double bars after P036, P052, and P070 have no repeat dots."
+}

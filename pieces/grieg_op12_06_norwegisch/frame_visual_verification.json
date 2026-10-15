@@ -1,0 +1,259 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_06_norwegisch",
+  "authority": "print_only",
+  "source_pdf_sha256": "d83953e1ac038677210af259389f44dc1bedcb89fc41f6382f80d0dfba9a983a",
+  "pages_json_sha256": "630e16ce207c01965ce06390f4f011fce6efb57fd8cc5d0e393aeb3d547b6ffc",
+  "physical_bar_count": 56,
+  "meter_check": "The only meter glyph is 3/4 on both staves of system 1. A full bar is three quarter notes. No later system prints a new meter.",
+  "pickup_plus_terminal": {
+    "pickup": null,
+    "pickup_capacity_q": null,
+    "terminal": "P056",
+    "terminal_capacity_q": "3",
+    "opening_bar": "P001",
+    "opening_capacity_q": "3",
+    "meter_capacity_q": "3",
+    "sum_q": null,
+    "matches_meter": true,
+    "explanation": "P001 was checked against the printed 3/4. It is the full distance from the opening barline at x 243 to the next barline at x 602, and it holds a complete bar of notes and rests, not a shortened anacrusis. P056 was checked the same way: it runs from x 1314 to the thin final stroke at x 1506 and holds a complete bar, closed by the thick stroke at x 1515, with a fermata over the last chord. There is no incomplete pickup, so there is no pickup-plus-terminal sum to reconcile. Both bars equal the printed meter.",
+    "terminal_evidence_box_px": [
+      1314,
+      1683,
+      1540,
+      1920
+    ],
+    "terminal_page": 2,
+    "terminal_system": 10,
+    "opening_evidence_box_px": [
+      243,
+      400,
+      602,
+      680
+    ],
+    "opening_page": 1,
+    "opening_system": 1
+  },
+  "pickup_or_partial_bars": [],
+  "repeat_boundaries": [],
+  "repeat_check": "Every barline that crosses both staves was measured. Three light-light double bars are printed, at the ends of P008 (x 610 and x 616), P024 (x 1435 and x 1441) and P048 (x 743 and x 748). P056 ends with a thin stroke at x 1506 and a thick stroke at x 1515. No repeat dots stand in the staff spaces beside any of those strokes.",
+  "clef_changes": [
+    {
+      "physical_bar": 24,
+      "staff": "2",
+      "onset_q": "5/2",
+      "sign": "G",
+      "line": 2,
+      "system": 4,
+      "crop_path": "source_crops/system_04.png",
+      "placement": "REGION_END_CAUTIONARY",
+      "effective_region": 25,
+      "evidence_box_px": [
+        1398,
+        1530,
+        1426,
+        1612
+      ],
+      "evidence_space": "page_px",
+      "evidence": "On the lower staff of P024, after the notes and immediately before the light-light double bar at x 1435, a treble clef is printed. No note follows it inside P024. P025, which opens the next system, reprints that treble clef. The bass clef that was in force does not continue."
+    },
+    {
+      "physical_bar": 40,
+      "staff": "2",
+      "onset_q": "11/4",
+      "sign": "F",
+      "line": 4,
+      "system": 7,
+      "crop_path": "source_crops/system_07.png",
+      "placement": "REGION_END",
+      "effective_region": 41,
+      "evidence_box_px": [
+        1164,
+        699,
+        1191,
+        749
+      ],
+      "evidence_space": "page_px",
+      "evidence": "On the lower staff of P040, after the treble-clef chords and immediately before the barline at x 1198, a bass clef is printed. The notes of P041, still on this system, sit in that bass clef. The next system reprints the bass clef."
+    }
+  ],
+  "double_barlines": [
+    {
+      "physical_bar": 8,
+      "page": 1,
+      "system": 2,
+      "left_x_px": 610,
+      "right_x_px": 616,
+      "kind": "light-light",
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY"
+      ]
+    },
+    {
+      "physical_bar": 24,
+      "page": 1,
+      "system": 4,
+      "left_x_px": 1435,
+      "right_x_px": 1441,
+      "kind": "light-light",
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY",
+        "KEY_CHANGE"
+      ]
+    },
+    {
+      "physical_bar": 48,
+      "page": 2,
+      "system": 9,
+      "left_x_px": 743,
+      "right_x_px": 748,
+      "kind": "light-light",
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY",
+        "KEY_CHANGE"
+      ]
+    }
+  ],
+  "final_barline": {
+    "physical_bar": 56,
+    "page": 2,
+    "system": 10,
+    "thin_x_px": 1506,
+    "thick_x_px": 1515,
+    "kind": "thin-thick final barline",
+    "flags": [
+      "FINAL_BARLINE"
+    ]
+  },
+  "key_changes": [
+    {
+      "fifths": -1,
+      "mode": null,
+      "label": "one flat",
+      "physical_bar": 25,
+      "page": 1,
+      "system": 5,
+      "after_double_bar_of": 24,
+      "evidence_box_px": [
+        1442,
+        1376,
+        1495,
+        1599
+      ],
+      "evidence_space": "page_px",
+      "evidence": "After the light-light double bar that ends P024, both staves print one flat in the right margin of system 4. System 5 opens P025 by reprinting that one flat. It remains in force through P048."
+    },
+    {
+      "fifths": 2,
+      "mode": null,
+      "label": "two sharps",
+      "physical_bar": 49,
+      "page": 2,
+      "system": 9,
+      "after_double_bar_of": 48,
+      "evidence_box_px": [
+        755,
+        1293,
+        860,
+        1530
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P048 ends with a light-light double bar. P049 begins, on the same system, with two sharps on both staves, cancelling the flat. System 10 reprints those two sharps."
+    }
+  ],
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        6
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        7,
+        12
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        13,
+        18
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        19,
+        24
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        25,
+        30
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        31,
+        36
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        37,
+        41
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        42,
+        46
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        47,
+        51
+      ],
+      "bar_count": 5
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        52,
+        56
+      ],
+      "bar_count": 5
+    }
+  ]
+}

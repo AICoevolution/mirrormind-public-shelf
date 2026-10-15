@@ -1,0 +1,173 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "grieg_op12_03_waechterlied",
+  "authority": "print_only",
+  "source_pdf_sha256": "61130350238e97cd7441fe2e07836bdf00e9b9aa75e21724e1012506e7f5d7de",
+  "pages_json_sha256": "bbb7acf977a9c9b650687a1f2d8946d412a62e393a732dc361bcae734fe9a1e3",
+  "physical_bar_count": 53,
+  "meter_check": "The only meter glyph is cut time on both staves of system 1. A full bar is two half notes, which is 4 quarter-note units.",
+  "pickup_plus_terminal": {
+    "pickup": "P001",
+    "pickup_capacity_q": "1",
+    "terminal": "P053",
+    "terminal_capacity_q": "4",
+    "meter_capacity_q": "4",
+    "sum_q": "5",
+    "matches_meter": false,
+    "explanation": "P001 is one printed quarter on each staff. P053 is a complete cut-time bar: a stemless whole-note chord on each staff, with a fermata, between the thin barline at x 1500 and the thick final stroke. The one-quarter pickup is not balanced by a shortened final bar.",
+    "terminal_evidence_box_px": [
+      1402,
+      1688,
+      1512,
+      1940
+    ],
+    "terminal_page": 2,
+    "terminal_system": 10
+  },
+  "pickup_or_partial_bars": [
+    {
+      "id": "P001",
+      "physical_bar": 1,
+      "capacity_q": "1",
+      "kind": "one-quarter anacrusis",
+      "flags": [
+        "PICKUP"
+      ],
+      "page": 1,
+      "system": 1,
+      "evidence_box_px": [
+        390,
+        440,
+        454,
+        640
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P001 contains one quarter note on each staff between the cut-time signature and the barline at x 454. A slur leaves that note and crosses into P002."
+    }
+  ],
+  "repeat_boundaries": [],
+  "repeat_check": "The double bars after P025 and P040 have no dots in the staff spaces. The dark rectangle before the P025 double bar is a whole rest, not a repeat dot. No forward or backward repeat is printed.",
+  "clef_changes": [],
+  "double_barlines": [
+    {
+      "after_physical_bar": 25,
+      "page": 1,
+      "system": 4,
+      "x_px": [
+        1426,
+        1432
+      ],
+      "kind": "double bar, no repeat dots"
+    },
+    {
+      "after_physical_bar": 40,
+      "page": 2,
+      "system": 8,
+      "x_px": [
+        1430,
+        1437
+      ],
+      "kind": "double bar, no repeat dots"
+    }
+  ],
+  "final_barline": {
+    "physical_bar": 53,
+    "page": 2,
+    "system": 10,
+    "thin_x_px": 1500,
+    "thick_x_px": 1508,
+    "kind": "thin-thick final barline"
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        7
+      ],
+      "bar_count": 7
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        8,
+        13
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        14,
+        19
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        20,
+        25
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        26,
+        29
+      ],
+      "bar_count": 4
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "measures": [
+        30,
+        33
+      ],
+      "bar_count": 4
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        34,
+        37
+      ],
+      "bar_count": 4
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        38,
+        40
+      ],
+      "bar_count": 3
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        41,
+        46
+      ],
+      "bar_count": 6
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        47,
+        53
+      ],
+      "bar_count": 7
+    }
+  ]
+}

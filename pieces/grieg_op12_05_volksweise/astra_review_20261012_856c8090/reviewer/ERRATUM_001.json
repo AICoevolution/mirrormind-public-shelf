@@ -1,0 +1,12 @@
+{
+  "id": "ERRATUM-001",
+  "kind": "technical_encoding",
+  "frozen_before_application": true,
+  "interpretation_changed": false,
+  "reason": "Production essential notation adapter removes pedal direction-type but leaves sound-only direction; OSMD loses all notes in 21 affected measures. Pedal symbols and offsets themselves carry the sustain instruction. Remove redundant sound damper-pedal attribute carriers, retaining every pedal symbol/offset/staff.",
+  "evidence": [
+    "validation/viewer_v1/report.json",
+    "validation/viewer_v1/full_score.png"
+  ],
+  "before_xml_sha256": "16731f508466fbf0ede791f5a231ee35b0fbd946bc7acccfb494095a7d426e95"
+}

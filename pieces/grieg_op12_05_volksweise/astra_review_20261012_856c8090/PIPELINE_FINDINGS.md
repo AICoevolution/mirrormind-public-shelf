@@ -1,0 +1,1 @@
+Consumer pedal timing repair passes the shared four-layout profile and independent visual inspection. Generic essential notation probe is supplemented by the stronger pedal geometry check. The primary XML and completed musical findings are unchanged. Historical pipeline findings: recheck/historical/PIPELINE_FINDINGS.md.

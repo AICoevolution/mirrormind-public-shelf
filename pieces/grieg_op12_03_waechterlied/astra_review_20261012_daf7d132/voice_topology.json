@@ -1,0 +1,137 @@
+{
+  "schema": "astra_voice_topology.v1",
+  "pre_census": {
+    "staff1/voice1": {
+      "members": 211,
+      "rests": 13,
+      "pitched": 198
+    },
+    "staff2/voice3": {
+      "members": 235,
+      "rests": 34,
+      "pitched": 201
+    },
+    "staff2/voice4": {
+      "members": 30,
+      "rests": 12,
+      "pitched": 18
+    },
+    "staff1/voice2": {
+      "members": 63,
+      "rests": 8,
+      "pitched": 55
+    },
+    "staff1/voice5": {
+      "members": 45,
+      "rests": 6,
+      "pitched": 39
+    },
+    "staff1/voice6": {
+      "members": 28,
+      "rests": 7,
+      "pitched": 21
+    },
+    "staff1/voice7": {
+      "members": 1,
+      "rests": 0,
+      "pitched": 1
+    },
+    "staff2/voice15": {
+      "members": 5,
+      "rests": 1,
+      "pitched": 4
+    },
+    "staff1/voice8": {
+      "members": 3,
+      "rests": 1,
+      "pitched": 2
+    }
+  },
+  "post_census": {
+    "staff1/voice1": {
+      "members": 259,
+      "rests": 17,
+      "pitched": 242
+    },
+    "staff2/voice3": {
+      "members": 173,
+      "rests": 12,
+      "pitched": 161
+    },
+    "staff1/voice2": {
+      "members": 50,
+      "rests": 3,
+      "pitched": 47
+    },
+    "staff2/voice4": {
+      "members": 76,
+      "rests": 16,
+      "pitched": 60
+    },
+    "staff1/voice3": {
+      "members": 26,
+      "rests": 0,
+      "pitched": 26
+    }
+  },
+  "continuous_musical_lines": {
+    "musical_lines": 4,
+    "lines": {
+      "1": "Upper principal line and chordal right hand",
+      "2": "Upper inner line when simultaneous with principal",
+      "3": "Left-hand principal/bass line; crosses onto upper staff for lower-stem intermezzo chords, returns to lower staff",
+      "4": "Independent lower-staff overlapping bass in P008/016/024/052 and fast figuration against bass in P026/030/034/038"
+    },
+    "sep_staff_voice_lanes": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "policy": "No global OMR label merge. Context-scoped reassignment per target event. Nonprinted silent intervals represented as forward, not visible rests."
+  },
+  "musical_line_count": 4,
+  "final_sep_lanes": [
+    [
+      0,
+      "1"
+    ],
+    [
+      0,
+      "3"
+    ],
+    [
+      0,
+      "2"
+    ],
+    [
+      1,
+      "4"
+    ],
+    [
+      1,
+      "3"
+    ]
+  ],
+  "context_scoped_relabels": "Every source-to-target bar and event is recorded in corrections/change_ledger.json. Context-scoped reconstruction is required because source labels change roles across bars; no unsafe global mapping applied.",
+  "removed_empty_lanes": "All source-only empty fragments removed; final four line identities each contain pitched material. Forwards represent unprinted silence.",
+  "retained_extra_voices": "Voice2 is independent upper inner line; voice4 is simultaneous independent bass or moving run. Voice3 crosses onto staff1 without becoming another musical line. Five physical SEP lanes represent four continuous voices.",
+  "primary_xml_sha256": "b08cec677d5c093fc65db01e0060a56027dad3317a6e5605d9f241a0c5bed315",
+  "human_outcome": null
+}

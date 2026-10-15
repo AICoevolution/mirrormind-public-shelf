@@ -1,0 +1,1 @@
+The scoped tieEndpointRendering repair separates opposing hairpin open ends and clears phrase curves without modifying XML semantics. Shared acceptance and direct screenshots pass at all four assigned layouts. Existing standalone CORE rebuild and pedal-span layer limitations remain; they are not primary playback failures.

@@ -1,0 +1,11 @@
+# Phase 2 freeze
+
+Reader-only audit complete. 168 physical region/reader correspondences checked against original XML, printed contours and key/clef landmarks; no unmappable region. SmartScore and Audiveris have extra element25 near24; subsequent ordinal is physical+1. PlayScore uses physical ordinal. Original event IDs trace to actual note indices and pitches without mismatch. The extra fragment does not create a printed bar. Priority answers cover all363 entries, using the independent print_core_reading_phase2.json and ten print crops. Detector membership prose is not treated as established fact. All five deterministic controls pass independently against the Phase1 inventory; none failed.
+
+Reader differences: SmartScore often serializes simultaneous sustained and moving notes (1,9,13,16,17,41,45,48,49), loses triplet timing (3,5,7,19,23,51,55), and omits much of24. Audiveris duplicates bass members and reads dotted halves as halves across outer sections, loses the key restoration49–51, invents triplets in lower27, severely omits45 and creates false voice rest lanes. PlayScore largely reads rhythms but inserts rests/short sustained notes18/50, displaces51 melody, mishandles12 voices and omits inner chord members30/31. These are musical recognition errors rather than reader mapping failures. Middle section25–40 has substantial common agreement, independently supported by print; agreement does not certify marks.
+
+MARKS/ROUTE: SmartScore turns fingerings into words, drops/misreads fz as f, omits slurs and duplicates articulations on chord members; PlayScore and Audiveris also lose/misattach dots, tie/slur endpoints and fz. Audiveris has false slurs35/53 and false pp53; final fermata attachments need member-level correction. Compare every candidate mark with Phase1, not reader consensus. No printed route change; distinguish double bars from repeats.
+
+Print-reading supplement: lower G3 in7/23/55 has both a triplet beam/upstem and a separate downward stem, creating a duration/continuity question. Preserve the visible event; its independent duration is musical uncertainty to assess in Phase3 and retain for final human attention if needed. This does not change physical boundaries or meter.
+
+All Phase2 allowlist hashes match phase2_hashes.json. Candidate and ensemble evidence have not been accessed. Phase1 files preserved unchanged.

@@ -1,0 +1,76 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "PEDAL-1-19",
+      "address": "P001/P019 lower staff",
+      "question": "Where should the two printed pedal starts release?",
+      "provisional_treatment": "Retain separate printed Ped. starts without inventing release stars. Primary notation authoritative; exported MARKS is not lossless.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_03.png",
+        "validation/layer_roundtrips.json"
+      ],
+      "confidence": "medium",
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "DOT-61",
+      "address": "P061 lower staff, third chord",
+      "question": "Is the small speck a printed staccato or scan artifact?",
+      "provisional_treatment": "Omit the uncertain extra dot; retain pitches/durations and the clear first-to-second accompaniment slur.",
+      "evidence": [
+        "reviewer/print_system_09.png"
+      ],
+      "confidence": "low",
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "HAIRPIN-ENDS",
+      "address": "P015\u201317,33\u201335,43\u201345,49\u201352,66\u201369",
+      "question": "Confirm the exact horizontal termini of crescendo/diminuendo spans.",
+      "provisional_treatment": "Stops encoded at next dynamic/bar boundary; printed ends near preceding final note remain an expressive interpretation question.",
+      "evidence": [
+        "reviewer/print_system_03.png",
+        "reviewer/print_system_05.png",
+        "reviewer/print_system_06.png",
+        "reviewer/print_system_07.png",
+        "reviewer/print_system_08.png",
+        "reviewer/print_system_10.png"
+      ],
+      "confidence": "medium",
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "ORNAMENT-TIMING",
+      "address": "RH5,9,23,27,57,61,72,74,75,77; LH38,40,46,48",
+      "question": "Confirm performance realization of the fourteen unslashed small eighth notes.",
+      "provisional_treatment": "Retain unslashed MusicXML grace notes; current analyzer steals .1875 seconds from hosts at80bpm. No claim that this is definitive appoggiatura timing.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_06.png",
+        "reviewer/print_system_11.png",
+        "validation/independent_playback.json"
+      ],
+      "confidence": "medium",
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "TEMPO-REALIZATION",
+      "address": "Whole piece; ritardando17,35,43,51,69 and a tempo45",
+      "question": "Choose listening tempo and expressive slowdown realization.",
+      "provisional_treatment": "No printed metronome value invented. Analyzer default80bpm; words retained without automated tempo curves.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "delivery_final/analysis.json"
+      ],
+      "confidence": "medium",
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    }
+  ]
+}

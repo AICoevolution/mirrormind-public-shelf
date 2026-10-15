@@ -1,0 +1,33 @@
+# Phase 1 — independent print inventory
+
+Completed from the two full-page PNGs, with every system inspected again at native crop resolution. No reader, candidate, prior review or later-phase request accessed. Authorization hash matched current handoff; all eight allowed inputs match. Fingerings are intentionally excluded.
+
+## Frame
+72 full physical bars, two pages (printed 8 and 9), 11 grand-staff systems. System ranges: 1–6, 7–13, 14–20, 21–26, 27–32; 33–38, 39–45, 46–51, 52–58, 59–65, 66–72. Three quarter-note capacity throughout, printed 3/4 on both opening staves. One sharp throughout; no signature changes. No pickup, split bar or cadenza. Three quarters, six eighths, or their combinations fill the measured bars; the terminal bar has quarter attack and two quarter rests. The unoccupied staff often has no rests because the two hands share the other staff. That blank ink must not imply a missing physical bar.
+
+Treble upper and bass lower at every system start. Lower-staff treble cautionary at the end of P071 takes effect in P072; P071 attack remains bass. All physical bar boundaries match the frame's x positions when compared to page pixels. Complete notation is available in full-page images; overlapping crop margins contain neighboring-system ink and are not additional events. System 8's bbox extends to 1042 whereas y_bounds ends at 1020; use the bbox/full-page image, which retains the P051 pedal sign.
+
+## MARKS inventory
+Beat addresses below are quarter beats numbered 1,2,3; eighth positions use .5. Upper/lower denote printed staff, not a reader voice label. Each row cites reviewer/print_system_NN.png, derived from the current hashed page image and frame bbox.
+
+|System|Direct reading|
+|---|---|
+|1|P001 above upper: “Molto Allegro e sempre staccato.”; pp beneath first upper chord. Explicit dots over all three P001 upper attacks and first two P002 upper attacks. Upper slur P002 beat3 through P004 beat3; terminal P004 quarter has a dot. Upper slur starts P006 beat3 and continues over system break.|
+|2|Upper slur from P006 ends at P007 second eighth. Lower-stem line on upper staff slur P007 beat1 to beat3; endpoint dot beneath P007 beat3 lower chord. Crescendo wedge beneath P007 approximately beat2 to bar end. P008 fz at start, lower-stem slur half note beat1 to quarter beat3, both on upper staff. P009 pp. Upper slur P010 beat3 through P012 beat3; terminal P012 dot.|
+|3|Upper slur P014 beat3 to P015 second eighth. P015 lower-stem line upper staff slur beat1 to beat3 with terminal dot; crescendo wedge beat2 to bar end. P016 fz and lower-stem slur half note beat1 to quarter beat3. P017 f above lower staff; dots on its three upper-stem lower-staff notes and P018 first two. P018 pp at upper beat3, upper slur to P020 fourth eighth. P019 lower chords all dotted; P020 first two lower chords dotted.|
+|4|P021 f above lower staff; dots on its three upper-stem notes and P022 first two. P022 pp at upper beat3. Upper slur P022 beat3 to P024 fourth eighth; another starts P024 fifth eighth and ends P026 fourth eighth. P025 “cresc.” between staves. Short upper slur P026 fifth to sixth eighth. No explicit dots on P023–26 lower chords.|
+|5|Upper slur P027 first eighth to P028 last eighth. P027 f; lower chords dotted P027 and P028 all three beats. P028 diminuendo wedge beneath upper passage, nearly full bar. P029 pp visually aligned near second eighth; pedal down beneath lower first attack. Pedal release at P030 end. P032 upper slur starts beat3, continues across page into P033–34 (page-break continuation shape is somewhat editorially ambiguous; preserve question for later comparison).|
+|6|Upper slur continuation at left P033 through P034 beat3, dotted endpoint. P036 beat3 to P037 second eighth upper slur. P037 lower-stem slur upper staff beat1 to beat3, dot under terminal lower chord; crescendo wedge beat2 to bar end. P038 fz; lower-stem slur half note beat1 to quarter beat3.|
+|7|P039 f above lower staff; dots on three upper-stem notes and P040 first two. P040 pp upper beat3 and slur through P042 fourth eighth; P041 three lower chords dotted, P042 first two dotted. P043 f above lower, dots all three upper-stem notes; P044 first two dotted. P044 pp upper beat3, slur continues through P046 fourth eighth.|
+|8|P046 upper continuation slur ends fourth eighth; new slur fifth eighth to P048 fourth eighth. P047 “cresc.” between staves. New upper slur P048 fifth eighth through P050 sixth eighth. P049 f; P049 and P050 lower chords dotted on all beats. P050 diminuendo wedge beneath upper passage. P051 pp near second eighth; pedal down at beginning.|
+|9|P052 pedal release at bar end. Upper slur P054 beat3 to P056 beat3, dotted terminal. Upper slur P058 beat3 continues to P059 second eighth.|
+|10|P059 upper continuation ends second eighth; lower-stem slur upper staff beat1 to beat3, terminal dot, crescendo wedge beat2 to bar end. P060 fz, lower-stem upper-staff half-to-quarter slur. P061 pp. Upper slur P062 beat3 through P064 beat3, terminal dot. P065 upper slur first pitched eighth (beat1.5) through terminal quarter beat3, terminal dot; lower beat1 chord dotted.|
+|11|P066/P067 upper slur from first pitched eighth beat1.5 through beat3 quarter, dotted terminal. P066/P067 lower beat1 chords dotted. P068 ppp at start, all three chord attacks dotted on each staff. P069 all three chord attacks dotted on each staff. P070 first chord dotted on each staff; pedal down at first attack. P071 and P072 upper two small beamed grace notes slur into first full-size quarter chord, dotted terminal chord. P071/P072 first lower chord dotted. Pedal release P072 around beat2 beneath lower staff.|
+
+No fermatas, trill signs, turns, segno/coda or octave lines seen. No printed ties: the curved spans listed connect different pitches/phrases. No tuplets seen; numerals near notes are fingerings. P071–72 small beamed notes are ornament groups preceding quarter attacks, unlike normal eighth runs P065–67. Precise slur chord-member attachment and visual pp/pedal onset alignment will be checked with reader/candidate evidence; this inventory records the actual ink, not inferred playback.
+
+## ROUTE
+Straight P001–P072. No repeats, ending brackets, navigation words, segno or coda. Thin-thick final barline after P072. No other double barline. No musical uncertainty prevents use of the physical frame.
+
+## Evidence and freeze
+All 11 derived system images retained, with hashes in phase1_evidence_hashes.json. phase1_hashes.json maps every current Phase 1 allowed input to expected/actual SHA-256. Phase 1 complete; subsequent reader evidence may now be accessed. The P032–34 cross-page slur reading and exact expressive offsets remain ordinary musical questions, not frame blockers.
