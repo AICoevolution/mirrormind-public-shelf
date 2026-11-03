@@ -1,0 +1,3 @@
+All readers missed P036 A# and P054 naturals; ensemble agreement did not establish correctness. Candidate lost P039 chord member and introduced a P055 phantom note. Independent print audit governs corrections.
+
+Implementation validation caught duplicate inherited accidental tags, removed before final encoding/schema and consumer checks. Final primary has no duplicated accidental elements. MARKS articulation-order inequality is ordering only, verified as an exact anchored multiset; slur member/placement/orientation is unchanged. MARKS warns for dashes. Production narrow layout places P085 cresc. beneath the bass staff. Terminal counted-rest 1 is not displayed. These bounded issues are explicit final-review items.

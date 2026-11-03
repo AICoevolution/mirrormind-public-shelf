@@ -1,0 +1,115 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schubert_op94_06_allegretto.musicxml",
+  "primary_xml_sha256": "33c8c84df5f142e3ca61f7670e7ecd5b788ea16f267662b1a13e4cbdecceb79f",
+  "metadata_contract": "reviewed_namecard.v1",
+  "delivery_contract": "omr_review_delivery.v2",
+  "human_outcome": null,
+  "publication_authorized": false,
+  "phase_freezes": {
+    "reviewer/PHASE1_FREEZE.md": "baed970172f8552a0d29d3f9d04e5601ff5d5ce610b5a579d88e6e59bfef7266",
+    "reviewer/phase1_hashes.json": "fba968fd75fec2a0e0791febf38001c8a90816882c03787f7728050d5e5b8e81",
+    "reviewer/PHASE2_FREEZE.md": "1d17de72b72ae65dabec45aca3f7d96a24ee46a46039d75f7a202eb1e03584fc",
+    "reviewer/phase2_hashes.json": "fb92ce9b96d8a20e809dceabeffabb9c59778df0ca116b4740c73afd2bf69971",
+    "reviewer/PHASE3_FREEZE.md": "a0187c05266be23f674d83664c47a7af1ca3214992a19b7ff32cf561ffc9c43a",
+    "reviewer/phase3_hashes.json": "5e9fa2383af8e6f0258f97029017312623d8f43374378978ccd3018b7331f7ec"
+  },
+  "delivery_issues": [
+    "SEP-MARKS-LIMITS",
+    "VIEW-HAIRPINS",
+    "VIEW-DENSE-CURVES",
+    "VIEW-DC-PLACEMENT"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_checks/primary_assessment.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_checks/independent_playback.json",
+        "validation/recheck_checks/analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_mapping/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-HAIRPINS",
+        "VIEW-DENSE-CURVES",
+        "VIEW-DC-PLACEMENT"
+      ],
+      "evidence": [
+        "validation/recheck_checks/focused_visual_recheck.json",
+        "human_attention.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-HAIRPINS",
+        "VIEW-DENSE-CURVES",
+        "VIEW-DC-PLACEMENT"
+      ],
+      "evidence": [
+        "validation/recheck_checks/focused_visual_recheck.json",
+        "human_attention.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "33c8c84df5f142e3ca61f7670e7ecd5b788ea16f267662b1a13e4cbdecceb79f",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_checks/core_check.json",
+        "validation/recheck_checks/member_checks.json",
+        "validation/recheck_checks/core_export.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "SEP-MARKS-LIMITS"
+      ],
+      "evidence": [
+        "validation/recheck_checks/marks_export.json",
+        "validation/recheck_checks/marks_check.json",
+        "validation/recheck_checks/member_checks.json",
+        "human_attention.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_checks/route_check.json",
+        "delivery_final/ROUTE.sep"
+      ],
+      "human_convention_question": "ROUTE-DC"
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-HAIRPINS",
+        "VIEW-DENSE-CURVES",
+        "VIEW-DC-PLACEMENT"
+      ],
+      "evidence": [
+        "validation/recheck_checks/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "attribution": "Stage5 independent consumer recheck after CORE member-tie serialization repair. Exact primary and completed Phase1–3 audit preserved from astra_review_20261030_eea98858; no musical changes or publication approval."
+}

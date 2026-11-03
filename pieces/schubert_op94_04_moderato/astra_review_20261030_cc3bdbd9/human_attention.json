@@ -1,0 +1,325 @@
+{
+  "schema": "astra_human_attention.v1",
+  "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+  "items": [
+    {
+      "id": "BASS-031-146",
+      "address": "P031/P146, lower staff, q=1/4–3/2",
+      "question": "Confirm the onset and duration of the accented G#3 against the dotted F#3 and sixteenth rest.",
+      "provisional_treatment": "G#3 quarter at q=1/2, F#3 dotted eighth at q=1/4, E3/D#3 eighths at q=1 and 3/2.",
+      "reason_for_uncertainty": "Dense/damaged print leaves the independent inner onset ambiguous; interval validity is not a musical decision.",
+      "evidence": [
+        "reviewer/print/P031_detail.png",
+        "reviewer/print/system_06.png",
+        "reviewer/print/system_22.png",
+        "validation/production_render_final/system-1350-05.png",
+        "validation/production_render_final/system-1350-25.png",
+        "continuation_validation/production_render/system-1350-05.png",
+        "continuation_validation/production_render/system-1350-25.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "musical"
+    },
+    {
+      "id": "CRESC-095-096",
+      "address": "P095–096, between staves",
+      "question": "Does the printed cresc. begin late in P095 or at P096?",
+      "provisional_treatment": "Attach cresc. below upper staff at P096 q=0.",
+      "reason_for_uncertainty": "Text is close to the bar boundary in the print.",
+      "evidence": [
+        "reviewer/print/system_15.png",
+        "validation/production_render_final/system-1350-16.png",
+        "continuation_validation/production_render/system-1350-16.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "musical"
+    },
+    {
+      "id": "PEDAL-RELEASE",
+      "address": "P023/P138 lower staff q=1; following passage",
+      "question": "How should the two printed Ped. starts be released or repedaled?",
+      "provisional_treatment": "Retain two sign-only pedal starts; add no unprinted release or sustained playback inference.",
+      "reason_for_uncertainty": "The print has no explicit release. Encoding checker reports repeated/unclosed endpoints; engraving checker flags the final open pedal.",
+      "evidence": [
+        "reviewer/print/system_04.png",
+        "reviewer/print/system_21.png",
+        "validation/primary_structure_final.json",
+        "encoding_audit/78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8-6b731a072396e3f74d70c392bd176ee6c1be5f20eeda11aaa4b73922b0253291/change-request.json",
+        "encoding_audit/78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8-6b731a072396e3f74d70c392bd176ee6c1be5f20eeda11aaa4b73922b0253291/report.json",
+        "validation/production_render_final/system-1350-04.png",
+        "validation/production_render_final/system-1350-23.png",
+        "continuation_validation/primary_structure_final.json",
+        "continuation_validation/production_render/system-1350-04.png",
+        "continuation_validation/production_render/system-1350-23.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "primary_structure",
+      "layer": "MARKS",
+      "issue_type": "checker_failure",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "structural_findings": [
+        "STRUCTURE-ce388481e99925af"
+      ]
+    },
+    {
+      "id": "MARKS-REPRESENTATION",
+      "address": "P023/P138 Ped.; P178 ppp",
+      "question": "Retain the primary XML as the authority for marks omitted by MARKS v0.",
+      "provisional_treatment": "Use the corrected primary. MARKS export is limited; no claim of lossless standalone representation.",
+      "reason_for_uncertainty": "MARKS v0 reports unsupported ppp and unclosed pedal signs, while actual Apply preserves the primary events and exact slur endpoints.",
+      "evidence": [
+        "validation/sep_roundtrip.json",
+        "delivery_final/MARKS_export.json",
+        "continuation_validation/sep_roundtrip.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "DISPLAY-CODA",
+      "address": "P178 upper staff, sectional text Coda.",
+      "question": "Confirm the sectional Coda. text and reject any unintended navigation instruction in the view.",
+      "provisional_treatment": "Primary retains words Coda.; playback has no Coda jump.",
+      "reason_for_uncertainty": "Production rendering substitutes a To-coda-looking label/sign for the plain printed sectional text.",
+      "evidence": [
+        "reviewer/print/system_27.png",
+        "delivery_final/exact_mark_ledger.json",
+        "validation/production_render_final/system-1350-31.png",
+        "continuation_validation/production_render/system-1350-31.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ROUTE",
+      "issue_type": "ambiguous_notation",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+        "source_evidence": [
+          "reviewer/print/system_27.png",
+          "delivery_final/exact_mark_ledger.json"
+        ],
+        "render_evidence": [
+          "validation/production_render_final/system-1350-31.png",
+          "continuation_validation/production_render/system-1350-31.png"
+        ]
+      }
+    },
+    {
+      "id": "DISPLAY-RITARD",
+      "address": "P181 above lower staff, q=0; both layouts",
+      "question": "Confirm the lower-staff ritard. position and scope.",
+      "provisional_treatment": "Retain the exact staff-2 direction in XML.",
+      "reason_for_uncertainty": "Viewer places ritard. above the whole system, at the system beginning (P179 in the narrow layout), away from its encoded P181 lower-staff address.",
+      "evidence": [
+        "reviewer/print/system_27.png",
+        "delivery_final/exact_mark_ledger.json",
+        "validation/production_render_final/system-1350-31.png",
+        "validation/production_render_final/system-1000-45.png",
+        "continuation_validation/production_render/system-1350-31.png",
+        "continuation_validation/production_render/system-1000-45.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "MARKS",
+      "issue_type": "word_staff_placement",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "DISPLAY-KEY180",
+      "address": "P180 q=1, both staves",
+      "question": "Confirm the mid-bar change from five flats to four sharps.",
+      "provisional_treatment": "Keep the key change at q=1 in XML. First chord remains F4/Ab4 over Db3/Ab3/Db4.",
+      "reason_for_uncertainty": "Viewer draws the new signature at the bar beginning. Explicit accidentals and all displayed note identities remain correct, but the signature timing is visually ambiguous.",
+      "evidence": [
+        "reviewer/print/system_27.png",
+        "delivery_final/exact_event_ledger.json",
+        "validation/production_render_final/system-1350-31.png",
+        "validation/production_render_final/system-1000-45.png",
+        "continuation_validation/production_render/system-1350-31.png",
+        "continuation_validation/production_render/system-1000-45.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "ambiguous_notation",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+        "source_evidence": [
+          "reviewer/print/system_27.png",
+          "delivery_final/exact_event_ledger.json"
+        ],
+        "render_evidence": [
+          "validation/production_render_final/system-1350-31.png",
+          "validation/production_render_final/system-1000-45.png",
+          "continuation_validation/production_render/system-1350-31.png",
+          "continuation_validation/production_render/system-1000-45.png"
+        ]
+      }
+    },
+    {
+      "id": "DISPLAY-WEDGE181",
+      "address": "P181 lower staff, crescendo q0–1 and diminuendo q1–2",
+      "question": "Confirm both hairpins where the upper bass-figuration notes obscure their lines.",
+      "provisional_treatment": "Retain both printed wedges and exact endpoints in XML.",
+      "reason_for_uncertainty": "The rendered hairpins crowd/overlap the lower-staff figuration; source and ledger show their intended spans.",
+      "evidence": [
+        "reviewer/print/system_27.png",
+        "delivery_final/exact_mark_ledger.json",
+        "validation/production_render_final/system-1350-32.png",
+        "validation/production_render_final/system-1000-45.png",
+        "continuation_validation/production_render/system-1350-32.png",
+        "continuation_validation/production_render/system-1000-45.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "MARKS",
+      "issue_type": "obscured_notation",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+        "source_evidence": [
+          "reviewer/print/system_27.png",
+          "delivery_final/exact_mark_ledger.json"
+        ],
+        "render_evidence": [
+          "validation/production_render_final/system-1350-32.png",
+          "validation/production_render_final/system-1000-45.png",
+          "continuation_validation/production_render/system-1350-32.png",
+          "continuation_validation/production_render/system-1000-45.png"
+        ]
+      }
+    },
+    {
+      "id": "DISPLAY-UNISONS",
+      "address": "P018/P048/P133/P163 upper staff, q=0",
+      "question": "Confirm independent voices sharing the opening pitch and their different written values.",
+      "provisional_treatment": "Retain the printed independent durations and both voice stems.",
+      "reason_for_uncertainty": "The production view uses adjacent/shared heads at the same pitch; dense stems and dots merit visual confirmation.",
+      "evidence": [
+        "reviewer/print/system_03.png",
+        "reviewer/print/system_08.png",
+        "reviewer/print/system_20.png",
+        "reviewer/print/system_24.png",
+        "validation/production_render_final/system-1350-03.png",
+        "validation/production_render_final/system-1350-09.png",
+        "validation/production_render_final/system-1350-22.png",
+        "validation/production_render_final/system-1350-28.png",
+        "continuation_validation/production_render/system-1350-03.png",
+        "continuation_validation/production_render/system-1350-09.png",
+        "continuation_validation/production_render/system-1350-22.png",
+        "continuation_validation/production_render/system-1350-28.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "ambiguous_notation",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+        "source_evidence": [
+          "reviewer/print/system_03.png",
+          "reviewer/print/system_08.png",
+          "reviewer/print/system_20.png",
+          "reviewer/print/system_24.png"
+        ],
+        "render_evidence": [
+          "validation/production_render_final/system-1350-03.png",
+          "validation/production_render_final/system-1350-09.png",
+          "validation/production_render_final/system-1350-22.png",
+          "validation/production_render_final/system-1350-28.png",
+          "continuation_validation/production_render/system-1350-03.png",
+          "continuation_validation/production_render/system-1350-09.png",
+          "continuation_validation/production_render/system-1350-22.png",
+          "continuation_validation/production_render/system-1350-28.png"
+        ]
+      }
+    },
+    {
+      "id": "DISPLAY-NATURALSHARP",
+      "address": "P052/P167 lower-staff F#3 at q=1/4",
+      "question": "Confirm the explicit natural-then-sharp cancellation printed after the preceding double sharp.",
+      "provisional_treatment": "XML contains accidental natural-sharp; sounding pitch is F#3.",
+      "reason_for_uncertainty": "Viewer displays a sharp without the natural cancellation portion. The pitch is unambiguous under the new bar key but the full printed glyph sequence is not shown.",
+      "evidence": [
+        "reviewer/print/system_09.png",
+        "reviewer/print/system_25.png",
+        "application_encoding_corrections.json",
+        "validation/production_render_final/system-1350-10.png",
+        "validation/production_render_final/system-1350-29.png",
+        "continuation_validation/production_render/system-1350-10.png",
+        "continuation_validation/production_render/system-1350-29.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "ambiguous_notation",
+      "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+      "review_safety_reason": "The exact primary, source crop, event ledger and usable current render are retained; pitch/timing/cursor identity checks pass. Human comparison can resolve this bounded issue without changing unrelated music.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+        "source_evidence": [
+          "reviewer/print/system_09.png",
+          "reviewer/print/system_25.png",
+          "application_encoding_corrections.json"
+        ],
+        "render_evidence": [
+          "validation/production_render_final/system-1350-10.png",
+          "validation/production_render_final/system-1350-29.png",
+          "continuation_validation/production_render/system-1350-10.png",
+          "continuation_validation/production_render/system-1350-29.png"
+        ]
+      }
+    }
+  ],
+  "human_outcome": null
+}

@@ -1,0 +1,2045 @@
+{
+  "schema": "ensemble-manifest-v2",
+  "reader_uncertainty_policy": "defer_to_review.v1",
+  "transport_validation": {
+    "schema": "reader-uncertainty-transport.v1",
+    "ready": true,
+    "status": "STANDARD",
+    "musical_completeness": "NOT_ASSESSED",
+    "candidate_sha256": "2ee9f1a5319ff1c03ff670a7d36babd860e687d446abcd330ae803a9fb352fbe",
+    "obligations_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "obligation_count": 0,
+    "deferred_timing_errors": [],
+    "blocking_errors": []
+  },
+  "review_summary": {
+    "schema": "reader-review-summary.v1",
+    "authority": "Evidence, not musical approval",
+    "agreement_events": 624,
+    "findings_by_reason": {
+      "pitch_disagreement": 75,
+      "single_source_claim": 3
+    },
+    "readers_musical_uncertainty": [],
+    "evidence": "source_agent/ensemble_disagreements.json",
+    "source_alternatives": "source_agent/ensemble_observations.json"
+  },
+  "targeted_reread_policy": "advisory",
+  "piece_id": "schubert_op94_05_allegro_vivace",
+  "ready_for_assembly": true,
+  "staff_admission": {
+    "schema": "ensemble-staff-admission.v1",
+    "scope": "Rejection-only necessary staff accounting; existing timing and blocker gates remain required",
+    "musical_completeness": "NOT_ASSESSED",
+    "necessary_coverage_satisfied": true,
+    "issues": [],
+    "implementation": {
+      "contract": "ensemble-staff-admission.v1",
+      "pipeline_sources": {
+        "ensemble_admission.py": "725646c31e1c0699ac13fff9b8dd5bb3461ade703078087bb92da3a641a3d9c1",
+        "ensemble_contract.py": "9dd041a9ce704df754b6050fd662321143d7dedefe3931d07ba438eedc4a32c9",
+        "ensemble_diagnostics.py": "c91cc2b3c32a3f541f9e075292acc639349e4b030fe3b5494a5bf69aea169b8f",
+        "score_layout.py": "4520cc4d5ad6419bc2dceeb098ea56a8e85ebc3a4054e9d3020946722e227fe3",
+        "reader_claims_contract.py": "11c33cdfa9b751148cdcb20b3c455a5d58c37df3a736ff4ff2f18633bcf66461",
+        "empty_staff_contract.py": "80a242d9047e2859994f5946f1ec20679ec212a911dbe5bac3e1a1cdbc4e4dea",
+        "targeted_source_contract.py": "feae47c7eea97a4e35b13efa5f71a6b3b900b4b2c08779eb745b7d38fb3c2a74",
+        "targeted_print_detail.py": "de56193f8f81535fa08198fe6d6c51eb501be6335eb996775b81b31374962f54",
+        "reader_uncertainty.py": "c51f3924c61c8d9516d00ac09e082979ed144714d9318b6edc32b0e09c2bfab6"
+      },
+      "input_binding_source": "828d92de3564e4ad79876fcb74dd0d7c4847083ef38992da78ba76996473274e"
+    },
+    "coverage": {
+      "expected_staff_units": 222,
+      "selected_staff_units": 222,
+      "explicit_no_event_staff_units": 0,
+      "blocked_staff_units": 0,
+      "missing_staff_units": 0,
+      "emitted_staff_units": 222,
+      "unexpected_emitted_units": [],
+      "unlocated_blockers": [],
+      "units": [
+        {
+          "bar": 1,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 1,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 2,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 2,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 3,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 3,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 4,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 4,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 5,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 5,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 6,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 6,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 7,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 7,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 8,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 8,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 9,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 9,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 10,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 10,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 11,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 11,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 12,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 12,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 13,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 13,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 14,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 14,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 15,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 15,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 16,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 16,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 17,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 17,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 18,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 18,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 19,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 19,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 20,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 20,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 21,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 21,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 22,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 22,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 23,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 23,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 24,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 24,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 25,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 25,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 26,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 26,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 27,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 27,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 28,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 28,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 29,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 29,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 30,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 30,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 31,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 31,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 32,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 32,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 33,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 33,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 34,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 34,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 35,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 35,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 36,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 36,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 37,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 37,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 38,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 38,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 39,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 39,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 40,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 40,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 41,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 41,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 42,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 42,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 43,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 43,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 44,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 44,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 45,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 45,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 46,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 46,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 47,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 47,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 48,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 48,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 49,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 49,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 50,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 50,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 51,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 51,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 52,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 52,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 53,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 53,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 54,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 54,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 55,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 55,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 56,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 56,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 57,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 57,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 58,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 58,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 59,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 59,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 60,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 60,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 61,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 61,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 62,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 62,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 63,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 63,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 64,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 64,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 65,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 65,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 66,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 66,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 67,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 67,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 68,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 68,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 69,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 69,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 70,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 70,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 71,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 71,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 72,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 72,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 73,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 73,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 74,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 74,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 75,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 75,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 76,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 76,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 77,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 77,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 78,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 78,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 79,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 79,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 80,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 80,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 81,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 81,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 82,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 82,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 83,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 83,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 84,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 84,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 85,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 85,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 86,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 86,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 87,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 87,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 88,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 88,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 89,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 89,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 90,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 90,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 91,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 91,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 92,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 92,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 93,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 93,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 94,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 94,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 95,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 95,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 96,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 96,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 97,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 97,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 98,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 98,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 99,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 99,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 100,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 100,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 101,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 101,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 102,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 102,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 103,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 103,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 104,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 104,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 105,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 105,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 106,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 106,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 107,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 107,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 108,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 108,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 109,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 109,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 110,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 110,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 111,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 111,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        }
+      ],
+      "scope": "Selected representation presence, not musical completeness or admission",
+      "changes_admission": false
+    },
+    "status": "ACCOUNTED",
+    "audit_sha256": "6b4b9aa013c1a5a0c3e391d4f2c4f11308eaa515cdf82c78db30a9966a076dad"
+  },
+  "next_action": "ENSEMBLE_COMPLETE",
+  "staff_unit_coverage": {
+    "expected_staff_units": 222,
+    "selected_staff_units": 222,
+    "explicit_no_event_staff_units": 0,
+    "blocked_staff_units": 0,
+    "missing_staff_units": 0,
+    "emitted_staff_units": 222,
+    "scope": "Selected representation presence, not musical completeness or admission",
+    "changes_admission": false
+  },
+  "physical_bars_expected": 111,
+  "physical_bars_complete": 111,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "064821285a0fab6054d8b85e0739306dd2762d4607f6304e6fa9e8da44eb98c9",
+      "events": 1863
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "1802e053c58106391d7086796911d85abf5a26b7a28713ebd65794f3408bd9a9",
+        "events": 615,
+        "canonical": true,
+        "evidence_status": "ADDRESSABLE",
+        "unaddressable_pages": [],
+        "manifest_sha256": "07787a9bcfac722036b05edaf4930ac2004a5313ca003dc8a391e763d54bd2a4"
+      }
+    ],
+    "GROK": [],
+    "GEMINI": []
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "07787a9bcfac722036b05edaf4930ac2004a5313ca003dc8a391e763d54bd2a4"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "directory_id": "grok",
+    "method": null,
+    "scope": null,
+    "system_routes": [],
+    "enabled": false,
+    "requested_count": 0,
+    "requests": [],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "provider_manifests": [
+      {
+        "provider_id": "GROK",
+        "directory_id": "grok",
+        "manifest_path": "source_observations/grok/manifest.json",
+        "manifest_sha256": null
+      }
+    ]
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 2,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_02.json",
+        "request_sha256": "1bf316c1de3cca26648b776b9c44500710c715cc085abe1432744887302c7a0a",
+        "response_path": "source_observations/gemini/system_02.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 4,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "78a31733fa320f765b1b73e838757394e143ba727fcd2d5f7a8714942e2d3a89",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 6,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_06.json",
+        "request_sha256": "5ad76d3f882242e1bc260a32f381164df91b968f8d321bf9fc659e5c73693370",
+        "response_path": "source_observations/gemini/system_06.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      }
+    ],
+    "max_calls": 24,
+    "calls_made": 0,
+    "max_cost_usd": 1.0,
+    "actual_cost_usd": 0,
+    "execution_authorized": true,
+    "authorization_status": "authorized",
+    "paid_review_performed": false,
+    "responses_used": 0,
+    "claude_fallback_responses_used": 0,
+    "new_calls_made": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": false,
+    "missing_responses": 3,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "staff_coverage_recovery": [],
+  "empty_staves": [],
+  "source_insufficiencies": [],
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "cross_staff_voices": [],
+  "unresolved_evidence_claims": 3,
+  "unresolved_nonblocking": 75,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_advisory_reread",
+    "unresolved_evidence_count": 3,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 3,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": false,
+    "routing_exhausted": false,
+    "reason": "Unresolved readings are advisory evidence for the independent reviewer; no additional reread is required."
+  },
+  "outputs": {
+    "diagnostics": {
+      "path": "source_agent/ensemble_diagnostics.json",
+      "sha256": "6cf0f68569bffd0fc80bbaeecaf5b24d7f78b914df960d4f2760ccc087a50485"
+    },
+    "targeted_reread_advisory": {
+      "path": "source_agent/targeted_reread_advisory.json",
+      "sha256": "ab8b14b66d27895d79a1c9c59558d467b67d3d44e816ebd7d0ceee61de9b16a0"
+    },
+    "quality": {
+      "path": "source_agent\\ensemble_quality.json",
+      "sha256": "4456bd45f7084ee275c00cfa2497a0d68df395cfc1227a968b543688a6345bc9"
+    },
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "feebf219d42a4702f2dc48019651340c97260fb04dbed657c7a2309ae74f64f5"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "cd7bb010c2c9a63b0af825f5664888e24a5445605a3b2edbc0cad86b4aaef506"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "374503f699a1b0978232dc8e815c15312158a7def6de292d287545fe4654e936"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "de6740e18efca92e4cd9083ecc98a0183fbe128acb37a9168b19ed101d4738e1"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "exact interval-valid source topology plus field-level weighted pitch and tie evidence; unsupported tie endpoints are quarantined; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-10-30T00:31:41.632203+00:00"
+}

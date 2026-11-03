@@ -1,0 +1,3 @@
+P120 display omission is fixed by the staged current consumer. Raw earlier reports remain historical. Current XML schema-order repair was necessary. CORE rebuild drops an incoming Ab4 tie at P057; whole-score Apply refuses P057 member notation. MARKS fp remains unsupported as a token; exact slur endpoint multiset survives Apply. Local hairpin display and dense curve/tuplet legibility require human review. No production or supervisor code was modified.
+
+CORE-LIMITED-DELIVERY-CONTRACT: canonical full delivery preflight rejects CORE LIMITED, although the operator policy permits bounded SEP limitations for human review. This requires an authorized codec or contract resolution, not alteration of printed music.

@@ -1,0 +1,1 @@
+CORE historical-predecessor tie repair independently passes. MARKS raw slur order comparison differs, but exact anchored endpoint/style multiplicities pass. Four fp text tokens remain unsupported. Existing local viewer ambiguities are retained for human review. Primary unchanged.

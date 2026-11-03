@@ -1,0 +1,97 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schubert_op94_05.musicxml",
+  "primary_xml_sha256": "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5",
+  "human_outcome": null,
+  "delivery_contract": "omr_review_delivery.v2",
+  "metadata_contract": "reviewed_namecard.v1",
+  "publication_authorized": false,
+  "delivery_issues": [
+    "SEP-DASHES",
+    "VIEW-085",
+    "VIEW-111"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/primary_structure.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/playback_check.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/render/report.json",
+        "validation/vexflow_duration_check.json",
+        "validation/vexflow_duration_assessment.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "evidence": [
+        "validation/render/report.json",
+        "validation/focused_visual_recheck.json"
+      ],
+      "review_findings": [
+        "VIEW-085",
+        "VIEW-111"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ],
+      "review_findings": [
+        "VIEW-085",
+        "VIEW-111"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/sep_roundtrip.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "evidence": [
+        "validation/marks_export.json",
+        "validation/sep_roundtrip.json"
+      ],
+      "review_findings": [
+        "SEP-DASHES"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/route_roundtrip.json",
+        "validation/playback_check.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ],
+      "review_findings": [
+        "VIEW-085",
+        "VIEW-111"
+      ]
+    }
+  }
+}

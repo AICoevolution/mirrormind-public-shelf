@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "schubert_op94_06_allegretto",
+  "verified_utc": "2026-10-29T23:16:15.098042+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "89e2dc40064b86070f81ff0420ce171bf8726d793e5baf9f45eea69a53d7f37d",
+      "replay_sha256": "18d5c4c749155eb5cdab6889c8acfe0440bd2c072303c627cbe88714bd6de16d"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "637b6b0a7c3d31de54a6737f3ebb71874047982afe86c9ceef4d92a85599e639",
+      "replay_sha256": "637b6b0a7c3d31de54a6737f3ebb71874047982afe86c9ceef4d92a85599e639"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "90c7a64d89ab5c32d0aa3e40483087023f7b428a986568a054fefb84bd157b5a",
+      "replay_sha256": "9bfcb49646872ee28ca04b9f1fd121e9b593749c83bd9ee7f9c52c3b14e6c280"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "0c5d31f60350f858e3b70f921b55d7312db3933e9bd450688121e21c59c4ed5d",
+      "replay_sha256": "3c3fdf8d9838ddaca1706bb7d593ffca1bea88910615038302b53f2c7e7af83b"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e7bbcbf53dd9e3f5b24aefd522e5ffa07fc141dd692e8b55744beaf343355981",
+      "replay_sha256": "9bb5ef9a47d7facd487ed2ab4edcedd34ab4961efde07522ce63d217d9b33454"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

@@ -1,0 +1,135 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schubert_op94_04_moderato.musicxml",
+  "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_outcome": null,
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "continuation_validation/primary_structure_final.json",
+        "continuation_validation/target_xml_comparison.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "continuation_validation/independent_playback.json",
+        "delivery_final/analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "continuation_validation/viewer_mapping.json",
+        "continuation_validation/production_render/report.json",
+        "continuation_validation/render_spec.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "DISPLAY-CODA",
+        "DISPLAY-RITARD",
+        "DISPLAY-KEY180",
+        "DISPLAY-WEDGE181",
+        "DISPLAY-UNISONS",
+        "DISPLAY-NATURALSHARP"
+      ],
+      "evidence": [
+        "continuation_validation/essential_notation_rendering.json",
+        "continuation_validation/production_render/report.json",
+        "continuation_validation/production_render/inspect-1000-01.png",
+        "continuation_validation/production_render/inspect-1000-02.png",
+        "continuation_validation/production_render/inspect-1000-03.png",
+        "continuation_validation/production_render/inspect-1000-04.png",
+        "continuation_validation/production_render/inspect-1000-05.png",
+        "continuation_validation/production_render/inspect-1000-06.png",
+        "continuation_validation/production_render/inspect-1000-07.png",
+        "continuation_validation/production_render/inspect-1000-08.png",
+        "continuation_validation/production_render/inspect-1350-01.png",
+        "continuation_validation/production_render/inspect-1350-02.png",
+        "continuation_validation/production_render/inspect-1350-03.png",
+        "continuation_validation/production_render/inspect-1350-04.png",
+        "continuation_validation/production_render/inspect-1350-05.png",
+        "continuation_validation/production_render/inspect-1350-06.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "DISPLAY-CODA",
+        "DISPLAY-RITARD",
+        "DISPLAY-KEY180",
+        "DISPLAY-WEDGE181",
+        "DISPLAY-UNISONS",
+        "DISPLAY-NATURALSHARP"
+      ],
+      "evidence": [
+        "continuation_validation/focused_visual_recheck.json",
+        "continuation_validation/production_render/report.json",
+        "continuation_validation/production_render/inspect-1000-01.png",
+        "continuation_validation/production_render/inspect-1000-02.png",
+        "continuation_validation/production_render/inspect-1000-03.png",
+        "continuation_validation/production_render/inspect-1000-04.png",
+        "continuation_validation/production_render/inspect-1000-05.png",
+        "continuation_validation/production_render/inspect-1000-06.png",
+        "continuation_validation/production_render/inspect-1000-07.png",
+        "continuation_validation/production_render/inspect-1000-08.png",
+        "continuation_validation/production_render/inspect-1350-01.png",
+        "continuation_validation/production_render/inspect-1350-02.png",
+        "continuation_validation/production_render/inspect-1350-03.png",
+        "continuation_validation/production_render/inspect-1350-04.png",
+        "continuation_validation/production_render/inspect-1350-05.png",
+        "continuation_validation/production_render/inspect-1350-06.png"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "78a08ae48b6747a116a55a104e92872db3887f1ff25d5f7372c6ed61c681d5c8",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "continuation_validation/sep_roundtrip.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "MARKS-REPRESENTATION",
+        "PEDAL-RELEASE"
+      ],
+      "evidence": [
+        "continuation_validation/sep_roundtrip.json",
+        "continuation_validation/primary_structure_final.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "continuation_validation/sep_roundtrip.json",
+        "continuation_validation/independent_playback.json"
+      ]
+    }
+  },
+  "delivery_issues": [
+    "PEDAL-RELEASE",
+    "MARKS-REPRESENTATION",
+    "DISPLAY-CODA",
+    "DISPLAY-RITARD",
+    "DISPLAY-KEY180",
+    "DISPLAY-WEDGE181",
+    "DISPLAY-UNISONS",
+    "DISPLAY-NATURALSHARP"
+  ],
+  "technical_blockers": [],
+  "delivery_contract": "omr_review_delivery.v2",
+  "continuation_of": "astra_review_20261030_077716d5",
+  "continuation_reviewer": "assigned Codex reviewer; original independent audit attribution retained",
+  "publication_authorized": false
+}

@@ -1,0 +1,3853 @@
+{
+  "schema": "frame_verifier_request.v1",
+  "piece_id": "schubert_op94_06_allegretto",
+  "edition_id": "breitkopf_fs111_allegretto_ef1d53a639c4ce10",
+  "created_utc": "2026-10-29T23:29:44.895423+00:00",
+  "authority": "print_only",
+  "source_blindness": {
+    "reader_claims_exposed": false,
+    "candidate_exposed": false,
+    "model_disagreements_exposed": false,
+    "semantic_omr_content_exposed": false,
+    "non_authoritative_geometry_exposed": true
+  },
+  "task": "Challenge the proposed physical frame against the printed pixels. Count every visible barline; verify every pickup/partial, repeat, ending, route mark, special/final barline, meter/key/clef transition and crop boundary. Classify every printed region NORMAL or NOTEWORTHY and state every noteworthy feature in plain musical language for the annotated system report. Use each full-page red crop-boundary overlay to prove that no musical ink is excluded.",
+  "inputs": {
+    "config": {
+      "path": "config.json",
+      "sha256": "bec5a26bde70be5569a378542944143dbb4d7ff944c6caf987fa507c85eb6bd6"
+    },
+    "printed_source": {
+      "path": "source/printed_source.pdf",
+      "sha256": "ef1d53a639c4ce10379bfe26355d29c06a2d77c21384c140353c2c8ef88afe4b"
+    },
+    "pages": {
+      "path": "source_crops/pages.json",
+      "sha256": "76defeb275d24eec7d57b78d5cd8edc51633f5242071c9da53cab420f8365c30"
+    },
+    "physical_score_lock": {
+      "path": "physical_score_lock.json",
+      "sha256": "bd48149b9c94b662f2f20e63f21d1b1c32903e021f6a68c1f108f819c0dff2b4"
+    },
+    "reviewer_phase1_frame_lock": {
+      "path": "reviewer_phase1_frame_lock.json",
+      "sha256": "14d3920738a84901ee1b64c18a20dc62d8af45c113f1efe49595e920fdfcece9"
+    },
+    "frame_visual_verification": {
+      "path": "frame_visual_verification.json",
+      "sha256": "e416543aad5280c657e1b1af5ce4e8648a3ec51fe2998a44d8ad33066719156d"
+    },
+    "page_frame_validation": {
+      "path": "source_crops/page_frame_validation.json",
+      "sha256": "4c14a95f9df73f872ab1da8d7fb109a39862380b421ab18102018279f7f6b75a"
+    },
+    "crop_validation": {
+      "path": "source_crops/crop_validation.json",
+      "sha256": "1058c75b051eb06d4002365cd63e6cfc3c07e571ed7233e12f7face16df2ea94"
+    },
+    "edition_session": {
+      "path": "edition_session.json",
+      "sha256": "9219dc9831f2ce7bf5ebc185c9f65ede4d53127476c8ff52f7e999067de9da47"
+    },
+    "geometry_manifest": {
+      "path": "frame_geometry/manifest.json",
+      "sha256": "3bb6a424d12079489955cd71b86e08fdf081928511bf8dfb715c00ed8952a372"
+    },
+    "geometry_system_01_skeleton": {
+      "path": "frame_geometry/system_01_skeleton.png",
+      "sha256": "122f54b567d185d8817c5339fc12db4d4ecd1204210134e99d9ca17b7ab8ffa8"
+    },
+    "geometry_system_01_geometry_evidence": {
+      "path": "frame_geometry/system_01_geometry.png",
+      "sha256": "7a230834e9406ce67868e4646b9fa8d1332a7fc5c5b6a4641627113f12a3f7aa"
+    },
+    "geometry_system_01_comparison": {
+      "path": "frame_geometry/system_01_comparison.png",
+      "sha256": "ae4889777958222fbdc1dc65a4ef5c8e8228fc4bd7f92ac0f21582e68b6fa9e5"
+    },
+    "geometry_system_02_skeleton": {
+      "path": "frame_geometry/system_02_skeleton.png",
+      "sha256": "4b6c72939cfc00f3389368def60e16918b3f1ed362a0f7d25ddc1788a82a6b81"
+    },
+    "geometry_system_02_geometry_evidence": {
+      "path": "frame_geometry/system_02_geometry.png",
+      "sha256": "7ee517c587d5304e287c113fc2ae7a177456dc98ef3f1114f5b61f0625014ab7"
+    },
+    "geometry_system_02_comparison": {
+      "path": "frame_geometry/system_02_comparison.png",
+      "sha256": "c02ad532ec1e6b8ac00cfee6d6bbd5df7f0861d95a788576fe2b20b6b6a19632"
+    },
+    "geometry_system_03_skeleton": {
+      "path": "frame_geometry/system_03_skeleton.png",
+      "sha256": "2f3a472ac00c3c04732f9fd4b2336bb1ff1a1e446539d5665dbf8b3e83c3e166"
+    },
+    "geometry_system_03_geometry_evidence": {
+      "path": "frame_geometry/system_03_geometry.png",
+      "sha256": "323e7f0181a3f2e62c7ed2e7d78571c26f1a8a099221f769bf73685c1e4fcbe3"
+    },
+    "geometry_system_03_comparison": {
+      "path": "frame_geometry/system_03_comparison.png",
+      "sha256": "86beb83747a54b88660a4e6b08da81cbf1cd6c4e91307a481e98c14fa62006f9"
+    },
+    "geometry_system_04_skeleton": {
+      "path": "frame_geometry/system_04_skeleton.png",
+      "sha256": "884806688463ce15b6b905860371bf7af9c6520002c3d1ba1ae00882d1f33c13"
+    },
+    "geometry_system_04_geometry_evidence": {
+      "path": "frame_geometry/system_04_geometry.png",
+      "sha256": "2d60d98f9cd9fb3b87fa3891762ec8800a69f37a6f4cad316d1a49a3fa7292c6"
+    },
+    "geometry_system_04_comparison": {
+      "path": "frame_geometry/system_04_comparison.png",
+      "sha256": "9f8f5243272bcbb98d0fe924d3ae55ca3957ff67ca1c6cb0e7c4f6c88645049e"
+    },
+    "geometry_system_05_skeleton": {
+      "path": "frame_geometry/system_05_skeleton.png",
+      "sha256": "3c5f82a099dfafe078377dfaadaf1b240cb5dd387eb449451cd2fd36fdd8e254"
+    },
+    "geometry_system_05_geometry_evidence": {
+      "path": "frame_geometry/system_05_geometry.png",
+      "sha256": "96bc37dda05af0cb43c719627735dcad94a6f398b15633e36718eb701504908c"
+    },
+    "geometry_system_05_comparison": {
+      "path": "frame_geometry/system_05_comparison.png",
+      "sha256": "31086cadd772a35d68e3dd3aded16bceada12ffd4a3cda9bb0ff4dfe1e5817b3"
+    },
+    "geometry_system_06_skeleton": {
+      "path": "frame_geometry/system_06_skeleton.png",
+      "sha256": "01773228f8a814b8024bde29b11ea0c0d270d9c56657f3a32faebe0893d72caf"
+    },
+    "geometry_system_06_geometry_evidence": {
+      "path": "frame_geometry/system_06_geometry.png",
+      "sha256": "216e2675fb77423ce827decfe12c0beacb1d1f69b8f628e1659ea8737893f3a7"
+    },
+    "geometry_system_06_comparison": {
+      "path": "frame_geometry/system_06_comparison.png",
+      "sha256": "77a145853dbc2c88fe057b169d2aeb749c0d0649616984d9744c308d52909585"
+    },
+    "geometry_system_07_skeleton": {
+      "path": "frame_geometry/system_07_skeleton.png",
+      "sha256": "770a138ddb5092fa56efa40015f620048bff0e7845c075505d0f74ebaf68bc3c"
+    },
+    "geometry_system_07_geometry_evidence": {
+      "path": "frame_geometry/system_07_geometry.png",
+      "sha256": "5c01517ea9786b2a82aa312c4b23542b2170d2fe6b5ad56d96c8fc0abb6a2e25"
+    },
+    "geometry_system_07_comparison": {
+      "path": "frame_geometry/system_07_comparison.png",
+      "sha256": "ddda7839c20ad2cc0b4b7377a938f87c9a9870ca90b960d86f76ef59ad9a8a06"
+    },
+    "geometry_system_08_skeleton": {
+      "path": "frame_geometry/system_08_skeleton.png",
+      "sha256": "64dcfe9e8c80f66b666bd8cc716c8a0da540428c5edd33c4ef1a70cb588c1cec"
+    },
+    "geometry_system_08_geometry_evidence": {
+      "path": "frame_geometry/system_08_geometry.png",
+      "sha256": "05edefa4931f4036098210922bc0fbb8278322e9ca2f0f0e443ff2c903457fd6"
+    },
+    "geometry_system_08_comparison": {
+      "path": "frame_geometry/system_08_comparison.png",
+      "sha256": "6f778ed12dfc6308b660f73681f7ece641210711864691077d2000f144d4de7d"
+    },
+    "geometry_system_09_skeleton": {
+      "path": "frame_geometry/system_09_skeleton.png",
+      "sha256": "9876ece6c2ec5ee9c2c1b5967d7ec4f16fc375538eb68234b4dd784071421746"
+    },
+    "geometry_system_09_geometry_evidence": {
+      "path": "frame_geometry/system_09_geometry.png",
+      "sha256": "5f44fe76b09fc430395b56ac9e11b5d9a5cadfa2268389a87bac0cb40d7a6cac"
+    },
+    "geometry_system_09_comparison": {
+      "path": "frame_geometry/system_09_comparison.png",
+      "sha256": "9501f205a782cc62df339daa7328cb58a6cd43a01bc084e7b742350c9c06c039"
+    },
+    "geometry_system_10_skeleton": {
+      "path": "frame_geometry/system_10_skeleton.png",
+      "sha256": "ea746e5e93f6a25d218df56916208f941bd393b603c1f0b8a56d1b5e1f2992de"
+    },
+    "geometry_system_10_geometry_evidence": {
+      "path": "frame_geometry/system_10_geometry.png",
+      "sha256": "c891fd1d7ef7be4d727b94f17f04d80554ba90b110e9f1f84fae4d851dd95cb1"
+    },
+    "geometry_system_10_comparison": {
+      "path": "frame_geometry/system_10_comparison.png",
+      "sha256": "3389b706c8a69a68efc1a90eb7e07363db14f1d5ee35b361911e6a179a1802e7"
+    },
+    "geometry_system_11_skeleton": {
+      "path": "frame_geometry/system_11_skeleton.png",
+      "sha256": "d1d660191a9cfc019794e5f7e23872742d2b9848433d6505f9484834b921bbb9"
+    },
+    "geometry_system_11_geometry_evidence": {
+      "path": "frame_geometry/system_11_geometry.png",
+      "sha256": "6954f5f35d756587834c8d2e9a3dcd9656fd6cf547d9d8c47a78a8ff5fac9050"
+    },
+    "geometry_system_11_comparison": {
+      "path": "frame_geometry/system_11_comparison.png",
+      "sha256": "3933a3469eec8f4bade5893a8cb24f5d277114b6079d5cbdc20027c6455844ba"
+    },
+    "geometry_system_12_skeleton": {
+      "path": "frame_geometry/system_12_skeleton.png",
+      "sha256": "6b3c3fcd99299bd1c77efb982f54cedf58c7d85c47a66a85026a880bef690944"
+    },
+    "geometry_system_12_geometry_evidence": {
+      "path": "frame_geometry/system_12_geometry.png",
+      "sha256": "8639ef3de6c3da96efbebcbc0dfcb8d63442379641ef45d794103ddb9924e95f"
+    },
+    "geometry_system_12_comparison": {
+      "path": "frame_geometry/system_12_comparison.png",
+      "sha256": "f1e2e88e9fb09619a0a681786ad7d83ae285822d8c6cc749f422ccb4280a8b0f"
+    },
+    "crop_boundary_system_01": {
+      "path": "frame_verification/system_01_crop_boundary.png",
+      "sha256": "cc24542d6b28e15fc479dd23b88a364ab94ddb8d7a6e65ceafb193a78fb0a4d9"
+    },
+    "crop_boundary_system_02": {
+      "path": "frame_verification/system_02_crop_boundary.png",
+      "sha256": "72cb0ca4aef5745f10a4d1aaadd13de91ed8b21ed40725d874dbe9a87f6edea1"
+    },
+    "crop_boundary_system_03": {
+      "path": "frame_verification/system_03_crop_boundary.png",
+      "sha256": "6c0c26f899f6bddd7232da7c60d789c22c53cbfd150823539fccd4220077be2c"
+    },
+    "crop_boundary_system_04": {
+      "path": "frame_verification/system_04_crop_boundary.png",
+      "sha256": "3d38a7df5649b2343494f1c80958b271222e82be7830d5711676dabbeda5c91b"
+    },
+    "crop_boundary_system_05": {
+      "path": "frame_verification/system_05_crop_boundary.png",
+      "sha256": "1b6420a6ab5ecb685fc43587cb4de4829f200d10aef3cd408047ed8bdc17c312"
+    },
+    "crop_boundary_system_06": {
+      "path": "frame_verification/system_06_crop_boundary.png",
+      "sha256": "aa30df5235119ae3cfc0ad092dab9b5295e8f505768e0a8c79c1af555d8a934c"
+    },
+    "crop_boundary_system_07": {
+      "path": "frame_verification/system_07_crop_boundary.png",
+      "sha256": "c5759738089122ca9cd66f1f376a29135f099cff6760a1c816c235a140eb7f07"
+    },
+    "crop_boundary_system_08": {
+      "path": "frame_verification/system_08_crop_boundary.png",
+      "sha256": "d7d933202589de516d8a1cac2caf9b42ecb396947bfac7559aaa6e130450f14f"
+    },
+    "crop_boundary_system_09": {
+      "path": "frame_verification/system_09_crop_boundary.png",
+      "sha256": "9e9464189c050842d39f2dee801363247fe7249e367a651c12374b112d152425"
+    },
+    "crop_boundary_system_10": {
+      "path": "frame_verification/system_10_crop_boundary.png",
+      "sha256": "64af1abc232ebfdb4357b3e3da479d88f77914a4c7859a8010e8deb34121aef1"
+    },
+    "crop_boundary_system_11": {
+      "path": "frame_verification/system_11_crop_boundary.png",
+      "sha256": "a0c7ce852674dd8d4ea833634429c59a67b63e07f004dee321dd2dc80f38aa4e"
+    },
+    "crop_boundary_system_12": {
+      "path": "frame_verification/system_12_crop_boundary.png",
+      "sha256": "97b199477c5ffd982324a4cbea4c606befac47600a08fc9a07ced922fbf5fe50"
+    }
+  },
+  "page_images": [
+    {
+      "page": 1,
+      "path": "source_crops/page-1.png",
+      "sha256": "0c1c1d30368e176d5ba6431a1f039f287f983dd21f82ff254c274017e5b97dea",
+      "width": 1780,
+      "height": 2341,
+      "edge_ink": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "long_horizontal_ink_groups": [
+        [
+          198,
+          200
+        ],
+        [
+          211,
+          213
+        ],
+        [
+          223,
+          226
+        ],
+        [
+          236,
+          239
+        ],
+        [
+          249,
+          251
+        ],
+        [
+          349,
+          351
+        ],
+        [
+          361,
+          363
+        ],
+        [
+          374,
+          376
+        ],
+        [
+          387,
+          389
+        ],
+        [
+          400,
+          402
+        ],
+        [
+          546,
+          549
+        ],
+        [
+          559,
+          561
+        ],
+        [
+          571,
+          574
+        ],
+        [
+          584,
+          587
+        ],
+        [
+          597,
+          599
+        ],
+        [
+          696,
+          698
+        ],
+        [
+          708,
+          710
+        ],
+        [
+          721,
+          724
+        ],
+        [
+          734,
+          736
+        ],
+        [
+          747,
+          749
+        ],
+        [
+          893,
+          895
+        ],
+        [
+          905,
+          908
+        ],
+        [
+          918,
+          920
+        ],
+        [
+          931,
+          933
+        ],
+        [
+          944,
+          946
+        ],
+        [
+          1043,
+          1045
+        ],
+        [
+          1055,
+          1057
+        ],
+        [
+          1068,
+          1070
+        ],
+        [
+          1081,
+          1083
+        ],
+        [
+          1093,
+          1095
+        ],
+        [
+          1240,
+          1242
+        ],
+        [
+          1253,
+          1255
+        ],
+        [
+          1266,
+          1268
+        ],
+        [
+          1278,
+          1280
+        ],
+        [
+          1291,
+          1293
+        ],
+        [
+          1391,
+          1393
+        ],
+        [
+          1403,
+          1405
+        ],
+        [
+          1416,
+          1418
+        ],
+        [
+          1428,
+          1431
+        ],
+        [
+          1442,
+          1443
+        ],
+        [
+          1587,
+          1590
+        ],
+        [
+          1600,
+          1602
+        ],
+        [
+          1612,
+          1615
+        ],
+        [
+          1625,
+          1628
+        ],
+        [
+          1638,
+          1641
+        ],
+        [
+          1737,
+          1740
+        ],
+        [
+          1750,
+          1752
+        ],
+        [
+          1763,
+          1765
+        ],
+        [
+          1775,
+          1777
+        ],
+        [
+          1788,
+          1790
+        ],
+        [
+          1935,
+          1937
+        ],
+        [
+          1947,
+          1949
+        ],
+        [
+          1960,
+          1962
+        ],
+        [
+          1973,
+          1975
+        ],
+        [
+          1986,
+          1988
+        ],
+        [
+          2086,
+          2088
+        ],
+        [
+          2098,
+          2100
+        ],
+        [
+          2111,
+          2113
+        ],
+        [
+          2124,
+          2126
+        ],
+        [
+          2136,
+          2138
+        ]
+      ]
+    },
+    {
+      "page": 2,
+      "path": "source_crops/page-2.png",
+      "sha256": "6783658b717bf7e6181b49cc90c6331da2c07469b8100e79da485ad4e577a828",
+      "width": 1781,
+      "height": 2342,
+      "edge_ink": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "long_horizontal_ink_groups": [
+        [
+          179,
+          183
+        ],
+        [
+          192,
+          196
+        ],
+        [
+          204,
+          209
+        ],
+        [
+          217,
+          221
+        ],
+        [
+          231,
+          234
+        ],
+        [
+          325,
+          327
+        ],
+        [
+          337,
+          340
+        ],
+        [
+          350,
+          353
+        ],
+        [
+          363,
+          366
+        ],
+        [
+          375,
+          377
+        ],
+        [
+          513,
+          517
+        ],
+        [
+          526,
+          530
+        ],
+        [
+          538,
+          542
+        ],
+        [
+          551,
+          554
+        ],
+        [
+          564,
+          567
+        ],
+        [
+          658,
+          661
+        ],
+        [
+          671,
+          673
+        ],
+        [
+          682,
+          686
+        ],
+        [
+          695,
+          698
+        ],
+        [
+          708,
+          711
+        ],
+        [
+          845,
+          847
+        ],
+        [
+          857,
+          860
+        ],
+        [
+          871,
+          873
+        ],
+        [
+          883,
+          885
+        ],
+        [
+          896,
+          899
+        ],
+        [
+          1004,
+          1008
+        ],
+        [
+          1016,
+          1020
+        ],
+        [
+          1029,
+          1033
+        ],
+        [
+          1042,
+          1046
+        ],
+        [
+          1055,
+          1059
+        ],
+        [
+          1216,
+          1219
+        ],
+        [
+          1227,
+          1231
+        ],
+        [
+          1240,
+          1244
+        ],
+        [
+          1254,
+          1256
+        ],
+        [
+          1266,
+          1269
+        ],
+        [
+          1372,
+          1375
+        ],
+        [
+          1384,
+          1387
+        ],
+        [
+          1397,
+          1400
+        ],
+        [
+          1410,
+          1413
+        ],
+        [
+          1422,
+          1425
+        ],
+        [
+          1561,
+          1563
+        ],
+        [
+          1573,
+          1576
+        ],
+        [
+          1585,
+          1588
+        ],
+        [
+          1598,
+          1601
+        ],
+        [
+          1610,
+          1614
+        ],
+        [
+          1719,
+          1722
+        ],
+        [
+          1732,
+          1735
+        ],
+        [
+          1745,
+          1747
+        ],
+        [
+          1758,
+          1760
+        ],
+        [
+          1771,
+          1773
+        ],
+        [
+          1908,
+          1910
+        ],
+        [
+          1920,
+          1923
+        ],
+        [
+          1933,
+          1935
+        ],
+        [
+          1946,
+          1948
+        ],
+        [
+          1959,
+          1961
+        ],
+        [
+          2067,
+          2070
+        ],
+        [
+          2080,
+          2083
+        ],
+        [
+          2093,
+          2095
+        ],
+        [
+          2106,
+          2108
+        ],
+        [
+          2118,
+          2121
+        ]
+      ]
+    }
+  ],
+  "proposed_frame": {
+    "physical_bar_count": 120,
+    "printed_meter": {
+      "beats": 3,
+      "beat_type": 4
+    },
+    "key": {
+      "fifths": -4,
+      "mode": null,
+      "label": "four flats"
+    },
+    "printed_key_changes": [
+      {
+        "physical_bar": 31,
+        "onset_q": "0",
+        "fifths": 4,
+        "evidence": {
+          "page": 1,
+          "system": 4,
+          "physical_bar": 31,
+          "region": "P031",
+          "onset_q": "0",
+          "bbox_px": [
+            104,
+            1190,
+            386,
+            1520
+          ],
+          "crop_path": "source_crops/system_04.png",
+          "crop_sha256": "13e4e36dad82edb46cb020f8c7bc1d76e7f18b3e0f6b3c1fc0e897cf23b1ee7f"
+        },
+        "kind": "printed key signature change"
+      },
+      {
+        "physical_bar": 42,
+        "onset_q": "0",
+        "fifths": -4,
+        "evidence": {
+          "page": 1,
+          "system": 5,
+          "physical_bar": 42,
+          "region": "P042",
+          "onset_q": "0",
+          "bbox_px": [
+            560,
+            1530,
+            842,
+            1855
+          ],
+          "crop_path": "source_crops/system_05.png",
+          "crop_sha256": "2cae710a12b6676deb31a23ef03566f39289e95eaa8dffb95bcaaafc9599f7ae"
+        },
+        "kind": "printed key signature change"
+      },
+      {
+        "physical_bar": 68,
+        "onset_q": "0",
+        "fifths": 4,
+        "evidence": {
+          "page": 2,
+          "system": 7,
+          "physical_bar": 68,
+          "region": "P068",
+          "onset_q": "0",
+          "bbox_px": [
+            1194,
+            135,
+            1392,
+            445
+          ],
+          "crop_path": "source_crops/system_07.png",
+          "crop_sha256": "6ba3b7367331d5ebbe0d2d404a099192d950b59690c70456658b3dbb274e4aee"
+        },
+        "kind": "printed key signature change"
+      },
+      {
+        "physical_bar": 77,
+        "onset_q": "0",
+        "fifths": -4,
+        "evidence": {
+          "page": 2,
+          "system": 8,
+          "physical_bar": 77,
+          "region": "P077",
+          "onset_q": "0",
+          "bbox_px": [
+            1071,
+            465,
+            1293,
+            785
+          ],
+          "crop_path": "source_crops/system_08.png",
+          "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96"
+        },
+        "kind": "printed key signature change"
+      },
+      {
+        "physical_bar": 81,
+        "onset_q": "0",
+        "fifths": -5,
+        "evidence": {
+          "page": 2,
+          "system": 9,
+          "physical_bar": 81,
+          "region": "P081",
+          "onset_q": "0",
+          "bbox_px": [
+            109,
+            790,
+            379,
+            1140
+          ],
+          "crop_path": "source_crops/system_09.png",
+          "crop_sha256": "e8dc45167ea361d777d841b5a9a5d83053ae9d298c09813e0ac69095cc7f5062"
+        },
+        "kind": "printed key signature change"
+      }
+    ],
+    "pickup_or_partial_bars": [
+      {
+        "physical_bar": 1,
+        "id": "P001",
+        "capacity_q": "1",
+        "flags": [
+          "PICKUP"
+        ],
+        "kind": "pickup",
+        "evidence": {
+          "page": 1,
+          "system": 1,
+          "physical_bar": 1,
+          "region": "P001",
+          "onset_q": "0",
+          "bbox_px": [
+            212,
+            115,
+            452,
+            450
+          ],
+          "crop_path": "source_crops/system_01.png",
+          "crop_sha256": "c6f5469d7e35334fb43b10acb77664e56ae6cf8083fa8e130a257deea94a1212"
+        },
+        "print_claim": "One quarter-note attack/chord in each staff."
+      },
+      {
+        "physical_bar": 17,
+        "id": "P017",
+        "capacity_q": "2",
+        "flags": [
+          "PARTIAL"
+        ],
+        "kind": "terminal partial",
+        "evidence": {
+          "page": 1,
+          "system": 2,
+          "physical_bar": 17,
+          "region": "P017",
+          "onset_q": "0",
+          "bbox_px": [
+            1064,
+            500,
+            1201,
+            810
+          ],
+          "crop_path": "source_crops/system_02.png",
+          "crop_sha256": "70de30a3c35abfafad98afcea6582136ecd4691d4a2712da6b1aafa87831641e"
+        },
+        "print_claim": "One tied quarter plus a quarter rest in each staff."
+      },
+      {
+        "physical_bar": 18,
+        "id": "P018",
+        "capacity_q": "1",
+        "flags": [
+          "PICKUP"
+        ],
+        "kind": "pickup",
+        "evidence": {
+          "page": 1,
+          "system": 2,
+          "physical_bar": 18,
+          "region": "P018",
+          "onset_q": "0",
+          "bbox_px": [
+            1185,
+            500,
+            1300,
+            810
+          ],
+          "crop_path": "source_crops/system_02.png",
+          "crop_sha256": "70de30a3c35abfafad98afcea6582136ecd4691d4a2712da6b1aafa87831641e"
+        },
+        "print_claim": "One quarter-note attack/chord in each staff."
+      },
+      {
+        "physical_bar": 67,
+        "id": "P067",
+        "capacity_q": "2",
+        "flags": [
+          "PARTIAL"
+        ],
+        "kind": "terminal partial",
+        "evidence": {
+          "page": 2,
+          "system": 7,
+          "physical_bar": 67,
+          "region": "P067",
+          "onset_q": "0",
+          "bbox_px": [
+            1095,
+            135,
+            1210,
+            445
+          ],
+          "crop_path": "source_crops/system_07.png",
+          "crop_sha256": "6ba3b7367331d5ebbe0d2d404a099192d950b59690c70456658b3dbb274e4aee"
+        },
+        "print_claim": "One tied quarter plus a quarter rest in each staff."
+      },
+      {
+        "physical_bar": 68,
+        "id": "P068",
+        "capacity_q": "1",
+        "flags": [
+          "PICKUP"
+        ],
+        "kind": "pickup",
+        "evidence": {
+          "page": 2,
+          "system": 7,
+          "physical_bar": 68,
+          "region": "P068",
+          "onset_q": "0",
+          "bbox_px": [
+            1194,
+            135,
+            1392,
+            445
+          ],
+          "crop_path": "source_crops/system_07.png",
+          "crop_sha256": "6ba3b7367331d5ebbe0d2d404a099192d950b59690c70456658b3dbb274e4aee"
+        },
+        "print_claim": "One quarter-note attack/chord in each staff."
+      },
+      {
+        "physical_bar": 81,
+        "id": "P081",
+        "capacity_q": "1",
+        "flags": [
+          "PICKUP"
+        ],
+        "kind": "pickup",
+        "evidence": {
+          "page": 2,
+          "system": 9,
+          "physical_bar": 81,
+          "region": "P081",
+          "onset_q": "0",
+          "bbox_px": [
+            109,
+            790,
+            379,
+            1140
+          ],
+          "crop_path": "source_crops/system_09.png",
+          "crop_sha256": "e8dc45167ea361d777d841b5a9a5d83053ae9d298c09813e0ac69095cc7f5062"
+        },
+        "print_claim": "One quarter-note attack/chord in each staff."
+      },
+      {
+        "physical_bar": 97,
+        "id": "P097",
+        "capacity_q": "2",
+        "flags": [
+          "PARTIAL"
+        ],
+        "kind": "terminal partial",
+        "evidence": {
+          "page": 2,
+          "system": 10,
+          "physical_bar": 97,
+          "region": "P097",
+          "onset_q": "0",
+          "bbox_px": [
+            1167,
+            1135,
+            1287,
+            1465
+          ],
+          "crop_path": "source_crops/system_10.png",
+          "crop_sha256": "523f8e4d5341856f33306d16070824dcd23183ce95babf8d2b43acb6a890e4b0"
+        },
+        "print_claim": "Half-note chord in each staff; no following beat before the boundary."
+      },
+      {
+        "physical_bar": 98,
+        "id": "P098",
+        "capacity_q": "1",
+        "flags": [
+          "PICKUP"
+        ],
+        "kind": "pickup",
+        "evidence": {
+          "page": 2,
+          "system": 10,
+          "physical_bar": 98,
+          "region": "P098",
+          "onset_q": "0",
+          "bbox_px": [
+            1271,
+            1135,
+            1374,
+            1465
+          ],
+          "crop_path": "source_crops/system_10.png",
+          "crop_sha256": "523f8e4d5341856f33306d16070824dcd23183ce95babf8d2b43acb6a890e4b0"
+        },
+        "print_claim": "One quarter-note attack/chord in each staff."
+      },
+      {
+        "physical_bar": 120,
+        "id": "P120",
+        "capacity_q": "2",
+        "flags": [
+          "PARTIAL"
+        ],
+        "kind": "terminal partial",
+        "evidence": {
+          "page": 2,
+          "system": 12,
+          "physical_bar": 120,
+          "region": "P120",
+          "onset_q": "0",
+          "bbox_px": [
+            1539,
+            1850,
+            1685,
+            2200
+          ],
+          "crop_path": "source_crops/system_12.png",
+          "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c"
+        },
+        "print_claim": "Half-note chord in each staff; no following beat before the boundary."
+      }
+    ],
+    "repeat_boundaries": [
+      {
+        "after_physical_bar": 17,
+        "before_physical_bar": 18,
+        "flags": [
+          "COMBINED_REPEAT"
+        ],
+        "kind": "backward and forward repeat",
+        "evidence": {
+          "page": 1,
+          "system": 2,
+          "physical_bar": 17,
+          "region": "P017",
+          "onset_q": "2",
+          "bbox_px": [
+            1170,
+            535,
+            1220,
+            755
+          ],
+          "crop_path": "source_crops/system_02.png",
+          "crop_sha256": "70de30a3c35abfafad98afcea6582136ecd4691d4a2712da6b1aafa87831641e"
+        }
+      },
+      {
+        "after_physical_bar": 80,
+        "flags": [
+          "REPEAT_END"
+        ],
+        "kind": "backward repeat",
+        "evidence": {
+          "page": 2,
+          "system": 8,
+          "physical_bar": 80,
+          "region": "P080",
+          "onset_q": "3",
+          "bbox_px": [
+            1560,
+            500,
+            1605,
+            720
+          ],
+          "crop_path": "source_crops/system_08.png",
+          "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96"
+        }
+      },
+      {
+        "before_physical_bar": 98,
+        "flags": [
+          "REPEAT_START"
+        ],
+        "kind": "forward repeat",
+        "evidence": {
+          "page": 2,
+          "system": 10,
+          "physical_bar": 98,
+          "region": "P098",
+          "onset_q": "0",
+          "bbox_px": [
+            1260,
+            1200,
+            1305,
+            1435
+          ],
+          "crop_path": "source_crops/system_10.png",
+          "crop_sha256": "523f8e4d5341856f33306d16070824dcd23183ce95babf8d2b43acb6a890e4b0"
+        }
+      },
+      {
+        "after_physical_bar": 120,
+        "flags": [
+          "REPEAT_END"
+        ],
+        "kind": "backward repeat",
+        "evidence": {
+          "page": 2,
+          "system": 12,
+          "physical_bar": 120,
+          "region": "P120",
+          "onset_q": "2",
+          "bbox_px": [
+            1650,
+            1890,
+            1695,
+            2130
+          ],
+          "crop_path": "source_crops/system_12.png",
+          "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c"
+        }
+      }
+    ],
+    "score_layout": {
+      "schema": "score-layout.v1",
+      "players": [
+        {
+          "id": "piano",
+          "label": "Piano",
+          "part_id": "P1",
+          "staff_ids": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "staves": [
+        {
+          "id": "1",
+          "part_id": "P1",
+          "staff_in_part": "1",
+          "player_id": "piano",
+          "label": "Piano upper"
+        },
+        {
+          "id": "2",
+          "part_id": "P1",
+          "staff_in_part": "2",
+          "player_id": "piano",
+          "label": "Piano lower"
+        }
+      ]
+    },
+    "clefs": {
+      "open": {
+        "1": {
+          "sign": "G",
+          "line": 2
+        },
+        "2": {
+          "sign": "F",
+          "line": 4
+        }
+      },
+      "changes": [
+        {
+          "physical_bar": 73,
+          "staff": "1",
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "system": 8,
+          "crop_path": "source_crops/system_08.png",
+          "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96",
+          "position": "WITHIN_REGION",
+          "region": "WITHIN_REGION",
+          "effective_region": "P073",
+          "evidence": {
+            "page": 2,
+            "system": 8,
+            "physical_bar": 73,
+            "region": "P073",
+            "onset_q": "2",
+            "bbox_px": [
+              500,
+              500,
+              555,
+              575
+            ],
+            "crop_path": "source_crops/system_08.png",
+            "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96"
+          },
+          "source": "direct printed clef glyph",
+          "glyph_region": "P073",
+          "placement": "MID_REGION",
+          "evidence_box_px": [
+            500,
+            500,
+            555,
+            575
+          ],
+          "evidence_bbox_px": [
+            500,
+            500,
+            555,
+            575
+          ]
+        },
+        {
+          "physical_bar": 80,
+          "staff": "1",
+          "onset_q": "3",
+          "sign": "G",
+          "line": 2,
+          "system": 8,
+          "crop_path": "source_crops/system_08.png",
+          "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96",
+          "position": "REGION_END_CAUTIONARY",
+          "region": "REGION_END_CAUTIONARY",
+          "effective_region": "P081",
+          "evidence": {
+            "page": 2,
+            "system": 8,
+            "physical_bar": 80,
+            "region": "P080",
+            "onset_q": "3",
+            "bbox_px": [
+              1518,
+              500,
+              1570,
+              610
+            ],
+            "crop_path": "source_crops/system_08.png",
+            "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96"
+          },
+          "source": "direct printed clef glyph",
+          "glyph_region": "P080",
+          "placement": "REGION_END_CAUTIONARY",
+          "evidence_box_px": [
+            1518,
+            500,
+            1570,
+            610
+          ],
+          "evidence_bbox_px": [
+            1518,
+            500,
+            1570,
+            610
+          ]
+        },
+        {
+          "physical_bar": 118,
+          "staff": "2",
+          "onset_q": "1",
+          "sign": "G",
+          "line": 2,
+          "system": 12,
+          "crop_path": "source_crops/system_12.png",
+          "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c",
+          "position": "WITHIN_REGION",
+          "region": "WITHIN_REGION",
+          "effective_region": "P118",
+          "evidence": {
+            "page": 2,
+            "system": 12,
+            "physical_bar": 118,
+            "region": "P118",
+            "onset_q": "1",
+            "bbox_px": [
+              1290,
+              2040,
+              1345,
+              2140
+            ],
+            "crop_path": "source_crops/system_12.png",
+            "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c"
+          },
+          "source": "direct printed clef glyph",
+          "glyph_region": "P118",
+          "placement": "MID_REGION",
+          "evidence_box_px": [
+            1290,
+            2040,
+            1345,
+            2140
+          ],
+          "evidence_bbox_px": [
+            1290,
+            2040,
+            1345,
+            2140
+          ]
+        },
+        {
+          "physical_bar": 120,
+          "staff": "2",
+          "onset_q": "2",
+          "sign": "F",
+          "line": 4,
+          "system": 12,
+          "crop_path": "source_crops/system_12.png",
+          "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c",
+          "position": "REGION_END_CAUTIONARY",
+          "region": "REGION_END_CAUTIONARY",
+          "effective_region": "P120",
+          "evidence": {
+            "page": 2,
+            "system": 12,
+            "physical_bar": 120,
+            "region": "P120",
+            "onset_q": "2",
+            "bbox_px": [
+              1620,
+              2060,
+              1670,
+              2120
+            ],
+            "crop_path": "source_crops/system_12.png",
+            "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c"
+          },
+          "source": "direct printed clef glyph",
+          "glyph_region": "P120",
+          "placement": "REGION_END_CAUTIONARY",
+          "evidence_box_px": [
+            1620,
+            2060,
+            1670,
+            2120
+          ],
+          "evidence_bbox_px": [
+            1620,
+            2060,
+            1670,
+            2120
+          ],
+          "effective_onset_q": "2",
+          "route_target_regions": [
+            "P098",
+            "P001"
+          ],
+          "explanation_plain": "Terminal bass clef at the right edge of P120, after its half-note chord. Register the end-of-region state here; the repeated section and Allegretto D.C. destinations both open in bass clef. There is no subsequent printed P121."
+        }
+      ],
+      "system_opening_clefs": [
+        {
+          "system": 1,
+          "physical_bar": 1,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              210,
+              115,
+              280,
+              450
+            ],
+            "crop_path": "source_crops/system_01.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              210,
+              115,
+              280,
+              450
+            ],
+            "crop_path": "source_crops/system_01.png"
+          }
+        },
+        {
+          "system": 2,
+          "physical_bar": 11,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              500,
+              215,
+              810
+            ],
+            "crop_path": "source_crops/system_02.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              500,
+              215,
+              810
+            ],
+            "crop_path": "source_crops/system_02.png"
+          }
+        },
+        {
+          "system": 3,
+          "physical_bar": 22,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              840,
+              215,
+              1150
+            ],
+            "crop_path": "source_crops/system_03.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              840,
+              215,
+              1150
+            ],
+            "crop_path": "source_crops/system_03.png"
+          }
+        },
+        {
+          "system": 4,
+          "physical_bar": 31,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              1190,
+              215,
+              1520
+            ],
+            "crop_path": "source_crops/system_04.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              1190,
+              215,
+              1520
+            ],
+            "crop_path": "source_crops/system_04.png"
+          }
+        },
+        {
+          "system": 5,
+          "physical_bar": 40,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              1530,
+              215,
+              1855
+            ],
+            "crop_path": "source_crops/system_05.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              1530,
+              215,
+              1855
+            ],
+            "crop_path": "source_crops/system_05.png"
+          }
+        },
+        {
+          "system": 6,
+          "physical_bar": 49,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              1880,
+              215,
+              2185
+            ],
+            "crop_path": "source_crops/system_06.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              1880,
+              215,
+              2185
+            ],
+            "crop_path": "source_crops/system_06.png"
+          }
+        },
+        {
+          "system": 7,
+          "physical_bar": 60,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              135,
+              215,
+              445
+            ],
+            "crop_path": "source_crops/system_07.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              135,
+              215,
+              445
+            ],
+            "crop_path": "source_crops/system_07.png"
+          }
+        },
+        {
+          "system": 8,
+          "physical_bar": 71,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              465,
+              215,
+              785
+            ],
+            "crop_path": "source_crops/system_08.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              465,
+              215,
+              785
+            ],
+            "crop_path": "source_crops/system_08.png"
+          }
+        },
+        {
+          "system": 9,
+          "physical_bar": 81,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              790,
+              215,
+              1140
+            ],
+            "crop_path": "source_crops/system_09.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              790,
+              215,
+              1140
+            ],
+            "crop_path": "source_crops/system_09.png"
+          }
+        },
+        {
+          "system": 10,
+          "physical_bar": 91,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              1135,
+              215,
+              1465
+            ],
+            "crop_path": "source_crops/system_10.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              1135,
+              215,
+              1465
+            ],
+            "crop_path": "source_crops/system_10.png"
+          }
+        },
+        {
+          "system": 11,
+          "physical_bar": 101,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              1490,
+              215,
+              1840
+            ],
+            "crop_path": "source_crops/system_11.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              1490,
+              215,
+              1840
+            ],
+            "crop_path": "source_crops/system_11.png"
+          }
+        },
+        {
+          "system": 12,
+          "physical_bar": 111,
+          "is_clef_change": false,
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              95,
+              1850,
+              215,
+              2200
+            ],
+            "crop_path": "source_crops/system_12.png"
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              95,
+              1850,
+              215,
+              2200
+            ],
+            "crop_path": "source_crops/system_12.png"
+          }
+        }
+      ]
+    },
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "physical_range": [
+          1,
+          10
+        ],
+        "expected_region_count": 10,
+        "crop_path": "source_crops/system_01.png",
+        "crop_sha256": "c6f5469d7e35334fb43b10acb77664e56ae6cf8083fa8e130a257deea94a1212",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_01_crop_boundary.png",
+          "sha256": "cc24542d6b28e15fc479dd23b88a364ab94ddb8d7a6e65ceafb193a78fb0a4d9",
+          "page": 1,
+          "crop_bbox_page_px": [
+            75,
+            115,
+            1715,
+            450
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P001",
+            "index": 1,
+            "flags": [
+              "PICKUP"
+            ],
+            "capacity_q": "1",
+            "capacity_plain": "1 quarter-note beat"
+          },
+          {
+            "id": "P002",
+            "index": 2,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P003",
+            "index": 3,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P004",
+            "index": 4,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P005",
+            "index": 5,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P006",
+            "index": 6,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P007",
+            "index": 7,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P008",
+            "index": 8,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P009",
+            "index": 9,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P010",
+            "index": 10,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "physical_range": [
+          11,
+          21
+        ],
+        "expected_region_count": 11,
+        "crop_path": "source_crops/system_02.png",
+        "crop_sha256": "70de30a3c35abfafad98afcea6582136ecd4691d4a2712da6b1aafa87831641e",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_02_crop_boundary.png",
+          "sha256": "72cb0ca4aef5745f10a4d1aaadd13de91ed8b21ed40725d874dbe9a87f6edea1",
+          "page": 1,
+          "crop_bbox_page_px": [
+            75,
+            500,
+            1715,
+            810
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P011",
+            "index": 11,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P012",
+            "index": 12,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P013",
+            "index": 13,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P014",
+            "index": 14,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P015",
+            "index": 15,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P016",
+            "index": 16,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P017",
+            "index": 17,
+            "flags": [
+              "PARTIAL"
+            ],
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P018",
+            "index": 18,
+            "flags": [
+              "PICKUP"
+            ],
+            "capacity_q": "1",
+            "capacity_plain": "1 quarter-note beat"
+          },
+          {
+            "id": "P019",
+            "index": 19,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P020",
+            "index": 20,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P021",
+            "index": 21,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "physical_range": [
+          22,
+          30
+        ],
+        "expected_region_count": 9,
+        "crop_path": "source_crops/system_03.png",
+        "crop_sha256": "97e6be9300b099b9c1dd0448af443aed7585d574530d22b2a5da87b322a17e83",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_03_crop_boundary.png",
+          "sha256": "6c0c26f899f6bddd7232da7c60d789c22c53cbfd150823539fccd4220077be2c",
+          "page": 1,
+          "crop_bbox_page_px": [
+            75,
+            840,
+            1715,
+            1150
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P022",
+            "index": 22,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P023",
+            "index": 23,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P024",
+            "index": 24,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P025",
+            "index": 25,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P026",
+            "index": 26,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P027",
+            "index": 27,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P028",
+            "index": 28,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P029",
+            "index": 29,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P030",
+            "index": 30,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "physical_range": [
+          31,
+          39
+        ],
+        "expected_region_count": 9,
+        "crop_path": "source_crops/system_04.png",
+        "crop_sha256": "13e4e36dad82edb46cb020f8c7bc1d76e7f18b3e0f6b3c1fc0e897cf23b1ee7f",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_04_crop_boundary.png",
+          "sha256": "3d38a7df5649b2343494f1c80958b271222e82be7830d5711676dabbeda5c91b",
+          "page": 1,
+          "crop_bbox_page_px": [
+            75,
+            1190,
+            1715,
+            1520
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P031",
+            "index": 31,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P032",
+            "index": 32,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P033",
+            "index": 33,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P034",
+            "index": 34,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P035",
+            "index": 35,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P036",
+            "index": 36,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P037",
+            "index": 37,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P038",
+            "index": 38,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P039",
+            "index": 39,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "physical_range": [
+          40,
+          48
+        ],
+        "expected_region_count": 9,
+        "crop_path": "source_crops/system_05.png",
+        "crop_sha256": "2cae710a12b6676deb31a23ef03566f39289e95eaa8dffb95bcaaafc9599f7ae",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_05_crop_boundary.png",
+          "sha256": "1b6420a6ab5ecb685fc43587cb4de4829f200d10aef3cd408047ed8bdc17c312",
+          "page": 1,
+          "crop_bbox_page_px": [
+            75,
+            1530,
+            1715,
+            1855
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P040",
+            "index": 40,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P041",
+            "index": 41,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P042",
+            "index": 42,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P043",
+            "index": 43,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P044",
+            "index": 44,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P045",
+            "index": 45,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P046",
+            "index": 46,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P047",
+            "index": 47,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P048",
+            "index": 48,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 6,
+        "page": 1,
+        "physical_range": [
+          49,
+          59
+        ],
+        "expected_region_count": 11,
+        "crop_path": "source_crops/system_06.png",
+        "crop_sha256": "1039d1f8b45e143f5ef40bed55ddda79fede9b1b1fc011fe68b3b71f1c6b2000",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_06_crop_boundary.png",
+          "sha256": "aa30df5235119ae3cfc0ad092dab9b5295e8f505768e0a8c79c1af555d8a934c",
+          "page": 1,
+          "crop_bbox_page_px": [
+            75,
+            1880,
+            1715,
+            2185
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P049",
+            "index": 49,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P050",
+            "index": 50,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P051",
+            "index": 51,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P052",
+            "index": 52,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P053",
+            "index": 53,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P054",
+            "index": 54,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P055",
+            "index": 55,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P056",
+            "index": 56,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P057",
+            "index": 57,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P058",
+            "index": 58,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P059",
+            "index": 59,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "physical_range": [
+          60,
+          70
+        ],
+        "expected_region_count": 11,
+        "crop_path": "source_crops/system_07.png",
+        "crop_sha256": "6ba3b7367331d5ebbe0d2d404a099192d950b59690c70456658b3dbb274e4aee",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_07_crop_boundary.png",
+          "sha256": "c5759738089122ca9cd66f1f376a29135f099cff6760a1c816c235a140eb7f07",
+          "page": 2,
+          "crop_bbox_page_px": [
+            75,
+            135,
+            1720,
+            445
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P060",
+            "index": 60,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P061",
+            "index": 61,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P062",
+            "index": 62,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P063",
+            "index": 63,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P064",
+            "index": 64,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P065",
+            "index": 65,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P066",
+            "index": 66,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P067",
+            "index": 67,
+            "flags": [
+              "PARTIAL"
+            ],
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P068",
+            "index": 68,
+            "flags": [
+              "PICKUP"
+            ],
+            "capacity_q": "1",
+            "capacity_plain": "1 quarter-note beat"
+          },
+          {
+            "id": "P069",
+            "index": 69,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P070",
+            "index": 70,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "physical_range": [
+          71,
+          80
+        ],
+        "expected_region_count": 10,
+        "crop_path": "source_crops/system_08.png",
+        "crop_sha256": "b0700010e25aebb8f565b8673bbbd796cdaaa6e14663cbad7bc4735b0db10a96",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_08_crop_boundary.png",
+          "sha256": "d7d933202589de516d8a1cac2caf9b42ecb396947bfac7559aaa6e130450f14f",
+          "page": 2,
+          "crop_bbox_page_px": [
+            75,
+            440,
+            1720,
+            785
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P071",
+            "index": 71,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P072",
+            "index": 72,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P073",
+            "index": 73,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P074",
+            "index": 74,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P075",
+            "index": 75,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P076",
+            "index": 76,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P077",
+            "index": 77,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P078",
+            "index": 78,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P079",
+            "index": 79,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P080",
+            "index": 80,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "physical_range": [
+          81,
+          90
+        ],
+        "expected_region_count": 10,
+        "crop_path": "source_crops/system_09.png",
+        "crop_sha256": "e8dc45167ea361d777d841b5a9a5d83053ae9d298c09813e0ac69095cc7f5062",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_09_crop_boundary.png",
+          "sha256": "9e9464189c050842d39f2dee801363247fe7249e367a651c12374b112d152425",
+          "page": 2,
+          "crop_bbox_page_px": [
+            75,
+            775,
+            1720,
+            1140
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P081",
+            "index": 81,
+            "flags": [
+              "PICKUP"
+            ],
+            "capacity_q": "1",
+            "capacity_plain": "1 quarter-note beat"
+          },
+          {
+            "id": "P082",
+            "index": 82,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P083",
+            "index": 83,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P084",
+            "index": 84,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P085",
+            "index": 85,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P086",
+            "index": 86,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P087",
+            "index": 87,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P088",
+            "index": 88,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P089",
+            "index": 89,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P090",
+            "index": 90,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 10,
+        "page": 2,
+        "physical_range": [
+          91,
+          100
+        ],
+        "expected_region_count": 10,
+        "crop_path": "source_crops/system_10.png",
+        "crop_sha256": "523f8e4d5341856f33306d16070824dcd23183ce95babf8d2b43acb6a890e4b0",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_10_crop_boundary.png",
+          "sha256": "64af1abc232ebfdb4357b3e3da479d88f77914a4c7859a8010e8deb34121aef1",
+          "page": 2,
+          "crop_bbox_page_px": [
+            75,
+            1135,
+            1720,
+            1465
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P091",
+            "index": 91,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P092",
+            "index": 92,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P093",
+            "index": 93,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P094",
+            "index": 94,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P095",
+            "index": 95,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P096",
+            "index": 96,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P097",
+            "index": 97,
+            "flags": [
+              "PARTIAL"
+            ],
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          },
+          {
+            "id": "P098",
+            "index": 98,
+            "flags": [
+              "PICKUP"
+            ],
+            "capacity_q": "1",
+            "capacity_plain": "1 quarter-note beat"
+          },
+          {
+            "id": "P099",
+            "index": 99,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P100",
+            "index": 100,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 11,
+        "page": 2,
+        "physical_range": [
+          101,
+          110
+        ],
+        "expected_region_count": 10,
+        "crop_path": "source_crops/system_11.png",
+        "crop_sha256": "ae3ed888ebfc53870b3e05022270a7a7ed96729e8ef3606dfb7a8bc9adc286e4",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_11_crop_boundary.png",
+          "sha256": "a0c7ce852674dd8d4ea833634429c59a67b63e07f004dee321dd2dc80f38aa4e",
+          "page": 2,
+          "crop_bbox_page_px": [
+            75,
+            1490,
+            1720,
+            1847
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P101",
+            "index": 101,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P102",
+            "index": 102,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P103",
+            "index": 103,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P104",
+            "index": 104,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P105",
+            "index": 105,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P106",
+            "index": 106,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P107",
+            "index": 107,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P108",
+            "index": 108,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P109",
+            "index": 109,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P110",
+            "index": 110,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          }
+        ]
+      },
+      {
+        "system": 12,
+        "page": 2,
+        "physical_range": [
+          111,
+          120
+        ],
+        "expected_region_count": 10,
+        "crop_path": "source_crops/system_12.png",
+        "crop_sha256": "da102619258dd91c05c5c001e14f2f6c6ccbd7fba2cf41ccf2b6e6076aaa379c",
+        "crop_boundary_overlay": {
+          "path": "frame_verification/system_12_crop_boundary.png",
+          "sha256": "97b199477c5ffd982324a4cbea4c606befac47600a08fc9a07ced922fbf5fe50",
+          "page": 2,
+          "crop_bbox_page_px": [
+            75,
+            1850,
+            1720,
+            2200
+          ],
+          "instruction": "The red rectangle is the proposed system crop. Confirm from the full page that no tempo, dynamic, hairpin, slur, stem, flag, pedal, octave line, or other musical ink lies outside it."
+        },
+        "proposed_regions": [
+          {
+            "id": "P111",
+            "index": 111,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P112",
+            "index": 112,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P113",
+            "index": 113,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P114",
+            "index": 114,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P115",
+            "index": 115,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P116",
+            "index": 116,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P117",
+            "index": 117,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P118",
+            "index": 118,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P119",
+            "index": 119,
+            "flags": [],
+            "capacity_q": "3",
+            "capacity_plain": "3 quarter-note beats"
+          },
+          {
+            "id": "P120",
+            "index": 120,
+            "flags": [
+              "PARTIAL"
+            ],
+            "capacity_q": "2",
+            "capacity_plain": "2 quarter-note beats"
+          }
+        ]
+      }
+    ]
+  },
+  "required_response_schema": "frame_verifier_response.v1",
+  "required_verifier": {
+    "provider": "CODEX",
+    "edition_scope": "breitkopf_fs111_allegretto_ef1d53a639c4ce10",
+    "execution_mode": "codex_isolated_sessions",
+    "persistent_session_required": false
+  },
+  "operator_language": "Use plain notation names. Never expose quarter-unit abbreviations such as q in human_summary or questions. Red means a region has one or more named frame landmarks to verify; blue means it was directly checked and is a normal bar with none.",
+  "geometry_assist": {
+    "schema": "frame-geometry-assist.v1",
+    "manifest_path": "frame_geometry/manifest.json",
+    "manifest_sha256": "3bb6a424d12079489955cd71b86e08fdf081928511bf8dfb715c00ed8952a372",
+    "authority": "non_authoritative_geometry_assist",
+    "print_remains_authority": true,
+    "semantic_omr_content_exposed": false,
+    "instructions": "Use the skeleton and barline evidence to prioritize inspection. Confirm every final boundary against the printed crop. Candidate geometry may be accepted, adjusted, or rejected; never pass from model confidence or agreement alone.",
+    "systems": [
+      {
+        "system": 1,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          145,
+          369,
+          371,
+          463,
+          464,
+          647,
+          647,
+          737,
+          738,
+          941,
+          1078,
+          1079,
+          1236,
+          1339,
+          1340,
+          1500,
+          1606
+        ],
+        "proposed_boundaries_crop_px": [
+          145,
+          369,
+          462,
+          646,
+          737,
+          940,
+          1078,
+          1235,
+          1339,
+          1499,
+          1605
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          2,
+          1,
+          2,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "confidence_counts": {
+          "high": 17,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_01_skeleton.png",
+            "sha256": "122f54b567d185d8817c5339fc12db4d4ecd1204210134e99d9ca17b7ab8ffa8"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_01_geometry.png",
+            "sha256": "7a230834e9406ce67868e4646b9fa8d1332a7fc5c5b6a4641627113f12a3f7aa"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_01_comparison.png",
+            "sha256": "ae4889777958222fbdc1dc65a4ef5c8e8228fc4bd7f92ac0f21582e68b6fa9e5"
+          }
+        }
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          40,
+          338,
+          339,
+          437,
+          438,
+          608,
+          609,
+          758,
+          759,
+          906,
+          907,
+          997,
+          999,
+          1121,
+          1123,
+          1218,
+          1218,
+          1326,
+          1327,
+          1503,
+          1503,
+          1608
+        ],
+        "proposed_boundaries_crop_px": [
+          40,
+          337,
+          437,
+          608,
+          758,
+          906,
+          997,
+          1118,
+          1217,
+          1326,
+          1502,
+          1606
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          1,
+          2,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          3,
+          5,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          2
+        ],
+        "confidence_counts": {
+          "high": 22,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_02_skeleton.png",
+            "sha256": "4b6c72939cfc00f3389368def60e16918b3f1ed362a0f7d25ddc1788a82a6b81"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_02_geometry.png",
+            "sha256": "7ee517c587d5304e287c113fc2ae7a177456dc98ef3f1114f5b61f0625014ab7"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_02_comparison.png",
+            "sha256": "c02ad532ec1e6b8ac00cfee6d6bbd5df7f0861d95a788576fe2b20b6b6a19632"
+          }
+        }
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          39,
+          318,
+          502,
+          503,
+          689,
+          784,
+          959,
+          1056,
+          1057,
+          1222,
+          1223,
+          1321,
+          1322,
+          1497,
+          1497,
+          1609
+        ],
+        "proposed_boundaries_crop_px": [
+          39,
+          318,
+          502,
+          689,
+          784,
+          959,
+          1056,
+          1221,
+          1321,
+          1493
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          2,
+          0,
+          1,
+          4,
+          4,
+          116
+        ],
+        "confidence_counts": {
+          "high": 15,
+          "medium": 0,
+          "low": 1
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [
+          15
+        ],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_03_skeleton.png",
+            "sha256": "2f3a472ac00c3c04732f9fd4b2336bb1ff1a1e446539d5665dbf8b3e83c3e166"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_03_geometry.png",
+            "sha256": "323e7f0181a3f2e62c7ed2e7d78571c26f1a8a099221f769bf73685c1e4fcbe3"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_03_comparison.png",
+            "sha256": "86beb83747a54b88660a4e6b08da81cbf1cd6c4e91307a481e98c14fa62006f9"
+          }
+        }
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          38,
+          303,
+          476,
+          477,
+          624,
+          625,
+          783,
+          927,
+          928,
+          1084,
+          1084,
+          1276,
+          1277,
+          1438,
+          1439,
+          1607
+        ],
+        "proposed_boundaries_crop_px": [
+          37,
+          303,
+          476,
+          624,
+          782,
+          927,
+          1083,
+          1276,
+          1438,
+          1606
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "confidence_counts": {
+          "high": 16,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_04_skeleton.png",
+            "sha256": "884806688463ce15b6b905860371bf7af9c6520002c3d1ba1ae00882d1f33c13"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_04_geometry.png",
+            "sha256": "2d60d98f9cd9fb3b87fa3891762ec8800a69f37a6f4cad316d1a49a3fa7292c6"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_04_comparison.png",
+            "sha256": "9f8f5243272bcbb98d0fe924d3ae55ca3957ff67ca1c6cb0e7c4f6c88645049e"
+          }
+        }
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          38,
+          370,
+          371,
+          496,
+          497,
+          759,
+          923,
+          1019,
+          1174,
+          1317,
+          1515,
+          1607
+        ],
+        "proposed_boundaries_crop_px": [
+          38,
+          370,
+          493,
+          759,
+          922,
+          1019,
+          1173,
+          1316,
+          1514,
+          1606
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          1,
+          3,
+          4,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "confidence_counts": {
+          "high": 12,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_05_skeleton.png",
+            "sha256": "3c5f82a099dfafe078377dfaadaf1b240cb5dd387eb449451cd2fd36fdd8e254"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_05_geometry.png",
+            "sha256": "96bc37dda05af0cb43c719627735dcad94a6f398b15633e36718eb701504908c"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_05_comparison.png",
+            "sha256": "31086cadd772a35d68e3dd3aded16bceada12ffd4a3cda9bb0ff4dfe1e5817b3"
+          }
+        }
+      },
+      {
+        "system": 6,
+        "page": 1,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          38,
+          301,
+          301,
+          422,
+          423,
+          589,
+          683,
+          683,
+          822,
+          954,
+          955,
+          1086,
+          1087,
+          1173,
+          1338,
+          1338,
+          1426,
+          1426,
+          1608
+        ],
+        "proposed_boundaries_crop_px": [
+          38,
+          301,
+          422,
+          588,
+          682,
+          822,
+          954,
+          1086,
+          1172,
+          1337,
+          1426,
+          1606
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          2
+        ],
+        "confidence_counts": {
+          "high": 19,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_06_skeleton.png",
+            "sha256": "01773228f8a814b8024bde29b11ea0c0d270d9c56657f3a32faebe0893d72caf"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_06_geometry.png",
+            "sha256": "216e2675fb77423ce827decfe12c0beacb1d1f69b8f628e1659ea8737893f3a7"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_06_comparison.png",
+            "sha256": "77a145853dbc2c88fe057b169d2aeb749c0d0649616984d9744c308d52909585"
+          }
+        }
+      },
+      {
+        "system": 7,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          41,
+          279,
+          409,
+          499,
+          500,
+          633,
+          633,
+          761,
+          762,
+          895,
+          896,
+          1028,
+          1130,
+          1131,
+          1309,
+          1310,
+          1458,
+          1605
+        ],
+        "proposed_boundaries_crop_px": [
+          40,
+          279,
+          409,
+          499,
+          632,
+          761,
+          895,
+          1028,
+          1127,
+          1309,
+          1458,
+          1605
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          3,
+          4,
+          0,
+          1,
+          0,
+          0
+        ],
+        "confidence_counts": {
+          "high": 18,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_07_skeleton.png",
+            "sha256": "770a138ddb5092fa56efa40015f620048bff0e7845c075505d0f74ebaf68bc3c"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_07_geometry.png",
+            "sha256": "5c01517ea9786b2a82aa312c4b23542b2170d2fe6b5ad56d96c8fc0abb6a2e25"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_07_comparison.png",
+            "sha256": "ddda7839c20ad2cc0b4b7377a938f87c9a9870ca90b960d86f76ef59ad9a8a06"
+          }
+        }
+      },
+      {
+        "system": 8,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          41,
+          299,
+          300,
+          369,
+          548,
+          549,
+          690,
+          834,
+          835,
+          1007,
+          1210,
+          1301,
+          1390,
+          1391,
+          1516,
+          1518,
+          1608
+        ],
+        "proposed_boundaries_crop_px": [
+          41,
+          299,
+          368,
+          548,
+          690,
+          834,
+          1004,
+          1210,
+          1301,
+          1390,
+          1512
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          1,
+          4,
+          6,
+          96
+        ],
+        "confidence_counts": {
+          "high": 16,
+          "medium": 0,
+          "low": 1
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [
+          16
+        ],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_08_skeleton.png",
+            "sha256": "64dcfe9e8c80f66b666bd8cc716c8a0da540428c5edd33c4ef1a70cb588c1cec"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_08_geometry.png",
+            "sha256": "05edefa4931f4036098210922bc0fbb8278322e9ca2f0f0e443ff2c903457fd6"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_08_comparison.png",
+            "sha256": "6f778ed12dfc6308b660f73681f7ece641210711864691077d2000f144d4de7d"
+          }
+        }
+      },
+      {
+        "system": 9,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          43,
+          296,
+          297,
+          434,
+          560,
+          561,
+          708,
+          709,
+          827,
+          828,
+          984,
+          1132,
+          1132,
+          1319,
+          1320,
+          1447,
+          1448,
+          1606
+        ],
+        "proposed_boundaries_crop_px": [
+          42,
+          296,
+          433,
+          560,
+          708,
+          827,
+          984,
+          1131,
+          1319,
+          1447,
+          1606
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "confidence_counts": {
+          "high": 18,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_09_skeleton.png",
+            "sha256": "9876ece6c2ec5ee9c2c1b5967d7ec4f16fc375538eb68234b4dd784071421746"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_09_geometry.png",
+            "sha256": "5f44fe76b09fc430395b56ac9e11b5d9a5cadfa2268389a87bac0cb40d7a6cac"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_09_comparison.png",
+            "sha256": "9501f205a782cc62df339daa7328cb58a6cd43a01bc084e7b742350c9c06c039"
+          }
+        }
+      },
+      {
+        "system": 10,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          41,
+          316,
+          316,
+          486,
+          487,
+          615,
+          615,
+          773,
+          773,
+          915,
+          915,
+          1100,
+          1207,
+          1291,
+          1292,
+          1448,
+          1449,
+          1608
+        ],
+        "proposed_boundaries_crop_px": [
+          41,
+          316,
+          486,
+          615,
+          772,
+          915,
+          1100,
+          1204,
+          1291,
+          1448,
+          1607
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "confidence_counts": {
+          "high": 18,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_10_skeleton.png",
+            "sha256": "ea746e5e93f6a25d218df56916208f941bd393b603c1f0b8a56d1b5e1f2992de"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_10_geometry.png",
+            "sha256": "c891fd1d7ef7be4d727b94f17f04d80554ba90b110e9f1f84fae4d851dd95cb1"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_10_comparison.png",
+            "sha256": "3389b706c8a69a68efc1a90eb7e07363db14f1d5ee35b361911e6a179a1802e7"
+          }
+        }
+      },
+      {
+        "system": 11,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          41,
+          331,
+          331,
+          460,
+          594,
+          738,
+          892,
+          893,
+          1058,
+          1194,
+          1352,
+          1352,
+          1480,
+          1480,
+          1609
+        ],
+        "proposed_boundaries_crop_px": [
+          41,
+          331,
+          460,
+          593,
+          737,
+          892,
+          1058,
+          1193,
+          1352,
+          1480,
+          1608
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "confidence_counts": {
+          "high": 15,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_11_skeleton.png",
+            "sha256": "d1d660191a9cfc019794e5f7e23872742d2b9848433d6505f9484834b921bbb9"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_11_geometry.png",
+            "sha256": "6954f5f35d756587834c8d2e9a3dcd9656fd6cf547d9d8c47a78a8ff5fac9050"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_11_comparison.png",
+            "sha256": "3933a3469eec8f4bade5893a8cb24f5d277114b6079d5cbdc20027c6455844ba"
+          }
+        }
+      },
+      {
+        "system": 12,
+        "page": 2,
+        "coordinate_space": "system_crop_px",
+        "candidate_boundaries_crop_px": [
+          40,
+          336,
+          336,
+          463,
+          463,
+          614,
+          615,
+          757,
+          758,
+          888,
+          1013,
+          1014,
+          1172,
+          1334,
+          1472,
+          1606
+        ],
+        "proposed_boundaries_crop_px": [
+          40,
+          336,
+          463,
+          614,
+          757,
+          888,
+          1013,
+          1172,
+          1334,
+          1472,
+          1602
+        ],
+        "candidate_to_nearest_proposal_delta_px": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          4
+        ],
+        "confidence_counts": {
+          "high": 16,
+          "medium": 0,
+          "low": 0
+        },
+        "requires_deep_review": true,
+        "disagreement_boundary_indices": [],
+        "layers": {
+          "skeleton": {
+            "path": "frame_geometry/system_12_skeleton.png",
+            "sha256": "6b3c3fcd99299bd1c77efb982f54cedf58c7d85c47a66a85026a880bef690944"
+          },
+          "geometry_evidence": {
+            "path": "frame_geometry/system_12_geometry.png",
+            "sha256": "8639ef3de6c3da96efbebcbc0dfcb8d63442379641ef45d794103ddb9924e95f"
+          },
+          "comparison": {
+            "path": "frame_geometry/system_12_comparison.png",
+            "sha256": "f1e2e88e9fb09619a0a681786ad7d83ae285822d8c6cc749f422ccb4280a8b0f"
+          }
+        }
+      }
+    ]
+  }
+}

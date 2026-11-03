@@ -1,0 +1,921 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "schubert_op94_05_allegro_vivace",
+  "authority": "print_only",
+  "source_pdf_sha256": "20badc75a03cd59907c014995c6d864b46febea2db1e003130b779b386455a16",
+  "pages_json_sha256": "5de109825f29bb4c3d32909aafb4bbcf250f0e5811ca4f7604667b03570c814d",
+  "verification_status": "PREPARER_INSPECTION_ONLY_REQUIRES_INDEPENDENT_VERIFIER",
+  "checks": [
+    {
+      "id": "OPENING-METER",
+      "claim": "Both staves print 2/4. P001 has a quarter chord plus two eighth chords above, and a quarter octave plus two eighths below: two quarters in each staff.",
+      "physical_bar": 1,
+      "capacity_q": "2",
+      "page": 1,
+      "system": 1,
+      "onset_q": "0",
+      "evidence_bbox_px": [
+        210,
+        178,
+        517,
+        403
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "crop_sha256": "2bd6224678d06ca10c221e58465e2fec0a0345ef3e14fc43b6e7e40e4d9c0e0d",
+      "page_path": "source_crops/page-1.png",
+      "page_sha256": "979c4a1781229eda03121d6080af94f8c24f0fe9044ca9fd608f01e24d23f5f7"
+    },
+    {
+      "id": "PICKUP-TERMINAL",
+      "claim": "No pickup, terminal partial, split region or cadenza. P021 is two quarters before the combined repeat; P022 is quarter plus two eighths; P110 is two quarter attacks; P111 is one complete rest bar.",
+      "pickup_present": false,
+      "terminal_partial_present": false,
+      "pickup_plus_terminal_check": {
+        "applicable": false,
+        "reason": "Both sections begin with full two-quarter bars and end with full two-quarter bars; no complementary incomplete bars."
+      },
+      "page": 2,
+      "system": 12,
+      "onset_q": "0",
+      "evidence_bbox_px": [
+        1455,
+        1845,
+        1689,
+        2140
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "crop_sha256": "82a9f847c4475617ee0c6a91a67f4b834e690bea21e93470908f96668b09fc2e",
+      "page_path": "source_crops/page-2.png",
+      "page_sha256": "22c196a7d433574f6aa647b0aba243104253c45c568ffa52ac3695017e6493f1"
+    },
+    {
+      "id": "COMBINED-REPEAT-P021-P022",
+      "claim": "Backward dots and forward dots on both staves straddle the heavy central barline after P021; P022 starts to its right.",
+      "after_physical_bar": 21,
+      "before_physical_bar": 22,
+      "kind": "combined backward and forward repeat",
+      "flags": [
+        "COMBINED_REPEAT"
+      ],
+      "page": 1,
+      "system": 3,
+      "onset_q": "2",
+      "evidence_bbox_px": [
+        507,
+        908,
+        559,
+        1115
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "crop_sha256": "69d3d645d262444ac08c91042b6a490db5401f9afe1ce288539bef3ece6b4b3c",
+      "page_path": "source_crops/page-1.png",
+      "page_sha256": "979c4a1781229eda03121d6080af94f8c24f0fe9044ca9fd608f01e24d23f5f7"
+    },
+    {
+      "id": "FINAL-REPEAT-P111",
+      "claim": "One full rest bar followed by backward repeat dots and final heavy line on both staves. Printed 1 is the count of this rest bar.",
+      "after_physical_bar": 111,
+      "kind": "closing backward repeat",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "page": 2,
+      "system": 12,
+      "onset_q": "2",
+      "evidence_bbox_px": [
+        1645,
+        1910,
+        1689,
+        2125
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "crop_sha256": "82a9f847c4475617ee0c6a91a67f4b834e690bea21e93470908f96668b09fc2e",
+      "page_path": "source_crops/page-2.png",
+      "page_sha256": "22c196a7d433574f6aa647b0aba243104253c45c568ffa52ac3695017e6493f1"
+    },
+    {
+      "id": "KEY-P099",
+      "claim": "After the double barline, cancellation naturals followed by one B-flat on both staves. This is a signature change at the start of P099.",
+      "physical_bar": 99,
+      "staff_ids": [
+        "1",
+        "2"
+      ],
+      "onset_q": "0",
+      "fifths": -1,
+      "mode": null,
+      "label": "one flat, B-flat; prior flats cancelled",
+      "flags": [
+        "KEY_CHANGE",
+        "DOUBLE_BARLINE"
+      ],
+      "page": 2,
+      "system": 11,
+      "evidence_bbox_px": [
+        1080,
+        1560,
+        1205,
+        1777
+      ],
+      "crop_path": "source_crops/system_11.png",
+      "crop_sha256": "85f79e1a956246a21c8a524f7d3377c509cd882185aedf1fae12889564b7a13a",
+      "page_path": "source_crops/page-2.png",
+      "page_sha256": "22c196a7d433574f6aa647b0aba243104253c45c568ffa52ac3695017e6493f1"
+    },
+    {
+      "id": "CLEF-TRANSITIONS",
+      "claim": "Every opening is treble G on line 2 above and bass F on line 4 below. No intervening clef glyphs or cautionaries; opening glyphs are reprints.",
+      "clef_changes": [],
+      "evidence_addresses": [
+        {
+          "system": 1,
+          "page": 1,
+          "physical_bar": 1,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_01.png",
+          "crop_sha256": "2bd6224678d06ca10c221e58465e2fec0a0345ef3e14fc43b6e7e40e4d9c0e0d",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              210,
+              168,
+              272,
+              275
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              210,
+              312,
+              272,
+              417
+            ]
+          }
+        },
+        {
+          "system": 2,
+          "page": 1,
+          "physical_bar": 10,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_02.png",
+          "crop_sha256": "e921d9edb0813f992356c72c079640fcbf30e55633fbe68dd77a3eabf44cfbc9",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              544,
+              177,
+              649
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              685,
+              177,
+              790
+            ]
+          }
+        },
+        {
+          "system": 3,
+          "page": 1,
+          "physical_bar": 20,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_03.png",
+          "crop_sha256": "69d3d645d262444ac08c91042b6a490db5401f9afe1ce288539bef3ece6b4b3c",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              884,
+              177,
+              990
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              1026,
+              177,
+              1131
+            ]
+          }
+        },
+        {
+          "system": 4,
+          "page": 1,
+          "physical_bar": 30,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_04.png",
+          "crop_sha256": "2e54a5149321b880c36827dab908ccf495f4c9ea95325a1f1bff0ec87cd86e2d",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              1226,
+              177,
+              1331
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              1368,
+              177,
+              1473
+            ]
+          }
+        },
+        {
+          "system": 5,
+          "page": 1,
+          "physical_bar": 40,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_05.png",
+          "crop_sha256": "0dc1dc6c92520c59a443a580162f1328166045cc1817b271d9825829b724b328",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              1568,
+              177,
+              1673
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              1708,
+              177,
+              1814
+            ]
+          }
+        },
+        {
+          "system": 6,
+          "page": 1,
+          "physical_bar": 49,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_06.png",
+          "crop_sha256": "e62f3e0f4ae8f7f6c5f51e3cf8ea510f092b14ec1f608f78e57135a1bf17c08c",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              1908,
+              177,
+              2015
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              2050,
+              177,
+              2157
+            ]
+          }
+        },
+        {
+          "system": 7,
+          "page": 2,
+          "physical_bar": 58,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_07.png",
+          "crop_sha256": "b3e2b10f168def4735c11f69a458e69540c02b521b539f2a0c25b2f6ea8a232a",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              146,
+              177,
+              251
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              289,
+              177,
+              395
+            ]
+          }
+        },
+        {
+          "system": 8,
+          "page": 2,
+          "physical_bar": 67,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_08.png",
+          "crop_sha256": "ca53c27a7ea999aa552cd667c88903167dba1d6ea7f114fce877a8cc28015e49",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              488,
+              177,
+              595
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              632,
+              177,
+              738
+            ]
+          }
+        },
+        {
+          "system": 9,
+          "page": 2,
+          "physical_bar": 76,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_09.png",
+          "crop_sha256": "ae5cff41451e612e1b2a94eb742764093b284072b28232a715a42715f3f5fa06",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              832,
+              177,
+              938
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              976,
+              177,
+              1081
+            ]
+          }
+        },
+        {
+          "system": 10,
+          "page": 2,
+          "physical_bar": 85,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_10.png",
+          "crop_sha256": "102dfdef7fda49a690a25911d0a0b0c7e5e9674f6618b3432b72a28a7307094f",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              1203,
+              177,
+              1308
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              1344,
+              177,
+              1451
+            ]
+          }
+        },
+        {
+          "system": 11,
+          "page": 2,
+          "physical_bar": 94,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_11.png",
+          "crop_sha256": "85f79e1a956246a21c8a524f7d3377c509cd882185aedf1fae12889564b7a13a",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              1546,
+              177,
+              1651
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              1688,
+              177,
+              1793
+            ]
+          }
+        },
+        {
+          "system": 12,
+          "page": 2,
+          "physical_bar": 102,
+          "is_clef_change": false,
+          "crop_path": "source_crops/system_12.png",
+          "crop_sha256": "82a9f847c4475617ee0c6a91a67f4b834e690bea21e93470908f96668b09fc2e",
+          "staff1": {
+            "sign": "G",
+            "line": 2,
+            "evidence_box_px": [
+              115,
+              1889,
+              177,
+              1995
+            ]
+          },
+          "staff2": {
+            "sign": "F",
+            "line": 4,
+            "evidence_box_px": [
+              115,
+              2032,
+              177,
+              2139
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "pickup_or_partial_checks": [],
+  "repeat_boundary_checks": [
+    {
+      "after_physical_bar": 21,
+      "before_physical_bar": 22,
+      "kind": "combined backward and forward repeat",
+      "flags": [
+        "COMBINED_REPEAT"
+      ],
+      "page": 1,
+      "system": 3,
+      "onset_q": "2",
+      "evidence_bbox_px": [
+        507,
+        908,
+        559,
+        1115
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "crop_sha256": "69d3d645d262444ac08c91042b6a490db5401f9afe1ce288539bef3ece6b4b3c",
+      "page_path": "source_crops/page-1.png",
+      "page_sha256": "979c4a1781229eda03121d6080af94f8c24f0fe9044ca9fd608f01e24d23f5f7"
+    },
+    {
+      "after_physical_bar": 111,
+      "kind": "closing backward repeat",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "page": 2,
+      "system": 12,
+      "onset_q": "2",
+      "evidence_bbox_px": [
+        1645,
+        1910,
+        1689,
+        2125
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "crop_sha256": "82a9f847c4475617ee0c6a91a67f4b834e690bea21e93470908f96668b09fc2e",
+      "page_path": "source_crops/page-2.png",
+      "page_sha256": "22c196a7d433574f6aa647b0aba243104253c45c568ffa52ac3695017e6493f1"
+    }
+  ],
+  "clef_change_checks": [],
+  "system_opening_clef_checks": [
+    {
+      "system": 1,
+      "page": 1,
+      "physical_bar": 1,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_01.png",
+      "crop_sha256": "2bd6224678d06ca10c221e58465e2fec0a0345ef3e14fc43b6e7e40e4d9c0e0d",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          210,
+          168,
+          272,
+          275
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          210,
+          312,
+          272,
+          417
+        ]
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "physical_bar": 10,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_02.png",
+      "crop_sha256": "e921d9edb0813f992356c72c079640fcbf30e55633fbe68dd77a3eabf44cfbc9",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          544,
+          177,
+          649
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          685,
+          177,
+          790
+        ]
+      }
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "physical_bar": 20,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_03.png",
+      "crop_sha256": "69d3d645d262444ac08c91042b6a490db5401f9afe1ce288539bef3ece6b4b3c",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          884,
+          177,
+          990
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          1026,
+          177,
+          1131
+        ]
+      }
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "physical_bar": 30,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_04.png",
+      "crop_sha256": "2e54a5149321b880c36827dab908ccf495f4c9ea95325a1f1bff0ec87cd86e2d",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          1226,
+          177,
+          1331
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          1368,
+          177,
+          1473
+        ]
+      }
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "physical_bar": 40,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_05.png",
+      "crop_sha256": "0dc1dc6c92520c59a443a580162f1328166045cc1817b271d9825829b724b328",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          1568,
+          177,
+          1673
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          1708,
+          177,
+          1814
+        ]
+      }
+    },
+    {
+      "system": 6,
+      "page": 1,
+      "physical_bar": 49,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_06.png",
+      "crop_sha256": "e62f3e0f4ae8f7f6c5f51e3cf8ea510f092b14ec1f608f78e57135a1bf17c08c",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          1908,
+          177,
+          2015
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          2050,
+          177,
+          2157
+        ]
+      }
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "physical_bar": 58,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_07.png",
+      "crop_sha256": "b3e2b10f168def4735c11f69a458e69540c02b521b539f2a0c25b2f6ea8a232a",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          146,
+          177,
+          251
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          289,
+          177,
+          395
+        ]
+      }
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "physical_bar": 67,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_08.png",
+      "crop_sha256": "ca53c27a7ea999aa552cd667c88903167dba1d6ea7f114fce877a8cc28015e49",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          488,
+          177,
+          595
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          632,
+          177,
+          738
+        ]
+      }
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "physical_bar": 76,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_09.png",
+      "crop_sha256": "ae5cff41451e612e1b2a94eb742764093b284072b28232a715a42715f3f5fa06",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          832,
+          177,
+          938
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          976,
+          177,
+          1081
+        ]
+      }
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "physical_bar": 85,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_10.png",
+      "crop_sha256": "102dfdef7fda49a690a25911d0a0b0c7e5e9674f6618b3432b72a28a7307094f",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          1203,
+          177,
+          1308
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          1344,
+          177,
+          1451
+        ]
+      }
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "physical_bar": 94,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_11.png",
+      "crop_sha256": "85f79e1a956246a21c8a524f7d3377c509cd882185aedf1fae12889564b7a13a",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          1546,
+          177,
+          1651
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          1688,
+          177,
+          1793
+        ]
+      }
+    },
+    {
+      "system": 12,
+      "page": 2,
+      "physical_bar": 102,
+      "is_clef_change": false,
+      "crop_path": "source_crops/system_12.png",
+      "crop_sha256": "82a9f847c4475617ee0c6a91a67f4b834e690bea21e93470908f96668b09fc2e",
+      "staff1": {
+        "sign": "G",
+        "line": 2,
+        "evidence_box_px": [
+          115,
+          1889,
+          177,
+          1995
+        ]
+      },
+      "staff2": {
+        "sign": "F",
+        "line": 4,
+        "evidence_box_px": [
+          115,
+          2032,
+          177,
+          2139
+        ]
+      }
+    }
+  ],
+  "physical_count_check": {
+    "system_counts": [
+      9,
+      10,
+      10,
+      10,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      8,
+      10
+    ],
+    "page_totals": [
+      57,
+      54
+    ],
+    "total": 111,
+    "method": "Counted physical spaces between printed barlines; merged strokes of repeats/double/final barlines."
+  },
+  "crop_inspection": {
+    "preview_receipt_path": "toolkit/crop_preview_receipt.json",
+    "preview_receipt_sha256": "02cbcfad91aeaa253285ab55056daec45a1b1c7df2944e903200934d7ed812c4",
+    "exact_systems_seen": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "expanded_contexts_seen": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "marked_full_pages_seen": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "note": "Original preview 01 exposed clipped high chords/slur on page 2; corrected in preview 02 before this proposal. Header/plate ink intersecting crop edges is not musical ink."
+  }
+}

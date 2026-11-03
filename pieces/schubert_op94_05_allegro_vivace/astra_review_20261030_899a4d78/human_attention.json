@@ -1,0 +1,102 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "MUS-012",
+      "address": "P012 staff1, second beat",
+      "question": "Does cresc. begin at q1 or q1.5?",
+      "provisional_treatment": "Retain q1; the print places the word within the eighth-note pair without decisive onset alignment.",
+      "evidence": [
+        "reviewer/print_system_02.png",
+        "reviewer/phase3_review.json",
+        "validation/render/system-1350-02.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical",
+      "reason_for_uncertainty": "Print horizontal text alignment does not uniquely select one eighth attack."
+    },
+    {
+      "id": "SEP-DASHES",
+      "address": "P049 q0 to P057 q2, staff1",
+      "question": "Review unsupported crescendo-extension dashes before any MARKS editing.",
+      "provisional_treatment": "Keep exact dashes in authoritative primary XML; do not replace primary with diagnostic Apply output.",
+      "evidence": [
+        "validation/marks_export.json",
+        "validation/marks_apply.musicxml",
+        "validation/render/system-1350-06.png",
+        "validation/render/system-1350-07.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "primary_xml_sha256": "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5",
+      "blocks_publication": true,
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "reason_for_uncertainty": "MARKS v0 explicitly reports dashes outside its vocabulary; XML remains authoritative.",
+      "review_safety_reason": "Primary displays the dashed extension and playback/core mapping pass; exact XML and focused images remain available for human examination."
+    },
+    {
+      "id": "VIEW-085",
+      "address": "P085 staff1 q0; width1000 zoom0.9",
+      "question": "Confirm crescendo ownership and correct its lower placement before publication.",
+      "provisional_treatment": "Retain voice-neutral staff1 cresc. in XML; narrow production view places the word below the lower staff.",
+      "evidence": [
+        "reviewer/print_system_10.png",
+        "validation/render/system-1000-12.png",
+        "validation/render/system-1350-09.png",
+        "validation/focused_visual_recheck.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "primary_xml_sha256": "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5",
+      "blocks_publication": true,
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "word_staff_placement",
+      "reason_for_uncertainty": "The narrow view could imply lower-staff-only expression; wider view correctly places the same text between staffs.",
+      "review_safety_reason": "Text remains legible; wide layout and source resolve the intended staff placement without changing notes or timing."
+    },
+    {
+      "id": "VIEW-111",
+      "address": "P111 both staffs, rest count 1",
+      "question": "Confirm whether to restore the printed rest-count numeral 1 above each terminal measure rest.",
+      "provisional_treatment": "One full 2/4 measure rest per staff is retained; numeral 1 is absent in ordinary measure-rest rendering.",
+      "evidence": [
+        "reviewer/print_system_12.png",
+        "validation/render/system-1350-12.png",
+        "validation/render/system-1000-15.png",
+        "validation/focused_visual_recheck.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "primary_xml_sha256": "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5",
+      "blocks_publication": true,
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "ambiguous_notation",
+      "reason_for_uncertainty": "Single-bar counted-rest print style is normalized to a plain full-measure rest; numeral is not encoded as fingering or ending.",
+      "review_safety_reason": "The two rests occupy the complete final bar and repeat boundary remains visible; source and exact duration data permit direct human comparison.",
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5",
+        "source_evidence": [
+          "reviewer/print_system_12.png"
+        ],
+        "render_evidence": [
+          "validation/render/system-1350-12.png",
+          "validation/render/system-1000-15.png"
+        ]
+      }
+    }
+  ],
+  "human_outcome": null
+}
