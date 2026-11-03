@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "mendelssohn_sww_08_unrest",
+  "verified_utc": "2026-10-18T10:26:22.735147+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e0006b5800ce13dad5c42fba41336a47d8ce63ff25c5c349a50c2e0d53931cfb",
+      "replay_sha256": "6002a014c766e318cc2231338c2ebdf2e01d346b11c783c4d6bff4ea41e59236"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "8618e1bd73d04f8149a4a232047b40732d8d99421ec66f03d86033934101044d",
+      "replay_sha256": "8618e1bd73d04f8149a4a232047b40732d8d99421ec66f03d86033934101044d"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "c3c94d1ffbe24b318a456b276c6af681f07e636997be6fe2154c3d3d6858a56c",
+      "replay_sha256": "2f1d3d994c8fdfc878d567162d91502e806606b491bd5c6c525a92ec55ebf0d0"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "a75b9f95f0e9bd3976fa6af5e1dceec41b24a0b2797bf6abe652e6171e38eb03",
+      "replay_sha256": "0381b53715ba3243c0580f2d33d270494b4d84f072bc3e10486a2cff0a5fbed2"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "4b7abdc951220fd53070ddfc293f6fd6a7a2273fe747b918bf4d35b0692a179b",
+      "replay_sha256": "a53aedc43450ac79e809c10491f473f01354b2ba1dfbc87d80626d623cd5d3fa"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

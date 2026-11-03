@@ -1,0 +1,140 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_schubert_op94_01_moderato.musicxml",
+  "primary_xml_sha256": "5162dc279b622d5429593ffcb0c266c2daba0dc03ed4e5fdd6f13a783d8245a3",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "primary_assessment.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/playback_check.json",
+        "validation/independent_schedule.json",
+        "delivery_final/playback.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/viewer_mapping_check.json",
+        "validation/production_render_final/report.json",
+        "validation/render_spec_final.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "D02-REPEAT-DOTS",
+        "D03-P051-EXPRESSION",
+        "D04-P057-POLYPHONY",
+        "D05-NESTED-SLUR-DISPLAY",
+        "D06-P088-PHRASE-END"
+      ],
+      "evidence": [
+        "validation/production_render_final/report.json",
+        "validation/focused_visual_recheck.json",
+        "validation/production_render_final/detail-1350-01.png",
+        "validation/production_render_final/detail-1350-02.png",
+        "validation/production_render_final/detail-1350-03.png",
+        "validation/production_render_final/detail-1350-04.png",
+        "validation/production_render_final/detail-1350-05.png",
+        "validation/production_render_final/detail-900-01.png",
+        "validation/production_render_final/detail-900-02.png",
+        "validation/production_render_final/detail-900-03.png",
+        "validation/production_render_final/detail-900-04.png",
+        "validation/production_render_final/detail-900-05.png",
+        "validation/production_render_final/detail-900-06.png",
+        "validation/production_render_final/detail-900-07.png",
+        "validation/production_render_final/detail-900-08.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "D02-REPEAT-DOTS",
+        "D03-P051-EXPRESSION",
+        "D04-P057-POLYPHONY",
+        "D05-NESTED-SLUR-DISPLAY",
+        "D06-P088-PHRASE-END"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/render_order_equivalence.json",
+        "validation/production_render_final/detail-1350-01.png",
+        "validation/production_render_final/detail-1350-02.png",
+        "validation/production_render_final/detail-1350-03.png",
+        "validation/production_render_final/detail-1350-04.png",
+        "validation/production_render_final/detail-1350-05.png",
+        "validation/production_render_final/detail-900-01.png",
+        "validation/production_render_final/detail-900-02.png",
+        "validation/production_render_final/detail-900-03.png",
+        "validation/production_render_final/detail-900-04.png",
+        "validation/production_render_final/detail-900-05.png",
+        "validation/production_render_final/detail-900-06.png",
+        "validation/production_render_final/detail-900-07.png",
+        "validation/production_render_final/detail-900-08.png"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "5162dc279b622d5429593ffcb0c266c2daba0dc03ed4e5fdd6f13a783d8245a3",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/core_interpretation.json",
+        "validation/layer_checks.json",
+        "voice_topology.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "D01-MARKS-FP"
+      ],
+      "evidence": [
+        "validation/layer_checks.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "D02-REPEAT-DOTS"
+      ],
+      "evidence": [
+        "validation/layer_checks.json",
+        "validation/playback_check.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "D03-P051-EXPRESSION",
+        "D04-P057-POLYPHONY",
+        "D05-NESTED-SLUR-DISPLAY",
+        "D06-P088-PHRASE-END"
+      ],
+      "evidence": [
+        "primary_assessment.json",
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "delivery_issues": [
+    "D01-MARKS-FP",
+    "D02-REPEAT-DOTS",
+    "D03-P051-EXPRESSION",
+    "D04-P057-POLYPHONY",
+    "D05-NESTED-SLUR-DISPLAY",
+    "D06-P088-PHRASE-END"
+  ],
+  "publication_authorized": false,
+  "human_outcome": null
+}

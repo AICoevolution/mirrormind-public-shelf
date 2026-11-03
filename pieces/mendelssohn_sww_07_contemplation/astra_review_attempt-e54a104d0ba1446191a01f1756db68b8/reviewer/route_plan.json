@@ -1,0 +1,188 @@
+{
+  "schema": "astra_print_route_plan.v1",
+  "status": "COMPLETE_PRINT_ROUTE_PLAN",
+  "scope": "Independent source route plan only; no claim that candidate/final XML implements it or that playback has passed.",
+  "candidate_sha256": "e349d95afec5456b27035b995e0ce95bcb3d74a2f631471d251fcbd5cd12956a",
+  "printed_controls": [
+    {
+      "bar": 2,
+      "location": "left",
+      "repeat": "forward"
+    },
+    {
+      "bar": 12,
+      "location": "left",
+      "ending": {
+        "number": "1",
+        "type": "start"
+      }
+    },
+    {
+      "bar": 12,
+      "location": "right",
+      "ending": {
+        "number": "1",
+        "type": "stop"
+      },
+      "repeat": "backward",
+      "times": 2
+    },
+    {
+      "bar": 13,
+      "location": "left",
+      "ending": {
+        "number": "2",
+        "type": "start"
+      }
+    },
+    {
+      "bar": 13,
+      "location": "right",
+      "ending": {
+        "number": "2",
+        "type": "stop"
+      }
+    },
+    {
+      "bar": 14,
+      "location": "left",
+      "repeat": "forward"
+    },
+    {
+      "bar": 31,
+      "location": "left",
+      "ending": {
+        "number": "1",
+        "type": "start"
+      }
+    },
+    {
+      "bar": 31,
+      "location": "right",
+      "ending": {
+        "number": "1",
+        "type": "stop"
+      },
+      "repeat": "backward",
+      "times": 2
+    },
+    {
+      "bar": 32,
+      "location": "left",
+      "ending": {
+        "number": "2",
+        "type": "start"
+      }
+    },
+    {
+      "bar": 32,
+      "location": "right",
+      "ending": {
+        "number": "2",
+        "type": "discontinue"
+      }
+    },
+    {
+      "bar": 41,
+      "location": "right",
+      "bar_style": "light-heavy"
+    }
+  ],
+  "physical_measure_count": 41,
+  "expected_physical_playback_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "performed_measure_visits": 68,
+  "metrical_quarter_extent_before_fermata_realization": 272,
+  "performance_timing_note": "Final fermata duration is performance-dependent;272 quarters is the nominal written route extent, not total realized seconds. No metronome speed is printed.",
+  "observations": [
+    "Forward repeat2 excludes physical1 on the repeat.",
+    "First ending12 replaces13 on first traversal only.",
+    "New repeat begins14 after second ending13.",
+    "First ending31 repeats14; second traversal skips31 and takes32.",
+    "There is no repeat at page break20/21.",
+    "Physical33\u201341 follow second ending32 once, then terminate.",
+    "No navigation text, coda, segno or D.C./D.S. found in retained system inspections.",
+    "Enlarged system10 confirms second-ending32 right endpoint is an open horizontal end; encode discontinue rather than a closed stop. Playback order is unchanged."
+  ],
+  "source_evidence": {
+    "reviewer/crops/system_01.png": "7e6ed5f7a378eb7db4c9da890f949d487c2cb1b324ceb4369497fe4c66a66be4",
+    "reviewer/crops/system_04.png": "12edd5b38725a7b8de62df1b741a7ced03732a902d5c123f02a5b75ed12ab0db",
+    "reviewer/crops/system_09.png": "4dac7812a3d8d1f8a0f04bf07029d9c05fb2fbc632a380044b0675d9bec1836c",
+    "reviewer/crops/system_10.png": "fcf05f99db42f2b55004a40bb70bb91b285f51101811f2cb7978722aa52d170f",
+    "reviewer/crops/system_12.png": "c1db0119fa7dafc9d85235746344ab395fdbdecb2edabee2351a09047ee6b89d",
+    "reviewer/crops/system_10_large.png": "63f458efa7e7333eb363a18dcaaf1047b528aa92ba052bc7b8769ab255314697"
+  },
+  "pending_implementation_checks": [
+    "Encode repeats/endings once for the piano part while displaying barlines on both staves",
+    "Run independent schedule against primary after audit/correction/primary release gates",
+    "Verify ending labels/brackets and playback cursor at both repeat jumps"
+  ]
+}

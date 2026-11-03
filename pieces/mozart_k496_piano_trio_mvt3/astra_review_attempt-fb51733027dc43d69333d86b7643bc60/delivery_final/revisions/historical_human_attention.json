@@ -1,0 +1,646 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "GRACE-P025-S3-TIMING",
+      "address": {
+        "part": "Pianoforte",
+        "bar": 25,
+        "staff": "3",
+        "note": "m025-s3-v1-e04"
+      },
+      "question": "How should the unslashed D5 grace before tied D6 be realized in playback?",
+      "provisional_treatment": "Encode the printed unslashed sixteenth as grace with zero metrical duration; do not prescribe steal-time percentages. Preserve D6 half value and its tie.",
+      "alternatives": [
+        "Short appoggiatura drawn from following D6",
+        "Longer expressive appoggiatura determined by human performance review"
+      ],
+      "reason_for_uncertainty": "The print specifies small unslashed notation and slur but no unique performance duration.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_05_bar25_piano.png"
+      ]
+    },
+    {
+      "id": "GRACE-P034-S3-TIMING",
+      "address": {
+        "part": "Pianoforte",
+        "bar": 34,
+        "staff": "3",
+        "note": "m034-s3-v2-grace01"
+      },
+      "question": "How should the unslashed D5 grace into tied D6 be realized?",
+      "provisional_treatment": "Zero metrical duration grace with printed sixteenth type, no steal-time percentage. Keep D6 quarter tied to next eighth.",
+      "reason_for_uncertainty": "Print defines grace notation, not unique performance duration.",
+      "alternatives": [
+        "Short appoggiatura",
+        "Longer expressive appoggiatura"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_07.png"
+      ]
+    },
+    {
+      "id": "GRACE-P049-S1-TIMING",
+      "address": {
+        "part": "Violino",
+        "bar": 49,
+        "staff": "1",
+        "note": "m049-s1-v1-grace01"
+      },
+      "question": "How should the three small unslashed notes before G5 be realized?",
+      "provisional_treatment": "Retain printed F#5/G5/A5 small 32nd group with zero metrical duration, no steal-time fraction.",
+      "reason_for_uncertainty": "Written grace group does not uniquely prescribe performance duration.",
+      "alternatives": [
+        "Short lead-in",
+        "More sustained appoggiatura realization"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_10_bar49.png"
+      ]
+    },
+    {
+      "id": "GRACE-P074-P079-S1-TIMING",
+      "address": {
+        "part": "Violino",
+        "bars": [
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "staff": "1",
+        "note": "small notes before dotted-eighth figures"
+      },
+      "question": "How should the repeated small unslashed 32nd notes be realized in Variation IV?",
+      "provisional_treatment": "Keep printed F4 grace at P074\u2013P078 and Eb4/D4 graces at P079 as zero-metrical-duration 32nds with no steal-time percentage.",
+      "reason_for_uncertainty": "Three small flags and unslashed stems establish notation but do not specify unique performance timing. Reader grace types disagree; enlarged print supports 32nds.",
+      "alternatives": [
+        "Short ornamental lead-in",
+        "Longer appoggiatura-style realization"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_17_73_75.png",
+        "reviewer/crops/system_17_76_77.png",
+        "reviewer/crops/system_17_78_79.png"
+      ]
+    },
+    {
+      "id": "GRACE-P080-P087-S1-TIMING",
+      "address": {
+        "part": "Violino",
+        "bars": [
+          80,
+          87
+        ],
+        "staff": "1"
+      },
+      "question": "How should these small unslashed notes be timed?",
+      "provisional_treatment": "Keep C4/C4 graces in P080 and F4 grace in P087 as zero-duration 32nds, with no invented steal-time value.",
+      "reason_for_uncertainty": "Print supplies grace pitches and flags but not a unique performance realization.",
+      "alternatives": [
+        "Short lead-in",
+        "Appoggiatura-style realization"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_18_80_83.png",
+        "reviewer/crops/system_18_86_87.png"
+      ]
+    },
+    {
+      "id": "GRACE-P088-P092-S1-TIMING",
+      "address": {
+        "part": "Violino",
+        "bars": [
+          88,
+          89,
+          90,
+          91,
+          92
+        ],
+        "staff": "1"
+      },
+      "question": "How should the small unslashed notes in this continuation be realized?",
+      "provisional_treatment": "Preserve F4,F5,Eb5/D5,C5/C5,Bb4 grace pitches as zero-duration32nds before the dotted eighths, no invented time allocation.",
+      "reason_for_uncertainty": "Printed small notes determine notation but not unique performance timing.",
+      "alternatives": [
+        "Short lead-in",
+        "Appoggiatura-style realization"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_19_88_89.png",
+        "reviewer/crops/system_19_90_92.png"
+      ]
+    },
+    {
+      "id": "GRACE-P093-P096-S1-TIMING",
+      "address": {
+        "part": "Violino",
+        "bars": [
+          93,
+          94,
+          95,
+          96
+        ],
+        "staff": "1"
+      },
+      "question": "How should the small unslashed notes before dotted figures be timed?",
+      "provisional_treatment": "Keep Bb3,F4,Eb4/D4,C4/C4 small notes as zero-duration32nds, without invented steal-time.",
+      "reason_for_uncertainty": "Notation does not uniquely determine performance timing.",
+      "alternatives": [
+        "Short lead-in",
+        "Appoggiatura-style realization"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_20_93_95.png",
+        "reviewer/crops/system_20_96_98.png"
+      ]
+    },
+    {
+      "id": "SLUR-P098-S1-ENDPOINT",
+      "address": {
+        "part": "Violino",
+        "bar": 98,
+        "staff": "1",
+        "note": "m098-s1-v1-e09"
+      },
+      "question": "Does the final F#4 slur continue to the first B4 of Variation V?",
+      "provisional_treatment": "Provisionally connect P098 final F#4 to P099 B4 below, keeping this interpretation unresolved.",
+      "reason_for_uncertainty": "Curve leaves final F#4 toward right system edge, but no clear continuation arch is visible at next violin entry. Piano has a visible corresponding continuation; that is supporting context only.",
+      "alternatives": [
+        "Connect to P099 B4",
+        "Retain only local curve as unpaired graphic pending source clarification"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_20_bar98_violin.png",
+        "reviewer/crops/system_21.png"
+      ]
+    },
+    {
+      "id": "GRACE-P100-S3-TIMING",
+      "address": {
+        "part": "Pianoforte",
+        "bar": 100,
+        "staff": "3",
+        "note": "C#5 D5 E5 grace group"
+      },
+      "question": "How should the unslashed three-note grace group be realized?",
+      "provisional_treatment": "Retain three32nds at zero metrical duration, with no steal-time fraction.",
+      "reason_for_uncertainty": "Printed grace notation does not uniquely prescribe performance timing.",
+      "alternatives": [
+        "Quick lead-in",
+        "Longer appoggiatura-style realization"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_21_99_100.png"
+      ]
+    },
+    {
+      "id": "GRACE-P157-P163-PERFORMANCE",
+      "address": "Violin P157\u2013P163 small notes before dotted eighths",
+      "question": "How should the small unslashed thirty-seconds take time from the surrounding sustained/main notes?",
+      "reason_for_uncertainty": "Print gives small-note values but no unique performance-time allocation.",
+      "provisional_treatment": "Encode small notes as zero-metrical-duration unslashed grace32nds; retain main printed values; human listening to determine realization.",
+      "alternatives": [
+        "Before-beat realization",
+        "On-beat time borrowed from following main note"
+      ],
+      "evidence": [
+        "reviewer/crops/system_35_violin_graces.png",
+        "reviewer/crops/system_36_violin.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "GRACE-P164-P170-PERFORMANCE",
+      "address": {
+        "parts": [
+          "Violino",
+          "Pianoforte"
+        ],
+        "bars": [
+          164,
+          165,
+          167,
+          169,
+          170
+        ]
+      },
+      "question": "How should the closing unslashed grace32nds be timed?",
+      "provisional_treatment": "Zero metrical duration, unslashed 32nd written types, no invented steal-time percentages. Preserve main printed durations.",
+      "reason_for_uncertainty": "Printed small notes specify notation but no unique performance allocation.",
+      "alternatives": [
+        "Before-beat realization",
+        "On-beat appoggiatura realization"
+      ],
+      "evidence": [
+        "reviewer/crops/system_37.png",
+        "reviewer/crops/system_38_piano_run.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "FINGERING-P033-S3",
+      "address": {
+        "part": "Pianoforte",
+        "bar": 33,
+        "staff": "3",
+        "note": "lower D5 quarter near end of P033"
+      },
+      "question": "Is the small stroke below the lower D5 a printed fingering 1 or a broken curve/print blemish?",
+      "provisional_treatment": "Retain no fingering provisionally; do not treat the reader-reported 1 as confirmed print.",
+      "reason_for_uncertainty": "Small angled stroke lies beside the slur/tie geometry; source is too damaged to distinguish a numeral confidently.",
+      "alternatives": [
+        "Add fingering 1 below the lower D5",
+        "No fingering; preserve only musical curves"
+      ],
+      "evidence": [
+        "reviewer/crops/P033_possible_fingering.png",
+        "reviewer/crops/system_07.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "DELIVERY-SLUR-M155",
+      "address": "Physical m155; see exact checker findings",
+      "category": "delivery_issue",
+      "classification": "primary_structure",
+      "layer": "MARKS",
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "issue_type": "checker_failure",
+      "structural_findings": [
+        "STRUCTURE-1894f02be4edace3",
+        "STRUCTURE-bcc5a91f53f7e51e"
+      ],
+      "question": "Resolve the reported slur pairing conflict before publication. Are the retained endpoints and overlapping phrase numbers correct?",
+      "provisional_treatment": "Released revision01 separates the source-supported touching slur numbers without moving endpoints. Fresh engraving check has no broken findings; narrow-layout visual coverage remains a separate open task.",
+      "reason_for_uncertainty": "Engraving checker reports duplicate starts/unmatched stops; a CORE pass does not validate these phrase pairings.",
+      "review_safety_reason": "Primary passes PROPER and independent attack schedule matches. Source and rendered phrase endpoints still require focused visual review; no publication approval is claimed.",
+      "evidence": [
+        "validation/primary_assessment.json",
+        "delivery_final/correction_ledger.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01_release_validation.json",
+        "validation/revision01/primary_assessment.json",
+        "validation/revision01/visual_checks.json"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": false,
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f",
+      "resolution": "Source rechecked and number-only correction released; old structural finding IDs retained as history."
+    },
+    {
+      "id": "DELIVERY-SLUR-M170",
+      "address": "Physical m170; see exact checker findings",
+      "category": "delivery_issue",
+      "classification": "primary_structure",
+      "layer": "MARKS",
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "issue_type": "checker_failure",
+      "structural_findings": [
+        "STRUCTURE-905b04bff4c870d3",
+        "STRUCTURE-09473378fe666450"
+      ],
+      "question": "Resolve the reported slur pairing conflict before publication. Are the retained endpoints and overlapping phrase numbers correct?",
+      "provisional_treatment": "Released revision01 separates the source-supported touching slur numbers without moving endpoints. Fresh engraving check has no broken findings; narrow-layout visual coverage remains a separate open task.",
+      "reason_for_uncertainty": "Engraving checker reports duplicate starts/unmatched stops; a CORE pass does not validate these phrase pairings.",
+      "review_safety_reason": "Primary passes PROPER and independent attack schedule matches. Source and rendered phrase endpoints still require focused visual review; no publication approval is claimed.",
+      "evidence": [
+        "validation/primary_assessment.json",
+        "delivery_final/correction_ledger.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01_release_validation.json",
+        "validation/revision01/primary_assessment.json",
+        "validation/revision01/visual_checks.json"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": false,
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f",
+      "resolution": "Source rechecked and number-only correction released; old structural finding IDs retained as history."
+    },
+    {
+      "id": "DELIVERY-SLUR-M35",
+      "address": "Physical m35; see exact checker findings",
+      "category": "delivery_issue",
+      "classification": "primary_structure",
+      "layer": "MARKS",
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "issue_type": "checker_failure",
+      "structural_findings": [
+        "STRUCTURE-c59a20b66d1a015c"
+      ],
+      "question": "Resolve the reported slur pairing conflict before publication. Are the retained endpoints and overlapping phrase numbers correct?",
+      "provisional_treatment": "Released revision01 separates the source-supported touching slur numbers without moving endpoints. Fresh engraving check has no broken findings; narrow-layout visual coverage remains a separate open task.",
+      "reason_for_uncertainty": "Engraving checker reports duplicate starts/unmatched stops; a CORE pass does not validate these phrase pairings.",
+      "review_safety_reason": "Primary passes PROPER and independent attack schedule matches. Source and rendered phrase endpoints still require focused visual review; no publication approval is claimed.",
+      "evidence": [
+        "validation/primary_assessment.json",
+        "delivery_final/correction_ledger.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01_release_validation.json",
+        "validation/revision01/primary_assessment.json",
+        "validation/revision01/visual_checks.json"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": false,
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f",
+      "resolution": "Source rechecked and number-only correction released; old structural finding IDs retained as history."
+    },
+    {
+      "id": "DELIVERY-SLUR-M36",
+      "address": "Physical m36; see exact checker findings",
+      "category": "delivery_issue",
+      "classification": "primary_structure",
+      "layer": "MARKS",
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "issue_type": "checker_failure",
+      "structural_findings": [
+        "STRUCTURE-271bf891d1f6ca83"
+      ],
+      "question": "Resolve the reported slur pairing conflict before publication. Are the retained endpoints and overlapping phrase numbers correct?",
+      "provisional_treatment": "Released revision01 separates the source-supported touching slur numbers without moving endpoints. Fresh engraving check has no broken findings; narrow-layout visual coverage remains a separate open task.",
+      "reason_for_uncertainty": "Engraving checker reports duplicate starts/unmatched stops; a CORE pass does not validate these phrase pairings.",
+      "review_safety_reason": "Primary passes PROPER and independent attack schedule matches. Source and rendered phrase endpoints still require focused visual review; no publication approval is claimed.",
+      "evidence": [
+        "validation/primary_assessment.json",
+        "delivery_final/correction_ledger.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01_release_validation.json",
+        "validation/revision01/primary_assessment.json",
+        "validation/revision01/visual_checks.json"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": false,
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f",
+      "resolution": "Source rechecked and number-only correction released; old structural finding IDs retained as history."
+    },
+    {
+      "id": "DELIVERY-SLUR-M49",
+      "address": "Physical m49; see exact checker findings",
+      "category": "delivery_issue",
+      "classification": "primary_structure",
+      "layer": "MARKS",
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "issue_type": "checker_failure",
+      "structural_findings": [
+        "STRUCTURE-7125cb2b96e0e7a5",
+        "STRUCTURE-c09e9a95478c6dda"
+      ],
+      "question": "Resolve the reported slur pairing conflict before publication. Are the retained endpoints and overlapping phrase numbers correct?",
+      "provisional_treatment": "Released revision01 separates the source-supported touching slur numbers without moving endpoints. Fresh engraving check has no broken findings; narrow-layout visual coverage remains a separate open task.",
+      "reason_for_uncertainty": "Engraving checker reports duplicate starts/unmatched stops; a CORE pass does not validate these phrase pairings.",
+      "review_safety_reason": "Primary passes PROPER and independent attack schedule matches. Source and rendered phrase endpoints still require focused visual review; no publication approval is claimed.",
+      "evidence": [
+        "validation/primary_assessment.json",
+        "delivery_final/correction_ledger.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01_release_validation.json",
+        "validation/revision01/primary_assessment.json",
+        "validation/revision01/visual_checks.json"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": false,
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f",
+      "resolution": "Source rechecked and number-only correction released; old structural finding IDs retained as history."
+    },
+    {
+      "id": "DELIVERY-SEP-MARKS",
+      "address": "MARKS layer, including physical bars 35\u201336,49,155,170 and unsupported ornaments",
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "issue_type": "normalization",
+      "question": "Review MARKS normalization and unsupported ornament/text warnings before accepting a layer edit.",
+      "provisional_treatment": "Keep released full XML authoritative. Diagnostic Apply preserves anchored ornaments, technical notation, arpeggiation and member ties; exact slur comparison remains nonidentical.",
+      "reason_for_uncertainty": "MARKS Apply now completes and text is a fixed point, but exact slur payload comparison finds 32 note-level changes (number renaming and endpoint child ordering). Unsupported ornaments and voice-bound text still warn. Do not equate normalized codec output with a print certificate.",
+      "review_safety_reason": "These payloads remain in the immutable primary; CORE Apply was byte-exact. Direct primary playback is independently verified.",
+      "evidence": [
+        "validation/layer_checks.json",
+        "delivery_final/MARKS.sep",
+        "validation/revision01/layer_checks.json",
+        "validation/revision01/marks_payload_checks.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": true,
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f"
+    },
+    {
+      "id": "METADATA-UNPRINTED-CREDITS",
+      "address": "Supplied PDF pages1\u20138, header/footer",
+      "question": "If fuller catalog credits are desired, provide an authoritative title/composer/instrument-credit page; these movement pages print Allegretto. and W. A. M. 496. only.",
+      "provisional_treatment": "Use Allegretto. as the printed movement title; leave composer, arranger, lyricist, rights and printed part-name strings empty. Preserve frame instrument roles separately.",
+      "reason_for_uncertainty": "Full composer and instrument names are not printed on the supplied movement pages; footer initials are not expanded into a credit.",
+      "alternatives": [
+        "Retain the source-limited namecard",
+        "Supply separate authoritative bibliographic evidence for later metadata review"
+      ],
+      "evidence": [
+        "reviewer/orientation.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "DELIVERY-FINAL-BAR-REPEAT",
+      "address": {
+        "bar": 174
+      },
+      "question": "Final-bar repeat removed by source-supported barline container normalization.",
+      "provisional_treatment": "Released revision02 preserves all musical barline children. All four current layouts show the printed final bar without repeat dots.",
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_delivery": false,
+      "primary_xml_sha256": "36916ced9b0e1dec451af457dce7e16c4858ad423a5f9264b86f31f115ea3122",
+      "evidence": [
+        "validation/final_bar_render_finding.json",
+        "validation/revision01/route_display_diagnosis.json",
+        "validation/revision01/visual_checks.json",
+        "validation/revision02_source_recheck.json",
+        "validation/revision02_release_validation.json",
+        "validation/revision02/visual_checks.json"
+      ],
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f",
+      "reason_for_uncertainty": "The route glyph is demonstrably wrong; minimal structural or viewer repair must be selected and validated outside note-local correction scope.",
+      "prevented_operation": "Safe completion of essential_notation_rendering and final delivery",
+      "blocks_publication": false,
+      "resolution": "Source and all four revision02 layouts compared; intended endings and independent playback preserved."
+    },
+    {
+      "id": "DELIVERY-VEXFLOW-TUPLETS",
+      "address": {
+        "bar": 43
+      },
+      "question": "Source-supported implicit triplet durations now agree with VexFlow ticks.",
+      "provisional_treatment": "Released hidden endpoints preserve printed rhythm and omitted numerals. Zero missing/extra events and zero tick mismatches in all four layouts.",
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_delivery": false,
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "evidence": [
+        "validation/viewer_timing_checks.json",
+        "delivery_final/revisions/revision01_change_report.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01/viewer_timing_checks.json"
+      ],
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f"
+    },
+    {
+      "id": "ERRATUM-P005-STEMS",
+      "address": {
+        "bar": 5
+      },
+      "question": "Source recheck confirms downward stems for the first four upper-piano eighths in P005.",
+      "provisional_treatment": "Released revision01 applies the four stem changes; wide production render confirms the first group points down.",
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_delivery": false,
+      "primary_xml_sha256": "6cc7bfa0a58b5974ade04bd721116139214b9c7a4a32a1af2c307f5ebaa7c047",
+      "evidence": [
+        "reviewer/crops/system_01.png",
+        "delivery_final/revisions/revision01_change_report.json",
+        "validation/revision01_source_recheck.json",
+        "validation/revision01/visual_checks.json"
+      ],
+      "previous_primary_xml_sha256": "bf54126aa0ebb752e8add0610689402c48134aded8e4a653b1a71554c019a87f"
+    },
+    {
+      "id": "VISUAL-P105-FLAGS",
+      "address": {
+        "part": "Violino",
+        "bar": 105,
+        "notes": [
+          "m105-s1-v1-e09",
+          "m105-s1-v1-e11"
+        ]
+      },
+      "question": "Remove the unprinted standalone flag overlapping the final beamed group.",
+      "provisional_treatment": "Preserve revision02 while requesting two-note beam-child ordering correction proven in diagnostic render.",
+      "reason_for_uncertainty": "Consumer interpretation of out-of-order beam children; diagnostic isolates cause.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_delivery": true,
+      "evidence": [
+        "validation/revision03_source_recheck.json",
+        "validation/revision02/visual_checks.json"
+      ]
+    },
+    {
+      "id": "VISUAL-P122-LABELS",
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "word_staff_placement",
+      "primary_xml_sha256": "36916ced9b0e1dec451af457dce7e16c4858ad423a5f9264b86f31f115ea3122",
+      "address": {
+        "bar": 122,
+        "parts": [
+          "Violino",
+          "Pianoforte"
+        ],
+        "layouts": [
+          "w1350-z1",
+          "w1000-z1",
+          "w1000-z0.9",
+          "w900-z1"
+        ]
+      },
+      "question": "Review placement of Tempo primo. beside VAR. VI. at the variation boundary.",
+      "provisional_treatment": "Retain readable text and correct XML onset; viewer puts the violin tempo text partly over preceding fermata.",
+      "reason_for_uncertainty": "Horizontal placement does not align neatly with the intended variation entrance.",
+      "review_safety_reason": "Both strings remain fully readable; notes and fermata are unobscured, and the source plus XML anchor identify the intended entrance. Human can review the placement without altered timing.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "blocks_publication": true,
+      "evidence": [
+        "validation/revision02/visual_checks.json",
+        "validation/revision02/production_render_revision02/w1350-z1-system-27.png",
+        "validation/revision02/production_render_revision02/w1000-z1-system-40.png",
+        "validation/revision02/production_render_revision02/w1000-z0.9-system-36.png",
+        "validation/revision02/production_render_revision02/w900-z1-system-49.png"
+      ]
+    },
+    {
+      "id": "SLUR-P151-P152-S4-START",
+      "address": {
+        "part": "Pianoforte",
+        "staff": "4",
+        "bars": [
+          151,
+          152
+        ],
+        "encoded_start": "m151-s4-v1-e01",
+        "encoded_stop": "m152-s4-v1-e08"
+      },
+      "question": "Should the lower-piano phrase begin at P152 rather than the currently encoded first note of P151?",
+      "provisional_treatment": "Retain the released source-audit interpretation provisionally; do not present its earlier supported label as certainty. Compare original system34 before publication.",
+      "reason_for_uncertainty": "The earlier audit describes a continuous arch across the barline, but this focused source/render comparison sees the clearest arch beginning over P152. The current render includes an extra preceding bar under the phrase.",
+      "alternatives": [
+        "Keep current P151 start if the faint preceding arch can be established in original print.",
+        "Move start to first lower-piano note in P152, retaining stop m152-s4-v1-e08."
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/crops/system_34.png",
+        "reviewer/inspection_system_34.json",
+        "validation/revision03/visual_inspections.json",
+        "validation/revision03/production_render_revision03/w1350-z1-system-34.png",
+        "validation/revision03/production_render_revision03/w1350-z1-system-35.png"
+      ]
+    }
+  ]
+}

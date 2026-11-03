@@ -1,0 +1,86 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "P010-DOT-ACCENT",
+      "address": {
+        "bar": 10,
+        "staff": "both"
+      },
+      "question": "Confirm that the dot over the opening upper chord is staccato and that the inter-staff accent belongs to the lower chord.",
+      "provisional_treatment": "Encode staccato on the highest upper chord member and accent on the lower chord; retain the upper and lower opening-to-eighth slurs. No tie connects the unequal chords.",
+      "evidence": [
+        "reviewer/print/system_02.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "P074-P075-CURVE",
+      "address": {
+        "bars": [
+          74,
+          75
+        ],
+        "staff": 1
+      },
+      "question": "What does the outgoing curve after P074 mean where P075 begins with a printed eighth rest?",
+      "provisional_treatment": "Resolved by the printed endpoints and preserved Phase 1 erratum 01: P074 ascending slur ends at its dotted quarter; no outgoing tie, and P075 begins with the printed eighth rest. The final XML already has this representation.",
+      "evidence": [
+        "reviewer/print/system_15.png",
+        "reviewer/print/system_16.png",
+        "reviewer/PHASE1_ERRATUM_01.md",
+        "reviewer/PHASE3_ERRATUM_01.md"
+      ],
+      "status": "RESOLVED_BY_PRINT",
+      "human_outcome": null
+    },
+    {
+      "id": "P092-P094-LOWER-CURVES",
+      "address": {
+        "bars": [
+          92,
+          93,
+          94
+        ],
+        "staff": 2
+      },
+      "question": "Confirm individual endpoints of the overlapping lower-staff curves across the system break.",
+      "provisional_treatment": "Use three distinct below-staff phrase slurs: P092 q3/2 G#4 to P093 q0 A4, P092 q3/2 G#4 to P094 q0 B3, and P093 q3/2 D4 to P094 q0 B3. Unequal pitches are not tied. All attacks remain audible.",
+      "evidence": [
+        "reviewer/print/system_21.png",
+        "reviewer/print/system_22.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "ENGRAVING-P001-PEDAL-SPACING-900",
+      "address": {
+        "bar": 1,
+        "staff": 2,
+        "layout": {
+          "width": 900,
+          "zoom": 1
+        }
+      },
+      "question": "Review the tight inter-system spacing around the opening Ped. at width 900.",
+      "provisional_treatment": "Retain the current renderer placement below the opening bass chord. The mark is legible and clear of the stem and ledger lines; no XML or musical interpretation changes.",
+      "evidence": [
+        "recheck_latest/acceptance/render-900-1-opening.png",
+        "recheck_latest/acceptance/pedal-contexts-900.png",
+        "recheck_latest/acceptance/report.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "engraving",
+      "severity": "minor",
+      "issue_type": "spacing",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "blocks_safe_continuation": false,
+      "readability_reason": "Ped. is fully legible, horizontally anchored to the opening bass attack, below its system and above the next upper staff. It touches neither the opening stem/ledger nor the next-system notehead/slur; only the amount of whitespace is tight.",
+      "check_failures": []
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "UNVERIFIED",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_haydn_op76_03_mvt2.musicxml",
+  "primary_xml_sha256": "199f502e50174a35b276bc98e87b863944b2ee925029bf0561161842eddd880e",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_f0eb2900/consumer_checks.json",
+        "independent_playback_expected.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recheck_f0eb2900/consumer_checks.json",
+        "independent_playback_expected.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "ownership_recheck/report.json",
+        "production_recheck/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS_WITH_REVIEW",
+      "evidence": [
+        "essential_notation_readiness.json",
+        "ownership_recheck/report.json"
+      ],
+      "review_findings": [
+        "ENGRAVING-MEASURE-NUMBER-SLUR",
+        "ENGRAVING-TURN-SLUR-SPACING"
+      ],
+      "check_report": "ownership_recheck/report.json"
+    },
+    "focused_visual_recheck": {
+      "status": "PASS_WITH_REVIEW",
+      "evidence": [
+        "focused_visual_recheck.json",
+        "ownership_recheck/report.json"
+      ],
+      "review_findings": [
+        "ENGRAVING-MEASURE-NUMBER-SLUR",
+        "ENGRAVING-TURN-SLUR-SPACING"
+      ],
+      "check_report": "ownership_recheck/report.json"
+    }
+  },
+  "layer_readiness": "layer_readiness.json",
+  "human_attention": "human_attention.json",
+  "artifact_manifest": "artifact_manifest.json",
+  "phase_freezes": {
+    "reviewer/PHASE1_FREEZE.md": "7d83c7f761197501b1f1323729bff6c32b0611da5a7c4e3bbd6f3bff885da515",
+    "reviewer/phase1_hashes.json": "432024b97514d057bfad0ce5ea1c5ae7f7655301a41ddc32ee3952ca0989b455",
+    "reviewer/PHASE2_FREEZE.md": "44935e7faeab54f4628ce5af64ed7ac12de752f9340906fdd52178e552943713",
+    "reviewer/phase2_hashes.json": "8a6dcdd67a64dee868accfccee9f6d11e6b7283f03a0b9dd628a775433d56fee",
+    "reviewer/PHASE3_FREEZE.md": "4bbdce8370074ec44ec3d6083cfd60a8b33ab3929b59652a7099961ebd17818c",
+    "reviewer/phase3_hashes.json": "691746e9128366c5b293ffa7049fd153acc795f04a24a2a357fcb15a80acfdaf"
+  },
+  "phase3_frozen": true,
+  "phase3_specification": "reviewer/phase3_review_final_cf710b6d.json",
+  "prior_review": "astra_review_resume_cf710b6df8af4156bd92e6820235b8ca",
+  "created_utc": "2026-10-20T14:16:18.686847+00:00",
+  "human_outcome": null
+}

@@ -1,0 +1,461 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "mendelssohn_sww_01_op_19_no_1",
+  "authority": "print_only",
+  "source_pdf_sha256": "b093c409cc216c04af2f2785b73a242f0bf3e1bb884a774d5430593d4a39021f",
+  "physical_bar_count": 50,
+  "printed_meter": {
+    "beats": 4,
+    "beat_type": 4,
+    "printed_glyph": "C",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      362,
+      414,
+      396,
+      470
+    ],
+    "evidence_space": "page_px",
+    "evidence": "Both staves of system 1 print a common-time C after the four sharps and before the first notes. No later meter is printed."
+  },
+  "printed_meter_changes": [],
+  "key": {
+    "fifths": 4,
+    "mode": null,
+    "label": "four sharps",
+    "physical_bar": 1,
+    "page": 1,
+    "system": 1,
+    "evidence_box_px": [
+      306,
+      410,
+      360,
+      468
+    ],
+    "evidence_space": "page_px",
+    "evidence": "Four sharp signs are printed after the opening clef on each staff, before the common-time C. Later systems reprint those four sharps. No other signature is printed."
+  },
+  "printed_key_changes": [],
+  "pickup_checks": [],
+  "terminal_or_split_partials": [],
+  "pickup_plus_terminal_vs_meter": {
+    "meter_capacity_q": "4",
+    "opening_pickup_q": null,
+    "terminal_partial_q": null,
+    "opening_bar_capacity_q": "4",
+    "terminal_bar_capacity_q": "4",
+    "sum_q": null,
+    "equals_meter": true,
+    "opening_bar": {
+      "physical_bar": 1,
+      "capacity_q": "4",
+      "evidence": "P001 runs from the opening barline at x 262 to the barline at x 939 on page 1, system 1. After the treble clef, four sharps, and the common-time C, the upper staff has a quarter rest and melody notes that fill the bar, and the lower staff has continuous sixteenth-note groups across the same barlines. That is 4 quarters. P001 is a complete bar, not a pickup.",
+      "evidence_bbox_px": [
+        262,
+        400,
+        939,
+        600
+      ],
+      "evidence_space": "page_px"
+    },
+    "terminal_bar": {
+      "physical_bar": 50,
+      "capacity_q": "4",
+      "evidence": "P050 runs from the barline at x 1382 to the thin final stroke at x 1490 on page 3, system 18. Both staves hold a whole note. A thick stroke follows at about x 1500 with no repeat dots. A whole note is 4 quarters, the printed meter. P050 is a complete bar, not a partial.",
+      "evidence_bbox_px": [
+        1382,
+        1740,
+        1510,
+        1960
+      ],
+      "evidence_space": "page_px"
+    },
+    "explanation": "There is no incomplete pickup and no terminal partial. The opening bar and the final bar are each a complete common-time bar of 4 quarters, so there is no pickup-plus-terminal sum to compare with the meter."
+  },
+  "clef_changes": [
+    {
+      "physical_bar": 42,
+      "staff": 1,
+      "onset_q": "2",
+      "sign": "F",
+      "line": 4,
+      "placement": "MID_REGION",
+      "page": 3,
+      "system": 15,
+      "crop_path": "source_crops/system_15.png",
+      "from_sign": "G",
+      "from_line": 2,
+      "evidence_box_px": [
+        1256,
+        829,
+        1321,
+        909
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P042 begins at the barline x 1111 on system 15. The upper staff stays in treble through the opening half note, two quarters. A bass clef is printed after that half note, at page x 1256-1321, y 829-909, and governs the sixteenth-note groups that follow. It is not at the left barline. The upper staff was treble through P041."
+    },
+    {
+      "physical_bar": 44,
+      "staff": 1,
+      "onset_q": "2",
+      "sign": "G",
+      "line": 2,
+      "placement": "MID_REGION",
+      "page": 3,
+      "system": 16,
+      "crop_path": "source_crops/system_16.png",
+      "from_sign": "F",
+      "from_line": 4,
+      "evidence_box_px": [
+        1148,
+        1123,
+        1224,
+        1223
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P044 begins at the barline x 879 on system 16. The upper staff stays in bass through the beamed notes of the first half, two quarters. A treble clef is printed after those beamed notes, at page x 1148-1224, y 1123-1223, before the quarter note that follows. It is not at the left barline. P043 stays in the bass clef that began at P042."
+    },
+    {
+      "physical_bar": 45,
+      "staff": 1,
+      "onset_q": "4",
+      "sign": "F",
+      "line": 4,
+      "placement": "REGION_END_CAUTIONARY",
+      "glyph_region": "P045",
+      "effective_region": "P046",
+      "page": 3,
+      "system": 17,
+      "crop_path": "source_crops/system_17.png",
+      "from_sign": "G",
+      "from_line": 2,
+      "evidence_box_px": [
+        662,
+        1436,
+        708,
+        1522
+      ],
+      "evidence_space": "page_px",
+      "evidence": "On the upper staff of P045, the bass clef is at the right barline after the complete four-quarter content of P045 and takes effect at P046, with P045 remaining in the treble carried from P044. The glyph stands immediately before the barline at x 702."
+    },
+    {
+      "physical_bar": 47,
+      "staff": 1,
+      "onset_q": "3",
+      "sign": "G",
+      "line": 2,
+      "placement": "MID_REGION",
+      "page": 3,
+      "system": 17,
+      "crop_path": "source_crops/system_17.png",
+      "from_sign": "F",
+      "from_line": 4,
+      "evidence_box_px": [
+        1348,
+        1428,
+        1428,
+        1536
+      ],
+      "evidence_space": "page_px",
+      "evidence": "P047 begins in bass on the upper staff. After the eighths and the quarter rest that fill the first three beats, a treble clef is printed at the end of the third beat and is effective on the fourth beat. The fourth beat is a sixteenth-note group in treble. The lower staff stays bass."
+    }
+  ],
+  "repeat_boundaries": [
+    {
+      "kind": "forward",
+      "at_physical_bar": 3,
+      "before_physical_bar": 3,
+      "page": 1,
+      "system": 2,
+      "crop_path": "source_crops/system_02.png",
+      "evidence": "Forward-repeat barline at the start of P003, after the system-2 clef and four sharps. A thin stroke and a thick stroke stand with repeat dots on their right, in the middle spaces of both staves. The line at x 199 is the system-start line before the clef, not a separate bar.",
+      "evidence_box_px": [
+        300,
+        680,
+        360,
+        870
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_START"
+      ]
+    },
+    {
+      "kind": "backward",
+      "at_physical_bar": 15,
+      "after_physical_bar": 15,
+      "before_physical_bar": 16,
+      "page": 1,
+      "system": 6,
+      "crop_path": "source_crops/system_06.png",
+      "evidence": "End-repeat after P015, under the first-ending bracket. Repeat dots stand on the left of a thin stroke near x 887 and a thick stroke near x 895. P016 is the second ending and is not inside the repeat.",
+      "evidence_box_px": [
+        860,
+        1740,
+        920,
+        1945
+      ],
+      "evidence_space": "page_px",
+      "flags": [
+        "REPEAT_END",
+        "FIRST_ENDING"
+      ]
+    }
+  ],
+  "system_bar_counts": [
+    {
+      "system": 1,
+      "page": 1,
+      "measures": [
+        1,
+        2
+      ],
+      "barlines_x_px": [
+        262,
+        939,
+        1524
+      ]
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "measures": [
+        3,
+        5
+      ],
+      "barlines_x_px": [
+        327,
+        727,
+        1119,
+        1523
+      ]
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "measures": [
+        6,
+        8
+      ],
+      "barlines_x_px": [
+        197,
+        707,
+        1101,
+        1520
+      ]
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "measures": [
+        9,
+        11
+      ],
+      "barlines_x_px": [
+        195,
+        705,
+        1095,
+        1517
+      ]
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "measures": [
+        12,
+        14
+      ],
+      "barlines_x_px": [
+        192,
+        689,
+        1077,
+        1514
+      ]
+    },
+    {
+      "system": 6,
+      "page": 1,
+      "measures": [
+        15,
+        16
+      ],
+      "barlines_x_px": [
+        191,
+        887,
+        1508
+      ]
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "measures": [
+        17,
+        18
+      ],
+      "barlines_x_px": [
+        132,
+        863,
+        1456
+      ]
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "measures": [
+        19,
+        21
+      ],
+      "barlines_x_px": [
+        130,
+        664,
+        1070,
+        1456
+      ]
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "measures": [
+        22,
+        24
+      ],
+      "barlines_x_px": [
+        131,
+        631,
+        1037,
+        1458
+      ]
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "measures": [
+        25,
+        27
+      ],
+      "barlines_x_px": [
+        134,
+        646,
+        1055,
+        1460
+      ]
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "measures": [
+        28,
+        30
+      ],
+      "barlines_x_px": [
+        134,
+        649,
+        1037,
+        1459
+      ]
+    },
+    {
+      "system": 12,
+      "page": 2,
+      "measures": [
+        31,
+        33
+      ],
+      "barlines_x_px": [
+        136,
+        658,
+        1062,
+        1460
+      ]
+    },
+    {
+      "system": 13,
+      "page": 3,
+      "measures": [
+        34,
+        36
+      ],
+      "barlines_x_px": [
+        189,
+        719,
+        1131,
+        1515
+      ]
+    },
+    {
+      "system": 14,
+      "page": 3,
+      "measures": [
+        37,
+        39
+      ],
+      "barlines_x_px": [
+        188,
+        717,
+        1107,
+        1512
+      ]
+    },
+    {
+      "system": 15,
+      "page": 3,
+      "measures": [
+        40,
+        42
+      ],
+      "barlines_x_px": [
+        184,
+        709,
+        1111,
+        1510
+      ]
+    },
+    {
+      "system": 16,
+      "page": 3,
+      "measures": [
+        43,
+        44
+      ],
+      "barlines_x_px": [
+        182,
+        879,
+        1508
+      ]
+    },
+    {
+      "system": 17,
+      "page": 3,
+      "measures": [
+        45,
+        47
+      ],
+      "barlines_x_px": [
+        180,
+        702,
+        1099,
+        1506
+      ]
+    },
+    {
+      "system": 18,
+      "page": 3,
+      "measures": [
+        48,
+        50
+      ],
+      "barlines_x_px": [
+        181,
+        860,
+        1382,
+        1490
+      ]
+    }
+  ],
+  "page_2_top_system": "Page 2 opens with a two-bar system above the five three-bar systems. Its barlines are x 132, 863, and 1456. Those two bars are P017 and P018.",
+  "revision": 1,
+  "repair_note": "Proposed crop expansion records measured margins and containment evidence; independent verification and fresh human approval remain required.",
+  "frame_revision_status": "proposed expanded crop awaiting independent verification"
+}

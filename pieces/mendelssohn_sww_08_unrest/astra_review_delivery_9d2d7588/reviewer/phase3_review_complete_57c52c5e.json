@@ -1,0 +1,3107 @@
+{
+  "schema": "astra_phase3_consolidated_review.v1",
+  "status": "COMPLETE",
+  "historical_findings": [
+    {
+      "id": "ASTRA-001",
+      "system": 1,
+      "bar": 2,
+      "staff": 1,
+      "event_id": "m002-s1-v1-e03",
+      "category": "pitch_error",
+      "current": {
+        "id": "m002-s1-v1-e03",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "1/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Db5",
+          "F5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Second accompaniment chord is Bb4/Db5, not Db5/F5.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_01.png"
+      ],
+      "ensemble_provenance_id": "/4",
+      "ensemble_disagreement_id": "m002-s1-v1-e03",
+      "confidence": "high",
+      "proposed_correction": "Replace pitches with [Bb4,Db5], retaining onset 1/4 and duration 1/4; preserve correct chord member anchoring for tie/slur restoration.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-002",
+      "system": 1,
+      "bar": 6,
+      "staff": 1,
+      "event_id": "m006-s1-v1-e01",
+      "category": "duration_error",
+      "current": {
+        "id": "m006-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "written_type": "eighth",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "F4 has an eighth flag and augmentation dot.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_01.png"
+      ],
+      "ensemble_provenance_id": "/1156",
+      "ensemble_disagreement_id": "m006-s1-v1-e01",
+      "confidence": "high",
+      "proposed_correction": "Set duration 3/4, written eighth, one dot; do not insert an attack or rest at 1/2 in this melodic line.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-003",
+      "system": 1,
+      "bar": 6,
+      "staff": 1,
+      "event_id": "m006-s1-v1-e04",
+      "category": "extra_event",
+      "current": {
+        "id": "m006-s1-v1-e04",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "1/2",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Ab4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "No Ab4 melody notehead at 1/2; F4 is still sustained.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_01.png"
+      ],
+      "ensemble_provenance_id": "/60",
+      "ensemble_disagreement_id": "m006-s1-v1-e04",
+      "confidence": "high",
+      "proposed_correction": "Remove this spurious upper melodic event, keeping independently printed C4/Eb4 chord in the other voice.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-004",
+      "system": 1,
+      "bar": 6,
+      "staff": 1,
+      "event_id": "m006-s1-v1-e08",
+      "category": "pitch_error",
+      "current": {
+        "id": "m006-s1-v1-e08",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "1",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Gb4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Explicit natural gives G4.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_01.png"
+      ],
+      "ensemble_provenance_id": "/64",
+      "ensemble_disagreement_id": "m006-s1-v1-e08",
+      "confidence": "high",
+      "proposed_correction": "Change Gb4 to G4, explicit natural, same onset 1 and duration 1/4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-005",
+      "system": 2,
+      "bar": 7,
+      "staff": 1,
+      "event_id": "m007-s1-v1-e01",
+      "category": "missing_event",
+      "current": {
+        "id": "m007-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "Db4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Small C5 grace note precedes first main chord; upper curved connection into first main note.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_02.png"
+      ],
+      "ensemble_provenance_id": "/74",
+      "ensemble_disagreement_id": "m007-s1-v1-e01",
+      "confidence": "high",
+      "proposed_correction": "Insert grace C5 before the onset-0 upper chord, zero performed capacity contribution, preserve printed grace flag/slash and slur after detailed XML encoding check; do not replace a timed note.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-006",
+      "system": 8,
+      "bar": 43,
+      "staff": 1,
+      "event_id": "m043-s1-v1-e01",
+      "category": "missing_event",
+      "current": {
+        "id": "m043-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Small C5 grace note precedes first main chord; upper curved connection into first main note.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_08.png"
+      ],
+      "ensemble_provenance_id": "/444",
+      "ensemble_disagreement_id": "m043-s1-v1-e01",
+      "confidence": "high",
+      "proposed_correction": "Insert grace C5 before the onset-0 upper chord, zero performed capacity contribution, preserve printed grace flag/slash and slur after detailed XML encoding check; do not replace a timed note.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-007",
+      "system": 14,
+      "bar": 78,
+      "staff": 1,
+      "event_id": "m078-s1-v1-e01",
+      "category": "missing_event",
+      "current": {
+        "id": "m078-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "Db4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Small C5 grace note precedes first main chord; upper curved connection into first main note.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_14.png"
+      ],
+      "ensemble_provenance_id": "/808",
+      "ensemble_disagreement_id": "m078-s1-v1-e01",
+      "confidence": "high",
+      "proposed_correction": "Insert grace C5 before the onset-0 upper chord, zero performed capacity contribution, preserve printed grace flag/slash and slur after detailed XML encoding check; do not replace a timed note.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-008",
+      "system": 2,
+      "bar": 9,
+      "staff": 1,
+      "event_id": "m009-s1-v1-e04",
+      "category": "missing_event",
+      "current": {
+        "id": "m009-s1-v1-e04",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Db5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Final pickup chord contains Db5 and F5.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_02.png"
+      ],
+      "ensemble_provenance_id": "/98",
+      "ensemble_disagreement_id": "m009-s1-v1-e04",
+      "confidence": "high",
+      "proposed_correction": "Add F5 as chord member at onset 5/4, duration 1/4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-009",
+      "system": 2,
+      "bar": 12,
+      "staff": 2,
+      "event_id": "m012-s2-v1-e07",
+      "category": "missing_event",
+      "current": {
+        "id": "m012-s2-v1-e07",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "1",
+        "onset_q": "1",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "rest",
+        "pitches": [],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Lower upper line repeats Bb3 at onset 1.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_02.png"
+      ],
+      "ensemble_provenance_id": "/142",
+      "ensemble_disagreement_id": "m012-s2-v1-e07",
+      "confidence": "high",
+      "proposed_correction": "Replace this rest with Bb3 sixteenth, preserve independent F3 bass.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-010",
+      "system": 2,
+      "bar": 12,
+      "staff": 2,
+      "event_id": "m012-s2-v2-e09",
+      "category": "pitch_error",
+      "current": {
+        "id": "m012-s2-v2-e09",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "2",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Final lower bass voice is Gb3 below the separately present Bb3.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_02.png"
+      ],
+      "ensemble_provenance_id": "/144",
+      "ensemble_disagreement_id": "m012-s2-v2-e09",
+      "confidence": "high",
+      "proposed_correction": "Change Bb3 to Gb3 at 5/4, duration 1/4; keep Bb3 in accompaniment voice.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-011",
+      "system": 3,
+      "bar": 14,
+      "staff": 1,
+      "event_id": "m014-s1-v5-e01",
+      "category": "duration_error",
+      "current": {
+        "id": "m014-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "written_type": "eighth",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "F5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Initial F5 is a dotted eighth.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_03.png"
+      ],
+      "ensemble_provenance_id": "/156",
+      "ensemble_disagreement_id": null,
+      "confidence": "high",
+      "proposed_correction": "Set duration 3/4 and one dot; remove generated intervening rest m014-s1-v5-e03 as part of the same correction.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-012",
+      "system": 3,
+      "bar": 14,
+      "staff": 2,
+      "event_id": "m014-s2-v5-e01",
+      "category": "missing_event",
+      "current": {
+        "id": "m014-s2-v5-e01",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "F3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Initial lower chord has F3 and Ab3.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_03.png"
+      ],
+      "ensemble_provenance_id": "/162",
+      "ensemble_disagreement_id": null,
+      "confidence": "high",
+      "proposed_correction": "Add Ab3 chord member, onset 0 duration 3/4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-013",
+      "system": 3,
+      "bar": 14,
+      "staff": 1,
+      "event_id": "m014-s1-v6-e05",
+      "category": "duration_error",
+      "current": {
+        "id": "m014-s1-v6-e05",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "6",
+        "onset_q": "3/4",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Ab4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "The inner Ab4 at onset 3/4 shows a dotted eighth in the print, while earlier comparison grid retained 1/2 from SmartScore.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_03.png"
+      ],
+      "ensemble_provenance_id": "/1158",
+      "ensemble_disagreement_id": "m014-s1-v6-e05",
+      "confidence": "medium",
+      "proposed_correction": "Retain candidate duration 3/4 provisionally; do not apply the Phase 2 comparison-grid duration 1/2. Verify tie ownership and relation to initial chord in final human question.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "PROVISIONAL_REQUIRES_FINAL_HUMAN_REVIEW"
+    },
+    {
+      "id": "ASTRA-014",
+      "system": 5,
+      "bar": 30,
+      "staff": 1,
+      "event_id": "m030-s1-v1-e03",
+      "category": "pitch_error",
+      "current": {
+        "id": "m030-s1-v1-e03",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "3/4",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Ab4",
+          "C5",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Natural sign before the inner chord member applies to A4.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_05.png"
+      ],
+      "ensemble_provenance_id": "/312",
+      "ensemble_disagreement_id": "m030-s1-v1-e03",
+      "confidence": "high",
+      "proposed_correction": "Change Ab4 to A4 in the chord at onset 3/4, preserving other pitches and dotted-eighth duration.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-015",
+      "system": 5,
+      "bar": 30,
+      "staff": 2,
+      "event_id": "m030-s2-v1-e06",
+      "category": "pitch_error",
+      "current": {
+        "id": "m030-s2-v1-e06",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "1",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Db3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Last lower sixteenth is F3, at the repeated staff position.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_05.png"
+      ],
+      "ensemble_provenance_id": "/318",
+      "ensemble_disagreement_id": "m030-s2-v1-e06",
+      "confidence": "high",
+      "proposed_correction": "Replace Db3 with F3, preserve sixteenth duration.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-016",
+      "system": 8,
+      "bar": 42,
+      "staff": 1,
+      "event_id": "m042-s1-v5-e01",
+      "category": "duration_error",
+      "current": {
+        "id": "m042-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "written_type": "eighth",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Initial upper melodic F4 is a dotted eighth, not an eighth followed by a filler rest.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_08.png"
+      ],
+      "ensemble_provenance_id": "/1160",
+      "ensemble_disagreement_id": "m042-s1-v5-e01",
+      "confidence": "high",
+      "proposed_correction": "Set duration 3/4, eighth with one dot; remove only the matching nonprinted rest in this line at 1/2.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-017",
+      "system": 13,
+      "bar": 77,
+      "staff": 1,
+      "event_id": "m077-s1-v5-e01",
+      "category": "duration_error",
+      "current": {
+        "id": "m077-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "written_type": "eighth",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Initial upper melodic F4 is a dotted eighth, not an eighth followed by a filler rest.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_13.png"
+      ],
+      "ensemble_provenance_id": "/1164",
+      "ensemble_disagreement_id": "m077-s1-v5-e01",
+      "confidence": "high",
+      "proposed_correction": "Set duration 3/4, eighth with one dot; remove only the matching nonprinted rest in this line at 1/2.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-018",
+      "system": 8,
+      "bar": 43,
+      "staff": 1,
+      "event_id": "m043-s1-v1-e03",
+      "category": "pitch_error",
+      "current": {
+        "id": "m043-s1-v1-e03",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "1/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Ab4"
+        ],
+        "accidental": "natural",
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Upper run has explicit A-natural4.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_08.png"
+      ],
+      "ensemble_provenance_id": "/446",
+      "ensemble_disagreement_id": "m043-s1-v1-e03",
+      "confidence": "high",
+      "proposed_correction": "Change Ab4 to A4 at onset 1/4, retaining C4 chord member.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-019",
+      "system": 8,
+      "bar": 45,
+      "staff": 1,
+      "event_id": "m045-s1-v5-e01",
+      "category": "pitch_error",
+      "current": {
+        "id": "m045-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Ab4",
+          "C4",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Initial chord contains A-natural4, F4, C4.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_08.png"
+      ],
+      "ensemble_provenance_id": "/471",
+      "ensemble_disagreement_id": "m045-s1-v5-e01",
+      "confidence": "high",
+      "proposed_correction": "Change Ab4 to A4; retain onset 0 duration 3/4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-020",
+      "system": 8,
+      "bar": 45,
+      "staff": 1,
+      "event_id": "m045-s1-v5-e04",
+      "category": "pitch_error",
+      "current": {
+        "id": "m045-s1-v5-e04",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "Db5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Final pickup is Db5/F5.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_08.png"
+      ],
+      "ensemble_provenance_id": "/474",
+      "ensemble_disagreement_id": "m045-s1-v5-e04",
+      "confidence": "high",
+      "proposed_correction": "Replace Bb4 with F5, preserving Db5 and sixteenth duration.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-021",
+      "system": 9,
+      "bar": 49,
+      "staff": 2,
+      "event_id": "m049-s2-v1-e01",
+      "category": "missing_event",
+      "current": {
+        "id": "m049-s2-v1-e01",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "3/2",
+        "written_type": "quarter",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Eb3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "The lower staff has independently moving upper notes above sustained Eb3; candidate contains only Eb3 for this bar.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/system09_left_detail.png",
+        "reviewer/print_system_09.png"
+      ],
+      "ensemble_provenance_id": "/523",
+      "ensemble_disagreement_id": null,
+      "confidence": "medium",
+      "proposed_correction": "Restore the entire printed moving line, without deleting sustained Eb3. Partial comparison hypothesis has initial D4, two Bb3 thirty-seconds, Eb4 and repeated Bb3; exact shared stems/voice durations remain to audit before a frozen correction.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "PROVISIONAL_REQUIRES_FINAL_HUMAN_REVIEW"
+    },
+    {
+      "id": "ASTRA-022",
+      "system": 9,
+      "bar": 50,
+      "staff": 1,
+      "event_id": "m050-s1-v6-e02",
+      "category": "pitch_error",
+      "current": {
+        "id": "m050-s1-v6-e02",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "6",
+        "onset_q": "0",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "Gb5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Initial inner chord is Gb4/Bb4, distinct from high Gb5 melody.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_09.png"
+      ],
+      "ensemble_provenance_id": "/525",
+      "ensemble_disagreement_id": "m050-s1-v6-e02",
+      "confidence": "high",
+      "proposed_correction": "Change Gb5 to Gb4 in this inner chord. Keep the separately encoded melodic Gb5.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-023",
+      "system": 9,
+      "bar": 50,
+      "staff": 1,
+      "event_id": "m050-s1-v5-e01",
+      "category": "duration_error",
+      "current": {
+        "id": "m050-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "written_type": "eighth",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Gb5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Initial high Gb5 is dotted eighth.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_09.png"
+      ],
+      "ensemble_provenance_id": "/524",
+      "ensemble_disagreement_id": "m050-s1-v5-e01",
+      "confidence": "high",
+      "proposed_correction": "Set 3/4 duration; remove the generated 1/2-onset rest from this melodic line, preserving independent chord voice.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-024",
+      "system": 12,
+      "bar": 65,
+      "staff": 1,
+      "event_id": "m065-s1-v1-e03",
+      "category": "pitch_error",
+      "current": {
+        "id": "m065-s1-v1-e03",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "3/4",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Ab4",
+          "C5",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Natural on inner A4 of dotted chord.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/print_system_12.png"
+      ],
+      "ensemble_provenance_id": "/677",
+      "ensemble_disagreement_id": "m065-s1-v1-e03",
+      "confidence": "high",
+      "proposed_correction": "Change Ab4 to A4, retaining other chord pitches.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-025",
+      "system": 13,
+      "bar": 77,
+      "staff": 1,
+      "event_id": "m077-s1-v6-e10",
+      "category": "pitch_error",
+      "current": {
+        "id": "m077-s1-v6-e10",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "6",
+        "onset_q": "1",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "A3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Low upper-staff note at onset 1 is Bb3.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_13.png"
+      ],
+      "ensemble_provenance_id": "/799",
+      "ensemble_disagreement_id": "m077-s1-v6-e10",
+      "confidence": "high",
+      "proposed_correction": "Replace A3 with Bb3, retaining simultaneous upper melodic G4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-026",
+      "system": 14,
+      "bar": 83,
+      "staff": 1,
+      "event_id": "m083-s1-v1-e01",
+      "category": "pitch_error",
+      "current": {
+        "id": "m083-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "3/4",
+        "written_type": "eighth",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "Db5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "First upper melodic event is Bb4/Bb5 octave; F5 is a separate sustained voice.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/P083_084_detail.png"
+      ],
+      "ensemble_provenance_id": "/856",
+      "ensemble_disagreement_id": "m083-s1-v1-e01",
+      "confidence": "high",
+      "proposed_correction": "Replace Db5 with Bb4 and Bb5, onset 0 duration 3/4; retain F5 in independent voice.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-027",
+      "system": 14,
+      "bar": 84,
+      "staff": 1,
+      "event_id": "m084-s1-v6-e02",
+      "category": "duration_error",
+      "current": {
+        "id": "m084-s1-v6-e02",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "6",
+        "onset_q": "0",
+        "duration_q": "1",
+        "written_type": "quarter",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Eb5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": false
+      },
+      "printed": "Middle Eb5 has a dot and appears to be a dotted quarter; naturals apply to G4/G5, not Eb5.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/P083_084_detail.png"
+      ],
+      "ensemble_provenance_id": "/867",
+      "ensemble_disagreement_id": null,
+      "confidence": "medium",
+      "proposed_correction": "Do not apply working-grid E5-natural substitution. Retain Eb5 pitch. Resolve written dotted-quarter duration (3/2) versus current 1 and following rest before final freeze; carry provisional duration if uncertainty persists.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "PROVISIONAL_REQUIRES_FINAL_HUMAN_REVIEW"
+    },
+    {
+      "id": "ASTRA-028",
+      "system": 15,
+      "bar": 86,
+      "staff": 1,
+      "event_id": "m086-s1-v5-e01",
+      "category": "duration_error",
+      "current": {
+        "id": "m086-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "3/2",
+        "written_type": "quarter",
+        "dots": 1,
+        "kind": "note",
+        "pitches": [
+          "A4",
+          "C5",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Opening upper chord is dotted eighth and followed by two more chord attacks.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_15.png"
+      ],
+      "ensemble_provenance_id": "/889",
+      "ensemble_disagreement_id": "m086-s1-v5-e01",
+      "confidence": "high",
+      "proposed_correction": "Set initial chord duration 3/4; consolidate the following chords into this continuous upper musical line rather than retain overlap/phantom restart voice.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-029",
+      "system": 15,
+      "bar": 86,
+      "staff": 2,
+      "event_id": "m086-s2-v1-e01",
+      "category": "pitch_error",
+      "current": {
+        "id": "m086-s2-v1-e01",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Ab3",
+          "C4",
+          "Ebb3",
+          "F3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Initial lower note is Eb3; F3/A3/C4 accompaniment enters later, not an Ebb3/Ab3/C4/F3 chord.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_15.png"
+      ],
+      "ensemble_provenance_id": "/893",
+      "ensemble_disagreement_id": "m086-s2-v1-e01",
+      "confidence": "medium",
+      "proposed_correction": "Reconstruct initial Eb3 independent stem and accompaniment onset from print; remove Ebb3/Ab3/C4/F3 spurious simultaneity. Exact dual-stem duration remains provisional pending focused lower-voice audit.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "PROVISIONAL_REQUIRES_FINAL_HUMAN_REVIEW"
+    },
+    {
+      "id": "ASTRA-030",
+      "system": 16,
+      "bar": 92,
+      "staff": 1,
+      "event_id": "m092-s1-v6-e09",
+      "category": "pitch_error",
+      "current": {
+        "id": "m092-s1-v6-e09",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "6",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "Fb4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Last lower member in upper accompaniment is F4 without a flat.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_16.png"
+      ],
+      "ensemble_provenance_id": "/971",
+      "ensemble_disagreement_id": "m092-s1-v6-e09",
+      "confidence": "high",
+      "proposed_correction": "Replace Fb4 with F4 at 5/4; retain Bb4 and simultaneous D5 melody.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-031",
+      "system": 16,
+      "bar": 93,
+      "staff": 1,
+      "event_id": "m093-s1-v2-e09",
+      "category": "pitch_error",
+      "current": {
+        "id": "m093-s1-v2-e09",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "2",
+        "onset_q": "1",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Ab4",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Upper accompaniment has A4, not Ab4; two-flat key does not flatten A.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_16.png"
+      ],
+      "ensemble_provenance_id": "/990",
+      "ensemble_disagreement_id": "m093-s1-v2-e09",
+      "confidence": "high",
+      "proposed_correction": "Change Ab4 to A4, retaining F4 and the independent upper melody.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-032",
+      "system": 16,
+      "bar": 93,
+      "staff": 1,
+      "event_id": "m093-s1-v2-e11",
+      "category": "pitch_error",
+      "current": {
+        "id": "m093-s1-v2-e11",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "2",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Ab4",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Upper accompaniment has A4, not Ab4; two-flat key does not flatten A.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_16.png"
+      ],
+      "ensemble_provenance_id": "/992",
+      "ensemble_disagreement_id": "m093-s1-v2-e11",
+      "confidence": "high",
+      "proposed_correction": "Change Ab4 to A4, retaining F4 and the independent upper melody.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-033",
+      "system": 16,
+      "bar": 94,
+      "staff": 1,
+      "event_id": "m094-s1-v2-e03",
+      "category": "extra_event",
+      "current": {
+        "id": "m094-s1-v2-e03",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "2",
+        "onset_q": "1/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "The two accompaniment noteheads are F4 only; Bb4 is sustained in the independent melodic voice.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_16.png"
+      ],
+      "ensemble_provenance_id": "/1003",
+      "ensemble_disagreement_id": "m094-s1-v2-e03",
+      "confidence": "high",
+      "proposed_correction": "Remove Bb4 chord member from these sixteenths; preserve sustained Bb4 in voice 1.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-034",
+      "system": 16,
+      "bar": 94,
+      "staff": 1,
+      "event_id": "m094-s1-v2-e04",
+      "category": "extra_event",
+      "current": {
+        "id": "m094-s1-v2-e04",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "2",
+        "onset_q": "1/2",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "The two accompaniment noteheads are F4 only; Bb4 is sustained in the independent melodic voice.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_16.png"
+      ],
+      "ensemble_provenance_id": "/1004",
+      "ensemble_disagreement_id": "m094-s1-v2-e04",
+      "confidence": "high",
+      "proposed_correction": "Remove Bb4 chord member from these sixteenths; preserve sustained Bb4 in voice 1.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-035",
+      "system": 17,
+      "bar": 98,
+      "staff": 1,
+      "event_id": "m098-s1-v5-e03",
+      "category": "pitch_error",
+      "current": {
+        "id": "m098-s1-v5-e03",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "1/2",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Ab3",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "The lower chord member at these two attacks is Bb3.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_17.png"
+      ],
+      "ensemble_provenance_id": "/1047",
+      "ensemble_disagreement_id": "m098-s1-v5-e03",
+      "confidence": "high",
+      "proposed_correction": "Change lower member to Bb3 at 1/2 and 3/4 respectively; retain F4 and each sixteenth duration.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-036",
+      "system": 17,
+      "bar": 98,
+      "staff": 1,
+      "event_id": "m098-s1-v5-e04",
+      "category": "pitch_error",
+      "current": {
+        "id": "m098-s1-v5-e04",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "3/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "F3",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "The lower chord member at these two attacks is Bb3.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_17.png"
+      ],
+      "ensemble_provenance_id": "/1048",
+      "ensemble_disagreement_id": "m098-s1-v5-e04",
+      "confidence": "high",
+      "proposed_correction": "Change lower member to Bb3 at 1/2 and 3/4 respectively; retain F4 and each sixteenth duration.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-037",
+      "system": 17,
+      "bar": 101,
+      "staff": 2,
+      "event_id": "m101-s2-v1-e05",
+      "category": "pitch_error",
+      "current": {
+        "id": "m101-s2-v1-e05",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "1",
+        "onset_q": "1",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "B3",
+          "E3",
+          "G3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Last two lower-staff chords contain Eb3/G3, no B3.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/P099_101_detail.png"
+      ],
+      "ensemble_provenance_id": "/1083",
+      "ensemble_disagreement_id": "m101-s2-v1-e05",
+      "confidence": "high",
+      "proposed_correction": "Remove B3 and change E3 to Eb3; retain G3, onsets 1 and 5/4, durations 1/4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-038",
+      "system": 17,
+      "bar": 101,
+      "staff": 2,
+      "event_id": "m101-s2-v1-e06",
+      "category": "pitch_error",
+      "current": {
+        "id": "m101-s2-v1-e06",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "1",
+        "onset_q": "5/4",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "B3",
+          "E3",
+          "G3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Last two lower-staff chords contain Eb3/G3, no B3.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/P099_101_detail.png"
+      ],
+      "ensemble_provenance_id": "/1084",
+      "ensemble_disagreement_id": "m101-s2-v1-e06",
+      "confidence": "high",
+      "proposed_correction": "Remove B3 and change E3 to Eb3; retain G3, onsets 1 and 5/4, durations 1/4.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-039",
+      "system": 18,
+      "bar": 103,
+      "staff": 2,
+      "event_id": "m103-s2-v5-e05",
+      "category": "pitch_error",
+      "current": {
+        "id": "m103-s2-v5-e05",
+        "staff": "2",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "2",
+        "voice": "5",
+        "onset_q": "1",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "A3",
+          "C3",
+          "E3"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Repeated lower chord retains Eb3 under the two-flat key; upper E4 natural does not apply to the lower staff.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_18.png"
+      ],
+      "ensemble_provenance_id": "/1108",
+      "ensemble_disagreement_id": "m103-s2-v5-e05",
+      "confidence": "high",
+      "proposed_correction": "Change E3 to Eb3 at onset 1; retain A3 and C3.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-040",
+      "system": 1,
+      "bar": 1,
+      "staff": 1,
+      "event_id": "m001-s1-v5-e01",
+      "category": "mark_error",
+      "current": {
+        "id": "m001-s1-v5-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "5",
+        "onset_q": "0",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Db5",
+          "F5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Printed pickup fingering 3 on Db5 and 5 on F5; p and Allegro molto.",
+      "source_crop": "source_crops/page-1.png",
+      "evidence": [
+        "reviewer/print_system_01.png"
+      ],
+      "ensemble_provenance_id": "/0",
+      "ensemble_disagreement_id": null,
+      "confidence": "high",
+      "proposed_correction": "Add note-member fingerings and printed initial dynamic/tempo with proper scope. Do not retain erroneous repeated 3 from PlayScore.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-041",
+      "system": 7,
+      "bar": 38,
+      "staff": 1,
+      "event_id": "m038-s1-v1-e01",
+      "category": "mark_error",
+      "current": {
+        "id": "m038-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/4",
+        "written_type": "16th",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Db5",
+          "F5"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Separate upper slur and lower common-Db5 tie, plus third staccato chord; same printed pattern at recurrences.",
+      "source_crop": "source_crops/page-2.png",
+      "evidence": [
+        "reviewer/P038_ties_detail.png",
+        "reviewer/print_system_07.png"
+      ],
+      "ensemble_provenance_id": "/370",
+      "ensemble_disagreement_id": null,
+      "confidence": "high",
+      "proposed_correction": "Restore Db5 tie 0\u21921/4 and 3/4\u21921, slur on upper contour of each first-two-note group, staccato on 1/2 and 5/4. Enumerate each actual recurrence and endpoints before full freeze.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    },
+    {
+      "id": "ASTRA-042",
+      "system": 18,
+      "bar": 107,
+      "staff": 1,
+      "event_id": "m107-s1-v1-e01",
+      "category": "mark_error",
+      "current": {
+        "id": "m107-s1-v1-e01",
+        "staff": "1",
+        "part_id": "P1",
+        "player_id": "piano",
+        "staff_in_part": "1",
+        "voice": "1",
+        "onset_q": "0",
+        "duration_q": "1/2",
+        "written_type": "eighth",
+        "dots": 0,
+        "kind": "note",
+        "pitches": [
+          "Bb4",
+          "D4",
+          "D5",
+          "F4"
+        ],
+        "accidental": null,
+        "ties": [],
+        "tuplet": null,
+        "chord": true
+      },
+      "printed": "Pedal start below lower staff P107; release below P109, with fermatas on both terminal dotted-eighth rests.",
+      "source_crop": "source_crops/page-3.png",
+      "evidence": [
+        "reviewer/print_system_18.png"
+      ],
+      "ensemble_provenance_id": "/1138",
+      "ensemble_disagreement_id": "m107-s1-v1-e01",
+      "confidence": "high",
+      "proposed_correction": "Restore pedal start in staff2 at P107 onset0, release at printed P109 rest position, and both P109 fermatas. Exact release anchor to be frozen after final endpoint audit.",
+      "human_outcome": null,
+      "correction_applied": false,
+      "status": "SUPPORTED_CORRECTION"
+    }
+  ],
+  "additive_findings": [
+    [
+      {
+        "id": "CONT-048-bass-tie",
+        "system": 9,
+        "bar": 48,
+        "staff": 2,
+        "event_id": "m048-s2-v7-e03",
+        "category": "mark_error",
+        "current": "Eb3 dotted quarter without tie",
+        "printed": "Curve under lower Eb3 joins P048 Eb3 to P049 Eb3",
+        "proposed_correction": "Add member tie start on P048 Eb3 at0 and stop on P049 Eb3 at0; preserve both dotted-quarter durations.",
+        "evidence": [
+          "reviewer/P048_049_continuation_detail.png"
+        ],
+        "source_crop": "source_crops/page-2.png",
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-050-inner-tie",
+        "system": 9,
+        "bar": 50,
+        "staff": 1,
+        "event_id": "m050-s1-v6-e02",
+        "category": "mark_error",
+        "current": "Inner chord with erroneous high Gb5 and no tie",
+        "printed": "Inner common Bb4 has tie from initial dotted eighth to second dotted eighth",
+        "proposed_correction": "After ASTRA-022 pitch correction, tie Bb4 at0 to Bb4 at3/4, not Gb4 or high melody Gb5.",
+        "evidence": [
+          "reviewer/P050_051_continuation_detail.png"
+        ],
+        "source_crop": "source_crops/page-2.png",
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-050-bass-tie",
+        "system": 9,
+        "bar": 50,
+        "staff": 2,
+        "event_id": "m050-s2-v2-e02",
+        "category": "mark_error",
+        "current": "Gb3/Bb3 dotted quarter without tie",
+        "printed": "Lower curve connects common Gb3 to next bar Gb3; no Bb3 endpoint",
+        "proposed_correction": "Tie Gb3 P050 onset0 to P051 onset0. Do not tie Bb3.",
+        "evidence": [
+          "reviewer/P050_051_continuation_detail.png"
+        ],
+        "source_crop": "source_crops/page-2.png",
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-052-upper-guide",
+        "system": 9,
+        "bar": 52,
+        "staff": 2,
+        "event_id": "m052-s2-v5-e04",
+        "category": "other",
+        "current": "Db4 dotted eighth without tie",
+        "printed": "Curve connects Db4 at3/4 to first lower Db4 in P053",
+        "proposed_correction": "Tie P052 Db4 at3/4 to P053 Db4 at0. Retain separate slur C4 at0 to Db4 at3/4 and finger1 on Db4. Lower 5-to-1 curve is a substitution/transfer guide, not a tie to a different pitch.",
+        "evidence": [
+          "reviewer/P052_053_continuation_detail.png"
+        ],
+        "source_crop": "source_crops/page-2.png",
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-053-missing-inner",
+        "system": 9,
+        "bar": 53,
+        "staff": 1,
+        "event_id": null,
+        "category": "other",
+        "current": "No Bb4 inner dotted eighth at3/4; upper F4 lane moves to F4/Eb4, lower Db4/C4 lane ends in rest",
+        "printed": "Downstem upper inner F4 dotted eighth at0 is beamed to Bb4 dotted eighth at3/4. Lower Db4/C4 line follows diagonal guide into upper F4/Eb4 at3/4 and5/4.",
+        "proposed_correction": "Add Bb4 dotted eighth at3/4 in inner line continuing F4 at0. Reassign existing F4 eighth at3/4 and Eb4 sixteenth at5/4 to continuation of lower Db4/C4 line; retain staff1 for those two events and remove generated lower-voice rest. Keep high Bb4/A4/Db5/C5 line independent.",
+        "evidence": [
+          "reviewer/P052_053_continuation_detail.png"
+        ],
+        "source_crop": "source_crops/page-2.png",
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-077-rest-value",
+        "system": 13,
+        "bar": 77,
+        "staff": 1,
+        "event_id": "m077-s1-v6-e02",
+        "category": "other",
+        "current": "Two successive 32nd rests at0 and1/8",
+        "printed": "One sixteenth rest is printed below the dotted F4",
+        "proposed_correction": "Replace the two 32nd rests by one sixteenth rest at0 in the accompaniment lane, duration1/4. Do not merge into the melodic F4 line.",
+        "evidence": [
+          "reviewer/print_system_13.png"
+        ],
+        "source_crop": "source_crops/page-3.png",
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      }
+    ],
+    [
+      {
+        "id": "CONT-084-duration",
+        "bar": 84,
+        "system": 14,
+        "staff": 1,
+        "event_id": "m084-s1-v6-e02",
+        "event_ids": [
+          "m084-s1-v6-e02",
+          "m084-s1-v6-e04"
+        ],
+        "category": "duration_error",
+        "current": [
+          {
+            "id": "m084-s1-v6-e02",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "6",
+            "onset_q": "0",
+            "duration_q": "1",
+            "written_type": "quarter",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb5"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m084-s1-v6-e04",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "6",
+            "onset_q": "1",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "Inner Eb5 has dot and downstem without flag.",
+        "proposed_correction": "Complete ASTRA027: Eb5 duration3/2, written dotted quarter; remove following generated rest at1. Keep Eb5 flat.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P084_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-086-lower-lines",
+        "bar": 86,
+        "system": 15,
+        "staff": 2,
+        "event_id": "m086-s2-v1-e01",
+        "event_ids": [
+          "m086-s2-v1-e01",
+          "m086-s2-v1-e02",
+          "m086-s2-v1-e03",
+          "m086-s2-v1-e04",
+          "m086-s2-v1-e05"
+        ],
+        "category": "missing_event",
+        "current": [
+          {
+            "id": "m086-s2-v1-e01",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Ab3",
+              "C4",
+              "Ebb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m086-s2-v1-e02",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "A3",
+              "C4",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m086-s2-v1-e03",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "A3",
+              "C4",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m086-s2-v1-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "3/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Bb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m086-s2-v1-e05",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Bb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          }
+        ],
+        "printed": "Initial Eb3 and second D3 are shared-head eighth/upstem and sixteenth/downbeam; intervening chords are separate attacks.",
+        "proposed_correction": "Replace lower events with bass Eb3 at0 duration1/2,D3 at3/4 duration1/2; running Eb3 at0,F3/A3/C4 at1/4 and1/2,D3 at3/4,F3/Bb3 at1 and5/4, each1/4. No printed bass rests; use unprinted silence in bass gaps.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P086_087_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-087-false-rests",
+        "bar": 87,
+        "system": 15,
+        "staff": 2,
+        "event_id": "m087-s2-v1-e04",
+        "event_ids": [
+          "m087-s2-v1-e04",
+          "m087-s2-v1-e09"
+        ],
+        "category": "extra_event",
+        "current": [
+          {
+            "id": "m087-s2-v1-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m087-s2-v1-e09",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "Bass upstems are eighths with no printed rests after them.",
+        "proposed_correction": "Remove visible-rest claims at1/2 and5/4 from bass lane; retain unprinted silence. Keep running line intact.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P086_087_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-092-bass-dots",
+        "bar": 92,
+        "system": 16,
+        "staff": 2,
+        "event_id": "m092-s2-v1-e01",
+        "event_ids": [
+          "m092-s2-v1-e01",
+          "m092-s2-v1-e04",
+          "m092-s2-v1-e06",
+          "m092-s2-v1-e09"
+        ],
+        "category": "duration_error",
+        "current": [
+          {
+            "id": "m092-s2-v1-e01",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3"
+            ],
+            "accidental": "flat",
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m092-s2-v1-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m092-s2-v1-e06",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "3/4",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "D3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m092-s2-v1-e09",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "Eb3 and D3 upstem eighths each have augmentation dot.",
+        "proposed_correction": "Set bass Eb3 at0 and D3 at3/4 to duration3/4/dotted eighth; remove bass rests at1/2,5/4. Preserve separate beamed sixteenths.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P092_093_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-093-upper-rhythm",
+        "bar": 93,
+        "system": 16,
+        "staff": 1,
+        "event_id": "m093-s1-v1-e01",
+        "event_ids": [
+          "m093-s1-v1-e01",
+          "m093-s1-v1-e04",
+          "m093-s1-v1-e06",
+          "m093-s1-v1-e08",
+          "m093-s1-v1-e10"
+        ],
+        "category": "duration_error",
+        "current": [
+          {
+            "id": "m093-s1-v1-e01",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "F5"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m093-s1-v1-e04",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "F5"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m093-s1-v1-e06",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "1",
+            "onset_q": "3/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb5"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m093-s1-v1-e08",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "1",
+            "onset_q": "1",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "C5"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m093-s1-v1-e10",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "1",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "C5"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "High line is F5 dotted eighth, Eb5 eighth, C5 sixteenth.",
+        "proposed_correction": "Replace high voice by F5 at0 duration3/4; Eb5 at3/4 duration1/2; C5 at5/4 duration1/4. Remove spurious F5 attack at1/2 and C5 attack at1. Keep independent accompaniment.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/print_system_16.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-093-bass-dots",
+        "bar": 93,
+        "system": 16,
+        "staff": 2,
+        "event_id": "m093-s2-v1-e01",
+        "event_ids": [
+          "m093-s2-v1-e01",
+          "m093-s2-v1-e04"
+        ],
+        "category": "missing_event",
+        "current": [
+          {
+            "id": "m093-s2-v1-e01",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "C3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m093-s2-v1-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1",
+            "written_type": "quarter",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "C3 and F3 both have dotted-eighth upflags independent from running line.",
+        "proposed_correction": "Replace bass by C3 at0 duration3/4 and F3 at3/4 duration3/4. Remove generated bass rest. Preserve separate sixteenths and carry chord-member uncertainty separately.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P092_093_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-093-lower-A",
+        "bar": 93,
+        "system": 16,
+        "staff": 2,
+        "event_id": "m093-s2-v2-e07",
+        "event_ids": [
+          "m093-s2-v2-e07",
+          "m093-s2-v2-e08"
+        ],
+        "category": "pitch_error",
+        "current": [
+          {
+            "id": "m093-s2-v2-e07",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "1",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Ab3",
+              "C4",
+              "F3"
+            ],
+            "accidental": "flat",
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m093-s2-v2-e08",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Ab3",
+              "C4",
+              "Eb4"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          }
+        ],
+        "printed": "A is natural in the two-flat key; no A-flat sign is printed.",
+        "proposed_correction": "Change Ab3 to A3 in both final accompaniment chords. Keep other current members provisionally pending exact dense chord-member final human review.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P092_093_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-099-bass-line",
+        "bar": 99,
+        "system": 17,
+        "staff": 2,
+        "event_id": "m099-s2-v1-e01",
+        "event_ids": [
+          "m099-s2-v1-e01",
+          "m099-s2-v1-e08",
+          "m099-s2-v2-e02",
+          "m099-s2-v2-e04",
+          "m099-s2-v2-e05",
+          "m099-s2-v2-e06",
+          "m099-s2-v2-e09",
+          "m099-s2-v2-e10",
+          "m099-s2-v3-e03",
+          "m099-s2-v3-e07"
+        ],
+        "category": "pitch_error",
+        "current": [
+          {
+            "id": "m099-s2-v1-e01",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1",
+            "written_type": "quarter",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m099-s2-v1-e08",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m099-s2-v2-e02",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "0",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "A2"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m099-s2-v2-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "1/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m099-s2-v2-e05",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "1/2",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m099-s2-v2-e06",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "3/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "D3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m099-s2-v2-e09",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "1",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m099-s2-v2-e10",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "2",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m099-s2-v3-e03",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "3",
+            "onset_q": "0",
+            "duration_q": "3/4",
+            "written_type": "eighth",
+            "dots": 1,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m099-s2-v3-e07",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "3",
+            "onset_q": "3/4",
+            "duration_q": "3/4",
+            "written_type": "eighth",
+            "dots": 1,
+            "kind": "note",
+            "pitches": [
+              "D3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "Initial bass is A2 dotted eighth, then D3 dotted eighth; Eb3 only occurs in running chords.",
+        "proposed_correction": "Delete spurious sustained Eb3 and extra rest/voice3 split. Bass line A2 at0 duration3/4,D3 at3/4 duration3/4. Running line A2 at0,D3 at3/4, Eb3/F3 chords at1/4,1/2,1,5/4, each1/4. Retain shared-head dual-stem interpretation.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P099_101_lower_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-100-bass-dots",
+        "bar": 100,
+        "system": 17,
+        "staff": 2,
+        "event_id": "m100-s2-v1-e01",
+        "event_ids": [
+          "m100-s2-v1-e01",
+          "m100-s2-v1-e04"
+        ],
+        "category": "duration_error",
+        "current": [
+          {
+            "id": "m100-s2-v1-e01",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "C3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m100-s2-v1-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1",
+            "written_type": "quarter",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Bb2"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "C3 and Bb2 each dotted eighth at beginning of each three-sixteenth group.",
+        "proposed_correction": "Set C3 onset0 duration3/4; Bb2 onset3/4 duration3/4 (not onset1/2 duration1). Running line stays unchanged.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P099_101_lower_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-101-missing-bass",
+        "bar": 101,
+        "system": 17,
+        "staff": 2,
+        "event_id": "m101-s2-v1-e01",
+        "event_ids": [
+          "m101-s2-v1-e01",
+          "m101-s2-v1-e02",
+          "m101-s2-v1-e03",
+          "m101-s2-v1-e04",
+          "m101-s2-v1-e05",
+          "m101-s2-v1-e06"
+        ],
+        "category": "missing_event",
+        "current": [
+          {
+            "id": "m101-s2-v1-e01",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "0",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "A2"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m101-s2-v1-e02",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m101-s2-v1-e03",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1/2",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "Eb3",
+              "F3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m101-s2-v1-e04",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "3/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "G2"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m101-s2-v1-e05",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "1",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "B3",
+              "E3",
+              "G3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          },
+          {
+            "id": "m101-s2-v1-e06",
+            "staff": "2",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "2",
+            "voice": "1",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "B3",
+              "E3",
+              "G3"
+            ],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": true
+          }
+        ],
+        "printed": "A2 and G2 have dotted-eighth upflags independent from sixteenth downstems.",
+        "proposed_correction": "Add sustained bass lane A2 at0 duration3/4 and G2 at3/4 duration3/4. Keep existing sixteenth attacks and apply ASTRA037/038 to final two chords.",
+        "source_crop": "source_crops/page-3.png",
+        "evidence": [
+          "reviewer/P099_101_lower_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      },
+      {
+        "id": "CONT-041-restart",
+        "bar": 41,
+        "system": 7,
+        "staff": 1,
+        "event_id": "m041-s1-v6-e02",
+        "event_ids": [
+          "m041-s1-v6-e02",
+          "m041-s1-v6-e07",
+          "m041-s1-v6-e09",
+          "m041-s1-v8-e03",
+          "m041-s1-v8-e10",
+          "m041-s1-v8-e12"
+        ],
+        "category": "other",
+        "current": [
+          {
+            "id": "m041-s1-v6-e02",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "6",
+            "onset_q": "0",
+            "duration_q": "3/4",
+            "written_type": "eighth",
+            "dots": 1,
+            "kind": "note",
+            "pitches": [
+              "E4"
+            ],
+            "accidental": "natural",
+            "ties": [
+              "start"
+            ],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m041-s1-v6-e07",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "6",
+            "onset_q": "3/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "E4"
+            ],
+            "accidental": null,
+            "ties": [
+              "stop"
+            ],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m041-s1-v6-e09",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "6",
+            "onset_q": "1",
+            "duration_q": "1/2",
+            "written_type": "eighth",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m041-s1-v8-e03",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "8",
+            "onset_q": "0",
+            "duration_q": "1",
+            "written_type": "quarter",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m041-s1-v8-e10",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "8",
+            "onset_q": "1",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "rest",
+            "pitches": [],
+            "accidental": null,
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          },
+          {
+            "id": "m041-s1-v8-e12",
+            "staff": "1",
+            "part_id": "P1",
+            "player_id": "piano",
+            "staff_in_part": "1",
+            "voice": "8",
+            "onset_q": "5/4",
+            "duration_q": "1/4",
+            "written_type": "16th",
+            "dots": 0,
+            "kind": "note",
+            "pitches": [
+              "E4"
+            ],
+            "accidental": "natural",
+            "ties": [],
+            "tuplet": null,
+            "chord": false
+          }
+        ],
+        "printed": "Same lower upper-staff E4 line continues through final sixteenth; no new independent voice.",
+        "proposed_correction": "Single line E4 at0 duration3/4,tied to E4 at3/4 duration1/4, printed rest at1 duration1/4,E4 at5/4 duration1/4. Delete generated extra v8 rests and overlong v6 rest; retain upper sixteenth line separately.",
+        "source_crop": "source_crops/page-2.png",
+        "evidence": [
+          "reviewer/P040_041_continuation_detail.png"
+        ],
+        "ensemble_provenance_id": null,
+        "ensemble_disagreement_id": null,
+        "confidence": "high",
+        "status": "SUPPORTED_CORRECTION",
+        "human_outcome": null,
+        "correction_applied": false
+      }
+    ]
+  ],
+  "refinements": "reviewer/phase3_member_refinements_57c52c5e.json",
+  "authoritative_correction_specification": "reviewer/phase3_notation_spec_complete_57c52c5e.json",
+  "precedence": "Complete anchored specification supersedes working field values and preliminary narrative errors listed in refinements; retained historical evidence is unchanged.",
+  "coverage": {
+    "physical_regions": 109,
+    "systems": 18,
+    "candidate_events": 1156,
+    "proposed_events": 1147,
+    "quality_findings": 1584,
+    "provenance_records": 1166,
+    "disagreements": 530
+  },
+  "ordinary_uncertainties": [
+    "P006/P042/P077 tie versus phrase",
+    "P049 lower voice timing",
+    "P093 lower chord members",
+    "P052 fingering transfer guide",
+    "P050/P053 diagonal hand guides representation"
+  ],
+  "human_outcome": null
+}

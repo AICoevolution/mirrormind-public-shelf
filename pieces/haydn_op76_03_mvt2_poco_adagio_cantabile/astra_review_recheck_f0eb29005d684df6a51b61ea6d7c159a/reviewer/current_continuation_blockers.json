@@ -1,0 +1,25 @@
+{
+  "status": "BLOCKED_INCOMPLETE_AUDIT",
+  "kind": "handoff",
+  "phase": 3,
+  "phase3_frozen": false,
+  "human_outcome": null,
+  "needs_human": false,
+  "checkpoint": "CHECKPOINT_CONTINUATION.json",
+  "pending_evidence": "reviewer/PHASE3_CONTINUATION_77339f0d.md",
+  "integrity_evidence": "reviewer/checkpoint_integrity_77339f0d.json",
+  "issues": [
+    {
+      "id": "HISTORICAL-MANIFEST-PATH-BINDING",
+      "owner": "Astra",
+      "human_decision_required": false,
+      "reason": "Historical checkpoint nested closure expects old RESUME_MANIFEST.json at the now-current manifest path. Continuation adapter has no historical-path remapping; preserving immutable files prevents local repair. Controller contract/validator repair needed."
+    },
+    {
+      "id": "INCOMPLETE-PHASE3-ATTRIBUTE-CLOSURE",
+      "owner": "Astra",
+      "human_decision_required": false,
+      "reason": "Finish directed notation endpoint/beam/topology and ensemble attribute audit, then freeze and complete correction/delivery. Current new progress is saved; no readiness claim."
+    }
+  ]
+}

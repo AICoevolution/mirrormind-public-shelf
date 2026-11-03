@@ -1,0 +1,5 @@
+# Continuation after complete candidate audit
+
+Systems01–38 complete: P001–P174, 696 bar/staff units. Phase3 findings, exact input hashes, ensemble recheck and freeze now finalized. No source candidate changes. Do not rerun record scripts: later corrections in records (including G4 at P165 violin, C6 at P172 violin, 32nd grace flags and cross-system endpoints) supersede original script values. Preserve every accepted audit byte after release.
+
+Next obtain/verify audit host release, read released technical inputs, implement phase3_review.json targets into a new delivery_final XML. Every target includes original_target_xml where applicable. New replace_events specifications use minimal continuous lines, no invented rests. Resolve any newly discovered interpretation using a numbered frozen erratum, not by editing the accepted audit. Keep all human_attention stable IDs and explicit provisional treatments. Stage4 topology, primary host release, all Stage5 checks and final UNVERIFIED package remain pending.

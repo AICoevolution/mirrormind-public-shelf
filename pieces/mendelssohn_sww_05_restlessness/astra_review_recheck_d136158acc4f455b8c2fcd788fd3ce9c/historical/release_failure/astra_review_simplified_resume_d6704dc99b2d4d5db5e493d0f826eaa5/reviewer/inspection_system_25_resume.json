@@ -1,0 +1,101 @@
+{
+  "system": 25,
+  "observations": [
+    {
+      "bar": 75,
+      "staff": "1",
+      "reading": "Quarter chords C#5/F#5/C#6,B4/B5,A#4/A#5,A#4/D#5/A#5,G#4/G#5,F#4/F#5 match. sf0; slurs0->2,3->5; diminuendo3->5. Fingers2 innerF#5 initial,4 at2,5/2 at3,4 at4 and5."
+    },
+    {
+      "bar": 75,
+      "staff": "2",
+      "reading": "D#3 F#3 B3 F#3 C#3 F#3 B#2 F#3 G#3 F#3 B#2 F#3 eighths agree; explicit sharpB2@3. Fingers3 initial,4 at2."
+    },
+    {
+      "bar": 76,
+      "staff": "1",
+      "reading": "Quarter octaves F#4/5,E#4/5,D#4/5,C#4/5,C#4/5,C#4/5 match. Slur0->2."
+    },
+    {
+      "bar": 76,
+      "staff": "2",
+      "reading": "C#3 G#3 B-natural3 G#3 [D#3,B3] G#3 [E#3,B3] G#3 [D#3,B3] G#3 [E#3,B3] G#3 eighths. Candidate missing B3 chord member at5. NaturalB3@1."
+    },
+    {
+      "bar": 77,
+      "staff": "1",
+      "reading": "C#4/A#4/C#5 quarter0 G#4/B4 quarter1 F#4/A#4 quarter2 C#5 quarter3 B4 quarter4 G#4 quarter5, plus D#4 dotted-half3. Candidate matches except unprinted initial v2 dotted-half rest. Slurs0->2,3->5; dimin. near1.5. Fingers5/4 initial."
+    },
+    {
+      "bar": 77,
+      "staff": "2",
+      "reading": "A#3 F#3 B3 F#3 C#4 F#3 B2 D#3 G#3 B3 G#3 D#3 eighths match. Fingers1 initial,3 .5,2 2.5."
+    },
+    {
+      "bar": 78,
+      "staff": "1",
+      "reading": "Held F#4 dotted half0 E#4 dotted half3 with phrasing slur0->3, not tie. Lower eighth rest0 then C#4 B#3 C#4 D#4 C#4 B-natural3 at3, followed across staff by G#3 E#3 C#3 B-natural2 G#2 at3.5..5.5, all one downstem beam group from3. Current B#3 quarter3 wrong pitch/duration; extra half rest4 unprinted. Fingers5 initial,4 held3."
+    },
+    {
+      "bar": 78,
+      "staff": "2",
+      "reading": "C#3 dotted half0 and dotted-half rest3. Separate A#3 eighth0 (flagged); no rest.5 or half rest1. Upper stream crosses here after3; candidate B3 at3 duplicates upper B-natural3 and must be removed. Retain subsequent eighth pitches but route into same upper moving voice across staff. Fingers1 crossingG#3@3.5,2 E#3@4,4 C#3@4.5,1 B2@5,3 G#2@5.5. Ordinary barlines."
+    }
+  ],
+  "corrections": [
+    {
+      "event_id": "m076-s2-v5-e11",
+      "before": "E#3",
+      "after": "E#3,B3"
+    },
+    {
+      "event_id": "m077-s1-v2-e02",
+      "after": "delete unprinted rest"
+    },
+    {
+      "event_id": "m078-s1-v2-e09",
+      "before": "B#3 quarter3",
+      "after": "B3 natural eighth3; start cross-staff beam"
+    },
+    {
+      "event_id": "m078-s1-v2-e10",
+      "after": "delete unprinted half rest"
+    },
+    {
+      "event_ids": [
+        "m078-s2-v1-e03",
+        "m078-s2-v1-e04",
+        "m078-s2-v1-e05"
+      ],
+      "after": "delete unprinted rests and duplicate B3"
+    },
+    {
+      "event_ids": [
+        "m078-s2-v1-e07",
+        "m078-s2-v1-e08",
+        "m078-s2-v1-e09",
+        "m078-s2-v1-e10",
+        "m078-s2-v1-e11"
+      ],
+      "after": "preserve pitches/onsets; assign same moving voice as m078-s1-v2-e09, staff2; joined beam"
+    }
+  ],
+  "pending": [
+    "Close P078 cross-staff evidence and final beam membership",
+    "Final marks targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_25.png",
+  "candidate_packet": "candidate_packets/system_25.json",
+  "bars": [
+    75,
+    76,
+    77,
+    78
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

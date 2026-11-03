@@ -1,0 +1,18 @@
+{
+  "schema": "astra_checkpoint_integrity_check.v1",
+  "status": "BLOCKED_HISTORICAL_CLOSURE",
+  "checkpoint_path": "CHECKPOINT.json",
+  "checkpoint_sha256": "6bf6f43b2c6fa2b429acacf606c5d02daec29decc3d731514fb2acd236370435",
+  "direct_checkpoint_closure_mismatches": [
+    {
+      "path": "RESUME_MANIFEST.json",
+      "expected": "4e4ba56b93c2e1913b8293426738bd85969e628235f5d8806f574bcef4812172",
+      "actual": "cb6c2f532077f44d3fdb494673e745caf2167f6efab2041bdb9a2b49786ff409"
+    }
+  ],
+  "controller_manifest_closure_matches": true,
+  "historical_manifest_preserved_sha256": "4e4ba56b93c2e1913b8293426738bd85969e628235f5d8806f574bcef4812172",
+  "adapter": "domains/music/omr_checkpoints.py::_review_phase3_checkpoint",
+  "adapter_dependency": "phase3_checkpoint(CHECKPOINT_CONTINUATION.json) calls _review_phase3_checkpoint on historical CHECKPOINT.json, which calls verify_closure(review, saved.files) without remapping RESUME_MANIFEST.json to historical/RESUME_MANIFEST.json.",
+  "safe_repair_constraint": "Do not replace either immutable manifest or historical checkpoint. Controller must reconcile the historical path binding in the continuation validator or supply a compatible continuation contract. No musical finding or human answer can repair this path/hash mismatch."
+}

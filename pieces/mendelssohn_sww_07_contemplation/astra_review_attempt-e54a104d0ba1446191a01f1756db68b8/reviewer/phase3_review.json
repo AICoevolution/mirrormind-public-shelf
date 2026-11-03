@@ -1,0 +1,1780 @@
+{
+  "schema": "print_first_candidate_audit.v1",
+  "complete": true,
+  "phase": 3,
+  "candidate_modified": false,
+  "candidate_sha256": "e349d95afec5456b27035b995e0ce95bcb3d74a2f631471d251fcbd5cd12956a",
+  "coverage": {
+    "pages": 2,
+    "systems": 12,
+    "physical_bars": 41,
+    "staves_per_bar": 2,
+    "bar_staff_units": 82
+  },
+  "findings": [
+    {
+      "system": 1,
+      "physical_bars": [
+        1,
+        3
+      ],
+      "inspection": "reviewer/inspection_system_01.json",
+      "inspection_sha256": "51fe0470b1d1ba6c48a5b88d30a966c723c7b90a016ee34f172c537c6e698251",
+      "observations": {
+        "core": "Examined all noteheads in bars 1\u20133 on both staves. The candidate systematically adds lower tones to melody chords, omits upper triplet accompaniment, and has pitch errors. The bass has sparse quarter attacks, not continuous invented rests. Initial printed triplet threes apply to groups of rest+two eighths and three eighths. Subsequent matching accompaniment continues the triplet pattern without repeated numerals. No grace notes or chromatic glyphs in this system.",
+        "marks": "Candidate exact_mark_ledger has empty items/candidate_marks/candidate_route. Print has Andante espressivo, p, pedal signs, fingering and melody slurs. Initial curved arcs over 3 are tuplet brackets, not phrase slurs or finger substitutions. Lower Bb2 at 1/3 in bar1 has fingering3 below. Upper Eb4 at bar1 beat4 has fingering4 and slur to bar2 Eb4 beat4. Bar2 fingers: melody G4=5 Ab4=4 Bb4=5 Eb4=3; accompaniment first G3=1 Bb3=2 Eb4=3 Bb3=1. Bar3 D4 beat2=3; Eb4 beat3 substitution45; D4 final eighth=5. Lower second-half upper arpeggio Eb3=1 G3=2 C4=4; lower arpeggio G2=2 C3=1 Eb3=2 C3=1.",
+        "route": "Forward repeat before physical2 on both staves. No ending here. Ordinary boundary2/3. Candidate has no route payload.",
+        "reader_consultation": "Read all three reader claims for physical1\u20133. Each contains omissions, wrong durations or wrong voice/staff associations. SmartScore correctly reads lower Bb2 at initial 1/3 but misses Eb3 at4/3. PlayScore supplies correct melody Eb4 at1:3 and Ab4/Bb4 at2:1.5/2 but omits G4 at2:0. Audiveris confuses initial tuplets with accent/strong-accent. None is safe as a wholesale replacement."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar1 staff1 melody",
+          "before_ids": [
+            "m001-s1-v1-e01",
+            "m001-s1-v1-e03",
+            "m001-s1-v1-e05",
+            "m001-s1-v1-e05-pitch-2"
+          ],
+          "after": "Retain half rest at0 and quarter rest at2; replace Bb3/D4 chord at3 with single Eb4 quarter. Stem up."
+        },
+        {
+          "scope": "bar1 staff1 accompaniment",
+          "before_ids": [
+            "m001-s1-v2-e02",
+            "m001-s1-v2-e04",
+            "m001-s1-v2-e06",
+            "m001-s1-v2-e07"
+          ],
+          "after": "Two half-bar triplet patterns: R G3 Bb3 Eb4 Bb3 G3, at 0,1/3,2/3,1,4/3,5/3 and at 2,7/3,8/3,3,10/3,11/3; each duration1/3, eighth type with3:2. First group beams notes1/3\u20132/3 and1\u20135/3; repeat in second half. Stem down. Add missing notes with new IDs."
+        },
+        {
+          "scope": "bar1 staff2",
+          "before_ids": [
+            "m001-s2-v1-e03",
+            "m001-s2-v1-e08",
+            "m001-s2-v2-e06",
+            "m001-s2-v2-e14"
+          ],
+          "after": "e03 Ab2->Bb2; e08 G2->Bb2. Delete unprinted bass Bb1 at1 and bass rest at3; retain Eb2 quarters0 and2 with unprinted gaps, not fabricated rests. All lower arpeggio eighths need3:2 time-modification and beam grouping."
+        },
+        {
+          "scope": "bar2 staff1 melody",
+          "before_ids": [
+            "m002-s1-v1-e01",
+            "m002-s1-v1-e05",
+            "m002-s1-v1-e07",
+            "m002-s1-v1-e10"
+          ],
+          "after": "Single notes G4@0 dur3/2, Ab4@3/2 dur1/2, Bb4@2 dur1, Eb4@3 dur1; remove all extra chord members."
+        },
+        {
+          "scope": "bar2 staff1 accompaniment",
+          "before_ids": [
+            "m002-s1-v2-e02",
+            "m002-s1-v2-e03",
+            "m002-s1-v2-e04",
+            "m002-s1-v2-e06",
+            "m002-s1-v2-e08",
+            "m002-s1-v2-e09",
+            "m002-s1-v2-e11",
+            "m002-s1-v2-e12"
+          ],
+          "after": "Two patterns R G3 Bb3 Eb4 Bb3 G3, eighth triplets as bar1; restore omitted notes and exact onsets. Stem down."
+        },
+        {
+          "scope": "bar2 staff2",
+          "before_ids": [
+            "m002-s2-v1-e11",
+            "m002-s2-v2-e06",
+            "m002-s2-v2-e14"
+          ],
+          "after": "C3 at7/3->Bb2. Remove unprinted bass rests at1/3-quarter gaps1 and3; preserve Eb2 quarters at0 and2. All arpeggios3:2."
+        },
+        {
+          "scope": "bar3 staff1",
+          "before_ids": [
+            "m003-s1-v1-e01",
+            "m003-s1-v1-e04",
+            "m003-s1-v1-e07",
+            "m003-s1-v1-e09",
+            "m003-s1-v2-e02",
+            "m003-s1-v2-e03",
+            "m003-s1-v2-e05",
+            "m003-s1-v2-e06",
+            "m003-s1-v2-e08"
+          ],
+          "after": "Melody Ab4@0 dur1, D4@1 dur1, Eb4@2 dur3/2, D4@7/2 dur1/2. Remove extra chord tones. Accompaniment first half R Ab3 Bb3 D4 Bb3 Ab3 in eighth triplets; no printed upper accompaniment half-rest at2 (remove candidate e08)."
+        },
+        {
+          "scope": "bar3 staff2",
+          "before_ids": [
+            "m003-s2-v1-e01",
+            "m003-s2-v2-e02",
+            "m003-s2-v1-e03",
+            "m003-s2-v1-e04",
+            "m003-s2-v1-e05",
+            "m003-s2-v2-e06",
+            "m003-s2-v1-e07",
+            "m003-s2-v1-e08",
+            "m003-s2-v1-e09",
+            "m003-s2-v2-e10",
+            "m003-s2-v1-e11",
+            "m003-s2-v2-e12",
+            "m003-s2-v1-e13",
+            "m003-s2-v2-e14",
+            "m003-s2-v1-e15",
+            "m003-s2-v2-e16",
+            "m003-s2-v1-e17",
+            "m003-s2-v2-e18",
+            "m003-s2-v1-e19",
+            "m003-s2-v2-e20"
+          ],
+          "after": "First half R Bb2 D3 F3 D3 Bb2 eighth triplets, bass Bb1 quarter0. Second half upper arpeggio R Eb3 G3 C4 G3 Eb3 and lower R G2 C3 Eb3 C3 G2 in eighth triplets, bass C2 quarter2 (missing). Remove extra chord Bb3 at8/3 and correct F3@3->C4, Eb3@10/3->G3, D3@11/3->Eb3 in upper arpeggio. Separate bass from simultaneous lower arpeggio, retain provenance."
+        },
+        {
+          "scope": "marks and route system1",
+          "before": "All absent",
+          "after": "Add print-supported marks enumerated in observations. Pedal start bar1 at0, release end bar2; pedal start bar3 at0/release before2, start2/release at end. Slur bar1:3->bar2:3, bar3:0->bar3:2, and bar3:7/2 across system into4. Forward repeat bar2 left."
+        }
+      ],
+      "exact_event_plan": "reviewer/opening_event_plan.json",
+      "later_phase_checks": [
+        "Serialization and topology in Phase4",
+        "Visual/structural/layer/playback checks in Phase5",
+        "Shared-attack rendering and real playback must be verified; no current XML certification."
+      ]
+    },
+    {
+      "system": 2,
+      "physical_bars": [
+        4,
+        7
+      ],
+      "inspection": "reviewer/inspection_system_02.json",
+      "inspection_sha256": "fa4500ae16f8f369451958d06de75110a66cd33761b0da83a233f20570cf3fcd",
+      "observations": {
+        "core": "Inspected printed bars4\u20137 and compared candidate event lists. Bar4 melody is correct C4 dotted-quarter,F4 eighth,Ab4 dotted-quarter,F4 eighth. Bar5 has severe phantom/fragmented voices and missing melody/accompaniment; requires precise reconstruction. Bar6 repeats opening theme but candidate again adds chord tones and loses triplet accompaniment. Bar7 closing upper note is Eb4, agreeing with candidate. No grace notes.",
+        "marks": "All missing from candidate. Bar4 starts Ped.; fingers melody C4 substitution4->1,F4=2,Ab4=3,F4=1; crescendo opens near Ab4 and ends before final F4. Bass Ab2 at5/3 fingering1, Ab2 at2 fingering3, C3 at7/3 fingering4. Bar5 sf, Ped., diminuendo hairpin over first quarter, dim. above beat3. Fingers first melody Eb5=5,next D5=5, later C5=5,Bb4=4,final upper note=3. Lower F3 first accompaniment note=3. Bar6 Ped., melody5,4,5,3 and upper accompaniment1,2,3,1. Bar7 Ped. at0 and2 with releases before2 and end; melody Eb4 final=4; lower moving voices fingers upper1,2,4 and lower2,1,2,1.",
+        "spans": "Bar3 last D4 slurs into bar4 C4 and onward across bar4 to bar5 D5 near beat3. Bar4 lower Ab2 at5/3 ties to Ab2 at2. Bar5 short arcs connect Eb5->D5 (phrase slur, different pitch), D5->D5 (tie), and beamed descent (slur). Need resolve exact melody rhythmic endpoints. Bar7 Eb4 final eighth starts a slur to bar8 F4; this is not a tie.",
+        "route": "No repeat/ending boundary within this system. Four bars, each common-time full capacity.",
+        "bar5_tie_member_resolution": "bar5_upper.png confirms melodyD5quarter at1 tied toD5eighth at2, thenC5eighth5/2,Bb4eighth3,Ab4eighth7/2. MelodyEb5quarter0->D5quarter1 is slur, not tie. Side-by-side system_02_large.png resolves long incoming slur from4 toD5 at2: its endpoint is immediately before the second D5 stem, not the earlier quarterD5 at1. This supersedes the provisional endpoint1 interpretation. Short descent slurD5@2->Ab4@7/2. The arc with printed3 belowD5 is accompaniment triplet bracket/number, not a melody slur. Exact proposed targets audit-m005-s1-melody-q1-D5 -> audit-m005-s1-melody-q2-D5 for tie; D5 accompaniment is octave4 and never a tie member here."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar4 staff2",
+          "before_ids": [
+            "m004-s2-v1-e01",
+            "m004-s2-v2-e02",
+            "m004-s2-v1-e03",
+            "m004-s2-v1-e04",
+            "m004-s2-v1-e05",
+            "m004-s2-v2-e06",
+            "m004-s2-v1-e07",
+            "m004-s2-v1-e08",
+            "m004-s2-v1-e09",
+            "m004-s2-v2-e10",
+            "m004-s2-v1-e11",
+            "m004-s2-v1-e12",
+            "m004-s2-v1-e13",
+            "m004-s2-v2-e14",
+            "m004-s2-v1-e15",
+            "m004-s2-v1-e16"
+          ],
+          "after": "Upper arpeggio R Ab2 C3 F3 C3 Ab2, then R C3 F3 Ab3 F3 C3, all eighth triplets. Remove spurious C3 chord member at1 and F3 member from Ab3@3. Bass Ab1 quarter0, Ab1+Ab2 quarter2; delete extra bass Ab1@1 and unprinted quarter rest@3. Tie arpeggio Ab2@5/3 to bass Ab2@2. Do not force this tie into a separate sounding attack."
+        },
+        {
+          "scope": "bar5 staff1",
+          "before_ids": [
+            "m005-s1-v1-e01",
+            "m005-s1-v3-e02",
+            "m005-s1-v5-e03",
+            "m005-s1-v6-e04",
+            "m005-s1-v6-e05",
+            "m005-s1-v1-e06",
+            "m005-s1-v6-e07",
+            "m005-s1-v1-e08",
+            "m005-s1-v5-e09",
+            "m005-s1-v6-e10",
+            "m005-s1-v6-e11",
+            "m005-s1-v5-e12",
+            "m005-s1-v6-e13",
+            "m005-s1-v1-e14",
+            "m005-s1-v6-e15",
+            "m005-s1-v6-e16",
+            "m005-s1-v5-e17",
+            "m005-s1-v6-e18"
+          ],
+          "after": "Delete unrelated v1/v3 fragments/rests. Establish two printed voices: upper melody begins Eb5 quarter0, D5 quarter1 tied to D5 at2; accompaniment quarter rest0, then Ab4 F4 D4 eighth triplet1,4/3,5/3; same triplet pitches at2,7/3,8/3 and3,10/3,11/3. Upper descent after2 reads D5 C5 Bb4 Ab4, four beamed eighths at2,5/2,3,7/2. Retain close crop for endpoint recheck."
+        },
+        {
+          "scope": "bar5 staff2",
+          "before_ids": [
+            "m005-s2-v1-e01",
+            "m005-s2-v2-e02",
+            "m005-s2-v1-e03",
+            "m005-s2-v1-e04",
+            "m005-s2-v1-e05",
+            "m005-s2-v2-e06",
+            "m005-s2-v1-e07",
+            "m005-s2-v1-e08",
+            "m005-s2-v1-e09",
+            "m005-s2-v1-e10",
+            "m005-s2-v1-e11",
+            "m005-s2-v1-e12",
+            "m005-s2-v1-e13",
+            "m005-s2-v1-e14"
+          ],
+          "after": "Bass Bb1+Bb2 quarter0 then unprinted silence; delete long fabricated rest. Upper arpeggio R F3 Ab3 Bb3 Ab3 F3 then Bb3 Ab3 F3 Bb3 Ab3 F3, all1/3 eighth triplets. Candidate second half incorrectly has Ab3,G3,F3 at3,10/3,11/3: correct to Bb3,Ab3,F3."
+        },
+        {
+          "scope": "bar6 staff1",
+          "before_ids": [
+            "m006-s1-v1-e01",
+            "m006-s1-v2-e02",
+            "m006-s1-v2-e03",
+            "m006-s1-v2-e04",
+            "m006-s1-v1-e05",
+            "m006-s1-v2-e06",
+            "m006-s1-v1-e07",
+            "m006-s1-v2-e08",
+            "m006-s1-v2-e09",
+            "m006-s1-v1-e10",
+            "m006-s1-v2-e11",
+            "m006-s1-v2-e12",
+            "m006-s1-v2-e13"
+          ],
+          "after": "Melody G4 dotted-quarter0, Ab4 eighth3/2, Bb4 quarter2,Eb4 quarter3, all single pitches. Upper accompaniment two identical R G3 Bb3 Eb4 Bb3 G3 eighth-triplet half-bars. Remove spurious 16ths and rests."
+        },
+        {
+          "scope": "bar6 staff2",
+          "before_ids": [
+            "m006-s2-v1-e01",
+            "m006-s2-v2-e02",
+            "m006-s2-v1-e03",
+            "m006-s2-v1-e04",
+            "m006-s2-v1-e05",
+            "m006-s2-v2-e06",
+            "m006-s2-v1-e07",
+            "m006-s2-v1-e08",
+            "m006-s2-v1-e09",
+            "m006-s2-v2-e10",
+            "m006-s2-v1-e11",
+            "m006-s2-v1-e12",
+            "m006-s2-v1-e13",
+            "m006-s2-v2-e14",
+            "m006-s2-v1-e15",
+            "m006-s2-v1-e16"
+          ],
+          "after": "Two half-bars R Bb2 Eb3 G3 Eb3 Bb2 eighth triplets. Bass Eb2 quarters0,2 only. Correct first-half octave errors Eb3/G3/Bb3/G3/Eb3->Bb2/Eb3/G3/Eb3/Bb2; second-half D3@7/3->Bb2,G3@10/3->Eb3. Delete bass Bb2@1 and rest@3."
+        },
+        {
+          "scope": "bar7 staff1",
+          "before_ids": [
+            "m007-s1-v1-e01",
+            "m007-s1-v2-e02",
+            "m007-s1-v2-e03",
+            "m007-s1-v1-e04",
+            "m007-s1-v2-e05",
+            "m007-s1-v2-e06",
+            "m007-s1-v1-e07",
+            "m007-s1-v1-e08"
+          ],
+          "after": "Melody Ab4 quarter0,D4 quarter1,Eb4 dotted-quarter2,Eb4 eighth7/2 slurred to F4 in8. First-half accompaniment R Ab3 Bb3 D4 Bb3 Ab3 eighth triplets; no authored upper accompaniment rests in second half."
+        },
+        {
+          "scope": "bar7 staff2",
+          "before_ids": [
+            "m007-s2-v1-e01",
+            "m007-s2-v2-e02",
+            "m007-s2-v1-e03",
+            "m007-s2-v1-e04",
+            "m007-s2-v1-e05",
+            "m007-s2-v2-e06",
+            "m007-s2-v1-e07",
+            "m007-s2-v1-e08",
+            "m007-s2-v1-e09",
+            "m007-s2-v2-e10",
+            "m007-s2-v1-e11",
+            "m007-s2-v1-e12",
+            "m007-s2-v1-e13",
+            "m007-s2-v2-e14",
+            "m007-s2-v1-e15",
+            "m007-s2-v1-e16"
+          ],
+          "after": "First-half R Bb2 D3 F3 D3 Bb2 eighth triplets. Second-half two arpeggio lines R Eb3 G3 C4 G3 Eb3 and R G2 C3 Eb3 C3 G2 eighth triplets. Bass Bb1 quarter0,C2 quarter2. Add missing lower arpeggio, correct upper chord and pitch errors, remove invented bass rests."
+        }
+      ],
+      "exact_event_plan": "reviewer/opening_event_plan.json",
+      "later_phase_checks": [
+        "Serialization and topology in Phase4",
+        "Visual/structural/layer/playback checks in Phase5",
+        "Shared-attack rendering and real playback must be verified; no current XML certification."
+      ]
+    },
+    {
+      "system": 3,
+      "physical_bars": [
+        8,
+        11
+      ],
+      "inspection": "reviewer/inspection_system_03.json",
+      "inspection_sha256": "9871ec8100a1c8815954e9de7ac9d3cf0ba17e4ec5329aa4baae7e8fa991632f",
+      "observations": {
+        "core": "All printed contexts8\u201311 visually inspected with enlarged crops; exact source readings below override the fused candidate. Bar8 begins F4, slurred from Eb4 in7, then F4 ties to repeated F4 at1. Bar9 begins F5 tied to triplet F5 at1. Bar10 repeated F4 melody notes have distinct attacks. Bar11 C5 to Bb4 half notes are slurred (not tied). Note pitches were checked against local sloping staff lines; close crops retained.",
+        "marks": "Bar8 sf,Ped. at0/release before2,Ped.at2/release end,crescendo in second half. Upper fingers Eb4@4/3=4,D4@5/3=3,C4@2=2,Eb4@5/2=4,G4@3=1,C5@7/2=3. Lower first upper F3=1,G3=1,Bnatural3=2,G3=1,F3=1; lower G2=2,D3=1,F3=2,D3=1,G2=2. Lower second half G2=2,C3=1. Bar9 sf,Ped.0/release2,Ped.2/release end; dim. in second half. Upper F4/G4 at1/3,2/3 each1 and Bnatural4@1=2. Lower D3 first=5, Eb3 second-half=3. Bar10 p; upper Bb4=5,F4@2=4; lower D3@1/3=2,F3@2/3=1,D3@7/3=2,F3@8/3=4. Bar11 tranquillo below upper staff; upper C5=5,Bb4=5,D4 first=1,F4@3=1,Ab4@10/3=3; lower Bb2 whole=5,F3 first=3,F3@10/3=2.",
+        "accidentals": "Bar8 lower B3 has explicit natural at1. Bar9 upper B4 natural@1, A4 natural@3, Bb4 explicit flat@7/2. Bar10 upper A3 natural@7/3, lower A3 natural@3. Bar11 upper Ab4 explicit flat@10/3 and lower Ab3 flat@1. Retain glyphs separately from key-derived alterations.",
+        "route": "Ordinary bar boundaries only. Slurs continue toward first ending12; no repeat jump yet."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar8 staff1",
+          "before_ids": [
+            "m008-s1-v1-e01",
+            "m008-s1-v1-e02",
+            "m008-s1-v1-e03",
+            "m008-s1-v1-e04",
+            "m008-s1-v1-e05",
+            "m008-s1-v1-e06",
+            "m008-s1-v1-e07"
+          ],
+          "after": "Single melody F4 quarter0 tied to F4 triplet-eighth1, Eb4 triplet-eighth4/3,D4 triplet-eighth5/3, then C4 Eb4 G4 C5 regular eighths2,5/2,3,7/2. No extra chord tones. Preserve source fingering, sf and slurs."
+        },
+        {
+          "scope": "bar8 staff2",
+          "before_ids": [
+            "m008-s2-v1-e01",
+            "m008-s2-v2-e02",
+            "m008-s2-v1-e03",
+            "m008-s2-v1-e04",
+            "m008-s2-v1-e05",
+            "m008-s2-v2-e06",
+            "m008-s2-v1-e07",
+            "m008-s2-v1-e08",
+            "m008-s2-v1-e09",
+            "m008-s2-v2-e10",
+            "m008-s2-v1-e11",
+            "m008-s2-v1-e12",
+            "m008-s2-v1-e13",
+            "m008-s2-v1-e14",
+            "m008-s2-v2-e15",
+            "m008-s2-v1-e16"
+          ],
+          "after": "First half upper R F3 G3 Bnatural3 G3 F3 and lower R G2 D3 F3 D3 G2 eighth triplets. Bass C2 quarter0. Second half upper R G2 C3 Eb3 C3 G2 eighth triplets, bass C2 quarter2. Remove candidate extra chord members and wrong Ab1/dotted-quarter/rest; no invented gap rests."
+        },
+        {
+          "scope": "bar9 staff1",
+          "before_ids": [
+            "m009-s1-v1-e01",
+            "m009-s1-v2-e02",
+            "m009-s1-v2-e03",
+            "m009-s1-v2-e04",
+            "m009-s1-v1-e05",
+            "m009-s1-v2-e06",
+            "m009-s1-v2-e07",
+            "m009-s1-v2-e08",
+            "m009-s1-v1-e09",
+            "m009-s1-v2-e10",
+            "m009-s1-v2-e11",
+            "m009-s1-v1-e12",
+            "m009-s1-v2-e13",
+            "m009-s1-v1-e14",
+            "m009-s1-v2-e15",
+            "m009-s1-v1-e16"
+          ],
+          "after": "Melody F5 quarter0 tied to F5 triplet-eighth1,Eb5 triplet-eighth4/3,D5 triplet-eighth5/3; C5 G4 Anatural4 Bb4 regular eighths2,5/2,3,7/2. First-half accompaniment R F4 G4 Bnatural4 G4 F4 eighth triplets. No second-half accompaniment; delete candidate spurious second-half voice2 notes. Remove extra F4 chord on first F5."
+        },
+        {
+          "scope": "bar9 staff2",
+          "before_ids": [
+            "m009-s2-v1-e01",
+            "m009-s2-v2-e02",
+            "m009-s2-v1-e03",
+            "m009-s2-v1-e04",
+            "m009-s2-v1-e05",
+            "m009-s2-v2-e06",
+            "m009-s2-v1-e07",
+            "m009-s2-v1-e08",
+            "m009-s2-v1-e09",
+            "m009-s2-v2-e10",
+            "m009-s2-v1-e11",
+            "m009-s2-v1-e12",
+            "m009-s2-v1-e13",
+            "m009-s2-v2-e14",
+            "m009-s2-v1-e15",
+            "m009-s2-v1-e16"
+          ],
+          "after": "First half R D3 G3 D4 G3 D3, second half R Eb3 G3 C4 G3 Eb3, all eighth triplets. Bass C2 quarters0 and2 only. Correct Eb3@2/3->G3 and Eb3@8/3->G3. Remove invented bass rests."
+        },
+        {
+          "scope": "bar10 staff1",
+          "before_ids": [
+            "m010-s1-v1-e01",
+            "m010-s1-v2-e02",
+            "m010-s1-v2-e03",
+            "m010-s1-v2-e04",
+            "m010-s1-v1-e05",
+            "m010-s1-v2-e06",
+            "m010-s1-v2-e07",
+            "m010-s1-v2-e08",
+            "m010-s1-v1-e09",
+            "m010-s1-v2-e10",
+            "m010-s1-v2-e11",
+            "m010-s1-v2-e12",
+            "m010-s1-v1-e13",
+            "m010-s1-v2-e14",
+            "m010-s1-v2-e15",
+            "m010-s1-v2-e16"
+          ],
+          "after": "Melody Bb4 quarter0,F4 quarter1,F4 quarter2,F4 quarter3. First-half accompaniment R Bb3 D4 F4 D4 Bb3; second-half R Anatural3 C4 F4 C4 A3; all eighth triplets. Remove extra chord tone at0; correct D4 melody@1->F4 and first-half acc Bb3@4/3->D4. Slur Bb4->F4 at1."
+        },
+        {
+          "scope": "bar10 staff2",
+          "before_ids": [
+            "m010-s2-v1-e01",
+            "m010-s2-v2-e02",
+            "m010-s2-v1-e03",
+            "m010-s2-v1-e04",
+            "m010-s2-v1-e05",
+            "m010-s2-v2-e06",
+            "m010-s2-v1-e07",
+            "m010-s2-v1-e08",
+            "m010-s2-v1-e09",
+            "m010-s2-v2-e10",
+            "m010-s2-v1-e11",
+            "m010-s2-v1-e12",
+            "m010-s2-v1-e13",
+            "m010-s2-v2-e14",
+            "m010-s2-v1-e15",
+            "m010-s2-v1-e16"
+          ],
+          "after": "First-half R D3 F3 Bb3 F3 D3, second-half R D3 F3 Anatural3 F3 D3, all eighth triplets. Bass F2 quarters0,2 only. Candidate first F3@1->Bb3,D3@4/3->F3,Bb2@5/3->D3 and final Eb3->D3; remove bass rests."
+        },
+        {
+          "scope": "bar11 staff1",
+          "before_ids": [
+            "m011-s1-v1-e01",
+            "m011-s1-v2-e02",
+            "m011-s1-v2-e03",
+            "m011-s1-v1-e04",
+            "m011-s1-v2-e05",
+            "m011-s1-v2-e06",
+            "m011-s1-v2-e07",
+            "m011-s1-v1-e08",
+            "m011-s1-v2-e09",
+            "m011-s1-v1-e10",
+            "m011-s1-v2-e11",
+            "m011-s1-v2-e12",
+            "m011-s1-v2-e13",
+            "m011-s1-v1-e14",
+            "m011-s1-v2-e15",
+            "m011-s1-v2-e16",
+            "m011-s1-v2-e17"
+          ],
+          "after": "Melody C5 half0,Bb4 half2 connected by slur, not tie. Accompaniment R D4 Eb4 F4 D4 Eb4 F4 D4 Eb4 F4 Ab4 G4, successive eighth triplets from0 through11/3. No chords in melody. Retain printed flat on Ab4 and all fingerings."
+        },
+        {
+          "scope": "bar11 staff2",
+          "before_ids": [
+            "m011-s2-v1-e01",
+            "m011-s2-v2-e02",
+            "m011-s2-v1-e03",
+            "m011-s2-v1-e04",
+            "m011-s2-v1-e05",
+            "m011-s2-v1-e06",
+            "m011-s2-v1-e07",
+            "m011-s2-v1-e08",
+            "m011-s2-v1-e09",
+            "m011-s2-v1-e10",
+            "m011-s2-v1-e11",
+            "m011-s2-v1-e12",
+            "m011-s2-v1-e13"
+          ],
+          "after": "Bass Bb2 whole at0 (candidate Ab2 wrong). Upper eighth triplets R F3 G3 Ab3 F3 G3 Ab3 F3 G3 Ab3 F3 Eb3; retain explicit Ab3 accidental at1. Lower phrase slurs extend into12."
+        }
+      ],
+      "exact_event_plan": "reviewer/middle_event_plan.json",
+      "later_phase_checks": [
+        "Serialization and topology in Phase4",
+        "Visual/structural/layer/playback checks in Phase5",
+        "Shared-attack rendering and real playback must be verified; no current XML certification."
+      ]
+    },
+    {
+      "system": 4,
+      "physical_bars": [
+        12,
+        14
+      ],
+      "inspection": "reviewer/inspection_system_04.json",
+      "inspection_sha256": "697d7a28904d97a20f3f44b0c327697658d8f6b8d9e238bd3f97edd69990e8d9",
+      "observations": {
+        "core": "Inspected first and second endings12/13 and new repeated section14. Candidate imposes spurious melody chords over the descending triplets in both endings. At12:3 a separate Bb3 quarter overlaps the triplet accompaniment, rather than replacing its first note. At13 last two third-beat subdivisions have shared upper/lower stems on chords. At14 there are shared stems and distinct melody versus triplet durations.",
+        "marks": "12 first-ending bracket, dim. near1, mf near3, upper Eb4@4/3 fingering3,Bb3@7/3=2,Bb3 melody@3=3; lower Ab3@4/3=1,D3 final=1. 13 second-ending bracket: upper Eb4@4/3=3,Bb3@7/3=2,final first chord lower member=1 and upper=3; lower G3@4/3=1,Eb3@3=1,Bb2@10/3=2.14 p,accent on Cb5,digit5 onAb4 short note,Ab4@2 substitution4->5 with lowerF4=2; final chord fingering upper3/lower1 at3. Staccato dots on final two short chord groups and short slur.",
+        "route": "First ending12 closes with backward repeat to2. Second ending13 follows and closes before forward repeat14. Preserve both ending brackets and physical bars; no duplication of bars in XML. Playback should visit1,2..12,2..11,13,14... .",
+        "accidentals": "Upper12/13 Anatural3 in descending line; upper12 explicit flat on Bb3 melody at3. Upper13 final chords Eb4+Gb4 then F4+Ab4 with explicit Gb/Ab glyphs.14 Gb4 and Cb5/Cb4 explicit flats, F4 natural at2 (not an altered sounding pitch inferred from the natural glyph). Lower14 Gb octave flats.",
+        "accidental_carry_recheck": "Explicit Gb4 at0 continues within its physical bar: later G4-position notes in14\u201317 and20/21 sound Gb4 unless a natural cancels it. Missing repeated glyph is not natural. Updated working targets before any freeze.",
+        "bar13_lower_resolution": "Close lower crop confirms m013-s2-v1-e13 D3 eighth-triplet at3 (middle bass line), thenBb2@10/3,Ab2@11/3 with explicit flat. Earlier marks text saying Eb3@3 was wrong; fingering1 belongs toD3@3. Retain D3 pitch. Shared upper chords at10/3 and11/3 have upper and lower beam/stem membership, and must have one sounding onset per member, not two MIDI attacks.",
+        "bar11_ending_tie_resolution": "The low curved continuation under bass Bb2whole11 ends atBb2quarter12:0 on first traversal, and atBb2quarter13:0 on second traversal. Encode tie start on11 bassBb2 with alternate-route stop members12/13, never a tie12->13. Exact existing source IDs: m011-s2-v2-e02 (pitch itself corrected toBb2), m012-s2-v2-e02 and m013-s2-v2-e02 are confirmed original stop members. Same source split applies to moving-line phrase slur across endings; exact distal endpoint still open."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar12 staff1",
+          "before_ids": [
+            "m012-s1-v1-e01",
+            "m012-s1-v2-e02",
+            "m012-s1-v2-e03",
+            "m012-s1-v2-e04",
+            "m012-s1-v1-e05",
+            "m012-s1-v2-e06",
+            "m012-s1-v2-e07",
+            "m012-s1-v2-e08",
+            "m012-s1-v1-e09",
+            "m012-s1-v2-e10",
+            "m012-s1-v2-e11",
+            "m012-s1-v2-e12",
+            "m012-s1-v1-e13",
+            "m012-s1-v2-e14",
+            "m012-s1-v2-e15",
+            "m012-s1-v2-e16"
+          ],
+          "after": "Melody half rest0,quarter rest2,Bb3 quarter3; remove spurious chords0/1 and replace chord3. Accompaniment twelve eighth triplets F4 Ab4 G4 F4 Eb4 D4 C4 Bb3 Anatural3 Anatural3 G3 Anatural3. Bb3 melody@3 overlaps accompaniment Anatural3@3. Preserve same-pitch accidental carry for A3 after8/3."
+        },
+        {
+          "scope": "bar12 staff2",
+          "before_ids": [
+            "m012-s2-v1-e01",
+            "m012-s2-v2-e02",
+            "m012-s2-v1-e03",
+            "m012-s2-v1-e04",
+            "m012-s2-v1-e05",
+            "m012-s2-v2-e06",
+            "m012-s2-v1-e07",
+            "m012-s2-v1-e08",
+            "m012-s2-v1-e09",
+            "m012-s2-v2-e10",
+            "m012-s2-v1-e11",
+            "m012-s2-v1-e12",
+            "m012-s2-v1-e13",
+            "m012-s2-v1-e14",
+            "m012-s2-v1-e15"
+          ],
+          "after": "Upper triplets D3 F3 Bb3 Ab3 G3 F3 Eb3 D3 Eb3 F3 Eb3 D3. Bass Bb2 quarter0, authored quarter rest1, authored half rest2. Correct candidate Bb3@4/3->G3,Ab3@5/3->F3. Preserve incoming Bb2 connection from11 after confirming tie/slur member."
+        },
+        {
+          "scope": "bar13 staff1",
+          "before_ids": [
+            "m013-s1-v1-e01",
+            "m013-s1-v2-e02",
+            "m013-s1-v2-e03",
+            "m013-s1-v2-e04",
+            "m013-s1-v1-e05",
+            "m013-s1-v2-e06",
+            "m013-s1-v2-e07",
+            "m013-s1-v2-e08",
+            "m013-s1-v1-e09",
+            "m013-s1-v2-e10",
+            "m013-s1-v2-e11",
+            "m013-s1-v1-e12",
+            "m013-s1-v2-e13",
+            "m013-s1-v2-e14"
+          ],
+          "after": "Melody half rest0,quarter rest2,triplet eighth rest3,chords Eb4+Gb4@10/3,F4+Ab4@11/3 each1/3. Accompaniment F4 Ab4 G4 F4 Eb4 D4 C4 Bb3 Anatural3 Bb3 then shared chords Eb4+Gb4,F4+Ab4. All triplet eighths. Remove fused wrong chords and off-grid3/4+1/4 durations; preserve shared stem membership in voice plan."
+        },
+        {
+          "scope": "bar13 staff2",
+          "before_ids": [
+            "m013-s2-v1-e01",
+            "m013-s2-v2-e02",
+            "m013-s2-v1-e03",
+            "m013-s2-v1-e04",
+            "m013-s2-v1-e05",
+            "m013-s2-v2-e06",
+            "m013-s2-v1-e07",
+            "m013-s2-v1-e08",
+            "m013-s2-v1-e09",
+            "m013-s2-v2-e10",
+            "m013-s2-v1-e11",
+            "m013-s2-v1-e12",
+            "m013-s2-v1-e13",
+            "m013-s2-v1-e14",
+            "m013-s2-v1-e15"
+          ],
+          "after": "Upper triplets D3 F3 Bb3 Ab3 G3 F3 Eb3 D3 Eb3 D3 Bb2 Ab2 (explicit flat on final Ab2). Bass Bb2 quarter0,quarter rest1,half rest2. Candidate first-half Bb3@1->Ab3,Ab3@4/3->G3,G3@5/3->F3. Check exact third-beat upper D3 against close print before freeze."
+        },
+        {
+          "scope": "bar14 staff1",
+          "before_ids": [
+            "m014-s1-v1-e01",
+            "m014-s1-v2-e02",
+            "m014-s1-v2-e03",
+            "m014-s1-v1-e04",
+            "m014-s1-v2-e05",
+            "m014-s1-v2-e06",
+            "m014-s1-v1-e07",
+            "m014-s1-v1-e08",
+            "m014-s1-v2-e09",
+            "m014-s1-v2-e10",
+            "m014-s1-v1-e11",
+            "m014-s1-v2-e12",
+            "m014-s1-v1-e13",
+            "m014-s1-v2-e14",
+            "m014-s1-v1-e15"
+          ],
+          "after": "Melody Gb4+Bb4 quarter0,Cb5 dotted-eighth1,Ab4 sixteenth7/4,F4+Ab4 quarter2,then F4+Ab4/Gb4+Bb4/Ab4+C5 eighth-triplet chords3,10/3,11/3. First-half lower beamed line Gb4 Bb3 Eb4 Cb5 Eb4 Cb4, triplet eighths0..5/3; second half F4 G3 C4 then shared last three chords, triplet eighths2..11/3. Distinct stem durations on shared melody notes require member-level treatment; do not simply create extra unprinted pitches."
+        },
+        {
+          "scope": "bar14 staff2",
+          "before_ids": [
+            "m014-s2-v1-e01",
+            "m014-s2-v1-e02",
+            "m014-s2-v1-e03"
+          ],
+          "after": "Gb1+Gb2 quarter0,Ab1+Ab2 quarter1,Bb1+Bb2 half2; candidate pitches/durations agree. Preserve flats on both members at0 and long lower phrase slur0->2."
+        }
+      ],
+      "exact_event_plan": "reviewer/endings_event_plan.json",
+      "later_phase_checks": [
+        "Serialization and topology in Phase4",
+        "Visual/structural/layer/playback checks in Phase5",
+        "Shared-attack rendering and real playback must be verified; no current XML certification.",
+        "Resolve MusicXML representation for shared noteheads with different written values14; one sounding attack per member"
+      ]
+    },
+    {
+      "system": 5,
+      "physical_bars": [
+        15,
+        17
+      ],
+      "inspection": "reviewer/inspection_system_05.json",
+      "inspection_sha256": "3f3de51efbb4e9159fc0141fc18315cfc335159ebcd9749bdc22d4e132284de1",
+      "observations": {
+        "core": "Inspected all printed chords, chromatic glyphs and beamed lines in15\u201317. No grace notation. Melody dotted-eighth/sixteenth at1..2 coexists with triplet accompaniment. OMR loses independent lines and treats some shared stems as missing rests or unrelated chord tones. These are source-supported reconstruction contexts, not reader voting decisions.",
+        "marks": "15 melody chord fingers upper3/lower2 at0; cresc. hairpin first beat, sf at1, short note5,Ab4@2 substitution4->5/lowerF4=2; chord@3 finger3, final two staccato chord groups with slur and dim. hairpin.16 p; accent Cb5@1,shortAb4=5,substitution4->5 and lower2 at2,final short group first upper3 with slur/dots.17 first chord upper3/lower2; first-beat cresc., sf at1,shortCb5=5,Ab4@2 substitution4->5 withF4=4; cresc. al forte - below upper staff through second half, final first chord4 and short slur/staccatos. Each bar has phrase slurs over melodic0->1 and2->3, lower beamed arcs in first/second halves, and bass0->2 slur.",
+        "accidentals": "15/17 Gb4 at0,Cb5 at1,Cb4@7/3,Db4@8/3; lower Cb2/Cb3@1,Db2/Db3@2.16 Gb4@0,Db4 in accompaniment,Cb5 andCb4 in beat2,F4 natural at2; lowerGb1/Gb2 at0. No printed Fsharp4 in15: candidate F#4 is unsupported.",
+        "route": "No route symbols in15\u201317; these lie within repeated section14\u201331.",
+        "accidental_carry_recheck": "Explicit Gb4 at0 continues within its physical bar: later G4-position notes in14\u201317 and20/21 sound Gb4 unless a natural cancels it. Missing repeated glyph is not natural. Updated working targets before any freeze.",
+        "bar16_pitch_resolution": "At4/3 the notehead is the F4 space immediately above the bottom E4 line. It is F natural; the flat at0 applies to G4 only. Candidate m016-s1-v2-e05 Db4 (wrong grid1/2 subdivision as well) is not authority. Reconstructed target audit-m016-s1-accompaniment-05: F4 eighth3:2 onset4/3,duration1/3. bar16_upper_detail.png shows this directly."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar15 staff1",
+          "before_ids": [
+            "m015-s1-v5-e01",
+            "m015-s1-v6-e02",
+            "m015-s1-v6-e03",
+            "m015-s1-v6-e04",
+            "m015-s1-v5-e05",
+            "m015-s1-v6-e06",
+            "m015-s1-v5-e07",
+            "m015-s1-v6-e08",
+            "m015-s1-v6-e09",
+            "m015-s1-v6-e10",
+            "m015-s1-v5-e11",
+            "m015-s1-v6-e12",
+            "m015-s1-v5-e13"
+          ],
+          "after": "Melody Gb4+Bb4 quarter0,Cb5+Eb5 dotted-eighth1,Cb5 sixteenth7/4,F4+Ab4 quarter2,then F4+Ab4/Eb4+Gb4/F4+Ab4 triplet chords3,10/3,11/3. Lower beamed line first half Gb4 Eb4 Gb4 Cb5 Ab4 Eb4, second half F4 Cb4 Db4 then shared chords; all eighth-triplet duration1/3. Restore omitted chords, notes and rhythms; delete invented rest voices/F#4."
+        },
+        {
+          "scope": "bar15 staff2",
+          "before_ids": [
+            "m015-s2-v1-e01",
+            "m015-s2-v1-e02",
+            "m015-s2-v1-e03"
+          ],
+          "after": "Bb1+Bb2 quarter0,Cb2+Cb3 quarter1,Db2+Db3 half2. Candidate core agrees, add explicit accidental glyphs and phrase slur."
+        },
+        {
+          "scope": "bar16 staff1",
+          "before_ids": [
+            "m016-s1-v1-e01",
+            "m016-s1-v2-e02",
+            "m016-s1-v2-e03",
+            "m016-s1-v1-e04",
+            "m016-s1-v2-e05",
+            "m016-s1-v2-e06",
+            "m016-s1-v1-e07",
+            "m016-s1-v1-e08",
+            "m016-s1-v2-e09",
+            "m016-s1-v2-e10",
+            "m016-s1-v1-e11",
+            "m016-s1-v2-e12",
+            "m016-s1-v1-e13",
+            "m016-s1-v2-e14",
+            "m016-s1-v1-e15"
+          ],
+          "after": "Melody Gb4+Bb4 quarter0,Cb5 dotted-eighth1,Ab4 sixteenth7/4,F4+Ab4 quarter2,then F4+Ab4/Gb4+Bb4/Ab4+C5 triplet chords3,10/3,11/3. Lower line Gb4 Bb3 Db4 Cb5 F4 Cb4, then F4 G3 C4 and shared chords, eighth triplets. Confirm F4 at4/3 against local staff lines before freeze; candidate gives Db4 and must not be retained without print review."
+        },
+        {
+          "scope": "bar16 staff2",
+          "before_ids": [
+            "m016-s2-v1-e01",
+            "m016-s2-v2-e02",
+            "m016-s2-v1-e03",
+            "m016-s2-v1-e04"
+          ],
+          "after": "Gb1+Gb2 quarter0,Ab1+Ab2 quarter1,Bb1+Bb2 half2. Candidate incorrectly sustains Gb1 as whole note: merge with Gb2 quarter in same musical bass voice, no separate whole-note line."
+        },
+        {
+          "scope": "bar17 staff1",
+          "before_ids": [
+            "m017-s1-v5-e01",
+            "m017-s1-v5-e02",
+            "m017-s1-v5-e03",
+            "m017-s1-v5-e04",
+            "m017-s1-v5-e05",
+            "m017-s1-v5-e06",
+            "m017-s1-v5-e07"
+          ],
+          "after": "Melody Gb4+Bb4 quarter0,Cb5+Eb5 dotted-eighth1,Cb5 sixteenth7/4,F4+Ab4 quarter2,then F4+Ab4/Gb4+Bb4/Ab4+C5 triplet chords3,10/3,11/3. Lower beamed line Gb4 Eb4 Gb4 Cb5 Ab4 Eb4 F4 Cb4 Db4 F4 Eb4 D4, all eighth triplets. Preserve extra independent lower notes under final two chords; candidate omits most accompaniment."
+        },
+        {
+          "scope": "bar17 staff2",
+          "before_ids": [
+            "m017-s2-v1-e01",
+            "m017-s2-v1-e02",
+            "m017-s2-v1-e03",
+            "m017-s2-v1-e04"
+          ],
+          "after": "Bb1+Bb2 quarter0,Cb2+Cb3 quarter1,Db2+Db3 half2; correct candidate Cb chord duration2/3 to1 and delete unprinted rest at5/3."
+        }
+      ],
+      "exact_event_plan": "reviewer/chromatic_event_plan.json",
+      "later_phase_checks": [
+        "MusicXML voice/beam/tie serialization and full Phase5 checks",
+        "Shared-attack rendering and real playback must be verified; no current XML certification.",
+        "Resolve shared-duration MusicXML representation with one sounding attack per member"
+      ]
+    },
+    {
+      "system": 6,
+      "physical_bars": [
+        18,
+        20
+      ],
+      "inspection": "reviewer/inspection_system_06.json",
+      "inspection_sha256": "c7f2fdac8d6e62b292555dba8d85109180c4db071e17c207dc5492d8f0c999c2",
+      "observations": {
+        "core": "Inspected18\u201320 on both staves, including close crop bar20_upper. Candidate omits independent bass octave attacks in18/19 and bass line20. Bar20 contains four-note chord at2 with only its upper two members tied onward. Candidate loses this chord and member-level ties. No grace notes.",
+        "marks": "18 f and chord fingering upper4/lower2 at0; sf at2,Ped.0 and2 with release before2/end. Lower firstGb3=4,next-halfAb3=3.19 first chord upper3/lower3; sf at2,dim. below upper staff second half,Ped.0/2 with releases.20 p, first chord upper3/lower2; short chord Eb5=5,Cb5=4; main chord topEb5=5,Cb5=3;sf at2; final chord-group fingers upper/lower4/2 then3/1; lowerEb3@7/3=3. Slur on upper short gesture2->end and phrase spans; exact member endpoints pending.",
+        "accidentals": "18 Db5,Gb4,Gb5,Cb5 and lowerDb2/Db3,Gb3,Db4,Cb4.19 same opening chromatic family; explicit D2,D3,D4 naturals in second half.20 Gb4,Cb5,Db5,lowerGb3 and Cb4. Preserve actual sounding key/carry separately from glyph presence.",
+        "route": "Ordinary boundaries; section remains within repeat14\u201331. Page break after20, not a repeat.",
+        "accidental_carry_recheck": "Explicit Gb4 at0 continues within its physical bar: later G4-position notes in14\u201317 and20/21 sound Gb4 unless a natural cancels it. Missing repeated glyph is not natural. Updated working targets before any freeze."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar18 staff1",
+          "before_ids": [
+            "m018-s1-v5-e01",
+            "m018-s1-v6-e02",
+            "m018-s1-v6-e03",
+            "m018-s1-v5-e04",
+            "m018-s1-v6-e05",
+            "m018-s1-v6-e06",
+            "m018-s1-v6-e07",
+            "m018-s1-v5-e08"
+          ],
+          "after": "Bb4+Db5 quarter0,Gb4+Bb4 dotted-eighth1,Gb5 sixteenth7/4,Gb4+Gb5 quarter2,F4+F5 quarter3; Cb5 half2 in independent sustained inner line. Delete invented v5 rests and move its Cb5 onset3/2->2; correct G5 toGb5. Slur Gb5@2->F5@3, not same-pitch tie."
+        },
+        {
+          "scope": "bar18 staff2",
+          "before_ids": [
+            "m018-s2-v1-e01",
+            "m018-s2-v1-e02",
+            "m018-s2-v1-e03",
+            "m018-s2-v1-e04",
+            "m018-s2-v1-e05",
+            "m018-s2-v1-e06",
+            "m018-s2-v1-e07",
+            "m018-s2-v1-e08",
+            "m018-s2-v1-e09",
+            "m018-s2-v1-e10",
+            "m018-s2-v1-e11",
+            "m018-s2-v1-e12"
+          ],
+          "after": "Retain first-half triplets R Gb3 Bb3 Db4 Bb3 Gb3. Second half R Ab3 Cb4 Db4 Cb4 Ab3, all eighth triplets; correct E4@3->Db4. Add missing bass Db2+Db3 quarters0 and2; unprinted gaps remain absent."
+        },
+        {
+          "scope": "bar19 staff1",
+          "before_ids": [
+            "m019-s1-v1-e01",
+            "m019-s1-v1-e02",
+            "m019-s1-v1-e03",
+            "m019-s1-v1-e04",
+            "m019-s1-v2-e05",
+            "m019-s1-v1-e06"
+          ],
+          "after": "Same written melody rhythm/pitches as18: Bb4+Db5 quarter0,Gb4+Bb4 dotted-eighth1,Gb5 sixteenth7/4,Gb4+Gb5 quarter2,F4+F5 quarter3; independent Cb5 half2. Preserve actual candidate member IDs where supported; add correct glyphs/slurs."
+        },
+        {
+          "scope": "bar19 staff2",
+          "before_ids": [
+            "m019-s2-v1-e01",
+            "m019-s2-v1-e02",
+            "m019-s2-v1-e03",
+            "m019-s2-v1-e04",
+            "m019-s2-v1-e05",
+            "m019-s2-v1-e06",
+            "m019-s2-v1-e07",
+            "m019-s2-v1-e08",
+            "m019-s2-v1-e09",
+            "m019-s2-v1-e10"
+          ],
+          "after": "First half R Gb3 Bb3 Db4 Bb3 Gb3; second R Ab3 Cb4 Dnatural4 Cb4 Ab3, eighth triplets. Add Db2+Db3 quarters0 and Dnatural2+Dnatural3 quarter2. Restore missing final two upper notes and correct all candidate mismatched pitches/durations."
+        },
+        {
+          "scope": "bar20 staff1",
+          "before_ids": [
+            "m020-s1-v1-e01",
+            "m020-s1-v1-e02",
+            "m020-s1-v1-e03",
+            "m020-s1-v1-e04"
+          ],
+          "after": "Gb4+Bb4 quarter0,Eb4+Gb4 dotted-eighth1,Cb5+Eb5 sixteenth7/4,Eb4+Ab4+Cb5+Eb5 quarter2; top Cb5 andEb5 tie individually into Cb5+Eb5 triplet-eighth3,then Bb4+Db5 triplet-eighth10/3,Ab4+Cb5 triplet-eighth11/3. Lower Eb4/Ab4 members do not tie. Exact print supports four-note chord, not candidate Eb4/Gb4 dotted duration."
+        },
+        {
+          "scope": "bar20 staff2",
+          "before_ids": [
+            "m020-s2-v1-e01",
+            "m020-s2-v1-e02",
+            "m020-s2-v1-e03",
+            "m020-s2-v1-e04",
+            "m020-s2-v1-e05",
+            "m020-s2-v1-e06",
+            "m020-s2-v1-e07",
+            "m020-s2-v1-e08",
+            "m020-s2-v1-e09",
+            "m020-s2-v1-e10",
+            "m020-s2-v1-e11",
+            "m020-s2-v1-e12"
+          ],
+          "after": "First half R Eb3 Gb3 Bb3 Gb3 Eb3 eighth triplets. Second R Eb3 Gb3 eighth triplets2,7/3,8/3 then Cb4 quarter3. Add missing bass Eb2 quarter0 andAb2 quarter2. Remove candidate surplus Bb3/Ab3/Gb3 at3..11/3 and replace with printed Cb4 quarter."
+        }
+      ],
+      "exact_event_plan": "reviewer/page_end_event_plan.json",
+      "later_phase_checks": [
+        "MusicXML voice/beam/tie serialization and full Phase5 checks",
+        "Shared-attack rendering and real playback must be verified; no current XML certification."
+      ]
+    },
+    {
+      "system": 7,
+      "physical_bars": [
+        21,
+        24
+      ],
+      "inspection": "reviewer/inspection_system_07.json",
+      "inspection_sha256": "60bea5eb1a889f2ff3091635d7d5009c8fbf4a21fd50aebcc10390709a25b82d",
+      "observations": {
+        "core": "Inspected21\u201324, including four-note repeated chords21/22 and sustained chord tie22->23.21 candidate pitches largely match after accidental carry; all chord-member ties absent.23 candidate drops Eb4 and changes Cb5 toC5 in incoming chord.24 theme rhythm/accidental and both triplet lines are badly misrepresented.",
+        "marks": "21 first chord fingers3/2;sf2,Ped.2, cresc. second half;short chord5/3,final groups4/2 and3/1.22 sf0 and2;chord fingers5/3 at0/2, groups4/2,3/1;f in lower staff at2.23 dim.0, cresc. under Dnatural5 at3/2 into F5 at2 then dim.toend; fingers D5=3,F5=5,Eb5=4,Cb5=1,Ab4=4;pedal release end.24 espressivo above andPed.0/releaseend;melodyG4=5,Ab4=4,Bb4=5;upper acc first G3=1,Bb3=2,Eb4=3,Bb3=1.",
+        "accidentals": "21 explicit Gb4 carries into second chord: sounding Gb4, notG4.22 Cb5/Eb5 ties retained with Cb.23 tied Cb5 retainsflat from22 despite no new glyph; laterD5 has explicitnatural,Cb5 explicitflat at3.24 firstG4 explicitnatural. Close lower crop shows long stem/beam junction at5/3, not a B-natural accidental; lower remainsBb2.",
+        "route": "No route symbols21\u201324. Repeated-section continuation from14.",
+        "bar22_pitch_resolution": "At3 the bass-staff moving note is on the first ledger above the staff, C4, with Cb4 implied by explicit flat on same-octave C4 at1. Retain m022-s2-v1-e11 Cb4 eighth at3,duration1/3, no new flat glyph. Correct m022-s2-v1-e05 Db4 toCb4 quarter at1 with printed flat. Ledger position rules out D4; no natural cancellation is printed."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar21 staff1",
+          "before_ids": [
+            "m021-s1-v5-e01",
+            "m021-s1-v5-e02",
+            "m021-s1-v5-e03",
+            "m021-s1-v5-e04",
+            "m021-s1-v5-e05",
+            "m021-s1-v5-e06",
+            "m021-s1-v5-e07"
+          ],
+          "after": "Retain candidate pitches/durations: Gb4+Bb4 q0,Eb4+Gb4 dotted-eighth1,Cb5+Eb5 sixteenth7/4,Eb4+Ab4+Cb5+Eb5 q2,then Cb5+Eb5/Bb4+Db5/Ab4+Cb5 triplet chords3,10/3,11/3. Add ties only Cb5/Eb5 from2->3 and complete marks."
+        },
+        {
+          "scope": "bar21 staff2",
+          "before_ids": [
+            "m021-s2-v1-e01",
+            "m021-s2-v2-e02",
+            "m021-s2-v1-e03",
+            "m021-s2-v1-e04",
+            "m021-s2-v1-e05",
+            "m021-s2-v2-e06",
+            "m021-s2-v1-e07",
+            "m021-s2-v1-e08",
+            "m021-s2-v1-e09",
+            "m021-s2-v2-e10",
+            "m021-s2-v1-e11",
+            "m021-s2-v1-e12",
+            "m021-s2-v1-e13",
+            "m021-s2-v2-e14"
+          ],
+          "after": "Retain upper triplets R Eb3 Gb3 Bb3 Gb3 Eb3, then R Eb3 Ab3 at2,7/3,8/3 andCb4 quarter3. Bass Eb2q0,Ab2q2 only; remove unprinted quarter rests1/3. All encoded eighths require3:2."
+        },
+        {
+          "scope": "bar22 staff1",
+          "before_ids": [
+            "m022-s1-v5-e01",
+            "m022-s1-v5-e02",
+            "m022-s1-v5-e03",
+            "m022-s1-v5-e04",
+            "m022-s1-v5-e05"
+          ],
+          "after": "Retain all candidate chord pitches/durations. Tie only Cb5/Eb5 from0->1; tie all four Eb4,Ab4,Cb5,Eb5 from half-note chord2 across to23:0 dotted-quarter. Exact note-member bindings required."
+        },
+        {
+          "scope": "bar22 staff2",
+          "before_ids": [
+            "m022-s2-v1-e01",
+            "m022-s2-v2-e02",
+            "m022-s2-v1-e03",
+            "m022-s2-v1-e04",
+            "m022-s2-v1-e05",
+            "m022-s2-v2-e06",
+            "m022-s2-v1-e07",
+            "m022-s2-v2-e08",
+            "m022-s2-v1-e09",
+            "m022-s2-v1-e10",
+            "m022-s2-v1-e11",
+            "m022-s2-v2-e12",
+            "m022-s2-v1-e13",
+            "m022-s2-v1-e14"
+          ],
+          "after": "First upper R Eb3 Ab3 triplets0..2/3 thenCb4quarter1; second half R Eb3 Ab3 Cb4 Ab3 Eb3 triplets. Cb4@3 confirmed by ledger and accidental carry. BassAb2quarters0,2; remove unprinted rests."
+        },
+        {
+          "scope": "bar23 staff1",
+          "before_ids": [
+            "m023-s1-v1-e01",
+            "m023-s1-v1-e02",
+            "m023-s1-v1-e03",
+            "m023-s1-v1-e04",
+            "m023-s1-v1-e05",
+            "m023-s1-v1-e06"
+          ],
+          "after": "Incoming dotted-quarter chord0 must be Eb4+Ab4+Cb5+Eb5 tied from22. Follow Dnatural5 eighth3/2,F5 eighth2,Eb5 eighth5/2,Cb5 eighth3,Ab4 eighth7/2. Candidate C5->Cb5 and add missing Eb4 in first chord; ties on every member."
+        },
+        {
+          "scope": "bar23 staff2",
+          "before_ids": [
+            "m023-s2-v1-e01",
+            "m023-s2-v1-e02",
+            "m023-s2-v1-e03",
+            "m023-s2-v1-e04",
+            "m023-s2-v1-e05"
+          ],
+          "after": "Candidate Cb4 Ab3 Eb3 triplet eighths0,1/3,2/3 thenCb4 quarter1 andhalf rest2 agree with print. Preserve exact rest, no invented bass line."
+        },
+        {
+          "scope": "bar24 staff1",
+          "before_ids": [
+            "m024-s1-v1-e01",
+            "m024-s1-v2-e02",
+            "m024-s1-v1-e03",
+            "m024-s1-v2-e04",
+            "m024-s1-v1-e05",
+            "m024-s1-v2-e06",
+            "m024-s1-v1-e07",
+            "m024-s1-v2-e08",
+            "m024-s1-v1-e09",
+            "m024-s1-v2-e10",
+            "m024-s1-v2-e11",
+            "m024-s1-v1-e12",
+            "m024-s1-v2-e13",
+            "m024-s1-v2-e14"
+          ],
+          "after": "Melody Gnatural4 dotted-quarter0,Ab4 eighth3/2,Bb4 quarter2,Eb4 quarter3; upper accompaniment two half-bar patterns R G3 Bb3 Eb4 Bb3 G3, all eighth triplets. Correct candidate rests/durations/pitches and restore omitted notes."
+        },
+        {
+          "scope": "bar24 staff2",
+          "before_ids": [
+            "m024-s2-v1-e01",
+            "m024-s2-v2-e02",
+            "m024-s2-v1-e03",
+            "m024-s2-v1-e04",
+            "m024-s2-v2-e05",
+            "m024-s2-v1-e06",
+            "m024-s2-v1-e07",
+            "m024-s2-v2-e08",
+            "m024-s2-v1-e09",
+            "m024-s2-v1-e10",
+            "m024-s2-v2-e11",
+            "m024-s2-v1-e12",
+            "m024-s2-v1-e13"
+          ],
+          "after": "Two patterns R Bb2 Eb3 G3 Eb3 Bb2 eighth triplets. Bass Bb1quarter0 and2; remove printed-as-rest gap artifacts. Delete candidate overrun event at4 after relocating final Bb2 to11/3. No Bnatural glyph in print."
+        }
+      ],
+      "exact_event_plan": "reviewer/return_event_plan.json",
+      "later_phase_checks": [
+        "All serialization, member identity, layer roundtrip, viewer and playback checks"
+      ]
+    },
+    {
+      "system": 8,
+      "physical_bars": [
+        25,
+        28
+      ],
+      "inspection": "reviewer/inspection_system_08.json",
+      "inspection_sha256": "ddc641d6e71aa610e60aca860bf35e4b5bffb4cfcb4a0c41da65768b511b72e2",
+      "observations": {
+        "core": "Inspected25\u201328.25 restores melody plus first-half triplets and two lower moving lines in second half.26 melodic durations agree with candidate, including final dotted-eighth/sixteenth.27 upper line/voices mostly agree; preserve separate sustained D5 and lower Ab4.28 independent Ab4 half note is missing/shifted in candidate.",
+        "marks": "25 Ped.0/release2,Ped.2/releaseend;D4@1=3,Eb4@2 substitution4->5,D4 last=5;lower upper Eb3/G3/C4 fingers1/2/4,lowerG2/C3/Eb3/C3 fingers2/1/2/1.26 cresc. andPed.0,f at2,sf at3,releaseend;C4 substitution4->1,Ab4=3,C5=4.27 Ped.0/releaseend,Eb5 substitution3->5,D5half=5;espress. above last triplets,D5@3=5,C5=2,upper accompanimentD4@8/3=1.28 Ped.0/releasebefore2,Ped.2/releaseend,sf2,first chord upper3/lower2. Long melody slur25:last through26 into27:D5;28 Eb5@2->D5@3 is slur, not tie.",
+        "route": "No navigation/ending in25\u201328.",
+        "accidentals": "No new chromatic glyphs identified; three-flat signature applies. Repeated bar material audited at this actual location.",
+        "fingering_completion": "27 final beat lower digit2 belongs to sustained Ab4; upperD5 has5 and followingC5 has2. Exact anchors in return plan."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar25 staff1",
+          "before_ids": [
+            "m025-s1-v5-e01",
+            "m025-s1-v6-e02",
+            "m025-s1-v7-e03",
+            "m025-s1-v6-e04",
+            "m025-s1-v5-e05",
+            "m025-s1-v6-e06",
+            "m025-s1-v6-e07",
+            "m025-s1-v7-e08",
+            "m025-s1-v6-e09",
+            "m025-s1-v6-e10",
+            "m025-s1-v5-e11",
+            "m025-s1-v6-e12",
+            "m025-s1-v5-e13"
+          ],
+          "after": "Melody Ab4 quarter0,D4 quarter1,Eb4 dotted-quarter2,D4 eighth7/2. Accompaniment R Ab3 Bb3 D4 Bb3 Ab3 eighth triplets first half only. Delete false v7/rest fragments and shifted onsets."
+        },
+        {
+          "scope": "bar25 staff2",
+          "before_ids": [
+            "m025-s2-v1-e01",
+            "m025-s2-v2-e02",
+            "m025-s2-v1-e03",
+            "m025-s2-v1-e04",
+            "m025-s2-v1-e05",
+            "m025-s2-v2-e06",
+            "m025-s2-v1-e07",
+            "m025-s2-v1-e08",
+            "m025-s2-v2-e09",
+            "m025-s2-v2-e10",
+            "m025-s2-v1-e11",
+            "m025-s2-v2-e12",
+            "m025-s2-v1-e13",
+            "m025-s2-v2-e14",
+            "m025-s2-v1-e15",
+            "m025-s2-v2-e16"
+          ],
+          "after": "First half R Bb2 D3 F3 D3 Bb2 eighth triplets,bassBb1q0. Second upper R Eb3 G3 C4 G3 Eb3 and lower R G2 C3 Eb3 C3 G2 eighth triplets,bassC2q2. Restore missing pitches,remove spurious rests and wrong bassC2@1."
+        },
+        {
+          "scope": "bar26 staff1",
+          "before_ids": [
+            "m026-s1-v1-e01",
+            "m026-s1-v1-e02",
+            "m026-s1-v1-e03",
+            "m026-s1-v1-e04",
+            "m026-s1-v1-e05",
+            "m026-s1-v1-e06"
+          ],
+          "after": "Retain C4 dotted-quarter0,F4 eighth3/2,Ab4 eighth2,C5 eighth5/2,G5 dotted-eighth3,F5sixteenth15/4. Add fingerings,dynamics,long slur."
+        },
+        {
+          "scope": "bar26 staff2",
+          "before_ids": [
+            "m026-s2-v1-e01",
+            "m026-s2-v2-e02",
+            "m026-s2-v1-e03",
+            "m026-s2-v1-e04",
+            "m026-s2-v1-e05",
+            "m026-s2-v2-e06",
+            "m026-s2-v1-e07",
+            "m026-s2-v1-e08",
+            "m026-s2-v1-e09",
+            "m026-s2-v2-e10",
+            "m026-s2-v1-e11",
+            "m026-s2-v1-e12",
+            "m026-s2-v1-e13",
+            "m026-s2-v2-e14",
+            "m026-s2-v1-e15",
+            "m026-s2-v1-e16"
+          ],
+          "after": "Candidate upper triplet pitches agree: R Ab2 C3 F3 C3 Ab2 then R C3 F3 Ab3 F3 C3. Bass Ab1+Ab2q0,F1+F2q2;remove unprinted quarter rests1,3. Confirm two adjacent Ab2 notes at0/1/3 are separate attacks, not a fabricated tie."
+        },
+        {
+          "scope": "bar27 staff1",
+          "before_ids": [
+            "m027-s1-v5-e01",
+            "m027-s1-v6-e02",
+            "m027-s1-v5-e03",
+            "m027-s1-v6-e04",
+            "m027-s1-v6-e05",
+            "m027-s1-v6-e06",
+            "m027-s1-v6-e07",
+            "m027-s1-v6-e08",
+            "m027-s1-v6-e09",
+            "m027-s1-v5-e10",
+            "m027-s1-v6-e11",
+            "m027-s1-v5-e12",
+            "m027-s1-v5-e13"
+          ],
+          "after": "Candidate core agrees: Eb5q0,D5half1,D5 C5 Bb4 triplet-eighths3,10/3,11/3;lower quarterrest0,Ab4 F4 D4 triplets1..5/3 and2..8/3,Ab4q3. Add correct slurs and expressive/fingering marks; no tie Eb5->D5."
+        },
+        {
+          "scope": "bar27 staff2",
+          "before_ids": [
+            "m027-s2-v1-e01",
+            "m027-s2-v2-e02",
+            "m027-s2-v1-e03",
+            "m027-s2-v1-e04",
+            "m027-s2-v1-e05",
+            "m027-s2-v2-e06",
+            "m027-s2-v1-e07",
+            "m027-s2-v1-e08",
+            "m027-s2-v1-e09",
+            "m027-s2-v1-e10",
+            "m027-s2-v1-e11",
+            "m027-s2-v1-e12",
+            "m027-s2-v2-e13",
+            "m027-s2-v1-e14",
+            "m027-s2-v1-e15"
+          ],
+          "after": "Retain R F3 Ab3 Bb3 Ab3 F3 Bb3 Ab3 F3 Bb3 Ab3 F3 eighth triplets; bassBb1+Bb2q0,D3q3. Remove unprinted basshalfrest1."
+        },
+        {
+          "scope": "bar28 staff1",
+          "before_ids": [
+            "m028-s1-v1-e01",
+            "m028-s1-v2-e02",
+            "m028-s1-v1-e03",
+            "m028-s1-v1-e04",
+            "m028-s1-v1-e05",
+            "m028-s1-v2-e06",
+            "m028-s1-v1-e07",
+            "m028-s1-v2-e08"
+          ],
+          "after": "Retain melody G4+Bb4q0,Eb4+G4dotted-eighth1,Eb5sixteenth7/4,Eb4+Eb5q2,D4+D5q3. Replace voice2 fake rests andD4@5/2 with independent Ab4half2. Preserve three sounding lines at2 as needed, with no unnecessary empty lanes."
+        },
+        {
+          "scope": "bar28 staff2",
+          "before_ids": [
+            "m028-s2-v1-e01",
+            "m028-s2-v2-e02",
+            "m028-s2-v3-e03",
+            "m028-s2-v1-e04",
+            "m028-s2-v1-e05",
+            "m028-s2-v1-e06",
+            "m028-s2-v2-e07",
+            "m028-s2-v1-e08",
+            "m028-s2-v1-e09",
+            "m028-s2-v1-e10",
+            "m028-s2-v2-e11",
+            "m028-s2-v3-e12",
+            "m028-s2-v1-e13",
+            "m028-s2-v1-e14",
+            "m028-s2-v2-e15",
+            "m028-s2-v1-e16"
+          ],
+          "after": "Upper R Eb3 G3 Bb3 G3 Eb3 then R F3 Ab3 Bb3 Ab3 F3 eighth triplets. BassEb2q0,Bb1+Bb2q2. Remove spurious staff2voice3/all unprinted rests; replace second-half wrong eighth grid."
+        }
+      ],
+      "exact_event_plan": "reviewer/return_event_plan.json",
+      "later_phase_checks": [
+        "All serialization, member identity, layer roundtrip, viewer and playback checks"
+      ]
+    },
+    {
+      "system": 9,
+      "physical_bars": [
+        29,
+        31
+      ],
+      "inspection": "reviewer/inspection_system_09.json",
+      "inspection_sha256": "2faddad3d5c45fe7fd56ff0f801c9920d21f3ae2194da23be682050e31c3f876",
+      "observations": {
+        "core": "Inspected29\u201331.29 repeats28 with B-natural bass harmony and must retain independent Ab4 half-note.30 has independent C4 quarter at2 beneath beamed upper chords; candidate shifts it.31 has two simultaneous half-note lower chord members and upper F4, moving to G3/Bb3/Eb4 at2; the connecting arc is slur, not tie.",
+        "marks": "29 Ped.0/2 with releases before2/end,sf2,dim.3.30 p,first chord upper3/lower2,short G4/Bb4 fingers4/5,main chord upper5/lower3;lowerBb2@3=4;Ped.0/release2.31 first ending1.,p;upperEb4@2=4,late first chord lower1/upper3 andtriplet3;lowerBb2@1/3=3,Bb2@7/3=2. Phrase slur over first half31; short final chord slur across repeat31->14.",
+        "accidentals": "29 lower B1/B2 andB3 explicitnaturals.31 final Gb4 explicitflat; Ab4 follows key signature. Distinguish tonal intent from visible glyphs.",
+        "route": "31 is first ending; backward repeat to14. Its second ending is32 at next system. No change to physical bar count."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar29 staff1",
+          "before_ids": [
+            "m029-s1-v1-e01",
+            "m029-s1-v2-e02",
+            "m029-s1-v1-e03",
+            "m029-s1-v1-e04",
+            "m029-s1-v1-e05",
+            "m029-s1-v2-e06",
+            "m029-s1-v1-e07",
+            "m029-s1-v2-e08"
+          ],
+          "after": "Retain melody G4+Bb4q0,Eb4+G4dotted-eighth1,Eb5sixteenth7/4,Eb4+Eb5q2,D4+D5q3. Replace v2 fake rests/D5@5/2 with independentAb4half2. Add exact slurs,Ped.,sf/dim."
+        },
+        {
+          "scope": "bar29 staff2",
+          "before_ids": [
+            "m029-s2-v1-e01",
+            "m029-s2-v2-e02",
+            "m029-s2-v1-e03",
+            "m029-s2-v1-e04",
+            "m029-s2-v1-e05",
+            "m029-s2-v2-e06",
+            "m029-s2-v1-e07",
+            "m029-s2-v1-e08",
+            "m029-s2-v1-e09",
+            "m029-s2-v2-e10",
+            "m029-s2-v1-e11",
+            "m029-s2-v1-e12",
+            "m029-s2-v1-e13",
+            "m029-s2-v2-e14",
+            "m029-s2-v1-e15",
+            "m029-s2-v1-e16"
+          ],
+          "after": "Upper R Eb3 G3 Bb3 G3 Eb3 thenR F3 Ab3 Bnatural3 Ab3 F3 eighth triplets. BassEb2q0,Bnatural1+Bnatural2q2. Candidate pitch sequences agree;remove unprinted bass rests and add explicitnatural glyphs."
+        },
+        {
+          "scope": "bar30 staff1",
+          "before_ids": [
+            "m030-s1-v1-e01",
+            "m030-s1-v2-e02",
+            "m030-s1-v1-e03",
+            "m030-s1-v1-e04",
+            "m030-s1-v1-e05",
+            "m030-s1-v1-e06",
+            "m030-s1-v2-e07",
+            "m030-s1-v1-e08",
+            "m030-s1-v1-e09",
+            "m030-s1-v2-e10"
+          ],
+          "after": "Candidate melody pitches/durations agree: Eb4+G4q0,C4+Eb4dotted-eighth1,G4+Bb4sixteenth7/4,G4+Bb4/F4+Ab4/Eb4+G4/D4+F4 eighth chords2,5/2,3,7/2. IndependentC4quarter at2, not5/2;remove fake gap rests. Keep lower C4 separate from beamed melody chord."
+        },
+        {
+          "scope": "bar30 staff2",
+          "before_ids": [
+            "m030-s2-v1-e01",
+            "m030-s2-v2-e02",
+            "m030-s2-v3-e03",
+            "m030-s2-v1-e04",
+            "m030-s2-v1-e05",
+            "m030-s2-v2-e06",
+            "m030-s2-v1-e07",
+            "m030-s2-v1-e08",
+            "m030-s2-v2-e09",
+            "m030-s2-v1-e10",
+            "m030-s2-v1-e11",
+            "m030-s2-v2-e12",
+            "m030-s2-v3-e13"
+          ],
+          "after": "Upper first halfR C3 Eb3 G3 Eb3 C3 eighth triplets,thenAb2quarter2,Bb2+Ab3quarter3. BassC2quarter0 only. Remove spurious rests/voice3 fragments,correct shifted half-note-grid accompaniment."
+        },
+        {
+          "scope": "bar31 staff1",
+          "before_ids": [
+            "m031-s1-v6-e01",
+            "m031-s1-v6-e02",
+            "m031-s1-v6-e03",
+            "m031-s1-v6-e04",
+            "m031-s1-v6-e05"
+          ],
+          "after": "Candidate Ab3+Bb3+F4half0,G3+Bb3+Eb4quarter2,triplet rest3,Eb4+Gb4triplet10/3,F4+Ab4triplet11/3 agree in core. Add phrase slur0->2 (not tie),final connected slur and correct fingering/chord anchoring."
+        },
+        {
+          "scope": "bar31 staff2",
+          "before_ids": [
+            "m031-s2-v1-e01",
+            "m031-s2-v2-e02",
+            "m031-s2-v1-e03",
+            "m031-s2-v1-e04",
+            "m031-s2-v2-e05",
+            "m031-s2-v1-e06",
+            "m031-s2-v1-e07",
+            "m031-s2-v2-e08",
+            "m031-s2-v1-e09",
+            "m031-s2-v2-e10",
+            "m031-s2-v1-e11"
+          ],
+          "after": "First halfR Bb2 D3 F3 D3 Bb2 eighth triplets. SecondR Bb2 Eb3 eighth triplets2,7/3,8/3;Eb2eighth3,eighthrest7/2. BassEb2quarters0,2 only. Preserve authored final rest;remove invented bass rests andrestore omitted first-halfnotes."
+        }
+      ],
+      "exact_event_plan": "reviewer/second_ending_event_plan.json",
+      "later_phase_checks": [
+        "Phase4/5 serialization, chord-member/stem/layer/playback/viewer and visual checks"
+      ]
+    },
+    {
+      "system": 10,
+      "physical_bars": [
+        32,
+        34
+      ],
+      "inspection": "reviewer/inspection_system_10.json",
+      "inspection_sha256": "999fb7bed899df431a3c81324f3a3a49b189e7ee9c7835d6adddeceaec6910f6",
+      "observations": {
+        "core": "Inspected32\u201334 including calibrated close crop of33 upper.32 candidate core matches the visible overlapping half notes/triplets.33 incorrectly assigns a sounding first melody note instead of quarter rest and subdivides accompaniment on wrong grid.34 lower/upper triplet pitches match, but final upper melody pitches do not.",
+        "marks": "32 second-ending2.,melodyF4=4;lowerEb3whole=5,Bb3first=3,Bb3@10/3=2;slurs upper andlower.33 accent onEb5half1;G4quarter3 fingers4/3;upperAb4@7/3=1 with2 substitution arc toG4@8/3=2;lowerC4@5/3=1,Db4@2=2,Eb4@8/3=4,C4@10/3=1. l.h. below lower staff near3 belongs to moving lower-staff line, not whole-note Eb3 bass.34 slurBb4->Ab4 thenAb4@3->F4last,finalF4=4.",
+        "accidentals": "32 Db5/Db4 explicitflats;33 upperDb5@1/3 andDb4last,lowerDb4@2 explicitflats;34 Db4first and carry through bar. No key change.",
+        "route": "Second ending32 follows second traversal14\u201330; then33 onward. Ending bracket closes after32.",
+        "bar33_hand_bracket_recheck": "Enlarged bar33_both.png reveals a square hand bracket extending from upperAb4 at7/3 down to the lower-staff F4 at7/3. This is not a cross-staff beam or accidental. Earlier simple attribution of l.h. to lower moving line alone is not proven and is superseded. The bracket groups notes for hand distribution while the two beamed musical lines continue independently. Provisional direction l.h. belongs to the upper moving line at7/3 because that is the transferred upper note; retain printed below-staff placement and hand bracket with source linkage. Keep lowerF4 at same onset in its own moving voice. Final human item HAND-033-BRACKET documents alternative lower-line grouping/beat3 alignment.",
+        "bar33_fingering_recheck": "The two printed2 digits aboveAb4@7/3 andG4@8/3 are connected by a short arc, and1 is below the first2. This may be an alternate fingering/sliding gesture rather than a simple substitution. Preserve all digits, do not convert the2-to2 arc into a musical slur by default. At melodyG4@3 the digits4/3 are stacked without explicit arc. Keep exact anchors and provisional substitution treatment for that pair, with final human question.",
+        "span_reconciliation": "Enlarged system10 shows both moving-line slurs start32:1/3 and terminate33:11/3: upperG4->Db4 below staff and lowerBb3->Bb3 above staff.34 has two local melody slurs0->1 and3->7/2, with no outgoing34->35 slur.33 hand bracket/fingering arc remain distinct from musical slurs."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar32 staff1",
+          "before_ids": [
+            "m032-s1-v5-e01",
+            "m032-s1-v6-e02",
+            "m032-s1-v6-e03",
+            "m032-s1-v6-e04",
+            "m032-s1-v6-e05",
+            "m032-s1-v6-e06",
+            "m032-s1-v6-e07",
+            "m032-s1-v5-e08",
+            "m032-s1-v6-e09",
+            "m032-s1-v6-e10",
+            "m032-s1-v6-e11",
+            "m032-s1-v6-e12",
+            "m032-s1-v6-e13",
+            "m032-s1-v6-e14"
+          ],
+          "after": "Retain melodyF4half0,Eb4half2,tripletsR G4 Ab4 Bb4 G4 Ab4 Bb4 G4 Ab4 Bb4 Db5 C5. Add explicitDb5 glyph and complete marks/ending/slurs."
+        },
+        {
+          "scope": "bar32 staff2",
+          "before_ids": [
+            "m032-s2-v1-e01",
+            "m032-s2-v2-e02",
+            "m032-s2-v1-e03",
+            "m032-s2-v1-e04",
+            "m032-s2-v1-e05",
+            "m032-s2-v1-e06",
+            "m032-s2-v1-e07",
+            "m032-s2-v1-e08",
+            "m032-s2-v1-e09",
+            "m032-s2-v1-e10",
+            "m032-s2-v1-e11",
+            "m032-s2-v1-e12",
+            "m032-s2-v1-e13"
+          ],
+          "after": "Retain Eb3whole0,tripletsR Bb3 C4 Db4 Bb3 C4 Db4 Bb3 C4 Db4 Bb3 Ab3. Add explicitDb4 glyph and fingerings/slurs."
+        },
+        {
+          "scope": "bar33 staff1",
+          "before_ids": [
+            "m033-s1-v1-e01",
+            "m033-s1-v2-e02",
+            "m033-s1-v2-e03",
+            "m033-s1-v2-e04",
+            "m033-s1-v1-e05",
+            "m033-s1-v2-e06",
+            "m033-s1-v2-e07",
+            "m033-s1-v2-e08",
+            "m033-s1-v2-e09",
+            "m033-s1-v2-e10",
+            "m033-s1-v2-e11",
+            "m033-s1-v1-e12",
+            "m033-s1-v2-e13",
+            "m033-s1-v2-e14",
+            "m033-s1-v2-e15"
+          ],
+          "after": "Melody quarterrest0,Eb5half1,G4quarter3 (candidateAb4wrong). Accompaniment twelve eighth triplets Bb4 Db5 C5 Bb4 G4 Ab4 Bb4 Ab4 G4 F4 Eb4 Db4 at successive1/3 positions0..11/3. Remove erroneous quarter/eighth/sixteenth subdivisions. Distinct simultaneousG4melody/F4accompaniment at3."
+        },
+        {
+          "scope": "bar33 staff2",
+          "before_ids": [
+            "m033-s2-v1-e01",
+            "m033-s2-v2-e02",
+            "m033-s2-v1-e03",
+            "m033-s2-v1-e04",
+            "m033-s2-v1-e05",
+            "m033-s2-v1-e06",
+            "m033-s2-v1-e07",
+            "m033-s2-v1-e08",
+            "m033-s2-v1-e09",
+            "m033-s2-v1-e10",
+            "m033-s2-v1-e11",
+            "m033-s2-v1-e12",
+            "m033-s2-v1-e13"
+          ],
+          "after": "Retain Eb3whole and moving tripletsG3 Bb3 Ab3 G3 Bb3 C4 Db4 F4 Eb4 Db4 C4 Bb3. Add l.h. words with explicit voice/staff and source-supported onset; bind exact onset under the moving line before freeze."
+        },
+        {
+          "scope": "bar34 staff1",
+          "before_ids": [
+            "m034-s1-v5-e01",
+            "m034-s1-v6-e02",
+            "m034-s1-v6-e03",
+            "m034-s1-v6-e04",
+            "m034-s1-v5-e05",
+            "m034-s1-v6-e06",
+            "m034-s1-v6-e07",
+            "m034-s1-v6-e08",
+            "m034-s1-v5-e09",
+            "m034-s1-v6-e10",
+            "m034-s1-v6-e11",
+            "m034-s1-v5-e12",
+            "m034-s1-v6-e13",
+            "m034-s1-v5-e14",
+            "m034-s1-v6-e15",
+            "m034-s1-v6-e16",
+            "m034-s1-v5-e17",
+            "m034-s1-v6-e18"
+          ],
+          "after": "MelodyBb4quarter0,Ab4quarter1,eighthrest2,Ab4eighth5/2,Ab4eighth3,F4eighth7/2. Correct candidateDb4/Eb4 lastnotes toAb4/Ab4. Retain accompaniment R C4 Db4 Eb4 C4 Db4 Eb4 C4 Db4 Eb4 Db4 C4 eighth triplets."
+        },
+        {
+          "scope": "bar34 staff2",
+          "before_ids": [
+            "m034-s2-v1-e01",
+            "m034-s2-v2-e02",
+            "m034-s2-v1-e03",
+            "m034-s2-v1-e04",
+            "m034-s2-v1-e05",
+            "m034-s2-v1-e06",
+            "m034-s2-v1-e07",
+            "m034-s2-v1-e08",
+            "m034-s2-v1-e09",
+            "m034-s2-v1-e10",
+            "m034-s2-v1-e11",
+            "m034-s2-v1-e12",
+            "m034-s2-v1-e13"
+          ],
+          "after": "Retain Eb3whole andR Ab3 Bb3 C4 Ab3 Bb3 C4 Ab3 Bb3 C4 Bb3 Ab3 eighth triplets. Add phrase slurs and confirm exact cross-system continuation35."
+        }
+      ],
+      "exact_event_plan": "reviewer/second_ending_event_plan.json",
+      "later_phase_checks": [
+        "Phase4/5 serialization, chord-member/stem/layer/playback/viewer and visual checks"
+      ]
+    },
+    {
+      "system": 11,
+      "physical_bars": [
+        35,
+        37
+      ],
+      "inspection": "reviewer/inspection_system_11.json",
+      "inspection_sha256": "c3de598fb70e944192ea721aafb62329583498d71ec3f2917601276ff34ed405",
+      "observations": {
+        "core": "Directly inspected both staves35\u201337 and close crops35/37.35 melody notes have been omitted;36 contains spurious lower-staff voices and wrongly subdivided triplets;37 rising arpeggios misread high notes and lower first half. No grace notation. Final beat37 has two ordinary beamed eighths, after three triplet beats; preserve written rhythm rather than forcing twelve equal notes.",
+        "marks": "35 upper Eb4half finger5;Dnatural4 eighth5;Bb3quarter3. cresc. above first half, mf at3; slur Eb4half toD4 eighth, new slur Bb3quarter to36 Eb4final. Upper firstAb3 finger1. Lower Eb3whole4,F3first3, G3@8/3=1, D3@11/3=4.36 melody G4=5,Ab4=4,Bb4=5,Eb4=3; cresc. above second beat. Lower Eb2@0=3, Bb2@1/3=3,Eb3@2/3=2,G3@1=1,Eb3@4/3=2; Bb2@5/3=1 and3 printed vertically, requires substitution interpretation. Ped.0/releaseend.37 forte above upper and by lower line, accent on wholeAb4 with5; rising D4=1 F4=2 Bb4=4 D5=1 finalD6=1; lowerD3=2 Ab3=4 Bb4=3 finalBb5=2. Ped.0;dim. by final beat; final eighth on each staff staccato. Phrase arcs run from first moving note to penultimate moving note, not final staccato.",
+        "accidentals": "35 upper Cb4 explicitflat at1 carries to2;D4 explicitnatural at2.36/37 no new chromatic glyph. Three-flat key continues. Lower clef becomes treble at37:2 beforeF4.",
+        "route": "Ordinary barlines35\u201337. No navigation or ending. System break after37 retains lower treble clef into38.",
+        "close_crop_recheck": "bar35_both.png resolves final upper note asAb3 (not candidateBb3) and lower final asD3 (not candidateG3); staff-slope calibrated against two lowest ledger lines upper and middle bass line. This supersedes first draft final-note readings.",
+        "reader_consultation": "Consulted three released reader XMLs. Physical measures must be mapped: PlayScore has one extra opening measure, so its numbered37 is physical36 and numbered38 is physical37. Audiveris numbered37 truncates late arpeggio; SmartScore37 supports upperBb5/D6 and lowerF5/Bb5 final eighths but incorrectly leaves first triplet groups as unmodified eighths. Print beam groups and established triplet continuation govern: first3 beats triplets, last beat two ordinary eighths. No reader fingerings resolve lower36 stacked1/3."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar35 staff1",
+          "before_ids": [
+            "m035-s1-v5-e01",
+            "m035-s1-v6-e02",
+            "m035-s1-v6-e03",
+            "m035-s1-v6-e04",
+            "m035-s1-v6-e05",
+            "m035-s1-v6-e06",
+            "m035-s1-v6-e07",
+            "m035-s1-v5-e08",
+            "m035-s1-v6-e09",
+            "m035-s1-v5-e10",
+            "m035-s1-v6-e11",
+            "m035-s1-v5-e12",
+            "m035-s1-v6-e13",
+            "m035-s1-v6-e14",
+            "m035-s1-v6-e15"
+          ],
+          "after": "Melody Eb4half@0,Dnatural4eighth@2,eighthrest@5/2,Bb3quarter@3. Accompaniment R Ab3 Bb3 Cb4 Ab3 Bb3 at successive thirds0..5/3, Cb4 quarter-triplet@2 duration2/3,Bb3 eighth-triplet@8/3,Ab3 G3 Ab3 eighth-triplets@3,10/3,11/3. Separate D4 from candidate Cb4/D4 chord and restore missing melody. Printed bracket3 at2 encompasses quarter+eighth triplet."
+        },
+        {
+          "scope": "bar35 staff2",
+          "before_ids": [
+            "m035-s2-v1-e01",
+            "m035-s2-v2-e02",
+            "m035-s2-v1-e03",
+            "m035-s2-v1-e04",
+            "m035-s2-v1-e05",
+            "m035-s2-v1-e06",
+            "m035-s2-v1-e07",
+            "m035-s2-v1-e08",
+            "m035-s2-v1-e09",
+            "m035-s2-v1-e10",
+            "m035-s2-v1-e11",
+            "m035-s2-v1-e12"
+          ],
+          "after": "Retain Eb3whole@0 and R F3 G3 Ab3 F3 G3 eighth-triplets0..5/3,Ab3quarter-triplet@2 duration2/3,G3eighth-triplet@8/3,F3 Eb3 D3 eighth-triplets3..11/3. Printed bracket3 at2; preserve lower sloped beam."
+        },
+        {
+          "scope": "bar36 staff1",
+          "before_ids": [
+            "m036-s1-v5-e01",
+            "m036-s1-v6-e02",
+            "m036-s1-v6-e03",
+            "m036-s1-v6-e04",
+            "m036-s1-v6-e05",
+            "m036-s1-v5-e06",
+            "m036-s1-v6-e07",
+            "m036-s1-v5-e08",
+            "m036-s1-v6-e09",
+            "m036-s1-v6-e10",
+            "m036-s1-v6-e11",
+            "m036-s1-v5-e12",
+            "m036-s1-v6-e13",
+            "m036-s1-v6-e14",
+            "m036-s1-v6-e15"
+          ],
+          "after": "Melody G4dottedquarter0,Ab4eighth3/2,Bb4quarter2,Eb4quarter3. Accompaniment two repetitions of R G3 Bb3 Eb4 Bb3 G3, all eighth triplets at third positions0..11/3. Candidate Bb3@1/Eb4@3/2 are wrong pitch/onset/duration; replace withEb4@1,Bb3@4/3,G3@5/3."
+        },
+        {
+          "scope": "bar36 staff2",
+          "before_ids": [
+            "m036-s2-v1-e01",
+            "m036-s2-v2-e02",
+            "m036-s2-v3-e03",
+            "m036-s2-v4-e04",
+            "m036-s2-v1-e05",
+            "m036-s2-v1-e06",
+            "m036-s2-v1-e07",
+            "m036-s2-v1-e08",
+            "m036-s2-v2-e09",
+            "m036-s2-v3-e10",
+            "m036-s2-v1-e11",
+            "m036-s2-v4-e12",
+            "m036-s2-v1-e13",
+            "m036-s2-v2-e14",
+            "m036-s2-v1-e15",
+            "m036-s2-v1-e16",
+            "m036-s2-v1-e17",
+            "m036-s2-v1-e18"
+          ],
+          "after": "Bass Eb2quarter0 and2 only; no printed bass gap rests. Moving voice two repetitions R Bb2 Eb3 G3 Eb3 Bb2 eighth triplets. Remove false C4/Ab4 chord events and invented empty lanes/rests. Retain two independent lines."
+        },
+        {
+          "scope": "bar37 staff1",
+          "before_ids": [
+            "m037-s1-v5-e01",
+            "m037-s1-v6-e02",
+            "m037-s1-v6-e03",
+            "m037-s1-v6-e04",
+            "m037-s1-v6-e05",
+            "m037-s1-v6-e06",
+            "m037-s1-v6-e07",
+            "m037-s1-v6-e08",
+            "m037-s1-v6-e09",
+            "m037-s1-v6-e10",
+            "m037-s1-v6-e11",
+            "m037-s1-v6-e12"
+          ],
+          "after": "Retain Ab4whole0. Moving line R Ab3 Bb3 D4 F4 Bb4 D5 F5 Ab5 at third positions0..8/3;Bb5 eighth3,D6 eighth7/2. Correct candidate D5/F5 final notes toBb5/D6. Preserve beam groups and staccato only finalD6."
+        },
+        {
+          "scope": "bar37 staff2",
+          "before_ids": [
+            "m037-s2-v1-e01",
+            "m037-s2-v2-e02",
+            "m037-s2-v4-e03",
+            "m037-s2-v1-e04",
+            "m037-s2-v2-e05",
+            "m037-s2-v2-e06",
+            "m037-s2-v2-e07",
+            "m037-s2-v2-e08",
+            "m037-s2-v1-e09",
+            "m037-s2-v2-e10",
+            "m037-s2-v1-e11",
+            "m037-s2-v1-e12",
+            "m037-s2-v1-e13",
+            "m037-s2-v2-e14",
+            "m037-s2-v2-e15"
+          ],
+          "after": "Bass Eb2quarter0, then unprinted silence. Moving line R D3 F3 Ab3 Bb3 D4 F4 Bb4 D5 at third positions0..8/3;F5 eighth3,Bb5 eighth7/2. Clef treble at2. Remove invented rests and correct all first-half onsets/durations; retain final two eighths."
+        }
+      ],
+      "exact_event_plan": "reviewer/tail_event_plan.json",
+      "later_phase_checks": [
+        "Bind exact new note IDs and every fingering/slur anchor35\u201337"
+      ]
+    },
+    {
+      "system": 12,
+      "physical_bars": [
+        38,
+        41
+      ],
+      "inspection": "reviewer/inspection_system_12.json",
+      "inspection_sha256": "bf32e134219215c4de6abab184b243eb730e88acf9e2ce0d85bc135d1fb2a445",
+      "observations": {
+        "core": "Directly inspected38\u201341 both staves, enlarged bar38 and cadence crops.38 has one upper F6, not a C6/F6 chord.39 contains two normal triplet accompaniment cycles and independent dotted-half/quarter melody, not phantom rest voices.40 final moving notes sustain into41 with separate member ties. No grace notes.",
+        "marks": "38 staccato on initial upper F6 and lower D6; p near beat1. Upper descending notes fingers3,2,3,2,3,2 at1,3/2,2,5/2,3,7/2; short slurs Ab4->G4 andG4->F4; lastEb4/D4 staccato. Pedal release near3, continuing from37.39 Ped.0,accent F4 withfinger4;Eb4@3 finger3 and melody slurF4->Eb4.40 wholeEb4finger4; three incoming final-chord ties require individual bindings.41 upper and lower fermatas; final heavy double bar. No extra dynamics or pedal release visible after38.",
+        "clefs": "Lower staff retains treble into38; changes back to bass immediately before39. Upper remains treble. Source closing chord is G3/Bb3/Eb4 overEb2.",
+        "route": "38\u201341 ordinary continuation; final right light-heavy barline41; no repeat or navigation. Route terminates41.",
+        "closing_tie_resolution": "Enlarged bars39_41_detail.png shows distinct ties Eb4whole40:0->41:0, Bb3 with upper quarter stem40:10/3->41:0, andG3 final beamed eighth40:11/3->41:0. No tie for bassEb2. Audiveris/SmartScore independently recognize upper quarter stem onBb3 but have wrong triplet timing; PlayScore erroneously relocates all tie starts to a fabricated final chord. Reject fabricated chord. Proposed retained print encoding: single Bb3 attack at10/3 with quarter3:2 written value, plus shared eighth-beam membership represented without duplicate playback. Exact technical representation remains open until topology plan is tested.",
+        "closing_pedal_resolution": "No release glyph follows Ped.39:0 in full closing system. Do not fabricate a printed stop at41. Provisional playback release at score termination is distinct from a printed pedal mark; retain final human question PEDAL-039-END."
+      },
+      "correction_targets": [
+        {
+          "scope": "bar38 staff1",
+          "before_ids": [
+            "m038-s1-v1-e01",
+            "m038-s1-v2-e02",
+            "m038-s1-v1-e03",
+            "m038-s1-v2-e04",
+            "m038-s1-v1-e05",
+            "m038-s1-v1-e06",
+            "m038-s1-v1-e07",
+            "m038-s1-v2-e08",
+            "m038-s1-v1-e09",
+            "m038-s1-v1-e10",
+            "m038-s1-v1-e11"
+          ],
+          "after": "Single F6eighth0 (remove phantom C6 chord member),eighthrest1/2,Ab4eighth1,G4eighth3/2,G4eighth2,F4eighth5/2,Eb4eighth3,D4eighth7/2. No second voice/rest lane."
+        },
+        {
+          "scope": "bar38 staff2",
+          "before_ids": [
+            "m038-s2-v1-e01",
+            "m038-s2-v1-e02",
+            "m038-s2-v1-e03",
+            "m038-s2-v1-e04"
+          ],
+          "after": "D6eighth0,eighthrest1/2,quarterrest1,halfrest2. Bass clef at end before39."
+        },
+        {
+          "scope": "bar39 staff1",
+          "before_ids": [
+            "m039-s1-v5-e01",
+            "m039-s1-v6-e02",
+            "m039-s1-v8-e03",
+            "m039-s1-v8-e04",
+            "m039-s1-v6-e05",
+            "m039-s1-v6-e06",
+            "m039-s1-v6-e07",
+            "m039-s1-v6-e08",
+            "m039-s1-v6-e09",
+            "m039-s1-v6-e10",
+            "m039-s1-v8-e11",
+            "m039-s1-v8-e12",
+            "m039-s1-v5-e13",
+            "m039-s1-v6-e14",
+            "m039-s1-v6-e15"
+          ],
+          "after": "Melody F4dottedhalf0,Eb4quarter3. Accompaniment R G3 Bb3 G4 Bb3 G3 twice at successive thirds0..11/3. Remove all voice8 phantom rests and restore second-half triplets. Melody slur F4->Eb4, not tie."
+        },
+        {
+          "scope": "bar39 staff2",
+          "before_ids": [
+            "m039-s2-v1-e01",
+            "m039-s2-v2-e02",
+            "m039-s2-v3-e03",
+            "m039-s2-v4-e04",
+            "m039-s2-v1-e05",
+            "m039-s2-v1-e06",
+            "m039-s2-v1-e07",
+            "m039-s2-v2-e08",
+            "m039-s2-v1-e09",
+            "m039-s2-v1-e10",
+            "m039-s2-v1-e11",
+            "m039-s2-v4-e12",
+            "m039-s2-v1-e13",
+            "m039-s2-v1-e14",
+            "m039-s2-v1-e15",
+            "m039-s2-v1-e16",
+            "m039-s2-v1-e17"
+          ],
+          "after": "Bass Eb2quarter0 and2; unprinted gaps. Moving line R Bb2 Eb3 G3 Eb3 Bb2 twice as eighth triplets. Remove spurious D4dottedhalf and phantom bass rest lanes."
+        },
+        {
+          "scope": "bar40 staff1",
+          "before_ids": [
+            "m040-s1-v5-e01",
+            "m040-s1-v6-e02",
+            "m040-s1-v7-e03",
+            "m040-s1-v6-e04",
+            "m040-s1-v6-e05",
+            "m040-s1-v6-e06",
+            "m040-s1-v6-e07",
+            "m040-s1-v6-e08",
+            "m040-s1-v6-e09",
+            "m040-s1-v6-e10",
+            "m040-s1-v6-e11",
+            "m040-s1-v6-e12",
+            "m040-s1-v6-e13",
+            "m040-s1-v6-e14"
+          ],
+          "after": "WholeEb4 at0 tied to41 Eb4. Accompaniment R G3 Bb3 G4 Bb3 G3 then R G3 Bb3 G4 Bb3 G3 at third positions. Correct candidate F3@5/3 toG3 and remove phantom all-rest voice. Candidate final chord on11/3 must become single G3. Bb3 at10/3 has independent upward quarter stem and tie to41 Bb3; G3@11/3 ties to41 G3. Resolve shared beamed/held Bb3 representation without extra attack."
+        },
+        {
+          "scope": "bar40 staff2",
+          "before_ids": [
+            "m040-s2-v1-e01",
+            "m040-s2-v1-e02",
+            "m040-s2-v1-e03",
+            "m040-s2-v1-e04"
+          ],
+          "after": "Retain Eb2quarter0,quarterrest1,Eb2quarter2,quarterrest3; no moving accompaniment on this staff."
+        },
+        {
+          "scope": "bar41 staff1",
+          "before_ids": [
+            "m041-s1-v1-e01"
+          ],
+          "after": "Retain G3/Bb3/Eb4 whole chord, each member with incoming tie from its own40 source; fermata over chord. No new attacks for tied members."
+        },
+        {
+          "scope": "bar41 staff2",
+          "before_ids": [
+            "m041-s2-v1-e01"
+          ],
+          "after": "Retain Eb2whole0 with inverted fermata below; not tied from40 quarter. Final light-heavy barline."
+        }
+      ],
+      "exact_event_plan": "reviewer/tail_event_plan.json",
+      "later_phase_checks": [
+        "Bind40 final Bb3 shared upward quarter stem versus beamed eighth and three distinct41 incoming member ties",
+        "Bind exact restored note IDs39/40 and precise mark/fingering endpoints"
+      ]
+    }
+  ],
+  "exact_plans": {
+    "reviewer/opening_event_plan.json": "6d73070a650143df59ba1f86691ce54f2d3d0305b1d9199f9ecbeb5989c68f9c",
+    "reviewer/middle_event_plan.json": "6e9250dd3bcce9f59f95ed4d6a6a5bb62bff39dfe1d7a79379e0dac27144fc0a",
+    "reviewer/endings_event_plan.json": "b3c860c9b437574b7250e8de4250376d2d35923e3f398f5923574e98e27c97fb",
+    "reviewer/chromatic_event_plan.json": "6542ccc8c7f9490a808baa0b1072e0008666fece187f4ad73595894bbd9ef032",
+    "reviewer/page_end_event_plan.json": "1ad0be90fb2ed2c3ac04d14acf3e5d78bfe6a21654875b624276dbb35e82e0e8",
+    "reviewer/return_event_plan.json": "b18408664809983d42b96adf79807758ecf12633993f7dbaea9d98d5d0241a64",
+    "reviewer/second_ending_event_plan.json": "20d7beab24ddeb40f87df3ac5a960c22fd5b159a6cb42fffa3fd58c18e6111ff",
+    "reviewer/tail_event_plan.json": "0823ec3a4bb90b50dc4445dee6205314978600b88636143af0b439a097a6308b"
+  },
+  "mark_and_route_sources": {
+    "reviewer/route_plan.json": "7b428d537a5bcb3533205bbbef82de0a55ff240573f0e8a30feeea98c18b68a0",
+    "reviewer/short_slur_recheck.json": "29a87d6d5d895e7f9c63d97505274f546d3433f992bb2cc69e454037b83e830f"
+  },
+  "logical_event_membership_count": 1058,
+  "mark_target_count": 491,
+  "shared_attack_requirements": {
+    "path": "reviewer/shared_attack_plan.json",
+    "sha256": "58c5411c52f1feeaa3860d0b8b42ba190913532990e84ac55cc0bdee0d7be910",
+    "groups": 47,
+    "implementation_status": "UNPERFORMED_PHASE4_REQUIRED",
+    "obligation": "Preserve all written memberships, one physical sounding attack, longest authored sustain and every member tie; choose encoder in Phase4 and verify in actual Phase5 production playback/render. Source binding completeness does not certify implementation."
+  },
+  "human_attention_ids": [
+    "FINGERING-036-BB2",
+    "PEDAL-039-END",
+    "HAND-033-BRACKET",
+    "FINGERING-033-ARC",
+    "FINGERING-033-G4",
+    "SLUR-007-009-END",
+    "SLUR-012-REPEAT-END",
+    "EXPRESSIVE-TIMING-OPENING",
+    "SLUR-031-REPEAT-END"
+  ],
+  "human_outcome": null,
+  "ensemble_assessment": {
+    "path": "reviewer/ensemble_recheck.json",
+    "sha256": "767be99928b6641958db4a0523c8db62fefb3abd3c4b299d15ac917cf083f44c"
+  },
+  "later_phase_work": [
+    "Apply exact source-supported reconstructions and mark/route targets to new primary",
+    "Choose and verify shared-stem encoding without double attacks or lost written values; minimize topology",
+    "Preserve hand bracket/fingering connectors with explicit limitations if unsupported; retain all human questions",
+    "Obtain primary host release then perform all mandated Phase5 checks and complete human-review delivery"
+  ],
+  "audit_open_checks": []
+}

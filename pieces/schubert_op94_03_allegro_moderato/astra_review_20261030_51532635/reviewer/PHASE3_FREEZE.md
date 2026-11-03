@@ -1,0 +1,13 @@
+# Phase 3 complete independent audit and correction freeze
+
+Checked all78 physical bars, twelve printed systems,695 grouped candidate events and every member XML note against the print working reading. Exact candidate XML, ledger, and all695 provenance pointers agree structurally (candidate_binding_check.json); this is not musical approval. All ensemble disagreements, including resolved/nonblocking entries, and every ensemble_quality finding were rechecked against the explicit print target, not decided by voting. The source discrepancy list is empty but does not detect the inner-voice errors found here.
+
+The correction specification is phase3_target_encoding.json:1066 target note/rest members, explicit pitches/onsets/durations/grace status, original beam anchor or direct reconstruction, three musical lines,126 precisely anchored marks, unchanged physical frame and straight route. phase3_review.json binds exact current IDs and before/after payloads by physical bar. candidate_note_audit.json includes every raw note including unanimous/undisputed ones. Retain all changes as UNVERIFIED.
+
+No print-supported ties, tuplets, pedal, fingering or arpeggio signs found. Restore slurs, grace groups, staccatos, accents, dynamics, wedges, two dim. texts, tempo text and terminal fermatas. There are no cross-staff beams. Lower clef transitions and all printed barlines were independently checked; preserve them. Source has no creator credits or explicit instrument labels on supplied pages; no composer inferred from filename.
+
+Voice topology: principal upper1, independent inner upper2 where printed, accompaniment lower3. Context-sensitive mapping is mandatory in P025/P056; upper5/6 must not both map to1. Remove phantom upper2 rests P003 and unprinted P057 beat1 rest. Preserve independently moving or sustained notes. P008/P016/P056 silence and inner rest are explicitly provisional, with no invented visible rest/dot.
+
+Focused source rechecks P012/P025/P056/P073 and P023 established precise head positions and ownership; original and enlarged evidence retained. P012 lower damage, opening rhythm/shared-rest realization, grace accidental scope, and small-note/beam realization remain final human questions in human_attention.json. They are not engineering blockers. No repeated inspection can repair the damaged source. Phase1/2 bytes remain unchanged; new inventory clarifications are explicit in phase3_correction_spec.json.
+
+This freeze does not certify delivery, playback, rendering, SEP round trips or publication. Candidate has not been modified. Later-phase request has not been read. Corrections and all Stage5 work remain owned by this reviewer after authorized release.

@@ -1,0 +1,73 @@
+{
+  "schema": "astra_focused_mark_inspection.v1",
+  "candidate_sha256": "e349d95afec5456b27035b995e0ce95bcb3d74a2f631471d251fcbd5cd12956a",
+  "source_evidence": {
+    "reviewer/crops/system_05_large.png": "f51702e4120ba7381685d704a38896c8dc03d1e47d4e8c4ac38a0926f0c93035"
+  },
+  "changes": [
+    {
+      "id": "audit-chromatic-mark-013",
+      "before": {
+        "kind": "slur",
+        "start": "audit-m015-s1-shared-q3-Ab4",
+        "stop": "audit-m015-s1-shared-q11_3-Ab4",
+        "placement": "above",
+        "id": "audit-chromatic-mark-013"
+      },
+      "after": {
+        "kind": "slur",
+        "start": "audit-m015-s1-shared-q10_3-Gb4",
+        "stop": "audit-m015-s1-shared-q11_3-Ab4",
+        "placement": "above",
+        "id": "audit-chromatic-mark-013"
+      },
+      "source_reason": "Enlarged upper short arc starts on penultimate triplet chord10/3 and ends11/3; first chord3 is outside this short slur."
+    },
+    {
+      "id": "audit-chromatic-mark-031",
+      "before": {
+        "kind": "slur",
+        "start": "audit-m016-s1-shared-q3-Ab4",
+        "stop": "audit-m016-s1-shared-q11_3-C5",
+        "placement": "above",
+        "id": "audit-chromatic-mark-031"
+      },
+      "after": {
+        "kind": "slur",
+        "start": "audit-m016-s1-shared-q10_3-Bb4",
+        "stop": "audit-m016-s1-shared-q11_3-C5",
+        "placement": "above",
+        "id": "audit-chromatic-mark-031"
+      },
+      "source_reason": "Enlarged upper short arc starts on penultimate triplet chord10/3 and ends11/3; first chord3 is outside this short slur."
+    },
+    {
+      "id": "audit-chromatic-mark-052",
+      "before": {
+        "kind": "slur",
+        "start": "audit-m017-s1-shared-q3-Ab4",
+        "stop": "audit-m017-s1-melody-q11_3-C5",
+        "placement": "above",
+        "id": "audit-chromatic-mark-052"
+      },
+      "after": {
+        "kind": "slur",
+        "start": "audit-m017-s1-melody-q10_3-Bb4",
+        "stop": "audit-m017-s1-melody-q11_3-C5",
+        "placement": "above",
+        "id": "audit-chromatic-mark-052"
+      },
+      "source_reason": "Enlarged upper short arc starts on penultimate triplet chord10/3 and ends11/3; first chord3 is outside this short slur."
+    }
+  ],
+  "confirmed": [
+    "Both-side staccatos15\u201317 apply only to final two triplet groups10/3 and11/3",
+    "Lower short slurs15 Eb4->F4,16 Gb4->Ab4,17 Eb4->D4 connect10/3 to11/3",
+    "Lower first-half arcs15/17 sharedGb4:0->Eb4:5/3 and16 sharedGb4:0->Cb4:5/3",
+    "Lower second-half arcs sharedF4:2->F4:3 retain accompaniment ownership",
+    "Bass arcs15 Bb1:0->Db2:2,16 Gb1:0->Bb1:2,17 Bb1:0->Db2:2"
+  ],
+  "remaining": [
+    "Shared-duration XML representation must preserve both written values and one sounding attack; Phase4 encoder and Phase5 actual playback/render still required"
+  ]
+}

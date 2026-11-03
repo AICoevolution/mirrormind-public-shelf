@@ -1,0 +1,96 @@
+{
+  "system": 20,
+  "observations": [
+    {
+      "bar": 60,
+      "staff": "1",
+      "reading": "Twelve eighths E#4 C#4 G#3 C#4 E#4 G#4 repeated twice match. SharpE4 at0. Slur0->last; p0; finger4 initial. Six-eighth beams."
+    },
+    {
+      "bar": 60,
+      "staff": "2",
+      "reading": "C#2 dotted-half0 E#2 quarter3 G#2 quarter4 B-natural2 quarter5 match. cantabile0; incoming bass slur P057@0 ends C#2@0. Slur3->5. Substitution4->5 on initial C#2; explicit sharpE2,naturalB2."
+    },
+    {
+      "bar": 61,
+      "staff": "1",
+      "reading": "F#4 C#4 A3 C#4 F#4 A4 F#4 D#4 B#3 D#4 F#4 A4 eighths match. SharpD4@3.5 and B3@4. Slur0->last."
+    },
+    {
+      "bar": 61,
+      "staff": "2",
+      "reading": "Small unslashed eighth grace B2 before A2 quarter0; grace slur to A2. Upper quarters A2 G#2 F#2 A2 G#2 F#2; lower C#2 half0 rest2. No E1@3,rest4 or duplicate F#2@5. Slurs upper0->2 and3->5; finger1 at3. Grace missing candidate. Grace sounding timing remains provisional; not a metrical eighth addition."
+    },
+    {
+      "bar": 62,
+      "staff": "1",
+      "reading": "G#4 E#4 C#4 E#4 G#4 C#5 repeated twice as eighths matches. SharpE4@.5; finger3 initial; slur0->last."
+    },
+    {
+      "bar": 62,
+      "staff": "2",
+      "reading": "C#3 dotted-half0 D3 quarter3 C#3 quarter4 B2 quarter5; lower C#2 half0 rest2 matches. Extra lower dotted-half rest3 unprinted. Accent0; slur3->5; finger1 at3. Ordinary barlines, no tuplets."
+    }
+  ],
+  "corrections": [
+    {
+      "bar": 61,
+      "staff": "2",
+      "operation": "add_grace",
+      "before_onset_q": "0",
+      "pitch": "B2",
+      "type": "eighth",
+      "slash": "no",
+      "slur_to": "m061-s2-v1-e01"
+    },
+    {
+      "event_id": "m061-s2-v2-e07",
+      "after": "delete unprinted E1"
+    },
+    {
+      "event_id": "m061-s2-v2-e09",
+      "after": "delete unprinted rest"
+    },
+    {
+      "event_id": "m061-s2-v2-e11",
+      "after": "delete duplicate F#2"
+    },
+    {
+      "event_id": "m062-s2-v2-e05",
+      "after": "delete unprinted dotted-half rest"
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "P061-GRACE-TIMING",
+      "address": "Piano lower physical bar61 before beat1",
+      "question": "How should the unslashed B2 grace borrow time from the opening A2?",
+      "provisional_treatment": "Encode zero-metric-duration unslashed eighth grace, provisional playback grace realization; retain six-quarter bar.",
+      "alternatives": [
+        "Grace before beat",
+        "Grace on beat borrowing from A2"
+      ],
+      "reason_for_uncertainty": "Print gives grace notation but no unique performance duration.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    }
+  ],
+  "pending": [
+    "Close grace crop",
+    "Final marks targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_20.png",
+  "candidate_packet": "candidate_packets/system_20.json",
+  "bars": [
+    60,
+    61,
+    62
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

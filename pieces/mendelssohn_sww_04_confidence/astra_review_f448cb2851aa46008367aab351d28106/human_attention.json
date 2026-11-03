@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "id": "GRACE-P011",
+      "address": "P011 staff1 before onset3 E5",
+      "question": "Does the tiny C#5 eighth have a printed slash, and what performance duration should it borrow?",
+      "provisional_treatment": "Retain small C#5 as zero-measured-duration grace eighth before E5 at3, with slur to E5. E5 remains dotted eighth3/4 and D5 sixteenth1/4. Do not treat small note as measured eighth that displaces E5. Slash unresolved. Final primary uses slash=no; performance borrows0.1875 seconds at internal80bpm, scaled by the viewer to the preferred84bpm.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/P011_detail.png"
+      ]
+    },
+    {
+      "id": "GRACE-P023",
+      "address": "P023 staff1 before onset3 E5",
+      "question": "Does the tiny C#5 eighth have a printed slash, and what performance duration should it borrow?",
+      "provisional_treatment": "Retain small C#5 as zero-measured-duration grace eighth before E5 at3, with slur to E5. E5 remains dotted eighth3/4 and D5 sixteenth1/4. Do not treat small note as measured eighth that displaces E5. Slash unresolved. Final primary uses slash=no; performance borrows0.1875 seconds at internal80bpm, scaled by the viewer to the preferred84bpm.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/system_05.png"
+      ]
+    },
+    {
+      "id": "PEDAL-RELEASE",
+      "address": "P001-P031 staff2; exact81 events in reviewer/phase3_pedal_rechecked_7bcfb546.json",
+      "question": "Confirm the performance timing of printed terminal bracket hooks between attacks, especially P002\u2013P003, P007, P027 and P028\u2013P029.",
+      "provisional_treatment": "Retain all81 start/change/stop directions at the frozen rational offsets. Stops at P003/P029 onset0 encode the preceding boundary; exact release before the attack remains for listening/print verification. No inferred Ped. simile repetitions and no synthesized sound-only sustain attributes.",
+      "evidence": [
+        "reviewer/phase3_pedal_rechecked_7bcfb546.json",
+        "reviewer/system_01.png",
+        "reviewer/system_02.png",
+        "reviewer/system_03.png",
+        "reviewer/system_04.png",
+        "reviewer/system_05.png",
+        "reviewer/system_06.png",
+        "reviewer/system_07.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "engraving",
+      "severity": "minor",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "blocks_safe_continuation": false,
+      "check_failures": [],
+      "id": "ENGRAVING-SLUR-P026-P027",
+      "address": "P026\u2013P027 lower staff; layouts 1350/1, 1000/0.9 and 900/1",
+      "question": "Accept the tall lower-staff slur continuation and close spacing to the p dynamic?",
+      "provisional_treatment": "Retain current production rendering and exact frozen MusicXML. At 1350 the continuation is a narrow arch; at 1000 the rising curve touches the readable p. No staff-ownership change.",
+      "issue_type": "readable_overlap",
+      "readability_reason": "The p remains identifiable above the lower staff; both endpoints visibly follow the lower D3\u2013C#3 line. The upper phrase and separate lower E2\u2013A2 slur remain distinct. Pitch, timing and ownership are unambiguous.",
+      "evidence": [
+        "recheck/render/staff-ownership-1350-1-0.png",
+        "recheck/render/staff-ownership-1350-1-1.png",
+        "recheck/render/staff-ownership-1000-0.9-0.png",
+        "recheck/render/staff-ownership-900-1-0.png"
+      ]
+    },
+    {
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "engraving",
+      "severity": "minor",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "blocks_safe_continuation": false,
+      "check_failures": [],
+      "id": "ENGRAVING-TITLE-NARROW",
+      "address": "Score heading, width900 zoom1",
+      "question": "Accept clipping of the long draft heading in the narrow layout?",
+      "provisional_treatment": "Retain the frozen title and use the fully visible wider layout for heading review. Reviewed credits remain in delivery_final/namecard.json.",
+      "issue_type": "spacing",
+      "readability_reason": "Clipping affects only the long draft heading. The score notation remains visible, and the complete heading is readable at width1350 and width1000.",
+      "evidence": [
+        "recheck/render/title-900-1.png",
+        "recheck/render/render-1350-1.png"
+      ]
+    }
+  ],
+  "schema": "astra_human_attention.v1"
+}

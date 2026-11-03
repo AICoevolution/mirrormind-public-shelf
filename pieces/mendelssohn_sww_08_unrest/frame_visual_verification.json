@@ -1,0 +1,547 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "mendelssohn_sww_08_unrest",
+  "authority": "print_only",
+  "source_pdf_sha256": "9bf620e805541838d51997104ff7270d3a882e902604ccaa2d37a24b128f6bb3",
+  "pages_json_sha256": "35cc868232d7d59c05dd8582c343709b01dcb4bad03dd3cba1fc5e8b69696cd9",
+  "status": "PROPOSED_FOR_INDEPENDENT_VERIFICATION",
+  "inspection": "All three complete page images and all 18 system previews inspected directly. Full page canvas retained, including scan borders, footnote, plate and copyright.",
+  "pickup_or_partial_bars": [
+    {
+      "physical_bar": 1,
+      "id": "P001",
+      "capacity_q": "1/4",
+      "flags": [
+        "PICKUP"
+      ],
+      "kind": "one sixteenth anacrusis",
+      "capacity_plain": "One sixteenth-note chord above one sixteenth rest; two flags/two rest hooks.",
+      "evidence": {
+        "page": 1,
+        "system": 1,
+        "physical_bar": 1,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_01.png",
+        "bbox_px": [
+          405,
+          195,
+          470,
+          402
+        ],
+        "coordinate_space": "page_px"
+      }
+    }
+  ],
+  "repeat_boundaries": [
+    {
+      "before_physical_bar": 2,
+      "kind": "forward repeat after pickup",
+      "flags": [
+        "REPEAT_START"
+      ],
+      "evidence": {
+        "page": 1,
+        "system": 1,
+        "physical_bar": 2,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_01.png",
+        "bbox_px": [
+          457,
+          194,
+          487,
+          400
+        ],
+        "coordinate_space": "page_px"
+      }
+    },
+    {
+      "after_physical_bar": 19,
+      "kind": "backward repeat at first ending",
+      "flags": [
+        "REPEAT_END"
+      ],
+      "evidence": {
+        "page": 1,
+        "system": 3,
+        "physical_bar": 19,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_03.png",
+        "bbox_px": [
+          1457,
+          816,
+          1490,
+          1034
+        ],
+        "coordinate_space": "page_px"
+      }
+    }
+  ],
+  "clef_changes": [],
+  "clef_review": {
+    "systems_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "claim": "Treble upper and bass lower throughout; no octave transposition signs or clef changes are printed."
+  },
+  "pickup_terminal_capacity_check": {
+    "pickup_region": "P001",
+    "pickup_capacity_q": "1/4",
+    "terminal_region": "P109",
+    "terminal_capacity_q": "3/2",
+    "printed_meter_capacity_q": "3/2",
+    "sum_q": "7/4",
+    "equals_meter": false,
+    "explanation": "Print-evidenced exception: the pickup precedes the forward repeat, whose loop starts at P002. First and second endings P019/P020 each occupy a full 6/16 bar (six sixteenths in the lower staff), with the melodic upbeat in their last sixteenth. Final P109 explicitly contains an eighth-note event, a sixteenth rest and a dotted-eighth rest = 6/16, with fermatas. It is not a shortened terminal complement; do not subtract the opening pickup from it.",
+    "evidence": [
+      {
+        "page": 1,
+        "system": 1,
+        "physical_bar": 1,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_01.png",
+        "bbox_px": [
+          243,
+          95,
+          470,
+          450
+        ],
+        "coordinate_space": "page_px"
+      },
+      {
+        "page": 1,
+        "system": 3,
+        "physical_bar": 19,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_03.png",
+        "bbox_px": [
+          1277,
+          775,
+          1483,
+          1080
+        ],
+        "coordinate_space": "page_px"
+      },
+      {
+        "page": 1,
+        "system": 4,
+        "physical_bar": 20,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_04.png",
+        "bbox_px": [
+          155,
+          1080,
+          541,
+          1380
+        ],
+        "coordinate_space": "page_px"
+      },
+      {
+        "page": 3,
+        "system": 18,
+        "physical_bar": 109,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_18.png",
+        "bbox_px": [
+          1340,
+          1710,
+          1480,
+          2005
+        ],
+        "coordinate_space": "page_px"
+      }
+    ]
+  },
+  "terminal_regions": [
+    {
+      "physical_bar": 109,
+      "capacity_q": "3/2",
+      "flags": [
+        "FINAL_BARLINE"
+      ],
+      "evidence": {
+        "page": 3,
+        "system": 18,
+        "physical_bar": 109,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_18.png",
+        "bbox_px": [
+          1340,
+          1710,
+          1480,
+          2005
+        ],
+        "coordinate_space": "page_px"
+      },
+      "written_count": "eighth (1/2) + sixteenth rest (1/4) + dotted eighth rest (3/4) = 3/2 quarters"
+    }
+  ],
+  "key_changes": [
+    {
+      "physical_bar": 85,
+      "onset_q": "0",
+      "fifths": -2,
+      "staff_ids": [
+        "1",
+        "2"
+      ],
+      "evidence": {
+        "page": 3,
+        "system": 14,
+        "physical_bar": 84,
+        "onset_q": "0",
+        "crop_path": "source_crops/system_14.png",
+        "bbox_px": [
+          1420,
+          500,
+          1500,
+          750
+        ],
+        "coordinate_space": "page_px"
+      },
+      "placement": "REGION_END_CAUTIONARY",
+      "effective_region": "P085",
+      "description": "Cancellation naturals and two flats after double barline at end of system 14; two flats reprinted in system 15."
+    }
+  ],
+  "split_regions": [],
+  "system_checks": [
+    {
+      "system": 1,
+      "page": 1,
+      "physical_bar_range": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "physical_bar_range": [
+        7,
+        12
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "physical_bar_range": [
+        13,
+        19
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "physical_bar_range": [
+        20,
+        24
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "physical_bar_range": [
+        25,
+        30
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 6,
+      "page": 1,
+      "physical_bar_range": [
+        31,
+        36
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "physical_bar_range": [
+        37,
+        41
+      ],
+      "crop_path": "source_crops/system_07.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "physical_bar_range": [
+        42,
+        47
+      ],
+      "crop_path": "source_crops/system_08.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "physical_bar_range": [
+        48,
+        54
+      ],
+      "crop_path": "source_crops/system_09.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "physical_bar_range": [
+        55,
+        59
+      ],
+      "crop_path": "source_crops/system_10.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "physical_bar_range": [
+        60,
+        64
+      ],
+      "crop_path": "source_crops/system_11.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 12,
+      "page": 2,
+      "physical_bar_range": [
+        65,
+        71
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 13,
+      "page": 3,
+      "physical_bar_range": [
+        72,
+        77
+      ],
+      "crop_path": "source_crops/system_13.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 14,
+      "page": 3,
+      "physical_bar_range": [
+        78,
+        84
+      ],
+      "crop_path": "source_crops/system_14.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 15,
+      "page": 3,
+      "physical_bar_range": [
+        85,
+        90
+      ],
+      "crop_path": "source_crops/system_15.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 16,
+      "page": 3,
+      "physical_bar_range": [
+        91,
+        96
+      ],
+      "crop_path": "source_crops/system_16.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 17,
+      "page": 3,
+      "physical_bar_range": [
+        97,
+        102
+      ],
+      "crop_path": "source_crops/system_17.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    },
+    {
+      "system": 18,
+      "page": 3,
+      "physical_bar_range": [
+        103,
+        109
+      ],
+      "crop_path": "source_crops/system_18.png",
+      "claim": "Two complete staves; closing barline present; opening treble and bass are reprints, not changes."
+    }
+  ],
+  "fingering_attention": {
+    "status": "DEFERRED_NONBLOCKING",
+    "systems": [
+      3,
+      5,
+      6,
+      11,
+      12
+    ],
+    "issue": "Tight corridors can place fingering digits close to system crop edges; full-page images preserve every printed digit. Retain anchored fingerings and resolve any uncertain ownership during musical/human review."
+  },
+  "barline_position_review": [
+    {
+      "system": 5,
+      "page": 1,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        898,
+        1415,
+        925,
+        1655
+      ],
+      "barline_x_px": 902,
+      "previous_barline_x_px": 920,
+      "claim": "The boundary between P027 and P028 is the continuous through-staff stroke at crop x 802 (page x 902), not proposed crop x 820 (page x 920). The proposal enters the upper-staff accidental area; it has no corresponding connector in the interstaff gap.",
+      "crop_path": "source_crops/system_05.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        160,
+        235,
+        186,
+        450
+      ],
+      "barline_x_px": 181,
+      "previous_barline_x_px": 164,
+      "claim": "The proposed opening boundary at crop x 24 (page x 164) lies on the brace. The straight connecting barline is at crop x 41 (page x 181), through both staves and the intervening space.",
+      "crop_path": "source_crops/system_07.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        161,
+        535,
+        186,
+        770
+      ],
+      "barline_x_px": 181,
+      "previous_barline_x_px": 165,
+      "claim": "The proposed opening boundary at crop x 25 (page x 165) lies on the brace. The straight connecting barline is at crop x 41 (page x 181), through both staves and the intervening space.",
+      "crop_path": "source_crops/system_08.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        161,
+        855,
+        188,
+        1075
+      ],
+      "barline_x_px": 183,
+      "previous_barline_x_px": 165,
+      "claim": "The proposed opening boundary at crop x 25 (page x 165) lies on the brace. The straight connecting barline is at crop x 43 (page x 183), through both staves and the intervening space.",
+      "crop_path": "source_crops/system_09.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        162,
+        1170,
+        190,
+        1385
+      ],
+      "barline_x_px": 185,
+      "previous_barline_x_px": 166,
+      "claim": "The proposed opening boundary at crop x 26 (page x 166) lies on the brace. The straight connecting barline is at crop x 45 (page x 185), through both staves and the intervening space.",
+      "crop_path": "source_crops/system_10.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        161,
+        1470,
+        191,
+        1685
+      ],
+      "barline_x_px": 186,
+      "previous_barline_x_px": 165,
+      "claim": "The proposed opening boundary at crop x 25 (page x 165) lies on the brace. The straight connecting barline is at crop x 46 (page x 186), through both staves and the intervening space.",
+      "crop_path": "source_crops/system_11.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        1030,
+        1470,
+        1050,
+        1685
+      ],
+      "barline_x_px": 1034,
+      "previous_barline_x_px": 1045,
+      "claim": "The boundary between P062 and P063 is the continuous through-staff stroke at crop x 894 (page x 1034), not proposed crop x 905 (page x 1045). The proposal enters the upper-staff accidental area; it has no corresponding connector in the interstaff gap.",
+      "crop_path": "source_crops/system_11.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    },
+    {
+      "system": 12,
+      "page": 2,
+      "evidence_space": "page_px",
+      "evidence_bbox_px": [
+        161,
+        1763,
+        195,
+        1995
+      ],
+      "barline_x_px": 190,
+      "previous_barline_x_px": 165,
+      "claim": "The proposed opening boundary at crop x 25 (page x 165) lies on the brace. The straight connecting barline is at crop x 50 (page x 190), through both staves and the intervening space.",
+      "crop_path": "source_crops/system_12.png",
+      "inspection": "Printed system crop inspected; corrected coordinate lies on the continuous through-staff connector."
+    }
+  ]
+}

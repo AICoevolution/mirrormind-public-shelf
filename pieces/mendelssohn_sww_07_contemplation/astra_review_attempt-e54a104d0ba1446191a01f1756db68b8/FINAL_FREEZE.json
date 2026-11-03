@@ -1,0 +1,117 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "review_protocol": "print_first_candidate_audit.v1",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "status": "UNVERIFIED",
+  "primary_xml": "delivery_final/UNVERIFIED_contemplation.musicxml",
+  "primary_xml_sha256": "2a1ea196936533c6fda10fe8dc9841856fbfd90cb961cfc3541c32994f1ff697",
+  "phase3_frozen": true,
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/primary_assessment_recovery.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/playback_quantized_checks.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recovery_duration_mapping.json",
+        "validation/member_beam_recovery.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "RENDER-033-ACCENT",
+        "RENDER-HEADING",
+        "RENDER-012-MF",
+        "RENDER-040-SLUR"
+      ],
+      "evidence": [
+        "validation/visual_recovery.json",
+        "validation/member_beam_recovery.json"
+      ],
+      "coverage_complete": true
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "RENDER-033-ACCENT",
+        "RENDER-HEADING",
+        "RENDER-012-MF",
+        "RENDER-040-SLUR"
+      ],
+      "evidence": [
+        "validation/visual_recovery.json",
+        "validation/member_beam_recovery.json"
+      ],
+      "coverage_complete": true
+    }
+  },
+  "delivery_issues": [
+    "RENDER-033-ACCENT",
+    "STRUCTURE-16ff06dd6d85c51c",
+    "STRUCTURE-c36322be26f81fd4",
+    "STRUCTURE-955494432d1bd46b",
+    "STRUCTURE-0abb8e644d38ebf6",
+    "STRUCTURE-2bab9bfdaf5beefd",
+    "STRUCTURE-71957085c0bb552e",
+    "STRUCTURE-4f3ad8f9d8c7e50e",
+    "SEP-CORE-REBUILD",
+    "SEP-MARKS-PAYLOAD",
+    "RENDER-HEADING",
+    "RENDER-012-MF",
+    "RENDER-040-SLUR"
+  ],
+  "layer_readiness": {
+    "primary_xml_sha256": "2a1ea196936533c6fda10fe8dc9841856fbfd90cb961cfc3541c32994f1ff697",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/recovery_layers/layer_checks.json",
+        "validation/layer_difference_details.json"
+      ],
+      "reason": "Primary is PROPER, exact source-bound playback passes, and actual CORE Apply is byte-exact. Diagnostic standalone tie-start difference remains LIMITED in the raw report and explicitly retained as SEP-CORE-REBUILD under MARKS handoff.",
+      "review_findings": [
+        "SEP-CORE-REBUILD"
+      ],
+      "scope": "Accepted primary CORE validity and actual CORE Apply only. This is not a lossless standalone reconstruction claim."
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "STRUCTURE-16ff06dd6d85c51c",
+        "STRUCTURE-c36322be26f81fd4",
+        "STRUCTURE-955494432d1bd46b",
+        "STRUCTURE-0abb8e644d38ebf6",
+        "STRUCTURE-2bab9bfdaf5beefd",
+        "STRUCTURE-71957085c0bb552e",
+        "STRUCTURE-4f3ad8f9d8c7e50e",
+        "SEP-CORE-REBUILD",
+        "SEP-MARKS-PAYLOAD"
+      ],
+      "evidence": [
+        "validation/recovery_layers/layer_checks.json",
+        "validation/layer_difference_details.json",
+        "validation/primary_assessment_recovery.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/layer_checks.json",
+        "validation/playback_quantized_checks.json"
+      ]
+    }
+  }
+}

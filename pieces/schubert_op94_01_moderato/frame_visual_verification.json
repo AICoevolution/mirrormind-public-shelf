@@ -1,0 +1,617 @@
+{
+  "schema": "frame-visual-verification.v1",
+  "piece_id": "schubert_op94_01_moderato",
+  "authority": "print_only",
+  "source_pdf_sha256": "1eb7e9dc6ac55be36f8000c00436e98ce4fd9baa1914a54ac70893ac834403fb",
+  "pages_json_sha256": "aa7bcd538ea61051d1741052f9a0a5d1fb6cf290da3ed4dd7ac04bc582445505",
+  "physical_bar_count": 95,
+  "status": "PREPARER_INSPECTION_ONLY_INDEPENDENT_VERIFICATION_REQUIRED",
+  "pickup_checks": [],
+  "terminal_partial_checks": [],
+  "split_region_checks": [],
+  "clef_change_checks": [],
+  "repeat_boundary_checks": [
+    {
+      "after_physical_bar": 8,
+      "before_physical_bar": 9,
+      "flags": [
+        "COMBINED_REPEAT"
+      ],
+      "kind": "backward and forward repeat",
+      "evidence": {
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "bbox_px": [
+          439,
+          848,
+          493,
+          1090
+        ],
+        "onset_q": "3",
+        "claim": "Dots on both sides of the repeat barline."
+      }
+    },
+    {
+      "after_physical_bar": 29,
+      "flags": [
+        "REPEAT_END"
+      ],
+      "kind": "backward repeat",
+      "evidence": {
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "bbox_px": [
+          1630,
+          1915,
+          1678,
+          2150
+        ],
+        "onset_q": "3",
+        "claim": "Backward repeat at the end of page 1."
+      }
+    },
+    {
+      "before_physical_bar": 30,
+      "flags": [
+        "REPEAT_START"
+      ],
+      "kind": "forward repeat",
+      "evidence": {
+        "page": 2,
+        "system": 6,
+        "crop_path": "source_crops/system_06.png",
+        "bbox_px": [
+          192,
+          158,
+          232,
+          372
+        ],
+        "onset_q": "0",
+        "claim": "Forward repeat following the one-sharp signature."
+      }
+    },
+    {
+      "after_physical_bar": 37,
+      "before_physical_bar": 38,
+      "flags": [
+        "COMBINED_REPEAT"
+      ],
+      "kind": "backward and forward repeat",
+      "evidence": {
+        "page": 2,
+        "system": 7,
+        "crop_path": "source_crops/system_07.png",
+        "bbox_px": [
+          946,
+          450,
+          998,
+          665
+        ],
+        "onset_q": "3",
+        "claim": "Dots on both sides of the internal repeat barline."
+      }
+    },
+    {
+      "after_physical_bar": 58,
+      "flags": [
+        "REPEAT_END"
+      ],
+      "kind": "backward repeat",
+      "evidence": {
+        "page": 2,
+        "system": 11,
+        "crop_path": "source_crops/system_11.png",
+        "bbox_px": [
+          1090,
+          1660,
+          1135,
+          1870
+        ],
+        "onset_q": "3",
+        "claim": "Backward repeat before P059; no forward-repeat dots."
+      }
+    }
+  ],
+  "key_checks": [
+    {
+      "physical_bar": 30,
+      "fifths": 1,
+      "onset_q": "0",
+      "effective_region": "P030",
+      "evidence": {
+        "page": 2,
+        "system": 6,
+        "crop_path": "source_crops/system_06.png",
+        "bbox_px": [
+          151,
+          150,
+          195,
+          365
+        ],
+        "onset_q": "0",
+        "claim": "One sharp in both printed staff signatures."
+      },
+      "cautionary_evidence": {
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "bbox_px": [
+          1670,
+          1910,
+          1710,
+          2150
+        ],
+        "onset_q": "3",
+        "claim": "One-sharp signature reprinted after the closing repeat, for the next system."
+      }
+    },
+    {
+      "physical_bar": 67,
+      "fifths": 0,
+      "onset_q": "0",
+      "effective_region": "P067",
+      "evidence": {
+        "page": 3,
+        "system": 13,
+        "crop_path": "source_crops/system_13.png",
+        "bbox_px": [
+          110,
+          150,
+          210,
+          410
+        ],
+        "onset_q": "0",
+        "claim": "Both opening clefs have no following key-signature accidentals."
+      },
+      "cautionary_evidence": {
+        "page": 2,
+        "system": 12,
+        "crop_path": "source_crops/system_12.png",
+        "bbox_px": [
+          1655,
+          1940,
+          1690,
+          2170
+        ],
+        "onset_q": "3",
+        "claim": "Natural sign cancels the one sharp at the end of page 2."
+      }
+    }
+  ],
+  "system_checks": [
+    {
+      "system": 1,
+      "page": 1,
+      "physical_range": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "bbox_px": [
+        70,
+        430,
+        1720,
+        805
+      ],
+      "bar_count": 6,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "physical_range": [
+        7,
+        13
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "bbox_px": [
+        70,
+        810,
+        1720,
+        1145
+      ],
+      "bar_count": 7,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "physical_range": [
+        14,
+        18
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "bbox_px": [
+        70,
+        1130,
+        1720,
+        1495
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "physical_range": [
+        19,
+        23
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "bbox_px": [
+        70,
+        1500,
+        1720,
+        1840
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "physical_range": [
+        24,
+        29
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "bbox_px": [
+        70,
+        1845,
+        1720,
+        2200
+      ],
+      "bar_count": 6,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "physical_range": [
+        30,
+        34
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "bbox_px": [
+        70,
+        120,
+        1720,
+        410
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "physical_range": [
+        35,
+        39
+      ],
+      "crop_path": "source_crops/system_07.png",
+      "bbox_px": [
+        70,
+        415,
+        1720,
+        735
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "physical_range": [
+        40,
+        44
+      ],
+      "crop_path": "source_crops/system_08.png",
+      "bbox_px": [
+        70,
+        720,
+        1720,
+        1030
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "physical_range": [
+        45,
+        49
+      ],
+      "crop_path": "source_crops/system_09.png",
+      "bbox_px": [
+        70,
+        1010,
+        1720,
+        1335
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "physical_range": [
+        50,
+        54
+      ],
+      "crop_path": "source_crops/system_10.png",
+      "bbox_px": [
+        70,
+        1340,
+        1720,
+        1630
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 11,
+      "page": 2,
+      "physical_range": [
+        55,
+        60
+      ],
+      "crop_path": "source_crops/system_11.png",
+      "bbox_px": [
+        70,
+        1605,
+        1720,
+        1930
+      ],
+      "bar_count": 6,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 12,
+      "page": 2,
+      "physical_range": [
+        61,
+        66
+      ],
+      "crop_path": "source_crops/system_12.png",
+      "bbox_px": [
+        70,
+        1935,
+        1720,
+        2210
+      ],
+      "bar_count": 6,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 13,
+      "page": 3,
+      "physical_range": [
+        67,
+        72
+      ],
+      "crop_path": "source_crops/system_13.png",
+      "bbox_px": [
+        70,
+        125,
+        1720,
+        455
+      ],
+      "bar_count": 6,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 14,
+      "page": 3,
+      "physical_range": [
+        73,
+        79
+      ],
+      "crop_path": "source_crops/system_14.png",
+      "bbox_px": [
+        70,
+        460,
+        1720,
+        790
+      ],
+      "bar_count": 7,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 15,
+      "page": 3,
+      "physical_range": [
+        80,
+        84
+      ],
+      "crop_path": "source_crops/system_15.png",
+      "bbox_px": [
+        70,
+        795,
+        1720,
+        1140
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 16,
+      "page": 3,
+      "physical_range": [
+        85,
+        89
+      ],
+      "crop_path": "source_crops/system_16.png",
+      "bbox_px": [
+        70,
+        1145,
+        1720,
+        1465
+      ],
+      "bar_count": 5,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    },
+    {
+      "system": 17,
+      "page": 3,
+      "physical_range": [
+        90,
+        95
+      ],
+      "crop_path": "source_crops/system_17.png",
+      "bbox_px": [
+        70,
+        1470,
+        1720,
+        1810
+      ],
+      "bar_count": 6,
+      "claim": "Counted complete printed bars across both staves; every bar has three quarter-note units. Both opening clefs repeat G2 above F4; no intervening clef glyph changes. No pickup, split, or terminal partial.",
+      "partial_capacity_check": "All regions checked against the 3/4 frame; no incomplete pickup section, so pickup-plus-terminal pairing is not applicable."
+    }
+  ],
+  "opening_meter_evidence": {
+    "page": 1,
+    "system": 1,
+    "crop_path": "source_crops/system_01.png",
+    "bbox_px": [
+      265,
+      518,
+      311,
+      743
+    ],
+    "onset_q": "0",
+    "claim": "3/4 printed on both staves."
+  },
+  "terminal_capacity_evidence": [
+    {
+      "physical_bar": 8,
+      "capacity_q": "3",
+      "evidence": {
+        "page": 1,
+        "system": 2,
+        "crop_path": "source_crops/system_02.png",
+        "bbox_px": [
+          365,
+          850,
+          470,
+          1085
+        ],
+        "onset_q": "0",
+        "claim": "Dotted-half chords occupy the full three-quarter-note bar; not a pickup complement."
+      }
+    },
+    {
+      "physical_bar": 29,
+      "capacity_q": "3",
+      "evidence": {
+        "page": 1,
+        "system": 5,
+        "crop_path": "source_crops/system_05.png",
+        "bbox_px": [
+          1540,
+          1915,
+          1668,
+          2145
+        ],
+        "onset_q": "0",
+        "claim": "Dotted-half chords occupy the full three-quarter-note bar; not a pickup complement."
+      }
+    },
+    {
+      "physical_bar": 66,
+      "capacity_q": "3",
+      "evidence": {
+        "page": 2,
+        "system": 12,
+        "crop_path": "source_crops/system_12.png",
+        "bbox_px": [
+          1545,
+          1940,
+          1665,
+          2170
+        ],
+        "onset_q": "0",
+        "claim": "Dotted-half chords occupy the full three-quarter-note bar; not a pickup complement."
+      }
+    },
+    {
+      "physical_bar": 95,
+      "capacity_q": "3",
+      "evidence": {
+        "page": 3,
+        "system": 17,
+        "crop_path": "source_crops/system_17.png",
+        "bbox_px": [
+          1550,
+          1525,
+          1685,
+          1785
+        ],
+        "onset_q": "0",
+        "claim": "Dotted-half chords occupy the full three-quarter-note bar; not a pickup complement."
+      }
+    }
+  ],
+  "special_barline_checks": [
+    {
+      "physical_bar": 66,
+      "flags": [
+        "DOUBLE_BARLINE",
+        "SECTION_BOUNDARY",
+        "KEY_CHANGE"
+      ],
+      "evidence": {
+        "page": 2,
+        "system": 12,
+        "crop_path": "source_crops/system_12.png",
+        "bbox_px": [
+          1635,
+          1940,
+          1695,
+          2170
+        ],
+        "onset_q": "3",
+        "claim": "Double barline, fermatas, and cautionary natural before the return."
+      }
+    },
+    {
+      "physical_bar": 95,
+      "flags": [
+        "FINAL_BARLINE"
+      ],
+      "evidence": {
+        "page": 3,
+        "system": 17,
+        "crop_path": "source_crops/system_17.png",
+        "bbox_px": [
+          1550,
+          1525,
+          1690,
+          1780
+        ],
+        "onset_q": "3",
+        "claim": "Dotted-half closing chords and final light-heavy barline."
+      }
+    }
+  ],
+  "fingering_treatment": "Full pages retained. Numeral 3 attached to beamed groups is a tuplet marker, not fingering. Any fingering-only uncertainty remains for musical/human review."
+}

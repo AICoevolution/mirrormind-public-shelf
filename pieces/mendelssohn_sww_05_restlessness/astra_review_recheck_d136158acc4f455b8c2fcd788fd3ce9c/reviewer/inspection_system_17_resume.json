@@ -1,0 +1,69 @@
+{
+  "system": 17,
+  "observations": [
+    {
+      "bar": 50,
+      "staff": "1",
+      "reading": "B4 quarter0 rest eighth1 B3 E4 A#4 eighths1.5 onward B4 quarter3 rest4 B3 E4 A#4 eighths4.5 onward matches. f0,cresc.3. Incoming P049 slur endsB4@0; slurs1.5->3 and4.5->P051 B4@0. Finger4 at2.5."
+    },
+    {
+      "bar": 50,
+      "staff": "2",
+      "reading": "Rest eighth0 D3 eighth.5 F#3 eighth1 rest1.5 C#3/G-natural3 quarter2 rest eighth3 D3 eighth3.5 F#3 eighth4 rest4.5 C#3/G3 quarter5 matches. Slurs.5->1,3.5->4; from chord5 to P051 initial chord on both chord-line arcs (different pitches, SLURS not ties). Tenutos.5,2,3.5,5. Fingers4 at.5,1/5 at2."
+    },
+    {
+      "bar": 51,
+      "staff": "1",
+      "reading": "B4 B3 E4 A#4 B4 B3 E4 A#4 B4 B3 E4 A#4 eighths match; accents0,3; slurs.5->2,2.5->4,4.5->5.5. Six-eighth beams."
+    },
+    {
+      "bar": 51,
+      "staff": "2",
+      "reading": "D3/F#3 eighth0 rest.5 C#3/G-natural3 quarter1 D3/F#3 eighth2 rest2.5 C#3/G3 quarter3 D3/F#3 eighth4 rest4.5 C#3/G3 quarter5 matches. Accents0,3; tenutos1,5; paired arcs between chords1->2,3->4 are not ties because pitches differ."
+    },
+    {
+      "bar": 52,
+      "staff": "1",
+      "reading": "B#4 dotted-half0 slurred to C#5 quarter3 followed by quarter rests4,5. Twelve eighths F#4 E#4 F#4 G#4 A-natural4 G#4 F#4 E#4 F#4 G#4 A4 G#4 match. sf above upper melody and ff below staff0; fingers5 melody,2 initial eighth,3 at1.5,1 at2,3 at2.5 and5.5. Explicit sharp B4,E4,G4 and naturalA4. No tie on B#4->C#5."
+    },
+    {
+      "bar": 52,
+      "staff": "2",
+      "reading": "D3/F#3 dotted-half0 then C#3/F#3/A-natural3 quarter3 rests4,5. Candidate pitches/durations agree. Two curved strokes0->3 need member assessment: lower D3->C#3 is slur, upper may tie repeated F#3. Provisional F#3 tie plus lower chord slur; preserve question for final review. Pedal sign0, release3. Original candidate no arcs. Playscore printed-bar52 supplies lower slur only, no tie; its omission does not certify print. Smartscore raw number52 addresses different physical music, so excluded from this comparison."
+    }
+  ],
+  "corrections": [],
+  "uncertainties": [
+    {
+      "id": "P052-BASS-ARC",
+      "address": "Piano lower, physical bar52, dotted-half chord0 to quarter chord3",
+      "question": "Does the upper curved stroke tie F#3 while the lower slurs D3 to C#3?",
+      "provisional_treatment": "Tie F#3 member only and slur lower chord line; never tie D3 to C#3.",
+      "alternatives": [
+        "F#3 tie plus lower slur",
+        "Both arcs represent phrasing with F#3 rearticulated"
+      ],
+      "reason_for_uncertainty": "Small parallel strokes and overlapping chord stems; reader retains only one slur.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    }
+  ],
+  "pending": [
+    "Close crop for P052 curved strokes",
+    "Final exact marks targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_17.png",
+  "candidate_packet": "candidate_packets/system_17.json",
+  "bars": [
+    50,
+    51,
+    52
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

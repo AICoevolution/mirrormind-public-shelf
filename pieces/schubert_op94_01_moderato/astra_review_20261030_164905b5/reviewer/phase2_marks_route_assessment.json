@@ -1,0 +1,24 @@
+{
+  "schema": "astra_reader_marks_route_assessment.v1",
+  "scope": "All 95 measures of each original reader XML; anchored full payload saved in phase2_original_xml_marks_route.json and read in phase2_marks_summary.txt. Compared against print_system_01 through 17 and phase1_inventory.json.",
+  "readers": {
+    "Audiveris": "Original XML has much of the short-slur articulation inventory, but substitutes ties for grace-related phrasing in P001/P009/P013, drops grace glyphs, falsely adds staccatos (e.g. P001 endpoints, P018 opening), adds unprinted fingerings P009/P011/P076, a false fermata P045 and inverted-mordent P064. Reject those additions. P022 upper phrase missing. P030/P031 and P051/P052 slur starts lack corresponding local stops. P049-P050 malformed duplicated slur endpoints must instead preserve printed C4/D4/A4 ties. P034/P035 accent assigned to moving voice rather than held D5; P031/P052 accent assigned bass instead of upper phrase. Missing lower middle-section chord slurs/articulations, and P066 upper inner-voice fermata. P076 duplicated note/mark claims and chromatic signature error do not establish new voices or flat signature. P085 wrongly shifted third pair and erroneous additional slur; printed three beat groups remain distinct. P095 final and repeats match broad routing, but P066 double boundary needs retention.",
+    "PlayScore": "Original XML captures many pitch and duration groups, but omits grace notes P009/P013/P067/P076; invents fingerings P001/P013/P016/P032/P054/P094, tenutos and octave-shift stops. No printed octave-shift signs. False tie P005-P006 wrongly propagates Bb2; false ties P026-P027 wrongly propagate Bb4/Bb5. Missing much text (Moderato, cresc., decresc., dim.) and many accents. fz misread ff/f at P015/P016/P081/P082. P020/P021 upper repeated pair-slurs largely missing. Opening phrase P001 extends into P002 and duplicate P002 slurs; P003/P069 stop one eighth early. P022/P067/P088 opening long slur endpoint must be visually assessed independently; small grace curve separate. P011 lower rising phrase missing. P032/P053 lower latter slur has differing start; wedges incorrectly leak into next bar. P036 hairpin stop leaks into P037; P057 diminuendo missing. P044 false local slurs, P051 upper long slur curtailed to first triple, P052 starts late. P049-P050 three tie members are correctly represented. P066 inner upper fermata missing. P078 missing middle triplet B4 and spurious tenuto. P086/P087 incomplete upper pair-slurs. Broad repeats and final bar retained; P066 double boundary missing.",
+    "SmartScore": "Original XML injects page headings, garbled composer/title and imprint as timed words at P001-P006/P024/P026/P063; reject all as musical directions and keep metadata separately. Additional spurious f/p duplicate dynamics and P006 rit. are unsupported. Chord-member articulation duplication must not become multiple visible dots. Most grace/phrase endpoints are incomplete or confused with ties; P022/P026/P067/P088 false repeated-pitch ties cross intervening notes. Many short pair-slurs absent throughout, particularly P015/P016/P020/P021/P081/P082/P087. P032/P033/P053/P054 chord phrases incorrectly become ties. P047 repeated chords incorrectly tied. P049-P050 tie members C4/D4/A4 are supported, but pp read p. P059/P060 bass phrases read as ties crossing intervening notes. P066 missing upper inner-voice fermata; repeated bottom-chord fermata member payload should not create duplicate signs. P008 backward repeat and P038 forward repeat missing. P089 ending 1 is fabricated, absent from print. P095 final bar supported. Key cancellation missing at return corrupts subsequent F readings; frame correspondence remains ordinal."
+  },
+  "shared_blind_spots": [
+    "Grace note versus main onset; implied unprinted triplet subdivision, especially return",
+    "Small grace-curve versus long motif-phrase endpoints",
+    "No printed fingering digits, pedal signs, arpeggio signs or ornamental trills/mordents",
+    "Header/footer text is metadata, not timed directions",
+    "Accents between staves require musical ownership, not nearest staff guess",
+    "Missing printed text and exact fz dynamics",
+    "P066 third fermata and double boundary",
+    "Return differs in slur endpoints, explicit accidentals and cresc. presence; do not duplicate mechanically"
+  ],
+  "provisional_questions": [
+    "P007/P073 separate curves and exact chord-member endpoints",
+    "P011/P077 bass phrase start; image suggests main E3 through C4, but nearby grace curve may confuse",
+    "Conventional triplet realization where numeral omitted; preserve no numeral and flag final human check"
+  ]
+}

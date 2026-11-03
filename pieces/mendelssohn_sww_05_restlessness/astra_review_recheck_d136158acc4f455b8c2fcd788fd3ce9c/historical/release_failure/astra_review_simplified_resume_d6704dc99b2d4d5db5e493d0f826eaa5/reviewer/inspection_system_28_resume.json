@@ -1,0 +1,138 @@
+{
+  "system": 28,
+  "observations": [
+    {
+      "bar": 85,
+      "staff": "1",
+      "reading": "A#5 F#5 C#5 B4 C#5 A#4 F#5 C#5 A#4 G#4 A#4 F#4 eighths match. Slur0->P086 C#4@1.5. Fingers5 initial,4 .5,5 at3,3 at3.5."
+    },
+    {
+      "bar": 85,
+      "staff": "2",
+      "reading": "F#2/A#2/C#3 dotted-whole chord. Incoming P084 ties stop on F#2/A#2 only; C#3 newly attacked. All three members tie onward to P086 quarter0. Candidate coarse stop-only tie wrong/incomplete. Three outgoing arcs and two incoming arcs visible."
+    },
+    {
+      "bar": 86,
+      "staff": "1",
+      "reading": "C#5 A#4 F#4 C#4 eighths0..1.5 quarter rest2 eighth rest3 A#4 C#5 F#5 A#5 C#6 eighths3.5..5.5 match. pp3.5; phrase3.5->P087 F#6@0. Fingers5 initial,4 .5,2 at3.5,3 at4,1 at4.5."
+    },
+    {
+      "bar": 86,
+      "staff": "2",
+      "reading": "F#2/A#2/C#3 quarter0 stops all three incoming ties; quarter rest1 A#3 eighth2 F#3 eighth2.5 C#3 eighth3 rest3.5 quarter rests4,5. Candidate splits duplicate/spurious rests and duplicate F#2 across two voices: reconstruct one sequence. Ped. printed below initial chord0, no release sign visibly printed to end. Fingers2 at2,3 at2.5."
+    },
+    {
+      "bar": 87,
+      "staff": "1",
+      "reading": "F#6 eighth0 rest.5 quarter rests1,2 A#3/F#4/A#4 quarter3 rests4,5; agrees. Incoming upper slur endsF#6. No further phrase."
+    },
+    {
+      "bar": 87,
+      "staff": "2",
+      "reading": "Half rest0 quarter rest2 F#2/C#3 quarter3 rests4,5 matches. Fingers2/5 chord."
+    },
+    {
+      "bar": 88,
+      "staff": "1",
+      "reading": "A#4/F#5 quarter0 quarter rests1,2 half rest3 quarter rest5 matches; fermata on final quarter rest5. Final heavy double bar."
+    },
+    {
+      "bar": 88,
+      "staff": "2",
+      "reading": "F#3/C#4 quarter0 quarter rests1,2 half rest3 quarter rest5 matches; fermata on final quarter rest5. Fingers2/5 initial. No further repeat/navigation."
+    }
+  ],
+  "corrections": [
+    {
+      "event_id": "m085-s2-v5-e01",
+      "after": "stop ties F#2,A#2 only; start ties F#2,A#2,C#3"
+    },
+    {
+      "event_id": "m086-s2-v1-e01",
+      "after": "stop all F#2,A#2,C#3 ties"
+    },
+    {
+      "bar": 86,
+      "staff": "2",
+      "operation": "reconstruct",
+      "source_ids": "all m086-s2 events",
+      "events": [
+        [
+          "0",
+          "1",
+          "F#2,A#2,C#3",
+          "tie stops"
+        ],
+        [
+          "1",
+          "1",
+          "rest"
+        ],
+        [
+          "2",
+          "1/2",
+          "A#3"
+        ],
+        [
+          "5/2",
+          "1/2",
+          "F#3"
+        ],
+        [
+          "3",
+          "1/2",
+          "C#3"
+        ],
+        [
+          "7/2",
+          "1/2",
+          "rest"
+        ],
+        [
+          "4",
+          "1",
+          "rest"
+        ],
+        [
+          "5",
+          "1",
+          "rest"
+        ]
+      ]
+    }
+  ],
+  "uncertainties": [
+    {
+      "id": "P086-PEDAL-RELEASE",
+      "address": "Piano lower physical bars86-88",
+      "question": "Where should the final Ped. be released for playback?",
+      "provisional_treatment": "Preserve printed Ped. at P0860; use explicit provisional release at end of final bar for playback, without inventing a printed release glyph.",
+      "alternatives": [
+        "Release at final rests",
+        "Release at final bar end"
+      ],
+      "reason_for_uncertainty": "No printed release star is visible after final Ped. sign.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    }
+  ],
+  "pending": [
+    "Close member tie chain crop and exact XML members",
+    "Final marks targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_28.png",
+  "candidate_packet": "candidate_packets/system_28.json",
+  "bars": [
+    85,
+    86,
+    87,
+    88
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

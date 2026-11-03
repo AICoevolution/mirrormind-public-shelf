@@ -1,0 +1,119 @@
+[
+  {
+    "id": "A3-R-070",
+    "system": 5,
+    "bar": 20,
+    "staff": 1,
+    "event_id": "m020-s1-v5-e07",
+    "category": "mark_error",
+    "current": {
+      "id": "m020-s1-v5-e07",
+      "staff": "1",
+      "part_id": "P1",
+      "player_id": "piano",
+      "staff_in_part": "1",
+      "voice": "5",
+      "onset_q": "3",
+      "duration_q": "1",
+      "written_type": "quarter",
+      "dots": 0,
+      "kind": "note",
+      "pitches": [
+        "C#5"
+      ],
+      "accidental": null,
+      "ties": [],
+      "tuplet": null,
+      "chord": false
+    },
+    "printed": "C#5 quarter at3 ties to C#5 eighth atP021 onset0. This is in addition to the lower F#4 tie.",
+    "source_crop": "reviewer/system_05.png",
+    "ensemble_provenance_id": [
+      281,
+      479
+    ],
+    "ensemble_disagreement_id": [
+      291
+    ],
+    "confidence": "high",
+    "proposed_correction": "Restore tie start to m020-s1-v5-e07 and tie stop to m021-s1-v1-e01; preserve separate F#4 and C#3 incoming ties. Consolidate melody voice numbering across barline; do not suppress this tie merely because source voice numbers differ.",
+    "human_outcome": null
+  },
+  {
+    "id": "A3-R-071",
+    "system": 5,
+    "bar": 21,
+    "staff": 1,
+    "event_id": "m021-s1-v1-e03",
+    "category": "mark_error",
+    "current": {
+      "id": "m021-s1-v1-e03",
+      "staff": "1",
+      "part_id": "P1",
+      "player_id": "piano",
+      "staff_in_part": "1",
+      "voice": "1",
+      "onset_q": "1/2",
+      "duration_q": "1/2",
+      "written_type": "eighth",
+      "dots": 0,
+      "kind": "note",
+      "pitches": [
+        "C#5"
+      ],
+      "accidental": null,
+      "ties": [],
+      "tuplet": null,
+      "chord": false
+    },
+    "printed": "Piano and three upper portato eighths begin at1/2, following the tied opening eighth. Lower portato group also covers1/2,1,3/2.",
+    "source_crop": "reviewer/P021_detail.png",
+    "ensemble_provenance_id": [
+      294
+    ],
+    "ensemble_disagreement_id": [
+      174
+    ],
+    "confidence": "high",
+    "proposed_correction": "Encode p at1/2, upper staccatos on B4/F#4 at1/2,C#5/F#4 at1,D5/F#4 at3/2, slur across those three chord attacks. Lower staccatos on D3 at1/2,C#3 at1,B2 at3/2, slur across those three. Do not articulate tied opening C#5/F#4 or C#3 as a new staccato attack.",
+    "human_outcome": null
+  },
+  {
+    "id": "A3-R-072",
+    "system": 3,
+    "bar": 8,
+    "staff": 1,
+    "event_id": "m008-s1-v6-e05",
+    "category": "mark_error",
+    "current": {
+      "id": "m008-s1-v6-e05",
+      "staff": "1",
+      "part_id": "P1",
+      "player_id": "piano",
+      "staff_in_part": "1",
+      "voice": "6",
+      "onset_q": "3",
+      "duration_q": "1",
+      "written_type": "quarter",
+      "dots": 0,
+      "kind": "note",
+      "pitches": [
+        "C#5",
+        "E#4"
+      ],
+      "accidental": "sharp",
+      "ties": [],
+      "tuplet": null,
+      "chord": true
+    },
+    "printed": "The explicit sharp applies to E4, not the C#5 chord member governed by the key signature.",
+    "source_crop": "reviewer/P008_detail.png",
+    "ensemble_provenance_id": [
+      116
+    ],
+    "ensemble_disagreement_id": [],
+    "confidence": "high",
+    "proposed_correction": "Remove explicit sharp accidental from C#5 member, retain E#4 printed sharp and key-signature C#5 pitch.",
+    "human_outcome": null
+  }
+]

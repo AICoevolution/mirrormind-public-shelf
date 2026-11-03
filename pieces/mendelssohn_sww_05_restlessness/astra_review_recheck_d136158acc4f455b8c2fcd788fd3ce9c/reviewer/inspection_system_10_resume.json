@@ -1,0 +1,68 @@
+{
+  "system": 10,
+  "observations": [
+    {
+      "bar": 28,
+      "staff": "1",
+      "reading": "Six quarter chords E5/C#6/E6,D5/B5/D6,C#5/A5/C#6,B4/G#5/B5,C#5/C#6,B4/B5 all match. sf0; slur0->5."
+    },
+    {
+      "bar": 28,
+      "staff": "2",
+      "reading": "Twelve eighths D2 F#2 G#2 A-natural2 B2 C#3 D3 E2 E3 E2 D3 E2 match. Explicit sharpG2@1,naturalA2@1.5. Slur0->last; fingers5 initial,3 .5,3 at2."
+    },
+    {
+      "bar": 29,
+      "staff": "1",
+      "reading": "Quarter chords A4/A5,E5/G#5,D5/F#5,C#5/E5,C-natural5/D#5,B4/D-natural5 match. Explicit naturalC5 and sharpD5 at4, naturalD5 at5. dim.1; slur0->P030 initial chord. Fingers4 at1,3,5."
+    },
+    {
+      "bar": 29,
+      "staff": "2",
+      "reading": "Eighths A2 C#3 D3 E3 F#3 D3 [A2,E3] F#3 G#3 E3 F#3 G#3 plus independent A2 dotted-half0 tied to A2 chord member at3. Candidate pitches match but unprinted dotted-half rest in v1@3 must be removed and A2 tie added. Long bass slur0->P030 A3@0. Fingers2/5 initial separate heads,2 at2,3 at2.5,1 on A2@3,3 at3.5."
+    },
+    {
+      "bar": 30,
+      "staff": "1",
+      "reading": "Eighth dyads A4/C#5@0,A4/D5@1,A4/C#5@2; F#4/A4/B4 chord@3; quarter rest4; G#4/E5 eighth5; eighth rests.5,1.5,2.5,3.5,5.5. All core agrees. Staccatos0,1,2; upper slur1->3; p1; fingers5/2 at1,3/2/1 at3. No beam across intervening rests."
+    },
+    {
+      "bar": 30,
+      "staff": "2",
+      "reading": "Eighths A3@0,F#4@1,E4@2,D#4@3,D-natural4@5 with same rests as upper. Matches core. SharpD4@3 and naturalD4@5. Slur1->3; staccato3. Fingers2 at1,3 at2,4 at3,2 at5. Bass clef cautionary treble at end effective P031. Ordinary barlines."
+    }
+  ],
+  "corrections": [
+    {
+      "event_id": "m029-s2-v1-e08",
+      "before": "dotted-half rest3",
+      "after": "delete"
+    },
+    {
+      "event_id": "m029-s2-v2-e02",
+      "before": "A2 dotted-half without tie",
+      "after": "start tie A2"
+    },
+    {
+      "event_id": "m029-s2-v2-e09",
+      "before": "A2/E3 eighth chord no tie",
+      "after": "stop tie on A2 member ONLY"
+    }
+  ],
+  "pending": [
+    "Exact accidental/member tie and mark targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_10.png",
+  "candidate_packet": "candidate_packets/system_10.json",
+  "bars": [
+    28,
+    29,
+    30
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

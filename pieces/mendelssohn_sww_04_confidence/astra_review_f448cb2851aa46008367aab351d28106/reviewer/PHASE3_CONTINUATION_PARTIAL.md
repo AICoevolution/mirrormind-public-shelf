@@ -1,0 +1,26 @@
+# Phase 3 continuation — incomplete audit
+
+The supplied resume manifest, all 37 staged files, authorization and all current phase allowlists were checked before continuation. The exact counts and hashes are in resume_integrity_verified.json. Phase 1/2 and historical Phase 3 files remain byte-identical. No later-phase request was read, no release requested, and no candidate changed.
+
+## Additional work completed
+
+- Inspected candidate pitch/onset/duration/chord/rest claims in P009–P031 at their actual printed locations, extending the prior P001–P008 partial coverage to all 31 regions. This is not complete notation or provenance coverage.
+- Saved 72 new partial findings in phase3_review_continued_001.json through _006.json (101 findings including the preserved 29). Each gives candidate claim, physical address, printed reading, proposed change and source indexes. Some regional findings affect multiple event IDs; direct_finding_ids in the coverage index is not exhaustive membership.
+- Saved 465 working printed attack records in phase3_print_expectation_working.json. This is an independently inspected pitch/rhythm working projection, not final XML, a frozen correction specification, or a notation-completeness claim. It records independent lines and explicit rests; hidden initial/ending silence is not a printed rest.
+- Compared all 477 candidate events with that working projection: 306 exact aggregate event matches and 171 differences. Matching only means pitch/kind/onset/duration agrees with the working projection; it does not validate notation, source provenance or missing attacks.
+- Inspected shared-head durations in P003/P029 using enlarged print. At 5/2 C#5 and 7/2 G#4 retain both eighth melody and sixteenth figuration durations. P002/P028 latter-half upper heads belong to separate melody and figuration voices. The precise decisions in phase3_voice_topology_progress.json supersede the pending shared-head wording of A3-R-061/065/066.
+- Inspected P026/P027 in new enlarged evidence: lower connecting curves join unlike pitches (E2->A2 and D3->C#3), hence slurs, not ties. Likewise P009 E2->P010 A2 is a slur. PHASE1_ERRATUM_001.json records these corrections without rewriting the Phase 1 inventory.
+- Rechecked all seven tie quarantine provenance records (source indexes 477–483). The upper C#5 tie P020->P021 is valid in addition to the F#4 inner tie and existing C#3 bass tie. New finding A3-R-070 supplies this otherwise missed tie. All quarantine decisions are in ensemble_quarantine_recheck_continued.json, which explicitly is not a full ensemble recheck.
+- Resolved the 224 excluded-attack observation indexes against the bound observation array and compared them with the working print projection: 20 match; 204 still require individual musical/source-address disposition. The comparison is diagnostic, not a final ensemble acceptance. No excluded claim is silently accepted or deleted.
+- Saved precise grace-note questions for P011/P023. Small C#5 is provisionally a grace eighth before measured E5 dotted eighth at3; slash appearance/performance borrowing remains for final human review. This ordinary musical question does not prevent continuing the audit.
+
+## Remaining work — owned by Astra
+
+1. Finish exact notation attributes and every mark anchor across all 31 regions: member-specific fingerings/substitutions, accidentals (including chord-scalar overapplication), stems, beam groups, ties/slurs and endpoints, wedges, text, tempo, articulations, pedal changes/releases, and route/barline/fermata details. The working attack projection omits these by design. Do not describe the remaining transcription work as a human musical uncertainty.
+2. Finalize minimal whole-piece voice topology from musical continuity. Preserve real simultaneous lines and shared heads; remove phantom rest lanes. The working line labels are local musical roles, not approved global XML voice IDs.
+3. Finish every primary provenance/disagreement record and excluded observation disposition, including candidate/ledger/XML consistency. Historical ensemble_recheck_partial.json covers only P001/P002; the new quarantine recheck adds seven tie records. The mechanical expectation comparison does not replace remaining review.
+4. Reconcile all new findings and the working expectation; add exact missing-event IDs/anchors and numbered errata where needed. Preserve all staged historical records, including phase3_review.json. A later completed freeze must explicitly bind the full supplemental finding set and complete ensemble evidence.
+5. Only after complete Phase 3 coverage, generate and separately validate the complete correction freeze. Then invoke phase_release, wait for host release in another tool call, and read /job/request.json. Historical dependency closures remain withheld until then.
+6. Apply supported corrections and explicitly provisional choices, perform all Stage 5 validation/render/playback/CORE round-trip checks, recheck all connected spans visually, and package the UNVERIFIED delivery with reviewed namecard, human attention, final freeze and delivery manifest.
+
+No Phase 3 freeze exists. Stage 4/5 and delivery are incomplete. There is no required immediate human decision and no engineering repair requested. The checkpoint records unfinished reviewer execution, not final delivery or a musical pass.

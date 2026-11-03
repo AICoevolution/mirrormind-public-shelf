@@ -1,0 +1,84 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "review_protocol": "print_first_candidate_audit.v1",
+  "status": "BLOCKED_TECHNICAL",
+  "musical_status": "UNVERIFIED",
+  "phase3_frozen": true,
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "human_outcome": null,
+  "primary_xml": "delivery_final/UNVERIFIED_restlessness_resume_v8.musicxml",
+  "primary_xml_sha256": "9f9286766d1bb49f572ebb2696cb0ec24073a02a0b47a620b505fba5a25f2cfe",
+  "metadata_contract": "reviewed_namecard.v1",
+  "phase_freezes": {
+    "reviewer/PHASE1_FREEZE.md": "3a78071323e686181d54aa5c10826f7383cb57f5c9666cfbfca2d6e1f648d0e7",
+    "reviewer/phase1_hashes.json": "76920dfc3cda249f81fa7a774f0b3a7fece836b19a884b2230fea93a447716ed",
+    "reviewer/PHASE3_FREEZE.md": "9d4273f04f2d4918c8c2cc3807e5841a510c89815a752430a0594b63fd961202",
+    "reviewer/phase3_hashes.json": "6079eaa9a464afd77a0f3cd2ff74c207da9b42118ee17568a7f983bd17572dc6"
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "current_validation/exact_pitch_edit.json",
+        "current_validation/layers_validation_v8.json"
+      ],
+      "limits": "Standalone CORE rebuild preserves sounding members but is not an engraving-lossless replacement; reexport fixed point false. Actual no-op Apply is byte-identical; scoped changed/restored edit preserves exact anchored payload."
+    },
+    "MARKS": {
+      "status": "PASS",
+      "evidence": [
+        "current_validation/marks_current_verdict.json",
+        "current_validation/layers_validation_v8.json"
+      ],
+      "limits": "561 fingerings and open pedal retained in authoritative XML; export warnings remain."
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "current_validation/layers_validation_v8.json",
+        "current_validation/independent_playback_v8.json"
+      ]
+    }
+  },
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "current_validation/proper_current.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "current_validation/independent_playback_v8.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "current_validation/viewer_mapping_current.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "BLOCKED",
+      "evidence": [
+        "current_validation/stage5_blockers.json",
+        "current_validation/visual_inspection.json",
+        "current_validation/P078_beam_geometry.json"
+      ],
+      "reason": "P078 beam intersects C#3 notehead; readable member notation is not established."
+    },
+    "focused_visual_recheck": {
+      "status": "BLOCKED",
+      "evidence": [
+        "current_validation/stage5_blockers.json",
+        "current_validation/visual_inspection.json",
+        "current_validation/P078_beam_geometry.json"
+      ],
+      "reason": "P078 beam intersects C#3 notehead; readable member notation is not established."
+    }
+  },
+  "continuation_review": "astra_review_recheck_cb3f8efd12e44c5f978371cb0a205930"
+}

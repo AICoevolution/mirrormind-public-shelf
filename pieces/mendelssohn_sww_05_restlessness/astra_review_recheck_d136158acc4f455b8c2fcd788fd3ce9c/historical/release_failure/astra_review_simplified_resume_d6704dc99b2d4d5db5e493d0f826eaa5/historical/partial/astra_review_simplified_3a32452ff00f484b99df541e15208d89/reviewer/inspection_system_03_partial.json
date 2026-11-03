@@ -1,0 +1,47 @@
+{
+  "schema": "independent-print-inspection.v1",
+  "system": 3,
+  "bars": [
+    7,
+    8,
+    9
+  ],
+  "status": "PARTIAL",
+  "print": "reviewer/print_evidence/system_03.png",
+  "candidate_packet": "candidate_packets/system_03.json",
+  "observations": [
+    {
+      "bar": 7,
+      "staff": "2",
+      "exact_targets": [
+        {
+          "event_id": "m007-s2-v2-e02",
+          "before": "half F#3/A3 at0, no ties",
+          "after": "dotted-half F#3/A3 at0, both member ties start"
+        },
+        {
+          "event_id": "m007-s2-v2-e04",
+          "before": "quarter rest at2",
+          "after": "delete; sustained chord occupies this time"
+        },
+        {
+          "event_id": "m007-s2-v2-e06",
+          "before": "half F#3/A3 at3, no ties",
+          "after": "retain half; add both member tie stops"
+        }
+      ],
+      "reason": "Two dotted hollow chord noteheads with two curved ties visible, matching P003 notation."
+    },
+    {
+      "bar": 8,
+      "staff": "1",
+      "observation": "Candidate contains only six quarter notes C5 C5 A#4 B4 A#4 B4. Print instead contains independent held/quarter melody plus twelve beamed eighths. This is a substantial missing-voice failure, not an engraving-only issue. Exact added event list is pending."
+    },
+    {
+      "bar": 9,
+      "staff": "1",
+      "observation": "Candidate upper melody is displaced: visible first melody note is B4, next A-natural4, next G#4, then F#4 and E#4; final candidate A#4 requires close staff-position check. Eighth stream and accidental scope must be independently transcribed."
+    }
+  ],
+  "complete_candidate_audit": false
+}

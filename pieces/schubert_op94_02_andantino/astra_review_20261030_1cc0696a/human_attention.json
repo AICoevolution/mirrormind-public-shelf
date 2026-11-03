@@ -1,0 +1,225 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "MUS-P092",
+      "address": {
+        "page": 4,
+        "system": 20,
+        "bar": 92,
+        "staff": 1,
+        "onset_q": "3/2"
+      },
+      "question": "Is the printed undotted upper Eb5 half intentional, or is a dot missing before its tie to P93?",
+      "provisional_treatment": "Retain written half length 2 at onset 3/2, no invented visible rest, and the printed outgoing tie. Playback sustains the explicit tie through the gap; the encoding checker flags that relationship for human interpretation.",
+      "evidence": [
+        "reviewer/print_system_20.png",
+        "reviewer/phase3_core_spec.json",
+        "validation/production_v1/tile_05.png",
+        "encoding_audit/8fc7098f4fc9fd0786baed927781ac97550f377298b91d3a31579108b75918ed-6b731a072396e3f74d70c392bd176ee6c1be5f20eeda11aaa4b73922b0253291/change-request.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "MUS-P036-P076",
+      "address": {
+        "bars": [
+          36,
+          76
+        ],
+        "staff": 2
+      },
+      "question": "Confirm the small ascending figure’s performance against the held D#3/F##3 chord and the fermatas.",
+      "provisional_treatment": "Preserve the printed small eighth/eighth/eighth/dotted-quarter values in a separate line against both dotted-half chord members. No unmeasured duration or editorial tempo is asserted.",
+      "evidence": [
+        "reviewer/phase3_fermata_s8.png",
+        "reviewer/phase3_fermata_s16.png",
+        "validation/production_v1/tile_02.png",
+        "validation/production_v1/tile_04.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "SEP-P092",
+      "address": {
+        "bar": 92,
+        "staff": 1
+      },
+      "question": "Review the diagnostic CORE rebuild’s extension of the half note to a dotted half; do not substitute that file for the primary.",
+      "provisional_treatment": "Keep the print-preserving primary. Actual CORE Apply is byte-exact; a fresh independent rebuild extends this one tied-gap note from 2 to 3 quarters. Retain the raw failed equality result.",
+      "evidence": [
+        "validation/layer_roundtrip.json",
+        "validation/layer_semantic_detail.json",
+        "validation/CORE_REBUILD.musicxml",
+        "reviewer/print_system_20.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "issue_type": "normalization",
+      "layer": "ENGRAVING",
+      "primary_xml_sha256": "8fc7098f4fc9fd0786baed927781ac97550f377298b91d3a31579108b75918ed",
+      "reason_for_uncertainty": "The rebuild normalizes the written gap under the outgoing tie; the unresolved print interpretation is MUS-P092.",
+      "review_safety_reason": "The corrected primary is unchanged, PROPER, and independently passes playback/member/cursor checks. Diagnostic reconstructions are not the primary.",
+      "blocks_publication": true
+    },
+    {
+      "id": "SEP-FP",
+      "address": {
+        "bars": [
+          6,
+          14
+        ],
+        "staff": 1
+      },
+      "question": "Confirm the retained fp markings in the primary and note that MARKS text has no fp token.",
+      "provisional_treatment": "Retain both fp dynamics in MusicXML. MARKS export warns at these two positions; actual MARKS Apply retains both, all pitches/ties, articulation placement and the full multiset of exact slur endpoints/styles. Do not claim all marks are text-editable.",
+      "evidence": [
+        "validation/MARKS_export.json",
+        "validation/MARKS_APPLY.musicxml",
+        "validation/layer_semantic_detail.json",
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "issue_type": "normalization",
+      "layer": "MARKS",
+      "primary_xml_sha256": "8fc7098f4fc9fd0786baed927781ac97550f377298b91d3a31579108b75918ed",
+      "reason_for_uncertainty": "Codec token coverage is narrower than the primary XML representation.",
+      "review_safety_reason": "The corrected primary is unchanged, PROPER, and independently passes playback/member/cursor checks. Diagnostic reconstructions are not the primary.",
+      "blocks_publication": true
+    },
+    {
+      "id": "ENG-CURVES",
+      "address": {
+        "bars": [
+          6,
+          7,
+          14,
+          15,
+          42,
+          43,
+          47,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          82,
+          83,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93
+        ],
+        "layout": "compact 1000 px, zoom 0.9"
+      },
+      "question": "Check curve spacing, particularly the P47 upper phrase crossing stems and the thin long ties in the dense closing passages.",
+      "provisional_treatment": "Retain the printed member endpoints and current production engraving. P47 is a same-staff phrase crossing voice roles; the adapter reports ink intersections. Long ties remain visible close to staff lines.",
+      "evidence": [
+        "validation/production_v2/report.json",
+        "validation/production_v1/tile_00.png",
+        "validation/production_v1/tile_02.png",
+        "validation/production_v1/tile_03.png",
+        "validation/production_v1/tile_05.png",
+        "reviewer/print_system_10.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "engraving",
+      "severity": "needs_visual_review",
+      "issue_type": "readable_overlap",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "readability_reason": "The curves and their endpoints can still be followed; pitches, note values and staff ownership remain visible and pass member-level checks. This is retained for human engraving acceptance, not a claim of collision-free geometry."
+    },
+    {
+      "id": "ENG-RESTS",
+      "address": {
+        "bars": [
+          48,
+          49,
+          53,
+          86,
+          90
+        ],
+        "staff": 2,
+        "layout": "compact 1000 px, zoom 0.9"
+      },
+      "question": "Check the vertical placement of polyphonic rests against the print, especially the upper bass-staff rests at P48–49.",
+      "provisional_treatment": "Keep each printed rest and its exact voice/onset/duration. The production renderer places some secondary rests away from their original visual lane.",
+      "evidence": [
+        "validation/production_v1/tile_02.png",
+        "validation/production_v1/tile_03.png",
+        "validation/production_v1/tile_05.png",
+        "reviewer/print_system_10.png",
+        "reviewer/print_system_11.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "engraving",
+      "severity": "needs_visual_review",
+      "issue_type": "alignment",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "readability_reason": "Every rest is visible on the correct staff and its timing is verified. Noteheads are distinguishable; the remaining question is the visual association of a rest with its independent line."
+    },
+    {
+      "id": "ENG-WEDGES",
+      "address": {
+        "bars": [
+          4,
+          8,
+          12,
+          14,
+          17,
+          40,
+          44,
+          47,
+          80,
+          82,
+          85
+        ],
+        "layout": "compact 1000 px, zoom 0.9"
+      },
+      "question": "Check spacing of adjacent crescendo/diminuendo wedges and nearby dynamics.",
+      "provisional_treatment": "Retain separate printed swell spans; compact rendering brings some open ends or text close together.",
+      "evidence": [
+        "validation/production_v1/tile_00.png",
+        "validation/production_v1/tile_02.png",
+        "validation/production_v1/tile_05.png",
+        "reviewer/phase3_marks_spec.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "engraving",
+      "severity": "needs_visual_review",
+      "issue_type": "readable_overlap",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "readability_reason": "The crescendo and diminuendo shapes remain visible and distinguishable; the question is presentation polish and acceptance of spacing."
+    }
+  ]
+}

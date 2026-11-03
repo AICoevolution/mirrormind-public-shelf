@@ -1,0 +1,36 @@
+{
+  "schema": "astra_frozen_erratum.v1",
+  "id": "ERRATUM-001-VOICE-CONTINUITY",
+  "frozen": true,
+  "audit_preserved": true,
+  "reason": "Role-sensitive final topology clarification required by continuous musical line contract; no pitches, durations or printed symbols changed. Prior dict G5/other cannot be implemented as a pitch-class test without splitting the opening moving phrase.",
+  "source_evidence": {
+    "reviewer/crops/system_06.png": "1e9f8ae5c32c1cfdf4dea6ad0ca08c63ee9c9ff8d26387685f2a397169d0f508",
+    "reviewer/crops/system_07.png": "ed2c2996aadf7e6cfcdbe002f4090aa52f9e56305b7e4f76a9da11d9633659f3",
+    "reviewer/inspection_system_06.json": "15e4769818362016b41e02ca96af004920f5cfeddd44c659be6008d6a406108f",
+    "reviewer/inspection_system_07.json": "9865663a20b8e97336f02d4b713e0b59e57b5d02e425cfcb321b71b8c6268b03"
+  },
+  "changes": [
+    {
+      "ids": [
+        "m032-s3-v6-e02",
+        "m032-s3-v6-e04",
+        "m032-s3-v6-e05"
+      ],
+      "voice_before": "2",
+      "voice_after": "1",
+      "reason": "P032 A5-G5-F#5 moving melody and its quarter rest continue into upper G5 at beat4, tied to P033. Independent B4 at beat4 remains voice2; G5 eighth at beat1.5 stays in voice1."
+    },
+    {
+      "ids": [
+        "m034-s3-v2-e05",
+        "m034-s3-v2-grace01",
+        "m034-s3-v2-e07"
+      ],
+      "voice_before": "2",
+      "voice_after": "1",
+      "reason": "P034 upper half-note line, quarter rest and grace-led D6 continue into P035 tied D6 and descending run. C5/B4 lower quarter notes remain voice2."
+    }
+  ],
+  "human_outcome": null
+}

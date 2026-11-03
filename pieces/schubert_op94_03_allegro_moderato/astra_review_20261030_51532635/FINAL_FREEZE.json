@@ -1,0 +1,105 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "primary_xml": "delivery_final/UNVERIFIED_schubert_op94_03.musicxml",
+  "primary_xml_sha256": "babf434c7c5c100a1ea5ab0e724261d3ab85423ddb6c87526c2fd9029d9cc6d3",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/assess_primary.json",
+        "validation/delivery_primary_structure.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/independent_playback.json",
+        "validation/final/analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/viewer/report.json",
+        "validation/final/vexflow_duration_assessment.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "GRACE-BEAM-REALIZATION"
+      ],
+      "evidence": [
+        "validation/final/focused_visual_recheck.json",
+        "validation/final/viewer/report.json",
+        "validation/final/viewer/full_score.png",
+        "validation/final/viewer/context_01.png",
+        "validation/final/viewer/context_02.png",
+        "validation/final/viewer/context_03.png",
+        "validation/final/viewer/context_04.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "GRACE-BEAM-REALIZATION"
+      ],
+      "evidence": [
+        "validation/final/focused_visual_recheck.json",
+        "validation/final/viewer/report.json",
+        "validation/final/viewer/full_score.png",
+        "validation/final/viewer/context_01.png",
+        "validation/final/viewer/context_02.png",
+        "validation/final/viewer/context_03.png",
+        "validation/final/viewer/context_04.png"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "babf434c7c5c100a1ea5ab0e724261d3ab85423ddb6c87526c2fd9029d9cc6d3",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/layer_roundtrips.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "SEP-MARKS-PPP"
+      ],
+      "evidence": [
+        "validation/final/layer_roundtrips.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/final/layer_roundtrips.json"
+      ]
+    }
+  },
+  "delivery_issues": [
+    "GRACE-BEAM-REALIZATION",
+    "SEP-MARKS-PPP"
+  ],
+  "human_outcome": null,
+  "publication_authorized": false,
+  "source_pdf_sha256": "36f45641d21a57af7776f10f6dae5657f8f6613d887d73eceaad6bca5627ab50",
+  "delivery_blockers": [],
+  "continuation": {
+    "mode": "resume_delivery",
+    "prior_review": "astra_review_20261030_6e91c8db",
+    "scope": "Delivery packaging only; original audit attribution, primary, layers and human questions preserved",
+    "evidence": [
+      "validation/resume_integrity.json",
+      "validation/delivery_resume_proof.json",
+      "validation/delivery_dependency_preflight.json"
+    ]
+  }
+}

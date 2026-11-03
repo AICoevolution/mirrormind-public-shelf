@@ -1,0 +1,80 @@
+{
+  "system": 22,
+  "observations": [
+    {
+      "bar": 66,
+      "staff": "1",
+      "reading": "E#4/B-natural4 chord0 G#4 E#4 C#4 B#3 B-natural3 A#3 C#4 E-natural4 E-natural5 C#5 A#4 eighths match. Naturals B4 initial,B3@2.5,E4@4,E5@4.5; sharpB3@2. Diminuendo0->.5,crescendo3->5.5. Fingers5/2,4,1,3,2,1,2,3,1,none,4,3. Long slur0 extends following system."
+    },
+    {
+      "bar": 66,
+      "staff": "2",
+      "reading": "UpperG#3 dotted-half0 A#3 dotted-half3; lowerC#3 half0 rest2 F#3 half3 rest5 match. Incoming P065 upper3 slur ends A#3@3. Finger2 initial."
+    },
+    {
+      "bar": 67,
+      "staff": "1",
+      "reading": "F-double-sharp4 D#4 G#4 D#4 A#4 D#4 B4 E#4 C#4 E#4 B3 E#4 eighths match. Explicit double-sharpF4@0,sharpE4@3.5. Accent0; fingers2 first,2 at3.5,3 last."
+    },
+    {
+      "bar": 67,
+      "staff": "2",
+      "reading": "C#4 B3 A#3 G#3 A#3 G#3 quarters; lowerB2 half0 rest2 C#3 half3 rest5 match. New bass phrase upperB3@1->P068 finalF#2. Fingers1 first,1 at1,1 at4."
+    },
+    {
+      "bar": 68,
+      "staff": "1",
+      "reading": "A#3 C#4 F#4 A#4 F#4 C#4 A#3 G#3 eighths0..3.5 quarter rest4 C#4 quarter5. Candidate v5 matches; all v6 unprinted duplicate/rests. SharpF4@1 explicit cancelling previous double-sharp. Fingers3 first,1 .5,2 at3.5,2 at5. Long incoming P066 upper slur endsG#3@3.5; new slur C#4@5 continues next system."
+    },
+    {
+      "bar": 68,
+      "staff": "2",
+      "reading": "F#3 dotted-half0 tied to eighth3, eighth rest3.5,F#3 C#3 A#2 F#2 eighths4..5.5. Candidate v1 values match; missing tie; all v2 unprinted. Bass slur fromP067 B3@1 ends lastF#2. Fingers1 at4,5 final. Ordinary barlines."
+    }
+  ],
+  "corrections": [
+    {
+      "event_ids": [
+        "m068-s1-v6-e02",
+        "m068-s1-v6-e11",
+        "m068-s1-v6-e13"
+      ],
+      "after": "delete entire spurious voice"
+    },
+    {
+      "event_ids": [
+        "m068-s2-v2-e02",
+        "m068-s2-v2-e03",
+        "m068-s2-v2-e05",
+        "m068-s2-v2-e07",
+        "m068-s2-v2-e09"
+      ],
+      "after": "delete entire spurious voice"
+    },
+    {
+      "event_id": "m068-s2-v1-e01",
+      "after": "F#3 tie start"
+    },
+    {
+      "event_id": "m068-s2-v1-e04",
+      "after": "F#3 tie stop"
+    }
+  ],
+  "pending": [
+    "P068 outgoing upper slur endpoint",
+    "Final marks targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_22.png",
+  "candidate_packet": "candidate_packets/system_22.json",
+  "bars": [
+    66,
+    67,
+    68
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

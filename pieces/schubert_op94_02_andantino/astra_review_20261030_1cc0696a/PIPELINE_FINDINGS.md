@@ -1,0 +1,7 @@
+# Pipeline observations
+
+The fused candidate was rhythmically transportable but omitted all expressive marks, beams and changing key declarations. Agreement and valid outer durations did not prevent pitch, grace, interior-duration and chord-member errors. Reader/model role labels required context-scoped consolidation. Provenance and quality references were traceable.
+
+The installed CORE rebuild extends the P92 tied half through its gap; actual Apply preserves the original exactly. MARKS text reports fp as unsupported while Apply retains its XML. Endpoint comparison must use exact member/style multisets, not ordering of adjacent notation children. The production mapper uses one-based measure addresses; the first local expectation incorrectly used zero-based indices. Raw failed evidence is preserved, and corrected expectations pass the unchanged production checker. Slur numbers were separated by staff after the primary structure checker exposed document-order reuse; the subsequent primary structure report is clean. No pipeline code was modified.
+
+P47's phrase crosses an independent inner voice and produces readable ink intersections in the compact renderer. Secondary rests and adjacent wedges need final visual acceptance. Do not restart engineering for these retained presentation findings. Encoding audit coverage is bounded to its named v1 relationships; it does not establish complete encoding or Braille readiness.

@@ -1,0 +1,84 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "REVIEW_COMPLETE",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_Mendelssohn_Venetian_Boat_Song_No1.musicxml",
+  "primary_xml_sha256": "c5b5e1ac8fc2254864ab59a542350fd7349257bad90ba37586af63b98b608a57",
+  "human_outcome": null,
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "proper_report.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "playback_comparison.json",
+        "delivery_final/analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "viewer_mapping_report.json",
+        "recheck/full_render/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS",
+      "evidence": [
+        "recheck/scoped_acceptance.json",
+        "recheck/pedal_render/report.json",
+        "recheck/full_render/report.json",
+        "recheck/pedal_regression.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS",
+      "evidence": [
+        "focused_visual_recheck.json",
+        "recheck/full_render/render-1400-1.png",
+        "recheck/full_render/render-1350-1.png",
+        "recheck/full_render/render-1000-0.9.png",
+        "recheck/full_render/render-900-1.png"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE_rebuild": {
+      "status": "BLOCKED",
+      "evidence": [
+        "layer_roundtrip_report.json"
+      ]
+    },
+    "CORE_apply": {
+      "status": "PASS",
+      "evidence": [
+        "layer_roundtrip_report.json"
+      ]
+    },
+    "MARKS_apply": {
+      "status": "BLOCKED",
+      "evidence": [
+        "layer_roundtrip_report.json",
+        "marks_export_report.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "route_export_report.json",
+        "playback_comparison.json"
+      ]
+    }
+  },
+  "artifact_manifest": "artifact_manifest.json",
+  "artifact_manifest_sha256": "a6502220bfc8850ff5c70092799869c717eac108f3e862b16c0ed7688c40a725",
+  "voice_topology_sha256": "d8303c41af22aae39745b33e723a66872b62a28cda7c4df828d331e13d3395a6",
+  "human_attention_sha256": "80e72080ae794e6d6288158a06f53978d044d646993d4d435d14a85c3b61c31b",
+  "prior_review": "astra_review_20261015_7b779b3b04c5"
+}

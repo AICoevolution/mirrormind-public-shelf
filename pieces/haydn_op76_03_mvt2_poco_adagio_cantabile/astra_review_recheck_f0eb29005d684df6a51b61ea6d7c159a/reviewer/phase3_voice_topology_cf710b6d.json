@@ -1,0 +1,62 @@
+{
+  "schema": "astra_voice_topology_proposal.v1",
+  "phase3_complete": false,
+  "default": "One continuous sounding voice 1 per instrument, one staff per part; remove reader numbering resets and all-rest phantom lanes. Chord members share voice1 except listed independently stemmed continuations.",
+  "exceptions": [
+    {
+      "part_id": "P1",
+      "bar": 71,
+      "onset_q": "7/2",
+      "voice1": [
+        "G4"
+      ],
+      "voice2": [
+        "C#5"
+      ],
+      "duration_q": "1/2",
+      "voice1_stem": "down",
+      "voice2_stem": "up",
+      "voice2_flag": "eighth",
+      "evidence": [
+        "reviewer/print/system_17.png"
+      ]
+    },
+    {
+      "part_id": "P1",
+      "bar": 72,
+      "onset_q": "0",
+      "voice1": [
+        "F#4"
+      ],
+      "voice2": [
+        "D5"
+      ],
+      "duration_q": "2",
+      "voice1_stem": "down",
+      "voice2_stem": "up",
+      "evidence": [
+        "reviewer/print/system_17.png"
+      ]
+    },
+    {
+      "part_id": "P3",
+      "bar": 105,
+      "onset_q": "0",
+      "voice1": [
+        "G3"
+      ],
+      "voice2": [
+        "G4"
+      ],
+      "duration_q": "1/2",
+      "voice1_stem": "down",
+      "voice2_stem": "up",
+      "voice2_flag": "eighth",
+      "evidence": [
+        "reviewer/print/system_25.png"
+      ]
+    }
+  ],
+  "silence_policy": "Use forwards for unprinted remainder in voice2; never create visible rests or duplicate its pitches in voice1.",
+  "marks_ownership": "P105 first viola slur belongs to lower voice1 G3 through E4, upper G4 is not slur start. P071 final beam belongs lower voice1. Other same-stem chord articulations attach once per chord, preserve affected members in ledger."
+}

@@ -1,0 +1,3 @@
+# Print-only orientation freeze
+
+Inspected both printed pages and compared all twelve system frames with the physical lock. One piano part, two staves, 41 full common-time bars. Three-flat signature, G2/F4 opening clefs; lower staff changes to G2 within bar 37 and returns to F4 after bar 38. Repeat/ending boundaries and system ranges are recorded in orientation.json. No framing mismatch or unusable page was found. Musical ambiguities await the complete candidate-to-print audit. All eight allowed inputs were hashed from actual bytes and match the worker map. No candidate or reader inputs have been inspected.

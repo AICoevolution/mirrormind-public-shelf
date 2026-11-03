@@ -1,0 +1,94 @@
+{
+  "system": 8,
+  "observations": [
+    {
+      "bar": 22,
+      "staff": "1",
+      "reading": "Bass clef upper effective0. Candidate sounding eighth pitches match F#3 A#3 B3 F#3 C#4 F#3 D4 G#3 E3 G#3 D3 G#3. A3@.5 has SHARP not natural (candidate accidental field wrong). G3@3.5 has sharp. Diminuendo0->1. Long slur0 continues to P023 E3@4.5. Fingers2,3 at0,.5;2 at3.5,4.5;1 at5;5 at5.5."
+    },
+    {
+      "bar": 22,
+      "staff": "2",
+      "reading": "Upper E3 D3 C#3 B2 C#3 B2 quarters and lower D2 half0 rest2 E2 half3 rest5 match. Long upper bass slur0->P023 A2@3. Fingers1,1,2,1,2,1 on upper line."
+    },
+    {
+      "bar": 23,
+      "staff": "1",
+      "reading": "C#3 E3 A-natural3 B3 C#4 E4 C#4 B3 A3 E3 eighths then E3/E4 quarter5; pitches/durations agree. E3@4.5 tied ONLY to lower E3 member at5, not E4. pp0, fingers2,1,2,3,4,5,4 at first seven eighths. Incoming slur P022@0 ends E3@4.5. Treble clef after final chord effective P024."
+    },
+    {
+      "bar": 23,
+      "staff": "2",
+      "reading": "A2 dotted half0 tied to half3, eighth C#3@5 A2@5.5; agrees. Incoming bass phrase ends A2@3; new slur from C#3@5 into P024 moving bass, ends last F#2@5.5. Fingers3 initial,2 at5,3 at5.5."
+    },
+    {
+      "bar": 24,
+      "staff": "1",
+      "reading": "A3/A4 dotted-half0 tied memberwise to quarter3, G#3/G#4 quarter4,A3/A4 quarter5 matches. Both printed ties visible. cresc.0."
+    },
+    {
+      "bar": 24,
+      "staff": "2",
+      "reading": "Single eighth line F#2 A2 B2 C#3 B2 A2 D#3 F#2 G#2 A2 G#2 F#2; candidate v1 matches. Entire candidate v2 is spurious: no dotted-half rest, eighth rests or extra four eighths printed. SharpD3@3. Fingers1 at1.5,4 at3.5. Ordinary barlines; no grace/tuplets."
+    }
+  ],
+  "corrections": [
+    {
+      "event_id": "m022-s1-v1-e02",
+      "before": "pitch A#3 with natural glyph",
+      "after": "retain A#3; accidental sharp"
+    },
+    {
+      "event_id": "m024-s2-v2-e02",
+      "before": "rest",
+      "after": "delete"
+    },
+    {
+      "event_id": "m024-s2-v2-e09",
+      "before": "rest",
+      "after": "delete"
+    },
+    {
+      "event_id": "m024-s2-v2-e11",
+      "before": "rest",
+      "after": "delete"
+    },
+    {
+      "event_id": "m024-s2-v2-e13",
+      "before": "F#2 eighth",
+      "after": "delete"
+    },
+    {
+      "event_id": "m024-s2-v2-e15",
+      "before": "G#2 eighth",
+      "after": "delete"
+    },
+    {
+      "event_id": "m024-s2-v2-e17",
+      "before": "A2 eighth",
+      "after": "delete"
+    },
+    {
+      "event_id": "m024-s2-v2-e19",
+      "before": "B2 eighth",
+      "after": "delete"
+    }
+  ],
+  "pending": [
+    "Inspect raw member tie target P023 E3/E4 and P024 octave",
+    "Exact final mark targets"
+  ],
+  "schema": "independent-print-inspection.v1",
+  "status": "PARTIAL_TARGETS_RECORDED",
+  "print": "reviewer/print_evidence/system_08.png",
+  "candidate_packet": "candidate_packets/system_08.json",
+  "bars": [
+    22,
+    23,
+    24
+  ],
+  "staves": [
+    "1",
+    "2"
+  ]
+}

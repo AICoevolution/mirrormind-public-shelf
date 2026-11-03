@@ -1,0 +1,3 @@
+# Phase 3 erratum 01 — P074/P075 attention status
+
+The preserved PHASE1_ERRATUM_01.md (SHA-256 2f86ce4c4aba325a292a9fbcebb1d02b2167ad9724e5669e2b067b332a0dc771) already resolves the outdated inventory wording: the P074 ascending slur ends at the dotted-quarter arrival, with no outgoing tie; P075 begins with its printed eighth rest. Reinspection of system_15.png and system_16.png supports that reading. The completed Phase 3 specification already encodes precisely this result, so no XML or correction-specification change is needed. Change P074-P075-CURVE in the final human_attention.json to RESOLVED_BY_PRINT, retaining human_outcome null. The earlier frozen attention file and all freezes remain unchanged.

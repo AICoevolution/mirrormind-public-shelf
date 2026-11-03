@@ -1,0 +1,331 @@
+{
+  "complete_scope": "all seven tie_structural_quarantine records only",
+  "full_ensemble_recheck_complete": false,
+  "records": [
+    {
+      "source_index": 477,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m002-s2-v1-e03",
+        "bar": 2,
+        "staff": "2",
+        "voice": "1",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "A1",
+            "A2"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m002-s2-v1-e03",
+              "bar": 2,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "1",
+              "pitch": "A1",
+              "expected_next_event_id": null
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m002-s2-v1-e03",
+              "bar": 2,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "1",
+              "pitch": "A2",
+              "expected_next_event_id": "m010-s2-v1-e01"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "CLAUDE"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE_AFTER_PITCH_CORRECTION",
+      "printed": "Correct P002 A octave to printed F#1/F#2, tie to P003 F# octave.",
+      "evidence": [
+        "reviewer/system_01.png",
+        "reviewer/P003_detail.png"
+      ]
+    },
+    {
+      "source_index": 478,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m003-s2-v1-e01",
+        "bar": 3,
+        "staff": "2",
+        "voice": "1",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "stop",
+          "pitches": [
+            "F#1",
+            "F#2"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m003-s2-v1-e01",
+              "bar": 3,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "1",
+              "pitch": "F#1",
+              "expected_previous_event_id": null
+            },
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m003-s2-v1-e01",
+              "bar": 3,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "1",
+              "pitch": "F#2",
+              "expected_previous_event_id": null
+            }
+          ]
+        },
+        "contributing_sources": [
+          "SmartScore"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE",
+      "printed": "Both F#1 and F#2 receive P002 ties.",
+      "evidence": [
+        "reviewer/system_01.png",
+        "reviewer/P003_detail.png"
+      ]
+    },
+    {
+      "source_index": 479,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m020-s1-v5-e07",
+        "bar": 20,
+        "staff": "1",
+        "voice": "5",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "C#5"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m020-s1-v5-e07",
+              "bar": 20,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "C#5",
+              "expected_next_event_id": "m023-s1-v5-e01"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "PlayScore"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE",
+      "printed": "C#5 atP020 onset3 ties to C#5 atP021 onset0; renumber voices consistently.",
+      "evidence": [
+        "reviewer/system_05.png",
+        "reviewer/P021_detail.png"
+      ]
+    },
+    {
+      "source_index": 480,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m021-s1-v2-e02",
+        "bar": 21,
+        "staff": "1",
+        "voice": "2",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "stop",
+          "pitches": [
+            "F#4"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m021-s1-v2-e02",
+              "bar": 21,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "2",
+              "pitch": "F#4",
+              "expected_previous_event_id": null
+            }
+          ]
+        },
+        "contributing_sources": [
+          "CLAUDE"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE",
+      "printed": "F#4 atP021 onset0 receives tie from P020 inner F#4 half at2.",
+      "evidence": [
+        "reviewer/system_05.png",
+        "reviewer/P021_detail.png"
+      ]
+    },
+    {
+      "source_index": 481,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m026-s1-v1-e01",
+        "bar": 26,
+        "staff": "1",
+        "voice": "1",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "E4"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m026-s1-v1-e01",
+              "bar": 26,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "1",
+              "pitch": "E4",
+              "expected_next_event_id": "m030-s1-v1-e02"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "Audiveris",
+          "CLAUDE",
+          "SmartScore"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE_AFTER_MISSING_EVENT",
+      "printed": "E4 half atP026 onset0 ties to omitted E4 eighth at2.",
+      "evidence": [
+        "reviewer/P026_continuation_detail.png"
+      ]
+    },
+    {
+      "source_index": 482,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m028-s2-v1-e04",
+        "bar": 28,
+        "staff": "2",
+        "voice": "1",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "F#1",
+            "F#2"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m028-s2-v1-e04",
+              "bar": 28,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "1",
+              "pitch": "F#1",
+              "expected_next_event_id": null
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m028-s2-v1-e04",
+              "bar": 28,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "1",
+              "pitch": "F#2",
+              "expected_next_event_id": null
+            }
+          ]
+        },
+        "contributing_sources": [
+          "SmartScore"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE",
+      "printed": "Both F# octave notes atP028 onset2 tie to P029 opening.",
+      "evidence": [
+        "reviewer/system_07.png",
+        "reviewer/P029_continuation_detail.png"
+      ]
+    },
+    {
+      "source_index": 483,
+      "record": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m029-s2-v5-e01",
+        "bar": 29,
+        "staff": "2",
+        "voice": "5",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "stop",
+          "pitches": [
+            "F#1",
+            "F#2"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m029-s2-v5-e01",
+              "bar": 29,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "5",
+              "pitch": "F#1",
+              "expected_previous_event_id": null
+            },
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m029-s2-v5-e01",
+              "bar": 29,
+              "part_id": "P1",
+              "staff": "2",
+              "voice": "5",
+              "pitch": "F#2",
+              "expected_previous_event_id": null
+            }
+          ]
+        },
+        "contributing_sources": [
+          "SmartScore"
+        ],
+        "action": "quarantined_from_executable_candidate"
+      },
+      "decision": "RESTORE",
+      "printed": "Both F# octave notes atP029 onset0 receive P028 tie.",
+      "evidence": [
+        "reviewer/system_07.png",
+        "reviewer/P029_continuation_detail.png"
+      ]
+    }
+  ]
+}

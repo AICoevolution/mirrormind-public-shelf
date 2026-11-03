@@ -1,0 +1,728 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "mendelssohn_sww_04_confidence",
+  "authority": "print_only",
+  "source_pdf_sha256": "03c3c928371247ac15858968dfc8c651d8eba444112b1120940be58e5683d606",
+  "pages_json_sha256": "1c706f2a84e7b93dfac4cc6c2bb2238fa7ee5683ef1c7d790fc77f48f7acddb4",
+  "inspection_status": "PREPARER_PROPOSAL_REQUIRES_INDEPENDENT_VERIFICATION",
+  "physical_bar_count_check": {
+    "system_counts": [
+      2,
+      5,
+      6,
+      5,
+      5,
+      4,
+      4
+    ],
+    "sum": 31,
+    "method": "Count only vertical lines spanning both printed staves; stems inside a staff do not divide physical bars."
+  },
+  "pickup_or_partial_bars": [
+    {
+      "id": "P005",
+      "physical_bar": 5,
+      "capacity_q": "3/2",
+      "kind": "section_terminal_partial",
+      "flags": [
+        "PARTIAL"
+      ],
+      "evidence": {
+        "source": "direct_print",
+        "page": 1,
+        "system": 2,
+        "onset_q": "0",
+        "bbox_px": [
+          990,
+          460,
+          1102,
+          650
+        ],
+        "coordinate_space": "page_px",
+        "crop_path": "source_crops/system_02.png",
+        "page_path": "source_crops/page-1.png"
+      },
+      "written_count": "One eighth-note chord followed by two eighth rests on each staff: 1/2 + 1/2 + 1/2 = 3/2 quarters."
+    },
+    {
+      "id": "P006",
+      "physical_bar": 6,
+      "capacity_q": "5/2",
+      "kind": "section_opening_pickup",
+      "flags": [
+        "PICKUP"
+      ],
+      "evidence": {
+        "source": "direct_print",
+        "page": 1,
+        "system": 2,
+        "onset_q": "0",
+        "bbox_px": [
+          1093,
+          440,
+          1232,
+          665
+        ],
+        "coordinate_space": "page_px",
+        "crop_path": "source_crops/system_02.png",
+        "page_path": "source_crops/page-1.png"
+      },
+      "written_count": "One eighth-note chord, then two quarter-note chords in both staves: 1/2 + 1 + 1 = 5/2 quarters."
+    }
+  ],
+  "capacity_checks": [
+    {
+      "regions": [
+        "P005",
+        "P006"
+      ],
+      "capacities_q": [
+        "3/2",
+        "5/2"
+      ],
+      "sum_q": "4",
+      "printed_meter_capacity_q": "4",
+      "matches_meter": true,
+      "explanation": "The terminal short region before the internal double barline and the immediately following section pickup complement one another. This is an internal division of a continuous metrical bar; P001 itself is a full bar.",
+      "evidence": [
+        {
+          "source": "direct_print",
+          "page": 1,
+          "system": 2,
+          "onset_q": "0",
+          "bbox_px": [
+            990,
+            440,
+            1232,
+            665
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_02.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      ]
+    }
+  ],
+  "opening_bar_check": {
+    "physical_bar": 1,
+    "capacity_q": "4",
+    "is_pickup": false,
+    "print_count": "Sixteen sixteenth notes in the upper staff; whole-note octave in the lower staff.",
+    "evidence": {
+      "source": "direct_print",
+      "page": 1,
+      "system": 1,
+      "onset_q": "0",
+      "bbox_px": [
+        320,
+        180,
+        881,
+        370
+      ],
+      "coordinate_space": "page_px",
+      "crop_path": "source_crops/system_01.png",
+      "page_path": "source_crops/page-1.png"
+    }
+  },
+  "terminal_bar_check": {
+    "physical_bar": 31,
+    "capacity_q": "4",
+    "is_partial": false,
+    "print_count": "Eighth-note chord, eighth rest, quarter rest, half rest: 1/2 + 1/2 + 1 + 2 = 4. Fermata does not change written capacity.",
+    "evidence": {
+      "source": "direct_print",
+      "page": 1,
+      "system": 7,
+      "onset_q": "0",
+      "bbox_px": [
+        1330,
+        1730,
+        1477,
+        1950
+      ],
+      "coordinate_space": "page_px",
+      "crop_path": "source_crops/system_07.png",
+      "page_path": "source_crops/page-1.png"
+    }
+  },
+  "repeat_boundaries": [],
+  "repeat_check": {
+    "finding": "No repeat dots or repeat signs anywhere in the seven systems. Internal double barlines follow P005 and P026; final heavy barline follows P031.",
+    "evidence": [
+      {
+        "system": 1,
+        "page": 1,
+        "crop_path": "source_crops/system_01.png",
+        "bbox_px": [
+          105,
+          90,
+          1495,
+          440
+        ]
+      },
+      {
+        "system": 2,
+        "page": 1,
+        "crop_path": "source_crops/system_02.png",
+        "bbox_px": [
+          105,
+          390,
+          1495,
+          705
+        ]
+      },
+      {
+        "system": 3,
+        "page": 1,
+        "crop_path": "source_crops/system_03.png",
+        "bbox_px": [
+          105,
+          660,
+          1495,
+          965
+        ]
+      },
+      {
+        "system": 4,
+        "page": 1,
+        "crop_path": "source_crops/system_04.png",
+        "bbox_px": [
+          105,
+          915,
+          1495,
+          1208
+        ]
+      },
+      {
+        "system": 5,
+        "page": 1,
+        "crop_path": "source_crops/system_05.png",
+        "bbox_px": [
+          105,
+          1160,
+          1495,
+          1465
+        ]
+      },
+      {
+        "system": 6,
+        "page": 1,
+        "crop_path": "source_crops/system_06.png",
+        "bbox_px": [
+          105,
+          1425,
+          1495,
+          1720
+        ]
+      },
+      {
+        "system": 7,
+        "page": 1,
+        "crop_path": "source_crops/system_07.png",
+        "bbox_px": [
+          105,
+          1680,
+          1495,
+          2040
+        ]
+      }
+    ]
+  },
+  "clef_changes": [],
+  "clef_check": {
+    "finding": "G2 and F4 at every system opening; no inline changes and no end-of-system cautionary clefs.",
+    "system_opening_clefs": [
+      {
+        "system": 1,
+        "physical_bar": 1,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 1,
+          "onset_q": "0",
+          "bbox_px": [
+            150,
+            90,
+            250,
+            440
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_01.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 1,
+        "physical_bar": 1,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_01.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 1,
+          "onset_q": "0",
+          "bbox_px": [
+            150,
+            90,
+            250,
+            440
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_01.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 2,
+        "physical_bar": 3,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_02.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 2,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            390,
+            210,
+            705
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_02.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 2,
+        "physical_bar": 3,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_02.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 2,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            390,
+            210,
+            705
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_02.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 3,
+        "physical_bar": 8,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_03.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 3,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            660,
+            210,
+            965
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_03.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 3,
+        "physical_bar": 8,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_03.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 3,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            660,
+            210,
+            965
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_03.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 4,
+        "physical_bar": 14,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_04.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 4,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            915,
+            210,
+            1208
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_04.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 4,
+        "physical_bar": 14,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_04.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 4,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            915,
+            210,
+            1208
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_04.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 5,
+        "physical_bar": 19,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_05.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 5,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            1160,
+            210,
+            1465
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_05.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 5,
+        "physical_bar": 19,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_05.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 5,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            1160,
+            210,
+            1465
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_05.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 6,
+        "physical_bar": 24,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_06.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 6,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            1425,
+            210,
+            1720
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_06.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 6,
+        "physical_bar": 24,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_06.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 6,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            1425,
+            210,
+            1720
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_06.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 7,
+        "physical_bar": 28,
+        "staff": "1",
+        "sign": "G",
+        "line": 2,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_07.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 7,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            1680,
+            210,
+            2040
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_07.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 7,
+        "physical_bar": 28,
+        "staff": "2",
+        "sign": "F",
+        "line": 4,
+        "is_clef_change": false,
+        "page": 1,
+        "crop_path": "source_crops/system_07.png",
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 7,
+          "onset_q": "0",
+          "bbox_px": [
+            143,
+            1680,
+            210,
+            2040
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_07.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      }
+    ]
+  },
+  "system_break_check": {
+    "finding": "Seven closed systems; no unclosed system end, split region or cadenza.",
+    "systems": [
+      {
+        "system": 1,
+        "closing_bar": 2,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 1,
+          "onset_q": "0",
+          "bbox_px": [
+            1459,
+            90,
+            1470,
+            440
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_01.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 2,
+        "closing_bar": 7,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 2,
+          "onset_q": "0",
+          "bbox_px": [
+            1461,
+            390,
+            1472,
+            705
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_02.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 3,
+        "closing_bar": 13,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 3,
+          "onset_q": "0",
+          "bbox_px": [
+            1461,
+            660,
+            1472,
+            965
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_03.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 4,
+        "closing_bar": 18,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 4,
+          "onset_q": "0",
+          "bbox_px": [
+            1464,
+            915,
+            1475,
+            1208
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_04.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 5,
+        "closing_bar": 23,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 5,
+          "onset_q": "0",
+          "bbox_px": [
+            1465,
+            1160,
+            1476,
+            1465
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_05.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 6,
+        "closing_bar": 27,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 6,
+          "onset_q": "0",
+          "bbox_px": [
+            1467,
+            1425,
+            1478,
+            1720
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_06.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      },
+      {
+        "system": 7,
+        "closing_bar": 31,
+        "evidence": {
+          "source": "direct_print",
+          "page": 1,
+          "system": 7,
+          "onset_q": "0",
+          "bbox_px": [
+            1466,
+            1680,
+            1477,
+            2040
+          ],
+          "coordinate_space": "page_px",
+          "crop_path": "source_crops/system_07.png",
+          "page_path": "source_crops/page-1.png"
+        }
+      }
+    ]
+  },
+  "crop_inspection": "All seven exact crops, expanded contexts and marked full pages from crop-preview-02 inspected against the frozen page. Complete own-system notation retained; adjacent marks interleave vertically. This is a preparer assessment, not independent approval.",
+  "crop_validation_path": "source_crops/crop_validation.json",
+  "bar_crops_manifest_path": "source_crops/bars.json"
+}

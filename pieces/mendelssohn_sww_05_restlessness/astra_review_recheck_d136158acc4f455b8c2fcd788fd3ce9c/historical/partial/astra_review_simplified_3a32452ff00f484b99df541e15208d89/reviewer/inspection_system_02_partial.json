@@ -1,0 +1,66 @@
+{
+  "schema": "independent-print-inspection.v1",
+  "system": 2,
+  "bars": [
+    4,
+    5,
+    6
+  ],
+  "status": "PARTIAL",
+  "print": "reviewer/print_evidence/system_02.png",
+  "candidate_packet": "candidate_packets/system_02.json",
+  "observations": [
+    {
+      "bar": 4,
+      "staff": "1",
+      "print_reading": "Held C#5 half at0, B-natural4 quarter at2. Eighth stream C#5,G#4,D#4,E#4,E#4,C#4,[F#4,A4],C#4,[E4,G#4],C#4,[F#4,A4],C#4. Upper chord notes at3,4,5 also have independent upward quarter stems. Small grace before onset3 and fingering/staccato require close recheck.",
+      "candidate_errors": [
+        "m004-s1-v1-e01 includes A4 instead of proper held C#5 plus eighth C#5; sustained voice missing.",
+        "m004-s1-v1-e03 B#4 at1 contradicts D#4 print.",
+        "m004-s1-v1-e04 D#4 at3/2 contradicts E#4 print.",
+        "m004-s1-v1-e06 A4/E4 at5/2 contradicts C#4 print.",
+        "m004-s1-v1-e12 C#4 at11/2 agrees."
+      ],
+      "pending": "Map every remaining incorrect event and split sustained versus beamed voices without fabricating rests."
+    },
+    {
+      "bar": 4,
+      "staff": "2",
+      "print_reading": "Initial E#3/G#3 quarter chord; E4 quarter at1; C#2/C#3 quarter at2; F#2/F#3 quarter at3; rests at4 and5.",
+      "exact_targets": [
+        {
+          "event_id": "m004-s2-v1-e01",
+          "before": [
+            "E#3"
+          ],
+          "after": [
+            "E#3",
+            "G#3"
+          ]
+        },
+        {
+          "event_id": "m004-s2-v1-e02",
+          "before": "quarter rest at1",
+          "after": "quarter E4 at1"
+        }
+      ],
+      "marks": "p at system opening; slur from previous final bass chord ends on initial chord; fingering 3/5 on initial chord and1 on E4. P004 upper slur from preceding bar and grace need confirmation."
+    },
+    {
+      "bar": 5,
+      "staff": "1",
+      "observation": "Candidate exposes two voices; print has three-note initial chord and then dyads. Local slur connects upper chord notes at0->1 and3->4; staccato above selected quarter stems. All event targets remain pending."
+    },
+    {
+      "bar": 6,
+      "staff": "1",
+      "observation": "Print returns to P002 pattern, while candidate contains F##4 at3 and5, a rest at4, and wrong eighth-stream pitches. Those double sharps are not printed. Exact target reconstruction pending."
+    },
+    {
+      "bar": 6,
+      "staff": "2",
+      "observation": "Candidate F# octaves and intervening quarter rests match visible print."
+    }
+  ],
+  "complete_candidate_audit": false
+}

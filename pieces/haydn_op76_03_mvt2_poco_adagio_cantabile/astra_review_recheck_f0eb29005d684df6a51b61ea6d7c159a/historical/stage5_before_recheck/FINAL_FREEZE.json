@@ -1,0 +1,57 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "BLOCKED_TECHNICAL",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_haydn_op76_03_mvt2.musicxml",
+  "primary_xml_sha256": "199f502e50174a35b276bc98e87b863944b2ee925029bf0561161842eddd880e",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "consumer_recheck_bound.json",
+        "delivery_final/proper.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "independent_playback_check.json",
+        "independent_playback_expected.json",
+        "delivery_final/analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "viewer_validation_v2/member_cursor_comparison.json",
+        "viewer_production_settings/member_cursor_comparison.json",
+        "viewer_production_settings/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "BLOCKED",
+      "evidence": [
+        "essential_notation_readiness.json",
+        "consumer_blockers.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "BLOCKED",
+      "evidence": [
+        "focused_visual_recheck.json",
+        "consumer_blockers.json"
+      ]
+    }
+  },
+  "layer_readiness": "layer_readiness.json",
+  "human_attention": "human_attention.json",
+  "human_outcome": null,
+  "artifact_manifest": "artifact_manifest.json",
+  "created_utc": "2026-10-20T13:23:12.814021+00:00",
+  "phase3_specification": "reviewer/phase3_review_final_cf710b6d.json",
+  "phase3_frozen": true,
+  "reason": "Ambiguous visual ownership of viola rests and violin-II dolce in production renderer."
+}

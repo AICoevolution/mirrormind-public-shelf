@@ -1,0 +1,1119 @@
+{
+  "schema": "frame_verifier_response.v1",
+  "piece_id": "mendelssohn_sww_06_venetian_boat_song_no_1",
+  "request_sha256": "f551e4978d9290317d740f9355b759d0a8a73cf9a0cf5541b2266ef46eed38b2",
+  "verifier": {
+    "provider": "GROK_FRAME_VERIFIER",
+    "session_id": "7153ba971a694d70aec562b1875bfd39",
+    "edition_scope": "schirmer-1915-sternberg-op19-no6-venetian-boat-song-no1"
+  },
+  "verdict": "PASS",
+  "source_blindness_confirmed": true,
+  "geometry_assist_review": {
+    "manifest_sha256": "fdb67639544250c653801cae1efe249c5e363593254167be9c407676d8779663",
+    "print_remains_authority": true,
+    "semantic_omr_content_not_used": true,
+    "systems": [
+      {
+        "system": 1,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 2,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 3,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 4,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 5,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 6,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 7,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 8,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "Printed barlines run through both staves at crop x 86, 490, 788, 1093 and 1414. Candidate strokes one pixel away are the same ink. Dark verticals near crop x 443 and 903 are note stems that stop between the staves."
+      },
+      {
+        "system": 9,
+        "pixel_check_complete": true,
+        "candidate_verdict": "CONFIRMED",
+        "deep_review_complete": true,
+        "explanation_plain": "The printed barlines run through both staves at the candidate strokes. Differences of one or two pixels are the same stroke."
+      },
+      {
+        "system": 10,
+        "pixel_check_complete": true,
+        "candidate_verdict": "ADJUSTED",
+        "deep_review_complete": true,
+        "explanation_plain": "Content barlines are at crop x 89, 435, 700, 932 and 1164. The final barline is light at x 1401 and heavy from x 1408 to 1415. The candidate x 1412 is that heavy stroke, so the returned boundary stays on the light stroke. It is one final barline, not an extra bar."
+      }
+    ]
+  },
+  "printed_physical_bar_count": 46,
+  "human_summary": "Forty-six printed bars, each a full bar of six eighths in 6/8 with two flats. The upper staff opens in treble and the lower staff in bass; later systems only reprint those clefs, and no clef change is printed. There is no pickup, repeat, ending, or meter or key change. Systems 8 and 10 were checked on the print and agree with the proposed barlines. The last bar ends with a light-heavy final barline and fermatas, and its written values still fill one bar. Systems 1\u20137 and 9 were already verified on these pixels and are copied unchanged.",
+  "clef_verification": {
+    "opening": [
+      {
+        "staff": 1,
+        "sign": "G",
+        "line": 2,
+        "clef_plain": "treble clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1",
+        "evidence_bbox_px": [
+          224,
+          118,
+          255,
+          210
+        ]
+      },
+      {
+        "staff": 2,
+        "sign": "F",
+        "line": 4,
+        "clef_plain": "bass clef",
+        "system": 1,
+        "crop_path": "source_crops/system_01.png",
+        "where_plain": "Opening of system 1",
+        "evidence_bbox_px": [
+          223,
+          280,
+          257,
+          330
+        ]
+      }
+    ],
+    "changes": [],
+    "printed_change_count": 0,
+    "no_other_changes_visible": true,
+    "matches_proposed_frame": true,
+    "summary_plain": "Both staves open in treble and bass. Every later system reprints those clefs at its left edge. No clef change is printed."
+  },
+  "systems": [
+    {
+      "system": 1,
+      "page": 1,
+      "crop_path": "source_crops/system_01.png",
+      "crop_width_px": 1495,
+      "crop_height_px": 417,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [
+        215,
+        535,
+        749,
+        950,
+        1158,
+        1391
+      ],
+      "regions": [
+        {
+          "id": "P001",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            215,
+            31,
+            535,
+            415
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "OPENING_SIGNATURE"
+          ],
+          "features_plain": [
+            "After the opening clefs"
+          ]
+        },
+        {
+          "id": "P002",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            535,
+            31,
+            749,
+            415
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P003",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            749,
+            31,
+            950,
+            415
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P004",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            950,
+            31,
+            1158,
+            415
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P005",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1158,
+            31,
+            1391,
+            415
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 2,
+      "page": 1,
+      "crop_path": "source_crops/system_02.png",
+      "crop_width_px": 1495,
+      "crop_height_px": 335,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [
+        63,
+        400,
+        638,
+        888,
+        1131,
+        1390
+      ],
+      "regions": [
+        {
+          "id": "P006",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            63,
+            8,
+            400,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P007",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            400,
+            8,
+            638,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P008",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            638,
+            8,
+            888,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P009",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            888,
+            8,
+            1131,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P010",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1131,
+            8,
+            1390,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 3,
+      "page": 1,
+      "crop_path": "source_crops/system_03.png",
+      "crop_width_px": 1495,
+      "crop_height_px": 306,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [
+        67,
+        403,
+        650,
+        891,
+        1149,
+        1392
+      ],
+      "regions": [
+        {
+          "id": "P011",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            67,
+            1,
+            403,
+            304
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P012",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            403,
+            1,
+            650,
+            304
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P013",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            650,
+            1,
+            891,
+            304
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P014",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            891,
+            1,
+            1149,
+            304
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P015",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1149,
+            1,
+            1392,
+            304
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 4,
+      "page": 1,
+      "crop_path": "source_crops/system_04.png",
+      "crop_width_px": 1495,
+      "crop_height_px": 336,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [
+        67,
+        418,
+        645,
+        893,
+        1146,
+        1393
+      ],
+      "regions": [
+        {
+          "id": "P016",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            67,
+            14,
+            418,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P017",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            418,
+            14,
+            645,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P018",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            645,
+            14,
+            893,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P019",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            893,
+            14,
+            1146,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P020",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1146,
+            14,
+            1393,
+            334
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 5,
+      "page": 1,
+      "crop_path": "source_crops/system_05.png",
+      "crop_width_px": 1495,
+      "crop_height_px": 337,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [
+        69,
+        395,
+        649,
+        897,
+        1135,
+        1394
+      ],
+      "regions": [
+        {
+          "id": "P021",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            69,
+            8,
+            395,
+            330
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P022",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            395,
+            8,
+            649,
+            330
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P023",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            649,
+            8,
+            897,
+            330
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P024",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            897,
+            8,
+            1135,
+            330
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P025",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1135,
+            8,
+            1394,
+            330
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 6,
+      "page": 2,
+      "crop_path": "source_crops/system_06.png",
+      "crop_width_px": 1470,
+      "crop_height_px": 371,
+      "printed_region_count": 4,
+      "barline_boundaries_x_px": [
+        84,
+        487,
+        792,
+        1105,
+        1415
+      ],
+      "regions": [
+        {
+          "id": "P026",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            84,
+            9,
+            487,
+            368
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P027",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            487,
+            9,
+            792,
+            368
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P028",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            792,
+            9,
+            1105,
+            368
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P029",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1105,
+            9,
+            1415,
+            368
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 7,
+      "page": 2,
+      "crop_path": "source_crops/system_07.png",
+      "crop_width_px": 1470,
+      "crop_height_px": 345,
+      "printed_region_count": 4,
+      "barline_boundaries_x_px": [
+        86,
+        484,
+        814,
+        1101,
+        1414
+      ],
+      "regions": [
+        {
+          "id": "P030",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            86,
+            9,
+            484,
+            343
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P031",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            484,
+            9,
+            814,
+            343
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P032",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            814,
+            9,
+            1101,
+            343
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P033",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1101,
+            9,
+            1414,
+            343
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 8,
+      "page": 2,
+      "crop_path": "source_crops/system_08.png",
+      "crop_width_px": 1470,
+      "crop_height_px": 374,
+      "printed_region_count": 4,
+      "barline_boundaries_x_px": [
+        86,
+        490,
+        788,
+        1093,
+        1414
+      ],
+      "regions": [
+        {
+          "id": "P034",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            86,
+            22,
+            490,
+            360
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P035",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            490,
+            22,
+            788,
+            360
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P036",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            788,
+            22,
+            1093,
+            360
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P037",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1093,
+            22,
+            1414,
+            360
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 9,
+      "page": 2,
+      "crop_path": "source_crops/system_09.png",
+      "crop_width_px": 1470,
+      "crop_height_px": 411,
+      "printed_region_count": 4,
+      "barline_boundaries_x_px": [
+        88,
+        491,
+        796,
+        1105,
+        1415
+      ],
+      "regions": [
+        {
+          "id": "P038",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            88,
+            8,
+            491,
+            406
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P039",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            491,
+            8,
+            796,
+            406
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P040",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            796,
+            8,
+            1105,
+            406
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P041",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1105,
+            8,
+            1415,
+            406
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    },
+    {
+      "system": 10,
+      "page": 2,
+      "crop_path": "source_crops/system_10.png",
+      "crop_width_px": 1470,
+      "crop_height_px": 430,
+      "printed_region_count": 5,
+      "barline_boundaries_x_px": [
+        89,
+        435,
+        700,
+        932,
+        1164,
+        1401
+      ],
+      "regions": [
+        {
+          "id": "P042",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            89,
+            2,
+            435,
+            420
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P043",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            435,
+            2,
+            700,
+            420
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P044",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            700,
+            2,
+            932,
+            420
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P045",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            932,
+            2,
+            1164,
+            420
+          ],
+          "review_class": "NORMAL",
+          "flags": [],
+          "features_plain": []
+        },
+        {
+          "id": "P046",
+          "capacity_q": "3",
+          "capacity_plain": "6 eighth-note units",
+          "kind_plain": "full 6/8 bar",
+          "evidence_bbox_px": [
+            1164,
+            2,
+            1401,
+            420
+          ],
+          "review_class": "NOTEWORTHY",
+          "flags": [
+            "FINAL_BARLINE"
+          ],
+          "features_plain": [
+            "At the right barline"
+          ]
+        }
+      ],
+      "checks": {
+        "crop_boundary_overlay_checked": true,
+        "first_last_barlines_complete": true,
+        "outermost_musical_ink_complete": true
+      }
+    }
+  ],
+  "irregular_checks": [
+    {
+      "where": "System 10, last bar",
+      "question_plain": "Does the thick stroke after the thin stroke add another bar?",
+      "answer_plain": "No. The thin stroke at crop x 1401 and the thick stroke from crop x 1408 to 1415 are one light-heavy final barline.",
+      "evidence_bbox_px": [
+        1396,
+        90,
+        1418,
+        300
+      ]
+    },
+    {
+      "where": "System 8, near the middle of the first and third bars",
+      "question_plain": "Are the long verticals near crop x 443 and 903 barlines?",
+      "answer_plain": "No. Each is a note stem on the upper staff and a separate note stem on the lower staff, with a clear gap between the staves.",
+      "evidence_bbox_px": [
+        430,
+        60,
+        930,
+        330
+      ]
+    },
+    {
+      "where": "System 8, fourth bar, lower staff",
+      "question_plain": "Is the small numeral a first ending?",
+      "answer_plain": "No. It is a fingering numeral beside a left-hand chord. No ending bracket is printed.",
+      "evidence_bbox_px": [
+        1240,
+        200,
+        1340,
+        280
+      ]
+    },
+    {
+      "where": "System 10, last bar",
+      "question_plain": "Do the fermatas make the last bar unmeasured?",
+      "answer_plain": "No. The lower staff holds a dotted half note and the upper staff has an eighth note plus rests, which fill one 6/8 bar.",
+      "evidence_bbox_px": [
+        1164,
+        2,
+        1416,
+        420
+      ]
+    },
+    {
+      "where": "Page 2 below system 10",
+      "question_plain": "Is any musical ink outside the system 10 crop?",
+      "answer_plain": "No. The octave line and pedal marks are inside the crop. The plate number below the crop is not musical ink.",
+      "evidence_bbox_px": [
+        60,
+        2009,
+        300,
+        2052
+      ]
+    }
+  ],
+  "count_anomaly_review": {
+    "performed": true,
+    "printed_count_confirmed": 46,
+    "explanation_plain": "Systems 1 through 5 have 5 bars each, systems 6 through 9 have 4 each, and system 10 has 5, totaling 46. Frozen systems were counted from their verified region counts. On the open systems every boundary is a stroke through both staves. Note stems that stop between the staves were not counted. The light and heavy strokes at the end of system 10 were counted as one final barline. No pickup, repeat, or system-break split bar is printed."
+  },
+  "corrections": []
+}

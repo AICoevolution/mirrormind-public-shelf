@@ -1,0 +1,26 @@
+{
+  "schema": "omr_phase2_inspection.v1",
+  "complete": false,
+  "source_extract": "reviewer/phase2_audit_source_extract_96_99.json",
+  "print_evidence": [
+    "reviewer/print/system_23.png"
+  ],
+  "findings": {
+    "96": "I B5 dotted quarter B5 eighth finishes preceding phrase; C#6 quarter then C#6-D6 eighths slur. SmartScore local tie on first pair is not shown as a separate arc; incoming long phrase remains. II A5-D5-G5-F#5-E5-G5-F#5-E5 eighths; incoming curve to first A5 and new D5-through-final-E5 phrase. III G-natural4 A4 B4 A4, G4 B4 A4 G4 eighths in two half-bar slurs. IV tenor D4 whole receives tie; PlayScore rest false. Incoming II A5 curve tie/slur semantics retained for candidate recheck.",
+    "97": "I D6 half G6 dotted quarter F#6 eighth with slur only final pair; PlayScore extra initial slurs false. II F#5 half then G5 A5 B5 D6 eighths with outgoing phrase; tremolo absent. III A4 quarter/rest, D5 C5 B4 B4 eighths with slur first three and final separate. IV D4 quarter then E4 F#4 G4 A4 sixteenths slurred; B4 A4 G4 G4 eighths with slur first three. Reader false chord/extra low B1 and duration corruption noted.",
+    "98": "I small F#6 appoggiatura before E6 quarter, D6 quarter; E6 dotted quarter D6 eighth, two half-bar phrases. II D6 eighth C6 quarter B5 eighth then E5 F#5 G5 G#5 four eighths slurred. III C5 E5 F#5 G5 G5 eighths then G4-A4 sixteenths B4-E4 eighths; short arcs E5-F#5 and G5-G5 plus second-half phrase. Repeated G5 arc needs tie-versus-slur candidate check. IV tenor G4 half then bass clef at onset2 C4-B3 quarters slurred; clef must not precede G4.",
+    "99": "I small D6 appoggiatura before C6-B5 quarters; A5 dotted quarter B5-C6 sixteenths slurred. II A5 quarter G-natural5 half then F#5 eighth G5-A5 sixteenths slurred. III E4 F#4 G4 F#4 eighths slur, E4 quarter D4 quarter tied into P100. IV A3 quarter E4-D4 eighths C#4-C-natural4 quarters, second-half chromatic slur. Readers lose grace notes, accidentals, dots and final tie; phantom rests are false."
+  },
+  "uncertainties": [
+    {
+      "id": "VAR4-P095-P096-II-ARC",
+      "question": "Incoming repeated A5 curve: tie or phrase continuation?",
+      "provisional_treatment": "Preserve uncertainty for candidate audit with both system segments; do not infer human answer."
+    },
+    {
+      "id": "VAR4-P098-III-G5-ARC",
+      "question": "Repeated G5 arc crosses beat2: tie or rearticulated slur?",
+      "provisional_treatment": "Recheck exact endpoints in candidate audit; retain as explicit uncertainty."
+    }
+  ]
+}

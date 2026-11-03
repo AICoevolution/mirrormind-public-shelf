@@ -1,0 +1,179 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "PRINT-P012",
+      "address": {
+        "bar": 12,
+        "staff": 2,
+        "page": 1,
+        "system": 2
+      },
+      "question": "Confirm damaged lower-staff beat2 and last chord/beam reading.",
+      "provisional_treatment": "F3 eighth at1, C4/F4 eighth chord at3/2; reject candidate E4/G4 from surviving head positions.",
+      "reason_for_uncertainty": "Abraded notehead and missing beam/staff ink near closing barline.",
+      "evidence": [
+        "reviewer/P012_focused.png",
+        "reviewer/print_system_02.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "RHYTHM-P008-016-056",
+      "address": {
+        "bars": [
+          8,
+          16,
+          56
+        ],
+        "staff": 1
+      },
+      "question": "Confirm opening upper eighth/sixteenth and the shared sixteenth-rest interpretation; should the first melody note instead be dotted?",
+      "provisional_treatment": "F5 eighth0–1/2, Bb5 sixteenth1/2–3/4, unprinted upper silence3/4–1, F5 quarter at1. Inner Bb4 dotted eighth, sixteenth rest, Ab4 quarter. Show the inner rest; do not invent a melody augmentation dot.",
+      "reason_for_uncertainty": "No clear dot at upper F5; visible dot belongs to inner Bb4. Voice-sharing of printed rest requires human confirmation.",
+      "evidence": [
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png",
+        "reviewer/P056_focused.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "GRACE-ACCIDENTAL-SCOPE",
+      "address": {
+        "bars": [
+          7,
+          15,
+          55,
+          65,
+          66,
+          67,
+          69,
+          73
+        ],
+        "staff": 1
+      },
+      "question": "Confirm same-bar accidental scope from grace notes to later ordinary notes in this edition.",
+      "provisional_treatment": "Gb5 grace makes later same-octave G flat in P007/P015/P055; D-natural grace makes later D natural in P065/P066/P067/P069/P073.",
+      "reason_for_uncertainty": "Readers disagree; conventional same-bar scope retained, with print visible for human verification.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_03.png",
+        "reviewer/print_system_09.png",
+        "reviewer/print_system_10.png",
+        "reviewer/print_system_11.png",
+        "reviewer/P073_focused.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null
+    },
+    {
+      "id": "GRACE-BEAM-REALIZATION",
+      "address": {
+        "bars": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          12,
+          13,
+          14,
+          15,
+          21,
+          23,
+          29,
+          31,
+          36,
+          38,
+          44,
+          46,
+          51,
+          52,
+          53,
+          54,
+          55,
+          59,
+          61,
+          63,
+          65,
+          66,
+          67,
+          69,
+          71,
+          73,
+          75
+        ],
+        "staff": 1
+      },
+      "question": "Confirm grace flag/beam grouping throughout and ordinary beam realization at P059, where separately flagged notes differ from the source group.",
+      "provisional_treatment": "Unslashed small notes; paired graces sixteenths; P021/P075 single eighth graces and other singles sixteenths. Keep zero metric duration; no tempo or performance-steal-time invented. P059 retains readable separately flagged values; printed grouping remains a final engraving question.",
+      "reason_for_uncertainty": "Small flags have limited print resolution and readers frequently drop them; retained notation remains provisional.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png",
+        "reviewer/print_system_04.png",
+        "reviewer/print_system_05.png",
+        "reviewer/print_system_06.png",
+        "reviewer/print_system_07.png",
+        "reviewer/print_system_08.png",
+        "reviewer/print_system_09.png",
+        "reviewer/print_system_10.png",
+        "reviewer/print_system_11.png",
+        "reviewer/print_system_12.png",
+        "validation/final/viewer/context_03.png",
+        "validation/final/viewer/report.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "ambiguous_notation",
+      "primary_xml_sha256": "babf434c7c5c100a1ea5ab0e724261d3ab85423ddb6c87526c2fd9029d9cc6d3",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "review_safety_reason": "Noteheads, flags, stems and local rhythm remain readable in the compact whole-score view; exact playback and mapping pass. Human can compare each printed beam/group without losing the review context.",
+      "display_context": {
+        "whole_view_usable": true,
+        "primary_xml_sha256": "babf434c7c5c100a1ea5ab0e724261d3ab85423ddb6c87526c2fd9029d9cc6d3",
+        "source_evidence": [
+          "reviewer/print_system_09.png",
+          "reviewer/print_system_10.png"
+        ],
+        "render_evidence": [
+          "validation/final/viewer/context_03.png"
+        ]
+      }
+    },
+    {
+      "id": "SEP-MARKS-PPP",
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "primary_xml_sha256": "babf434c7c5c100a1ea5ab0e724261d3ab85423ddb6c87526c2fd9029d9cc6d3",
+      "address": {
+        "bar": 63,
+        "staff": 1
+      },
+      "question": "Retain and verify printed ppp in the primary; do not rely on MARKS alone to reconstruct it.",
+      "provisional_treatment": "Primary XML and viewer contain ppp. Actual Apply retains it, but the MARKS export has no v0 token; diagnostic exports are not publication masters.",
+      "reason_for_uncertainty": "Actual exporter reports unsupported ppp dynamic.",
+      "review_safety_reason": "The primary contains and renders the dynamic; all musical and slur-endpoint comparisons pass after Apply.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "validation/final/layer_roundtrips.json",
+        "validation/final/MARKS_export.json",
+        "validation/final/viewer/context_03.png"
+      ]
+    }
+  ]
+}

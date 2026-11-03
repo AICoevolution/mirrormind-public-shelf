@@ -1,0 +1,68 @@
+{
+  "schema": "astra_note_revision_changes.v1",
+  "base_primary_xml_sha256": "36916ced9b0e1dec451af457dce7e16c4858ad423a5f9264b86f31f115ea3122",
+  "primary_xml_sha256": "1453c505d1bdd9c40f84f7f3ef946cd9833c0147ad5cadef83fc376e686fc30b",
+  "note_ids": [
+    "m105-s1-v1-e09",
+    "m105-s1-v1-e11"
+  ],
+  "changes": [
+    {
+      "note_id": "m105-s1-v1-e09",
+      "physical_bar": 105,
+      "part": "Violino",
+      "before": "<note id=\"m105-s1-v1-e09\">\n        <pitch>\n          <step>G</step>\n          <octave>4</octave>\n        </pitch>\n        <duration>6</duration>\n        <voice>1</voice>\n        <type>64th</type>\n        <stem>up</stem><staff>1</staff>\n      <beam number=\"4\">backward hook</beam><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam><beam number=\"3\">continue</beam><notations><slur type=\"stop\" placement=\"below\" orientation=\"under\" number=\"1\"/></notations></note>",
+      "after": "<note id=\"m105-s1-v1-e09\">\n        <pitch>\n          <step>G</step>\n          <octave>4</octave>\n        </pitch>\n        <duration>6</duration>\n        <voice>1</voice>\n        <type>64th</type>\n        <stem>up</stem><staff>1</staff>\n      <beam number=\"1\">continue</beam><beam number=\"2\">continue</beam><beam number=\"3\">continue</beam><beam number=\"4\">backward hook</beam><notations><slur type=\"stop\" placement=\"below\" orientation=\"under\" number=\"1\" /></notations></note>",
+      "reason": "Preserve printed three full beams and fourth backward hook, ordering existing children 1,2,3,4 to avoid standalone flag. No musical values or beam values changed."
+    },
+    {
+      "note_id": "m105-s1-v1-e11",
+      "physical_bar": 105,
+      "part": "Violino",
+      "before": "<note id=\"m105-s1-v1-e11\">\n        <pitch>\n          <step>B</step>\n          <octave>4</octave>\n        </pitch>\n        <duration>6</duration>\n        <voice>1</voice>\n        <type>64th</type>\n        <stem>up</stem><staff>1</staff>\n      <beam number=\"4\">backward hook</beam><beam number=\"1\">end</beam><beam number=\"2\">end</beam><beam number=\"3\">end</beam><notations><slur type=\"stop\" placement=\"below\" orientation=\"under\" number=\"1\"/></notations></note>",
+      "after": "<note id=\"m105-s1-v1-e11\">\n        <pitch>\n          <step>B</step>\n          <octave>4</octave>\n        </pitch>\n        <duration>6</duration>\n        <voice>1</voice>\n        <type>64th</type>\n        <stem>up</stem><staff>1</staff>\n      <beam number=\"1\">end</beam><beam number=\"2\">end</beam><beam number=\"3\">end</beam><beam number=\"4\">backward hook</beam><notations><slur type=\"stop\" placement=\"below\" orientation=\"under\" number=\"1\" /></notations></note>",
+      "reason": "Preserve printed three full beams and fourth backward hook, ordering existing children 1,2,3,4 to avoid standalone flag. No musical values or beam values changed."
+    }
+  ],
+  "outside_note_scope_unchanged": true,
+  "source_reasoning": {
+    "schema": "astra_note_local_source_recheck.v1",
+    "primary_xml_sha256": "36916ced9b0e1dec451af457dce7e16c4858ad423a5f9264b86f31f115ea3122",
+    "note_ids": [
+      "m105-s1-v1-e09",
+      "m105-s1-v1-e11"
+    ],
+    "source_observation": "P105 violin final four notes have three continuous beams, with fourth-level backward hooks on the second and fourth notes; no standalone flags. Dotted32nd/64th pair repeated, A4 G4 A4 B4.",
+    "primary_observation": "Beam children on the two 64ths occur in order 4,1,2,3; renderer shows an overlapping flag on the second note. This is the only out-of-numeric-order beam group in the primary.",
+    "diagnostic_observation": "Reordering unchanged beam elements to 1,2,3,4 removes the extra flag and retains three continuous beams and fourth hooks, matching source. No pitch, time, notation endpoint or beam value change.",
+    "proposed_treatment": "Source-supported note-local ordering correction to the two exact note IDs, preserving all other XML.",
+    "source_evidence": {
+      "reviewer/crops/system_22.png": "cf2f2930a064a26db16ee918296625b6f180311e28181784d3f7180ef4c5688b",
+      "reviewer/inspection_system_22.json": "cbdcf3b726928115106b2c15c73de65d32b6572f95bd5c9ac35120d9487ccc3e"
+    },
+    "render_evidence": {
+      "validation/revision02/production_render_revision02/w1350-z1-system-23.png": "70b1e4f5ad9c802a3321bc5c97c49242b027117775dacc0b0e190649f4e5fa7c",
+      "validation/revision02/DIAGNOSTIC_sorted_beams_render/w1350-z1-system-23.png": "e072389719c79466736805b814fbbc580e20a6d8c6a3a9b1b8e049389b8e36db"
+    },
+    "affected_checks": [
+      "core",
+      "marks",
+      "route",
+      "engraving",
+      "playback",
+      "viewer",
+      "metadata",
+      "visual"
+    ]
+  },
+  "affected_checks": [
+    "core",
+    "marks",
+    "route",
+    "engraving",
+    "playback",
+    "viewer",
+    "metadata",
+    "visual"
+  ]
+}

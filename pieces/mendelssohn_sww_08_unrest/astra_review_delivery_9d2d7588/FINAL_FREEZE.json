@@ -1,0 +1,117 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_Unrest.musicxml",
+  "primary_xml_sha256": "e930a1e8eedf27cb0d3014e4c27ca1a8f0ea1fce02e30e00155ea0a67703324d",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/primary_structure_final.json",
+        "validation/musicxml_schema_final.json",
+        "validation_resume/primary_structure.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback.json",
+        "delivery_final/playback_route.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/viewer_identity_mapping.json",
+        "validation/compact_render/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-P050-053",
+        "VIEW-P040-DIM",
+        "VIEW-P082-DASHES",
+        "VIEW-P052-FINGERING"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/compact_render/report.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-P050-053",
+        "VIEW-P040-DIM",
+        "VIEW-P082-DASHES",
+        "VIEW-P052-FINGERING"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "e930a1e8eedf27cb0d3014e4c27ca1a8f0ea1fce02e30e00155ea0a67703324d",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/core_apply_correct_payload.json",
+        "validation/sep_roundtrip.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "SEP-MARKS-NORMALIZATION"
+      ],
+      "evidence": [
+        "validation/exact_payload_roundtrip.json",
+        "validation/marks_payload_normalization.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/sep_roundtrip.json",
+        "delivery_final/playback_route.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-P050-053",
+        "VIEW-P040-DIM",
+        "VIEW-P082-DASHES",
+        "VIEW-P052-FINGERING"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "delivery_issues": [
+    "VIEW-P050-053",
+    "VIEW-P040-DIM",
+    "VIEW-P082-DASHES",
+    "VIEW-P052-FINGERING",
+    "SEP-MARKS-NORMALIZATION"
+  ],
+  "execution_blockers": [],
+  "publication_authorized": false,
+  "frozen_at": "2026-10-28T11:49:19.253420+00:00",
+  "continuation_review_dir": "astra_review_delivery_9d2d7588",
+  "phase_freezes": {
+    "reviewer/PHASE1_FREEZE.md": "5ce38d1aa69951247c1ddf10735dae3098cf6e44a2c78b2b924f7ee4311bfca0",
+    "reviewer/phase1_hashes.json": "4a9c90bdaea6938a860d30b08200d0d60d9f4fa507e90ea03565efd18d4ca5ad",
+    "reviewer/PHASE2_FREEZE.md": "097bd4464cb109e1a69631fc68c44d72ff8a3f45eddc575bcf03a472ef4d5ce1",
+    "reviewer/phase2_hashes.json": "a1651c861f1e0c9990843dece5fd97b2d2e6945f7c5405131cd16a2bbfe18e87",
+    "reviewer/PHASE3_FREEZE.md": "b8fc92c2f57db5366d840f509351c894b93dcdaaa463d924af60183c0e974074",
+    "reviewer/phase3_hashes.json": "de356e396c5586766aa6966f94295fdefe525dad0890240494b5fe92259dcb08"
+  }
+}

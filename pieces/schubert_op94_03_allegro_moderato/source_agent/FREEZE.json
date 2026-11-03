@@ -1,0 +1,191 @@
+{
+  "schema": "ensemble-candidate-freeze.v1",
+  "state": "UNVERIFIED_ENSEMBLE_CANDIDATE",
+  "files_sha256": {
+    "api_response_final.json": "e7aa47382e908d68bf7b1aa420bbbd16aa498eff19028748fe400498dcf53fdc",
+    "CORE.sep": "fc3095f7d90700f42178a6e3653fe8123fa3887c7091d82d19682ee9c4265d37",
+    "coverage.json": "4d1ef908fd5725998c32975ef852f85c88ac44bbd9f86c02b9ef9030035ca67f",
+    "duration_discrepancies.json": "e897eec966ecca25fff24ddc70cf01d5c548dab769dd01aba8389d0e16acc580",
+    "ensemble_diagnostics.json": "bfcf9ace1c2af366beb53f855c003120e6b91be5d0e3e55f0f54b2b196bf6910",
+    "ensemble_disagreements.json": "c5dd39449df4ba8f912990a8e04b69e5d01ca285bd68f4ada1fadb7ebfd4d677",
+    "ensemble_manifest.json": "853f2d0ec7bbcbd9e1c33bb265e4eabe889f1de897826a08ec3c4e9f5b67664d",
+    "ensemble_observations.json": "3edc0983a06fe8851b84186d298f1064b1ffcc14e483b18febfd0cdc07956e64",
+    "ensemble_quality.json": "cd7dffaed13f2aadbf7208ba83fffd84af44adc412012b0658e54c07665172d7",
+    "exact_event_ledger.json": "4dba249e998ed6553d976c2f9b126a25366c673970cccafa0061dc74c40edc8f",
+    "exact_mark_ledger.json": "56620c367f91c8b02091bab1df545756193416ff39ab7765be6f191e213906b7",
+    "MARKS.sep": "92223fe9861e24a1a10969643d1b61d199b25ce9448cc2f3bb385b9ad5a6a4a4",
+    "provenance_ledger.json": "0f6b51b547096a38c79914e9cd93be9ebcbfe9a0d5074086d3a1c571006575ee",
+    "ROUTE.sep": "c8d1c56aea6c4b26e1cc5eaeb42090862670ec667d75cb8dbe4659784d74a729",
+    "structural_checks.json": "25f8252dd913d442128cef672830e12a123fe0120eac2537bcfcc1f62b8b3bd8",
+    "targeted_reread_advisory.json": "0a351ed6c844dcf88b8b9962b2d10a9a37869421ce6c52bd8a1e91763c15387b",
+    "uncertainties.json": "b8e8b151bfc954581c1fb90021ae2149141b7840cdc4101a60bce58268fff35d",
+    "UNVERIFIED_source.musicxml": "770899a00e63d2a06f621fc5e5fed76883a98890161f053bc8160f76708c3880",
+    "voice_topology_census.json": "952e0eb6695c26a87785f8ba2f47089bf66b7f5e08a4b6fff27c8341fe1dafe7"
+  },
+  "ensemble_contract_sha256": {
+    "api_response_final.json": "e7aa47382e908d68bf7b1aa420bbbd16aa498eff19028748fe400498dcf53fdc",
+    "ensemble_diagnostics.json": "bfcf9ace1c2af366beb53f855c003120e6b91be5d0e3e55f0f54b2b196bf6910",
+    "ensemble_disagreements.json": "c5dd39449df4ba8f912990a8e04b69e5d01ca285bd68f4ada1fadb7ebfd4d677",
+    "ensemble_manifest.json": "853f2d0ec7bbcbd9e1c33bb265e4eabe889f1de897826a08ec3c4e9f5b67664d",
+    "ensemble_observations.json": "3edc0983a06fe8851b84186d298f1064b1ffcc14e483b18febfd0cdc07956e64",
+    "ensemble_quality.json": "cd7dffaed13f2aadbf7208ba83fffd84af44adc412012b0658e54c07665172d7",
+    "provenance_ledger.json": "0f6b51b547096a38c79914e9cd93be9ebcbfe9a0d5074086d3a1c571006575ee",
+    "targeted_reread_advisory.json": "0a351ed6c844dcf88b8b9962b2d10a9a37869421ce6c52bd8a1e91763c15387b"
+  },
+  "stage1_lock_sha256": {
+    "audit_config.json": "32b080736c8b140fe1344d3a11deab20ab0cb112ee54864c9a7dac0bb9cb95e0",
+    "physical_score_lock.json": "9ac6cf8215fb8677bb2117d37eeb1e490fe7eedbb56a73c03c4e97a90c04477c",
+    "reviewer_phase1_frame_lock.json": "b188ac164d6a2c415892eee7fd593d83f271dcf89bad2201f1140c77e5733a09",
+    "frame_visual_verification.json": "129fc669ad93af17016a96168c81527f5893c470ff7de027048972fd2fbcd7ce",
+    "frame_verification/freeze.json": "4b911d93a83b29d09b5888686b8b1527f70edefb61e1f7dc123926f09bb3a728"
+  },
+  "budgets_consumed": {
+    "assembly_model_calls": 0,
+    "gemini": {
+      "enabled": true,
+      "requests": [
+        {
+          "system": 1,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_01.json",
+          "request_sha256": "41f040b580677c5d5d1a5ce785d90759ae030696c7c3386dffcdd8d79fc1e4ab",
+          "response_path": "source_observations/gemini/system_01.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        },
+        {
+          "system": 2,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_02.json",
+          "request_sha256": "0aa5a706e3d15c01e26e25b5044d613a87f46774d575851d7f87f56060496dad",
+          "response_path": "source_observations/gemini/system_02.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        },
+        {
+          "system": 3,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_03.json",
+          "request_sha256": "11c1ce9a885e299e66162a82a681038868c1b0f50bee05b0a98de8639edc01e1",
+          "response_path": "source_observations/gemini/system_03.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        },
+        {
+          "system": 6,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_06.json",
+          "request_sha256": "f0ccac60a6ddedc0f74b57a2aeda26b588c14705d1e4619b97948079d01933fe",
+          "response_path": "source_observations/gemini/system_06.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        },
+        {
+          "system": 9,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_09.json",
+          "request_sha256": "e3ca0d8d0a8de5c3ec4dcdd84a3307dc893d7dbde59508d59b24ec4f4c1c35b6",
+          "response_path": "source_observations/gemini/system_09.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        },
+        {
+          "system": 11,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_11.json",
+          "request_sha256": "ec9319395686a9433142c7765e9242ff7e1e7d373bd92f50e2406dcd43f37db2",
+          "response_path": "source_observations/gemini/system_11.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        },
+        {
+          "system": 12,
+          "provider_id": "GEMINI",
+          "directory_id": "gemini",
+          "session_id": null,
+          "requested": true,
+          "request_path": "source_requests\\gemini\\system_12.json",
+          "request_sha256": "725669e5521493059bebc46ccacc4960e2eeed8f491186d99117f42e3a1efbab",
+          "response_path": "source_observations/gemini/system_12.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "validated": false,
+          "evidence_errors": []
+        }
+      ],
+      "max_calls": 24,
+      "calls_made": 0,
+      "max_cost_usd": 1.0,
+      "actual_cost_usd": 0,
+      "execution_authorized": true,
+      "authorization_status": "authorized",
+      "paid_review_performed": false,
+      "responses_used": 0,
+      "claude_fallback_responses_used": 0,
+      "new_calls_made": 0,
+      "budget_exhausted": false,
+      "budget_limited_completion": false,
+      "api_not_authorized_completion": false,
+      "missing_responses": 7,
+      "cost_overrun_usd": 0.0,
+      "historical_cost_overrun_recorded": false
+    },
+    "legato": {
+      "enabled": true,
+      "manifest_path": "source_observations/legato/manifest.json",
+      "manifest_exists": true,
+      "manifest_sha256": "b79aafb3cbcae48167a3840d9c84fe75af37d95e1265b64ba190a8d8d52cecde"
+    }
+  },
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "2355774a47cc1d1872064a67c6fe7023503afc2f72533ee9de5c1c2d8ad19d47",
+      "events": 2049
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "4e1198ffd80520d812953c390cb3d79c92f11222f95079163e208e9532779eaa",
+        "events": 679,
+        "canonical": true,
+        "evidence_status": "ADDRESSABLE",
+        "unaddressable_pages": [],
+        "manifest_sha256": "b79aafb3cbcae48167a3840d9c84fe75af37d95e1265b64ba190a8d8d52cecde"
+      }
+    ],
+    "GROK": [],
+    "GEMINI": []
+  },
+  "musical_approval": false
+}

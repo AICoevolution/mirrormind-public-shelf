@@ -1,0 +1,32 @@
+{
+  "id": "PHASE2-ERRATUM-001",
+  "phase_detected": 3,
+  "frozen_files_unchanged": true,
+  "candidate_modified": false,
+  "items": [
+    {
+      "address": "P008 lower opening",
+      "prior": "F#3/A3 in answer 80f52fb57696",
+      "corrected": "D3/F#3 half chord; bass F4 unchanged. The structural clef answer remains valid.",
+      "evidence": [
+        "reviewer/P008_detail.png"
+      ]
+    },
+    {
+      "address": "P014 upper onset 3 and 7/2",
+      "prior": "G#4/B4 and F#4/A4 in print_onsets.json and expanded base-dissent answers",
+      "corrected": "B4/D5 at 3 and A4/C#5 at 7/2, each eighth. B4 and A4 claims remain confirmed. Priority cf3d3bda6ff1 (D5 at 3) must be confirmed, not rejected; all onset-3 and 7/2 printed_pitches_at_onset lists must reflect these corrected upper chord members.",
+      "evidence": [
+        "reviewer/P014_detail.png"
+      ]
+    },
+    {
+      "address": "P017 upper onset 3",
+      "prior": "C#4/A4 in print_onsets.json",
+      "corrected": "D#4/A4 eighth chord; sharp appears on D4 immediately below the E4 bottom staff line. No answered note question in this region tests that D#4 member, but the saved attack inventory must not be used verbatim for correction.",
+      "evidence": [
+        "reviewer/P017_P018_detail.png"
+      ]
+    }
+  ]
+}

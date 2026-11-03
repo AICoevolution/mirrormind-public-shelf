@@ -1,0 +1,519 @@
+{
+  "schema": "ensemble-manifest-v1",
+  "piece_id": "mendelssohn_sww_08_unrest",
+  "ready_for_assembly": true,
+  "next_action": "ENSEMBLE_COMPLETE",
+  "physical_bars_expected": 109,
+  "physical_bars_complete": 109,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "0483008306430afd887fbcd9512c44b02ed2e8320bff5abef5d639316381ee9a",
+      "events": 3437
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "faa7418800bc7682f8cb250da77189579fb62facbff55d7d9df07bf533257e8d",
+        "events": 1046,
+        "canonical": true
+      }
+    ],
+    "GROK": [],
+    "GEMINI": [],
+    "CLAUDE": [
+      {
+        "path": "source_observations\\claude\\system_01.json",
+        "sha256": "70f692e54ec910085ad99ee47005da9f7dfbd27c16d4ba4ffaf76673f6256cef",
+        "events": 73
+      },
+      {
+        "path": "source_observations\\claude\\system_02.json",
+        "sha256": "29bc0f66bd8922ad6c10cc467f16fc7ffb52a3fb9bd421bbd98d0c0ba3df439f",
+        "events": 66
+      },
+      {
+        "path": "source_observations\\claude\\system_03.json",
+        "sha256": "e3f95105dcfd96bb2988850dd88e31a8968adb8a80e6f19a57c95ef2e06a8e26",
+        "events": 51
+      },
+      {
+        "path": "source_observations\\claude\\system_04.json",
+        "sha256": "0413c3c014b81f7ec576ce0ca57b414eac794238881f3463557209244d80b3a5",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\claude\\system_05.json",
+        "sha256": "721aa611c01b5c9eae867b37363ea751551e49f12fe51d242492772a2c15a527",
+        "events": 57
+      },
+      {
+        "path": "source_observations\\claude\\system_07.json",
+        "sha256": "fd128e475b93a93783a5432c644dc8dfa72e6098dddef7d0201bcc652ad3057a",
+        "events": 65
+      },
+      {
+        "path": "source_observations\\claude\\system_08.json",
+        "sha256": "58293126e4170629b152ef38973d0556c9057a61476c4ea1b0ced052695a4217",
+        "events": 84
+      },
+      {
+        "path": "source_observations\\claude\\system_09.json",
+        "sha256": "0918bf796ca5a6324b2a8e108fd1dbf7d31004341a3463acee0e2a7c6361969a",
+        "events": 49
+      },
+      {
+        "path": "source_observations\\claude\\system_10.json",
+        "sha256": "6ff0de9dca41578df27e93aa5c355f42eb0d6b3998ce58168902b5a454add821",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\claude\\system_13.json",
+        "sha256": "55391767aafcc4d2232b8ce8db286c1df78bde9c744ab0bf2b81eec7fd85ae05",
+        "events": 81
+      },
+      {
+        "path": "source_observations\\claude\\system_14.json",
+        "sha256": "c1debfb30f41f4ab2cb36f359728db49e84985bd71938e98023663f9ba1b9825",
+        "events": 67
+      },
+      {
+        "path": "source_observations\\claude\\system_15.json",
+        "sha256": "64162a0c338f782442f95380a02babdbe4c87e52398b34262a5f1e3f77a90b4d",
+        "events": 69
+      },
+      {
+        "path": "source_observations\\claude\\system_16.json",
+        "sha256": "e4f318bfe767b27ff55d336c9c4422be37c6791cedf28b5788486cf09f4fd227",
+        "events": 72
+      },
+      {
+        "path": "source_observations\\claude\\system_17.json",
+        "sha256": "1935d01e84abee7324329ddc8e7b04d7fc02b335398b3cdcc42f593ffdd9f80c",
+        "events": 56
+      },
+      {
+        "path": "source_observations\\claude\\system_18.json",
+        "sha256": "2108cff3abeb0d157c6635a10d6793f72d3823ff58bc5e3b3a382587db4726c0",
+        "events": 58
+      }
+    ]
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "046d6e5275d30886c05883905bed87801ea69b515559994afb5cf4666a145e12"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "directory_id": "grok",
+    "method": null,
+    "scope": null,
+    "system_routes": [],
+    "enabled": false,
+    "requested_count": 0,
+    "requests": [],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "provider_manifests": [
+      {
+        "provider_id": "GROK",
+        "directory_id": "grok",
+        "manifest_path": "source_observations/grok/manifest.json",
+        "manifest_sha256": null
+      }
+    ]
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 1,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_01.json",
+        "request_sha256": "ceb83767cfe08059dfaebf418c7c50a2fd2e0635e84a22d6781e3b8e079f0701",
+        "response_path": "source_observations/gemini/system_01.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_01.json",
+          "response_sha256": "70f692e54ec910085ad99ee47005da9f7dfbd27c16d4ba4ffaf76673f6256cef",
+          "validated": true
+        }
+      },
+      {
+        "system": 2,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_02.json",
+        "request_sha256": "7431230fe71bdbcbf87337262bb1c6b7f34b091a409149dd4de68037e352c12e",
+        "response_path": "source_observations/gemini/system_02.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_02.json",
+          "response_sha256": "29bc0f66bd8922ad6c10cc467f16fc7ffb52a3fb9bd421bbd98d0c0ba3df439f",
+          "validated": true
+        }
+      },
+      {
+        "system": 3,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_03.json",
+        "request_sha256": "1029afe796107313a4c91e17150cffd5b90a3529a5f803eebd1f13d08f71538c",
+        "response_path": "source_observations/gemini/system_03.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_03.json",
+          "response_sha256": "e3f95105dcfd96bb2988850dd88e31a8968adb8a80e6f19a57c95ef2e06a8e26",
+          "validated": true
+        }
+      },
+      {
+        "system": 4,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_04.json",
+        "request_sha256": "62a447a6dcdf41993eec6ff90cb64f26ce585c9d576a73ca1783506bca8e0251",
+        "response_path": "source_observations/gemini/system_04.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_04.json",
+          "response_sha256": "0413c3c014b81f7ec576ce0ca57b414eac794238881f3463557209244d80b3a5",
+          "validated": true
+        }
+      },
+      {
+        "system": 5,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "22ae8d2c04290b9431efcf03d26e47b79de419d034846b51f3b6ccf7eb14175d",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_05.json",
+          "response_sha256": "721aa611c01b5c9eae867b37363ea751551e49f12fe51d242492772a2c15a527",
+          "validated": true
+        }
+      },
+      {
+        "system": 7,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_07.json",
+        "request_sha256": "b3a695ce2fe05fd1805f043515681b3eeec1d711b7a45e5686ae44560185f3d9",
+        "response_path": "source_observations/gemini/system_07.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_07.json",
+          "response_sha256": "fd128e475b93a93783a5432c644dc8dfa72e6098dddef7d0201bcc652ad3057a",
+          "validated": true
+        }
+      },
+      {
+        "system": 8,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_08.json",
+        "request_sha256": "f84220366c554deb5195fbf53c458ec4a2dd430cedbe680d64198f20b467a231",
+        "response_path": "source_observations/gemini/system_08.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_08.json",
+          "response_sha256": "58293126e4170629b152ef38973d0556c9057a61476c4ea1b0ced052695a4217",
+          "validated": true
+        }
+      },
+      {
+        "system": 9,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_09.json",
+        "request_sha256": "90fdba27a12bfc3aaa1ea46ea863a2145716dbca2ddeddc1a72e5dd83d604c9d",
+        "response_path": "source_observations/gemini/system_09.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_09.json",
+          "response_sha256": "0918bf796ca5a6324b2a8e108fd1dbf7d31004341a3463acee0e2a7c6361969a",
+          "validated": true
+        }
+      },
+      {
+        "system": 10,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_10.json",
+        "request_sha256": "847b6a0e4acb8c08398c661dc585690e4157ac72a0a60047b7bb15cb61ab35b6",
+        "response_path": "source_observations/gemini/system_10.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_10.json",
+          "response_sha256": "6ff0de9dca41578df27e93aa5c355f42eb0d6b3998ce58168902b5a454add821",
+          "validated": true
+        }
+      },
+      {
+        "system": 13,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_13.json",
+        "request_sha256": "56cbd0f1191f7c107e7451025384f3cec8f8f92ddae98385f34ecf4917a43efd",
+        "response_path": "source_observations/gemini/system_13.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_13.json",
+          "response_sha256": "55391767aafcc4d2232b8ce8db286c1df78bde9c744ab0bf2b81eec7fd85ae05",
+          "validated": true
+        }
+      },
+      {
+        "system": 14,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_14.json",
+        "request_sha256": "5e99868dc3ec4c4d6fe11f634d5652b6cf8a4d3544c6db922726ebb99829f1a9",
+        "response_path": "source_observations/gemini/system_14.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_14.json",
+          "response_sha256": "c1debfb30f41f4ab2cb36f359728db49e84985bd71938e98023663f9ba1b9825",
+          "validated": true
+        }
+      },
+      {
+        "system": 15,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_15.json",
+        "request_sha256": "569ea06c02ce3892279aabaeec0b5a4f3170c2e67ae25fd2845a8d521281a93f",
+        "response_path": "source_observations/gemini/system_15.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_15.json",
+          "response_sha256": "64162a0c338f782442f95380a02babdbe4c87e52398b34262a5f1e3f77a90b4d",
+          "validated": true
+        }
+      },
+      {
+        "system": 16,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_16.json",
+        "request_sha256": "fa890b9cea1b691cd8efa207d907884ef71033560960e4ffb6f8f27238f6b533",
+        "response_path": "source_observations/gemini/system_16.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_16.json",
+          "response_sha256": "e4f318bfe767b27ff55d336c9c4422be37c6791cedf28b5788486cf09f4fd227",
+          "validated": true
+        }
+      },
+      {
+        "system": 17,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_17.json",
+        "request_sha256": "f931d827ee493d2d229d6bb3aa2351c441fab1e401242855b7d7deebdac25339",
+        "response_path": "source_observations/gemini/system_17.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_17.json",
+          "response_sha256": "1935d01e84abee7324329ddc8e7b04d7fc02b335398b3cdcc42f593ffdd9f80c",
+          "validated": true
+        }
+      },
+      {
+        "system": 18,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_18.json",
+        "request_sha256": "5487740ea50577f8ab398a9c58b087981f62665401b64e50d2c7699e654791f0",
+        "response_path": "source_observations/gemini/system_18.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": [],
+        "fallback": {
+          "source": "CLAUDE",
+          "response_path": "source_observations/claude/system_18.json",
+          "response_sha256": "2108cff3abeb0d157c6635a10d6793f72d3823ff58bc5e3b3a382587db4726c0",
+          "validated": true
+        }
+      }
+    ],
+    "max_calls": 24,
+    "calls_made": 0,
+    "max_cost_usd": 1.0,
+    "actual_cost_usd": 0,
+    "execution_authorized": true,
+    "authorization_status": "authorized",
+    "paid_review_performed": false,
+    "responses_used": 0,
+    "claude_fallback_responses_used": 15,
+    "new_calls_made": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": false,
+    "missing_responses": 0,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "hard_validation": {
+    "valid": true,
+    "errors": [],
+    "lane_intervals": {
+      "valid": true,
+      "errors": []
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "staff_coverage_recovery": [],
+  "empty_staves": [],
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "cross_staff_voices": [],
+  "unresolved_evidence_claims": 77,
+  "unresolved_nonblocking": 453,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_after_routing_exhausted",
+    "unresolved_evidence_count": 77,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 0,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": false,
+    "routing_exhausted": true,
+    "reason": "requested_sources_complete_inconclusive_evidence"
+  },
+  "outputs": {
+    "quality": {
+      "path": "source_agent\\ensemble_quality.json",
+      "sha256": "b379a489937f5b59f5ec1200cd3f5532e85fbfc6a2e53c89c8198d71f3a156da"
+    },
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "4b47928a5239d6860a81a8f554fc07b9041bf3c7446ee2d02ce663f2c7ed8ca8"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "c8d4ebb0e2e12780964312303987b5c6f92a097cf6b3fc2efd5dc829537f14ee"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "4b0f8e4c6fc4b9cc512c7bdb84a8d3f1874f5b1080b203801e0911373fc0f908"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "650dc386bf244c99b5f2a20be3bbf82814ccc036d327b9c313a5bdeeebfc8846"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "exact interval-valid source topology plus field-level weighted pitch and tie evidence; unsupported tie endpoints are quarantined; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-10-18T11:40:47.703904+00:00"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "BLOCKED_TECHNICAL",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "primary_xml": "delivery_final/UNVERIFIED_Mendelssohn_Venetian_Boat_Song_No1.musicxml",
+  "primary_xml_sha256": "c5b5e1ac8fc2254864ab59a542350fd7349257bad90ba37586af63b98b608a57",
+  "blocks_safe_continuation": true,
+  "issues": [
+    {
+      "id": "CONSUMER-PEDAL-LINE",
+      "kind": "consumer",
+      "gate": "essential_notation_rendering / focused_visual_recheck",
+      "blocks_safe_continuation": true,
+      "observed": "All three production layouts omit all 54 pedal changes and the continuous printed pedal line; only eight start/stop text glyphs survive. The checker pairs expected labels positionally after the count mismatch, so its later wrong-time labels are secondary symptoms.",
+      "cause": "essentialNotationRendering.ts extracts only pedal type=start/stop and emits text glyphs. It does not implement the encoded type=change line/notch notation.",
+      "consumer_source": "apps/AICOEVO-React/src/domains/music/components/essentialNotationRendering.ts:1026; text glyph rendering at 845\u2013866",
+      "evidence": [
+        "viewer_validation_delivery/report.json",
+        "viewer_validation_delivery/detail-01.png",
+        "viewer_validation_delivery/detail-02.png",
+        "viewer_spec.json",
+        "consumer_implementation_hashes.json"
+      ],
+      "required_action": "Repair the production pedal-line renderer, then perform a new Stage 5 recheck workspace with unchanged primary XML and frozen Phase 1\u20133 evidence.",
+      "isolation": "A provisional musical choice cannot fix missing essential rendering. Removing/replacing the printed pedal semantics to obtain PASS would falsify the print. Production-code modification is outside this review authorization."
+    },
+    {
+      "id": "CONSUMER-LAYER-ROUNDTRIP",
+      "kind": "consumer",
+      "blocks_safe_continuation": false,
+      "scope": "Separate layer readiness; not a primary playback failure.",
+      "observed": "CORE rebuild refuses exported continuation from silence at P012; actual CORE Apply passes exact sounding/projection/slur/articulation checks. MARKS Apply refuses dangling wedge endpoints and MARKS v0 export cannot represent 54 pedal changes.",
+      "evidence": [
+        "layer_roundtrip_report.json",
+        "marks_export_report.json",
+        "core_export_report.json"
+      ],
+      "required_action": "Repair layer export/rebuild/Apply semantics and rerun exact member tie, slur endpoint and placement comparisons. Do not advertise these layers as lossless."
+    }
+  ],
+  "human_decision_required": false,
+  "human_outcome": null
+}

@@ -1,0 +1,17 @@
+# Phase 3 complete independent correction freeze
+
+Continuation job 4c09e3f70d4842e6b71581b22e3eed82. All saved artifacts and current Phase 1–3 allowlists verified. Completed Phase 1/2 and historical Phase 3 partial artifacts remain unchanged. No later-phase context accessed; candidate unchanged.
+
+The normative complete corrections are phase3_review_complete.json and phase3_print_specification.json. The staged phase3_review.json is the immutable 15-finding historical partial list; it is retained, not silently rewritten. Complete regional specifications supersede its pending endpoint and voice decisions. phase3_completion_hashes.json binds the complete specification and evidence.
+
+All 50 bars and 18 systems examined. Preserved first-system event audit was reused; systems 2–18 were directly viewed against every candidate event in the saved exact XML extraction. The review accounts for 1,350 candidate note elements and 1,142 proposed printed note/rest/grace members. Regional before/after arrays explicitly enumerate every event, including matching claims, missing events, corrupted chords, false tuplets and phantom rests. No actual printed tuplets were found. Upper/lower accompaniment staff runs retain their separately printed beams. Stems, written values, accidentals, grace notes, chord membership, tie members and phrase endpoints are specified separately from pitch agreement. Omit fingerings only.
+
+The three principal lines are melody, cross-staff accompaniment and bass, with a fourth independently sounding inner line in P027–P028. Minimal topology is frozen in phase3_topology_plan.json. A global map would conflate independent lines. Beam groups reflect the print, not automatic four-note cross-staff joining.
+
+All 1,327 provenance records and 1,002 disagreements are retained by source index/hash and linked to the independent regional findings. All exact-event ledger note_id members match XML pitch/onset/duration; event_id alone is not unique for chord members. Ensemble agreement is not an acceptance criterion. The source reports zero duration discrepancies despite extensive displaced/missing notes. Source CORE contains spurious triplets; MARKS is empty. ROUTE omits endings and incorrectly repeats P015 on the second pass. Correct route has 62 sounding regions: 1–15, 3–14, 16–50.
+
+The saved Phase 2 pitch transcription is support, not authority. Independent amendments: P028 accompaniment q9/4 and q13/4 G#3 (explicit sharp); P029 accompaniment q5/4 F#3. Exact print-grounded onset/staff/rhythm replacements are in the complete regional arrays. The cautionary upper bass clef at P045 end is effective P046; preserve treble for P045 D4.
+
+66 member-bound slur/tie spans, 59 direction records, repeat/ending/final barline changes, accents, staccatos and final fermatas are specified. phase3_human_attention.json records seven unresolved interpretations with provisional representations: ornament timing, repeat slur, P020 hand bracket, geometric hairpin offsets, final pedal release, long cross-system slur continuity, and P011 tiny isolated flag. These are not signed human decisions. No musical uncertainty is being promoted to technical PASS.
+
+Freeze certifies completion of the independent review and its supported/provisional correction specification only. Stage 5, rendering, playback and delivery remain unperformed and uncertified. Historical source-freeze dependencies remain withheld until controlled release.

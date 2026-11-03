@@ -1,0 +1,555 @@
+{
+  "schema": "astra_ensemble_recheck.v1",
+  "status": "COMPLETE_CANDIDATE_AUDIT_ASSESSMENT",
+  "input_evidence": {
+    "reader_claims.json": "086bf29c3ef4d963431f6d92a7277c3e3e6b5b3a8983b13453b2fd0cd2534ec6",
+    "source_agent/ensemble_manifest.json": "b1c0ae09b4f6b746993af73290f06a8804124cbfd64950738092dfe710a40f8c",
+    "source_agent/ensemble_quality.json": "0b9bfb7ad9549241c36fdb3d288e929c8fa44d623727ca2f60ddc6c5e124b492",
+    "source_agent/targeted_reread_advisory.json": "06dce45c750f995d766078582bbdd7b3fe5bdbd5efdb4ca7ae69a8453696e9fc",
+    "source_agent/UNVERIFIED_source.musicxml": "e349d95afec5456b27035b995e0ce95bcb3d74a2f631471d251fcbd5cd12956a",
+    "source_agent/ensemble_disagreements.json": "fee95cdd11d9bdafd6ecf779631b67dbd1b4ab49e69b5502d1684fe217733ac5"
+  },
+  "provenance": {
+    "readers_sha256_in_manifest": "086bf29c3ef4d963431f6d92a7277c3e3e6b5b3a8983b13453b2fd0cd2534ec6",
+    "current_reader_claims_sha256": "086bf29c3ef4d963431f6d92a7277c3e3e6b5b3a8983b13453b2fd0cd2534ec6",
+    "match": true,
+    "host_phase_validation": "print --validate-inputs returned valid:true; host private attestation binds released preparation closure",
+    "interpretation": "No separate historical-reader snapshot needed because these exact hashes match. Source selection and preparation completeness are not musical certification."
+  },
+  "assessments": [
+    {
+      "scope": "all systems",
+      "finding": "Candidate MARKS/ROUTE payload is empty despite extensive printed dynamics, fingerings, slurs, pedal and navigation. Reader agreement counts cannot certify these absent layers.",
+      "evidence": [
+        "reviewer/inspection_system_01.json"
+      ]
+    },
+    {
+      "scope": "physical36 staff2",
+      "finding": "PlayScore fragments musical bass/moving lines into voices2/3/4 with C4/Ab4 phantom events; print instead supports two sparse Eb2 quarter attacks plus continuous triplets. No capacity-filling rests are warranted.",
+      "evidence": [
+        "reviewer/inspection_system_11.json",
+        "reviewer/tail_event_plan.json"
+      ]
+    },
+    {
+      "scope": "physical37",
+      "finding": "SmartScore preserves high upperBb5/D6 and lowerF5/Bb5 final pitches while mishandling earlier tuplets. Audiveris truncates late arpeggio. Fused candidate selects wrong high upper notes. Print resolves pitches and ordinary final eighth pair.",
+      "evidence": [
+        "reviewer/inspection_system_11.json",
+        "reviewer/crops/bar37_detail.png"
+      ]
+    },
+    {
+      "scope": "physical39",
+      "finding": "Prepared capacity/gap flags arise partly from spurious voices. Source supports normal triplet moving lines and melody, with sparse bass. Do not treat these flags as permission to insert rests.",
+      "evidence": [
+        "reviewer/inspection_system_12.json",
+        "reviewer/tail_event_plan.json"
+      ]
+    },
+    {
+      "scope": "physical40\u201341",
+      "finding": "PlayScore relocates three tie starts to a fabricated chord on final triplet; actual source has sustainedEb4, heldBb3 and finalG3 tied individually. Other readers recognize Bb3 extra stem but omit or mistime ties. Shared-stem representation remains an explicit open check.",
+      "evidence": [
+        "reviewer/inspection_system_12.json",
+        "reviewer/crops/bars39_41_detail.png"
+      ]
+    },
+    {
+      "scope": "1\u201313",
+      "finding": "Single-source LEGATO selections contain incorrect melody/bass pitches, truncated triplets, fragmented voices and missing tie/ending spans. Opening/middle/endings plans replace them using physical print, with exact original replacement addresses. Coincident written memberships are not separate sounding attacks.",
+      "evidence": [
+        "reviewer/opening_event_plan.json",
+        "reviewer/middle_event_plan.json",
+        "reviewer/endings_event_plan.json"
+      ]
+    },
+    {
+      "scope": "14\u201323",
+      "finding": "Reader grids and missing repeated accidental glyphs cannot override within-bar Gb/Cb carry. Preserve independent inner notes18/19 and four-member22->23 tie. Exact short slur/staccato ownership15\u201317 revised by enlarged print; no Fsharp4 inferred in15.",
+      "evidence": [
+        "reviewer/chromatic_event_plan.json",
+        "reviewer/short_slur_recheck.json",
+        "reviewer/page_end_event_plan.json",
+        "reviewer/return_event_plan.json"
+      ]
+    },
+    {
+      "scope": "24\u201334",
+      "finding": "Repeated theme must be read at its actual location:24 bassBb1,26 two separate Ab2 attacks,29 B-natural harmony,31 authored final rest and alternative ending32.33 hand bracket/fingering connector remain human choices with provisional anchors; they are not extra notes or musical slurs.",
+      "evidence": [
+        "reviewer/return_event_plan.json",
+        "reviewer/second_ending_event_plan.json",
+        "human_attention.json"
+      ]
+    }
+  ],
+  "open_checks": [],
+  "tie_quarantine_assessment": [
+    {
+      "original": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m005-s1-v5-e03",
+        "bar": 5,
+        "staff": "1",
+        "voice": "5",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "D5"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m005-s1-v5-e03",
+              "bar": 5,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "D5",
+              "expected_next_event_id": "m027-s1-v5-e03"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "PlayScore"
+        ]
+      },
+      "assessment": "Original quarantine preserved. Print supplies corrected pitches, onset grid and exact member endpoints; repair both ends in corrected topology, never reconnect by reused reader voice number.",
+      "proposed_ties": [
+        {
+          "kind": "tie",
+          "start": "audit-m005-s1-melody-q1-D5",
+          "stop": "audit-m005-s1-melody-q2-D5",
+          "pitch": "D5",
+          "placement": "above",
+          "id": "audit-opening-mark-056"
+        }
+      ],
+      "evidence": "reviewer/opening_event_plan.json"
+    },
+    {
+      "original": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m005-s1-v6-e15",
+        "bar": 5,
+        "staff": "1",
+        "voice": "6",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "stop",
+          "pitches": [
+            "D5"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m005-s1-v6-e15",
+              "bar": 5,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "6",
+              "pitch": "D5",
+              "expected_previous_event_id": null
+            }
+          ]
+        },
+        "contributing_sources": [
+          "Audiveris"
+        ]
+      },
+      "assessment": "Original quarantine preserved. Print supplies corrected pitches, onset grid and exact member endpoints; repair both ends in corrected topology, never reconnect by reused reader voice number.",
+      "proposed_ties": [
+        {
+          "kind": "tie",
+          "start": "audit-m005-s1-melody-q1-D5",
+          "stop": "audit-m005-s1-melody-q2-D5",
+          "pitch": "D5",
+          "placement": "above",
+          "id": "audit-opening-mark-056"
+        }
+      ],
+      "evidence": "reviewer/opening_event_plan.json"
+    },
+    {
+      "original": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m022-s1-v5-e02",
+        "bar": 22,
+        "staff": "1",
+        "voice": "5",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "stop",
+          "pitches": [
+            "Cb5",
+            "Eb5"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m022-s1-v5-e02",
+              "bar": 22,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "Cb5",
+              "expected_previous_event_id": "m022-s1-v5-e01"
+            },
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m022-s1-v5-e02",
+              "bar": 22,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "Eb5",
+              "expected_previous_event_id": "m022-s1-v5-e01"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "Audiveris"
+        ]
+      },
+      "assessment": "Original quarantine preserved. Print supplies corrected pitches, onset grid and exact member endpoints; repair both ends in corrected topology, never reconnect by reused reader voice number.",
+      "proposed_ties": [
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q0-Cb5",
+          "stop": "audit-m022-s1-melody-q1-Cb5",
+          "pitch": "Cb5",
+          "placement": "above",
+          "id": "audit-return-mark-003"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q0-Eb5",
+          "stop": "audit-m022-s1-melody-q1-Eb5",
+          "pitch": "Eb5",
+          "placement": "above",
+          "id": "audit-return-mark-004"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Eb4",
+          "stop": "audit-m023-s1-melody-q0-Eb4",
+          "pitch": "Eb4",
+          "id": "audit-return-mark-005"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Ab4",
+          "stop": "audit-m023-s1-melody-q0-Ab4",
+          "pitch": "Ab4",
+          "id": "audit-return-mark-006"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Cb5",
+          "stop": "audit-m023-s1-melody-q0-Cb5",
+          "pitch": "Cb5",
+          "id": "audit-return-mark-007"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Eb5",
+          "stop": "audit-m023-s1-melody-q0-Eb5",
+          "pitch": "Eb5",
+          "id": "audit-return-mark-008"
+        }
+      ],
+      "evidence": "reviewer/return_event_plan.json"
+    },
+    {
+      "original": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m022-s1-v5-e05",
+        "bar": 22,
+        "staff": "1",
+        "voice": "5",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "Ab4",
+            "Cb5",
+            "Eb4",
+            "Eb5"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m022-s1-v5-e05",
+              "bar": 22,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "Ab4",
+              "expected_next_event_id": "m025-s1-v5-e01"
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m022-s1-v5-e05",
+              "bar": 22,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "Cb5",
+              "expected_next_event_id": null
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m022-s1-v5-e05",
+              "bar": 22,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "Eb4",
+              "expected_next_event_id": "m025-s1-v5-e05"
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m022-s1-v5-e05",
+              "bar": 22,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "5",
+              "pitch": "Eb5",
+              "expected_next_event_id": "m027-s1-v5-e01"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "PlayScore"
+        ]
+      },
+      "assessment": "Original quarantine preserved. Print supplies corrected pitches, onset grid and exact member endpoints; repair both ends in corrected topology, never reconnect by reused reader voice number.",
+      "proposed_ties": [
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q0-Cb5",
+          "stop": "audit-m022-s1-melody-q1-Cb5",
+          "pitch": "Cb5",
+          "placement": "above",
+          "id": "audit-return-mark-003"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q0-Eb5",
+          "stop": "audit-m022-s1-melody-q1-Eb5",
+          "pitch": "Eb5",
+          "placement": "above",
+          "id": "audit-return-mark-004"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Eb4",
+          "stop": "audit-m023-s1-melody-q0-Eb4",
+          "pitch": "Eb4",
+          "id": "audit-return-mark-005"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Ab4",
+          "stop": "audit-m023-s1-melody-q0-Ab4",
+          "pitch": "Ab4",
+          "id": "audit-return-mark-006"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Cb5",
+          "stop": "audit-m023-s1-melody-q0-Cb5",
+          "pitch": "Cb5",
+          "id": "audit-return-mark-007"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Eb5",
+          "stop": "audit-m023-s1-melody-q0-Eb5",
+          "pitch": "Eb5",
+          "id": "audit-return-mark-008"
+        }
+      ],
+      "evidence": "reviewer/return_event_plan.json"
+    },
+    {
+      "original": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m023-s1-v1-e01",
+        "bar": 23,
+        "staff": "1",
+        "voice": "1",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "stop",
+          "pitches": [
+            "Ab4",
+            "C5",
+            "Eb5"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m023-s1-v1-e01",
+              "bar": 23,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "1",
+              "pitch": "Ab4",
+              "expected_previous_event_id": "m020-s1-v1-e02"
+            },
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m023-s1-v1-e01",
+              "bar": 23,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "1",
+              "pitch": "C5",
+              "expected_previous_event_id": "m020-s1-v1-e04"
+            },
+            {
+              "category": "orphan_tie_stop",
+              "event_id": "m023-s1-v1-e01",
+              "bar": 23,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "1",
+              "pitch": "Eb5",
+              "expected_previous_event_id": "m020-s1-v1-e04"
+            }
+          ]
+        },
+        "contributing_sources": [
+          "SmartScore"
+        ]
+      },
+      "assessment": "Original quarantine preserved. Print supplies corrected pitches, onset grid and exact member endpoints; repair both ends in corrected topology, never reconnect by reused reader voice number.",
+      "proposed_ties": [
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Eb4",
+          "stop": "audit-m023-s1-melody-q0-Eb4",
+          "pitch": "Eb4",
+          "id": "audit-return-mark-005"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Ab4",
+          "stop": "audit-m023-s1-melody-q0-Ab4",
+          "pitch": "Ab4",
+          "id": "audit-return-mark-006"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Cb5",
+          "stop": "audit-m023-s1-melody-q0-Cb5",
+          "pitch": "Cb5",
+          "id": "audit-return-mark-007"
+        },
+        {
+          "kind": "tie",
+          "start": "audit-m022-s1-melody-q2-Eb5",
+          "stop": "audit-m023-s1-melody-q0-Eb5",
+          "pitch": "Eb5",
+          "id": "audit-return-mark-008"
+        }
+      ],
+      "evidence": "reviewer/return_event_plan.json"
+    },
+    {
+      "original": {
+        "category": "tie_structural_quarantine",
+        "event_id": "m040-s1-v6-e14",
+        "bar": 40,
+        "staff": "1",
+        "voice": "6",
+        "blocking": false,
+        "reason": "unsupported_tie_endpoint_omitted",
+        "unresolved_alternative": {
+          "tie": "start",
+          "pitches": [
+            "Bb3",
+            "Eb4",
+            "G3"
+          ],
+          "endpoint_errors": [
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m040-s1-v6-e14",
+              "bar": 40,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "6",
+              "pitch": "Bb3",
+              "expected_next_event_id": null
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m040-s1-v6-e14",
+              "bar": 40,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "6",
+              "pitch": "Eb4",
+              "expected_next_event_id": null
+            },
+            {
+              "category": "orphan_tie_start",
+              "event_id": "m040-s1-v6-e14",
+              "bar": 40,
+              "part_id": "P1",
+              "staff": "1",
+              "voice": "6",
+              "pitch": "G3",
+              "expected_next_event_id": null
+            }
+          ]
+        },
+        "contributing_sources": [
+          "PlayScore"
+        ]
+      },
+      "assessment": "Original quarantine preserved. Print supplies corrected pitches, onset grid and exact member endpoints; repair both ends in corrected topology, never reconnect by reused reader voice number.",
+      "proposed_ties": [
+        {
+          "kind": "tie",
+          "pitch": "Eb4",
+          "start": "audit-m040-s1-melody-q0-Eb4",
+          "stop": "audit-m041-s1-closing-q0-Eb4",
+          "placement": "above",
+          "id": "audit-tail-mark-054"
+        },
+        {
+          "kind": "tie",
+          "pitch": "Bb3",
+          "start": "audit-m040-s1-moving-q10_3-Bb3",
+          "stop": "audit-m041-s1-closing-q0-Bb3",
+          "placement": "above",
+          "id": "audit-tail-mark-055"
+        },
+        {
+          "kind": "tie",
+          "pitch": "G3",
+          "start": "audit-m040-s1-moving-q11_3-G3",
+          "stop": "audit-m041-s1-closing-q0-G3",
+          "placement": "below",
+          "id": "audit-tail-mark-056"
+        }
+      ],
+      "evidence": "reviewer/tail_event_plan.json"
+    }
+  ],
+  "later_phase_checks": [
+    "Implement source-supported corrections; prove all member ties and shared attacks in actual corrected XML and production playback"
+  ],
+  "diagnostic_policy": "All original diagnostic files are immutable. Counts/reader agreement are not musical certification; exact source-supported decisions are in retained inspection and event plans."
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "astra_phase3_final_review.v1",
+  "complete": true,
+  "physical_regions": 109,
+  "systems": 25,
+  "historical_findings": "reviewer/phase3_review_v5.json",
+  "exact_correction_targets": "reviewer/phase3_event_attribute_targets_cf710b6d.json",
+  "voice_topology": "reviewer/phase3_voice_topology_cf710b6d.json",
+  "human_attention": "reviewer/phase3_human_attention_cf710b6d.json",
+  "new_endpoint_findings": "reviewer/phase3_endpoint_recheck_cf710b6d.json",
+  "global_findings": {
+    "meter": "Printed cut time, encode 2/2 with symbol=cut. Candidate numeric 2/2 lacks printed symbol.",
+    "key": "One sharp throughout. No key change; accidentals follow exact print targets.",
+    "route": "Linear, no repeats/navigation/endings. Plain double bars P021/P042/P063/P084, heavy final P109; add missing barlines.",
+    "marks": "Restore all printed beams, slurs, articulations, dynamics, tempo, variation headings, fermatas and wedges. Existing absence is a missing-notation finding, not print silence.",
+    "topology": "One continuous line per part except separate stems at violin I P071 end/P072 opening, viola P105 first eighth. Preserve true chord membership. Remove unsupported all-rest phantom lanes."
+  },
+  "historical_conflict_resolution": [
+    "P046 final B5; P053 II opening half; P054 C#5; P055 II measured quarters; P056/P060 C5 natural; P057/P061 A4 natural; P037/P041 II A#4 provisional. Current consolidated target takes precedence over stale prose.",
+    "P103 cello exact eight-eighth sequence retained from latest partial target, no extra chord.",
+    "P097 II local slur q2-q3 and D6 tie q7/2 to next bar q0. P103 I local slur ends q15/4, P104 new local arc.",
+    "Small-note slash question P016/P020 now explicit; compact P037/P041 sign remains provisional A#4."
+  ],
+  "clefs": [
+    {
+      "part_id": "P1",
+      "bar": 1,
+      "onset_q": "0",
+      "sign": "G",
+      "line": "2",
+      "assessment": "SUPPORTED",
+      "reason": "Initial treble G2, viola alto C3, cello bass F4; cello changes to tenor C4 at P091 onset2 and bass F4 at P098 onset2 match print."
+    },
+    {
+      "part_id": "P2",
+      "bar": 1,
+      "onset_q": "0",
+      "sign": "G",
+      "line": "2",
+      "assessment": "SUPPORTED",
+      "reason": "Initial treble G2, viola alto C3, cello bass F4; cello changes to tenor C4 at P091 onset2 and bass F4 at P098 onset2 match print."
+    },
+    {
+      "part_id": "P3",
+      "bar": 1,
+      "onset_q": "0",
+      "sign": "C",
+      "line": "3",
+      "assessment": "SUPPORTED",
+      "reason": "Initial treble G2, viola alto C3, cello bass F4; cello changes to tenor C4 at P091 onset2 and bass F4 at P098 onset2 match print."
+    },
+    {
+      "part_id": "P4",
+      "bar": 1,
+      "onset_q": "0",
+      "sign": "F",
+      "line": "4",
+      "assessment": "SUPPORTED",
+      "reason": "Initial treble G2, viola alto C3, cello bass F4; cello changes to tenor C4 at P091 onset2 and bass F4 at P098 onset2 match print."
+    },
+    {
+      "part_id": "P4",
+      "bar": 91,
+      "onset_q": "2",
+      "sign": "C",
+      "line": "4",
+      "assessment": "SUPPORTED",
+      "reason": "Initial treble G2, viola alto C3, cello bass F4; cello changes to tenor C4 at P091 onset2 and bass F4 at P098 onset2 match print."
+    },
+    {
+      "part_id": "P4",
+      "bar": 98,
+      "onset_q": "2",
+      "sign": "F",
+      "line": "4",
+      "assessment": "SUPPORTED",
+      "reason": "Initial treble G2, viola alto C3, cello bass F4; cello changes to tenor C4 at P091 onset2 and bass F4 at P098 onset2 match print."
+    }
+  ],
+  "candidate_modified": false,
+  "later_phase_request_accessed": false,
+  "stage5_complete": false,
+  "delivery_ready": false
+}

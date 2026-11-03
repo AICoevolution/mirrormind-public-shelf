@@ -1,0 +1,113 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "BLOCKED_TECHNICAL",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_Unrest.musicxml",
+  "primary_xml_sha256": "e930a1e8eedf27cb0d3014e4c27ca1a8f0ea1fce02e30e00155ea0a67703324d",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/primary_structure_final.json",
+        "validation/musicxml_schema_final.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback.json",
+        "delivery_final/playback_route.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/viewer_identity_mapping.json",
+        "validation/compact_render/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-P050-053",
+        "VIEW-P040-DIM",
+        "VIEW-P082-DASHES",
+        "VIEW-P052-FINGERING"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/compact_render/report.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-P050-053",
+        "VIEW-P040-DIM",
+        "VIEW-P082-DASHES",
+        "VIEW-P052-FINGERING"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "e930a1e8eedf27cb0d3014e4c27ca1a8f0ea1fce02e30e00155ea0a67703324d",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/core_apply_correct_payload.json",
+        "validation/sep_roundtrip.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "SEP-MARKS-NORMALIZATION"
+      ],
+      "evidence": [
+        "validation/exact_payload_roundtrip.json",
+        "validation/marks_payload_normalization.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/sep_roundtrip.json",
+        "delivery_final/playback_route.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-P050-053",
+        "VIEW-P040-DIM",
+        "VIEW-P082-DASHES",
+        "VIEW-P052-FINGERING"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "delivery_issues": [
+    "VIEW-P050-053",
+    "VIEW-P040-DIM",
+    "VIEW-P082-DASHES",
+    "VIEW-P052-FINGERING",
+    "SEP-MARKS-NORMALIZATION"
+  ],
+  "execution_blockers": [
+    {
+      "id": "MISSING-ATTENTION-POLICY",
+      "kind": "consumer",
+      "evidence": "validation/attention_index_dependency.json"
+    }
+  ],
+  "publication_authorized": false,
+  "frozen_at": "2026-10-28T11:12:46.795437+00:00"
+}

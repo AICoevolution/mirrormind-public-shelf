@@ -1,0 +1,181 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "P052-BASS-ARC",
+      "address": "Piano lower, physical bar52, dotted-half chord0 to quarter chord3",
+      "question": "Does the upper curved stroke tie F#3 while the lower slurs D3 to C#3?",
+      "provisional_treatment": "Tie F#3 member only and slur lower chord line; never tie D3 to C#3.",
+      "alternatives": [
+        "F#3 tie plus lower slur",
+        "Both arcs represent phrasing with F#3 rearticulated"
+      ],
+      "reason_for_uncertainty": "Small parallel strokes and overlapping chord stems; reader retains only one slur.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/print_evidence/bar52_arcs.png"
+      ]
+    },
+    {
+      "id": "P053-BASS-ARCS",
+      "address": "Piano lower physical bar53 chord0->3",
+      "question": "Do common F#3 and A3 members tie while D3->C#3 is phrased?",
+      "provisional_treatment": "Tie F#3 and A3 only; slur D3 to C#3.",
+      "alternatives": [
+        "Common members tied with moving bass slur",
+        "Chord rearticulation with phrasing arcs"
+      ],
+      "reason_for_uncertainty": "Three close curved strokes overlap chord stems in source.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/print_evidence/bar53_arcs.png"
+      ]
+    },
+    {
+      "id": "P061-GRACE-TIMING",
+      "address": "Piano lower physical bar61 before beat1",
+      "question": "How should the slashed B2 grace borrow time from the opening A2?",
+      "provisional_treatment": "Encode zero-metric-duration slashed eighth grace, provisional playback grace realization; retain six-quarter bar.",
+      "alternatives": [
+        "Grace before beat",
+        "Grace on beat borrowing from A2"
+      ],
+      "reason_for_uncertainty": "Print gives grace notation but no unique performance duration.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/print_evidence/bar61_grace.png"
+      ]
+    },
+    {
+      "id": "P063-GRACE-TIMING",
+      "address": "Piano lower physical bar63 before beat1",
+      "question": "How should the slashed B2 grace borrow time from A2?",
+      "provisional_treatment": "Zero-metric-duration slashed eighth grace, with provisional playback realization.",
+      "alternatives": [
+        "Before beat",
+        "On beat borrowing A2 time"
+      ],
+      "reason_for_uncertainty": "Print does not determine unique sounding duration.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/print_evidence/bar63_grace.png"
+      ]
+    },
+    {
+      "id": "P086-PEDAL-RELEASE",
+      "address": "Piano lower physical bars86-88",
+      "question": "Where should the final Ped. be released for playback?",
+      "provisional_treatment": "Preserve printed Ped. at P0860; use explicit provisional release at end of final bar for playback, without inventing a printed release glyph.",
+      "alternatives": [
+        "Release at final rests",
+        "Release at final bar end"
+      ],
+      "reason_for_uncertainty": "No printed release star is visible after final Ped. sign.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/print_evidence/system_28.png"
+      ]
+    },
+    {
+      "id": "P004-GRACE-SLASH",
+      "address": "Piano upper physical bar4, B4 grace before onset3",
+      "question": "Is there a slash on the small B4 grace stem, or only its flag?",
+      "provisional_treatment": "Retain B4 eighth grace with slash=no, slurred to A4@3; zero metrical duration and provisional playback realization.",
+      "alternatives": [
+        "Unslashed grace",
+        "Slashed grace"
+      ],
+      "reason_for_uncertainty": "Small flag/stem ink does not confidently distinguish the extra stroke.",
+      "evidence": [
+        "reviewer/print_evidence/bar4_close.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "P008-TINY-MARKS",
+      "address": "Piano upper physical bar8, around quarter rest at onset4",
+      "question": "Are the two tiny diagonal marks near the upper rest damaged fingering digits?",
+      "provisional_treatment": "Preserve clearly printed fingers2 at4 and1 at4.5; leave the illegible fragments unencoded rather than inventing a digit or note.",
+      "alternatives": [
+        "Print damage with no further notation",
+        "Additional illegible fingering"
+      ],
+      "reason_for_uncertainty": "Tiny disconnected ink has no reliably legible numeral.",
+      "evidence": [
+        "reviewer/print_evidence/bar8_marks.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "TEMPO-REALIZATION",
+      "address": "Piano, physical bar1, Presto agitato",
+      "question": "Which playback tempo should be retained?",
+      "provisional_treatment": "Quarter note = 184 BPM; the analyzer uses a neutral 80-BPM base timeline that the player scales.",
+      "alternatives": [
+        "Retain provisional 184 BPM",
+        "Choose another tempo after listening"
+      ],
+      "reason_for_uncertainty": "Print specifies Presto agitato without a numeric metronome mark.",
+      "evidence": [
+        "resume_validation/metadata_page1.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "ENGRAVING-P012-TEXT-STAFF",
+      "address": "P012, lower staff, 1000px zoom1",
+      "question": "Is the placement of cresc. against the staff acceptable for final engraving?",
+      "provisional_treatment": "Retain authoritative XML and readable production appearance pending final visual review.",
+      "evidence": [
+        "current_validation/render_current/score-1000-1-01.png",
+        "beam_recheck/render_member_check/score-1000-1-01.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "engraving",
+      "severity": "minor",
+      "issue_type": "readable_overlap",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "blocks_safe_continuation": false,
+      "readability_reason": "The complete word cresc. remains legible and its onset and lower-staff association remain clear despite staff-line contact.",
+      "check_failures": []
+    },
+    {
+      "id": "ENGRAVING-P055-TEXT-STAFF",
+      "address": "P055, lower staff, 1000px zoom1",
+      "question": "Is the placement of tranquillo against the staff acceptable for final engraving?",
+      "provisional_treatment": "Retain authoritative XML and readable production appearance pending final visual review.",
+      "evidence": [
+        "current_validation/render_current/score-1000-1-08.png",
+        "beam_recheck/render_member_check/score-1000-1-08.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "category": "engraving",
+      "severity": "minor",
+      "issue_type": "readable_overlap",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "blocks_safe_continuation": false,
+      "readability_reason": "The complete word tranquillo remains legible and its onset and lower-staff association remain clear despite staff-line contact.",
+      "check_failures": []
+    }
+  ]
+}

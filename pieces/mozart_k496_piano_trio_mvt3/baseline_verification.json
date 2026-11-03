@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "mozart_k496_piano_trio_mvt3",
+  "verified_utc": "2026-10-22T10:43:01.072798+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "b38a51198cccb43038b6384d09645b8aaca28da4736f0965f67a038260490e7a",
+      "replay_sha256": "ac592492966f00d5aa770d9383fcf4020facc86428f9ed2d2ea25aba250820d2"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "42d510faa1d948958ce2063ea42960c90a68ef5f671373068bae5c0526b9eb61",
+      "replay_sha256": "42d510faa1d948958ce2063ea42960c90a68ef5f671373068bae5c0526b9eb61"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e31e2bdef756aed322aba79b34cf8516f46c8b4116790e2c2e85a516e3b77940",
+      "replay_sha256": "8beb34b8754ee90c214223d9c1d733ec8b4ca3e8be1c640361bac4dcdcda1a2c"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "c995c4e38dbe13eb8b1c18f2e15c731434bbd1f1cf54d56bc359c4ef2343ce8a",
+      "replay_sha256": "1934becb7d6a9bc554991966e8256467340539aa8e50a51c9b2b03c7c20807a0"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "c1362c8f6de6aac402ef218cc966932b5f5017e2c47cd898e2778c74aaead06b",
+      "replay_sha256": "d39db35f5bd5440602b9ff2380c6e755fc5487f2260a4d258c3aedfc610317fe"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}
