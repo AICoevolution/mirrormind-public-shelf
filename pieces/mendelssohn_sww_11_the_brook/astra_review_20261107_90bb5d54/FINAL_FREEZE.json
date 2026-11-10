@@ -1,0 +1,96 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_The_Brook.musicxml",
+  "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+  "human_outcome": null,
+  "metadata_contract": "reviewed_namecard.v1",
+  "delivery_contract": "omr_review_delivery.v2",
+  "publication_authorized": false,
+  "delivery_issues": [
+    "MARKS-LIMIT-001",
+    "VIEW-WORD-P036"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "checks_90bb/current_primary_structure.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "checks_90bb/independent_playback.json",
+        "checks_90bb/current_analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "checks_90bb/duration_cursor.json",
+        "render_90bb/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-WORD-P036",
+        "VIEW-SLUR-P046"
+      ],
+      "evidence": [
+        "checks_90bb/visual_recheck.json",
+        "checks_90bb/render_comparison.json",
+        "checks/visual_observation.json",
+        "human_attention.json",
+        "render_90bb/report.json",
+        "render_beam_90bb/report.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIEW-WORD-P036",
+        "VIEW-SLUR-P046"
+      ],
+      "evidence": [
+        "checks_90bb/visual_recheck.json",
+        "checks_90bb/render_comparison.json",
+        "checks/visual_observation.json",
+        "human_attention.json",
+        "render_90bb/report.json",
+        "render_beam_90bb/report.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "checks_90bb/layer_checks.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "MARKS-LIMIT-001"
+      ],
+      "evidence": [
+        "checks_90bb/marks_export.json",
+        "checks_90bb/layer_checks.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "checks_90bb/route_checks.json"
+      ]
+    }
+  },
+  "remaining_work": [],
+  "blockers": [],
+  "continuation_reviewer": "Codex independent continuation reviewer; original Phase 1-3 attribution retained"
+}

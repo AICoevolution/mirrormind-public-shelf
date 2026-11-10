@@ -1,0 +1,26 @@
+{
+  "schema": "astra_stage5_handoff_blocker.v1",
+  "id": "FROZEN-ATTENTION-EXTENSION",
+  "kind": "handoff",
+  "operation": "Integrate newly observed final-review findings while passing checkpoint_transport.verify_staged and post_astra_gate.validate_delivery_issues",
+  "observed_error": "Engraving finding disappeared from final review",
+  "proposed_revision_error": "Changed evidence: human_attention.json",
+  "reason": "The host checkpoint freezes both final attention filenames. Leaving them unchanged makes canonical presentation validation reject the two new IDs; the isolated proposed additive revision fails exact checkpoint transport. No supported attention-addendum input is consumed by these validators.",
+  "blocks_safe_continuation": true,
+  "musical_review_usable": true,
+  "primary_unchanged": true,
+  "original_attention_unchanged": true,
+  "required_resolution": "Host-supported continuation contract that preserves original attention bytes as history and permits a current additive attention revision, or supported validation of the bound addendum. Preserve all original IDs, musical decisions, primary, corrections and Phase 1\u20133 freezes. No musical or rendering repair is requested.",
+  "evidence": [
+    "checks/attention_transport_validation.json",
+    "human_attention_addendum.json",
+    "human_attention_proposed.json",
+    "human_attention_index_proposed.json",
+    "checks/visual_observation.json"
+  ],
+  "remaining_work": [
+    "Integrate the two new presentation findings through a supported checkpoint attention revision preserving original bytes and IDs",
+    "Rerun full delivery preflight and seal complete final package after supported integration"
+  ],
+  "human_outcome": null
+}

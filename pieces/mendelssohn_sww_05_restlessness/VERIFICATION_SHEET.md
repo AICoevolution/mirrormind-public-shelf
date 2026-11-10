@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879`
+Published XML SHA-256: `59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41`
 
 Recorded reviewer primary: `astra_review_recheck_d136158acc4f455b8c2fcd788fd3ce9c/delivery_final/UNVERIFIED_restlessness_resume_v8.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

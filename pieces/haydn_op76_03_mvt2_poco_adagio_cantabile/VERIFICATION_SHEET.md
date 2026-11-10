@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e`
+Published XML SHA-256: `55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60`
 
 Recorded reviewer primary: `astra_review_recheck_f0eb29005d684df6a51b61ea6d7c159a/delivery_final/UNVERIFIED_haydn_op76_03_mvt2.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

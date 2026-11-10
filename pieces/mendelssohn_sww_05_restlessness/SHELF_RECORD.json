@@ -10,6 +10,54 @@
     "composer": "F. Mendelssohn",
     "subtitle": "Songs without Words, Op. 19, No. 5",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "9f9286766d1bb49f572ebb2696cb0ec24073a02a0b47a620b505fba5a25f2cfe"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/305606",
+      "prod_entry_id": 677,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "73617d94cc2bcaa6dd60556feba30c99ade6469d4582088416c3529eb0372c38",
+      "source_recorded_xml_sha": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+      "source_xml_bytes_sha256": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/305606",
+      "software": "AICoevolution Platform",
+      "after_sha256": "59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41",
+      "after_xml_sha": "59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41",
+      "before_sha256": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+      "before_xml_sha": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "9f9286766d1bb49f572ebb2696cb0ec24073a02a0b47a620b505fba5a25f2cfe"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "7e0405498945a00590d5f29285bf019fbb2b20d985ea92504202912bc0914cfc",
+      "original_software": [
+        "Deterministic Stage 3 ensemble assembly"
+      ],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "mendelssohn_sww_05_restlessness"
   },
   "stamps": {
@@ -24,7 +72,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+            "xml_sha256": "59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -640,10 +688,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 719903,
+            "size_bytes": 465119,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -698,20 +746,20 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "58c80fe7f2804e85eeebf3c58e665618cece0e2cda35ba8e7748df24403a8471",
-        "xml_sha256": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
-        "report_sha256": "2b22f82b24f5d8f51f456015f0cecae466dc3d6a366d1bef6350f3fb7d4e6808",
+        "audit_id": "c9131f045d53b1b6ab672c60b810ebb6b1f3a3ebade61842772af909ff9f39ed",
+        "xml_sha256": "59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41",
+        "report_sha256": "e5aa8faf7c6150ff505e8d612467859e4c5e665b6c79258c4297de95c8301345",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879",
+            "xml_sha256": "59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41",
             "score_reference": null,
             "score_reference_sha256": null
           },
           "changes": [],
-          "request_id": "xml-readiness-1f0328f07ba72ee4",
+          "request_id": "xml-readiness-59c5c43b3e50d5b3",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -719,7 +767,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "f90d7fa9ad4bd17d31a07e7ea61aa2d0083a5c131a46868f10f100ccccffc13c",
+        "request_sha256": "b8bf07bc7d40b884184071a85ad62f7fad8b7998ed4425bf8416951a2e59fac4",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -776,5 +824,5 @@
   "published_at": "2026-11-01 11:20:21.779112+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "mendelssohn_sww_05_restlessness",
-  "xml_sha": "1f0328f07ba72ee48c7941b0fcd34df7b0f3ef8ab87843eb32594db517890879"
+  "xml_sha": "59c5c43b3e50d5b38b758e3b7341014f9ea365bdff636195bdc1a8bc91412d41"
 }

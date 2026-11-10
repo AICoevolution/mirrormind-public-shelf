@@ -1,0 +1,130 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "BLOCKED_TECHNICAL",
+  "stage4_complete": true,
+  "stage5_complete": false,
+  "delivery_ready": false,
+  "primary_xml": "delivery_final/UNVERIFIED_The_Wanderer.musicxml",
+  "primary_xml_sha256": "ead310a3fd6ad684f8f91eccdc3eb0d9e4bfca14c501822cb2a541c5cecb8d0d",
+  "human_outcome": null,
+  "publication_authorized": false,
+  "delivery_issues": [
+    "MUS-004",
+    "SEP-MARKS-001",
+    "VIS-001",
+    "VIS-002",
+    "VIS-003",
+    "VIS-004",
+    "VIS-005",
+    "VIS-006"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/primary_structure.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/production_mapping.json",
+        "validation/consumer_detail_v2/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-003",
+        "VIS-004",
+        "VIS-005",
+        "VIS-006"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/production_mapping.json",
+        "validation/render_final_v3/report.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-003",
+        "VIS-004",
+        "VIS-005",
+        "VIS-006"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/render_final_v3/report.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/frozen_plan_application.json",
+        "validation/core_rebuild_semantic_check.json",
+        "validation/sep_roundtrip.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "SEP-MARKS-001",
+        "MUS-004"
+      ],
+      "evidence": [
+        "validation/sep_roundtrip.json",
+        "validation/primary_structure.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback.json",
+        "validation/sep_roundtrip.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-003",
+        "VIS-004",
+        "VIS-005",
+        "VIS-006"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "metadata_contract": "reviewed_namecard.v1",
+  "blockers": [
+    {
+      "id": "HANDOFF-RELEASE-ARCHIVE-001",
+      "kind": "handoff",
+      "evidence": "validation/handoff_release_archive_blocker.json"
+    }
+  ],
+  "delivery_preflight": {
+    "status": "BLOCKED",
+    "evidence": [
+      "validation/full_delivery_preflight.json",
+      "validation/handoff_release_archive_blocker.json"
+    ]
+  }
+}

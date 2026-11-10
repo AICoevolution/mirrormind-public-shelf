@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776`
+Published XML SHA-256: `f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0`
 
 Recorded reviewer primary: `astra_review_20261016_70d38c19/delivery_final/UNVERIFIED_mendelssohn_op19_no1.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

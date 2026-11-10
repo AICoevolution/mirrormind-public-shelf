@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "mendelssohn_sww_12_venetian_boat_song_no_2",
+  "verified_utc": "2026-11-03T14:34:33.532346+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "9dad2182f27a4f7b868c49f032d37f3a8557a94ac4214fb96e83bde037b265dc",
+      "replay_sha256": "d9d8f0bbc1dc0645eb648e30a5cf6c6a03c35a5db5137bbede16751f21641189"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "4d5421006d49a5fbad254abe989b466ae712463ce8a292313fe2cede6b3ff31c",
+      "replay_sha256": "4d5421006d49a5fbad254abe989b466ae712463ce8a292313fe2cede6b3ff31c"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "a68f338a4cb5d51903743b756d210270c3a91611c033dffb98b1576c69ae99a3",
+      "replay_sha256": "21effa888ea2feaccc71e468013f587b3997090a1479bdd30ab459cd3127d871"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "54c164c740b203c9e2d0329f77a47922b0df9dcc45b45d90fad918b1e4cc2b48",
+      "replay_sha256": "e7fab2ef70bb302caea28082a58993d3c56c92abf38eb6a26c2d21a70d2342a8"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "6c948c09e4506d3d1a94ac949d7d35475d91dd189a6b968b7524c62bece523de",
+      "replay_sha256": "c9beaca14c935734aa29cd7ac520a94d8ea240af1fe832cad88573cff3623eef"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}

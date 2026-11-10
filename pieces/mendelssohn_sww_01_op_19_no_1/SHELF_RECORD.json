@@ -10,6 +10,54 @@
     "composer": "F. Mendelssohn",
     "subtitle": "Songs without Words, Op. 19, No. 1",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "905c757b80bafb02ec48bb84e44dd24d2390bbe9ebe86685a8f5a4cdeac45c48"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/305606",
+      "prod_entry_id": 673,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "b74fb328a734642568c0173fd96dec07caec7b0100d9638e69380b5ab49a7bd2",
+      "source_recorded_xml_sha": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+      "source_xml_bytes_sha256": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/305606",
+      "software": "AICoevolution Platform",
+      "after_sha256": "f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0",
+      "after_xml_sha": "f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0",
+      "before_sha256": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+      "before_xml_sha": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "905c757b80bafb02ec48bb84e44dd24d2390bbe9ebe86685a8f5a4cdeac45c48"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "247aef301e362e72af692567d567e4c1b7e2a5d0d7425ade12e719901e222e01",
+      "original_software": [
+        "ensemble_v1 deterministic fusion; fingerings excluded; marks left as fused; assembly $0"
+      ],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "mendelssohn_sww_01_op_19_no_1"
   },
   "stamps": {
@@ -24,7 +72,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+            "xml_sha256": "f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -634,7 +682,7 @@
             "findings": [
               {
                 "id": "xml-readiness-1",
-                "xml": "<note id=\"a003-melody-0060\">\n        <pitch>\n          <step>G</step>\n          <alter>1</alter>\n          <octave>4</octave>\n        </pitch>\n        <duration>16</duration>\n        <voice>1</voice>\n        <type>quarter</type>\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <slur type=\"stop\" number=\"6\" placement=\"above\" orientation=\"over\" />\n        </notations>\n      </note>\n      ",
+                "xml": "<note id=\"a003-melody-0060\"><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><slur type=\"stop\" number=\"6\" placement=\"above\" orientation=\"over\" /></notations></note>",
                 "part": "P1",
                 "path": "/score-partwise/part[1]/measure[3]/note[1]",
                 "staff": "1",
@@ -654,7 +702,7 @@
               },
               {
                 "id": "xml-readiness-2",
-                "xml": "<note id=\"a015-melody-0366\">\n        <pitch>\n          <step>A</step>\n          <octave>4</octave>\n        </pitch>\n        <duration>16</duration>\n        <voice>1</voice>\n        <type>quarter</type>\n        <accidental>natural</accidental>\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <slur type=\"start\" number=\"6\" placement=\"above\" orientation=\"over\" />\n        </notations>\n      </note>\n      ",
+                "xml": "<note id=\"a015-melody-0366\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type>quarter</type><accidental>natural</accidental><stem>up</stem><staff>1</staff><notations><slur type=\"start\" number=\"6\" placement=\"above\" orientation=\"over\" /></notations></note>",
                 "part": "P1",
                 "path": "/score-partwise/part[1]/measure[15]/note[3]",
                 "staff": "1",
@@ -674,7 +722,7 @@
               },
               {
                 "id": "xml-readiness-3",
-                "xml": "<pedal type=\"start\" line=\"no\" sign=\"yes\" />\n        ",
+                "xml": "<pedal type=\"start\" line=\"no\" sign=\"yes\" />",
                 "part": "P1",
                 "path": "/score-partwise/part[1]/measure[48]/direction[2]/direction-type[1]/pedal[1]",
                 "staff": "2",
@@ -700,10 +748,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 429069,
+            "size_bytes": 283818,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -758,15 +806,15 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "4110554b9e592a990e0ad3399b2c30617d4c74a36b1a7ad991dbef6f3883a762",
-        "xml_sha256": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
-        "report_sha256": "952ba42a2951bd7c8e847895d0c65821f685501a587fb2c0fe6c57a6d8b430dd",
+        "audit_id": "9b6b58d66dc68baf14a5a3636d9085d3c90d878acda4710dd6bf7927a296c0dd",
+        "xml_sha256": "f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0",
+        "report_sha256": "8119eff5dd13534b12c0b1dc72318548992f0a8d13ff5fed963422f1ab908230",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776",
+            "xml_sha256": "f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -782,13 +830,13 @@
                   "voice": "1",
                   "measure": "3",
                   "note_id": "a003-melody-0060",
-                  "before_xml": "<note id=\"a003-melody-0060\">\n        <pitch>\n          <step>G</step>\n          <alter>1</alter>\n          <octave>4</octave>\n        </pitch>\n        <duration>16</duration>\n        <voice>1</voice>\n        <type>quarter</type>\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <slur type=\"stop\" number=\"6\" placement=\"above\" orientation=\"over\" />\n        </notations>\n      </note>\n      ",
+                  "before_xml": "<note id=\"a003-melody-0060\"><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><slur type=\"stop\" number=\"6\" placement=\"above\" orientation=\"over\" /></notations></note>",
                   "candidate_after_xml": null,
-                  "expected_note_sha256": "42fa00b8d47e01025cec35baf1467c0a291b34fbaed13793ab2d8d4251b3d027"
+                  "expected_note_sha256": "6f6c3ad9a5a5f34eb9761f97d5ef0fd2a3e552c92dc6b9744b93e4adab5f05c1"
                 }
               ],
               "evidence": [
-                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-1\", \"measure\": \"3\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[3]/note[1]\", \"reason\": \"Stop has no active start in musical order; excerpt context may explain it\", \"requirement_ids\": [\"M15\"], \"rule_id\": \"XML-ENDPOINT-SLUR\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/note/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"1\", \"xml\": \"<note id=\\\"a003-melody-0060\\\">\\n        <pitch>\\n          <step>G</step>\\n          <alter>1</alter>\\n          <octave>4</octave>\\n        </pitch>\\n        <duration>16</duration>\\n        <voice>1</voice>\\n        <type>quarter</type>\\n        <stem>up</stem>\\n        <staff>1</staff>\\n        <notations>\\n          <slur type=\\\"stop\\\" number=\\\"6\\\" placement=\\\"above\\\" orientation=\\\"over\\\" />\\n        </notations>\\n      </note>\\n      \", \"xml_note_id\": \"a003-melody-0060\"}"
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-1\", \"measure\": \"3\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[3]/note[1]\", \"reason\": \"Stop has no active start in musical order; excerpt context may explain it\", \"requirement_ids\": [\"M15\"], \"rule_id\": \"XML-ENDPOINT-SLUR\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/note/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"1\", \"xml\": \"<note id=\\\"a003-melody-0060\\\"><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><slur type=\\\"stop\\\" number=\\\"6\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note>\", \"xml_note_id\": \"a003-melody-0060\"}"
               ],
               "preserve": [
                 "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
@@ -825,13 +873,13 @@
                   "voice": "1",
                   "measure": "15",
                   "note_id": "a015-melody-0366",
-                  "before_xml": "<note id=\"a015-melody-0366\">\n        <pitch>\n          <step>A</step>\n          <octave>4</octave>\n        </pitch>\n        <duration>16</duration>\n        <voice>1</voice>\n        <type>quarter</type>\n        <accidental>natural</accidental>\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <slur type=\"start\" number=\"6\" placement=\"above\" orientation=\"over\" />\n        </notations>\n      </note>\n      ",
+                  "before_xml": "<note id=\"a015-melody-0366\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type>quarter</type><accidental>natural</accidental><stem>up</stem><staff>1</staff><notations><slur type=\"start\" number=\"6\" placement=\"above\" orientation=\"over\" /></notations></note>",
                   "candidate_after_xml": null,
-                  "expected_note_sha256": "ccf132c855a68a547f874608de2d9ad3f19b8a20e886ff85107e87908a1a06ce"
+                  "expected_note_sha256": "0cc66587779808f6ed26827056ebf1bdfd911d0a88885c9a322dbe66628baa00"
                 }
               ],
               "evidence": [
-                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-2\", \"measure\": \"15\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[15]/note[3]\", \"reason\": \"Start has no closing endpoint in the supplied part\", \"requirement_ids\": [\"M15\"], \"rule_id\": \"XML-ENDPOINT-SLUR\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/note/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"1\", \"xml\": \"<note id=\\\"a015-melody-0366\\\">\\n        <pitch>\\n          <step>A</step>\\n          <octave>4</octave>\\n        </pitch>\\n        <duration>16</duration>\\n        <voice>1</voice>\\n        <type>quarter</type>\\n        <accidental>natural</accidental>\\n        <stem>up</stem>\\n        <staff>1</staff>\\n        <notations>\\n          <slur type=\\\"start\\\" number=\\\"6\\\" placement=\\\"above\\\" orientation=\\\"over\\\" />\\n        </notations>\\n      </note>\\n      \", \"xml_note_id\": \"a015-melody-0366\"}"
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-2\", \"measure\": \"15\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[15]/note[3]\", \"reason\": \"Start has no closing endpoint in the supplied part\", \"requirement_ids\": [\"M15\"], \"rule_id\": \"XML-ENDPOINT-SLUR\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/note/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"1\", \"xml\": \"<note id=\\\"a015-melody-0366\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type>quarter</type><accidental>natural</accidental><stem>up</stem><staff>1</staff><notations><slur type=\\\"start\\\" number=\\\"6\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note>\", \"xml_note_id\": \"a015-melody-0366\"}"
               ],
               "preserve": [
                 "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
@@ -868,13 +916,13 @@
                   "voice": "1",
                   "measure": "48",
                   "note_id": null,
-                  "before_xml": "<pedal type=\"start\" line=\"no\" sign=\"yes\" />\n        ",
+                  "before_xml": "<pedal type=\"start\" line=\"no\" sign=\"yes\" />",
                   "candidate_after_xml": null,
-                  "expected_note_sha256": "e181e703d688ada7c5a1167c8c7a41332720886e2fd7a2bece4fed1ca6fa4bc7"
+                  "expected_note_sha256": "0b98d8d1a2f15535706cf668be82883fc2e80a9f382d9c4de6aca0aeb9a1e094"
                 }
               ],
               "evidence": [
-                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-3\", \"measure\": \"48\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[48]/direction[2]/direction-type[1]/pedal[1]\", \"reason\": \"Direction start has no closing endpoint in this part\", \"requirement_ids\": [\"M19\"], \"rule_id\": \"XML-SCOPE-PEDAL\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/pedal/\", \"staff\": \"2\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<pedal type=\\\"start\\\" line=\\\"no\\\" sign=\\\"yes\\\" />\\n        \", \"xml_note_id\": null}"
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-3\", \"measure\": \"48\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[48]/direction[2]/direction-type[1]/pedal[1]\", \"reason\": \"Direction start has no closing endpoint in this part\", \"requirement_ids\": [\"M19\"], \"rule_id\": \"XML-SCOPE-PEDAL\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/pedal/\", \"staff\": \"2\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<pedal type=\\\"start\\\" line=\\\"no\\\" sign=\\\"yes\\\" />\", \"xml_note_id\": null}"
               ],
               "preserve": [
                 "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
@@ -901,7 +949,7 @@
               "automation_eligible": false
             }
           ],
-          "request_id": "xml-readiness-6b1cca2bb27ebe3b",
+          "request_id": "xml-readiness-f00566ed7864811a",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -909,7 +957,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "62614a39f7fc2af2d02f34ec4ddc4a515adc19c180fbe90a5c5fdd0615ebfacc",
+        "request_sha256": "0a5dd1e9f5b5dc9bedbc6a96b8fee3594aa594d5f6409317cdb61bbe22af09b8",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -1021,5 +1069,5 @@
   "published_at": "2026-10-29 10:08:31.45712+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "mendelssohn_sww_01_op_19_no_1",
-  "xml_sha": "6b1cca2bb27ebe3baea31f03b406b7c1ae674318ff04154b1b0dc017f91e9776"
+  "xml_sha": "f00566ed7864811a872c07b3f96eeb7ad29831d4739f189e222e4c5cafc711e0"
 }

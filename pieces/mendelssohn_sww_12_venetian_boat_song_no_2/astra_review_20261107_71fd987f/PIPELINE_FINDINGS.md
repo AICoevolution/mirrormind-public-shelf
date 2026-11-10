@@ -1,0 +1,5 @@
+The candidate omitted most printed marks, all beam groups and the repeat route. Reader agreement did not establish correctness: false tuplets arose from fingerings, some lower clefs were wrong, and material pitches/rhythms differed from print. The complete frozen audit retains1931 reader correspondence checks,330 priority answers and494 provenance records.
+
+CORE standalone export omits terminal grace pairs; actual Apply preserves primary XML. MARKS Apply renumbers slurs/reorders payloads and relocates offset syntax; paired endpoints and musical anchors remain equivalent. The raw comparison is retained. Production compact layout displaces cresc./più/Ped. at particular widths. No consumer or controller code was changed.
+
+Correction drafts and their failed checks are preserved. v5 slur reuse by XML note order produced checker collisions; v6 conservatively reserves each number across whole bars (maximum4), preserves all91 paired endpoints and passes schema/structure except the printed open pedal. These are encoding corrections, not new musical decisions.

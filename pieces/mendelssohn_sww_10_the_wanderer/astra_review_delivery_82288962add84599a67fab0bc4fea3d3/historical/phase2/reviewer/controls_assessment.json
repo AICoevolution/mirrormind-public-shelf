@@ -1,0 +1,44 @@
+{
+  "schema": "astra_controls_assessment.v1",
+  "complete": true,
+  "controls": [
+    {
+      "id": "ROOT-METER",
+      "verdict": "PASS",
+      "assessment": "Printed opening explicitly 3/8. P031 repeats the two-sharp key without a new meter. SmartScore raw1 declares 4/4 but maps to P031 and does not establish a meter change.",
+      "evidence": [
+        "reviewer/print/system_01.png",
+        "reviewer/print/system_07.png"
+      ]
+    },
+    {
+      "id": "ROOT-KEY",
+      "verdict": "PASS",
+      "assessment": "P031 system begins with two sharps in both staves, consistent with opening.",
+      "evidence": [
+        "reviewer/print/system_01.png",
+        "reviewer/print/system_07.png"
+      ]
+    },
+    {
+      "id": "ROOT-REPEAT",
+      "verdict": "PASS",
+      "assessment": "Forward repeat precedes P003 after two full introduction bars. Backward repeat follows P035, first ending starts P034 and ends P035.",
+      "evidence": [
+        "reviewer/print/system_01.png",
+        "reviewer/print/system_07.png"
+      ]
+    },
+    {
+      "id": "ROOT-MISSING-FAILED",
+      "verdict": "FAILED",
+      "status": "preserved_failure",
+      "assessment": "Raw-count detector cannot mean physically missing P120-P147: SmartScore raw119 has final D5 over D4/F#4 and B2/F#3/B3, rests and final barline matching P147. Its opening raw1 has E4/G4 melody and held G2 matching P031, with raw4-5 first-ending landmarks matching P034-P035. First print page is absent, not final page.",
+      "evidence": [
+        "reviewer/print/system_07.png",
+        "reviewer/print/system_29.png",
+        "reviewer/phase2_audit_controls_v1.json"
+      ]
+    }
+  ]
+}

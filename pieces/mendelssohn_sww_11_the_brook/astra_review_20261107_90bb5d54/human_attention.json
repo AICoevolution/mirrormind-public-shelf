@@ -1,0 +1,108 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "PRINT-SLUR-P032",
+      "address": "page3 system12 P032 upper first beat",
+      "question": "Does incoming melody slur terminate at second or third sixteenth?",
+      "provisional_treatment": "Incoming melody slur ends at second sixteenth (onset1/4); third/sixteenth staccatos remain.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-012.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "PRINT-FINGER-P034",
+      "address": "page3 system12 P034 upper second beat",
+      "question": "Exact chord-member attachment of stacked 3 and 1?",
+      "provisional_treatment": "Stacked3/1 attached top/bottom members of P034 onset5/4 chord.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-012.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "PRINT-FINGER-P019",
+      "address": "page2 system7 P019 lower final group",
+      "question": "Is curved numeral2 a substitution indication or a simple fingering?",
+      "provisional_treatment": "Digit2 retained as simple fingering on last accompaniment32nd; substitution-like curve not asserted.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-007.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "MARKS-LIMIT-001",
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+      "address": "Fingerings throughout score and P025-P026 continuation dashes",
+      "question": "Confirm primary MusicXML remains authoritative for fingerings and continuation dashes omitted from MARKS v0 export.",
+      "provisional_treatment": "Retain all encoded marks in primary XML; MARKS export is limited.",
+      "reason_for_uncertainty": "Production codec explicitly reports unsupported technical fingering and dashes.",
+      "review_safety_reason": "Primary XML and rendered score retain these symbols; no core timing change.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "checks/marks_export.json",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "VIEW-WORD-P036",
+      "category": "delivery_issue",
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "word_staff_placement",
+      "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+      "address": "P036 upper-staff cresc. direction at onset 1 quarter; 800px layout",
+      "question": "Confirm or adjust the cresc. word placement: narrow rendering puts it below the lower staff although the source and XML assign it to staff 1.",
+      "provisional_treatment": "Preserve the primary XML and current render; retain the visible cresc. word for final human placement review.",
+      "reason_for_uncertainty": "Wide and narrow layouts differ: the narrow layout displaces this staff-1 text below accompaniment.",
+      "review_safety_reason": "The word is visible, the same-onset upper crescendo wedge remains visible, and notes, timing and cursor mapping are intact. Source crop and both layouts permit comparison.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "evidence": [
+        "reviewer/print/system-013.png",
+        "render_current_v2/detail-800-11.png",
+        "render_current_v2/detail-1200-05.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "VIEW-SLUR-P046",
+      "category": "engraving",
+      "severity": "needs_visual_review",
+      "issue_type": "readable_overlap",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "blocks_safe_continuation": false,
+      "address": "P046-P048 ascending accompaniment phrase; both 800px and 1200px layouts",
+      "question": "Review the diagonal phrase arc crossing accompaniment beam/stem ink in P046 and continuing into P047-P048.",
+      "provisional_treatment": "Retain unchanged XML endpoints and current diagonal rendered arc.",
+      "readability_reason": "The phrase curve and its cross-system continuation remain traceable; noteheads and beam levels remain identifiable, and the complete source system provides the intended arc for comparison. No timing or cursor defect was observed.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-017.png",
+        "render_current_v2/detail-800-14.png",
+        "render_current_v2/detail-800-15.png",
+        "render_current_v2/detail-1200-06.png",
+        "render_current_v2/detail-1200-07.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    }
+  ]
+}

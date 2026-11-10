@@ -1,0 +1,1518 @@
+{
+  "schema": "ensemble-manifest-v2",
+  "reader_uncertainty_policy": "defer_to_review.v2",
+  "transport_validation": {
+    "schema": "reader-uncertainty-transport.v1",
+    "ready": true,
+    "status": "PROVISIONAL_REVIEW_REQUIRED",
+    "musical_completeness": "NOT_ASSESSED",
+    "candidate_sha256": "70c44fb7e5b00ce666559aecf7f7284db155658071f629c8557b5330affc8f65",
+    "obligations_sha256": "269c486d582f36abb41fc0500d57d9f160d8d5040d5a13ab56ae4fe99de6fdc0",
+    "obligation_count": 1,
+    "deferred_timing_errors": [
+      {
+        "category": "gap",
+        "source": "FUSED",
+        "bar": 42,
+        "staff": "2",
+        "voice": "3",
+        "start_q": "1/2",
+        "end_q": "2"
+      },
+      {
+        "category": "capacity",
+        "source": "FUSED",
+        "bar": 42,
+        "staff": "2",
+        "voice": "3",
+        "actual_q": "1/2",
+        "union_q": "1/2",
+        "expected_q": "2"
+      }
+    ],
+    "blocking_errors": []
+  },
+  "review_summary": {
+    "schema": "reader-review-summary.v1",
+    "authority": "Evidence, not musical approval",
+    "agreement_events": 849,
+    "findings_by_reason": {
+      "cross_staff_duplicate": 1,
+      "pitch_disagreement": 348,
+      "readers_musical_uncertainty": 1,
+      "single_source_claim": 168,
+      "tie_structural_quarantine": 2
+    },
+    "readers_musical_uncertainty": [
+      {
+        "bar": 42,
+        "staff": "2",
+        "selected_source": "PlayScore",
+        "status": "UNRESOLVED",
+        "reason": "No reader supplies a complete interval-valid reading. Provisional transcription requires print-context review."
+      }
+    ],
+    "evidence": "source_agent/ensemble_disagreements.json",
+    "source_alternatives": "source_agent/ensemble_observations.json",
+    "staff_coverage_uncertainty": []
+  },
+  "targeted_reread_policy": "advisory",
+  "piece_id": "mendelssohn_sww_11_the_brook",
+  "ready_for_assembly": true,
+  "staff_admission": {
+    "schema": "ensemble-staff-admission.v2",
+    "scope": "Provisional staff accounting, including explicit review obligations; not musical completeness",
+    "musical_completeness": "NOT_ASSESSED",
+    "necessary_coverage_satisfied": true,
+    "issues": [],
+    "implementation": {
+      "contract": "ensemble-staff-admission.v2",
+      "legacy": {
+        "contract": "ensemble-staff-admission.v1",
+        "pipeline_sources": {
+          "ensemble_admission.py": "725646c31e1c0699ac13fff9b8dd5bb3461ade703078087bb92da3a641a3d9c1",
+          "ensemble_contract.py": "9dd041a9ce704df754b6050fd662321143d7dedefe3931d07ba438eedc4a32c9",
+          "ensemble_diagnostics.py": "c91cc2b3c32a3f541f9e075292acc639349e4b030fe3b5494a5bf69aea169b8f",
+          "score_layout.py": "4520cc4d5ad6419bc2dceeb098ea56a8e85ebc3a4054e9d3020946722e227fe3",
+          "reader_claims_contract.py": "11c33cdfa9b751148cdcb20b3c455a5d58c37df3a736ff4ff2f18633bcf66461",
+          "empty_staff_contract.py": "80a242d9047e2859994f5946f1ec20679ec212a911dbe5bac3e1a1cdbc4e4dea",
+          "targeted_source_contract.py": "feae47c7eea97a4e35b13efa5f71a6b3b900b4b2c08779eb745b7d38fb3c2a74",
+          "targeted_print_detail.py": "de56193f8f81535fa08198fe6d6c51eb501be6335eb996775b81b31374962f54",
+          "reader_uncertainty.py": "c51f3924c61c8d9516d00ac09e082979ed144714d9318b6edc32b0e09c2bfab6"
+        },
+        "input_binding_source": "5623cd366a93b7930d93de1f5ecb1bc72841cb370babb7524945c9a3f5c37f53"
+      },
+      "staff_gap_transport_sha256": "be1dae6e7778784bfc6804060c22bed70cc74804baa247152140f2577cea5bf6"
+    },
+    "coverage": {
+      "expected_staff_units": 96,
+      "selected_staff_units": 96,
+      "explicit_no_event_staff_units": 0,
+      "blocked_staff_units": 0,
+      "missing_staff_units": 0,
+      "emitted_staff_units": 96,
+      "unexpected_emitted_units": [],
+      "unlocated_blockers": [],
+      "units": [
+        {
+          "bar": 1,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 1,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 2,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 2,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 3,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 3,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 4,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 4,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 5,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 5,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 6,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 6,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 7,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 7,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 8,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 8,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 9,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 9,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 10,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 10,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 11,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 11,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 12,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 12,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 13,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 13,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 14,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 14,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 15,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 15,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 16,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 16,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 17,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 17,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 18,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 18,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 19,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 19,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 20,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 20,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 21,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 21,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 22,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 22,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 23,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 23,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 24,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 24,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 25,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 25,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 26,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 26,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 27,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 27,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 28,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 28,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 29,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 29,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 30,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 30,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 31,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 31,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 32,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 32,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 33,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 33,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 34,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 34,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 35,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 35,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 36,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 36,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 37,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 37,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 38,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 38,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 39,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 39,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 40,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 40,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 41,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 41,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 42,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 42,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 43,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 43,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 44,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 44,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 45,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 45,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 46,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 46,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 47,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 47,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 48,
+          "staff": "1",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        },
+        {
+          "bar": 48,
+          "staff": "2",
+          "status": "SELECTED_EVENTS",
+          "has_emitted_events": true,
+          "blockers": [],
+          "provenance_categories": []
+        }
+      ],
+      "scope": "Selected representation presence, not musical completeness or admission",
+      "changes_admission": false,
+      "deferred_staff_units": 0
+    },
+    "status": "PROVISIONAL_ACCOUNTED",
+    "audit_sha256": "0c78920e97617e218a14e0c02dbd43a7889fc5933864ea6d729fc428ed1c3fd9"
+  },
+  "next_action": "ENSEMBLE_COMPLETE",
+  "staff_unit_coverage": {
+    "expected_staff_units": 96,
+    "selected_staff_units": 96,
+    "explicit_no_event_staff_units": 0,
+    "blocked_staff_units": 0,
+    "missing_staff_units": 0,
+    "emitted_staff_units": 96,
+    "scope": "Selected representation presence, not musical completeness or admission",
+    "changes_admission": false,
+    "deferred_staff_units": 0
+  },
+  "physical_bars_expected": 48,
+  "physical_bars_complete": 48,
+  "source_records": {
+    "readers": {
+      "path": "reader_claims.json",
+      "sha256": "9978e6652bd73fcd60d6829150c178c5b255c5cbe83912f43eeca2d80cdf1883",
+      "events": 2874
+    },
+    "LEGATO": [
+      {
+        "path": "source_observations\\legato\\observations.json",
+        "sha256": "03b3efaac70a5813a471e4e997ff10810581414f39f819d4bb8215834a9ed9f1",
+        "events": 997,
+        "canonical": true,
+        "evidence_status": "ADDRESSABLE",
+        "unaddressable_pages": [],
+        "manifest_sha256": "88a49de86d5af082b370918621509d9874a2e1ca4661a12447958c81221b856d"
+      }
+    ],
+    "GROK": [],
+    "GEMINI": []
+  },
+  "legato": {
+    "enabled": true,
+    "manifest_path": "source_observations/legato/manifest.json",
+    "manifest_exists": true,
+    "manifest_sha256": "88a49de86d5af082b370918621509d9874a2e1ca4661a12447958c81221b856d"
+  },
+  "independent_visual_provider": {
+    "provider_id": "GROK",
+    "directory_id": "grok",
+    "method": null,
+    "scope": null,
+    "system_routes": [],
+    "enabled": false,
+    "requested_count": 0,
+    "requests": [],
+    "manifest_path": "source_observations/grok/manifest.json",
+    "manifest_sha256": null,
+    "provider_manifests": [
+      {
+        "provider_id": "GROK",
+        "directory_id": "grok",
+        "manifest_path": "source_observations/grok/manifest.json",
+        "manifest_sha256": null
+      }
+    ]
+  },
+  "gemini": {
+    "enabled": true,
+    "requests": [
+      {
+        "system": 5,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_05.json",
+        "request_sha256": "a380c507dbc056ffb12610d1555acd93bfd8c3ddde52ef0b55de0d0e451000d2",
+        "response_path": "source_observations/gemini/system_05.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 6,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_06.json",
+        "request_sha256": "9b3d10529a49a7a441414be7157e08cea7c160e3bb9ac93e0a4844489b43d635",
+        "response_path": "source_observations/gemini/system_06.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 7,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_07.json",
+        "request_sha256": "3d5779f06df52268bb0168396a53387f1371e0e21d61299843f2cd4ab704ce12",
+        "response_path": "source_observations/gemini/system_07.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 9,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_09.json",
+        "request_sha256": "768bae17d172d5a27f3a15093fe9e08d80ade6a3ca58afe9d90bda40ce66deff",
+        "response_path": "source_observations/gemini/system_09.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 10,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_10.json",
+        "request_sha256": "c9c65a3bb04f19c7dd72c56f31dfbcb1f4d782e510597ecc3cdff409fb0a13f6",
+        "response_path": "source_observations/gemini/system_10.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 11,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_11.json",
+        "request_sha256": "4cd090350adf56bbcad7033f5f012f6b2deccac38989779c5025dc03ffeb7d9e",
+        "response_path": "source_observations/gemini/system_11.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 12,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_12.json",
+        "request_sha256": "204c8c89345a3a824b73b711fe5413e4ce47d16c127c920c529e79a0ab11b938",
+        "response_path": "source_observations/gemini/system_12.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 13,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_13.json",
+        "request_sha256": "0b1fba4ff4e5dc567aaa1192f4b37f666ea00999b85ec8b1c2ae318a30b8d8df",
+        "response_path": "source_observations/gemini/system_13.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 14,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_14.json",
+        "request_sha256": "c4456797cdb4a83bdc751165c0d9f481aaee6e88b533ea85d0a3c9e7cadcd871",
+        "response_path": "source_observations/gemini/system_14.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 15,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_15.json",
+        "request_sha256": "ec024ac7a152b9977875b197a4406e8b5def31d8e6a19d9a1a6f81e6340317e4",
+        "response_path": "source_observations/gemini/system_15.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 16,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_16.json",
+        "request_sha256": "0644f7c77533e0dc35a3d946e5b01f8a4b4a04d7d5da8101717bb47b1e630563",
+        "response_path": "source_observations/gemini/system_16.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      },
+      {
+        "system": 17,
+        "provider_id": "GEMINI",
+        "directory_id": "gemini",
+        "session_id": null,
+        "requested": true,
+        "request_path": "source_requests\\gemini\\system_17.json",
+        "request_sha256": "539ed94fbb8973d4b208b182732eeca77ac60f57d22c4e7e20fba15b2504fe62",
+        "response_path": "source_observations/gemini/system_17.json",
+        "response_exists": false,
+        "response_sha256": null,
+        "validated": false,
+        "evidence_errors": []
+      }
+    ],
+    "max_calls": 24,
+    "calls_made": 0,
+    "max_cost_usd": 1.0,
+    "actual_cost_usd": 0,
+    "execution_authorized": true,
+    "authorization_status": "authorized",
+    "paid_review_performed": false,
+    "responses_used": 0,
+    "claude_fallback_responses_used": 0,
+    "new_calls_made": 0,
+    "budget_exhausted": false,
+    "budget_limited_completion": false,
+    "api_not_authorized_completion": false,
+    "missing_responses": 12,
+    "cost_overrun_usd": 0.0,
+    "historical_cost_overrun_recorded": false
+  },
+  "validation": {
+    "valid": false,
+    "errors": [
+      {
+        "category": "gap",
+        "source": "FUSED",
+        "bar": 42,
+        "staff": "2",
+        "voice": "3",
+        "start_q": "1/2",
+        "end_q": "2"
+      },
+      {
+        "category": "capacity",
+        "source": "FUSED",
+        "bar": 42,
+        "staff": "2",
+        "voice": "3",
+        "actual_q": "1/2",
+        "union_q": "1/2",
+        "expected_q": "2"
+      }
+    ],
+    "lane_intervals": {
+      "valid": false,
+      "errors": [
+        {
+          "category": "gap",
+          "source": "FUSED",
+          "bar": 42,
+          "staff": "2",
+          "voice": "3",
+          "start_q": "1/2",
+          "end_q": "2"
+        },
+        {
+          "category": "capacity",
+          "source": "FUSED",
+          "bar": 42,
+          "staff": "2",
+          "voice": "3",
+          "actual_q": "1/2",
+          "union_q": "1/2",
+          "expected_q": "2"
+        }
+      ]
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "hard_validation": {
+    "valid": false,
+    "errors": [
+      {
+        "category": "gap",
+        "source": "FUSED",
+        "bar": 42,
+        "staff": "2",
+        "voice": "3",
+        "start_q": "1/2",
+        "end_q": "2"
+      },
+      {
+        "category": "capacity",
+        "source": "FUSED",
+        "bar": 42,
+        "staff": "2",
+        "voice": "3",
+        "actual_q": "1/2",
+        "union_q": "1/2",
+        "expected_q": "2"
+      }
+    ],
+    "lane_intervals": {
+      "valid": false,
+      "errors": [
+        {
+          "category": "gap",
+          "source": "FUSED",
+          "bar": 42,
+          "staff": "2",
+          "voice": "3",
+          "start_q": "1/2",
+          "end_q": "2"
+        },
+        {
+          "category": "capacity",
+          "source": "FUSED",
+          "bar": 42,
+          "staff": "2",
+          "voice": "3",
+          "actual_q": "1/2",
+          "union_q": "1/2",
+          "expected_q": "2"
+        }
+      ]
+    },
+    "tie_integrity": {
+      "valid": true,
+      "errors": []
+    }
+  },
+  "staff_coverage_recovery": [],
+  "empty_staves": [],
+  "source_insufficiencies": [],
+  "blocking_discrepancies": 0,
+  "hard_structural_blockers": 0,
+  "cross_staff_voices": [
+    {
+      "category": "cross_staff_voice",
+      "source": "Audiveris",
+      "bar": 41,
+      "voice": "5",
+      "home_staff": "2",
+      "notated_staves": [
+        "1"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "1/4",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "D4"
+          ]
+        },
+        {
+          "onset_q": "3/8",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "B3"
+          ]
+        },
+        {
+          "onset_q": "1/2",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "C4"
+          ]
+        },
+        {
+          "onset_q": "5/8",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "B3"
+          ]
+        },
+        {
+          "onset_q": "3/4",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "C4"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 12,
+      "voice": "1",
+      "home_staff": "2",
+      "notated_staves": [
+        "1"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "1/4",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "E4"
+          ]
+        },
+        {
+          "onset_q": "3/8",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "F#4"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 40,
+      "voice": "2",
+      "home_staff": "2",
+      "notated_staves": [
+        "1"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "3/2",
+          "duration_q": "1/2",
+          "notated_staff": "1",
+          "pitches": []
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 41,
+      "voice": "1",
+      "home_staff": "2",
+      "notated_staves": [
+        "1"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "1/4",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "D4"
+          ]
+        },
+        {
+          "onset_q": "5/8",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "B3"
+          ]
+        },
+        {
+          "onset_q": "3/4",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "C4"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 42,
+      "voice": "1",
+      "home_staff": "2",
+      "notated_staves": [
+        "1"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "1/4",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "D4"
+          ]
+        },
+        {
+          "onset_q": "3/8",
+          "duration_q": "1/8",
+          "notated_staff": "1",
+          "pitches": [
+            "C#4"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 40,
+      "voice": "1",
+      "home_staff": "1",
+      "notated_staves": [
+        "2"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "0",
+          "duration_q": "1/4",
+          "notated_staff": "2",
+          "pitches": [
+            "D2"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 42,
+      "voice": "6",
+      "home_staff": "1",
+      "notated_staves": [
+        "2"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "0",
+          "duration_q": "1/2",
+          "notated_staff": "2",
+          "pitches": []
+        },
+        {
+          "onset_q": "7/8",
+          "duration_q": "1/8",
+          "notated_staff": "2",
+          "pitches": [
+            "A3"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    },
+    {
+      "category": "cross_staff_voice",
+      "source": "PlayScore",
+      "bar": 46,
+      "voice": "5",
+      "home_staff": "1",
+      "notated_staves": [
+        "2"
+      ],
+      "moved_events": [
+        {
+          "onset_q": "1/2",
+          "duration_q": "1/8",
+          "notated_staff": "2",
+          "pitches": [
+            "A3"
+          ]
+        }
+      ],
+      "action": "folded_to_home_staff"
+    }
+  ],
+  "unresolved_evidence_claims": 169,
+  "unresolved_nonblocking": 351,
+  "unresolved_policy": {
+    "status": "accepted_for_astra_advisory_reread",
+    "unresolved_evidence_count": 169,
+    "hard_structural_blocker_count": 0,
+    "requires_astra_full_review": true,
+    "carry_unresolved_evidence_to_astra": true,
+    "missing_gemini_responses": 12,
+    "paid_api_authorized": true,
+    "paid_api_review_performed": false,
+    "routing_exhausted": false,
+    "reason": "Unresolved readings are advisory evidence for the independent reviewer; no additional reread is required."
+  },
+  "outputs": {
+    "diagnostics": {
+      "path": "source_agent/ensemble_diagnostics.json",
+      "sha256": "8539e94590998d2c7655aa983914e82b2b20d4d6d23e5e392426ace5b50022ed"
+    },
+    "targeted_reread_advisory": {
+      "path": "source_agent/targeted_reread_advisory.json",
+      "sha256": "30faeec7c4a61c552b967e0762a16ffe306901d01c2e3ee512552920666afb93"
+    },
+    "quality": {
+      "path": "source_agent\\ensemble_quality.json",
+      "sha256": "cf95a548bcb9538e8d331f4f1c3f2bafb015fdf98f97f666f6f1879678a0fd4a"
+    },
+    "api_response_final": {
+      "path": "source_agent\\api_response_final.json",
+      "sha256": "ea95f3af9383a684d87815f45965a8ba9b635081677e7f4d756044a0790048f0"
+    },
+    "provenance_ledger": {
+      "path": "source_agent\\provenance_ledger.json",
+      "sha256": "de884f9b74bac8b3d6400d9acb88ff66dd2091a067c9c8a4b653d544c22ebe78"
+    },
+    "disagreements": {
+      "path": "source_agent\\ensemble_disagreements.json",
+      "sha256": "c5ae34161f1c7df2e55964cea9a869b5ef60f0bf9a972ec709f8c6bf4f429ecf"
+    },
+    "observations": {
+      "path": "source_agent\\ensemble_observations.json",
+      "sha256": "179ac35c22080a97f3d8d104c93b97b96efc7fca09c92e28d0936c7379ee0879"
+    }
+  },
+  "provenance_ledger_path": "source_agent\\provenance_ledger.json",
+  "disagreement_report_path": "source_agent\\ensemble_disagreements.json",
+  "selection_policy": "exact interval-valid source topology plus field-level weighted pitch and tie evidence; unsupported tie endpoints are quarantined; majority is evidence, never ground truth",
+  "source_isolation": "Per-system Independent Source and Gemini requests contain current pixels and locked framing only",
+  "timestamp": "2026-11-04T03:23:13.593557+00:00"
+}

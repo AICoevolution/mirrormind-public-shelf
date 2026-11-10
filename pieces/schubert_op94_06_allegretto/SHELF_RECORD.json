@@ -10,6 +10,54 @@
     "composer": "F. Schubert",
     "subtitle": "Moments musicaux, Op. 94 (D. 780), No. 6",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "33c8c84df5f142e3ca61f7670e7ecd5b788ea16f267662b1a13e4cbdecceb79f"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "prod_entry_id": 684,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "0229cfb169a80c2c358ffc91af84fc9817042fd385ca1a9767e0a490b6bcdaf1",
+      "source_recorded_xml_sha": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+      "source_xml_bytes_sha256": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "software": "AICoevolution Platform",
+      "after_sha256": "0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac",
+      "after_xml_sha": "0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac",
+      "before_sha256": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+      "before_xml_sha": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "33c8c84df5f142e3ca61f7670e7ecd5b788ea16f267662b1a13e4cbdecceb79f"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "22b975a120004ad1b7de033eea92248fe246c579329304c08e3bf28b164cd8a8",
+      "original_software": [
+        "Independent print-reviewed UNVERIFIED delivery"
+      ],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "schubert_op94_06_allegretto"
   },
   "stamps": {
@@ -24,7 +72,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+            "xml_sha256": "0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -662,10 +710,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 438985,
+            "size_bytes": 276400,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -720,20 +768,20 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "2d131b6213ebfef8ce73f7175cd179b0e59112e3f48ee0af93f9f9b9dcede895",
-        "xml_sha256": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
-        "report_sha256": "7802cb2b825cf7de18c0a37360390a825168ecf9279393fa18def095c7a2a01e",
+        "audit_id": "137e9a85e220e6ed703e638fd6cd09831bba48d6b3949dec7e7956c8439ad943",
+        "xml_sha256": "0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac",
+        "report_sha256": "1c09899cf8aef53db8172d9a646a30bab3d6db822548599ad1377ff845955103",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37",
+            "xml_sha256": "0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac",
             "score_reference": null,
             "score_reference_sha256": null
           },
           "changes": [],
-          "request_id": "xml-readiness-6b1513c8a8160be2",
+          "request_id": "xml-readiness-0e32b458660ad059",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -741,7 +789,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "8830558decc1a52378fe2e3c3cc6f0a392aafa77ae776853e93ed144e77b876b",
+        "request_sha256": "cdf46064281110361348de48630edd40c10691f77572954898812d20c6530d40",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -798,5 +846,5 @@
   "published_at": "2026-11-03 09:28:26.728589+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "schubert_op94_06_allegretto",
-  "xml_sha": "6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37"
+  "xml_sha": "0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac"
 }

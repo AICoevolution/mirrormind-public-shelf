@@ -10,13 +10,1364 @@
     "composer": "R. Schumann",
     "subtitle": "Kinderszenen, Op. 15, No. 13",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "05bc37abd8dbf728861bcb988903dd8a841b9ba697d86219f172c9442f02abea"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/289791",
+      "prod_entry_id": 133,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "40028ac4843ba76d611377a07de7c03c60218bb9c6d3b2a0adae87749021a16b",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "3ab31cdde179995ddcf03c47ada75ab838e57188b84a5567dda19494ae8f57f1",
+      "source_recorded_xml_sha": "40028ac4843ba76d611377a07de7c03c60218bb9c6d3b2a0adae87749021a16b",
+      "source_xml_bytes_sha256": "40028ac4843ba76d611377a07de7c03c60218bb9c6d3b2a0adae87749021a16b",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/289791",
+      "software": "AICoevolution Platform",
+      "after_sha256": "22bd667edeb722b1d8b44a841d9a6f9e12309dbb4492df63d3079e21b746b6b1",
+      "after_xml_sha": "22bd667edeb722b1d8b44a841d9a6f9e12309dbb4492df63d3079e21b746b6b1",
+      "before_sha256": "40028ac4843ba76d611377a07de7c03c60218bb9c6d3b2a0adae87749021a16b",
+      "before_xml_sha": "40028ac4843ba76d611377a07de7c03c60218bb9c6d3b2a0adae87749021a16b",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "05bc37abd8dbf728861bcb988903dd8a841b9ba697d86219f172c9442f02abea"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "164f5193cfc5056d5de9b1e9fbc27e3b3133b98687ece417d435fb7bd3edb269",
+      "original_software": [
+        "ensemble_v1 deterministic fusion; fingerings excluded; marks left as fused; assembly $0"
+      ],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "schumann_op15_13_der_dichter_spricht"
   },
   "stamps": {
     "core": {
       "by": "1",
       "on": "2026-10-12",
-      "claims": "every change to the base is on the ledger, the chain replays from genesis, the rhythm pass is done and every bar has been heard against the page"
+      "claims": "every change to the base is on the ledger, the chain replays from genesis, the rhythm pass is done and every bar has been heard against the page",
+      "encoding_released_audit": {
+        "report": {
+          "schema": "musicxml-readiness-report.v1",
+          "source": {
+            "xml_path": "source.musicxml",
+            "xml_sha256": "22bd667edeb722b1d8b44a841d9a6f9e12309dbb4492df63d3079e21b746b6b1",
+            "score_reference": null,
+            "score_reference_sha256": null
+          },
+          "runtime": {
+            "lxml": "6.0.2",
+            "python": "3.11.9",
+            "jsonschema": "4.17.3"
+          },
+          "summary": {
+            "unresolved_observation": 9,
+            "confirmed_encoding_omission": 0,
+            "confirmed_encoding_inconsistency": 0
+          },
+          "not_checked": [],
+          "xml_preflight": {
+            "rules": [
+              {
+                "id": "XML-INPUT-CONTRACT-001",
+                "gate": "A01",
+                "unit": "documents",
+                "basis": "mandatory",
+                "checked": 1,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/score-partwise/"
+                ],
+                "applicable": 1,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-INPUT-VERSION-001",
+                "gate": "A01",
+                "unit": "documents",
+                "basis": "interpretation",
+                "checked": 1,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/score-partwise/"
+                ],
+                "applicable": 1,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-SCHEMA-4.0",
+                "gate": "A01",
+                "unit": "documents",
+                "basis": "schema",
+                "checked": 1,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/"
+                ],
+                "applicable": 1,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-DIVISIONS-CONTEXT-001",
+                "gate": "A02",
+                "unit": "divisions declarations and cursor movements",
+                "basis": "mandatory",
+                "checked": 46,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/attributes/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/divisions/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/backup/"
+                ],
+                "applicable": 46,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TIMELINE-001",
+                "gate": "A02",
+                "unit": "notes, backups and forwards",
+                "basis": "mandatory",
+                "checked": 350,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/backup/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/forward/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/duration/"
+                ],
+                "applicable": 350,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-MEASURE-001",
+                "gate": "A03",
+                "unit": "staff-measures with a numeric meter",
+                "basis": "interpretation",
+                "checked": 52,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/time/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/"
+                ],
+                "applicable": 52,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-METER-CONTEXT-001",
+                "gate": "A03",
+                "unit": "time declarations",
+                "basis": "mandatory",
+                "checked": 1,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/time/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/interchangeable/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/senza-misura/"
+                ],
+                "applicable": 1,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-VALUE-001",
+                "gate": "A03",
+                "unit": "timed notes with a note type",
+                "basis": "interpretation",
+                "checked": 286,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/type/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/time-modification/"
+                ],
+                "applicable": 286,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-CHORD-001",
+                "gate": "A04",
+                "unit": "chord tones",
+                "basis": "mandatory",
+                "checked": 76,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/chord/"
+                ],
+                "applicable": 76,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-GRACE-001",
+                "gate": "A04",
+                "unit": "grace notes",
+                "basis": "mandatory",
+                "checked": 19,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/grace/"
+                ],
+                "applicable": 19,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-VOICE-001",
+                "gate": "A04",
+                "unit": "measures",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/voice/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-ACCIDENTAL-CONTEXT",
+                "gate": "A05",
+                "unit": "accidental displays",
+                "basis": "interpretation",
+                "checked": 30,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/accidental/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/data-types/accidental-value/"
+                ],
+                "applicable": 30,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-KEY-ACCIDENTAL-001",
+                "gate": "A05",
+                "unit": "key-accidental elements",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/key-accidental/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-KEY-CANCELLATION-001",
+                "gate": "A05",
+                "unit": "cancel elements",
+                "basis": "mandatory",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/cancel/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/key/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "matching cancellations",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-KEY-REFERENCE-001",
+                "gate": "A05",
+                "unit": "key-octave elements",
+                "basis": "mandatory",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/key-octave/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TIE-CORRESPONDENCE-001",
+                "gate": "A06",
+                "unit": "notes with tie or tied",
+                "basis": "interpretation",
+                "checked": 62,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tie/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/"
+                ],
+                "applicable": 62,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TIE-TRACE-003",
+                "gate": "A06",
+                "unit": "notes with tied elements",
+                "basis": "interpretation",
+                "checked": 62,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tie/"
+                ],
+                "applicable": 62,
+                "unsupported": 0,
+                "matched_unit": "tie links",
+                "matched_links": 30
+              },
+              {
+                "id": "XML-ENDPOINT-GLISSANDO",
+                "gate": "A07",
+                "unit": "glissando marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/glissando/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "glissando pairs",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-ENDPOINT-SLIDE",
+                "gate": "A07",
+                "unit": "slide marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/slide/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "slide pairs",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-ENDPOINT-SLUR",
+                "gate": "A07",
+                "unit": "slur marks",
+                "basis": "interpretation",
+                "checked": 62,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/slur/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/data-types/number-level/"
+                ],
+                "applicable": 62,
+                "unsupported": 0,
+                "matched_unit": "slur pairs",
+                "matched_links": 31
+              },
+              {
+                "id": "XML-SLUR-BALANCE-001",
+                "gate": "A07",
+                "unit": "slur elements",
+                "basis": "mandatory",
+                "checked": 62,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/slur/"
+                ],
+                "applicable": 62,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-ENDPOINT-TUPLET",
+                "gate": "A08",
+                "unit": "tuplet marks",
+                "basis": "interpretation",
+                "checked": 12,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tuplet/"
+                ],
+                "applicable": 12,
+                "unsupported": 0,
+                "matched_unit": "tuplet groups",
+                "matched_links": 6
+              },
+              {
+                "id": "XML-TUPLET-RATIO-001",
+                "gate": "A08",
+                "unit": "notes inside active tuplet groups",
+                "basis": "interpretation",
+                "checked": 18,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tuplet/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tuplet-actual/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/time-modification/"
+                ],
+                "applicable": 18,
+                "unsupported": 0,
+                "matched_unit": "consistent notes",
+                "matched_links": 18
+              },
+              {
+                "id": "XML-TREMOLO-CONSISTENCY-002",
+                "gate": "A09",
+                "unit": "notes with start/stop tremolo",
+                "basis": "mandatory",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tremolo/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TREMOLO-PAIR-003",
+                "gate": "A09",
+                "unit": "tremolo endpoint attacks",
+                "basis": "mandatory",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tremolo/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "tremolo pairs",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TREMOLO-TIME-MODIFICATION-001",
+                "gate": "A09",
+                "unit": "notes with start/stop tremolo",
+                "basis": "recommendation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tremolo/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-DIRECTION-OFFSET-001",
+                "gate": "A10",
+                "unit": "directions and harmonies",
+                "basis": "interpretation",
+                "checked": 41,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/offset/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+                ],
+                "applicable": 41,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-SCOPE-BRACKET",
+                "gate": "A10",
+                "unit": "bracket marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/bracket/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "bracket spans",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-SCOPE-DASHES",
+                "gate": "A10",
+                "unit": "dashes marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/dashes/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "dashes spans",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-SCOPE-OCTAVE-SHIFT",
+                "gate": "A10",
+                "unit": "octave-shift marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/octave-shift/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "octave-shift spans",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-SCOPE-PEDAL",
+                "gate": "A10",
+                "unit": "pedal marks",
+                "basis": "mandatory",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/pedal/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "pedal spans",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-SCOPE-WEDGE",
+                "gate": "A10",
+                "unit": "wedge marks",
+                "basis": "interpretation",
+                "checked": 20,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/wedge/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+                ],
+                "applicable": 20,
+                "unsupported": 0,
+                "matched_unit": "wedge spans",
+                "matched_links": 10
+              },
+              {
+                "id": "XML-LYRIC-EXTEND-001",
+                "gate": "A11",
+                "unit": "extend elements",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/extend/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "extension continuations",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-LYRIC-IDENTITY-001",
+                "gate": "A11",
+                "unit": "lyrics",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/lyric/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-LYRIC-SYLLABIC-001",
+                "gate": "A11",
+                "unit": "lyrics on single owners",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/lyric/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/data-types/syllabic/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/elision/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "syllable transitions",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TECHNICAL-HAMMER-ON",
+                "gate": "A12",
+                "unit": "hammer-on marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/hammer-on/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "hammer-on pairs",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-TECHNICAL-PULL-OFF",
+                "gate": "A12",
+                "unit": "pull-off marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/pull-off/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "pull-off pairs",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-CUSTOM-NOTATION-001",
+                "gate": "A13",
+                "unit": "custom or explicitly empty notation elements",
+                "basis": "inventory",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/other-notation/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/kind/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              },
+              {
+                "id": "XML-ENDPOINT-WAVY-LINE",
+                "gate": "A13",
+                "unit": "wavy-line marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/wavy-line/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": "wavy-line pairs",
+                "matched_links": 0
+              },
+              {
+                "id": "XML-NAVIGATION-001",
+                "gate": "A14",
+                "unit": "repeat, ending and jump marks",
+                "basis": "interpretation",
+                "checked": 0,
+                "authority": [
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/repeat/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/ending/",
+                  "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/sound/"
+                ],
+                "applicable": 0,
+                "unsupported": 0,
+                "matched_unit": null,
+                "matched_links": 0
+              }
+            ],
+            "scope": "XML-only checks of the relationships named in the v1 acceptance profile. Limitations are listed separately and never become change requests.",
+            "schema": "musicxml-braille-preflight.v1",
+            "status": "FINDINGS_FOUND",
+            "findings": [
+              {
+                "id": "xml-readiness-1",
+                "xml": "<direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"2\" spread=\"0\" /></direction-type><offset>200</offset><staff>1</staff></direction>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[12]/direction[3]",
+                "staff": "1",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Offset places this direction outside the current measure; review intended attachment",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/",
+                "measure": "12",
+                "rule_id": "XML-DIRECTION-OFFSET-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-2",
+                "xml": "<direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"2\" spread=\"15\" /></direction-type><offset>264</offset><staff>1</staff></direction>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[12]/direction[4]",
+                "staff": "1",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Offset places this direction outside the current measure; review intended attachment",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/",
+                "measure": "12",
+                "rule_id": "XML-DIRECTION-OFFSET-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-3",
+                "xml": "<measure number=\"12\" implicit=\"yes\"><direction placement=\"below\"><direction-type><dynamics><pp /></dynamics></direction-type><offset>184</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>0</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"2\" spread=\"0\" /></direction-type><offset>200</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"2\" spread=\"15\" /></direction-type><offset>264</offset><staff>1</staff></direction><note id=\"a012-01-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-08-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-08-n2\"><chord /><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-10-n1\"><rest /><duration>24</duration><voice>1</voice><type>eighth</type><staff>1</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-13-n1\"><rest /><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-14-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-15-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-16-n1\"><pitch><step>C</step><octave>5</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-17-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-18-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-19-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type size=\"cue\">quarter</type><dot /><stem>up</stem><staff>1</staff></note><note id=\"a012-20-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-21-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type size=\"cue\">quarter</type><stem>up</stem><staff>1</staff></note><note id=\"a012-22-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type size=\"cue\">half</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><notations><fermata type=\"upright\">normal</fermata><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-23-n1\"><grace slash=\"yes\" /><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-24-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><beam number=\"2\">begin</beam></note><note id=\"a012-25-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-26-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-27-n1\"><pitch><step>C</step><alter>2</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><accidental>double-sharp</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-28-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><beam number=\"2\">end</beam></note><backup><duration>564</duration></backup><note id=\"a012-04-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a012-05-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-06-n1\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\"1\">continue</beam><notations><tied type=\"start\" /></notations></note><note id=\"a012-07-n1\"><pitch><step>A</step><octave>2</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><stem>up</stem><staff>2</staff><beam number=\"1\">end</beam><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><forward><duration>24</duration><voice>3</voice><staff>1</staff></forward><note id=\"a012-03-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>72</duration><tie type=\"start\" /><voice>3</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><note id=\"a012-02-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>4</voice><type>half</type><stem>down</stem><staff>2</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><note id=\"a012-09-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n2\"><chord /><pitch><step>A</step><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n3\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /><fermata type=\"inverted\">normal</fermata></notations></note><note id=\"a012-11-n1\"><rest /><duration>24</duration><voice>4</voice><type>eighth</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><forward><duration>96</duration><voice>4</voice><staff>2</staff></forward><note id=\"a012-12-n1\"><rest /><duration>96</duration><voice>4</voice><type>half</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note></measure>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[12]",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Encoded extent of staff 1 exceeds its declared meter; check intentional irregular measure",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/",
+                "measure": "12",
+                "rule_id": "XML-MEASURE-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-4",
+                "xml": "<measure number=\"12\" implicit=\"yes\"><direction placement=\"below\"><direction-type><dynamics><pp /></dynamics></direction-type><offset>184</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>0</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"2\" spread=\"0\" /></direction-type><offset>200</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"2\" spread=\"15\" /></direction-type><offset>264</offset><staff>1</staff></direction><note id=\"a012-01-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-08-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-08-n2\"><chord /><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-10-n1\"><rest /><duration>24</duration><voice>1</voice><type>eighth</type><staff>1</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-13-n1\"><rest /><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-14-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-15-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-16-n1\"><pitch><step>C</step><octave>5</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-17-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-18-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-19-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type size=\"cue\">quarter</type><dot /><stem>up</stem><staff>1</staff></note><note id=\"a012-20-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-21-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type size=\"cue\">quarter</type><stem>up</stem><staff>1</staff></note><note id=\"a012-22-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type size=\"cue\">half</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><notations><fermata type=\"upright\">normal</fermata><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-23-n1\"><grace slash=\"yes\" /><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-24-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><beam number=\"2\">begin</beam></note><note id=\"a012-25-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-26-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-27-n1\"><pitch><step>C</step><alter>2</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><accidental>double-sharp</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-28-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><beam number=\"2\">end</beam></note><backup><duration>564</duration></backup><note id=\"a012-04-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a012-05-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-06-n1\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\"1\">continue</beam><notations><tied type=\"start\" /></notations></note><note id=\"a012-07-n1\"><pitch><step>A</step><octave>2</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><stem>up</stem><staff>2</staff><beam number=\"1\">end</beam><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><forward><duration>24</duration><voice>3</voice><staff>1</staff></forward><note id=\"a012-03-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>72</duration><tie type=\"start\" /><voice>3</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><note id=\"a012-02-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>4</voice><type>half</type><stem>down</stem><staff>2</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><note id=\"a012-09-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n2\"><chord /><pitch><step>A</step><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n3\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /><fermata type=\"inverted\">normal</fermata></notations></note><note id=\"a012-11-n1\"><rest /><duration>24</duration><voice>4</voice><type>eighth</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><forward><duration>96</duration><voice>4</voice><staff>2</staff></forward><note id=\"a012-12-n1\"><rest /><duration>96</duration><voice>4</voice><type>half</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note></measure>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[12]",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Encoded extent of staff 2 exceeds its declared meter; check intentional irregular measure",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/",
+                "measure": "12",
+                "rule_id": "XML-MEASURE-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-5",
+                "xml": "<direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>288</offset><staff>1</staff></direction>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[13]/direction[1]",
+                "staff": "1",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Offset places this direction outside the current measure; review intended attachment",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/",
+                "measure": "13",
+                "rule_id": "XML-DIRECTION-OFFSET-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-6",
+                "xml": "<direction placement=\"above\"><direction-type><wedge type=\"diminuendo\" number=\"4\" spread=\"15\" /></direction-type><offset>288</offset><staff>1</staff></direction>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[13]/direction[4]",
+                "staff": "1",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Offset places this direction outside the current measure; review intended attachment",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/",
+                "measure": "13",
+                "rule_id": "XML-DIRECTION-OFFSET-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-7",
+                "xml": "<direction placement=\"above\"><direction-type><wedge type=\"stop\" number=\"4\" spread=\"0\" /></direction-type><offset>408</offset><staff>1</staff></direction>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[13]/direction[5]",
+                "staff": "1",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Offset places this direction outside the current measure; review intended attachment",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/",
+                "measure": "13",
+                "rule_id": "XML-DIRECTION-OFFSET-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-8",
+                "xml": "<measure number=\"13\" implicit=\"yes\"><direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>288</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"3\" spread=\"0\" /></direction-type><offset>16</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"3\" spread=\"15\" /></direction-type><offset>96</offset><staff>1</staff></direction><direction placement=\"above\"><direction-type><wedge type=\"diminuendo\" number=\"4\" spread=\"15\" /></direction-type><offset>288</offset><staff>1</staff></direction><direction placement=\"above\"><direction-type><wedge type=\"stop\" number=\"4\" spread=\"0\" /></direction-type><offset>408</offset><staff>1</staff></direction><note id=\"a013-01-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>whole</type><staff>1</staff><notations><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a013-05-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>quarter</type><stem>down</stem><staff>1</staff><notations><slur type=\"start\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><note id=\"a013-06-n1\"><pitch><step>A</step><alter>1</alter><octave>4</octave></pitch><duration>144</duration><voice>1</voice><type>half</type><dot /><accidental>sharp</accidental><stem>down</stem><staff>1</staff><notations><fermata type=\"inverted\">normal</fermata><slur type=\"stop\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><backup><duration>384</duration></backup><note id=\"a013-07-n1\"><rest /><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a013-08-n1\"><pitch><step>E</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a013-09-n1\"><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-10-n1\"><pitch><step>G</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a013-11-n1\"><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-12-n1\"><pitch><step>E</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-13-n1\"><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>2</voice><type size=\"cue\">quarter</type><dot /><accidental>sharp</accidental><stem>up</stem><staff>1</staff></note><note id=\"a013-14-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><notations><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a013-15-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a013-16-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-17-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-18-n1\"><pitch><step>G</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a013-19-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-20-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-21-n1\"><pitch><step>G</step><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a013-22-n1\"><pitch><step>E</step><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-23-n1\"><pitch><step>C</step><alter>1</alter><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam></note><note id=\"a013-24-n1\"><pitch><step>B</step><alter>-1</alter><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><accidental>flat</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a013-25-n1\"><pitch><step>G</step><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-26-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><backup><duration>432</duration></backup><note id=\"a013-02-n1\"><pitch><step>A</step><alter>1</alter><octave>3</octave></pitch><duration>144</duration><voice>4</voice><type>half</type><dot /><accidental>sharp</accidental><stem>down</stem><staff>1</staff></note><note id=\"a013-03-n1\"><pitch><step>B</step><octave>3</octave></pitch><duration>48</duration><voice>4</voice><type>quarter</type><stem>down</stem><staff>1</staff></note><note id=\"a013-04-n1\"><pitch><step>C</step><alter>1</alter><octave>4</octave></pitch><duration>96</duration><voice>4</voice><type>half</type><accidental>sharp</accidental><stem>down</stem><staff>1</staff></note><note id=\"a013-04-n2\"><chord /><pitch><step>E</step><octave>4</octave></pitch><duration>96</duration><voice>4</voice><type>half</type><stem>down</stem><staff>1</staff><notations><fermata type=\"inverted\">normal</fermata></notations></note><barline location=\"right\"><bar-style>light-heavy</bar-style></barline></measure>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[13]",
+                "state": "REVIEW_REQUIRED",
+                "reason": "Encoded extent of staff 1 exceeds its declared meter; check intentional irregular measure",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/",
+                "measure": "13",
+                "rule_id": "XML-MEASURE-001",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "xml_note_id": null,
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M04",
+                  "M10"
+                ]
+              },
+              {
+                "id": "xml-readiness-9",
+                "xml": "<note id=\"a012-06-n1\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\"1\">continue</beam><notations><tied type=\"start\" /></notations></note>",
+                "part": "P1",
+                "path": "/score-partwise/part[1]/measure[12]/note[23]",
+                "staff": "2",
+                "state": "REVIEW_REQUIRED",
+                "voice": "2",
+                "reason": "Tie joins equal pitches across a time gap (held or accumulating notation); ties normally join consecutive notes, so review the intended Braille tie",
+                "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/",
+                "measure": "12",
+                "rule_id": "XML-TIE-TRACE-003",
+                "category": "XML_ENCODING",
+                "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
+                "related_xml": "<note id=\"a012-09-n3\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /><fermata type=\"inverted\">normal</fermata></notations></note>",
+                "xml_note_id": "a012-06-n1",
+                "related_path": "/score-partwise/part[1]/measure[12]/note[29]",
+                "classification": "unresolved_observation",
+                "requirement_ids": [
+                  "M07"
+                ]
+              }
+            ],
+            "not_checked": [],
+            "complete_encoding_validation": false
+          },
+          "input_contract": {
+            "reason": "Uncompressed UTF-8 MusicXML 4.0 score-partwise",
+            "outcome": "accepted",
+            "rule_id": "XML-INPUT-CONTRACT-001",
+            "utf8_bom": false,
+            "size_bytes": 78266,
+            "limit_bytes": 5000000,
+            "qualifications": [],
+            "doctype_version": null,
+            "declared_version": "4.0",
+            "version_conflict": false,
+            "effective_version": "4.0",
+            "supported_version": "4.0"
+          },
+          "input_coverage": {
+            "meaning": "The input is accepted 4.0, schema-valid, and every applicable target of every v1 rule was checked. Says nothing about relationships outside the profile.",
+            "complete": true,
+            "qualified_input": false,
+            "unsupported_targets": 0
+          },
+          "coverage_limits": [
+            "MusicXML 4.0 schema validates structure; documents declaring another version are audited with a stated qualification and their schema errors stay review observations.",
+            "Only relationships named in the v1 acceptance profile are checked. Content absent from the XML is never inferred; no source-image comparison, BRF decoding or SMB output guarantee.",
+            "Navigation is executed for ordinary repeats, endings and one D.C./D.S. with Fine or To Coda/Coda; arbitrary interacting jump programs are reported unsupported, and conventional defaults for repeat times and after-jump are recorded as assumptions.",
+            "Free text, custom glyphs (other-* elements, smufl), specialized tuning and genuinely ambiguous ownership are localized limitations, never change requests.",
+            "No artistic fingering, phrasing, enharmonic spelling, ornament realization, lyric language or specialist Braille reading judgement."
+          ],
+          "schema_validation": {
+            "valid": true,
+            "errors": [],
+            "schema": "MusicXML 4.0",
+            "source": "https://www.w3.org/2021/06/musicxml40/musicxml-reference/"
+          },
+          "acceptance_profile": {
+            "id": "musicxml-braille-readiness-acceptance-v1",
+            "meaning": "checker_profile_complete describes the checker against the v1 contract; input_coverage_complete describes this file only.",
+            "input_coverage_complete": true,
+            "checker_profile_complete": true
+          },
+          "implementation_hashes": {
+            "brf_verifier.py": "a21b541c0d45f1c2d5fe9153dc9647ffec4f7e8b4cfc2c8b0baa453ffa0b6558",
+            "braille/checker/meter.py": "047c2f3b362efc64e2b4fc1d0ccbc3fcbd10993413b58ea880e35754f5a13dbc",
+            "braille/checker/lyrics.py": "837586c3bd19eb099986cdafd972fff3d1ae7e9b90eae6a88854a6df18a25e9d",
+            "braille/checker/tuplets.py": "14a28a89765eec2183e8e5bc61799d6a4b61fa0157a53e92688c81342efc9b06",
+            "schemas/musicxml40/xml.xsd": "616a3077df5cfc954ac74a75abe9697b95eef7a85dbe09367d995a483e840eb5",
+            "braille/checker/registry.py": "18a971e4db61e2576f9945e91a816ec656e5053372ba5f3794a9b7c048ea4e61",
+            "braille/checker/tremolos.py": "3651fbcb4ebb7ded260b9f302b7e6387464eb1e09c0cda3ffa005a72b4adbac1",
+            "braille/checker/preflight.py": "71c1980a18851a413866f95439ff0001ef137391128e20d77ca333a2c2ff69f0",
+            "braille/checker/readiness.py": "94af72d23e45abfd8c52424f063e2562ac74a66371a472d81c6949596410a997",
+            "braille/checker/technical.py": "2d73b0d2a71b480f17cc79992396e9bdae27302e0da6075d1cf8688dfb88b58c",
+            "schemas/musicxml40/xlink.xsd": "6e601f8eeb41618b50e4c7f944dff754e57ea43b602755470dda24c9c2f6df92",
+            "braille/checker/navigation.py": "ec6b37a520fc1d0ae07529f5d62bdbcec8adaf5b6a73b244481748226566e923",
+            "braille/checker/tie_chains.py": "84f40de71cb6c30296d6a586f4806ceb61c06cd4428774f09453c7fc4962eb03",
+            "schemas/musicxml40/musicxml.xsd": "bfe37ed25a9ec00e6f2591d53df260b84efe12aed209ba3ac0a76f9287665a99",
+            "braille/checker/relationships.py": "53baefe12785e316ba1687e94ca5c3d798fef398ab49ada4a9926274baf48e83",
+            "braille/checker/input_contract.py": "a196390d1bb8f4c828d66becb1507a784deb6269c6b8cf3e8b9b1dbcb683296f",
+            "braille/checker/encoding_checks.py": "f9fa70236c68d9de2b6768f1d0814de93e04c27f47c0ccb58625efede132d7ef",
+            "braille/checker/schema_manifest.py": "526cc19198b2de3d32cf89269c062555fe710890987b443a28be76ce5be0b0e5",
+            "docs/braille-xml-change-request.schema.json": "c066290a0e1234adfb83cc5dec93068841a3749826e8aed04e01211a44a56e54"
+          },
+          "complete_encoding_validation": false
+        },
+        "schema": "music.encoding_delivery.v1",
+        "audit_id": "e9060cd38965c5c930476143a8c51de69052522aec06d0e01ac0e33edaf2249a",
+        "xml_sha256": "22bd667edeb722b1d8b44a841d9a6f9e12309dbb4492df63d3079e21b746b6b1",
+        "report_sha256": "a2443a9fa84fb4e09f267951cae042f538a92ce4b30a5d00c95137583aab78f0",
+        "change_request": {
+          "piece": "current_xml",
+          "schema": "braille-xml-change-request.v1",
+          "source": {
+            "xml_path": "source.musicxml",
+            "xml_sha256": "22bd667edeb722b1d8b44a841d9a6f9e12309dbb4492df63d3079e21b746b6b1",
+            "score_reference": null,
+            "score_reference_sha256": null
+          },
+          "changes": [
+            {
+              "id": "xml-readiness-1",
+              "problem": "Offset places this direction outside the current measure; review intended attachment",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[12]/direction[3]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "12",
+                  "note_id": null,
+                  "before_xml": "<direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"2\" spread=\"0\" /></direction-type><offset>200</offset><staff>1</staff></direction>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "ad6ad624f1c7d3eed07e30e299550158cf22116112d92da9bdce3bc0f522fa52"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-1\", \"measure\": \"12\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[12]/direction[3]\", \"reason\": \"Offset places this direction outside the current measure; review intended attachment\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-DIRECTION-OFFSET-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<direction placement=\\\"below\\\"><direction-type><wedge type=\\\"crescendo\\\" number=\\\"2\\\" spread=\\\"0\\\" /></direction-type><offset>200</offset><staff>1</staff></direction>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-DIRECTION-OFFSET-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-2",
+              "problem": "Offset places this direction outside the current measure; review intended attachment",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[12]/direction[4]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "12",
+                  "note_id": null,
+                  "before_xml": "<direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"2\" spread=\"15\" /></direction-type><offset>264</offset><staff>1</staff></direction>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "a65a08f085deed3a87dc7419ed23e77c570cc168e895afa2885839c47c38ea20"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-2\", \"measure\": \"12\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[12]/direction[4]\", \"reason\": \"Offset places this direction outside the current measure; review intended attachment\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-DIRECTION-OFFSET-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<direction placement=\\\"below\\\"><direction-type><wedge type=\\\"stop\\\" number=\\\"2\\\" spread=\\\"15\\\" /></direction-type><offset>264</offset><staff>1</staff></direction>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-DIRECTION-OFFSET-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-3",
+              "problem": "Encoded extent of staff 1 exceeds its declared meter; check intentional irregular measure",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[12]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "12",
+                  "note_id": null,
+                  "before_xml": "<measure number=\"12\" implicit=\"yes\"><direction placement=\"below\"><direction-type><dynamics><pp /></dynamics></direction-type><offset>184</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>0</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"2\" spread=\"0\" /></direction-type><offset>200</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"2\" spread=\"15\" /></direction-type><offset>264</offset><staff>1</staff></direction><note id=\"a012-01-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-08-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-08-n2\"><chord /><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-10-n1\"><rest /><duration>24</duration><voice>1</voice><type>eighth</type><staff>1</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-13-n1\"><rest /><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-14-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-15-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-16-n1\"><pitch><step>C</step><octave>5</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-17-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-18-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-19-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type size=\"cue\">quarter</type><dot /><stem>up</stem><staff>1</staff></note><note id=\"a012-20-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-21-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type size=\"cue\">quarter</type><stem>up</stem><staff>1</staff></note><note id=\"a012-22-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type size=\"cue\">half</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><notations><fermata type=\"upright\">normal</fermata><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-23-n1\"><grace slash=\"yes\" /><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-24-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><beam number=\"2\">begin</beam></note><note id=\"a012-25-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-26-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-27-n1\"><pitch><step>C</step><alter>2</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><accidental>double-sharp</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-28-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><beam number=\"2\">end</beam></note><backup><duration>564</duration></backup><note id=\"a012-04-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a012-05-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-06-n1\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\"1\">continue</beam><notations><tied type=\"start\" /></notations></note><note id=\"a012-07-n1\"><pitch><step>A</step><octave>2</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><stem>up</stem><staff>2</staff><beam number=\"1\">end</beam><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><forward><duration>24</duration><voice>3</voice><staff>1</staff></forward><note id=\"a012-03-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>72</duration><tie type=\"start\" /><voice>3</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><note id=\"a012-02-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>4</voice><type>half</type><stem>down</stem><staff>2</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><note id=\"a012-09-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n2\"><chord /><pitch><step>A</step><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n3\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /><fermata type=\"inverted\">normal</fermata></notations></note><note id=\"a012-11-n1\"><rest /><duration>24</duration><voice>4</voice><type>eighth</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><forward><duration>96</duration><voice>4</voice><staff>2</staff></forward><note id=\"a012-12-n1\"><rest /><duration>96</duration><voice>4</voice><type>half</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note></measure>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "e8f0edbf5916b35c4115cb490da1d39d890078b9f6ad2857ce54b8623d780b6e"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-3\", \"measure\": \"12\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[12]\", \"reason\": \"Encoded extent of staff 1 exceeds its declared meter; check intentional irregular measure\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-MEASURE-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<measure number=\\\"12\\\" implicit=\\\"yes\\\"><direction placement=\\\"below\\\"><direction-type><dynamics><pp /></dynamics></direction-type><offset>184</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><words font-style=\\\"italic\\\" default-y=\\\"-45\\\">rit.</words></direction-type><offset>0</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><wedge type=\\\"crescendo\\\" number=\\\"2\\\" spread=\\\"0\\\" /></direction-type><offset>200</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><wedge type=\\\"stop\\\" number=\\\"2\\\" spread=\\\"15\\\" /></direction-type><offset>264</offset><staff>1</staff></direction><note id=\\\"a012-01-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><tie type=\\\"start\\\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"start\\\" /><slur type=\\\"stop\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a012-08-n1\\\"><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"stop\\\" /></notations></note><note id=\\\"a012-08-n2\\\"><chord /><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"stop\\\" /><fermata type=\\\"upright\\\">normal</fermata></notations></note><note id=\\\"a012-10-n1\\\"><rest /><duration>24</duration><voice>1</voice><type>eighth</type><staff>1</staff><notations><fermata type=\\\"upright\\\">normal</fermata></notations></note><note id=\\\"a012-13-n1\\\"><rest /><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a012-14-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><slur type=\\\"start\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a012-15-n1\\\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a012-16-n1\\\"><pitch><step>C</step><octave>5</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a012-17-n1\\\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a012-18-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a012-19-n1\\\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type size=\\\"cue\\\">quarter</type><dot /><stem>up</stem><staff>1</staff></note><note id=\\\"a012-20-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff></note><note id=\\\"a012-21-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type size=\\\"cue\\\">quarter</type><stem>up</stem><staff>1</staff></note><note id=\\\"a012-22-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type size=\\\"cue\\\">half</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><notations><fermata type=\\\"upright\\\">normal</fermata><slur type=\\\"stop\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a012-23-n1\\\"><grace slash=\\\"yes\\\" /><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>eighth</type><stem>up</stem><staff>1</staff></note><note id=\\\"a012-24-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><beam number=\\\"2\\\">begin</beam></note><note id=\\\"a012-25-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam><beam number=\\\"2\\\">continue</beam></note><note id=\\\"a012-26-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam><beam number=\\\"2\\\">continue</beam></note><note id=\\\"a012-27-n1\\\"><pitch><step>C</step><alter>2</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><accidental>double-sharp</accidental><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam><beam number=\\\"2\\\">continue</beam></note><note id=\\\"a012-28-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><beam number=\\\"2\\\">end</beam></note><backup><duration>564</duration></backup><note id=\\\"a012-04-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam></note><note id=\\\"a012-05-n1\\\"><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a012-06-n1\\\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\\\"start\\\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\\\"1\\\">continue</beam><notations><tied type=\\\"start\\\" /></notations></note><note id=\\\"a012-07-n1\\\"><pitch><step>A</step><octave>2</octave></pitch><duration>24</duration><tie type=\\\"start\\\" /><voice>2</voice><type>eighth</type><stem>up</stem><staff>2</staff><beam number=\\\"1\\\">end</beam><notations><tied type=\\\"start\\\" /></notations></note><backup><duration>96</duration></backup><forward><duration>24</duration><voice>3</voice><staff>1</staff></forward><note id=\\\"a012-03-n1\\\"><pitch><step>C</step><octave>4</octave></pitch><duration>72</duration><tie type=\\\"start\\\" /><voice>3</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\\\"start\\\" /></notations></note><backup><duration>96</duration></backup><note id=\\\"a012-02-n1\\\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>96</duration><tie type=\\\"start\\\" /><voice>4</voice><type>half</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"start\\\" /><slur type=\\\"stop\\\" number=\\\"2\\\" placement=\\\"below\\\" orientation=\\\"under\\\" /></notations></note><note id=\\\"a012-09-n1\\\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /></notations></note><note id=\\\"a012-09-n2\\\"><chord /><pitch><step>A</step><octave>2</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /></notations></note><note id=\\\"a012-09-n3\\\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /><fermata type=\\\"inverted\\\">normal</fermata></notations></note><note id=\\\"a012-11-n1\\\"><rest /><duration>24</duration><voice>4</voice><type>eighth</type><staff>2</staff><notations><fermata type=\\\"upright\\\">normal</fermata></notations></note><forward><duration>96</duration><voice>4</voice><staff>2</staff></forward><note id=\\\"a012-12-n1\\\"><rest /><duration>96</duration><voice>4</voice><type>half</type><staff>2</staff><notations><fermata type=\\\"upright\\\">normal</fermata></notations></note></measure>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-MEASURE-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-4",
+              "problem": "Encoded extent of staff 2 exceeds its declared meter; check intentional irregular measure",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[12]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "12",
+                  "note_id": null,
+                  "before_xml": "<measure number=\"12\" implicit=\"yes\"><direction placement=\"below\"><direction-type><dynamics><pp /></dynamics></direction-type><offset>184</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>0</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"2\" spread=\"0\" /></direction-type><offset>200</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"2\" spread=\"15\" /></direction-type><offset>264</offset><staff>1</staff></direction><note id=\"a012-01-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-08-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-08-n2\"><chord /><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-10-n1\"><rest /><duration>24</duration><voice>1</voice><type>eighth</type><staff>1</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><note id=\"a012-13-n1\"><rest /><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-14-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-15-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-16-n1\"><pitch><step>C</step><octave>5</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a012-17-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-18-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a012-19-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type size=\"cue\">quarter</type><dot /><stem>up</stem><staff>1</staff></note><note id=\"a012-20-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-21-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type size=\"cue\">quarter</type><stem>up</stem><staff>1</staff></note><note id=\"a012-22-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type size=\"cue\">half</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><notations><fermata type=\"upright\">normal</fermata><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a012-23-n1\"><grace slash=\"yes\" /><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>eighth</type><stem>up</stem><staff>1</staff></note><note id=\"a012-24-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><beam number=\"2\">begin</beam></note><note id=\"a012-25-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-26-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-27-n1\"><pitch><step>C</step><alter>2</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><accidental>double-sharp</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam><beam number=\"2\">continue</beam></note><note id=\"a012-28-n1\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\"cue\">16th</type><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><beam number=\"2\">end</beam></note><backup><duration>564</duration></backup><note id=\"a012-04-n1\"><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a012-05-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a012-06-n1\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\"1\">continue</beam><notations><tied type=\"start\" /></notations></note><note id=\"a012-07-n1\"><pitch><step>A</step><octave>2</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><stem>up</stem><staff>2</staff><beam number=\"1\">end</beam><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><forward><duration>24</duration><voice>3</voice><staff>1</staff></forward><note id=\"a012-03-n1\"><pitch><step>C</step><octave>4</octave></pitch><duration>72</duration><tie type=\"start\" /><voice>3</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /></notations></note><backup><duration>96</duration></backup><note id=\"a012-02-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>96</duration><tie type=\"start\" /><voice>4</voice><type>half</type><stem>down</stem><staff>2</staff><notations><tied type=\"start\" /><slur type=\"stop\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><note id=\"a012-09-n1\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n2\"><chord /><pitch><step>A</step><octave>2</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /></notations></note><note id=\"a012-09-n3\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\"stop\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\"stop\" /><fermata type=\"inverted\">normal</fermata></notations></note><note id=\"a012-11-n1\"><rest /><duration>24</duration><voice>4</voice><type>eighth</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note><forward><duration>96</duration><voice>4</voice><staff>2</staff></forward><note id=\"a012-12-n1\"><rest /><duration>96</duration><voice>4</voice><type>half</type><staff>2</staff><notations><fermata type=\"upright\">normal</fermata></notations></note></measure>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "e8f0edbf5916b35c4115cb490da1d39d890078b9f6ad2857ce54b8623d780b6e"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-4\", \"measure\": \"12\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[12]\", \"reason\": \"Encoded extent of staff 2 exceeds its declared meter; check intentional irregular measure\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-MEASURE-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<measure number=\\\"12\\\" implicit=\\\"yes\\\"><direction placement=\\\"below\\\"><direction-type><dynamics><pp /></dynamics></direction-type><offset>184</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><words font-style=\\\"italic\\\" default-y=\\\"-45\\\">rit.</words></direction-type><offset>0</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><wedge type=\\\"crescendo\\\" number=\\\"2\\\" spread=\\\"0\\\" /></direction-type><offset>200</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><wedge type=\\\"stop\\\" number=\\\"2\\\" spread=\\\"15\\\" /></direction-type><offset>264</offset><staff>1</staff></direction><note id=\\\"a012-01-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>96</duration><tie type=\\\"start\\\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"start\\\" /><slur type=\\\"stop\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a012-08-n1\\\"><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"stop\\\" /></notations></note><note id=\\\"a012-08-n2\\\"><chord /><pitch><step>A</step><octave>4</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>1</voice><type>quarter</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"stop\\\" /><fermata type=\\\"upright\\\">normal</fermata></notations></note><note id=\\\"a012-10-n1\\\"><rest /><duration>24</duration><voice>1</voice><type>eighth</type><staff>1</staff><notations><fermata type=\\\"upright\\\">normal</fermata></notations></note><note id=\\\"a012-13-n1\\\"><rest /><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a012-14-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><slur type=\\\"start\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a012-15-n1\\\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a012-16-n1\\\"><pitch><step>C</step><octave>5</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a012-17-n1\\\"><pitch><step>B</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a012-18-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>16</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a012-19-n1\\\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>1</voice><type size=\\\"cue\\\">quarter</type><dot /><stem>up</stem><staff>1</staff></note><note id=\\\"a012-20-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>1</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff></note><note id=\\\"a012-21-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>48</duration><voice>1</voice><type size=\\\"cue\\\">quarter</type><stem>up</stem><staff>1</staff></note><note id=\\\"a012-22-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>96</duration><voice>1</voice><type size=\\\"cue\\\">half</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><notations><fermata type=\\\"upright\\\">normal</fermata><slur type=\\\"stop\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a012-23-n1\\\"><grace slash=\\\"yes\\\" /><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><voice>1</voice><type>eighth</type><stem>up</stem><staff>1</staff></note><note id=\\\"a012-24-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><beam number=\\\"2\\\">begin</beam></note><note id=\\\"a012-25-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam><beam number=\\\"2\\\">continue</beam></note><note id=\\\"a012-26-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam><beam number=\\\"2\\\">continue</beam></note><note id=\\\"a012-27-n1\\\"><pitch><step>C</step><alter>2</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><accidental>double-sharp</accidental><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam><beam number=\\\"2\\\">continue</beam></note><note id=\\\"a012-28-n1\\\"><pitch><step>D</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><voice>1</voice><type size=\\\"cue\\\">16th</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><beam number=\\\"2\\\">end</beam></note><backup><duration>564</duration></backup><note id=\\\"a012-04-n1\\\"><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam></note><note id=\\\"a012-05-n1\\\"><pitch><step>C</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type>eighth</type><stem>down</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a012-06-n1\\\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\\\"start\\\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\\\"1\\\">continue</beam><notations><tied type=\\\"start\\\" /></notations></note><note id=\\\"a012-07-n1\\\"><pitch><step>A</step><octave>2</octave></pitch><duration>24</duration><tie type=\\\"start\\\" /><voice>2</voice><type>eighth</type><stem>up</stem><staff>2</staff><beam number=\\\"1\\\">end</beam><notations><tied type=\\\"start\\\" /></notations></note><backup><duration>96</duration></backup><forward><duration>24</duration><voice>3</voice><staff>1</staff></forward><note id=\\\"a012-03-n1\\\"><pitch><step>C</step><octave>4</octave></pitch><duration>72</duration><tie type=\\\"start\\\" /><voice>3</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\\\"start\\\" /></notations></note><backup><duration>96</duration></backup><note id=\\\"a012-02-n1\\\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>96</duration><tie type=\\\"start\\\" /><voice>4</voice><type>half</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"start\\\" /><slur type=\\\"stop\\\" number=\\\"2\\\" placement=\\\"below\\\" orientation=\\\"under\\\" /></notations></note><note id=\\\"a012-09-n1\\\"><pitch><step>F</step><alter>1</alter><octave>2</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /></notations></note><note id=\\\"a012-09-n2\\\"><chord /><pitch><step>A</step><octave>2</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /></notations></note><note id=\\\"a012-09-n3\\\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /><fermata type=\\\"inverted\\\">normal</fermata></notations></note><note id=\\\"a012-11-n1\\\"><rest /><duration>24</duration><voice>4</voice><type>eighth</type><staff>2</staff><notations><fermata type=\\\"upright\\\">normal</fermata></notations></note><forward><duration>96</duration><voice>4</voice><staff>2</staff></forward><note id=\\\"a012-12-n1\\\"><rest /><duration>96</duration><voice>4</voice><type>half</type><staff>2</staff><notations><fermata type=\\\"upright\\\">normal</fermata></notations></note></measure>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-MEASURE-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-5",
+              "problem": "Offset places this direction outside the current measure; review intended attachment",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[13]/direction[1]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "13",
+                  "note_id": null,
+                  "before_xml": "<direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>288</offset><staff>1</staff></direction>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "4e925cfe046fe04dbc573cd41f6ff2a4bd5e8238eff28ff9e8f7b1efabfe01e5"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-5\", \"measure\": \"13\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[13]/direction[1]\", \"reason\": \"Offset places this direction outside the current measure; review intended attachment\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-DIRECTION-OFFSET-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<direction placement=\\\"below\\\"><direction-type><words font-style=\\\"italic\\\" default-y=\\\"-45\\\">rit.</words></direction-type><offset>288</offset><staff>1</staff></direction>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-DIRECTION-OFFSET-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-6",
+              "problem": "Offset places this direction outside the current measure; review intended attachment",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[13]/direction[4]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "13",
+                  "note_id": null,
+                  "before_xml": "<direction placement=\"above\"><direction-type><wedge type=\"diminuendo\" number=\"4\" spread=\"15\" /></direction-type><offset>288</offset><staff>1</staff></direction>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "df8b72b0ae34860837a4f37e201aa8672cc835ab569ac4ceadfb1304b45f06d1"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-6\", \"measure\": \"13\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[13]/direction[4]\", \"reason\": \"Offset places this direction outside the current measure; review intended attachment\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-DIRECTION-OFFSET-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<direction placement=\\\"above\\\"><direction-type><wedge type=\\\"diminuendo\\\" number=\\\"4\\\" spread=\\\"15\\\" /></direction-type><offset>288</offset><staff>1</staff></direction>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-DIRECTION-OFFSET-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-7",
+              "problem": "Offset places this direction outside the current measure; review intended attachment",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[13]/direction[5]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "13",
+                  "note_id": null,
+                  "before_xml": "<direction placement=\"above\"><direction-type><wedge type=\"stop\" number=\"4\" spread=\"0\" /></direction-type><offset>408</offset><staff>1</staff></direction>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "30f423227de82b19fa54ece3fa02b3001e224c09b0a4cd9f4ef2e22b9c1b757c"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-7\", \"measure\": \"13\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[13]/direction[5]\", \"reason\": \"Offset places this direction outside the current measure; review intended attachment\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-DIRECTION-OFFSET-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<direction placement=\\\"above\\\"><direction-type><wedge type=\\\"stop\\\" number=\\\"4\\\" spread=\\\"0\\\" /></direction-type><offset>408</offset><staff>1</staff></direction>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-DIRECTION-OFFSET-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/direction/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-8",
+              "problem": "Encoded extent of staff 1 exceeds its declared meter; check intentional irregular measure",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[13]",
+                  "staff": "1",
+                  "voice": "1",
+                  "measure": "13",
+                  "note_id": null,
+                  "before_xml": "<measure number=\"13\" implicit=\"yes\"><direction placement=\"below\"><direction-type><words font-style=\"italic\" default-y=\"-45\">rit.</words></direction-type><offset>288</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"crescendo\" number=\"3\" spread=\"0\" /></direction-type><offset>16</offset><staff>1</staff></direction><direction placement=\"below\"><direction-type><wedge type=\"stop\" number=\"3\" spread=\"15\" /></direction-type><offset>96</offset><staff>1</staff></direction><direction placement=\"above\"><direction-type><wedge type=\"diminuendo\" number=\"4\" spread=\"15\" /></direction-type><offset>288</offset><staff>1</staff></direction><direction placement=\"above\"><direction-type><wedge type=\"stop\" number=\"4\" spread=\"0\" /></direction-type><offset>408</offset><staff>1</staff></direction><note id=\"a013-01-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>whole</type><staff>1</staff><notations><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a013-05-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>quarter</type><stem>down</stem><staff>1</staff><notations><slur type=\"start\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><note id=\"a013-06-n1\"><pitch><step>A</step><alter>1</alter><octave>4</octave></pitch><duration>144</duration><voice>1</voice><type>half</type><dot /><accidental>sharp</accidental><stem>down</stem><staff>1</staff><notations><fermata type=\"inverted\">normal</fermata><slur type=\"stop\" number=\"2\" placement=\"below\" orientation=\"under\" /></notations></note><backup><duration>384</duration></backup><note id=\"a013-07-n1\"><rest /><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a013-08-n1\"><pitch><step>E</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a013-09-n1\"><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-10-n1\"><pitch><step>G</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a013-11-n1\"><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-12-n1\"><pitch><step>E</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-13-n1\"><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>2</voice><type size=\"cue\">quarter</type><dot /><accidental>sharp</accidental><stem>up</stem><staff>1</staff></note><note id=\"a013-14-n1\"><pitch><step>B</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><notations><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a013-15-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /><slur type=\"start\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><note id=\"a013-16-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-17-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-18-n1\"><pitch><step>G</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam><notations><tuplet type=\"start\" number=\"1\" bracket=\"no\" placement=\"above\" /></notations></note><note id=\"a013-19-n1\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-20-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\"cue\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><tuplet type=\"stop\" number=\"1\" /></notations></note><note id=\"a013-21-n1\"><pitch><step>G</step><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a013-22-n1\"><pitch><step>E</step><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-23-n1\"><pitch><step>C</step><alter>1</alter><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam></note><note id=\"a013-24-n1\"><pitch><step>B</step><alter>-1</alter><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><accidental>flat</accidental><stem>up</stem><staff>1</staff><beam number=\"1\">begin</beam></note><note id=\"a013-25-n1\"><pitch><step>G</step><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">continue</beam></note><note id=\"a013-26-n1\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\"cue\">eighth</type><stem>up</stem><staff>1</staff><beam number=\"1\">end</beam><notations><slur type=\"stop\" number=\"1\" placement=\"above\" orientation=\"over\" /></notations></note><backup><duration>432</duration></backup><note id=\"a013-02-n1\"><pitch><step>A</step><alter>1</alter><octave>3</octave></pitch><duration>144</duration><voice>4</voice><type>half</type><dot /><accidental>sharp</accidental><stem>down</stem><staff>1</staff></note><note id=\"a013-03-n1\"><pitch><step>B</step><octave>3</octave></pitch><duration>48</duration><voice>4</voice><type>quarter</type><stem>down</stem><staff>1</staff></note><note id=\"a013-04-n1\"><pitch><step>C</step><alter>1</alter><octave>4</octave></pitch><duration>96</duration><voice>4</voice><type>half</type><accidental>sharp</accidental><stem>down</stem><staff>1</staff></note><note id=\"a013-04-n2\"><chord /><pitch><step>E</step><octave>4</octave></pitch><duration>96</duration><voice>4</voice><type>half</type><stem>down</stem><staff>1</staff><notations><fermata type=\"inverted\">normal</fermata></notations></note><barline location=\"right\"><bar-style>light-heavy</bar-style></barline></measure>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "54dbb6874fad9afd25a60d518fed8809fcf28d251d0e31a617ddb7ac1ed681d6"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-8\", \"measure\": \"13\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[13]\", \"reason\": \"Encoded extent of staff 1 exceeds its declared meter; check intentional irregular measure\", \"requirement_ids\": [\"M04\", \"M10\"], \"rule_id\": \"XML-MEASURE-001\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/\", \"state\": \"REVIEW_REQUIRED\", \"xml\": \"<measure number=\\\"13\\\" implicit=\\\"yes\\\"><direction placement=\\\"below\\\"><direction-type><words font-style=\\\"italic\\\" default-y=\\\"-45\\\">rit.</words></direction-type><offset>288</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><wedge type=\\\"crescendo\\\" number=\\\"3\\\" spread=\\\"0\\\" /></direction-type><offset>16</offset><staff>1</staff></direction><direction placement=\\\"below\\\"><direction-type><wedge type=\\\"stop\\\" number=\\\"3\\\" spread=\\\"15\\\" /></direction-type><offset>96</offset><staff>1</staff></direction><direction placement=\\\"above\\\"><direction-type><wedge type=\\\"diminuendo\\\" number=\\\"4\\\" spread=\\\"15\\\" /></direction-type><offset>288</offset><staff>1</staff></direction><direction placement=\\\"above\\\"><direction-type><wedge type=\\\"stop\\\" number=\\\"4\\\" spread=\\\"0\\\" /></direction-type><offset>408</offset><staff>1</staff></direction><note id=\\\"a013-01-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>192</duration><voice>1</voice><type>whole</type><staff>1</staff><notations><slur type=\\\"start\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a013-05-n1\\\"><pitch><step>B</step><octave>4</octave></pitch><duration>48</duration><voice>1</voice><type>quarter</type><stem>down</stem><staff>1</staff><notations><slur type=\\\"start\\\" number=\\\"2\\\" placement=\\\"below\\\" orientation=\\\"under\\\" /></notations></note><note id=\\\"a013-06-n1\\\"><pitch><step>A</step><alter>1</alter><octave>4</octave></pitch><duration>144</duration><voice>1</voice><type>half</type><dot /><accidental>sharp</accidental><stem>down</stem><staff>1</staff><notations><fermata type=\\\"inverted\\\">normal</fermata><slur type=\\\"stop\\\" number=\\\"2\\\" placement=\\\"below\\\" orientation=\\\"under\\\" /></notations></note><backup><duration>384</duration></backup><note id=\\\"a013-07-n1\\\"><rest /><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><staff>1</staff><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a013-08-n1\\\"><pitch><step>E</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam></note><note id=\\\"a013-09-n1\\\"><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a013-10-n1\\\"><pitch><step>G</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a013-11-n1\\\"><pitch><step>F</step><alter>1</alter><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a013-12-n1\\\"><pitch><step>E</step><octave>4</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a013-13-n1\\\"><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><duration>72</duration><voice>2</voice><type size=\\\"cue\\\">quarter</type><dot /><accidental>sharp</accidental><stem>up</stem><staff>1</staff></note><note id=\\\"a013-14-n1\\\"><pitch><step>B</step><octave>4</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff><notations><slur type=\\\"stop\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a013-15-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /><slur type=\\\"start\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><note id=\\\"a013-16-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a013-17-n1\\\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a013-18-n1\\\"><pitch><step>G</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam><notations><tuplet type=\\\"start\\\" number=\\\"1\\\" bracket=\\\"no\\\" placement=\\\"above\\\" /></notations></note><note id=\\\"a013-19-n1\\\"><pitch><step>F</step><alter>1</alter><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a013-20-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>16</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes><normal-type>eighth</normal-type></time-modification><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><tuplet type=\\\"stop\\\" number=\\\"1\\\" /></notations></note><note id=\\\"a013-21-n1\\\"><pitch><step>G</step><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam></note><note id=\\\"a013-22-n1\\\"><pitch><step>E</step><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a013-23-n1\\\"><pitch><step>C</step><alter>1</alter><octave>6</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><accidental>sharp</accidental><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam></note><note id=\\\"a013-24-n1\\\"><pitch><step>B</step><alter>-1</alter><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><accidental>flat</accidental><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">begin</beam></note><note id=\\\"a013-25-n1\\\"><pitch><step>G</step><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">continue</beam></note><note id=\\\"a013-26-n1\\\"><pitch><step>E</step><octave>5</octave></pitch><duration>24</duration><voice>2</voice><type size=\\\"cue\\\">eighth</type><stem>up</stem><staff>1</staff><beam number=\\\"1\\\">end</beam><notations><slur type=\\\"stop\\\" number=\\\"1\\\" placement=\\\"above\\\" orientation=\\\"over\\\" /></notations></note><backup><duration>432</duration></backup><note id=\\\"a013-02-n1\\\"><pitch><step>A</step><alter>1</alter><octave>3</octave></pitch><duration>144</duration><voice>4</voice><type>half</type><dot /><accidental>sharp</accidental><stem>down</stem><staff>1</staff></note><note id=\\\"a013-03-n1\\\"><pitch><step>B</step><octave>3</octave></pitch><duration>48</duration><voice>4</voice><type>quarter</type><stem>down</stem><staff>1</staff></note><note id=\\\"a013-04-n1\\\"><pitch><step>C</step><alter>1</alter><octave>4</octave></pitch><duration>96</duration><voice>4</voice><type>half</type><accidental>sharp</accidental><stem>down</stem><staff>1</staff></note><note id=\\\"a013-04-n2\\\"><chord /><pitch><step>E</step><octave>4</octave></pitch><duration>96</duration><voice>4</voice><type>half</type><stem>down</stem><staff>1</staff><notations><fermata type=\\\"inverted\\\">normal</fermata></notations></note><barline location=\\\"right\\\"><bar-style>light-heavy</bar-style></barline></measure>\", \"xml_note_id\": null}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-MEASURE-001",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/measure/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M04",
+                "M10"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            },
+            {
+              "id": "xml-readiness-9",
+              "problem": "Tie joins equal pitches across a time gap (held or accumulating notation); ties normally join consecutive notes, so review the intended Braille tie",
+              "targets": [
+                {
+                  "part": "P1",
+                  "path": "/score-partwise/part[1]/measure[12]/note[23]",
+                  "staff": "2",
+                  "voice": "2",
+                  "measure": "12",
+                  "note_id": "a012-06-n1",
+                  "before_xml": "<note id=\"a012-06-n1\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\"start\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\"1\">continue</beam><notations><tied type=\"start\" /></notations></note>",
+                  "candidate_after_xml": null,
+                  "expected_note_sha256": "b0e394635b7362500fb7539338c79c9392b333aa14d8019641006aa2f622b8be"
+                }
+              ],
+              "evidence": [
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-9\", \"measure\": \"12\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[12]/note[23]\", \"reason\": \"Tie joins equal pitches across a time gap (held or accumulating notation); ties normally join consecutive notes, so review the intended Braille tie\", \"related_path\": \"/score-partwise/part[1]/measure[12]/note[29]\", \"related_xml\": \"<note id=\\\"a012-09-n3\\\"><chord /><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>48</duration><tie type=\\\"stop\\\" /><voice>4</voice><type>quarter</type><stem>down</stem><staff>2</staff><notations><tied type=\\\"stop\\\" /><fermata type=\\\"inverted\\\">normal</fermata></notations></note>\", \"requirement_ids\": [\"M07\"], \"rule_id\": \"XML-TIE-TRACE-003\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/\", \"staff\": \"2\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"2\", \"xml\": \"<note id=\\\"a012-06-n1\\\"><pitch><step>D</step><alter>1</alter><octave>3</octave></pitch><duration>24</duration><tie type=\\\"start\\\" /><voice>2</voice><type>eighth</type><accidental>sharp</accidental><stem>up</stem><staff>2</staff><beam number=\\\"1\\\">continue</beam><notations><tied type=\\\"start\\\" /></notations></note>\", \"xml_note_id\": \"a012-06-n1\"}"
+              ],
+              "preserve": [
+                "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
+              ],
+              "depends_on": [],
+              "rule_basis": [
+                "XML-TIE-TRACE-003",
+                "https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/"
+              ],
+              "disposition": "investigate",
+              "proposed_edit": null,
+              "classification": "unresolved_observation",
+              "requirement_ids": [
+                "M07"
+              ],
+              "acceptance_checks": [
+                {
+                  "id": "encoding",
+                  "result": "No candidate edit applied; correction intent requires resolution.",
+                  "status": "pending",
+                  "criterion": "Resolve the demonstrated encoding issue without unrelated musical changes."
+                }
+              ],
+              "automation_eligible": false
+            }
+          ],
+          "request_id": "xml-readiness-22bd667edeb722b1",
+          "limitations": [
+            "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
+            "Requests are evidence handoffs, not executable patches. No automatic edits.",
+            "Unresolved observations are not confirmed XML defects."
+          ],
+          "integration_status": "not_integrated"
+        },
+        "request_sha256": "101b5c7fc9cf29678989e1401ac66101bac8dfe5eb1ac63b7d98621bc246bcd9",
+        "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
+        "implementation_identity": "text-lf.v1",
+        "braille_export_authorized": false,
+        "complete_encoding_validation": false,
+        "normalized_implementation_hashes": {
+          "brf_verifier.py": "a0e925be31e08bc0f48ef06e5c4cb745858fa91f0eb0d5bfb643d95a1f7b7486",
+          "braille/checker/meter.py": "3272163ae041761c90220063f1d650a420abdb4eb892d51f2b58b7ef4de28a9f",
+          "braille/checker/lyrics.py": "837586c3bd19eb099986cdafd972fff3d1ae7e9b90eae6a88854a6df18a25e9d",
+          "braille/checker/tuplets.py": "14a28a89765eec2183e8e5bc61799d6a4b61fa0157a53e92688c81342efc9b06",
+          "schemas/musicxml40/xml.xsd": "616a3077df5cfc954ac74a75abe9697b95eef7a85dbe09367d995a483e840eb5",
+          "braille/checker/registry.py": "445d17e3c0f8752efa746cd1100623ed0720b00402b0fedbfb742792e1bd5b54",
+          "braille/checker/tremolos.py": "3651fbcb4ebb7ded260b9f302b7e6387464eb1e09c0cda3ffa005a72b4adbac1",
+          "braille/checker/preflight.py": "a7656bc5ec842235553984fb52153be76d7eac956ead1f375a746690bdf2c0ea",
+          "braille/checker/readiness.py": "5e358fdc7d6a5f07814ad644ab812b6124c81cae822842324bc72b2a4eada243",
+          "braille/checker/technical.py": "2d73b0d2a71b480f17cc79992396e9bdae27302e0da6075d1cf8688dfb88b58c",
+          "schemas/musicxml40/xlink.xsd": "6d889dcf39f90695e03819a3e5c88faedf0123b669965d6255b0bdfa0793f0ff",
+          "braille/checker/navigation.py": "a6bf7c74879f707e997fef46f1325de12ba93fa62766ce16f3ee3db088712e2f",
+          "braille/checker/tie_chains.py": "84f40de71cb6c30296d6a586f4806ceb61c06cd4428774f09453c7fc4962eb03",
+          "schemas/musicxml40/musicxml.xsd": "b151d97b92ce96b6317b57a89b471601c74270ae6e078145477a977393a64193",
+          "braille/checker/relationships.py": "82e0d7677a88c2016bad11c64beb0a177e49398667c5e834b66e95e0f45d792b",
+          "braille/checker/input_contract.py": "a196390d1bb8f4c828d66becb1507a784deb6269c6b8cf3e8b9b1dbcb683296f",
+          "braille/checker/encoding_checks.py": "d496d6d88948c9ad4acf8ba2e423ab898930ca87406b06e38b628e9d65a9c08b",
+          "braille/checker/schema_manifest.py": "526cc19198b2de3d32cf89269c062555fe710890987b443a28be76ce5be0b0e5",
+          "docs/braille-xml-change-request.schema.json": "6a44469f1123224c05b4545fcd831f77a08307bf1320cfd877fc5d1de33955be"
+        }
+      }
     },
     "marks": {
       "by": "1",
@@ -40,5 +1391,5 @@
   "published_at": "2026-10-11 14:20:08.559986+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "schumann_op15_13_der_dichter_spricht",
-  "xml_sha": "40028ac4843ba76d611377a07de7c03c60218bb9c6d3b2a0adae87749021a16b"
+  "xml_sha": "22bd667edeb722b1d8b44a841d9a6f9e12309dbb4492df63d3079e21b746b6b1"
 }

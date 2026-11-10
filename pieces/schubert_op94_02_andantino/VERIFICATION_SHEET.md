@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4`
+Published XML SHA-256: `209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90`
 
 Recorded reviewer primary: `astra_review_20261030_1cc0696a/delivery_final/UNVERIFIED_Andantino.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

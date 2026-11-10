@@ -10,6 +10,52 @@
     "composer": "F. Mendelssohn",
     "subtitle": "Songs without Words, Op. 19, No. 4",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "a5c31b9755fc396a2e1bfaebb29d3b88442c4d0929fbdef7fb632e8a1a5d3aaf"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/305606",
+      "prod_entry_id": 676,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "126c7cf8db2796490397ffe7c8037954caadd52bf7f3d9a89cb7b891ec88fe67",
+      "source_recorded_xml_sha": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+      "source_xml_bytes_sha256": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/305606",
+      "software": "AICoevolution Platform",
+      "after_sha256": "3bd85044b0bcd781948af634d38a7a2980e5f93559c2398366a0ad4580c17ed3",
+      "after_xml_sha": "3bd85044b0bcd781948af634d38a7a2980e5f93559c2398366a0ad4580c17ed3",
+      "before_sha256": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+      "before_xml_sha": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "a5c31b9755fc396a2e1bfaebb29d3b88442c4d0929fbdef7fb632e8a1a5d3aaf"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "0614955c79f4308b4f7e94243342bdb9f4076cecef837f3c0a4e9c286ec1d32d",
+      "original_software": [],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "mendelssohn_sww_04_confidence"
   },
   "stamps": {
@@ -24,7 +70,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+            "xml_sha256": "3bd85044b0bcd781948af634d38a7a2980e5f93559c2398366a0ad4580c17ed3",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -640,10 +686,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 266076,
+            "size_bytes": 171707,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -698,20 +744,20 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "9c58e0d24dee12b5cb83dc532e72cbda6b65a17f5a35990f71bafee26c6f76a5",
-        "xml_sha256": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
-        "report_sha256": "d61abfe52e6b1f7e2ee4c5852ef1984a175a48d421e50cc3ca0c11dcc0b1c949",
+        "audit_id": "824905db3a5d7b80c9165be0a9ea00d4711f4a4f839222d1e3ba31b8c13a1f3b",
+        "xml_sha256": "3bd85044b0bcd781948af634d38a7a2980e5f93559c2398366a0ad4580c17ed3",
+        "report_sha256": "daa8af18bd5445c0fd800828274def92d4699c5c311e3b9d90ce906f10518431",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb",
+            "xml_sha256": "3bd85044b0bcd781948af634d38a7a2980e5f93559c2398366a0ad4580c17ed3",
             "score_reference": null,
             "score_reference_sha256": null
           },
           "changes": [],
-          "request_id": "xml-readiness-f2ea362af5c031c4",
+          "request_id": "xml-readiness-3bd85044b0bcd781",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -719,7 +765,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "9250af9bcd37a0623ef84d665b043f8c38ab0d5080db6395ffcc102a506b3188",
+        "request_sha256": "ba1b86b51125296fe3306c8924114c1316fb924b794807f7dc32380d88b35f2f",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -776,5 +822,5 @@
   "published_at": "2026-11-01 11:20:19.71427+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "mendelssohn_sww_04_confidence",
-  "xml_sha": "f2ea362af5c031c4b0216182a4db3e089e30efda98c24a0075365c5a82e302bb"
+  "xml_sha": "3bd85044b0bcd781948af634d38a7a2980e5f93559c2398366a0ad4580c17ed3"
 }

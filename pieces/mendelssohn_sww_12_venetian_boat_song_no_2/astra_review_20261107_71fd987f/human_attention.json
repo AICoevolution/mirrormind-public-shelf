@@ -1,0 +1,130 @@
+{
+  "schema": "astra_human_attention.v1",
+  "primary_xml_sha256": "6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210",
+  "edition_catalog": "Not supplied in released job context; no edition precedent inferred.",
+  "items": [
+    {
+      "id": "MUSICAL-014",
+      "address": "P014–015, page1 system3, upper staff, simultaneous E#5 lines",
+      "question": "Confirm the overlapping E#5 voices, tie into the dyad, and long phrase endpoint.",
+      "provisional_treatment": "Retain held dotted-half E#5 in voice3 beside moving dotted-quarter E#5/G#5 voice1; tie only the held E#5 and moving G#5 into15, then both dyad members onward.",
+      "reason_for_uncertainty": "Shared pitch at attack and crowded curves admit alternative ownership; frozen reading preserves both independently written durations.",
+      "evidence": [
+        "reviewer/print/system-003.png",
+        "reviewer/phase2_audit.md",
+        "validation/production_compact_v6/view_1000_1.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "MUSICAL-037",
+      "address": "P037, page2 system7, upper staff onset1.5q",
+      "question": "Confirm the unslashed short zigzag ornament and its intended realization.",
+      "provisional_treatment": "Encode inverted-mordent at B4, retaining nearby fingerings and separate phrase/slur; preview does not synthesize the ornament.",
+      "reason_for_uncertainty": "Glyph type is provisionally read from this print; performance realization is not fixed by the compact mark.",
+      "evidence": [
+        "reviewer/print/system-007.png",
+        "validation/production_compact_v6/view_1000_3.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "MUSICAL-GRACES",
+      "address": "P035,047,051, upper staff terminal grace pairs",
+      "question": "Confirm grace timing relative to the following main attack and trill termination.",
+      "provisional_treatment": "Keep both sequential small notes at each location as zero-metrical-duration grace notes; preview borrows0.25quarter from following same-voice host at default80BPM.",
+      "reason_for_uncertainty": "Print fixes noteheads but not exact performance timing.",
+      "evidence": [
+        "reviewer/print/system-006.png",
+        "reviewer/print/system-009.png",
+        "reviewer/print/system-010.png",
+        "validation/independent_playback_v6.json",
+        "validation/production_compact_v6/view_1000_3.png",
+        "validation/production_compact_v6/view_1000_4.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false
+    },
+    {
+      "id": "DELIVERY-PEDAL",
+      "address": "P052–056, page2 system10, lower staff pedal",
+      "question": "Where should the final pedal be released, if a release is intended?",
+      "provisional_treatment": "Keep the printed Ped. start at52 and no invented stop.",
+      "reason_for_uncertainty": "No printed release was found; both primary engraving and encoding check flag the open span.",
+      "evidence": [
+        "reviewer/print/system-010.png",
+        "validation/primary_assessment_v6.json",
+        "encoding_audit/6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210-6b731a072396e3f74d70c392bd176ee6c1be5f20eeda11aaa4b73922b0253291/change-request.json",
+        "validation/production_compact_v6/view_1000_4.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "primary_xml_sha256": "6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210",
+      "blocks_publication": true,
+      "classification": "primary_structure",
+      "layer": "ENGRAVING",
+      "issue_type": "checker_failure",
+      "structural_findings": [
+        "STRUCTURE-c4db692f3ac7bd60"
+      ],
+      "review_safety_reason": "The start, remaining bars and checker target are visible; primary pitches, time and mapping remain valid. Human can decide the endpoint without losing the source reading."
+    },
+    {
+      "id": "DELIVERY-SEP",
+      "address": "P035,047,051 grace notation; standalone CORE reconstruction",
+      "question": "Accept the MusicXML authority and projection limits, or revise the export workflow before standalone reconstruction.",
+      "provisional_treatment": "Deliver full XML with six grace notes. Actual CORE/MARKS/ROUTE Apply retains them; standalone CORE rebuild does not. MARKS Apply also normalizes slur IDs, sibling order and direction offset syntax while preserving exact semantic anchors.",
+      "reason_for_uncertainty": "CORE cannot serialize terminal grace pairs without a following within-bar host. Raw rebuild comparisons fail and are retained.",
+      "evidence": [
+        "validation/CORE_v6.json",
+        "validation/roundtrip_v6.json",
+        "validation/payload_preservation_v6.json",
+        "validation/payload_semantics_v6.json",
+        "validation/core_rebuild_v6.musicxml",
+        "validation/core_apply_v6.musicxml"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "primary_xml_sha256": "6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210",
+      "blocks_publication": true,
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "review_safety_reason": "Human review and playback use the preserved primary XML, not the incomplete standalone reconstruction. Projection limitation is explicitly separated from passing primary and actual Apply checks."
+    },
+    {
+      "id": "DELIVERY-DISPLAY",
+      "address": "P025 cresc., P028 più, P052 Ped.; 1000/1500px compact layouts",
+      "question": "Correct or accept the displaced direction labels before publication.",
+      "provisional_treatment": "Retain XML anchors and current production rendering. At1000px più is below the lower staff near the27/28 boundary; at1500px cresc. falls below lower staff and Ped.52 drops below the copyright footer.",
+      "reason_for_uncertainty": "Production layout changes position with width; placement is visibly detached from the intended dynamic or staff context.",
+      "evidence": [
+        "reviewer/print/system-005.png",
+        "reviewer/print/system-006.png",
+        "reviewer/print/system-010.png",
+        "validation/production_compact_v6/view_1000_2.png",
+        "validation/production_compact_v6/score_1500.png",
+        "validation/focused_visual_recheck.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "primary_xml_sha256": "6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210",
+      "blocks_publication": true,
+      "classification": "viewer_presentation",
+      "layer": "ENGRAVING",
+      "issue_type": "word_staff_placement",
+      "review_safety_reason": "The complete score and all notes remain readable; label text and exact source/XML anchors are available alongside both layouts. This does not claim correct placement."
+    }
+  ]
+}

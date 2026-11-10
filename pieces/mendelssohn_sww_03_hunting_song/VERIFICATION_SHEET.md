@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `bbf9d52c1e1af06ca3102a15268018e17f4037fdacfa0072c3314578c3525d89`
+Published XML SHA-256: `39043e43c6836ddb04ec15e0d4f834f4fff8cfc4a601a916b388c52f383164cc`
 
 Recorded reviewer primary: `astra_review_recheck_2f56da92e9ce47c7b8417b5146053a53/delivery_final/UNVERIFIED_mendelssohn_hunting_song.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

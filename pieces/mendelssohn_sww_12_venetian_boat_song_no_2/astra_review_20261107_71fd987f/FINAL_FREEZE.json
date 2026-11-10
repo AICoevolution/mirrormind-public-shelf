@@ -1,0 +1,102 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "UNVERIFIED_READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_reviewed_v6.musicxml",
+  "primary_xml_sha256": "6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_outcome": null,
+  "publication_authorized": false,
+  "delivery_issues": [
+    "DELIVERY-PEDAL",
+    "DELIVERY-SEP",
+    "DELIVERY-DISPLAY"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/primary_assessment_v6.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback_v6.json",
+        "validation/analysis_v6.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/production_compact_v6/report.json",
+        "validation/cursor_duration_v6.json",
+        "validation/consumer_implementation.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "DELIVERY-DISPLAY"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/production_compact_v6/report.json",
+        "validation/production_compact_v6/score_1000.png",
+        "validation/production_compact_v6/score_1500.png"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "DELIVERY-DISPLAY"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/production_compact_v6/score_1000.png",
+        "validation/production_compact_v6/score_1500.png"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "6e05c94b2afca3246b77b8e561fc57381552a2289e05e0506e77f9a944b7e210",
+    "CORE": {
+      "status": "PASS",
+      "scope": "Primary and actual Apply; standalone reconstruction explicitly incomplete under DELIVERY-SEP",
+      "evidence": [
+        "validation/roundtrip_v6.json",
+        "validation/primary_assessment_v6.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "DELIVERY-SEP"
+      ],
+      "evidence": [
+        "validation/roundtrip_v6.json",
+        "validation/payload_semantics_v6.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/ROUTE_v6.json",
+        "validation/independent_playback_v6.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "DELIVERY-PEDAL",
+        "DELIVERY-DISPLAY"
+      ],
+      "evidence": [
+        "validation/primary_assessment_v6.json",
+        "validation/focused_visual_recheck.json"
+      ]
+    }
+  }
+}

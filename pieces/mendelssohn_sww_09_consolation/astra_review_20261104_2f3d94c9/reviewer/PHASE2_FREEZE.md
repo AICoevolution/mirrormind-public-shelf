@@ -1,0 +1,7 @@
+# Phase 2 freeze
+
+Completed print/reader comparison for all 28 physical regions and all three readers. 454/454 priority IDs answered in priority_answers.json, including provisional tie/accidental treatment for final human review. The original-reader payload and source event IDs for all 84 reader/region units are retained in phase2_audit_inspection.json. Empty Audiveris P018 is a real omission; do not map ordinal18 into it. Independent controls confirmed opening F4, its system2 reprint and four-sharp reprint; original terminal-omission detector control fails and is preserved as such.
+
+phase2_addendum.md corrects loose tie terminology in the immutable Phase1 notes; phase2_print_attack_readings_v2.json records inspected written attacks at exact onsets. No reader consensus was accepted as musical authority. Original XML directions, fingerings, articulations, slurs, tuplets, barlines and clefs were compared to the print. All readers omit pedal notation and have incomplete or incorrect fingerings; the phase1 images and independent inventory remain restoration evidence. Spurious octave-shift stops, a false Audiveris volta at P005, false tuplets, displaced slurs, dynamic and articulation misreads are not printed notation. No repeat/route structure is printed. The surviving tie uncertainty is reserved for final human review, not a frame blocker.
+
+All Phase2 input hashes revalidated. Phase3 candidate/ensemble content has not been accessed. This freeze certifies completed independent inspection, not human acceptance.

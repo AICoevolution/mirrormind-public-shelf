@@ -1,0 +1,133 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_The_Wanderer.musicxml",
+  "primary_xml_sha256": "ead310a3fd6ad684f8f91eccdc3eb0d9e4bfca14c501822cb2a541c5cecb8d0d",
+  "human_outcome": null,
+  "publication_authorized": false,
+  "delivery_issues": [
+    "MUS-004",
+    "SEP-MARKS-001",
+    "VIS-001",
+    "VIS-002",
+    "VIS-003",
+    "VIS-004",
+    "VIS-005",
+    "VIS-006"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PASS",
+      "evidence": [
+        "validation/current/primary_structure.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/current/independent_playback.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/current/production_mapping.json",
+        "validation/consumer_current/report.json",
+        "validation/current/export_comparison.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-003",
+        "VIS-004",
+        "VIS-005",
+        "VIS-006"
+      ],
+      "evidence": [
+        "validation/current/focused_visual_recheck.json",
+        "validation/current/production_mapping.json",
+        "validation/render_current/report.json",
+        "validation/current/render_equivalence.json"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-003",
+        "VIS-004",
+        "VIS-005",
+        "VIS-006"
+      ],
+      "evidence": [
+        "validation/current/focused_visual_recheck.json",
+        "validation/current/production_mapping.json",
+        "validation/render_current/report.json",
+        "validation/current/render_equivalence.json"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/frozen_plan_application.json",
+        "validation/core_rebuild_semantic_check.json",
+        "validation/sep_roundtrip.json",
+        "validation/current/sep_roundtrip.json"
+      ]
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "review_findings": [
+        "SEP-MARKS-001",
+        "MUS-004"
+      ],
+      "evidence": [
+        "validation/sep_roundtrip.json",
+        "validation/primary_structure.json",
+        "validation/current/sep_roundtrip.json"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback.json",
+        "validation/sep_roundtrip.json",
+        "validation/current/sep_roundtrip.json"
+      ]
+    },
+    "ENGRAVING": {
+      "status": "REVIEW_REQUIRED",
+      "review_findings": [
+        "VIS-001",
+        "VIS-002",
+        "VIS-003",
+        "VIS-004",
+        "VIS-005",
+        "VIS-006"
+      ],
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/current/focused_visual_recheck.json"
+      ]
+    }
+  },
+  "metadata_contract": "reviewed_namecard.v1",
+  "blockers": [],
+  "delivery_preflight": {
+    "status": "PASS",
+    "evidence": [
+      "validation/current/full_delivery_preflight.json",
+      "validation/current/authorization_check.json",
+      "validation/current/final_preserved_integrity.json"
+    ]
+  }
+}

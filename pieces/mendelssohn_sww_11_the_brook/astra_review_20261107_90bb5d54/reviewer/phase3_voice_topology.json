@@ -1,0 +1,25 @@
+{
+  "schema": "astra_voice_topology.v1",
+  "status": "PROPOSED_PRINT_SUPPORTED",
+  "voices": {
+    "1": "Upper melody/chords, preserving continuity across OMR labels; no extra melody lane for staff movement.",
+    "2": "Independent upper inner line P018-022 and P030-033 only; keep simultaneous unisons as separate written voices.",
+    "3": "Continuous moving accompaniment, 32nds, crosses staves P012/P039-046; keeps its voice through P047 upper ascent.",
+    "4": "Independent bass attacks/rests P039-046, lower whole rest P047 and final lower chord/rests P048."
+  },
+  "remove_phantoms": "Remove all-rest OMR lanes and false sustained lower voices P036; P042 voice3 gap is a phantom-lane artifact, not a request to pad.",
+  "beams": "Four-note 32nd groups by half-quarter, including cross-staff groups. Preserve upper melody printed eighth/sixteenth groupings; separate inner voice beam lines.",
+  "source_evidence": [
+    "reviewer/print/system-005.png",
+    "reviewer/print/system-007.png",
+    "reviewer/print/system-008.png",
+    "reviewer/print/system-011.png",
+    "reviewer/print/system-012.png",
+    "reviewer/print/system-013.png",
+    "reviewer/print/system-014.png",
+    "reviewer/print/system-015.png",
+    "reviewer/print/system-017.png",
+    "reviewer/print/system-017.png"
+  ],
+  "human_outcome": null
+}

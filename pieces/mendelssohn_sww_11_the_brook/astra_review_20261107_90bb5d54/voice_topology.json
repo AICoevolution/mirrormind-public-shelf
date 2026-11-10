@@ -1,0 +1,67 @@
+{
+  "schema": "astra_voice_topology.v1",
+  "pre_census": {
+    "1:1": 297,
+    "2:1": 497,
+    "2:5": 142,
+    "1:5": 74,
+    "1:2": 32,
+    "2:2": 55,
+    "1:6": 56,
+    "2:3": 4,
+    "2:6": 9
+  },
+  "post_census": {
+    "1:1": 333,
+    "2:3": 643,
+    "1:3": 80,
+    "1:2": 31,
+    "2:4": 47
+  },
+  "continuous_musical_lines": [
+    {
+      "voice": 1,
+      "identity": "melody and its chord members"
+    },
+    {
+      "voice": 2,
+      "identity": "independent upper inner line P018-P022 and P030-P033"
+    },
+    {
+      "voice": 3,
+      "identity": "continuous moving accompaniment across both staves, then terminal ascent"
+    },
+    {
+      "voice": 4,
+      "identity": "independent bass P039-P046, measure rest P047, lower final chord/rests P048"
+    }
+  ],
+  "musical_voice_count": 4,
+  "final_sep_lanes": [
+    [
+      0,
+      "1"
+    ],
+    [
+      0,
+      "3"
+    ],
+    [
+      0,
+      "2"
+    ],
+    [
+      1,
+      "3"
+    ],
+    [
+      1,
+      "4"
+    ]
+  ],
+  "context_scoped_relabels": "Exact original-to-final note mappings in correction_ledger.json; source labels change function by bar and cannot safely use a global Map operation.",
+  "removed_empty_lanes": "Candidate all-rest phantom lanes eliminated, including P042 gap fragment. No unprinted filler rests introduced.",
+  "retained_extra_voices": [],
+  "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+  "human_outcome": null
+}

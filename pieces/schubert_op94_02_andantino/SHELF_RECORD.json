@@ -10,6 +10,52 @@
     "composer": "F. Schubert",
     "subtitle": "Moments musicaux, Op. 94 (D. 780), No. 2",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "8fc7098f4fc9fd0786baed927781ac97550f377298b91d3a31579108b75918ed"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "prod_entry_id": 681,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "e975be64cd1faea1e1e063842a86313eda13eb00cd77d85dd85f882845cf8ae5",
+      "source_recorded_xml_sha": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+      "source_xml_bytes_sha256": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "software": "AICoevolution Platform",
+      "after_sha256": "209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90",
+      "after_xml_sha": "209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90",
+      "before_sha256": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+      "before_xml_sha": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "8fc7098f4fc9fd0786baed927781ac97550f377298b91d3a31579108b75918ed"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "66747d74492192c3eba6d2e1d49ca88e84b1215856f6644629471ab3ba23ba14",
+      "original_software": [],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "schubert_op94_02_andantino"
   },
   "stamps": {
@@ -24,7 +70,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+            "xml_sha256": "209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -645,7 +691,7 @@
             "findings": [
               {
                 "id": "xml-readiness-1",
-                "xml": "<note id=\"p092-s1-v1-n06\">\n        <pitch>\n          <step>E</step>\n          <alter>-1</alter>\n          <octave>5</octave>\n        </pitch>\n        <duration>32</duration>\n        <tie type=\"start\" />\n        <voice>1</voice>\n        <type>half</type>\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <tied type=\"start\" />\n        </notations>\n      </note>\n      ",
+                "xml": "<note id=\"p092-s1-v1-n06\"><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>32</duration><tie type=\"start\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /></notations></note>",
                 "part": "P1",
                 "path": "/score-partwise/part[1]/measure[92]/note[4]",
                 "staff": "1",
@@ -657,7 +703,7 @@
                 "rule_id": "XML-TIE-TRACE-003",
                 "category": "XML_ENCODING",
                 "next_action": "Resolve this exact encoding relationship; preserve unrelated music.",
-                "related_xml": "<note id=\"p093-s1-v1-n15\">\n        <pitch>\n          <step>E</step>\n          <alter>-1</alter>\n          <octave>5</octave>\n        </pitch>\n        <duration>24</duration>\n        <tie type=\"stop\" />\n        <voice>1</voice>\n        <type>quarter</type>\n        <dot />\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <tied type=\"stop\" />\n        </notations>\n      </note>\n      ",
+                "related_xml": "<note id=\"p093-s1-v1-n15\"><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>24</duration><tie type=\"stop\" /><voice>1</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\"stop\" /></notations></note>",
                 "xml_note_id": "p092-s1-v1-n06",
                 "related_path": "/score-partwise/part[1]/measure[93]/note[1]",
                 "classification": "unresolved_observation",
@@ -685,10 +731,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 740492,
+            "size_bytes": 472011,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -743,15 +789,15 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "754885b680cc6edbe54e4dbd38f80c30fdee6ed5b47a321bfaa26e53106dc8eb",
-        "xml_sha256": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
-        "report_sha256": "03fbe2f56d2f2e940a403c213c49c6325aaf8e989258428001db187970cdd26e",
+        "audit_id": "9a36c3c34080c33550e0ec949e59c4ae31a7ee2ef332682de608f843b56fe293",
+        "xml_sha256": "209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90",
+        "report_sha256": "ef62fa883fba6f594a48ecf3a59db190ce9750221fb6686ed4701b6d64a11756",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4",
+            "xml_sha256": "209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -767,13 +813,13 @@
                   "voice": "1",
                   "measure": "92",
                   "note_id": "p092-s1-v1-n06",
-                  "before_xml": "<note id=\"p092-s1-v1-n06\">\n        <pitch>\n          <step>E</step>\n          <alter>-1</alter>\n          <octave>5</octave>\n        </pitch>\n        <duration>32</duration>\n        <tie type=\"start\" />\n        <voice>1</voice>\n        <type>half</type>\n        <stem>up</stem>\n        <staff>1</staff>\n        <notations>\n          <tied type=\"start\" />\n        </notations>\n      </note>\n      ",
+                  "before_xml": "<note id=\"p092-s1-v1-n06\"><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>32</duration><tie type=\"start\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\"start\" /></notations></note>",
                   "candidate_after_xml": null,
-                  "expected_note_sha256": "397aaba9386d1af721eb97fa68bca22b9fd9809e2071d9b0a4baa8970f8c5a63"
+                  "expected_note_sha256": "fadabff5e3afd7b1bed2d4977d282ad99f4918b562be941c9ea491aa3efb27cd"
                 }
               ],
               "evidence": [
-                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-1\", \"measure\": \"92\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[92]/note[4]\", \"reason\": \"Tie joins equal pitches across a time gap (held or accumulating notation); ties normally join consecutive notes, so review the intended Braille tie\", \"related_path\": \"/score-partwise/part[1]/measure[93]/note[1]\", \"related_xml\": \"<note id=\\\"p093-s1-v1-n15\\\">\\n        <pitch>\\n          <step>E</step>\\n          <alter>-1</alter>\\n          <octave>5</octave>\\n        </pitch>\\n        <duration>24</duration>\\n        <tie type=\\\"stop\\\" />\\n        <voice>1</voice>\\n        <type>quarter</type>\\n        <dot />\\n        <stem>up</stem>\\n        <staff>1</staff>\\n        <notations>\\n          <tied type=\\\"stop\\\" />\\n        </notations>\\n      </note>\\n      \", \"requirement_ids\": [\"M07\"], \"rule_id\": \"XML-TIE-TRACE-003\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"1\", \"xml\": \"<note id=\\\"p092-s1-v1-n06\\\">\\n        <pitch>\\n          <step>E</step>\\n          <alter>-1</alter>\\n          <octave>5</octave>\\n        </pitch>\\n        <duration>32</duration>\\n        <tie type=\\\"start\\\" />\\n        <voice>1</voice>\\n        <type>half</type>\\n        <stem>up</stem>\\n        <staff>1</staff>\\n        <notations>\\n          <tied type=\\\"start\\\" />\\n        </notations>\\n      </note>\\n      \", \"xml_note_id\": \"p092-s1-v1-n06\"}"
+                "{\"category\": \"XML_ENCODING\", \"classification\": \"unresolved_observation\", \"id\": \"xml-readiness-1\", \"measure\": \"92\", \"next_action\": \"Resolve this exact encoding relationship; preserve unrelated music.\", \"part\": \"P1\", \"path\": \"/score-partwise/part[1]/measure[92]/note[4]\", \"reason\": \"Tie joins equal pitches across a time gap (held or accumulating notation); ties normally join consecutive notes, so review the intended Braille tie\", \"related_path\": \"/score-partwise/part[1]/measure[93]/note[1]\", \"related_xml\": \"<note id=\\\"p093-s1-v1-n15\\\"><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>24</duration><tie type=\\\"stop\\\" /><voice>1</voice><type>quarter</type><dot /><stem>up</stem><staff>1</staff><notations><tied type=\\\"stop\\\" /></notations></note>\", \"requirement_ids\": [\"M07\"], \"rule_id\": \"XML-TIE-TRACE-003\", \"source\": \"https://www.w3.org/2021/06/musicxml40/musicxml-reference/elements/tied/\", \"staff\": \"1\", \"state\": \"REVIEW_REQUIRED\", \"voice\": \"1\", \"xml\": \"<note id=\\\"p092-s1-v1-n06\\\"><pitch><step>E</step><alter>-1</alter><octave>5</octave></pitch><duration>32</duration><tie type=\\\"start\\\" /><voice>1</voice><type>half</type><stem>up</stem><staff>1</staff><notations><tied type=\\\"start\\\" /></notations></note>\", \"xml_note_id\": \"p092-s1-v1-n06\"}"
               ],
               "preserve": [
                 "Preserve pitches, durations, onsets, voice/staff ownership and unrelated notation."
@@ -800,7 +846,7 @@
               "automation_eligible": false
             }
           ],
-          "request_id": "xml-readiness-a552cb5bb7275013",
+          "request_id": "xml-readiness-209bbedd82eab09d",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -808,7 +854,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "f039d46a198a6b4b1e19080ec684b31c59d83ac31a3eaac2338d5593f0699af4",
+        "request_sha256": "a540833638053ac3f5dde841dc636649482821bc7efeda51aa80465ef7f72e60",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -865,5 +911,5 @@
   "published_at": "2026-11-02 22:48:19.175007+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "schubert_op94_02_andantino",
-  "xml_sha": "a552cb5bb7275013c452928e079abf9f91f9faca683739754828eee238ca5ae4"
+  "xml_sha": "209bbedd82eab09dc8781b9fef368efa72c518e5cbd4cc91db955861a6f23e90"
 }

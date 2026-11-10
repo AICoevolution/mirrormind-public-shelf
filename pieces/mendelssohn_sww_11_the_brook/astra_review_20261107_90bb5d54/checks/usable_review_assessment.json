@@ -1,0 +1,36 @@
+{
+  "schema": "astra_usable_review_assessment.v1",
+  "id": "CURRENT-REVIEW-USABILITY",
+  "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+  "human_attention_sha256": "d39b435bff4c0703c5ce6d51d8d8509f7a16812337320de004aa9cbeb81ca389",
+  "uncertainty": {
+    "category": "technical_validation",
+    "action": "validate",
+    "consequence": "artifact_integrity",
+    "severity": "moderate",
+    "severity_reason": "Current host contract prevents integrating required new attention IDs without changing protected evidence. This is not severity of the musical questions.",
+    "scope": "whole_piece",
+    "scope_description": "Final attention and checkpoint transport binding",
+    "human_action": "Provide supported additive attention transport; no musical decision is required for technical continuation."
+  },
+  "comparisons": [
+    {
+      "source": "current_piece",
+      "id": "PRINT-SLUR-P032",
+      "relation": "less_consequential",
+      "reason": "The new slur presentation finding leaves the retained endpoint unchanged; the existing question concerns which printed endpoint is intended. Neither requires a score repair before human review."
+    }
+  ],
+  "delivery_usable": true,
+  "evidence": {
+    "checks/current_primary_structure.json": "758bbb277ef8e1bd5354b500179f7bbdaa592b64d51a1597d004bcb4723117e6",
+    "checks/independent_playback.json": "3e48541268b6c97919861a9a99ca8ae5a52e5a7b8d79c379919abfe502de23d3",
+    "checks/duration_cursor.json": "4decdf1d0edc9f31e46736976d3b47ee60c22078cbafca8ace91302f2c793677",
+    "checks/attention_transport_validation.json": "5ef98c74eb9fde3f01d0502ed2ccf2c3922dbd76e438cd5b5940b98886e195b5",
+    "checks/visual_observation.json": "a021d0ee98ea19cc62cc28c9e59dc060c3c26010f1e62d5ec9d94077bf8ffb6c",
+    "human_attention_addendum.json": "df805a09db725638e8df3b5852b606449acce4b3ae0f2026b6651291e6850472"
+  },
+  "demonstrated_failures": [],
+  "no_edition_comparable_item_reason": "No edition catalog was supplied in this recheck request.",
+  "separate_contract_obstacle": "Required final-review IDs cannot be integrated into the frozen main attention filename under the current checkpoint transport."
+}

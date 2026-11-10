@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "receipt": {
+    "schema": "omr_engineering_render_fix.v1",
+    "stopped_job": "af080f923ad248dea8722e4a9413bf6c",
+    "stopped_job_sha256": "02a7f29c3a32e720269f93c96c9aa3ba3be31a4b90bcc646048cffff66eb662d",
+    "source_astra_job": "dda8709c4ba54e34a085a470f6b9e729",
+    "source_astra_sha256": "cb2b4f1f62e90a76636d3712daad22aca0f25d19536bb5f38cc25b08a85626a1",
+    "review_dir": "astra_review_20261107_dda8709c",
+    "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+    "final_freeze_sha256": "ba15efd670224a492fbdb8c24383cb53aaa930a9502819caf070f6ad5be66297",
+    "delivery_checkpoint_sha256": "745304f995468c49ecc881d8ee8f6bc593f61f9584f603fa28de7716aa4aefe4",
+    "findings_resolved": [
+      {
+        "id": "CROSS-STAFF-32ND-BEAM-LOSS"
+      }
+    ],
+    "implementation": {
+      "apps/AICOEVO-React/src/domains/music/components/voltaSlurRendering.ts": "2ebf12714abdf0ee44f040444f36e4443ea711981eaccaea22c34cb0d123422a",
+      "apps/AICOEVO-React/src/domains/music/components/crossStaffSlurRendering.ts": "2a2e5bae5109b5911060ae0784429e77036c970afeabfb953c4b98b40277378e",
+      "apps/AICOEVO-React/src/domains/music/components/crossStaffBeamRendering.ts": "aaacf93506fe6e47ac5c53d046654bb1a0602ba12f8430fb1d573ac09cc0ce7a",
+      "apps/AICOEVO-React/src/domains/music/components/essentialNotationRendering.ts": "f73831130a9930c92e4a5ea39ae686a552ff2946f9d3f2142745379ab373840f",
+      "apps/AICOEVO-React/src/domains/music/components/openingClefRendering.ts": "d4bf0edf6f6de9b548d0ba15594d7b8016485201133bcacf9e3bb9ddc2ce9add",
+      "apps/AICOEVO-React/src/domains/music/components/tieEndpointRendering.ts": "dceeb77c9bab160951d46382bbae2c8c0f96780902205cc9a057e558fd7e28d6",
+      "apps/AICOEVO-React/src/domains/music/components/clefOrdering.ts": "30c7ae3a5db05431b128d863e5caf2811610de0f2e373fffae595efc30035c04"
+    },
+    "regression": {
+      "report": "_agent_workspace/engineering/operator_batch_20261107/no11-beam-proof/regression-report.json",
+      "sha256": "e22600c9bc63fdedc4a51f25e3a41940651f0dff80901cc8fd7dc7f43cd5aa97",
+      "inputs": {
+        "_agent_workspace/engineering/operator_batch_20261107/no11-beam-proof/render_probe.cjs": "75bb0e4b74ff5b3a2b79c021d966e80e8a57656785b81a382aa3dc703fe6d2be",
+        "_agent_workspace/engineering/operator_batch_20261107/no11-beam-proof/config.json": "28a2afebd9320851d44008aed3bdc716507bbbe402211b9c9494c71c2b38bd10",
+        "_agent_workspace/engineering/operator_batch_20261107/no11-beam-proof/primary.musicxml": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+        "_agent_workspace/engineering/operator_batch_20261107/no11-beam-proof/expected.json": "42ed87bdeec218773cd4579d993c12bac6b9baae2cc6d5a260b2b285e98c4369"
+      },
+      "example_command": "node /work/_agent_workspace/engineering/operator_batch_20261107/no11-beam-proof/render_probe.cjs"
+    }
+  }
+}

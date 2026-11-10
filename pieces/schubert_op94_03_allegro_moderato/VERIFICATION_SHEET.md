@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `ae3d240601357725df7443d13cc317c8600ac0f2c465ab937daa1687c0a359bc`
+Published XML SHA-256: `a5aee80fe3667425628e146c0aeef0ffc0373acfee71407c08400883f5712737`
 
 Recorded reviewer primary: `astra_review_20261030_51532635/delivery_final/UNVERIFIED_schubert_op94_03.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

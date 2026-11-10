@@ -1,0 +1,62 @@
+{
+  "schema": "astra_human_attention.v1",
+  "items": [
+    {
+      "id": "PRINT-SLUR-P032",
+      "address": "page3 system12 P032 upper first beat",
+      "question": "Does incoming melody slur terminate at second or third sixteenth?",
+      "provisional_treatment": "Incoming melody slur ends at second sixteenth (onset1/4); third/sixteenth staccatos remain.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-012.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "PRINT-FINGER-P034",
+      "address": "page3 system12 P034 upper second beat",
+      "question": "Exact chord-member attachment of stacked 3 and 1?",
+      "provisional_treatment": "Stacked3/1 attached top/bottom members of P034 onset5/4 chord.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-012.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "PRINT-FINGER-P019",
+      "address": "page2 system7 P019 lower final group",
+      "question": "Is curved numeral2 a substitution indication or a simple fingering?",
+      "provisional_treatment": "Digit2 retained as simple fingering on last accompaniment32nd; substitution-like curve not asserted.",
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "reviewer/print/system-007.png",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    },
+    {
+      "id": "MARKS-LIMIT-001",
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "primary_xml_sha256": "60343ea92b710cf7b4e10a4aad5ed4dccea6b36cfde896f905e32282193d9341",
+      "address": "Fingerings throughout score and P025-P026 continuation dashes",
+      "question": "Confirm primary MusicXML remains authoritative for fingerings and continuation dashes omitted from MARKS v0 export.",
+      "provisional_treatment": "Retain all encoded marks in primary XML; MARKS export is limited.",
+      "reason_for_uncertainty": "Production codec explicitly reports unsupported technical fingering and dashes.",
+      "review_safety_reason": "Primary XML and rendered score retain these symbols; no core timing change.",
+      "blocks_publication": true,
+      "blocks_safe_continuation": false,
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "evidence": [
+        "checks/marks_export.json",
+        "delivery_final/UNVERIFIED_The_Brook.musicxml"
+      ]
+    }
+  ]
+}

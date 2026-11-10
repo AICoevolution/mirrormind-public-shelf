@@ -1,0 +1,36 @@
+{
+  "schema": "astra_numbered_erratum.v1",
+  "id": "ERRATUM-002",
+  "frozen": true,
+  "reason": "Final source/render comparison of P011 shows continuous E4 accompaniment under independently beamed ascending melody. Frozen CORE assigns two E4 accompaniment members to melody voice1, contradicting the frozen bar prose and visible stems.",
+  "corrections": [
+    {
+      "id": "print-P011-n08",
+      "bar": 11,
+      "before_voice": "1",
+      "after_voice": "2",
+      "pitch": "E4",
+      "onset_q": "3/4",
+      "duration_q": "1/4"
+    },
+    {
+      "id": "print-P011-n09",
+      "bar": 11,
+      "before_voice": "1",
+      "after_voice": "2",
+      "pitch": "E4",
+      "onset_q": "1",
+      "duration_q": "1/4"
+    }
+  ],
+  "beam_correction": {
+    "voice1": "Five melody attacks 0,1/2,3/4,1,5/4, single beam then double beams; excludes E4 accompaniment members",
+    "voice2": "Five E4 16ths at1/4,1/2,3/4,1,5/4 with continuous double beam"
+  },
+  "pitch_onset_duration_unchanged": true,
+  "evidence": {
+    "reviewer/print/system_03.png": "99a534a0d1dc796542c7b71abf65c293384ec12a149e4aeab28b9ae7fc18ce94",
+    "validation/render_final/system-1200-03.png": "50dcaa90b99ca7fc64ec1213d9c191ccf0e706a2657341f8d93532b7c8421d5a"
+  },
+  "human_outcome": null
+}

@@ -1,0 +1,314 @@
+{
+  "schema": "frame_visual_verification.v1",
+  "piece_id": "mendelssohn_sww_12_venetian_boat_song_no_2",
+  "authority": "print_only",
+  "source_pdf_sha256": "7e708c94fd84577c947becbd5728a23d905686437687c2ef413172c6562c3b23",
+  "physical_bar_count": 56,
+  "checks": [
+    {
+      "kind": "pickup",
+      "physical_bar": 1,
+      "page": 1,
+      "system": 1,
+      "onset_q": "0",
+      "capacity_q": "1/2",
+      "evidence_bbox_px": [
+        470,
+        350,
+        526,
+        565
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "claim": "An eighth rest in upper staff and a flagged eighth note in lower staff occupy this region.",
+      "checked": true
+    },
+    {
+      "kind": "pickup_terminal_capacity",
+      "physical_bar": 56,
+      "page": 2,
+      "system": 10,
+      "onset_q": "0",
+      "evidence_bbox_px": [
+        1370,
+        1730,
+        1535,
+        1950
+      ],
+      "crop_path": "source_crops/system_10.png",
+      "pickup_capacity_q": "1/2",
+      "terminal_capacity_q": "3",
+      "sum_q": "7/2",
+      "meter_capacity_q": "3",
+      "complementary": false,
+      "checked": true,
+      "claim": "Exception: the introductory single eighth precedes two complete accompaniment bars. The final region has an upper dotted half and lower eighth plus two eighth rests and a dotted quarter rest (3 quarters total), bounded by a final barline. It does not complement the introductory pickup; preserve both as printed."
+    },
+    {
+      "kind": "repeat_start",
+      "before_physical_bar": 22,
+      "page": 1,
+      "system": 5,
+      "onset_q": "0",
+      "crop_path": "source_crops/system_05.png",
+      "evidence_bbox_px": [
+        325,
+        1750,
+        365,
+        1965
+      ],
+      "claim": "Forward repeat dots follow heavy-light opening boundary on both staves.",
+      "checked": true
+    },
+    {
+      "kind": "repeat_end",
+      "after_physical_bar": 43,
+      "page": 2,
+      "system": 8,
+      "onset_q": "3",
+      "crop_path": "source_crops/system_08.png",
+      "evidence_bbox_px": [
+        1500,
+        980,
+        1545,
+        1200
+      ],
+      "claim": "Backward repeat dots precede closing heavy barline on both staves.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 1,
+      "page": 1,
+      "physical_bars": [
+        1,
+        6
+      ],
+      "crop_path": "source_crops/system_01.png",
+      "crop_sha256": "f8ad19d8c1ec64575bc4e08d314c8c71fa71a398ec736e8be082fdc5d12327bf",
+      "evidence_bbox_px": [
+        160,
+        280,
+        1575,
+        620
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 2,
+      "page": 1,
+      "physical_bars": [
+        7,
+        11
+      ],
+      "crop_path": "source_crops/system_02.png",
+      "crop_sha256": "952de6d3844643370b46930f6d7150ee3c55e7a1f46fa85cc905806ad75c999c",
+      "evidence_bbox_px": [
+        155,
+        635,
+        1575,
+        960
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 3,
+      "page": 1,
+      "physical_bars": [
+        12,
+        16
+      ],
+      "crop_path": "source_crops/system_03.png",
+      "crop_sha256": "8a8d5bc4ee00682b8ce57bde8dfb4d84299417a083a46e9acee0047591c0b371",
+      "evidence_bbox_px": [
+        165,
+        970,
+        1575,
+        1325
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 4,
+      "page": 1,
+      "physical_bars": [
+        17,
+        21
+      ],
+      "crop_path": "source_crops/system_04.png",
+      "crop_sha256": "78e07d202ee3e11463791e93b9890ac345ab8b35e647dad563b6c2569b5a95ec",
+      "evidence_bbox_px": [
+        170,
+        1330,
+        1580,
+        1680
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 5,
+      "page": 1,
+      "physical_bars": [
+        22,
+        27
+      ],
+      "crop_path": "source_crops/system_05.png",
+      "crop_sha256": "f6efe6097d007be3a41b3d949181ec7b0a92b6597f474324c13bb3731088df26",
+      "evidence_bbox_px": [
+        170,
+        1670,
+        1590,
+        2030
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": false,
+      "repair_status": "Expanded proposal; original preparer claim retained, independent containment verification pending."
+    },
+    {
+      "kind": "system_frame",
+      "system": 6,
+      "page": 2,
+      "physical_bars": [
+        28,
+        32
+      ],
+      "crop_path": "source_crops/system_06.png",
+      "crop_sha256": "45965cd00ce9c3aea813f7bede70ba8b18bae8220b947716e01e043104e2d561",
+      "evidence_bbox_px": [
+        160,
+        165,
+        1570,
+        535
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 7,
+      "page": 2,
+      "physical_bars": [
+        33,
+        38
+      ],
+      "crop_path": "source_crops/system_07.png",
+      "crop_sha256": "b30ca0bd7d7b41fa4f741fafa6652e0057b78cb8120a1a326f89a23879dc6e01",
+      "evidence_bbox_px": [
+        160,
+        530,
+        1570,
+        900
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 8,
+      "page": 2,
+      "physical_bars": [
+        39,
+        43
+      ],
+      "crop_path": "source_crops/system_08.png",
+      "crop_sha256": "a72fdbcb61b94a832fa2faf30386245e955feb018ec38404fa39705805d228f9",
+      "evidence_bbox_px": [
+        160,
+        910,
+        1570,
+        1285
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 9,
+      "page": 2,
+      "physical_bars": [
+        44,
+        49
+      ],
+      "crop_path": "source_crops/system_09.png",
+      "crop_sha256": "36a7da36d0f4c49569ca0b35f7b2549b239c22e3d04729e686f7fe7e625c45ca",
+      "evidence_bbox_px": [
+        160,
+        1280,
+        1570,
+        1650
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    },
+    {
+      "kind": "system_frame",
+      "system": 10,
+      "page": 2,
+      "physical_bars": [
+        50,
+        56
+      ],
+      "crop_path": "source_crops/system_10.png",
+      "crop_sha256": "c58a20449587164e40d41f30c1396e956d13749838e65bce01e82e1b0f57276f",
+      "evidence_bbox_px": [
+        160,
+        1660,
+        1555,
+        2020
+      ],
+      "claim": "Counted all cross-staff boundaries. Both staves complete; G2 above F4 reprinted at opening, no actual clef transitions. All regions after P001 have capacity 3 quarters. Closing boundary intact; no split region.",
+      "checked": true
+    }
+  ],
+  "clef_changes": [],
+  "terminal_or_split_partials": [],
+  "repeat_boundaries_checked": true,
+  "pickup_terminal_check": {
+    "kind": "pickup_terminal_capacity",
+    "physical_bar": 56,
+    "page": 2,
+    "system": 10,
+    "onset_q": "0",
+    "evidence_bbox_px": [
+      1370,
+      1730,
+      1535,
+      1950
+    ],
+    "crop_path": "source_crops/system_10.png",
+    "pickup_capacity_q": "1/2",
+    "terminal_capacity_q": "3",
+    "sum_q": "7/2",
+    "meter_capacity_q": "3",
+    "complementary": false,
+    "checked": true,
+    "claim": "Exception: the introductory single eighth precedes two complete accompaniment bars. The final region has an upper dotted half and lower eighth plus two eighth rests and a dotted quarter rest (3 quarters total), bounded by a final barline. It does not complement the introductory pickup; preserve both as printed."
+  },
+  "fingering_attention": [
+    {
+      "physical_bar": 27,
+      "page": 1,
+      "system": 5,
+      "evidence_bbox_px": [
+        1480,
+        1670,
+        1525,
+        1725
+      ],
+      "claim": "Top digit of stacked upper-staff fingering lies at crop edge; full page retains complete glyph.",
+      "treatment": "Nonblocking fingering-only issue; read full-page source during musical audit and retain anchored annotation."
+    }
+  ],
+  "preparer_verification_only": true,
+  "independent_verification_pending": true,
+  "revision": 1,
+  "repair_note": "Proposed crop expansion records measured margins and containment evidence; independent verification and fresh human approval remain required.",
+  "frame_revision_status": "proposed expanded crop awaiting independent verification"
+}

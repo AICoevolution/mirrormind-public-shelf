@@ -1,0 +1,92 @@
+{
+  "schema": "astra_final_freeze.v2",
+  "status": "COMPLETE_FOR_HUMAN_REVIEW",
+  "stage4_complete": true,
+  "stage5_complete": true,
+  "delivery_ready": true,
+  "primary_xml": "delivery_final/UNVERIFIED_Consolation.musicxml",
+  "primary_xml_sha256": "78daf7f7dbd0f6548d7fcc6afb9d16381d4c7a9a0a65afd39868ef21e67dc47c",
+  "metadata_contract": "reviewed_namecard.v1",
+  "human_outcome": null,
+  "publication_authorized": false,
+  "phase_freezes": {
+    "reviewer/PHASE1_FREEZE.md": "c34227a6c21c450e86e3a4a06e83791896c90d8ef5ec0f3f45714eb4154370ad",
+    "reviewer/PHASE2_FREEZE.md": "3e9cf318fd97a5fc9777607cd2d4381837ead439efecf07807f96babd2005c04",
+    "reviewer/PHASE3_FREEZE.md": "4b8c2299fc08c8e55b497d9b73f9eaff376ed15ca60a16e39302a742197608fd"
+  },
+  "delivery_issues": [
+    "DEL-001"
+  ],
+  "human_readiness": {
+    "proper": {
+      "status": "PRINT_LOCKED_PARTIAL_PASS",
+      "evidence": [
+        "validation/primary_structure_final.json"
+      ]
+    },
+    "primary_playback": {
+      "status": "PASS",
+      "evidence": [
+        "validation/independent_playback.json",
+        "delivery_final/analysis.json"
+      ]
+    },
+    "viewer_mapping": {
+      "status": "PASS",
+      "evidence": [
+        "validation/viewer_mapping.json",
+        "validation/production_render_v3/report.json"
+      ]
+    },
+    "essential_notation_rendering": {
+      "status": "PASS_WITH_REVIEW",
+      "evidence": [
+        "validation/essential_notation.json",
+        "validation/cross_staff_beams.json",
+        "validation/production_render_v3/report.json"
+      ],
+      "review_findings": [
+        "ENG-001",
+        "ENG-002"
+      ]
+    },
+    "focused_visual_recheck": {
+      "status": "PASS_WITH_REVIEW",
+      "evidence": [
+        "validation/focused_visual_recheck.json",
+        "validation/production_render_v3/full-1350-1.png",
+        "validation/production_render_v3/full-1050-0.85.png"
+      ],
+      "review_findings": [
+        "ENG-001",
+        "ENG-002"
+      ]
+    }
+  },
+  "layer_readiness": {
+    "primary_xml_sha256": "78daf7f7dbd0f6548d7fcc6afb9d16381d4c7a9a0a65afd39868ef21e67dc47c",
+    "CORE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/sep_roundtrips.json"
+      ],
+      "scope": "Exact CORE Apply plus sounding rebuild/member-tie equivalence; not standalone full-score losslessness"
+    },
+    "MARKS": {
+      "status": "LIMITED",
+      "evidence": [
+        "validation/sep_roundtrips.json",
+        "validation/marks_preservation.json"
+      ],
+      "review_findings": [
+        "DEL-001"
+      ]
+    },
+    "ROUTE": {
+      "status": "PASS",
+      "evidence": [
+        "validation/sep_roundtrips.json"
+      ]
+    }
+  }
+}

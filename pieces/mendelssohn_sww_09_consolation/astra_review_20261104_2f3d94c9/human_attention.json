@@ -1,0 +1,148 @@
+{
+  "schema": "astra_human_attention.v1",
+  "primary_xml_sha256": "78daf7f7dbd0f6548d7fcc6afb9d16381d4c7a9a0a65afd39868ef21e67dc47c",
+  "items": [
+    {
+      "id": "MUS-001",
+      "address": "Page 1, P009–P010, upper inner voice, E#4",
+      "question": "Confirm whether the cross-bar arc ties E-sharp into P010.",
+      "provisional_treatment": "Same-pitch voice-2 tie; accidental carries into P010; one sustained attack.",
+      "reason_for_uncertainty": "Faint arc at a system boundary and accidental carry determine pitch/reattack.",
+      "evidence": [
+        "reviewer/print_system_02.png",
+        "reviewer/print_system_03.png",
+        "reviewer/phase3_core_plan.json",
+        "validation/independent_playback.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "MUS-002",
+      "address": "Page 1, P015, opening upper chord",
+      "question": "Confirm the 4→5 fingering substitution on the upper chord member.",
+      "provisional_treatment": "Both printed numerals retained, 5 marked substitution.",
+      "reason_for_uncertainty": "Small stacked numerals do not make substitution semantics completely certain.",
+      "evidence": [
+        "reviewer/print_system_04.png",
+        "delivery_final/mark_route_ledger.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "MUS-003",
+      "address": "Page 1, P027, last ascent notes",
+      "question": "Confirm association of upper 4 and 5 fingerings.",
+      "provisional_treatment": "4 on G#6 and 5 on B6, as frozen in the mark plan.",
+      "reason_for_uncertainty": "Crowded high ledger lines and adjacent digits make attachment provisional.",
+      "evidence": [
+        "reviewer/print_system_06.png",
+        "delivery_final/mark_route_ledger.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "MUS-004",
+      "address": "Page 1, P016, P018, chord fingerings",
+      "question": "Confirm crowded fingerings against the printed chord members.",
+      "provisional_treatment": "Preserve all read digits on exact provisional note IDs in mark ledger.",
+      "reason_for_uncertainty": "Stacked digits and inner voices require final technique confirmation.",
+      "evidence": [
+        "reviewer/print_system_04.png",
+        "delivery_final/mark_route_ledger.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "MUS-005",
+      "address": "Page 1, pedal releases within rests, especially P002–P003 and P027–P028",
+      "question": "Confirm pedal release timing inside rests.",
+      "provisional_treatment": "Pedal endpoints use the frozen fractional anchors; no invented note/rest attacks.",
+      "reason_for_uncertainty": "Horizontal pedal-release spacing is less precise than rhythmic noteheads.",
+      "evidence": [
+        "reviewer/print_system_01.png",
+        "reviewer/print_system_06.png",
+        "reviewer/phase3_print_marks_plan.json"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "musical"
+    },
+    {
+      "id": "ENG-001",
+      "address": "Production view P009 lower staff, onset 2",
+      "question": "Separate the lower rest from the sustained half-note stem if needed for final engraving.",
+      "provisional_treatment": "Keep exact source-supported XML and expose the readable presentation issue for final visual review.",
+      "reason_for_uncertainty": "Polyphonic rest and stem are crowded but the source, durations and separate voices remain inspectable.",
+      "evidence": [
+        "validation/production_render_v3/system-1350-2.png",
+        "reviewer/print_system_02.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "engraving",
+      "issue_type": "readable_overlap",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "readability_reason": "Polyphonic rest and stem are crowded but the source, durations and separate voices remain inspectable.",
+      "severity": "minor"
+    },
+    {
+      "id": "ENG-002",
+      "address": "Production view P015–P018 fingerings/slurs; opening part label",
+      "question": "Review numeral/slur spacing and suppress the generated “Instr. P1” label in final presentation.",
+      "provisional_treatment": "Keep exact source-supported XML and expose the readable presentation issue for final visual review.",
+      "reason_for_uncertainty": "Compact layout crowds numerals near arcs and generates a default part label for an empty printed name; pitches, digits and phrases remain readable.",
+      "evidence": [
+        "validation/production_render_v3/system-1050-1.png",
+        "validation/production_render_v3/system-1050-3.png",
+        "reviewer/print_system_04.png"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "engraving",
+      "issue_type": "spacing",
+      "readable": true,
+      "musical_meaning_preserved": true,
+      "readability_reason": "Compact layout crowds numerals near arcs and generates a default part label for an empty printed name; pitches, digits and phrases remain readable.",
+      "severity": "minor"
+    },
+    {
+      "id": "DEL-001",
+      "address": "MARKS export, 145 fingerings and 38 pedal-change marks",
+      "question": "Use the primary XML for these marks; verify preservation before a standalone SEP reconstruction.",
+      "provisional_treatment": "Keep complete MusicXML technical fingerings and pedal changes. Actual MARKS Apply preserves them, but v0 export has no tokens.",
+      "reason_for_uncertainty": "Explicit codec warnings show unsupported representation; a text-only reconstruction would lose these details.",
+      "evidence": [
+        "validation/sep_roundtrips.json",
+        "validation/marks_preservation.json",
+        "delivery_final/MARKS.sep"
+      ],
+      "status": "UNRESOLVED",
+      "human_outcome": null,
+      "blocks_safe_continuation": false,
+      "category": "delivery_issue",
+      "classification": "sep_roundtrip",
+      "layer": "MARKS",
+      "issue_type": "representation_loss",
+      "primary_xml_sha256": "78daf7f7dbd0f6548d7fcc6afb9d16381d4c7a9a0a65afd39868ef21e67dc47c",
+      "blocks_publication": true,
+      "review_safety_reason": "Primary XML and production view retain all marks; only standalone text export is limited."
+    }
+  ],
+  "human_outcome": null
+}

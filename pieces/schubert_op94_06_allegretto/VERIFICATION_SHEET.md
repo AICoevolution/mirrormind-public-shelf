@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `6b1513c8a8160be26359076aa0331b7938fcb4fd08e20c87c7c4022215e61c37`
+Published XML SHA-256: `0e32b458660ad0591d7fa542e6c7cb2789b1ce6ae5cd0fbc992551e6fff3a1ac`
 
 Recorded reviewer primary: `astra_review_20261030_d486caca/delivery_final/UNVERIFIED_schubert_op94_06_allegretto.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

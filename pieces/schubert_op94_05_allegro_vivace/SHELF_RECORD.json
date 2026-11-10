@@ -10,6 +10,54 @@
     "composer": "F. Schubert",
     "subtitle": "Moments musicaux, Op. 94 (D. 780), No. 5",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "prod_entry_id": 685,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "5997ff7a2baafb1adc928fc205f5edf0e6705499124c6645e044d8de2a3f862e",
+      "source_recorded_xml_sha": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+      "source_xml_bytes_sha256": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "software": "AICoevolution Platform",
+      "after_sha256": "3b8e03f72884ff342dbf8cf1d5b7ddefd0908335aa7c2da2fe56b6adb0befc1c",
+      "after_xml_sha": "3b8e03f72884ff342dbf8cf1d5b7ddefd0908335aa7c2da2fe56b6adb0befc1c",
+      "before_sha256": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+      "before_xml_sha": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "c23748b82fdf47e4600bb7c25c86147656673a5ac89e029e6dee6b73c0b658d5"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "59c1fbe323716f272525aed18094f79bddf5f96aa678dce87429c22ee32a3e44",
+      "original_software": [
+        "Stage 3 deterministic ensemble candidate assembly"
+      ],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "schubert_op94_05_allegro_vivace"
   },
   "stamps": {
@@ -24,7 +72,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+            "xml_sha256": "3b8e03f72884ff342dbf8cf1d5b7ddefd0908335aa7c2da2fe56b6adb0befc1c",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -640,10 +688,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 406197,
+            "size_bytes": 258131,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -698,20 +746,20 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "71ee1e52f04c19a5f8adbb6b92f455c437f51d2a895bc295590b1ca2f396b323",
-        "xml_sha256": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
-        "report_sha256": "997084f76a536835d4154d278fb0896afbfe6e6217d8e565f96bcf75ba2db183",
+        "audit_id": "f0af38bda5e160820fe37dbd3136ebf8433a5cb0c94f59b74da31eac92b9fe7a",
+        "xml_sha256": "3b8e03f72884ff342dbf8cf1d5b7ddefd0908335aa7c2da2fe56b6adb0befc1c",
+        "report_sha256": "31226cfce58b48712bd2e53b35f3514a018804fbdea5ce6da891802566b9f2a8",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983",
+            "xml_sha256": "3b8e03f72884ff342dbf8cf1d5b7ddefd0908335aa7c2da2fe56b6adb0befc1c",
             "score_reference": null,
             "score_reference_sha256": null
           },
           "changes": [],
-          "request_id": "xml-readiness-014679af7df0459b",
+          "request_id": "xml-readiness-3b8e03f72884ff34",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -719,7 +767,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "fbe3ae9dc1de4dea9f9549aae90e951032f64f21595536e5794a284878df1704",
+        "request_sha256": "5aa88cf6d02f7b842586503d40fbbe47519c782186f36d6300a3c5ed321dc331",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -776,5 +824,5 @@
   "published_at": "2026-11-03 09:39:28.618835+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "schubert_op94_05_allegro_vivace",
-  "xml_sha": "014679af7df0459bf35ce958dd14d1f2b14b44834549c4e7393cc06195faf983"
+  "xml_sha": "3b8e03f72884ff342dbf8cf1d5b7ddefd0908335aa7c2da2fe56b6adb0befc1c"
 }

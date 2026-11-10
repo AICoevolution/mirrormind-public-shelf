@@ -2,7 +2,7 @@
 
 Published score: `published.musicxml`
 
-Published XML SHA-256: `25cf0ea98eddd73d089625da3ad593f1587aeeb500688e8cb39c571229861caa`
+Published XML SHA-256: `31c15f7302693d7ecce2b3c56ef09069d8398e589b6f1d80f61a9ded95c5b284`
 
 Recorded reviewer primary: `astra_review_20261030_cc3bdbd9/delivery_final/UNVERIFIED_schubert_op94_04_moderato.musicxml`. Publication binding: `reviewer_plus_builder_ledger_plus_published_namecard`.
 

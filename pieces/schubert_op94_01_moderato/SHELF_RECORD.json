@@ -10,6 +10,52 @@
     "composer": "F. Schubert",
     "subtitle": "Moments musicaux, Op. 94 (D. 780), No. 1",
     "piece_type": "Piano solo",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "5162dc279b622d5429593ffcb0c266c2daba0dc03ed4e5fdd6f13a783d8245a3"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "prod_entry_id": 680,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "75728fe89dbb62c885ef94ae143cb14cbf2885c6ab2a836472fa18725431ce8a",
+      "source_recorded_xml_sha": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+      "source_xml_bytes_sha256": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/53594",
+      "software": "AICoevolution Platform",
+      "after_sha256": "c6f5a8e01a2b4e9438d6100558b603f62317855fab6acb22322080d8e071bfe3",
+      "after_xml_sha": "c6f5a8e01a2b4e9438d6100558b603f62317855fab6acb22322080d8e071bfe3",
+      "before_sha256": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+      "before_xml_sha": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "5162dc279b622d5429593ffcb0c266c2daba0dc03ed4e5fdd6f13a783d8245a3"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "4611fc8594b73dd1d8aceb455f64cde0490fa3a3ff710ece7f62c9d505948ff0",
+      "original_software": [],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "schubert_op94_01_moderato"
   },
   "stamps": {
@@ -24,7 +70,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+            "xml_sha256": "c6f5a8e01a2b4e9438d6100558b603f62317855fab6acb22322080d8e071bfe3",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -640,10 +686,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 691159,
+            "size_bytes": 454499,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -698,20 +744,20 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "b5198af29a14476c38d5daabc6131c0cebef612425313825fb2b8fd7595bb5c9",
-        "xml_sha256": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
-        "report_sha256": "fb6a49aa54c428f2b0b6355b94f27dee012fa1e10a8fe29cb6d62bf18b195429",
+        "audit_id": "d857bc050a8550ca4d44a579e1c092d295fa500fcab31b8e57f73852b18323ce",
+        "xml_sha256": "c6f5a8e01a2b4e9438d6100558b603f62317855fab6acb22322080d8e071bfe3",
+        "report_sha256": "4c669e11144be3e89f032d83665b6579628b073768e8eec4384efa7dd6c5fa56",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd",
+            "xml_sha256": "c6f5a8e01a2b4e9438d6100558b603f62317855fab6acb22322080d8e071bfe3",
             "score_reference": null,
             "score_reference_sha256": null
           },
           "changes": [],
-          "request_id": "xml-readiness-f63fb0e87e2ae230",
+          "request_id": "xml-readiness-c6f5a8e01a2b4e94",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -719,7 +765,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "c6c3678b12035c0d28a8746da0e6e620c2486ca98b36a49bb3cc20a9824cdd25",
+        "request_sha256": "eb54ab9cb5b56096c2d7ec43fba22aa59f999f823bcf7993fc92086f8ad43953",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -776,5 +822,5 @@
   "published_at": "2026-11-02 22:48:17.225574+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "schubert_op94_01_moderato",
-  "xml_sha": "f63fb0e87e2ae230b2ffd639381677e4cd2e3dd4043666289ecc4e48b5acb1fd"
+  "xml_sha": "c6f5a8e01a2b4e9438d6100558b603f62317855fab6acb22322080d8e071bfe3"
 }

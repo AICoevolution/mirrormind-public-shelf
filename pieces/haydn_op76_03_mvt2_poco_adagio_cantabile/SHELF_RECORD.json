@@ -10,6 +10,54 @@
     "composer": "J. Haydn",
     "subtitle": "String Quartet, Op. 76 No. 3 (Emperor)",
     "piece_type": "String quartet",
+    "shelf_master": {
+      "state": "active",
+      "schema": "aicoevolution.dev_shelf_master.v1",
+      "source": "published_prod",
+      "identity": [
+        "piece_key",
+        "199f502e50174a35b276bc98e87b863944b2ee925029bf0561161842eddd880e"
+      ],
+      "original_pdf": "https://imslp.org/wiki/Special:ReverseLookup/479292",
+      "prod_entry_id": 675,
+      "source_pending": false,
+      "pipeline_linked": true,
+      "source_actual_xml_sha": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+      "source_hash_was_stale": false,
+      "source_snapshot_sha256": "5987d6de0bd5af08bce38f5e5a33cb88cf86320954d308d0a1de75218c34f087",
+      "source_recorded_xml_sha": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+      "source_xml_bytes_sha256": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+      "musical_approval_granted": false
+    },
+    "publication_metadata": {
+      "schema": "aicoevolution.publication_metadata.v2",
+      "source": "https://imslp.org/wiki/Special:ReverseLookup/479292",
+      "software": "AICoevolution Platform",
+      "after_sha256": "55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60",
+      "after_xml_sha": "55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60",
+      "before_sha256": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+      "before_xml_sha": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+      "changed_fields": [
+        "identification/encoding/software",
+        "identification/source"
+      ],
+      "piece_identity": [
+        "piece_key",
+        "199f502e50174a35b276bc98e87b863944b2ee925029bf0561161842eddd880e"
+      ],
+      "source_pending": false,
+      "original_source": [],
+      "protected_sha256": "53d8e511fa9adca278d104fe941a132481da63f335f2255f7498be1da0adb4dd",
+      "original_software": [
+        "Deterministic Stage 3 assembly; UNVERIFIED ensemble candidate"
+      ],
+      "schema_validation": {
+        "policy": "no_new_errors_existing_master_only",
+        "after_errors": [],
+        "before_errors": []
+      },
+      "musical_approval_granted": false
+    },
     "verification_piece_id": "haydn_op76_03_mvt2_poco_adagio_cantabile"
   },
   "stamps": {
@@ -24,7 +72,7 @@
           "schema": "musicxml-readiness-report.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+            "xml_sha256": "55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60",
             "score_reference": null,
             "score_reference_sha256": null
           },
@@ -640,10 +688,10 @@
             "outcome": "accepted",
             "rule_id": "XML-INPUT-CONTRACT-001",
             "utf8_bom": false,
-            "size_bytes": 688902,
+            "size_bytes": 453656,
             "limit_bytes": 5000000,
             "qualifications": [],
-            "doctype_version": "4.0",
+            "doctype_version": null,
             "declared_version": "4.0",
             "version_conflict": false,
             "effective_version": "4.0",
@@ -698,20 +746,20 @@
           "complete_encoding_validation": false
         },
         "schema": "music.encoding_delivery.v1",
-        "audit_id": "11c38c97b4cfeb54b3622a44f3e1180a2cbf9a452f4b214e7a937480f5c22577",
-        "xml_sha256": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
-        "report_sha256": "3062d7a8429c4efc8a52a4c6ef1d6284f890b6e41019142515be17950e481a91",
+        "audit_id": "7e53cb91d45cab45af42d4f4a5fbc1227c8e3800c1d1b897f2903c706ee4eb90",
+        "xml_sha256": "55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60",
+        "report_sha256": "8103983a27dd6be6a82d5b41106a5e968e9791cb21acb3ae4e718267c735f7d5",
         "change_request": {
           "piece": "current_xml",
           "schema": "braille-xml-change-request.v1",
           "source": {
             "xml_path": "source.musicxml",
-            "xml_sha256": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e",
+            "xml_sha256": "55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60",
             "score_reference": null,
             "score_reference_sha256": null
           },
           "changes": [],
-          "request_id": "xml-readiness-43f0cf0c0afd58e1",
+          "request_id": "xml-readiness-55f89ca0ca72fae8",
           "limitations": [
             "MusicXML 4.0 schema checked; bounded semantic checks do not establish complete encoding readiness.",
             "Requests are evidence handoffs, not executable patches. No automatic edits.",
@@ -719,7 +767,7 @@
           ],
           "integration_status": "not_integrated"
         },
-        "request_sha256": "b2d2fceeca8a9213f4d0cab7b7e31f4952eecf66ea3382ff062d7d43a04732ea",
+        "request_sha256": "2190dc8dba2202f07da6827b2144a4b2b04bc27e3fda431f2c92c1ea8b86e00e",
         "checker_fingerprint": "15e8795cf352b8a1cb7d12a183a265ff75651a33448317229e35a43550893bdd",
         "implementation_identity": "text-lf.v1",
         "braille_export_authorized": false,
@@ -776,5 +824,5 @@
   "published_at": "2026-10-31 23:19:48.785113+00",
   "schema": "mirrormind_public_shelf_record.v1",
   "piece_id": "haydn_op76_03_mvt2_poco_adagio_cantabile",
-  "xml_sha": "43f0cf0c0afd58e11790429b620dbacc676ff3ad48a03aea39894b7478eb146e"
+  "xml_sha": "55f89ca0ca72fae826e7eb77138c120e9e57cf68afbbcdf7e20e2e3c01866d60"
 }

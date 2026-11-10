@@ -1,0 +1,50 @@
+{
+  "schema": "baseline-verification.v1",
+  "piece_id": "mendelssohn_sww_11_the_brook",
+  "verified_utc": "2026-11-03T13:50:18.619237+00:00",
+  "baseline_success": true,
+  "replay_success": true,
+  "five_required_json_outputs_byte_identical": false,
+  "all_equal": true,
+  "replay_equal": {
+    "state.json": true,
+    "reconciliation.json": true,
+    "ledger_snapshot.json": true,
+    "questions.json": true,
+    "summary.json": true
+  },
+  "pairs": {
+    "state.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "19cd776bad1cbe101c94e9f7d5b27cc4911b57ced2e53d9c6a8ea8579811a80e",
+      "replay_sha256": "5f1dea0b96fc8e27406be74387b96b62c8091b1b81ee93d7fcdb6c38f60e86cb"
+    },
+    "reconciliation.json": {
+      "equal_bytes": true,
+      "equal_semantic": true,
+      "sha256": "da7a30b48090b0bc3e2917a46f65b949c020a881565b9220dd21d8bd5c58f68c",
+      "replay_sha256": "da7a30b48090b0bc3e2917a46f65b949c020a881565b9220dd21d8bd5c58f68c"
+    },
+    "ledger_snapshot.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "051ce4a8d2c74ff87400f945645096ff40cbb407c7a0f3cfe9fa6ccab75709e8",
+      "replay_sha256": "256493ec634029378e08ffcfe2ee74f6efd4070bdc9839e64709f46dd7e89997"
+    },
+    "questions.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "aeb893bf5798f7786b4e27984e54d6f74f1ee93f5e397d90ced517ff33893c7f",
+      "replay_sha256": "7e042eb2224004a86bc2d916ac4ba3abb9e31d2ace195300f6271389467dfb1b"
+    },
+    "summary.json": {
+      "equal_bytes": false,
+      "equal_semantic": true,
+      "sha256": "e744e386417a62591eac2bcb3ebdca0a06327ded7d3fd34a7385ede8045d1813",
+      "replay_sha256": "4290225a117dcdcb76be24519ae002a92110182d75b219fa938933bda519cce3"
+    }
+  },
+  "normalization_applied": "stable_without_volatile_ids",
+  "musical_differences": false
+}
